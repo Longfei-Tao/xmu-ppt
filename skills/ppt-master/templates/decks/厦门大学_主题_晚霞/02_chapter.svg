@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-4" data-name="图片 3">
+<image href="assets/image21.jpeg" x="47.33" y="-104.47" width="2046.47" height="1152.07" preserveAspectRatio="none"/>
+</g>
+<g id="shape-8" data-name="等腰三角形 7" transform="rotate(90 316.33 357.8)">
+<polygon points="316.33,114.67 737.2,600.93 -104.54,600.93" fill="#F8AC63" fill-opacity="0.48" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-9" data-name="文本框 8">
+<rect x="638.8" y="222.29" width="419.2" height="106.53" fill="none"/>
+<text x="648.4" y="295.09" text-anchor="start" xml:space="preserve" font-family="&quot;方正锐正黑_GBK&quot;, sans-serif" font-size="80" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="80">请输入标题</tspan></text>
+</g>
+<g id="shape-15" data-name="等腰三角形 14" transform="rotate(90 243.2 360)">
+<polygon points="243.2,116.87 664.06,603.13 -177.67,603.13" fill="#C17715" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-2" data-name="文本框 1">
+<rect x="100.92" y="222.26" width="179.73" height="164.67" fill="none"/>
+<text x="110.52" y="335.86" text-anchor="start" xml:space="preserve" font-family="&quot;方正锐正黑_GBK&quot;, sans-serif" font-size="128" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="128">01</tspan></text>
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="100.96" y="390.59" width="210.13" height="54.8" fill="none"/>
+<text x="110.56" y="427.13" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="37.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="37.33">PART ONE</tspan></text>
+</g>
+<g id="shape-27" data-name="矩形 26">
+<rect x="638.83" y="328.83" width="535.76" height="60.47" fill="none"/>
+<text x="648.43" y="345.53" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪旗黑-45S&quot;, &quot;微软雅黑 Light&quot;, Arial, sans-serif" font-size="14" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo </tspan><tspan x="648.43" dy="21" fill="#FFFFFF" font-size="14">ligula eget dolorLorem ipsum dolor sit amet, consectetuer adipiscing elit. </tspan></text>
+</g></svg>

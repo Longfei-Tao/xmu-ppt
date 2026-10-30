@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-3" data-name="图片 2">
+<image href="assets/image1.jpg" x="0" y="0" width="1280" height="726.87" preserveAspectRatio="none"/>
+</g>
+<g id="shape-5" data-name="图片 4">
+<image href="assets/image2.png" x="60.07" y="54.13" width="161.27" height="161.27" preserveAspectRatio="none"/>
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="776.49" y="102.74" width="443.44" height="242.34" fill="none"/>
+<text x="1210.33" y="168.74" text-anchor="end" xml:space="preserve" font-family="&quot;微软雅黑&quot;, &quot;Calibri Bold&quot;, sans-serif" font-size="72" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="72" font-weight="bold">厦门大学</tspan></text>
+<text x="1210.33" y="255.14" text-anchor="end" xml:space="preserve" font-family="&quot;微软雅黑&quot;, &quot;Calibri Bold&quot;, sans-serif" font-size="72" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="72" font-weight="bold">PPT</tspan><tspan fill="#FFFFFF" font-size="72" font-weight="bold">模板</tspan></text>
+<text x="1210.33" y="321.14" text-anchor="end" xml:space="preserve" font-family="&quot;Calibri Bold&quot;, &quot;黑体&quot;, sans-serif" font-size="48" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="48" font-weight="bold">LIGHT AND SHADOW</tspan></text>
+</g>
+<g id="shape-8" data-name="直接连接符 7">
+<line x1="965.67" y1="457.6" x2="1201.4" y2="457.6" stroke="#FFFFFF" fill="#4472C4" stroke-width="1"/>
+</g>
+<g id="shape-9" data-name="文本框 8">
+<rect x="937.2" y="460.13" width="264.2" height="110.33" fill="none"/>
+<text x="1191.8" y="483.07" text-anchor="end" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="21.33" fill="#BDD7EE" font-weight="bold"><tspan fill="#BDD7EE" font-size="21.33" font-weight="bold">REPORTER</tspan><tspan fill="#BDD7EE" font-size="21.33" font-weight="bold">：</tspan><tspan fill="#BDD7EE" font-size="21.33" font-weight="bold">XXX</tspan></text>
+<text x="1191.8" y="510.8" text-anchor="end" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="21.33" fill="#BDD7EE" font-weight="bold"><tspan fill="#BDD7EE" font-size="21.33" font-weight="bold">DATA</tspan><tspan fill="#BDD7EE" font-size="21.33" font-weight="bold">：</tspan><tspan fill="#BDD7EE" font-size="21.33" font-weight="bold">XXX</tspan></text>
+
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="814.25" y="340.27" width="398.67" height="138.8" fill="none"/>
+<text x="1203.32" y="363.2" text-anchor="end" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#BDD7EE"><tspan fill="#BDD7EE" font-size="21.33">——Put your text here, pay </tspan><tspan x="1203.32" dy="25.6" fill="#BDD7EE" font-size="21.33">attention to the short and clear </tspan><tspan x="1203.32" dy="25.6" fill="#BDD7EE" font-size="21.33">expression of the sentence, and </tspan><tspan x="1203.32" dy="25.6" fill="#BDD7EE" font-size="21.33">divide the content into several </tspan><tspan x="1203.32" dy="25.6" fill="#BDD7EE" font-size="21.33">points.</tspan></text>
+
+</g></svg>

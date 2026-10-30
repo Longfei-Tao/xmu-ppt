@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="bggrad1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient><clipPath id="clip1" clipPathUnits="userSpaceOnUse"><path d="M 272.52 0 L 1280 0 L 1280 720 L 272.52 720 L 285.04 711.27 C 399.17 627.78 471.91 501.42 471.91 360 C 471.91 218.58 399.17 92.22 285.04 8.73 L 272.52 0 Z"/></clipPath><linearGradient id="ggrad2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.76"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="url(#bggrad1)"/>
+<g id="shape-4" data-name="图片 3">
+<image href="assets/image5.jpg" x="-0.58" y="-0.41" width="479.05" height="720" preserveAspectRatio="none"/>
+</g>
+<g id="shape-10" data-name="矩形 9">
+<rect x="-6.05" y="0" width="512.2" height="719.59" fill="#F8CBAD" fill-opacity="0.33" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-9" data-name="任意多边形: 形状 8">
+<image clip-path="url(#clip1)" href="assets/image6.jpeg" x="272.52" y="0" width="1007.48" height="720" preserveAspectRatio="none"/>
+<path d="M 272.52 0 L 1280 0 L 1280 720 L 272.52 720 L 285.04 711.27 C 399.17 627.78 471.91 501.42 471.91 360 C 471.91 218.58 399.17 92.22 285.04 8.73 L 272.52 0 Z" fill="none" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-12" data-name="任意多边形: 形状 11">
+<path d="M 272.52 0 L 1280 0 L 1280 720 L 272.52 720 L 285.04 711.27 C 399.17 627.78 471.91 501.42 471.91 360 C 471.91 218.58 399.17 92.22 285.04 8.73 L 272.52 0 Z" fill="url(#ggrad2)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-13" data-name="文本框 12">
+<rect x="728.75" y="-19.4" width="416" height="231.84" fill="none"/>
+<text x="738.35" y="98.73" text-anchor="start" xml:space="preserve" font-family="&quot;庞门正道粗书体&quot;, sans-serif" font-size="133.33" fill="#DD6D21"><tspan fill="#DD6D21" font-size="133.33">目录</tspan></text>
+</g>
+<g id="shape-5" data-name="组合 4">
+<g id="shape-14" data-name="椭圆 13">
+<ellipse cx="699.3" cy="259.22" rx="40.5" ry="40.5" fill="#DD6D21" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-19" data-name="文本框 18">
+<rect x="647.03" y="207.05" width="104.53" height="86.66" fill="none"/>
+<text x="699.3" y="255.24" text-anchor="middle" xml:space="preserve" font-family="&quot;庞门正道粗书体&quot;, Arial, sans-serif" font-size="48" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="48">1</tspan></text>
+</g>
+</g>
+<g id="shape-6" data-name="组合 5">
+<g id="shape-15" data-name="椭圆 14">
+<ellipse cx="699.3" cy="373.81" rx="40.5" ry="40.5" fill="#DD6D21" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-20" data-name="文本框 19">
+<rect x="647.03" y="320.63" width="104.53" height="86.66" fill="none"/>
+<text x="699.3" y="368.76" text-anchor="middle" xml:space="preserve" font-family="&quot;庞门正道粗书体&quot;, Arial, sans-serif" font-size="48" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="48">2</tspan></text>
+</g>
+</g>
+<g id="shape-7" data-name="组合 6">
+<g id="shape-16" data-name="椭圆 15">
+<ellipse cx="699.3" cy="480.99" rx="40.5" ry="40.5" fill="#DD6D21" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-21" data-name="文本框 20">
+<rect x="647.03" y="427.57" width="104.53" height="86.66" fill="none"/>
+<text x="699.3" y="475.7" text-anchor="middle" xml:space="preserve" font-family="&quot;庞门正道粗书体&quot;, Arial, sans-serif" font-size="48" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="48">3</tspan></text>
+</g>
+</g>
+<g id="shape-3" data-name="组合 2">
+<g id="shape-17" data-name="椭圆 16">
+<ellipse cx="699.3" cy="596.6" rx="40.5" ry="40.5" fill="#DD6D21" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-22" data-name="文本框 21">
+<rect x="647.03" y="541.01" width="104.53" height="86.66" fill="none"/>
+<text x="699.3" y="589.14" text-anchor="middle" xml:space="preserve" font-family="&quot;庞门正道粗书体&quot;, Arial, sans-serif" font-size="48" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="48">4</tspan></text>
+</g>
+</g>
+<g id="shape-23" data-name="文本框 22">
+<rect x="749.49" y="205.78" width="305.22" height="95.21" fill="none"/>
+<text x="759.09" y="255.91" text-anchor="start" xml:space="preserve" font-family="&quot;庞门正道粗书体&quot;, sans-serif" font-size="53.33" fill="#DD6D21"><tspan fill="#DD6D21" font-size="53.33">学校信息</tspan></text>
+</g>
+<g id="shape-24" data-name="文本框 23">
+<rect x="751.44" y="316.26" width="305.22" height="95.21" fill="none"/>
+<text x="761.04" y="366.4" text-anchor="start" xml:space="preserve" font-family="&quot;庞门正道粗书体&quot;, sans-serif" font-size="53.33" fill="#DD6D21"><tspan fill="#DD6D21" font-size="53.33">文化传统</tspan></text>
+</g>
+<g id="shape-25" data-name="文本框 24">
+<rect x="751.44" y="426.92" width="305.22" height="95.21" fill="none"/>
+<text x="761.04" y="477.06" text-anchor="start" xml:space="preserve" font-family="&quot;庞门正道粗书体&quot;, sans-serif" font-size="53.33" fill="#DD6D21"><tspan fill="#DD6D21" font-size="53.33">历史沿革</tspan></text>
+</g>
+<g id="shape-32" data-name="图片 31">
+<image href="assets/image7.png" x="-344.8" y="-28.25" width="801.35" height="791.18" preserveAspectRatio="none"/>
+</g>
+<g id="shape-33" data-name="图片 32" transform="rotate(257.48 1221.39 74.93)">
+<image href="assets/image3.png" x="1062.25" y="-71.8" width="318.28" height="293.46" preserveAspectRatio="none"/>
+</g>
+<g id="shape-34" data-name="图片 33">
+<svg x="1077.43" y="601.13" width="227.23" height="224.59" viewBox="0 0.32634 0.62845 0.67366" preserveAspectRatio="none"><image href="assets/image4.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-26" data-name="文本框 25">
+<rect x="756.03" y="541.45" width="305.22" height="95.21" fill="none"/>
+<text x="765.63" y="591.58" text-anchor="start" xml:space="preserve" font-family="&quot;庞门正道粗书体&quot;, sans-serif" font-size="53.33" fill="#DD6D21"><tspan fill="#DD6D21" font-size="53.33">师资力量</tspan></text>
+</g>
+<g id="shape-27" data-name="文本框 26">
+<rect x="730.37" y="37.56" width="303.95" height="124.4" fill="none"/>
+<text x="739.97" y="103.56" text-anchor="start" xml:space="preserve" font-family="Arial, &quot;庞门正道粗书体&quot;, sans-serif" font-size="72" fill="#DD6D21" fill-opacity="0.15"><tspan fill="#DD6D21" font-size="72" fill-opacity="0.15">contents</tspan></text>
+</g>
+<g id="shape-18" data-name="直接连接符 17">
+<line x1="756.03" y1="316.26" x2="1043.66" y2="316.26" stroke-width="1.333" stroke-dasharray="8 4" fill="#ED7D31" stroke="#ED7D31"/>
+</g>
+<g id="shape-36" data-name="直接连接符 35">
+<line x1="756.03" y1="426.92" x2="1043.66" y2="426.92" stroke-width="1.333" stroke-dasharray="8 4" fill="#ED7D31" stroke="#ED7D31"/>
+</g>
+<g id="shape-40" data-name="直接连接符 39">
+<line x1="756.03" y1="537.59" x2="1043.66" y2="537.59" stroke-width="1.333" stroke-dasharray="8 4" fill="#ED7D31" stroke="#ED7D31"/>
+</g></svg>

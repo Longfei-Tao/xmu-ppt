@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="txtgrad1" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="1" stop-color="#F9F8CA"/><stop offset="0.06" stop-color="#4EAADD"/></linearGradient><clipPath id="clip1" clipPathUnits="userSpaceOnUse"><ellipse cx="572.63" cy="156.77" rx="50.17" ry="50.17"/></clipPath><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feFlood flood-color="#000000" flood-opacity="0.5" result="flood"/><feComposite in="flood" in2="SourceAlpha" operator="out" result="inverted"/><feGaussianBlur in="inverted" stdDeviation="3.33" result="blurred"/><feOffset in="blurred" dx="5.3" dy="-0.56" result="offset"/><feComposite in="offset" in2="SourceAlpha" operator="in" result="innerShadow"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="innerShadow"/></feMerge></filter><clipPath id="clip2" clipPathUnits="userSpaceOnUse"><ellipse cx="660.23" cy="285.03" rx="50.17" ry="50.17"/></clipPath><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feFlood flood-color="#000000" flood-opacity="0.5" result="flood"/><feComposite in="flood" in2="SourceAlpha" operator="out" result="inverted"/><feGaussianBlur in="inverted" stdDeviation="3.33" result="blurred"/><feOffset in="blurred" dx="0" dy="-5.33" result="offset"/><feComposite in="offset" in2="SourceAlpha" operator="in" result="innerShadow"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="innerShadow"/></feMerge></filter><clipPath id="clip3" clipPathUnits="userSpaceOnUse"><ellipse cx="755.7" cy="418.07" rx="50.17" ry="50.17"/></clipPath><filter id="fx4" x="-25%" y="-25%" width="150%" height="150%"><feFlood flood-color="#000000" flood-opacity="0.5" result="flood"/><feComposite in="flood" in2="SourceAlpha" operator="out" result="inverted"/><feGaussianBlur in="inverted" stdDeviation="3.33" result="blurred"/><feOffset in="blurred" dx="0" dy="-5.33" result="offset"/><feComposite in="offset" in2="SourceAlpha" operator="in" result="innerShadow"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="innerShadow"/></feMerge></filter><clipPath id="clip4" clipPathUnits="userSpaceOnUse"><ellipse cx="843.63" cy="551.1" rx="50.17" ry="50.17"/></clipPath><filter id="fx5" x="-25%" y="-25%" width="150%" height="150%"><feFlood flood-color="#000000" flood-opacity="0.5" result="flood"/><feComposite in="flood" in2="SourceAlpha" operator="out" result="inverted"/><feGaussianBlur in="inverted" stdDeviation="3.33" result="blurred"/><feOffset in="blurred" dx="0" dy="-5.33" result="offset"/><feComposite in="offset" in2="SourceAlpha" operator="in" result="innerShadow"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="innerShadow"/></feMerge></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-12" data-name="文本框 11">
+<rect x="0" y="16.67" width="327.8" height="546" fill="none"/>
+<text x="9.6" y="209.6" text-anchor="start" xml:space="preserve" font-family="&quot;方正粗黑宋简体&quot;, sans-serif" font-size="221.33" fill="url(#txtgrad1)"><tspan fill="url(#txtgrad1)" font-size="221.33"> </tspan><tspan fill="#CFDFF7" font-size="221.33">目</tspan></text>
+<text x="9.6" y="475.2" text-anchor="start" xml:space="preserve" font-family="&quot;等线 Light&quot;, sans-serif" font-size="221.33" fill="#CFDFF7"><tspan fill="#CFDFF7" font-size="221.33">录</tspan></text>
+</g>
+<g id="shape-13" data-name="椭圆 12">
+<image clip-path="url(#clip1)" href="assets/image3.png" x="522.47" y="106.6" width="100.33" height="100.33" preserveAspectRatio="none"/>
+<ellipse cx="572.63" cy="156.77" rx="50.17" ry="50.17" fill="none" stroke="none" stroke-width="1" filter="url(#fx2)"/>
+</g>
+<g id="shape-14" data-name="文本框 13">
+<rect x="535.6" y="122.87" width="74" height="67.73" fill="none"/>
+<text x="545.2" y="168.47" text-anchor="start" xml:space="preserve" font-family="&quot;方正粗黑宋简体&quot;, sans-serif" font-size="48" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="48">01</tspan></text>
+</g>
+<g id="shape-15" data-name="椭圆 14">
+<image clip-path="url(#clip2)" href="assets/image3.png" x="610.07" y="234.87" width="100.33" height="100.33" preserveAspectRatio="none"/>
+<ellipse cx="660.23" cy="285.03" rx="50.17" ry="50.17" fill="none" stroke="none" stroke-width="1" filter="url(#fx3)"/>
+</g>
+<g id="shape-16" data-name="文本框 15">
+<rect x="623.2" y="251.13" width="74" height="67.73" fill="none"/>
+<text x="632.8" y="296.73" text-anchor="start" xml:space="preserve" font-family="&quot;方正粗黑宋简体&quot;, sans-serif" font-size="48" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="48">02</tspan></text>
+</g>
+<g id="shape-17" data-name="椭圆 16">
+<image clip-path="url(#clip3)" href="assets/image3.png" x="705.53" y="367.9" width="100.33" height="100.33" preserveAspectRatio="none"/>
+<ellipse cx="755.7" cy="418.07" rx="50.17" ry="50.17" fill="none" stroke="none" stroke-width="1" filter="url(#fx4)"/>
+</g>
+<g id="shape-18" data-name="文本框 17">
+<rect x="718.67" y="384.2" width="74" height="67.73" fill="none"/>
+<text x="728.27" y="429.8" text-anchor="start" xml:space="preserve" font-family="&quot;方正粗黑宋简体&quot;, sans-serif" font-size="48" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="48">03</tspan></text>
+</g>
+<g id="shape-19" data-name="椭圆 18">
+<image clip-path="url(#clip4)" href="assets/image3.png" x="793.47" y="500.93" width="100.33" height="100.33" preserveAspectRatio="none"/>
+<ellipse cx="843.63" cy="551.1" rx="50.17" ry="50.17" fill="none" stroke="none" stroke-width="1" filter="url(#fx5)"/>
+</g>
+<g id="shape-20" data-name="文本框 19">
+<rect x="806.6" y="517.2" width="74" height="67.73" fill="none"/>
+<text x="816.2" y="562.8" text-anchor="start" xml:space="preserve" font-family="&quot;方正粗黑宋简体&quot;, sans-serif" font-size="48" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="48">04</tspan></text>
+</g>
+<g id="shape-4" data-name="文本框 3">
+<rect x="657.6" y="130.2" width="274.93" height="54.8" fill="none"/>
+<text x="667.2" y="166.73" text-anchor="start" xml:space="preserve" font-family="&quot;等线 Light&quot;, sans-serif" font-size="37.33" fill="#7C9CCD" font-weight="bold"><tspan fill="#7C9CCD" font-size="37.33" font-weight="bold">单击此处编辑</tspan></text>
+</g>
+<g id="shape-5" data-name="文本框 4">
+<rect x="731.87" y="254.8" width="274.93" height="54.8" fill="none"/>
+<text x="741.47" y="291.33" text-anchor="start" xml:space="preserve" font-family="&quot;等线 Light&quot;, sans-serif" font-size="37.33" fill="#7C9CCD" font-weight="bold"><tspan fill="#7C9CCD" font-size="37.33" font-weight="bold">单击此处编辑</tspan></text>
+</g>
+<g id="shape-6" data-name="文本框 5">
+<rect x="835.6" y="389.8" width="274.93" height="54.8" fill="none"/>
+<text x="845.2" y="426.33" text-anchor="start" xml:space="preserve" font-family="&quot;等线 Light&quot;, sans-serif" font-size="37.33" fill="#7C9CBE" font-weight="bold"><tspan fill="#7C9CBE" font-size="37.33" font-weight="bold">单击此处编辑</tspan></text>
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="932.53" y="524.8" width="274.93" height="54.8" fill="none"/>
+<text x="942.13" y="561.33" text-anchor="start" xml:space="preserve" font-family="&quot;等线 Light&quot;, sans-serif" font-size="37.33" fill="#7C9CBE" font-weight="bold"><tspan fill="#7C9CBE" font-size="37.33" font-weight="bold">单击此处编辑</tspan></text>
+</g>
+<g id="shape-9" data-name="图片 8">
+<svg x="-131.27" y="0" width="992.13" height="720.07" viewBox="-0.00096 0 1.00192 1" preserveAspectRatio="none"><image href="assets/image4.jpeg" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g></svg>

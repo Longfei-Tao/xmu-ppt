@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <image x="0" y="0" width="1280" height="720" xlink:href="paper_bg.jpg" preserveAspectRatio="xMidYMid slice"/>
+
+  <image x="34.15" y="40.27" width="138.07" height="39.4" xlink:href="xmu_logo.png" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- 章节标签 -->
+  <text x="90" y="122" fill="#D37820" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="14" letter-spacing="4">{{SECTION_NAME}}</text>
+
+  <!-- 页面标题 -->
+  <text x="90" y="188" fill="#111111" font-family="华文中宋, Source Han Serif SC, 思源宋体, SimSun, serif" font-size="46" font-weight="bold">{{PAGE_TITLE}}</text>
+
+  <!-- 核心观点 -->
+  <text x="90" y="232" fill="#3E3E3E" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="20">{{KEY_MESSAGE}}</text>
+
+  <rect x="90" y="258" width="1100" height="2" fill="#647F5E" fill-opacity="0.55"/>
+
+  <!-- 内容区占位 -->
+  <rect x="90" y="288" width="1100" height="318" fill="#FFFFFF" fill-opacity="0.35" stroke="#9C9585" stroke-width="1" stroke-dasharray="8 8"/>
+  <text x="640" y="456" text-anchor="middle" fill="#8C8577" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="17">{{CONTENT_AREA}}</text>
+
+  <!-- 页脚 -->
+  <text x="90" y="660" fill="#7A7466" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="12">厦门大学 · {{SECTION_NAME}}</text>
+  <text x="1190" y="660" text-anchor="end" fill="#7A7466" font-family="Manrope, Arial, sans-serif" font-size="13">— {{PAGE_NUM}} —</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-7" data-name="图片 6">
+<image href="assets/image1.jpeg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none"/>
+</g>
+<g id="shape-22" data-name="组合 21">
+<g id="shape-15" data-name="平行四边形 7">
+<path d="M 270.72 585.47 L 406.59 246.3 L 1279.78 245.99 C 1280.56 359.1 1278.96 472.5 1279.75 585.6 L 270.72 585.47 Z" fill="#2F5597" fill-opacity="0.53" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-8" data-name="平行四边形 7">
+<path d="M 313.52 565.04 L 431.59 267.48 L 1279.83 267.48 C 1280.6 366.67 1278.49 465.86 1279.26 565.04 L 313.52 565.04 Z" fill="#2F5597" fill-opacity="0.84" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-11" data-name="文本框 10">
+<rect x="594.23" y="305.7" width="644.05" height="96.94" fill="none"/>
+<text x="603.83" y="371.7" text-anchor="start" xml:space="preserve" font-family="&quot;方正兰亭粗黑简体&quot;, sans-serif" font-size="72" fill="#F2F2F2"><tspan fill="#F2F2F2" font-size="72">厦门大学 </tspan><tspan fill="#F2F2F2" font-size="72">PPT</tspan><tspan fill="#F2F2F2" font-size="72">模板</tspan></text>
+</g>
+<g id="shape-13" data-name="文本框 12">
+<rect x="374.56" y="485.72" width="511.31" height="56.22" fill="none"/>
+<text x="384.16" y="505.26" text-anchor="start" xml:space="preserve" font-family="Calibri, &quot;等线 Light&quot;, sans-serif" font-size="17.33" fill="#F2F2F2"><tspan fill="#F2F2F2" font-size="17.33">The user can demonstrate on a projector or computer, </tspan><tspan x="384.16" dy="19.76" fill="#F2F2F2" font-size="17.33">or print the presentation and make it into a in a wider </tspan><tspan x="384.16" dy="19.76" fill="#F2F2F2" font-size="17.33">field</tspan></text>
+</g>
+<g id="shape-14" data-name="文本框 13">
+<rect x="871.51" y="420.31" width="350.97" height="38.78" fill="none"/>
+<text x="881.11" y="445.51" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="24" fill="#F2F2F2"><tspan fill="#F2F2F2" font-size="24">汇报人 </tspan><tspan fill="#F2F2F2" font-size="24">| </tspan><tspan fill="#F2F2F2" font-size="24">小夏      指导老师 </tspan><tspan fill="#F2F2F2" font-size="24">| XXX</tspan></text>
+</g>
+</g>
+<g id="shape-21" data-name="图片 20">
+<image href="assets/image2.png" x="24.84" y="633.11" width="230.61" height="64.06" preserveAspectRatio="none"/>
+</g></svg>

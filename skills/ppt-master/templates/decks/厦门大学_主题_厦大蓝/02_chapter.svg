@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><radialGradient id="bggrad1" cx="0.5" cy="0.5" r="0.5"><stop offset="0.35" stop-color="#77A0D3"/><stop offset="0" stop-color="#6295CA"/></radialGradient><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feFlood flood-color="#000000" flood-opacity="0.5" result="flood"/><feComposite in="flood" in2="SourceAlpha" operator="out" result="inverted"/><feGaussianBlur in="inverted" stdDeviation="3.33" result="blurred"/><feOffset in="blurred" dx="3.77" dy="-3.77" result="offset"/><feComposite in="offset" in2="SourceAlpha" operator="in" result="innerShadow"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="innerShadow"/></feMerge></filter><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4" dy="0" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4"/></filter></defs><rect x="0" y="0" width="1280" height="720" fill="url(#bggrad1)"/>
+<g id="shape-8" data-name="矩形 7">
+<rect x="-0.07" y="354" width="1280" height="331.2" fill="#FFFFFF" fill-opacity="0.5" stroke="#6096E6" stroke-width="1"/>
+</g>
+<g id="shape-4" data-name="图片 3">
+<image href="assets/image15.jpeg" x="0" y="0" width="536.13" height="720" preserveAspectRatio="none"/>
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="426" y="49.47" width="521.6" height="80.67" fill="none"/>
+<text x="435.6" y="104.13" text-anchor="start" xml:space="preserve" font-family="&quot;等线 Light&quot;, sans-serif" font-size="58.67" fill="#FFFFFF" letter-spacing="4.13"><tspan fill="#FFFFFF" font-size="58.67" letter-spacing="4.13">单击此处编辑标题</tspan></text>
+</g>
+<g id="shape-13" data-name="图表 12">
+<rect x="563.4" y="373.07" width="607" height="312.13" fill="none" stroke="#999999" stroke-dasharray="4 4"/><text x="866.9" y="529.13" text-anchor="middle" font-size="14" fill="#999999">[chart]</text>
+</g>
+<g id="shape-17" data-name="内容占位符 16">
+<rect x="563.4" y="139.53" width="651.2" height="206" filter="url(#fx1)" fill="none"/>
+<text x="573" y="164.51" text-anchor="start" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, +mn-cs, sans-serif" font-size="23.73" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="23.73">单击此处添加文本，单击此处添加文本，单击此处添加文本</tspan><tspan x="573" dy="28.48" fill="#FFFFFF" font-size="23.73">，单击此处添加文本，单击此处添加文本，单击此处添加文</tspan><tspan x="573" dy="28.48" fill="#FFFFFF" font-size="23.73">本，单击此处添加文本，单击此处添加文本。</tspan></text>
+
+
+
+
+</g>
+<g id="shape-38" data-name="斜纹 37" transform="rotate(270 60.2 650.27)">
+<rect x="-9.53" y="590.07" width="139.47" height="120.4" fill="#F2F2F2" stroke="none" stroke-width="1" filter="url(#fx2)"/>
+</g>
+<g id="shape-3" data-name="L 形 2" transform="translate(1213.47 74.43) scale(-1 -1) translate(-1213.47 -74.43)">
+<rect x="1170.4" y="30.4" width="86.13" height="88.07" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+</g></svg>

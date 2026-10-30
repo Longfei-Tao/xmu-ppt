@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="txtgrad1" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#203864"/><stop offset="0.5" stop-color="#4472C4"/><stop offset="1" stop-color="#8FAADC"/></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-2" data-name="图片 1">
+<image href="assets/image4.png" x="0" y="0" width="1289.93" height="732.8" preserveAspectRatio="none"/>
+</g>
+<g id="shape-3" data-name="文本框 2">
+<rect x="662.4" y="78.6" width="556" height="151.73" fill="none"/>
+<text x="672" y="183.13" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Bold&quot;, sans-serif" font-size="117.33" fill="url(#txtgrad1)" font-weight="bold"><tspan fill="url(#txtgrad1)" font-size="117.33" font-weight="bold">TITLE</tspan></text>
+</g>
+<g id="shape-4" data-name="文本框 3">
+<rect x="683.73" y="266.07" width="556" height="164.67" fill="none"/>
+<text x="693.33" y="298.07" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="32" fill="#2E75B6"><tspan fill="#2E75B6" font-size="32">Put your text here, pay </tspan><tspan x="693.33" dy="38.4" fill="#2E75B6" font-size="32">attention to the short and clear </tspan><tspan x="693.33" dy="38.4" fill="#2E75B6" font-size="32">expression of the sentence, and </tspan><tspan x="693.33" dy="38.4" fill="#2E75B6" font-size="32">divide the content into several </tspan><tspan x="693.33" dy="38.4" fill="#2E75B6" font-size="32">points.</tspan></text>
+</g>
+<g id="shape-7" data-name="直接连接符 6">
+<line x1="695.4" y1="620.6" x2="1046.87" y2="620.6" fill="#4472C4" stroke="#4472C4" stroke-width="1"/>
+</g>
+<g id="shape-8" data-name="文本框 7">
+<rect x="683.73" y="637.67" width="514.47" height="48.33" fill="none"/>
+<text x="693.33" y="656.07" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">Note: put your text here, pay attention to the short and </tspan><tspan x="693.33" dy="19.2" fill="#000000" font-size="16">clear expression of the sentence, and divide the content into </tspan><tspan x="693.33" dy="19.2" fill="#000000" font-size="16">several points.</tspan></text>
+</g></svg>

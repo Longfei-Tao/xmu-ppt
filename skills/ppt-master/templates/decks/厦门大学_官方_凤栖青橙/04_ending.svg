@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <image x="0" y="0" width="1280" height="720" xlink:href="paper_bg.jpg" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- 绿色五段色带 -->
+  <rect x="250" y="105" width="150" height="300" fill="#C6D3C0"/>
+  <rect x="400" y="105" width="150" height="300" fill="#AFC2A8"/>
+  <rect x="550" y="105" width="150" height="300" fill="#96AD8D"/>
+  <rect x="700" y="105" width="150" height="300" fill="#7A9573"/>
+  <rect x="850" y="105" width="150" height="300" fill="#5E7A60"/>
+
+  <!-- 陈嘉庚雕像 -->
+  <image x="40" y="360" width="230" height="354" xlink:href="statue.png" preserveAspectRatio="xMidYMid slice"/>
+
+  <image x="34.15" y="40.27" width="138.07" height="39.4" xlink:href="xmu_logo.png" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- 感谢垂听 -->
+  <text x="1000" y="240" text-anchor="end" fill="#FFFFFF" font-family="华文中宋, Source Han Serif SC, 思源宋体, SimSun, serif" font-size="84" font-weight="bold">{{THANK_LINE_1}}</text>
+  <text x="1000" y="340" text-anchor="end" fill="#FFFFFF" font-family="华文中宋, Source Han Serif SC, 思源宋体, SimSun, serif" font-size="84" font-weight="bold">{{THANK_LINE_2}}</text>
+
+  <text x="1000" y="452" text-anchor="end" fill="#3E3E3E" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="20">{{THANK_YOU}}</text>
+
+  <!-- END -->
+  <text x="340" y="650" fill="#111111" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="26" letter-spacing="6">END</text>
+  <line x1="420" y1="642" x2="740" y2="642" stroke="#6B6558" stroke-width="1"/>
+
+  <text x="1000" y="660" text-anchor="end" fill="#6B6558" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="14">{{CONTACT_INFO}}</text>
+</svg>

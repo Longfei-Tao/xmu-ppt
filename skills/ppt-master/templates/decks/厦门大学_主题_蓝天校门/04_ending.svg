@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#020E23"/><stop offset="0.5" stop-color="#051F50"/><stop offset="1" stop-color="#072E76"/></linearGradient><linearGradient id="ggrad2" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#020E23"/><stop offset="0.5" stop-color="#051F50"/><stop offset="1" stop-color="#072E76"/></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="layout-shape-1025" data-name="图片 1024">
+<image href="assets/image4.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none"/>
+</g>
+<g id="layout-shape-1042" data-name="图片 1041">
+<image href="assets/image5_fx_865c50a5.png" x="-110.71" y="1.17" width="718.83" height="718.83" preserveAspectRatio="none"/>
+</g>
+<g id="layout-shape-20" data-name="矩形 19">
+<rect x="649.6" y="291.09" width="69.85" height="4.8" fill="#0E306F" stroke="none"/>
+</g>
+<g id="layout-shape-14" data-name="矩形 13">
+<rect x="0" y="699.77" width="1280" height="20.23" fill="url(#ggrad1)" stroke="none" stroke-width="1"/>
+</g>
+<g id="layout-shape-13" data-name="矩形 12">
+<rect x="0" y="0" width="1280" height="20.23" fill="url(#ggrad2)" stroke="none" stroke-width="1"/>
+</g>
+<g id="layout-shape-1032" data-name="图片 1031">
+<image href="assets/image6.png" x="1156.8" y="616.58" width="123.2" height="83.2" preserveAspectRatio="none"/>
+</g>
+<g id="layout-shape-1043" data-name="Picture 2">
+<image href="assets/image7.png" x="1096.55" y="38.42" width="155.26" height="44.59" preserveAspectRatio="none"/>
+</g>
+<g id="shape-2" data-name="文本占位符 1" data-ph-type="body">
+<rect x="640" y="312.25" width="488.43" height="76.17" fill="none"/>
+<text x="884.21" y="371.45" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="64" fill="#013876" font-weight="bold" letter-spacing="1.33"><tspan fill="#013876" font-size="64" font-weight="bold" letter-spacing="1.33">论文总结与致谢</tspan></text>
+
+</g>
+<g id="shape-3" data-name="文本占位符 2" data-ph-type="body">
+<rect x="649.6" y="407.75" width="563.67" height="44.59" fill="none"/>
+<text x="659.2" y="426.15" text-anchor="start" xml:space="preserve" font-family="Arial, sans-serif" font-size="16" fill="#BFBFBF" letter-spacing="6.67"><tspan fill="#BFBFBF" font-size="16" letter-spacing="6.67">THE SUMMARY AND ACKNOWLEDGMENT</tspan></text>
+</g>
+<g id="shape-4" data-name="文本占位符 3" data-ph-type="body">
+<rect x="640" y="224.28" width="275.99" height="70.03" fill="none"/>
+<text x="649.6" y="310.68" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, &quot;微软雅黑 Light&quot;, sans-serif" font-size="96" fill="#7F7F7F"><tspan fill="#7F7F7F" font-size="96">PART FOUR</tspan></text>
+</g></svg>

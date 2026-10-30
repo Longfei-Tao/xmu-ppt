@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <!-- 宣纸底纹 -->
+  <image x="0" y="0" width="1280" height="720" xlink:href="paper_bg.jpg" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- 绿瓦屋顶插画 + 陈嘉庚雕像 -->
+  <image x="0" y="273.4" width="989" height="446.6" xlink:href="roof.png" preserveAspectRatio="xMidYMid slice"/>
+  <image x="40" y="360" width="230" height="354" xlink:href="statue.png" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- 校徽 -->
+  <image x="34.15" y="40.27" width="138.07" height="39.4" xlink:href="xmu_logo.png" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- 副标题 -->
+  <text x="1145.92" y="196" text-anchor="end" fill="#1A1A1A" font-family="华文中宋, Source Han Serif SC, 思源宋体, SimSun, serif" font-size="36">{{SUBTITLE}}</text>
+
+  <!-- 主标题 -->
+  <text x="1145.92" y="330" text-anchor="end" fill="#111111" font-family="华文中宋, Source Han Serif SC, 思源宋体, SimSun, serif" font-size="74" font-weight="bold">{{TITLE}}</text>
+
+  <!-- 分隔线 -->
+  <line x1="1005.98" y1="465.14" x2="1150.68" y2="465.14" stroke="#525252" stroke-width="1.333"/>
+
+  <!-- 汇报人信息 -->
+  <text x="1154.8" y="511.87" text-anchor="end" fill="#1A1A1A" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="20">汇报人：{{AUTHOR}}</text>
+  <text x="1154.8" y="544.4" text-anchor="end" fill="#1A1A1A" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="20">指导老师：{{ADVISOR}}</text>
+  <text x="1154.8" y="582" text-anchor="end" fill="#6B6558" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="15">{{INSTITUTION}} · {{DATE}}</text>
+</svg>

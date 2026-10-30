@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A2CAFF"/>
+      <stop offset="45%" stop-color="#CEDCFF"/>
+      <stop offset="100%" stop-color="#FAEEFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1280" height="720" fill="url(#bgGradient)"/>
+
+  <!-- 校徽 -->
+  <image x="1120" y="50" width="110" height="32" xlink:href="xmu_logo.png" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- 扁平化建筑插画 -->
+  <image x="873" y="325" width="370" height="395" xlink:href="building.png" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- 主标题 -->
+  <text x="100" y="235" fill="#4661CC" font-family="方正兰亭黑, FZLanTingHeiS-DB-GB, 微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="64" font-weight="bold">{{TITLE}}</text>
+
+  <!-- 副标题 -->
+  <text x="100" y="360" fill="#6585CC" font-family="方正兰亭黑, FZLanTingHeiS-DB-GB, 微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="32" font-weight="bold">——{{SUBTITLE}}</text>
+
+  <!-- 汇报信息 -->
+  <text x="100" y="560" fill="#4661CC" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="20">汇报人：{{AUTHOR}}</text>
+  <text x="100" y="605" fill="#4661CC" font-family="Manrope, Arial, sans-serif" font-size="13" font-weight="bold" letter-spacing="2">{{DATE}}</text>
+  <text x="100" y="640" fill="#4661CC" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="14">{{INSTITUTION}}</text>
+</svg>

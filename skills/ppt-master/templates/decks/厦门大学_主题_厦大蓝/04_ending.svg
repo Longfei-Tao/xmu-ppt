@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><pattern id="bgpatt1" patternUnits="userSpaceOnUse" width="8" height="8" data-pptx-pattern="pct30" data-pptx-fg="#EAEAED" data-pptx-bg="#FFFFFF"><rect width="8" height="8" fill="#FFFFFF"/><circle cx="4.0" cy="4.0" r="2.472" fill="#EAEAED"/></pattern><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="-4" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4"/></filter><pattern id="gpatt2" patternUnits="userSpaceOnUse" width="8" height="8" data-pptx-pattern="pct25" data-pptx-fg="#5E75BA" data-pptx-bg="#FFFFFF"><rect width="8" height="8" fill="#FFFFFF"/><circle cx="4.0" cy="4.0" r="2.257" fill="#5E75BA"/></pattern><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="-2.83" dy="-2.83" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4"/></filter></defs><rect x="0" y="0" width="1280" height="720" fill="url(#bgpatt1)"/>
+<g id="shape-8" data-name="图片 7">
+<image href="assets/image21.jpeg" x="0" y="-40.4" width="1280" height="853.33" preserveAspectRatio="none"/>
+</g>
+<g id="shape-9" data-name="矩形 8">
+<rect x="91.07" y="67.67" width="1097.93" height="637.27" fill="#FFFFFF" stroke="none" stroke-width="1" filter="url(#fx1)"/>
+</g>
+<g id="shape-10" data-name="标题 9" data-ph-type="ctrTitle">
+<rect x="125.61" y="253.13" width="1028.79" height="168.14" fill="none"/>
+<text x="640" y="398.75" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, Arial, sans-serif" font-size="117.33" fill="#1D2643"><tspan fill="#1D2643" font-size="117.33">THANKS</tspan></text>
+</g>
+<g id="shape-3" data-name="矩形 2">
+<rect x="108.13" y="89.2" width="1063.8" height="594.2" fill="none" stroke-width="2.333" stroke="#FF9800" stroke-dasharray="8 4 2 4"/>
+</g>
+<g id="shape-2" data-name="斜纹 1" transform="translate(1118.57 617.1) scale(-1 -1) translate(-1118.57 -617.1)">
+<rect x="957.13" y="421.27" width="322.87" height="391.67" fill="url(#gpatt2)" stroke="none" stroke-width="1" filter="url(#fx2)"/>
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="466.4" y="474.53" width="347.2" height="38.67" fill="none"/>
+<text x="476" y="499.73" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#404040"><tspan fill="#404040" font-size="24">汇报人：</tspan><tspan fill="#404040" font-size="24">xxx      </tspan><tspan fill="#404040" font-size="24">指导老师：</tspan><tspan fill="#404040" font-size="24">xxx</tspan></text>
+</g></svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4"/></filter></defs><image href="assets/image1.jpg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none"/>
+<g id="layout-shape-7" data-name="图片 6">
+<svg x="473" y="0" width="809.33" height="720" viewBox="0 0 0.9477 1" preserveAspectRatio="none"><image href="assets/image2.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="layout-shape-9" data-name="图片 8">
+<image href="assets/image3.png" x="44.33" y="36.27" width="265.53" height="76.27" preserveAspectRatio="none"/>
+</g>
+<g id="shape-18" data-name="矩形 17">
+<rect x="0" y="240.13" width="1282.33" height="211" fill="#002060" fill-opacity="0.81" stroke="none" stroke-width="1" filter="url(#fx1)"/>
+<text x="641.17" y="345.23" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, &quot;黑体&quot;, sans-serif" font-size="88" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="88">厦门大学毕业答辩PPT模板</tspan></text>
+<text x="641.17" y="407.77" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, &quot;黑体&quot;, sans-serif" font-size="37.33" fill="#F2F2F2" font-weight="bold"><tspan fill="#F2F2F2" font-size="37.33" font-weight="bold">Thesis</tspan><tspan fill="#F2F2F2" font-size="37.33" font-weight="bold"> Oral</tspan><tspan fill="#F2F2F2" font-size="37.33" font-weight="bold"> Defense PPT Template</tspan><tspan fill="#F2F2F2" font-size="37.33" font-weight="bold"> of </tspan><tspan fill="#F2F2F2" font-size="37.33" font-weight="bold">Xiamen University </tspan></text>
+</g>
+<g id="shape-2" data-name="文本框 1">
+<rect x="0.07" y="473.67" width="1282.27" height="41.87" fill="#FFFFFF" fill-opacity="0.66"/>
+<text x="641.2" y="501.13" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, &quot;黑体&quot;, sans-serif" font-size="26.67" fill="#002060" font-weight="bold"><tspan fill="#002060" font-size="26.67" font-weight="bold">答辩人：</tspan><tspan fill="#002060" font-size="26.67">XXX   </tspan><tspan fill="#002060" font-size="26.67" font-weight="bold">指导老师：</tspan><tspan fill="#002060" font-size="26.67">XXX    </tspan><tspan fill="#002060" font-size="26.67" font-weight="bold">答辩时间：</tspan><tspan fill="#002060" font-size="26.67" font-weight="bold"> </tspan><tspan fill="#002060" font-size="26.67">xxxx年xx月xx日        </tspan></text>
+</g></svg>

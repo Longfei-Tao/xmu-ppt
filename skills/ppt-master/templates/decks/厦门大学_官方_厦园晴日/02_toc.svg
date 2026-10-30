@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+
+  <rect x="45.81" y="41.03" width="1188.39" height="637.94" fill="none" stroke="#4874CB" stroke-width="1"/>
+
+  <path d="M 1149.91 0 L 1280 0 L 1280 96.05 L 1276.6 98.4 C 1267.41 101.26 1257.64 102.8 1247.5 102.8 C 1193.47 102.8 1149.66 58.99 1149.66 4.96 Z" fill="#BAE2FF"/>
+  <ellipse cx="1138.92" cy="83.47" rx="20.74" ry="20.74" fill="#005FA5"/>
+
+  <polygon points="1204.48,121.56 1214.25,138.39 1194.72,138.39" fill="#005FA5"/>
+  <polygon points="1204.48,147.1 1214.25,163.94 1194.72,163.94" fill="#005FA5"/>
+  <polygon points="1204.48,172.65 1214.25,189.49 1194.72,189.49" fill="#005FA5"/>
+  <polygon points="1204.48,198.2 1214.25,215.04 1194.72,215.04" fill="#005FA5"/>
+  <polygon points="1204.48,223.75 1214.25,240.59 1194.72,240.59" fill="#005FA5"/>
+
+  <path d="M 0 600 C 60 600 120 660 120 720 L 0 720 Z" fill="#BAE2FF"/>
+  <ellipse cx="145.29" cy="636.49" rx="20.74" ry="20.74" fill="#005FA5"/>
+
+  <polygon points="48.79,559.93 58.56,576.77 39.02,576.77" fill="#005FA5"/>
+  <polygon points="48.79,585.48 58.56,602.32 39.02,602.32" fill="#005FA5"/>
+  <polygon points="48.79,611.03 58.56,627.87 39.02,627.87" fill="#005FA5"/>
+  <polygon points="48.79,636.58 58.56,653.42 39.02,653.42" fill="#005FA5"/>
+  <polygon points="48.79,662.13 58.56,678.97 39.02,678.97" fill="#005FA5"/>
+
+  <rect x="1143.26" y="615.04" width="70.99" height="8.92" fill="#BAE2FF"/>
+  <rect x="1143.26" y="630.61" width="70.99" height="8.92" fill="#005FA5"/>
+  <rect x="1143.26" y="646.19" width="70.99" height="8.92" fill="#BAE2FF"/>
+
+  <!-- 目录胶囊标题 -->
+  <rect x="451.12" y="104.06" width="377.76" height="75.18" rx="37.59" fill="#005FA5"/>
+  <text x="640" y="153.32" text-anchor="middle" fill="#FFFFFF" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="42" font-weight="bold">目录/Contents</text>
+
+  <!-- 黑天鹅装饰 -->
+  <image x="330" y="126" width="102" height="58" xlink:href="swan.png" preserveAspectRatio="xMidYMid meet"/>
+  <g id="swan-mirror" transform="translate(1790.66,0) scale(-1,1)">
+    <image x="848" y="126" width="102" height="58" xlink:href="swan.png" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <!-- 四项目录 -->
+  <text x="244.64" y="359.17" text-anchor="middle" fill="#005FA5" font-family="Manrope, Arial, sans-serif" font-size="64" font-weight="bold">01</text>
+  <text x="297.12" y="338.86" fill="#1A1A1A" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="38">{{TOC_ITEM_1_TITLE}}</text>
+
+  <text x="747.46" y="359.17" text-anchor="middle" fill="#005FA5" font-family="Manrope, Arial, sans-serif" font-size="64" font-weight="bold">02</text>
+  <text x="805.21" y="338.86" fill="#1A1A1A" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="38">{{TOC_ITEM_2_TITLE}}</text>
+
+  <text x="244.64" y="516.34" text-anchor="middle" fill="#005FA5" font-family="Manrope, Arial, sans-serif" font-size="64" font-weight="bold">03</text>
+  <text x="297.12" y="496.03" fill="#1A1A1A" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="38">{{TOC_ITEM_3_TITLE}}</text>
+
+  <text x="747.46" y="516.34" text-anchor="middle" fill="#005FA5" font-family="Manrope, Arial, sans-serif" font-size="64" font-weight="bold">04</text>
+  <text x="805.21" y="496.03" fill="#1A1A1A" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="38">{{TOC_ITEM_4_TITLE}}</text>
+</svg>

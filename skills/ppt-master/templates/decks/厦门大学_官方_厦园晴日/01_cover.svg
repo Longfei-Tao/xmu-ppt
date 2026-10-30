@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+
+  <!-- 校园实景底图 -->
+  <image x="48.27" y="41" width="1183.67" height="638" xlink:href="campus_bg.jpg" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- 细边框 -->
+  <rect x="45.81" y="41.03" width="1188.39" height="637.94" fill="none" stroke="#4874CB" stroke-width="1"/>
+
+  <!-- 右上浅蓝弧形块 -->
+  <path d="M 1009.16 0 L 1280 0 L 1280 197.59 L 1269.79 202.43 C 1250.88 208.32 1230.78 211.48 1209.94 211.48 C 1098.77 211.48 1008.65 121.36 1008.65 10.19 Z" fill="#BAE2FF"/>
+  <!-- 左下浅蓝弧形块 -->
+  <path d="M 70.06 508.52 C 181.23 508.52 271.35 598.64 271.35 709.81 L 270.84 720 L 0 720 L 0 522.41 L 10.21 517.57 C 29.12 511.68 49.22 508.52 70.06 508.52 Z" fill="#BAE2FF"/>
+
+  <!-- 圆形与三角形装饰 -->
+  <ellipse cx="345.68" cy="670.88" rx="49.12" ry="49.12" fill="#005FA5"/>
+  <ellipse cx="940.61" cy="48.55" rx="49.12" ry="49.12" fill="#005FA5"/>
+
+  <polygon points="1234.19,52.48 1243.96,69.32 1224.43,69.32" fill="#005FA5"/>
+  <polygon points="1234.19,78.03 1243.96,94.87 1224.43,94.87" fill="#005FA5"/>
+  <polygon points="1234.19,103.58 1243.96,120.42 1224.43,120.42" fill="#005FA5"/>
+  <polygon points="1234.19,129.13 1243.96,145.97 1224.43,145.97" fill="#005FA5"/>
+  <polygon points="1234.19,154.68 1243.96,171.52 1224.43,171.52" fill="#005FA5"/>
+
+  <polygon points="48.79,559.93 58.56,576.77 39.02,576.77" fill="#005FA5"/>
+  <polygon points="48.79,585.48 58.56,602.32 39.02,602.32" fill="#005FA5"/>
+  <polygon points="48.79,611.03 58.56,627.87 39.02,627.87" fill="#005FA5"/>
+  <polygon points="48.79,636.58 58.56,653.42 39.02,653.42" fill="#005FA5"/>
+  <polygon points="48.79,662.13 58.56,678.97 39.02,678.97" fill="#005FA5"/>
+
+  <!-- 右下三道横条 -->
+  <rect x="1129.37" y="613.84" width="80.57" height="10.13" fill="#BAE2FF"/>
+  <rect x="1129.37" y="631.52" width="80.57" height="10.13" fill="#005FA5"/>
+  <rect x="1129.37" y="649.2" width="80.57" height="10.13" fill="#BAE2FF"/>
+
+  <!-- 校徽 -->
+  <image x="66.33" y="59.4" width="258.73" height="74.27" xlink:href="xmu_logo.png" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- 半透明白色信息卡 -->
+  <rect x="96.73" y="226" width="1087.13" height="272.6" fill="#FFFFFF" fill-opacity="0.79"/>
+
+  <text x="640" y="320" text-anchor="middle" fill="#1A1A1A" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="64" font-weight="bold">{{TITLE}}</text>
+
+  <text x="640" y="394" text-anchor="middle" fill="#005FA5" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="25" letter-spacing="6">{{SUBTITLE}}</text>
+
+  <line x1="250.22" y1="420" x2="1029.78" y2="420" stroke="#4874CB" stroke-width="1"/>
+
+  <text x="520" y="452" text-anchor="middle" fill="#1A1A1A" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="20">指导老师：{{ADVISOR}}</text>
+  <text x="790" y="452" text-anchor="middle" fill="#1A1A1A" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="20">答辩人：{{AUTHOR}}</text>
+  <text x="640" y="486" text-anchor="middle" fill="#005FA5" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="16">{{INSTITUTION}} · {{DATE}}</text>
+</svg>

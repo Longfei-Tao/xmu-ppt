@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><pattern id="gpatt1" patternUnits="userSpaceOnUse" width="8" height="8" data-pptx-pattern="pct20" data-pptx-fg="#EAA372" data-pptx-bg="#FFFFFF"><rect width="8" height="8" fill="#FFFFFF"/><circle cx="4.0" cy="4.0" r="2.019" fill="#EAA372"/></pattern><radialGradient id="ggrad2" cx="0.5" cy="0.5" r="0.5"><stop offset="0.3629" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="0.7435" stop-color="#FFFFFF" stop-opacity="0.16"/><stop offset="0.62" stop-color="#FFFFFF" stop-opacity="0.13"/><stop offset="0.5" stop-color="#FFFFFF"/><stop offset="0" stop-color="#FFFFFF"/></radialGradient><linearGradient id="ggrad3" x1="1.0915" y1="0.8415" x2="-0.0915" y2="0.1585"><stop offset="0.22" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#FFFFFF"/><stop offset="0.85" stop-color="#FFFFFF" stop-opacity="0.92"/><stop offset="0.69" stop-color="#FFFFFF"/><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient><linearGradient id="txtgrad4" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6F8FC"/><stop offset="0.74" stop-color="#DD6D21" stop-opacity="0.79"/><stop offset="0.83" stop-color="#DD6D21"/><stop offset="1" stop-color="#EAA372"/></linearGradient><linearGradient id="txtgrad5" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6F8FC"/><stop offset="0.3" stop-color="#DD6D21" stop-opacity="0.91"/><stop offset="0.83" stop-color="#DD6D21"/><stop offset="1" stop-color="#EAA372"/></linearGradient><linearGradient id="txtgrad6" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6F8FC"/><stop offset="0.42" stop-color="#DD6D21" stop-opacity="0.91"/><stop offset="0.83" stop-color="#DD6D21"/><stop offset="1" stop-color="#EAA372"/></linearGradient><linearGradient id="txtgrad7" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6F8FC"/><stop offset="0.31" stop-color="#DD6D21" stop-opacity="0.91"/><stop offset="0.83" stop-color="#DD6D21"/><stop offset="1" stop-color="#EAA372"/></linearGradient><linearGradient id="txtgrad8" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6F8FC"/><stop offset="0.74" stop-color="#DD6D21" stop-opacity="0.79"/><stop offset="0.83" stop-color="#DD6D21"/><stop offset="1" stop-color="#EAA372"/></linearGradient><linearGradient id="txtgrad9" x1="0.2808" y1="-0.1022" x2="0.7192" y2="1.1022"><stop offset="0" stop-color="#F6F8FC"/><stop offset="0.41" stop-color="#DD6D21" stop-opacity="0.43"/><stop offset="0.76" stop-color="#DD6D21"/><stop offset="1" stop-color="#EAA372"/></linearGradient><linearGradient id="txtgrad10" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6F8FC"/><stop offset="0.74" stop-color="#DD6D21" stop-opacity="0.79"/><stop offset="0.83" stop-color="#DD6D21"/><stop offset="1" stop-color="#EAA372"/></linearGradient><linearGradient id="txtgrad11" x1="0.1585" y1="-0.0915" x2="0.8415" y2="1.0915"><stop offset="0" stop-color="#F6F8FC"/><stop offset="0.52" stop-color="#DD6D21"/><stop offset="0.83" stop-color="#DD6D21"/><stop offset="1" stop-color="#EAA372"/></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-9" data-name="矩形 8">
+<rect x="-120.79" y="-115.3" width="928" height="928" fill="none" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-7" data-name="图片 6" transform="translate(817.35 360) scale(-1 1) translate(-817.35 -360)">
+<svg x="354.71" y="0" width="925.29" height="720" viewBox="0.18926 0 0.81074 0.94629" preserveAspectRatio="none"><image href="assets/image2.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-8" data-name="任意多边形: 形状 7">
+<path d="M 1.47 0 L 785.56 0 C 655.12 325.78 508.56 490.22 351.74 721.33 L 0 721.33 C 0.49 480.89 0.98 240.44 1.47 0 Z" fill="url(#gpatt1)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-16" data-name="矩形 15">
+<rect x="0" y="0" width="1280" height="720" fill="url(#ggrad2)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-21" data-name="矩形 20">
+<rect x="290.07" y="1.33" width="1032.86" height="720" fill="url(#ggrad3)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-17" data-name="组合 16">
+<g id="shape-38" data-name="文本框 37">
+<rect x="385.36" y="104.44" width="205.18" height="232.65" fill="none"/>
+<text x="394.96" y="265.64" text-anchor="start" xml:space="preserve" font-family="&quot;演示夏行楷&quot;, sans-serif" font-size="184" fill="url(#txtgrad4)"><tspan fill="url(#txtgrad4)" font-size="184">止</tspan></text>
+</g>
+<g id="shape-39" data-name="文本框 38">
+<rect x="482.05" y="182.15" width="180.95" height="203.57" fill="none"/>
+<text x="491.65" y="322.95" text-anchor="start" xml:space="preserve" font-family="&quot;演示夏行楷&quot;, sans-serif" font-size="160" fill="url(#txtgrad5)"><tspan fill="url(#txtgrad5)" font-size="160">于</tspan></text>
+</g>
+<g id="shape-40" data-name="文本框 39">
+<rect x="585.62" y="110.44" width="205.18" height="232.65" fill="none"/>
+<text x="595.22" y="271.64" text-anchor="start" xml:space="preserve" font-family="&quot;演示夏行楷&quot;, sans-serif" font-size="184" fill="url(#txtgrad6)"><tspan fill="url(#txtgrad6)" font-size="184">至</tspan></text>
+</g>
+<g id="shape-41" data-name="文本框 40">
+<rect x="722.75" y="165.23" width="180.95" height="203.57" fill="none"/>
+<text x="732.35" y="306.03" text-anchor="start" xml:space="preserve" font-family="&quot;演示夏行楷&quot;, sans-serif" font-size="160" fill="url(#txtgrad7)"><tspan fill="url(#txtgrad7)" font-size="160">善</tspan></text>
+</g>
+</g>
+<g id="shape-18" data-name="组合 17">
+<g id="shape-43" data-name="文本框 42">
+<rect x="60.14" y="394" width="629.14" height="61.39" fill="none"/>
+<text x="69.74" y="435.07" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="42.67" fill="#DD6D21"><tspan fill="#DD6D21" font-size="42.67">厦门大学毕业答辩</tspan><tspan fill="#DD6D21" font-size="42.67">PPT</tspan><tspan fill="#DD6D21" font-size="42.67">模板</tspan></text>
+</g>
+<g id="shape-50" data-name="矩形: 圆角 49">
+<rect x="84.8" y="538.66" width="227.17" height="52.86" rx="20.36" ry="20.36" fill="#EAA372" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-51" data-name="矩形: 圆角 50">
+<rect x="353.92" y="538.66" width="280.04" height="52.86" rx="20.36" ry="20.36" fill="#EAA372" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-46" data-name="文本框 45">
+<rect x="88.93" y="544.09" width="213.05" height="42.01" fill="none"/>
+<text x="98.53" y="571.55" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">制作人：</tspan><tspan fill="#FFFFFF" font-size="26.67">xxx</tspan></text>
+</g>
+<g id="shape-48" data-name="文本框 47">
+<rect x="359.96" y="544.09" width="280.04" height="42.01" fill="none"/>
+<text x="369.56" y="571.55" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">学号：</tspan><tspan fill="#FFFFFF" font-size="26.67">xxxxxx</tspan></text>
+</g>
+<g id="shape-53" data-name="直接连接符 52">
+<line x1="66.17" y1="451.89" x2="695.31" y2="451.89" stroke-width="2" stroke="#DD6D21" fill="#4472C4"/>
+</g>
+<g id="shape-54" data-name="文本框 53">
+<rect x="64.69" y="461.96" width="607.31" height="35.54" fill="none"/>
+<text x="74.29" y="484.9" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="21.33" fill="#DD6D21"><tspan fill="#DD6D21" font-size="21.33">General PowerPoint Template Of Xiamen University</tspan></text>
+</g>
+</g>
+<g id="shape-55" data-name="图片 54" transform="rotate(257.48 7.76 702.68)">
+<image href="assets/image3.png" x="-151.38" y="555.95" width="318.28" height="293.46" preserveAspectRatio="none"/>
+</g>
+<g id="shape-56" data-name="图片 55" transform="rotate(79.9 987.33 599.43)">
+<image href="assets/image3.png" x="868.99" y="490.31" width="236.7" height="218.24" preserveAspectRatio="none"/>
+</g>
+<g id="shape-57" data-name="图片 56">
+<svg x="1052.77" y="-1.35" width="227.23" height="224.59" viewBox="0 0.32634 0.62845 0.67366" preserveAspectRatio="none"><image href="assets/image4.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-4" data-name="图片 3" transform="rotate(257.48 207.46 699.25)">
+<image href="assets/image3.png" x="118.58" y="617.31" width="177.76" height="163.9" preserveAspectRatio="none"/>
+</g>
+<g id="shape-5" data-name="图片 4" transform="rotate(257.48 495.63 24.19)">
+<image href="assets/image3.png" x="406.75" y="-57.76" width="177.76" height="163.9" preserveAspectRatio="none"/>
+</g>
+<g id="shape-6" data-name="图片 5" transform="rotate(257.48 708.17 42.27)">
+<image href="assets/image3.png" x="601" y="-56.54" width="214.34" height="197.63" preserveAspectRatio="none"/>
+</g>
+<g id="shape-15" data-name="组合 14">
+<g id="shape-34" data-name="文本框 33">
+<rect x="-36.12" y="134.46" width="213.26" height="242.34" fill="none"/>
+<text x="-26.52" y="302.46" text-anchor="start" xml:space="preserve" font-family="&quot;演示夏行楷&quot;, sans-serif" font-size="192" fill="url(#txtgrad8)"><tspan fill="url(#txtgrad8)" font-size="192">自</tspan></text>
+</g>
+<g id="shape-36" data-name="文本框 35">
+<rect x="188.85" y="119.33" width="205.18" height="232.65" fill="none"/>
+<text x="198.45" y="280.53" text-anchor="start" xml:space="preserve" font-family="&quot;演示夏行楷&quot;, sans-serif" font-size="184" fill="url(#txtgrad9)"><tspan fill="url(#txtgrad9)" font-size="184">不</tspan></text>
+</g>
+<g id="shape-37" data-name="文本框 36">
+<rect x="294.85" y="177.56" width="180.95" height="203.57" fill="none"/>
+<text x="304.45" y="318.36" text-anchor="start" xml:space="preserve" font-family="&quot;演示夏行楷&quot;, sans-serif" font-size="160" fill="url(#txtgrad10)"><tspan fill="url(#txtgrad10)" font-size="160">息</tspan></text>
+</g>
+<g id="shape-35" data-name="文本框 34">
+<rect x="99.87" y="194.73" width="180.95" height="203.57" fill="none"/>
+<text x="109.47" y="335.53" text-anchor="start" xml:space="preserve" font-family="&quot;演示夏行楷&quot;, sans-serif" font-size="160" fill="url(#txtgrad11)"><tspan fill="url(#txtgrad11)" font-size="160">强</tspan></text>
+</g>
+</g>
+<g id="shape-58" data-name="图片 57">
+<image href="assets/image1.png" x="55.53" y="23.65" width="231.51" height="64.23" preserveAspectRatio="none"/>
+</g></svg>

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# PPT Master 运行时产物
+.cache/
+projects/
+exports/
+backup/
+*.trace.json
+
+# 本地配置
+.env
+.env.local
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini

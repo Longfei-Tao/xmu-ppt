@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#10213F"/><stop offset="0.41" stop-color="#244A8E"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.16"/></linearGradient><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4"/></filter><linearGradient id="ggrad2" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#020E23"/><stop offset="0.5" stop-color="#051F50"/><stop offset="1" stop-color="#072E76"/></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#F2F2F2"/>
+<g id="layout-shape-24" data-name="矩形 23">
+<rect x="294.93" y="32.75" width="970.89" height="55.67" fill="url(#ggrad1)" stroke="none" stroke-width="1" filter="url(#fx1)"/>
+</g>
+<g id="layout-shape-26" data-name="图片 25">
+<image href="assets/image8.png" x="1033.15" y="32.75" width="212.78" height="58.03" preserveAspectRatio="none"/>
+</g>
+<g id="layout-shape-28" data-name="图形 27">
+<image href="assets/image9.png" x="13.86" y="14.95" width="96" height="96" preserveAspectRatio="none"/>
+</g>
+<g id="layout-shape-32" data-name="矩形 31">
+<rect x="0" y="699.77" width="1280" height="20.23" fill="url(#ggrad2)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-2" data-name="文本占位符 1" data-ph-type="body">
+<rect x="125.48" y="35.12" width="199.01" height="55.67" fill="none"/>
+<text x="135.08" y="94.05" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="48" fill="#013876" font-weight="bold"><tspan fill="#013876" font-size="48" font-weight="bold"> 简介</tspan></text>
+</g>
+<g id="shape-3" data-name="文本占位符 2" data-ph-type="body">
+<rect x="324.49" y="41.91" width="531.51" height="42.08" fill="none"/>
+<text x="334.09" y="82.71" text-anchor="start" xml:space="preserve" font-family="Arial, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">Xiamen University</tspan></text>
+</g>
+<g id="shape-5" data-name="文本占位符 4" data-ph-type="body">
+<rect x="569.03" y="140.58" width="676.99" height="487.06" fill="none"/>
+<text x="578.63" y="181.38" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑 Light&quot;, sans-serif" font-size="26.67" fill="#001C3B" font-weight="bold"><tspan fill="#001C3B" font-size="26.67" font-weight="bold">厦门大学（</tspan><tspan fill="#001C3B" font-size="26.67" font-weight="bold">Xiamen University</tspan><tspan fill="#001C3B" font-size="26.67" font-weight="bold">），</tspan><tspan fill="#001C3B" font-size="26.67">简称厦大</tspan><tspan fill="#001C3B" font-size="26.67">(</tspan><tspan fill="#001C3B" font-size="26.67">XMU</tspan><tspan fill="#001C3B" font-size="26.67">) </tspan><tspan fill="#001C3B" font-size="26.67">，</tspan><tspan x="578.63" dy="53.33" fill="#001C3B" font-size="26.67">由著名爱国华侨领袖陈嘉庚先生于</tspan><tspan fill="#001C3B" font-size="26.67">1921</tspan><tspan fill="#001C3B" font-size="26.67">年创办</tspan><tspan fill="#001C3B" font-size="26.67">, </tspan><tspan fill="#001C3B" font-size="26.67">是中国</tspan><tspan x="578.63" dy="53.33" fill="#001C3B" font-size="26.67">近代教育史上第一所华侨创办的大学。</tspan></text>
+<text x="578.63" y="354.71" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑 Light&quot;, sans-serif" font-size="26.67" fill="#001C3B"><tspan fill="#001C3B" font-size="26.67">学校秉持爱国华侨领袖陈嘉庚先生的立校志向，形成了</tspan><tspan x="578.63" dy="53.33" fill="#001C3B" font-size="26.67" font-weight="bold">“爱国、革命、自强、科学”</tspan><tspan fill="#001C3B" font-size="26.67">的优良校风，打造了鲜明的</tspan><tspan x="578.63" dy="53.33" fill="#001C3B" font-size="26.67">办学特色，培养了大批优秀人才，为国家富强、人民幸</tspan><tspan x="578.63" dy="53.33" fill="#001C3B" font-size="26.67">福和中华文化海外传播作出了积极贡献。</tspan></text>
+</g>
+<g id="shape-8" data-name="图片 7">
+<svg x="66.11" y="140.58" width="420.82" height="438.85" viewBox="0 0 1 0.78213" preserveAspectRatio="none"><image href="assets/image26.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g></svg>

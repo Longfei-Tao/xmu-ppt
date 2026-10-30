@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="-2.83" dy="2.83" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4"/></filter></defs><image href="assets/image1.jpeg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none"/>
+<g id="shape-8" data-name="标题 7" data-ph-type="ctrTitle">
+<rect x="-95.28" y="229.5" width="522.56" height="186.4" fill="none"/>
+<text x="417.83" y="345.65" text-anchor="end" xml:space="preserve" font-family="&quot;等线&quot;, sans-serif" font-size="80" fill="#5E75BA"><tspan fill="#5E75BA" font-size="80">厦门大学</tspan><tspan x="417.83" dy="53.33" fill="#5E75BA" font-size="53.33">PPT</tspan><tspan fill="#5E75BA" font-size="53.33">模板</tspan></text>
+</g>
+<g id="shape-9" data-name="副标题 8" data-ph-type="subTitle">
+<rect x="41.27" y="430.13" width="479.4" height="46" fill="none"/>
+<text x="280.97" y="457.71" text-anchor="middle" xml:space="preserve" font-family="&quot;等线 Light&quot;, sans-serif" font-size="26.67" fill="#99A5CF" letter-spacing="2.67"><tspan fill="#99A5CF" font-size="26.67" letter-spacing="2.67">单击此处编辑副标题</tspan></text>
+</g>
+<g id="shape-2" data-name="文本框 1">
+<rect x="702.73" y="316.8" width="32.53" height="38.67" fill="none"/>
+</g>
+<g id="shape-3" data-name="文本框 2">
+<rect x="870.53" y="636.4" width="347.2" height="38.67" fill="none"/>
+<text x="880.13" y="661.6" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#5E75BA"><tspan fill="#5E75BA" font-size="24">汇报人：</tspan><tspan fill="#5E75BA" font-size="24">xxx      </tspan><tspan fill="#5E75BA" font-size="24">指导老师：</tspan><tspan fill="#5E75BA" font-size="24">xxx</tspan></text>
+</g>
+<g id="shape-13" data-name="图片 12">
+<image href="assets/image2.jpeg" x="542" y="73.33" width="675.73" height="540.47" preserveAspectRatio="none"/>
+</g>
+<g id="shape-16" data-name="直接连接符 15">
+<line x1="92.27" y1="215.27" x2="406.1" y2="215.27" stroke-width="2" stroke="#324274" fill="#6096E6"/>
+</g>
+<g id="shape-4" data-name="矩形 3">
+<rect x="554" y="83.67" width="651.73" height="521.87" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+</g>
+<g id="shape-15" data-name="斜纹 14" transform="rotate(90 1082.77 204.83)">
+<image href="assets/image3.png" x="877.93" y="7.6" width="409.67" height="394.47" preserveAspectRatio="none"/>
+<rect x="877.93" y="7.6" width="409.67" height="394.47" fill="none" stroke="none" stroke-width="1" filter="url(#fx1)"/>
+</g></svg>

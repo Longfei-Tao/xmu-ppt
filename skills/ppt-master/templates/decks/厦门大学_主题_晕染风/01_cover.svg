@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feMorphology operator="dilate" radius="0" in="SourceAlpha" result="dilated"/><feGaussianBlur in="dilated" stdDeviation="0.1" result="blurred"/><feFlood flood-color="#D0CECE" flood-opacity="0.99" result="flood"/><feComposite in="flood" in2="blurred" operator="in" result="glow"/><feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FDFBF9"/>
+<g id="shape-2" data-name="矩形 1">
+<rect x="0" y="0" width="1280" height="723.25" fill="#FFF7EF" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-6" data-name="文本框 5">
+<rect x="263.97" y="132" width="825.6" height="456" fill="none" stroke-width="6.333" stroke-linecap="round" stroke="#D9D9D9" stroke-linejoin="round" filter="url(#fx1)"/>
+</g>
+<g id="shape-7" data-name="图片 6">
+<image href="assets/image1.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none"/>
+</g>
+<g id="shape-8" data-name="图片 7">
+<image href="assets/image2.png" x="1099.83" y="39.31" width="156.32" height="43.42" preserveAspectRatio="none"/>
+</g>
+<g id="shape-9" data-name="文本框 8">
+<rect x="365.24" y="209.13" width="623.06" height="193.96" fill="none"/>
+<text x="978.69" y="275.13" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="72" fill="#4D45BB"><tspan fill="#4D45BB" font-size="72">厦门大学 </tspan><tspan fill="#4D45BB" font-size="72">PPT</tspan><tspan fill="#4D45BB" font-size="72">模板</tspan></text>
+<text x="978.69" y="345.66" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Regular&quot;, sans-serif" font-size="53.33" fill="#4D45BB"><tspan fill="#4D45BB" font-size="53.33">——</tspan><tspan fill="#4D45BB" font-size="53.33">关于</tspan><tspan fill="#4D45BB" font-size="53.33">XXX</tspan><tspan fill="#4D45BB" font-size="53.33">主题</tspan></text>
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="566.17" y="515.04" width="221.2" height="40.1" fill="none" stroke="none" stroke-dasharray="1 3"/>
+<text x="676.77" y="535.7" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Light&quot;, sans-serif" font-size="18.67" fill="#4D45BB"><tspan fill="#4D45BB" font-size="18.67">汇 报 人 ：甲 乙 丙</tspan></text>
+</g></svg>

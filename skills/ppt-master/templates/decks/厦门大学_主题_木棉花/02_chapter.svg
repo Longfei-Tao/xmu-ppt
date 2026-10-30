@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-9" data-name="图片 8">
+<image href="assets/image7.jpeg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none"/>
+</g>
+<g id="shape-7" data-name="矩形 6">
+<rect x="0" y="0" width="1280" height="720" fill="#2F5597" fill-opacity="0.37" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-12" data-name="文本框 11">
+<rect x="431.35" y="332.66" width="499.85" height="96.94" fill="none"/>
+<text x="440.95" y="397.53" text-anchor="start" xml:space="preserve" font-family="&quot;方正兰亭特黑简体&quot;, sans-serif" font-size="70.67" fill="#FFFFFF" letter-spacing="2.67"><tspan fill="#FFFFFF" font-size="70.67" letter-spacing="2.67">在此输入标题</tspan></text>
+</g>
+<g id="shape-16" data-name="矩形 15">
+<rect x="409.52" y="449.39" width="499.85" height="37.16" fill="none"/>
+<text x="659.45" y="473.46" text-anchor="middle" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="22.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="22.67">PLEASE ENTER YOUR TITLE HERE</tspan></text>
+</g>
+<g id="shape-15" data-name="椭圆 14">
+<ellipse cx="637.6" cy="233.6" rx="69.6" ry="69.6" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+<text x="637.6" y="246.93" text-anchor="middle" xml:space="preserve" font-family="&quot;方正兰亭特黑简体&quot;, sans-serif" font-size="53.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="53.33">01</tspan></text>
+</g>
+<g id="shape-10" data-name="图片 9">
+<image href="assets/image8.png" x="45.91" y="614.81" width="230.61" height="64.06" preserveAspectRatio="none"/>
+</g></svg>

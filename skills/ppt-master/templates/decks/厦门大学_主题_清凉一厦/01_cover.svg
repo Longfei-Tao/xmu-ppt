@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="-3.77" dy="3.77" stdDeviation="3.33" flood-color="#000000" flood-opacity="0.4"/></filter><linearGradient id="txtgrad1" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="1" stop-color="#B3CED5"/><stop offset="0" stop-color="#DDE3D8"/></linearGradient><linearGradient id="txtgrad2" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="1" stop-color="#B3CED5"/><stop offset="0" stop-color="#DDE3D8"/></linearGradient><radialGradient id="txtgrad3" cx="0.5" cy="0.5" r="0.5"><stop offset="0.77" stop-color="#C6E1C8"/><stop offset="0" stop-color="#DEEADC"/></radialGradient><radialGradient id="txtgrad4" cx="0.5" cy="0.5" r="0.5"><stop offset="0.77" stop-color="#C6E1C8"/><stop offset="0" stop-color="#DEEADC"/></radialGradient><radialGradient id="txtgrad5" cx="0.5" cy="0.5" r="0.5"><stop offset="0.77" stop-color="#C6E1C8"/><stop offset="0" stop-color="#DEEADC"/></radialGradient><radialGradient id="txtgrad6" cx="0.5" cy="0.5" r="0.5"><stop offset="0.77" stop-color="#C6E1C8"/><stop offset="0" stop-color="#DEEADC"/></radialGradient><radialGradient id="txtgrad7" cx="0.5" cy="0.5" r="0.5"><stop offset="0.77" stop-color="#C6E1C8"/><stop offset="0" stop-color="#DEEADC"/></radialGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-2" data-name="标题 1" data-ph-type="ctrTitle">
+<rect x="160.02" y="117.83" width="960.09" height="250.67" fill="none"/>
+</g>
+<g id="shape-3" data-name="副标题 2" data-ph-type="subTitle">
+<rect x="160.02" y="378.17" width="960.09" height="173.83" fill="none"/>
+</g>
+<g id="shape-4" data-name="图片 3">
+<image href="assets/image6.jpeg" x="0.06" y="0" width="1083.67" height="722.47" preserveAspectRatio="none"/>
+</g>
+<g id="shape-7" data-name="图片 6">
+<image href="assets/image7.png" x="-98.07" y="164.2" width="1279.93" height="467.67" preserveAspectRatio="none"/>
+</g>
+<g id="shape-5" data-name="图片 4">
+<image href="assets/image8.png" x="196.46" y="0.07" width="1083.6" height="722.4" preserveAspectRatio="none"/>
+</g>
+<g id="shape-6" data-name="标题 1">
+<rect x="133.4" y="248.27" width="850.6" height="139.2" filter="url(#fx1)" fill="none"/>
+<text x="143" y="356.27" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, +mj-cs, sans-serif" font-size="96" fill="url(#txtgrad1)" font-weight="bold"><tspan fill="url(#txtgrad1)" font-size="96" font-weight="bold">输入标题</tspan><tspan fill="url(#txtgrad2)" font-size="96" font-weight="bold">Title</tspan></text>
+</g>
+<g id="shape-8" data-name="文本框 7">
+<rect x="133.4" y="412.33" width="553.13" height="125.87" fill="none"/>
+<text x="143" y="444.33" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="32" fill="url(#txtgrad3)" font-weight="bold"><tspan fill="url(#txtgrad3)" font-size="32" font-weight="bold">报告人：小夏       </tspan></text>
+<text x="143" y="482.73" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="32" fill="url(#txtgrad4)" font-weight="bold"><tspan fill="url(#txtgrad4)" font-size="32" font-weight="bold">指导老师：</tspan><tspan fill="url(#txtgrad5)" font-size="32" font-weight="bold">XXX</tspan></text>
+<text x="143" y="521.13" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="32" fill="url(#txtgrad6)" font-weight="bold"><tspan fill="url(#txtgrad6)" font-size="32" font-weight="bold">汇报时间：</tspan><tspan fill="url(#txtgrad7)" font-size="32" font-weight="bold">2022.3.23</tspan></text>
+</g>
+<g id="shape-9" data-name="图片 8">
+<image href="assets/image9.png" x="21.6" y="13.93" width="138.47" height="136.4" preserveAspectRatio="none"/>
+</g></svg>

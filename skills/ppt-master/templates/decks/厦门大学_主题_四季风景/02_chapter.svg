@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-20" data-name="文本框 19">
+<rect x="21.8" y="-84.67" width="890.2" height="571.13" fill="none"/>
+<text x="31.4" y="203.47" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="333.33" fill="#2E75B6" font-weight="bold"><tspan fill="#2E75B6" font-size="333.33" font-weight="bold">第一</tspan></text>
+
+</g>
+<g id="shape-4" data-name="椭圆 3">
+<ellipse cx="1018.8" cy="437.07" rx="33.87" ry="32.47" fill="#2E75B6" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-5" data-name="文本框 4">
+<rect x="984.93" y="486.47" width="206.47" height="145.27" fill="none"/>
+<text x="994.53" y="523" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="37.33" fill="#2E75B6" text-decoration="underline"><tspan fill="#2E75B6" font-size="37.33" text-decoration="underline">基础知识的初步绍</tspan><tspan fill="#2E75B6" font-size="37.33" text-decoration="underline">·</tspan><tspan fill="#2E75B6" font-size="37.33" text-decoration="underline">副标题</tspan></text>
+</g>
+<g id="shape-2" data-name="图片 1">
+<image href="assets/image6.png" x="184.47" y="119.67" width="364.33" height="512.07" preserveAspectRatio="none"/>
+</g>
+<g id="shape-3" data-name="文本框 2">
+<rect x="21.8" y="364.8" width="890.2" height="571.13" fill="none"/>
+<text x="31.4" y="652.93" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="333.33" fill="#2E75B6" font-weight="bold"><tspan fill="#2E75B6" font-size="333.33" font-weight="bold">部分</tspan></text>
+
+</g></svg>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <image x="0" y="0" width="1280" height="720" xlink:href="paper_bg.jpg" preserveAspectRatio="xMidYMid slice"/>
+
+  <image x="34.15" y="40.27" width="138.07" height="39.4" xlink:href="xmu_logo.png" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- 英文水印 -->
+  <text x="300" y="330" fill="#FFFFFF" fill-opacity="0.72" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="96" font-style="italic" transform="rotate(-10 400 300)">Contents</text>
+
+  <!-- 目录主字（用错位复本模拟投影） -->
+  <text x="186" y="430" fill="#C9C2B4" font-family="华文中宋, Source Han Serif SC, 思源宋体, SimSun, serif" font-size="160" font-weight="bold">目录</text>
+  <text x="180" y="424" fill="#111111" font-family="华文中宋, Source Han Serif SC, 思源宋体, SimSun, serif" font-size="160" font-weight="bold">目录</text>
+
+  <!-- 条目 01 / 02 -->
+  <text x="560" y="205" fill="#D37820" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="44" font-weight="bold">01</text>
+  <text x="660" y="200" fill="#1A1A1A" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="26">{{TOC_ITEM_1_TITLE}}</text>
+  <text x="660" y="230" fill="#7A7466" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="13">{{TOC_ITEM_1_DESC}}</text>
+
+  <text x="870" y="205" fill="#D37820" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="44" font-weight="bold">02</text>
+  <text x="970" y="200" fill="#1A1A1A" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="26">{{TOC_ITEM_2_TITLE}}</text>
+  <text x="970" y="230" fill="#7A7466" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="13">{{TOC_ITEM_2_DESC}}</text>
+
+  <!-- 条目 03 / 04 -->
+  <text x="560" y="415" fill="#D37820" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="44" font-weight="bold">03</text>
+  <text x="660" y="410" fill="#1A1A1A" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="26">{{TOC_ITEM_3_TITLE}}</text>
+  <text x="660" y="440" fill="#7A7466" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="13">{{TOC_ITEM_3_DESC}}</text>
+
+  <text x="870" y="415" fill="#D37820" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="44" font-weight="bold">04</text>
+  <text x="970" y="410" fill="#1A1A1A" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="26">{{TOC_ITEM_4_TITLE}}</text>
+  <text x="970" y="440" fill="#7A7466" font-family="华文中宋, Source Han Serif SC, SimSun, serif" font-size="13">{{TOC_ITEM_4_DESC}}</text>
+
+  <!-- 底部建筑线稿 -->
+  <image x="340" y="552" width="600" height="66" xlink:href="building_line.png" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- 底部细线 -->
+  <rect x="0" y="700" width="1280" height="6" fill="#204080"/>
+</svg>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+
+  <rect x="45.81" y="41.03" width="1188.39" height="637.94" fill="none" stroke="#4874CB" stroke-width="1"/>
+
+  <!-- 页眉装饰 -->
+  <path d="M 1194.88 0 L 1280 0 L 1280 63.6 L 1278.78 65.16 C 1272.69 67.05 1266.22 68.07 1259.51 68.07 C 1223.73 68.07 1194.72 39.06 1194.72 3.28 Z" fill="#BAE2FF"/>
+  <ellipse cx="1256.5" cy="95.09" rx="11.35" ry="11.35" fill="#005FA5"/>
+
+  <polygon points="1258.09,125.07 1267.85,141.91 1248.32,141.91" fill="#BAE2FF"/>
+  <polygon points="1258.09,150.62 1267.85,167.45 1248.32,167.45" fill="#005FA5"/>
+  <polygon points="1258.09,176.17 1267.85,193 1248.32,193" fill="#BAE2FF"/>
+  <polygon points="1258.09,201.72 1267.85,218.55 1248.32,218.55" fill="#005FA5"/>
+  <polygon points="1258.09,227.26 1267.85,244.1 1248.32,244.1" fill="#BAE2FF"/>
+
+  <!-- 左下装饰 -->
+  <polygon points="30,600 39.77,616.84 20.23,616.84" fill="#BAE2FF"/>
+  <polygon points="30,625.55 39.77,642.39 20.23,642.39" fill="#005FA5"/>
+  <polygon points="30,651.1 39.77,667.94 20.23,667.94" fill="#BAE2FF"/>
+
+  <!-- 侧边校训条 -->
+  <image x="1160" y="41" width="68" height="178" xlink:href="side_tab.jpg" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- 页眉：凤凰花 + 标题 + 校徽 -->
+  <image x="88" y="96" width="52" height="52" xlink:href="flower.png" preserveAspectRatio="xMidYMid meet"/>
+  <text x="154" y="135" fill="#1A1A1A" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="34" font-weight="bold">{{PAGE_TITLE}}</text>
+  <image x="960" y="64" width="150" height="43" xlink:href="xmu_logo.png" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- 核心观点条 -->
+  <rect x="72" y="176" width="1040" height="42" fill="#EAF3FD"/>
+  <rect x="72" y="176" width="3" height="42" fill="#005FA5"/>
+  <text x="88" y="203" fill="#005FA5" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="bold">核心观点</text>
+  <text x="160" y="203" fill="#1A1A1A" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="14">{{KEY_MESSAGE}}</text>
+
+  <!-- 内容区占位 -->
+  <rect x="72" y="236" width="1040" height="384" fill="#FFFFFF" stroke="#C9D9EE" stroke-width="1.5" stroke-dasharray="8 8"/>
+  <text x="592" y="438" text-anchor="middle" fill="#8FA6C4" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="18">{{CONTENT_AREA}}</text>
+
+  <!-- 页脚 -->
+  <line x1="72" y1="650" x2="1208" y2="650" stroke="#DCE6F2" stroke-width="1"/>
+  <text x="72" y="678" fill="#6B7B8C" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="12">资料来源：{{SOURCE}}</text>
+  <text x="640" y="678" text-anchor="middle" fill="#6B7B8C" font-family="微软雅黑, Microsoft YaHei, PingFang SC, sans-serif" font-size="12">{{SECTION_NAME}}</text>
+  <text x="1208" y="678" text-anchor="end" fill="#005FA5" font-family="Manrope, Arial, sans-serif" font-size="13" font-weight="bold">{{PAGE_NUM}}</text>
+</svg>

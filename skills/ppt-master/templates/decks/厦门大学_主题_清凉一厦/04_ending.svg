@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="-3.77" dy="3.77" stdDeviation="3.33" flood-color="#000000" flood-opacity="0.4"/></filter><linearGradient id="txtgrad1" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="1" stop-color="#B3CED5"/><stop offset="0" stop-color="#DDE3D8"/></linearGradient><linearGradient id="txtgrad2" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#CEE9C6"/><stop offset="0.99" stop-color="#E7F4E0"/></linearGradient><linearGradient id="txtgrad3" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#CEE9C6"/><stop offset="0.99" stop-color="#E7F4E0"/></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-8" data-name="图片 7">
+<svg x="0" y="0.07" width="1063.87" height="724.07" viewBox="0 0.03172 1 0.93872" preserveAspectRatio="none"><image href="assets/image39.jpeg" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-9" data-name="图片 8">
+<image href="assets/image9.png" x="21.6" y="13.93" width="138.47" height="136.4" preserveAspectRatio="none"/>
+</g>
+<g id="shape-12" data-name="图片 11">
+<image href="assets/image7.png" x="-98.07" y="150.33" width="1279.93" height="467.67" preserveAspectRatio="none"/>
+</g>
+<g id="shape-10" data-name="内容占位符 9" transform="translate(738.3 361.23) scale(1 -1) translate(-738.3 -361.23)">
+<image href="assets/image8.png" x="196.53" y="0.07" width="1083.53" height="722.33" preserveAspectRatio="none"/>
+</g>
+<g id="shape-14" data-name="标题 1">
+<rect x="133.4" y="263.6" width="850.6" height="139.2" filter="url(#fx1)" fill="none"/>
+<text x="143" y="371.6" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, +mj-cs, sans-serif" font-size="96" fill="url(#txtgrad1)" font-weight="bold"><tspan fill="url(#txtgrad1)" font-size="96" font-weight="bold">The End</tspan></text>
+</g>
+<g id="shape-15" data-name="文本框 14">
+<rect x="133.4" y="419.33" width="363.53" height="54.8" fill="none"/>
+<text x="143" y="455.87" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="37.33" fill="url(#txtgrad2)" font-weight="bold"><tspan fill="url(#txtgrad2)" font-size="37.33" font-weight="bold">报告完毕</tspan><tspan fill="url(#txtgrad3)" font-size="37.33" font-weight="bold">，感谢观看</tspan></text>
+</g></svg>

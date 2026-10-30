@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0.36" stop-color="#FFFFFF"/><stop offset="0.85" stop-color="#FFFFFF" stop-opacity="0.04"/></linearGradient><linearGradient id="ggrad2" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#020E23"/><stop offset="0.5" stop-color="#051F50"/><stop offset="1" stop-color="#072E76"/></linearGradient><linearGradient id="ggrad3" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#020E23"/><stop offset="0.5" stop-color="#051F50"/><stop offset="1" stop-color="#072E76"/></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="layout-shape-24" data-name="图片 23">
+<svg x="391.65" y="0" width="888.35" height="702.27" viewBox="-0.01871 -0.00031 0.82106 0.94644" preserveAspectRatio="none"><image href="assets/image1.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="layout-shape-25" data-name="矩形 24">
+<rect x="-0.6" y="-1.27" width="1282.73" height="720.87" fill="url(#ggrad1)" stroke-width="0" stroke="none"/>
+</g>
+<g id="layout-shape-9" data-name="图片 8">
+<image href="assets/image2.png" x="57.83" y="147.46" width="470.82" height="130.78" preserveAspectRatio="none"/>
+</g>
+<g id="layout-shape-10" data-name="矩形 9">
+<rect x="0" y="699.77" width="1280" height="20.23" fill="url(#ggrad2)" stroke="none" stroke-width="1"/>
+</g>
+<g id="layout-shape-11" data-name="矩形 10">
+<rect x="0" y="0" width="1280" height="20.23" fill="url(#ggrad3)" stroke="none" stroke-width="1"/>
+</g>
+<g id="layout-shape-18" data-name="直接连接符 17">
+<line x1="67.24" y1="456.75" x2="585.1" y2="456.75" fill="#A5A5A5" stroke="#A5A5A5" stroke-width="1"/>
+</g>
+<g id="shape-2" data-name="文本占位符 1" data-ph-type="body">
+<rect x="70.92" y="399.08" width="608.75" height="29.08" fill="none"/>
+</g>
+<g id="shape-3" data-name="文本占位符 2" data-ph-type="body">
+<rect x="67.24" y="484.69" width="201.37" height="36.55" fill="none"/>
+<text x="76.84" y="523.22" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#525252"><tspan fill="#525252" font-size="24">制作人：</tspan><tspan fill="#525252" font-size="24">XXXX</tspan></text>
+</g>
+<g id="shape-4" data-name="文本占位符 3" data-ph-type="body">
+<rect x="285.23" y="484.69" width="282" height="36.55" fill="none"/>
+<text x="294.83" y="523.22" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#525252"><tspan fill="#525252" font-size="24">学院：法学院</tspan></text>
+</g>
+<g id="shape-5" data-name="文本占位符 4" data-ph-type="body">
+<rect x="67.24" y="545.7" width="350.03" height="36.55" fill="none"/>
+<text x="76.84" y="581.96" text-anchor="start" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, &quot;微软雅黑 Light&quot;, sans-serif" font-size="21.33" fill="#525252"><tspan fill="#525252" font-size="21.33">学号：</tspan><tspan fill="#525252" font-size="21.33">XXXXXXXXXXXX</tspan></text>
+</g>
+<g id="shape-6" data-name="标题 5" data-ph-type="title">
+<rect x="62.31" y="289" width="1104" height="139.17" fill="none"/>
+<text x="71.91" y="339.14" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, +mj-cs, sans-serif" font-size="53.33" fill="#013876" font-weight="bold"><tspan fill="#013876" font-size="53.33" font-weight="bold">厦门大学毕业答辩</tspan><tspan fill="#013876" font-size="53.33" font-weight="bold">PPT</tspan><tspan fill="#013876" font-size="53.33" font-weight="bold">模板</tspan></text>
+</g></svg>

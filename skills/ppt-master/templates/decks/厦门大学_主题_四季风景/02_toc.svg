@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-3" data-name="图片 2">
+<svg x="-31.07" y="0" width="538" height="723.07" viewBox="0.1553 0.08076 0.8447 0.78757" preserveAspectRatio="none"><image href="assets/image4.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-4" data-name="图片 3">
+<svg x="1012.6" y="-6.67" width="270.2" height="733.33" viewBox="0 0.10159 0.42289 0.83261" preserveAspectRatio="none"><image href="assets/image5.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-5" data-name="文本框 4">
+<rect x="578.53" y="47.73" width="370.13" height="80.67" fill="none"/>
+<text x="588.13" y="102.4" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="58.67" fill="#1F4E79"><tspan fill="#1F4E79" font-size="58.67">目录</tspan><tspan fill="#1F4E79" font-size="58.67">CONTENT</tspan></text>
+</g>
+<g id="shape-12" data-name="矩形 11" transform="rotate(90 559.6 86.6)">
+<rect x="528.53" y="78.13" width="62.13" height="16.93" stroke="none" fill="#5B9BD5" stroke-width="1"/>
+</g>
+<g id="shape-20" data-name="文本框 19">
+<rect x="740" y="203.2" width="208.67" height="91.27" fill="none"/>
+<text x="749.6" y="239.73" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="37.33" fill="#9DC3E6" font-weight="bold"><tspan fill="#9DC3E6" font-size="37.33" font-weight="bold">第一部分</tspan></text>
+<text x="749.6" y="269.47" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="24" fill="#2E75B6"><tspan fill="#2E75B6" font-size="24">基础知识</tspan></text>
+</g>
+<g id="shape-21" data-name="椭圆 20">
+<ellipse cx="739.47" cy="221.73" rx="18.53" ry="18.53" fill="#2E75B6" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-6" data-name="文本框 5">
+<rect x="679.67" y="353.6" width="208.67" height="91.27" fill="none"/>
+<text x="689.27" y="390.13" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="37.33" fill="#9DC3E6" font-weight="bold"><tspan fill="#9DC3E6" font-size="37.33" font-weight="bold">第二部分</tspan></text>
+<text x="689.27" y="419.87" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="24" fill="#2E75B6"><tspan fill="#2E75B6" font-size="24">学科结构</tspan></text>
+</g>
+<g id="shape-7" data-name="椭圆 6">
+<ellipse cx="679.13" cy="372.13" rx="18.53" ry="18.53" fill="#2E75B6" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-8" data-name="文本框 7">
+<rect x="620.07" y="521.07" width="208.67" height="91.27" fill="none"/>
+<text x="629.67" y="557.6" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="37.33" fill="#9DC3E6" font-weight="bold"><tspan fill="#9DC3E6" font-size="37.33" font-weight="bold">第二部分</tspan></text>
+<text x="629.67" y="587.33" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="24" fill="#2E75B6"><tspan fill="#2E75B6" font-size="24">学科结构</tspan></text>
+</g>
+<g id="shape-9" data-name="椭圆 8">
+<ellipse cx="619.53" cy="539.6" rx="18.53" ry="18.53" fill="#2E75B6" stroke="none" stroke-width="1"/>
+</g></svg>

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#C60101" stop-opacity="0"/><stop offset="1" stop-color="#C60101"/></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="layout-shape-6" data-name="图片 5">
+<image href="assets/image1.jpeg" x="0" y="-0.1" width="1280.13" height="720.1" preserveAspectRatio="none"/>
+</g>
+<g id="layout-shape-7" data-name="矩形 6">
+<rect x="0" y="-0.1" width="1280.13" height="720.1" fill="url(#ggrad1)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-9" data-name="图片 8">
+<svg x="0.06" y="0" width="1280" height="748.67" viewBox="0 0.07948 1 0.88377" preserveAspectRatio="none"><image href="assets/image18.jpeg" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-15" data-name="等腰三角形 14" transform="rotate(180 640.06 94)">
+<polygon points="640.06,-132.2 1062.26,320.2 217.86,320.2" fill="#C17715" fill-opacity="0.56" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-3" data-name="矩形 2">
+<rect x="0.06" y="338.4" width="1280" height="228.13" fill="#C894B0" fill-opacity="0.23" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-4" data-name="图片 3" transform="translate(274.16 485.47) scale(-1 1) translate(-274.16 -485.47)">
+<image href="assets/image19.png" x="252.8" y="466.13" width="42.73" height="38.67" preserveAspectRatio="none"/>
+</g>
+<g id="shape-5" data-name="图片 4">
+<image href="assets/image19.png" x="449.86" y="389.07" width="42.73" height="38.67" preserveAspectRatio="none"/>
+</g>
+<g id="shape-6" data-name="直接连接符 5" transform="translate(350.56 485.6) scale(-1 1) translate(-350.56 -485.6)">
+<line x1="285.4" y1="485.6" x2="415.73" y2="485.6" stroke="#FFFFFF" stroke-opacity="0.6" fill="#CA3030" stroke-width="1"/>
+</g>
+<g id="shape-7" data-name="椭圆 6" transform="translate(279.13 485.53) scale(-1 -1) translate(-279.13 -485.53)">
+<ellipse cx="279.13" cy="485.53" rx="6.27" ry="5.67" fill="#FFFFFF" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-8" data-name="直接连接符 7">
+<line x1="306.4" y1="409.2" x2="436.73" y2="409.2" stroke="#FFFFFF" stroke-opacity="0.6" fill="#CA3030" stroke-width="1"/>
+</g>
+<g id="shape-10" data-name="椭圆 9" transform="translate(443 409.2) scale(1 -1) translate(-443 -409.2)">
+<ellipse cx="443" cy="409.2" rx="6.27" ry="5.67" fill="#FFFFFF" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-12" data-name="文本框 11">
+<rect x="306.2" y="412" width="119" height="38.8" fill="none"/>
+<text x="365.7" y="444" text-anchor="middle" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="32" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="32" font-weight="bold">小夏</tspan><tspan fill="#FFFFFF" font-size="32" font-weight="bold">xxxx</tspan></text>
+</g>
+<g id="shape-13" data-name="文本框 12">
+<rect x="342.33" y="320.2" width="51.47" height="85.33" fill="none"/>
+<text x="351.93" y="393" text-anchor="start" xml:space="preserve" font-family="&quot;Arial Bold&quot;, &quot;楷体&quot;, sans-serif" font-size="80" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="80" font-weight="bold">1</tspan></text>
+</g>
+<g id="shape-14" data-name="图片 13" transform="translate(350.6 380.13) scale(-1 1) translate(-350.6 -380.13)">
+<image href="assets/image20.png" x="328.33" y="360" width="44.53" height="40.27" preserveAspectRatio="none"/>
+</g>
+<g id="shape-17" data-name="图片 16" transform="translate(479.76 488.07) scale(-1 1) translate(-479.76 -488.07)">
+<image href="assets/image19.png" x="458.4" y="468.73" width="42.73" height="38.67" preserveAspectRatio="none"/>
+</g>
+<g id="shape-18" data-name="图片 17">
+<image href="assets/image19.png" x="632.66" y="391.67" width="42.73" height="38.67" preserveAspectRatio="none"/>
+</g>
+<g id="shape-19" data-name="直接连接符 18" transform="translate(533.36 488.2) scale(-1 1) translate(-533.36 -488.2)">
+<line x1="468.2" y1="488.2" x2="598.53" y2="488.2" stroke="#FFFFFF" stroke-opacity="0.6" fill="#CA3030" stroke-width="1"/>
+</g>
+<g id="shape-20" data-name="椭圆 19" transform="translate(461.93 488.13) scale(-1 -1) translate(-461.93 -488.13)">
+<ellipse cx="461.93" cy="488.13" rx="6.27" ry="5.67" fill="#FFFFFF" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-21" data-name="直接连接符 20">
+<line x1="489.2" y1="411.8" x2="619.53" y2="411.8" stroke="#FFFFFF" stroke-opacity="0.6" fill="#CA3030" stroke-width="1"/>
+</g>
+<g id="shape-22" data-name="椭圆 21" transform="translate(625.8 411.8) scale(1 -1) translate(-625.8 -411.8)">
+<ellipse cx="625.8" cy="411.8" rx="6.27" ry="5.67" fill="#FFFFFF" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-23" data-name="文本框 22">
+<rect x="489" y="414.6" width="119" height="38.8" fill="none"/>
+<text x="548.5" y="446.6" text-anchor="middle" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="32" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="32" font-weight="bold">小夏</tspan><tspan fill="#FFFFFF" font-size="32" font-weight="bold">xxxx</tspan></text>
+</g>
+<g id="shape-34" data-name="文本框 33">
+<rect x="525.13" y="322.8" width="51.47" height="85.33" fill="none"/>
+<text x="534.73" y="395.6" text-anchor="start" xml:space="preserve" font-family="&quot;Arial Bold&quot;, &quot;楷体&quot;, sans-serif" font-size="80" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="80" font-weight="bold">2</tspan></text>
+</g>
+<g id="shape-35" data-name="图片 34" transform="translate(539.13 382.93) scale(-1 1) translate(-539.13 -382.93)">
+<image href="assets/image20.png" x="516.86" y="362.8" width="44.53" height="40.27" preserveAspectRatio="none"/>
+</g>
+<g id="shape-47" data-name="图片 46" transform="translate(670.76 488.07) scale(-1 1) translate(-670.76 -488.07)">
+<image href="assets/image19.png" x="649.4" y="468.73" width="42.73" height="38.67" preserveAspectRatio="none"/>
+</g>
+<g id="shape-49" data-name="图片 48">
+<image href="assets/image19.png" x="823.66" y="391.67" width="42.73" height="38.67" preserveAspectRatio="none"/>
+</g>
+<g id="shape-61" data-name="直接连接符 60" transform="translate(724.36 488.2) scale(-1 1) translate(-724.36 -488.2)">
+<line x1="659.2" y1="488.2" x2="789.53" y2="488.2" stroke="#FFFFFF" stroke-opacity="0.6" fill="#CA3030" stroke-width="1"/>
+</g>
+<g id="shape-62" data-name="椭圆 61" transform="translate(652.93 488.13) scale(-1 -1) translate(-652.93 -488.13)">
+<ellipse cx="652.93" cy="488.13" rx="6.27" ry="5.67" fill="#FFFFFF" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-63" data-name="直接连接符 62">
+<line x1="680.2" y1="411.8" x2="810.53" y2="411.8" stroke="#FFFFFF" stroke-opacity="0.6" fill="#CA3030" stroke-width="1"/>
+</g>
+<g id="shape-64" data-name="椭圆 63" transform="translate(816.8 411.8) scale(1 -1) translate(-816.8 -411.8)">
+<ellipse cx="816.8" cy="411.8" rx="6.27" ry="5.67" fill="#FFFFFF" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-65" data-name="文本框 64">
+<rect x="680" y="414.6" width="119" height="38.8" fill="none"/>
+<text x="739.5" y="446.6" text-anchor="middle" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="32" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="32" font-weight="bold">小夏</tspan><tspan fill="#FFFFFF" font-size="32" font-weight="bold">xxxx</tspan></text>
+</g>
+<g id="shape-66" data-name="文本框 65">
+<rect x="713.8" y="322.8" width="51.47" height="85.33" fill="none"/>
+<text x="723.4" y="395.6" text-anchor="start" xml:space="preserve" font-family="&quot;Arial Bold&quot;, &quot;楷体&quot;, sans-serif" font-size="80" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="80" font-weight="bold">3</tspan></text>
+</g>
+<g id="shape-67" data-name="图片 66" transform="translate(730.13 382.93) scale(-1 1) translate(-730.13 -382.93)">
+<image href="assets/image20.png" x="707.86" y="362.8" width="44.53" height="40.27" preserveAspectRatio="none"/>
+</g>
+<g id="shape-69" data-name="图片 68" transform="translate(856.1 491.33) scale(-1 1) translate(-856.1 -491.33)">
+<image href="assets/image19.png" x="834.73" y="472" width="42.73" height="38.67" preserveAspectRatio="none"/>
+</g>
+<g id="shape-71" data-name="图片 70">
+<image href="assets/image19.png" x="1009" y="394.93" width="42.73" height="38.67" preserveAspectRatio="none"/>
+</g>
+<g id="shape-73" data-name="直接连接符 72" transform="translate(909.7 491.47) scale(-1 1) translate(-909.7 -491.47)">
+<line x1="844.53" y1="491.47" x2="974.86" y2="491.47" stroke="#FFFFFF" stroke-opacity="0.6" fill="#CA3030" stroke-width="1"/>
+</g>
+<g id="shape-74" data-name="椭圆 73" transform="translate(838.26 491.4) scale(-1 -1) translate(-838.26 -491.4)">
+<ellipse cx="838.26" cy="491.4" rx="6.27" ry="5.67" fill="#FFFFFF" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-75" data-name="直接连接符 74">
+<line x1="865.53" y1="415.07" x2="995.86" y2="415.07" stroke="#FFFFFF" stroke-opacity="0.6" fill="#CA3030" stroke-width="1"/>
+</g>
+<g id="shape-76" data-name="椭圆 75" transform="translate(1002.13 415.07) scale(1 -1) translate(-1002.13 -415.07)">
+<ellipse cx="1002.13" cy="415.07" rx="6.27" ry="5.67" fill="#FFFFFF" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-77" data-name="文本框 76">
+<rect x="865.33" y="417.87" width="119" height="38.8" fill="none"/>
+<text x="924.83" y="449.87" text-anchor="middle" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="32" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="32" font-weight="bold">小夏</tspan><tspan fill="#FFFFFF" font-size="32" font-weight="bold">xxxx</tspan></text>
+</g>
+<g id="shape-78" data-name="文本框 77">
+<rect x="901.46" y="326.07" width="51.47" height="85.33" fill="none"/>
+<text x="911.06" y="398.87" text-anchor="start" xml:space="preserve" font-family="&quot;Arial Bold&quot;, &quot;楷体&quot;, sans-serif" font-size="80" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="80" font-weight="bold">4</tspan></text>
+</g>
+<g id="shape-79" data-name="图片 78" transform="translate(915.46 386.2) scale(-1 1) translate(-915.46 -386.2)">
+<image href="assets/image20.png" x="893.2" y="366.07" width="44.53" height="40.27" preserveAspectRatio="none"/>
+</g>
+<g id="shape-89" data-name="文本框 88">
+<rect x="549.53" y="53.33" width="180.93" height="241.27" fill="none"/>
+<text x="640" y="132.93" text-anchor="middle" xml:space="preserve" font-family="&quot;方正锐正黑_GBK&quot;, sans-serif" font-size="88" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="88">目录</tspan></text>
+</g></svg>

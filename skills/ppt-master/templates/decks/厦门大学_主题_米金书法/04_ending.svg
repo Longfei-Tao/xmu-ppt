@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#EAA372" stop-opacity="0.61"/><stop offset="1" stop-color="#DD6D21" stop-opacity="0.97"/></linearGradient><linearGradient id="ggrad2" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0.31" stop-color="#E07A34"/><stop offset="1" stop-color="#DD6D21" stop-opacity="0.97"/></linearGradient><linearGradient id="ggrad3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DD6D21"/><stop offset="1" stop-color="#EAA372"/></linearGradient><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.12"/></filter><linearGradient id="ggrad4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DD6D21"/><stop offset="1" stop-color="#EAA372"/></linearGradient><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.12"/></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-22" data-name="图片 21" transform="rotate(270 639.24 156.34)">
+<svg x="484.72" y="-484.42" width="309.03" height="1281.52" viewBox="0 0.10235 1 0.78967" preserveAspectRatio="none"><image href="assets/image22.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-2" data-name="矩形: 圆角 1" transform="rotate(180 639.24 155.12)">
+<rect x="-1.52" y="-0.31" width="1281.52" height="310.86" rx="0" ry="0" fill="url(#ggrad1)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-3" data-name="矩形: 圆角 2" transform="rotate(180 640.76 711.24)">
+<rect x="0" y="700.95" width="1281.52" height="20.57" rx="0" ry="0" fill="url(#ggrad2)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="243.87" y="462.28" width="816.71" height="87.24" fill="none"/>
+<text x="253.47" y="521.48" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="64" fill="#767171" fill-opacity="0.26"><tspan fill="#767171" font-size="64" fill-opacity="0.26">Thank you for watching</tspan></text>
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="243.87" y="273.75" width="879.43" height="222.96" fill="none"/>
+<text x="253.47" y="387.35" text-anchor="start" xml:space="preserve" font-family="&quot;庞门正道粗书体&quot;, sans-serif" font-size="128" fill="#DD6D21"><tspan fill="#DD6D21" font-size="128">感谢您的观看</tspan></text>
+</g>
+<g id="shape-11" data-name="矩形: 圆角 10">
+<rect x="279.15" y="569.94" width="266.51" height="58.48" rx="29.24" ry="29.24" fill="url(#ggrad3)" stroke="none" stroke-width="1" filter="url(#fx1)"/>
+</g>
+<g id="shape-12" data-name="文本框 11">
+<rect x="285.81" y="568.1" width="252.01" height="50.59" fill="none"/>
+<text x="295.41" y="595.57" text-anchor="start" xml:space="preserve" font-family="&quot;宋体&quot;, sans-serif" font-size="26.67" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="26.67" font-weight="bold">制作人：</tspan><tspan fill="#FFFFFF" font-size="26.67" font-weight="bold">XXXX</tspan></text>
+</g>
+<g id="shape-13" data-name="矩形: 圆角 12">
+<rect x="727.68" y="566.6" width="322.82" height="58.48" rx="29.24" ry="29.24" fill="url(#ggrad4)" stroke="none" stroke-width="1" filter="url(#fx2)"/>
+</g>
+<g id="shape-14" data-name="文本框 13">
+<rect x="734.34" y="564.75" width="310.66" height="50.59" fill="none"/>
+<text x="743.94" y="592.22" text-anchor="start" xml:space="preserve" font-family="&quot;宋体&quot;, sans-serif" font-size="26.67" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="26.67" font-weight="bold">学号：</tspan><tspan fill="#FFFFFF" font-size="26.67" font-weight="bold">XXXXXXXXXX</tspan></text>
+</g>
+<g id="shape-18" data-name="Picture 2">
+<image href="assets/image9.png" x="54.86" y="37.3" width="224.29" height="64.41" preserveAspectRatio="none"/>
+</g></svg>

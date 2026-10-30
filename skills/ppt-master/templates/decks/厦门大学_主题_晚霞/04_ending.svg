@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feMorphology operator="dilate" radius="3.33" in="SourceAlpha" result="dilated"/><feGaussianBlur in="dilated" stdDeviation="6.67" result="blurred"/><feFlood flood-color="#5B9BD5" flood-opacity="0.54" result="flood"/><feComposite in="flood" in2="blurred" operator="in" result="glow"/><feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge><feDropShadow dx="2.83" dy="2.83" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4"/></filter><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="5.33" stdDeviation="2.67" flood-color="#000000" flood-opacity="0"/></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-2" data-name="图片 1">
+<image href="assets/image30.jpeg" x="-4.2" y="-93.73" width="1314.6" height="960" preserveAspectRatio="none"/>
+</g>
+<g id="shape-4" data-name="矩形 3">
+<rect x="0.06" y="-93.67" width="1314.67" height="959.87" fill="#404040" fill-opacity="0.18" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-20" data-name="文本框 19">
+<rect x="87.73" y="292.07" width="548.07" height="125.87" fill="none" filter="url(#fx1)"/>
+<text x="97.33" y="378.47" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="96" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="96" font-weight="bold">谢谢观看</tspan></text>
+</g>
+<g id="shape-24" data-name="图片 23">
+<image href="assets/image15.png" x="1154.86" y="38.2" width="85.27" height="85.27" preserveAspectRatio="none"/>
+</g>
+<g id="shape-13" data-name="等腰三角形 12" transform="rotate(180 605.8 132.47)">
+<polygon points="605.8,-93.73 977.4,358.67 234.2,358.67" fill="#F8AC63" fill-opacity="0.26" stroke="none" stroke-width="1" filter="url(#fx2)"/>
+</g>
+<g id="shape-15" data-name="等腰三角形 14" transform="rotate(180 565 101.8)">
+<polygon points="565,-124.4 936.6,328 193.4,328" fill="#C17715" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-27" data-name="矩形 26">
+<rect x="100.03" y="418.03" width="535.76" height="60.47" fill="none"/>
+<text x="109.63" y="434.73" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪旗黑-45S&quot;, &quot;微软雅黑 Light&quot;, Arial, sans-serif" font-size="14" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo </tspan><tspan x="109.63" dy="21" fill="#FFFFFF" font-size="14">ligula eget dolorLorem ipsum dolor sit amet, consectetuer adipiscing elit. </tspan></text>
+</g>
+<g id="shape-3" data-name="矩形 2">
+<rect x="100.02" y="507.8" width="212" height="48.33" fill="none"/>
+<text x="109.62" y="539.8" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="32" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="32" font-weight="bold">汇报人：小夏</tspan></text>
+</g>
+<g id="shape-7" data-name="等腰三角形 6">
+<polygon points="908.46,454.2 1280.06,906.6 536.86,906.6" fill="#C17715" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-9" data-name="等腰三角形 8">
+<polygon points="958.26,469.4 1329.86,921.8 586.66,921.8" fill="#C17715" stroke="none" stroke-width="1"/>
+</g></svg>

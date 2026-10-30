@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feMorphology operator="dilate" radius="3.33" in="SourceAlpha" result="dilated"/><feGaussianBlur in="dilated" stdDeviation="6.67" result="blurred"/><feFlood flood-color="#5B9BD5" flood-opacity="0.54" result="flood"/><feComposite in="flood" in2="blurred" operator="in" result="glow"/><feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge><feDropShadow dx="2.83" dy="2.83" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4"/></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-7" data-name="等腰三角形 6" transform="rotate(180 1059.1 789.53)">
+<polygon points="1059.1,507.27 1424.93,1071.8 693.26,1071.8" fill="#F8AC63" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-6" data-name="等腰三角形 5" transform="rotate(180 621.2 152.87)">
+<polygon points="621.2,-97.47 958.2,403.2 284.2,403.2" fill="#F8AC63" fill-opacity="0.29" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-20" data-name="文本框 19">
+<rect x="732" y="238.73" width="548.07" height="174.33" fill="none" filter="url(#fx1)"/>
+<text x="741.6" y="318.33" text-anchor="start" xml:space="preserve" font-family="&quot;方正锐正黑_GBK&quot;, sans-serif" font-size="88" fill="#000000"><tspan fill="#000000" font-size="88">厦门大学</tspan></text>
+<text x="741.6" y="389.93" text-anchor="start" xml:space="preserve" font-family="&quot;方正锐正黑_GBK&quot;, sans-serif" font-size="48" fill="#000000"><tspan fill="#000000" font-size="48">PPT</tspan><tspan fill="#000000" font-size="48">模版</tspan></text>
+</g>
+<g id="shape-23" data-name="矩形 22">
+<rect x="131.56" y="478.87" width="212" height="48.33" fill="none"/>
+<text x="141.16" y="510.87" text-anchor="start" xml:space="preserve" font-family="&quot;黑体&quot;, sans-serif" font-size="32" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="32" font-weight="bold">汇报人：小夏</tspan></text>
+</g>
+<g id="shape-24" data-name="图片 23">
+<image href="assets/image15.png" x="1154.86" y="38.2" width="85.27" height="85.27" preserveAspectRatio="none"/>
+</g>
+<g id="shape-27" data-name="矩形 26">
+<rect x="732.03" y="420.29" width="535.76" height="60.47" fill="none"/>
+<text x="741.63" y="436.99" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪旗黑-45S&quot;, &quot;微软雅黑 Light&quot;, Arial, sans-serif" font-size="14" fill="#808080"><tspan fill="#808080" font-size="14">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo </tspan><tspan x="741.63" dy="21" fill="#808080" font-size="14">ligula eget dolorLorem ipsum dolor sit amet, consectetuer adipiscing elit. </tspan></text>
+</g>
+<g id="shape-5" data-name="图片 4">
+<image href="assets/image16.png" x="-161.74" y="1.87" width="1056" height="806.53" preserveAspectRatio="none"/>
+</g>
+<g id="shape-15" data-name="等腰三角形 14" transform="rotate(180 607.86 122.2)">
+<polygon points="607.86,-128.13 944.86,372.53 270.86,372.53" fill="#C17715" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-14" data-name="等腰三角形 13" transform="rotate(180 1076.16 810.67)">
+<polygon points="1076.16,528.4 1442,1092.93 710.33,1092.93" fill="#C17715" stroke="none" stroke-width="1"/>
+</g></svg>

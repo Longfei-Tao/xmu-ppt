@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#53639F"/><stop offset="1" stop-color="#1D2E5A"/></linearGradient><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4"/></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g id="shape-2" data-name="图片 1">
+<image href="assets/image5.png" x="0" y="0" width="1279.93" height="727.13" preserveAspectRatio="none"/>
+</g>
+<g id="shape-3" data-name="文本框 2">
+<rect x="70.33" y="33.2" width="722.53" height="74.2" fill="none"/>
+<text x="79.93" y="83.33" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Bold&quot;, sans-serif" font-size="53.33" fill="#B4C7E7" font-weight="bold"><tspan fill="#B4C7E7" font-size="53.33" font-weight="bold">●</tspan><tspan fill="#B4C7E7" font-size="53.33" font-weight="bold">PUT YOUR TITLE HERE</tspan></text>
+</g>
+<g id="shape-4" data-name="文本框 3">
+<rect x="679.8" y="258.33" width="461.07" height="397.33" fill="none"/>
+<text x="689.4" y="290.33" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="32" fill="#2E75B6"><tspan fill="#2E75B6" font-size="32">·</tspan><tspan fill="#2E75B6" font-size="32">Put your text here, pay </tspan><tspan x="689.4" dy="38.4" fill="#2E75B6" font-size="32">attention to the short and </tspan><tspan x="689.4" dy="38.4" fill="#2E75B6" font-size="32">clear expression of the </tspan><tspan x="689.4" dy="38.4" fill="#2E75B6" font-size="32">sentence, and divide the </tspan><tspan x="689.4" dy="38.4" fill="#2E75B6" font-size="32">content into several </tspan><tspan x="689.4" dy="38.4" fill="#2E75B6" font-size="32">points.</tspan></text>
+
+<text x="689.4" y="549.53" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="32" fill="#2E75B6"><tspan fill="#2E75B6" font-size="32">·</tspan><tspan fill="#2E75B6" font-size="32">Put your text here, pay </tspan><tspan x="689.4" dy="38.4" fill="#2E75B6" font-size="32">attention to the short and </tspan><tspan x="689.4" dy="38.4" fill="#2E75B6" font-size="32">clear expression of the </tspan><tspan x="689.4" dy="38.4" fill="#2E75B6" font-size="32">sentence, and divide the </tspan></text>
+</g>
+<g id="shape-8" data-name="矩形 7">
+<rect x="135.13" y="281.6" width="452.6" height="274.67" fill="url(#ggrad1)" stroke="none" stroke-width="1" filter="url(#fx1)"/>
+</g>
+<g id="shape-6" data-name="矩形 5">
+<rect x="122.8" y="542.67" width="477.27" height="65.87" fill="#DEEBF7" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="261.33" y="556.27" width="401.93" height="38.67" fill="none"/>
+<text x="270.93" y="581.47" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Bold&quot;, sans-serif" font-size="24" fill="#2F5597" font-weight="bold"><tspan fill="#2F5597" font-size="24" font-weight="bold">Describe your picture </tspan></text>
+</g></svg>
