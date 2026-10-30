@@ -107,6 +107,7 @@ For complete tool documentation, see `${SKILL_DIR}/scripts/README.md`.
 |----------|------|---------|
 | `xmu-quick` | `workflows/xmu-quick.md` | 厦门大学模板快速出稿 — 场景选模板、一次轻确认、手写 SVG 再导出（优先于 Eight Confirmations） |
 | `xmu-native` | `workflows/xmu-native.md` | 厦门大学模板原生填充 — 在 `source.pptx` 里按版式清单挑页、改 OOXML、不生成 SVG（模板保真最高） |
+| `review` | `workflows/review-pptx.md` | PPT 审阅 — 生成后对 .pptx 做版面体检（溢出 / 挤压 / 重叠 / 越界 / 间距 / 残留），两条路线共用 |
 | `topic-research` | `workflows/topic-research.md` | Pre-pipeline — gather web sources when the user supplies only a topic with no source files |
 | `template-fill` | `workflows/template-fill-pptx.md` | Give a native PPTX template deck plus source material; select fitting pages (a page may be reused for several output slides) and fill text back without SVG conversion |
 | `beautify` | `workflows/beautify-pptx.md` | Re-layout an existing PPTX through the SVG pipeline — preserve its text verbatim, inherit its palette/fonts as truth, redo only layout; mirror of `template-fill` |

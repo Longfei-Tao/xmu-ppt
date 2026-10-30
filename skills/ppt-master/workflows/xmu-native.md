@@ -89,9 +89,19 @@ python3 ${SKILL_DIR}/scripts/template_fill_pptx.py apply \
 
 `check-plan` 必须 `error=0`。出现 `ratio>1.2` 的警告就回去改文案。
 
+`apply` 之后必须过一遍版面体检——`check-plan` 只验槽位容量，验不了生成后的实际版面：
+
+```bash
+python3 ${SKILL_DIR}/scripts/review_pptx.py <project>/exports/<name>.pptx --min-level warn
+```
+
+它会报出文字溢出、字体被自动挤压、文字块互压、越界、占位符残留等，按页给位置与建议。
+**退出码 1 = 有硬伤，改完重跑，不许直接交付。**
+
 ## 6. 交付前确认
 
 - [ ] `check-plan` 无 error
+- [ ] `review_pptx.py` 无 ERROR（WARN 要么修，要么写进交付说明）
 - [ ] 页数与预期一致，章节页复用次数正确
 - [ ] 每页文字没有压到装饰、照片、边框
 - [ ] 图片、表格、图表仍在原位（原生填充不该动它们）

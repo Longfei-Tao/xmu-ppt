@@ -171,6 +171,27 @@ python skills/ppt-master/scripts/build_layout_index.py \
 
 它会剥离内嵌字体、压缩图片、生成 `layout_index.json` 与 `source.slide_library.json`，放进 `templates/decks/厦门大学_主题_某套/`。
 
+### D. 生成后自检（两条路线都适用）
+
+```bash
+python skills/ppt-master/scripts/review_pptx.py out.pptx --min-level warn
+```
+
+直接读 PPTX 的 OOXML 做版面体检，不需要打开 PowerPoint，也不需要截图：
+
+| 能查出 | 判据 |
+| --- | --- |
+| 文本溢出 | 排版后所需高度 ÷ 框内可用高度 ≥ 1.15 |
+| 字体被挤压 | 被 PowerPoint 自动缩到 90% 以下 |
+| 元素重叠 | 两块文字区域相交 ≥ 25% |
+| 越界 | 文字实际右端超出画布 |
+| 间距过密 | 上下两段文字间距 < 4pt |
+| 占位符残留 | 还留着 `{{...}}` 或 `XXX` |
+| 字号过小 | 实际字号 < 9pt |
+| 格式错乱 | 同一文本框内混了多种字体/字号 |
+
+每条问题给出页码、形状位置、实测数值和修改建议；`--json` 出机器可读报告；有 ERROR 时退出码为 1，可以直接挡在交付前。
+
 ## 依赖
 
 - **Python 3.10+**（脚本使用 `X | None` 形式的类型注解，3.9 会在导入时抛 `TypeError`）

@@ -144,10 +144,17 @@ python3 ${SKILL_DIR}/scripts/project_manager.py init <project_name> --format ppt
 ```bash
 python3 ${SKILL_DIR}/scripts/svg_quality_checker.py <project>/svg_output --template-mode --canonical-authoring
 python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project> -s svg_output -t fade -a none
+
+# 导出后必跑：版面体检（有 ERROR 不许交付）
+python3 ${SKILL_DIR}/scripts/review_pptx.py <project>/exports/<name>.pptx --min-level warn
 ```
+
+`review_pptx.py` 会按页列出溢出、字体被挤压、元素重叠、越界、间距过密、占位符残留等问题，
+每条给出实测值与修改建议。**退出码为 1 表示有硬伤**，必须先改再交付。
 
 交付前逐项确认：
 
+- [ ] `review_pptx.py` 无 ERROR（WARN 要么修，要么在交付说明里写明）
 - [ ] 所有 `{{...}}` 已替换，没有残留；
 - [ ] 文本没有压到装饰、边框、照片人脸；
 - [ ] 每页页码连续；
