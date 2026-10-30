@@ -38,4 +38,8 @@ MIT 许可证允许修改、再分发与商用，但要求在任何副本中保�
 
 ## 4. 生成工具依赖
 
-`python-pptx`、`PyYAML`、`XlsxWriter`、`skia-pathops`、`uharfbuzz`、`edge-tts` 等依赖遵循各自的开源许可证，详见 `skills/ppt-master/requirements.txt`。
+实际直接引用的第三方包为：`python-pptx`、`PyYAML`、`Pillow`、`requests`、`beautifulsoup4`、`curl_cffi`、`PyMuPDF`、`openpyxl`、`mammoth`、`markdownify`、`ebooklib`、`nbconvert`、`edge-tts`、`google-genai`、`flask`、`numpy`、`svglib`、`reportlab`。可选：`cairosvg`、`playwright`。
+
+完整清单与用途见 `skills/ppt-master/requirements.txt`，各包遵循其自身的开源许可证。
+
+> 说明：`XlsxWriter` 不是本项目的直接依赖（仅在安装 `python-pptx` 时被间接引入）；`skia-pathops`、`uharfbuzz` 在上游旧版本中使用，本分支代码已不再引用两者。

@@ -1,6 +1,6 @@
 # Conversion Tools
 
-> Architecture rationale (why native-Python first with pandoc fallback, why curl_cffi for TLS impersonation): see [docs/technical-design.md "Source Content Conversion"](../../../../docs/technical-design.md#source-content-conversion).
+> Architecture rationale (why native-Python first with pandoc fallback, why curl_cffi for TLS impersonation): see the upstream `docs/technical-design.md` §"Source Content Conversion" (not shipped in this branch — https://github.com/hugohe3/ppt-master).
 
 Source conversion tools turn PDFs, documents, slide decks, and web pages into Markdown before project creation.
 

@@ -61,7 +61,7 @@
 .
 ├── LICENSE                     # MIT（保留上游与本仓库版权）
 ├── THIRD_PARTY_NOTICES.md      # 上游署名 + 厦大素材使用边界
-├── examples/                   # 三套样张 + 总览图
+├── examples/                   # 三套官方样张 + 一份 11 页成品示例 + 总览图
 └── skills/
     └── ppt-master/             # 完整引擎（脚本 / 参考 / 工作流 / 模板）
         ├── SKILL.md            # 已加入「厦门大学模板优先」路由
@@ -116,8 +116,10 @@ python skills/ppt-master/scripts/svg_to_pptx.py demo -s svg_output -t fade -a no
 
 ## 依赖
 
-- Python 3.9+
-- `python-pptx`、`PyYAML`、`XlsxWriter`、`skia-pathops`、`uharfbuzz`（见 `skills/ppt-master/requirements.txt`）
+- **Python 3.10+**（脚本使用 `X | None` 形式的类型注解，3.9 会在导入时抛 `TypeError`）
+- 核心：`python-pptx`、`PyYAML`、`Pillow`、`requests`
+- 按需：PDF / Word / Excel 转换、图片搜索、TTS 等，完整清单见 `skills/ppt-master/requirements.txt`
+- 可选：`cairosvg` 或 `svglib`（导出时生成 PNG 后备图）、`playwright`（逐页视觉复核）
 - 可选：Microsoft PowerPoint（用于导出 PNG 预览）
 
 ## 许可证与素材边界

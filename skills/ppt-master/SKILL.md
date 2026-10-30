@@ -1,10 +1,12 @@
 ---
 name: ppt-master
 description: >
-  AI-driven multi-format SVG content generation system. Converts source documents
-  (PDF/DOCX/URL/Markdown) into high-quality SVG pages and exports to PPTX through
-  multi-role collaboration. Use when user asks to "create PPT", "make presentation",
-  "生成PPT", "做PPT", "制作演示文稿", or mentions "ppt-master".
+  厦门大学 PPT 模板库与 SVG→PPTX 出稿引擎：14 套厦大模板（官方 3 套 + 主题 11 套），
+  一句话出稿，导出文字可编辑的原生 .pptx。
+  AI-driven SVG presentation engine that hand-authors every page and exports
+  editable PPTX. Use when the user asks to "create PPT", "make presentation",
+  "生成PPT", "做PPT", "制作演示文稿", "答辩PPT", "开题报告", "组会汇报", "课程汇报",
+  or mentions "厦门大学模板", "厦大模板", "XMU template", or "ppt-master".
 ---
 
 # PPT Master Skill
@@ -24,7 +26,7 @@ description: >
 > 4. 确认话术最多一次，三行以内；用户已给足主题与内容时直接产出 `.pptx`，交付时说明模板选择与需补充项；
 > 5. 本快速通道仍遵守「SVG 逐页手写、禁止脚本批量生成、导出前跑质量检查」三条底线。
 >
-> 本仓库只保留厦门大学模板，不含任何其他机构模板；库外风格不再作为兜底选项。
+> 本仓库的 `templates/decks/` 只保留厦门大学 deck（14 套），不含任何其他机构 deck；`templates/layouts/` 仍保留 7 套通用版式（`academic_defense`、`medical_university`、`government_blue` 等）作为「结构叠加层」，仅在用户显式给出路径时参与融合，不参与场景路由。库外风格不再作为兜底选项。
 
 > [!CAUTION]
 > ## 🚨 Global Execution Discipline (MANDATORY)
@@ -205,13 +207,15 @@ Multi-deck: several PPTX files may be imported into one main-pipeline project �
 | User input contains | Step 3 action |
 |---|---|
 | One or more explicit template directory paths (each resolves to a directory containing `design_spec.md` with `kind: brand` / `kind: layout` / `kind: deck` in its YAML frontmatter) | Read each spec's `kind`, dispatch per the kind matrix below, fuse if multiple |
-| Anything else — bare template names ("用 academic_defense"), style descriptions ("麦肯锡风格"), brand mentions ("招商银行风格"), vague intent ("想用个模板"), or silence | Skip Step 3, free design |
+| Anything else — bare template names ("用 academic_defense"), style descriptions ("麦肯锡风格"), brand mentions ("某银行风格"), vague intent ("想用个模板"), or silence | Skip Step 3, free design — **except** the XMU quick lane below, which resolves Chinese scenario words to `厦门大学_*` decks |
 
 There is no slug matching, no name lookup, no fuzzy resolution. A name without a path does not trigger — the user must give a path the AI can `cd` into.
 
 > Style descriptions ("麦肯锡风格" / "Keynote 风" / "极简风" / etc.) never trigger Step 3. They flow into Strategist's Eight Confirmations as a style brief (color / typography / tone in confirmations e–g).
 
-> Bare names ("academic_defense", "招商银行", "anthropic") do NOT trigger Step 3 even if a matching directory exists in the library. The user must give a path. AI must not "helpfully" resolve a name to a path.
+> Bare names ("academic_defense", "medical_university") do NOT trigger Step 3 even if a matching directory exists in the library. The user must give a path. AI must not "helpfully" resolve a name to a path.
+>
+> **Sole exception**: `厦门大学_*` deck names. The XMU quick lane (`workflows/xmu-quick.md`) is allowed to resolve a scenario word or a `厦门大学_主题_*` deck name directly to `templates/decks/厦门大学_*/`, because that lane's entire purpose is one-sentence deck production. This exception does not extend to any other template.
 
 > "What templates exist?" is out-of-band Q&A — answer by listing entries from `brands_index.json` / `layouts_index.json` / `decks_index.json` together with their paths. Listing alone does not advance the pipeline; the user must send a path back to trigger Step 3.
 
@@ -219,7 +223,7 @@ There is no slug matching, no name lookup, no fuzzy resolution. A name without a
 
 #### Three template kinds
 
-The architecture has three independent reference bundles. Full schema in [`docs/zh/templates-architecture.md`](../../docs/zh/templates-architecture.md). Summary:
+The architecture has three independent reference bundles. Full schema lives in the upstream repository at `docs/zh/templates-architecture.md` (not shipped in this branch — see https://github.com/hugohe3/ppt-master). Summary:
 
 | Kind | Physical dir | Contains | Frontmatter |
 |---|---|---|---|
@@ -270,21 +274,20 @@ Override priority by segment:
 | layout + deck | deck | layout (overrides deck) | deck |
 | brand + layout + deck | brand | layout | deck |
 
-Field-level micro-adjustment (e.g. "use anthropic brand but primary changed to #FF0000") is **not** part of Step 3 fusion — it flows into Strategist Eight Confirmations e–g as a normal user request.
+Field-level micro-adjustment (e.g. "use 厦门大学 brand but primary changed to #FF0000") is **not** part of Step 3 fusion — it flows into Strategist Eight Confirmations e–g as a normal user request.
 
 #### Same-kind multiple paths — conflict resolution
 
-When the user gives two paths of the **same kind** (e.g. `brands/anthropic` + `brands/google`), Step 3 surfaces a conflict prompt before fusing — like resolving a git merge conflict:
+When the user gives two paths of the **same kind** (e.g. `layouts/academic_defense` + `layouts/medical_university`), Step 3 surfaces a conflict prompt before fusing — like resolving a git merge conflict:
 
 ```
-AI: 你给了两个 brand，检测到段级冲突：
-    - Color Scheme（Anthropic 橙红 vs Google 多色）
-    - Typography（Styrene/AnthropicSans vs GoogleSans/Roboto）
-    - Logo（Anthropic 标 vs Google 标）
-    - Voice & Tone（restrained vs friendly）
-    - Icon Style（stroke vs filled）
+AI: 你给了两个 layout，检测到段级冲突：
+    - Page Structure（答辩三段式 vs 病例叙事式）
+    - Grid & Margins（宽边距留白 vs 窄边距密排）
+    - Section Rhythm（四章推进 vs 三章推进）
+    - Icon Style（线性图标 vs 面性图标）
 
-    要 (a) 全部按 Anthropic / (b) 全部按 Google / (c) 逐段挑？
+    要 (a) 全部按 academic_defense / (b) 全部按 medical_university / (c) 逐段挑？
 ```
 
 Rules:
@@ -299,10 +302,10 @@ When fusion happens (any multi-path case), the resulting `<project>/templates/de
 
 ```markdown
 > **Fused from:**
-> - deck: `templates/decks/招商银行/` （base）
-> - brand: `templates/brands/anthropic/` （identity override）
+> - deck: `templates/decks/厦门大学_官方_厦园晴日/` （base）
+> - brand: `templates/brands/厦门大学/` （identity override）
 > - layout: `templates/layouts/academic_defense/` （structure override）
-> - conflicts resolved: Color Scheme from anthropic（user picked a）
+> - conflicts resolved: Color Scheme from 厦门大学（user picked a）
 ```
 
 Single-path Step 3 does **not** add provenance (the source is self-evident from the copied files).

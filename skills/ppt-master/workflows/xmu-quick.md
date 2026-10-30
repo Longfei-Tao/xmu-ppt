@@ -5,7 +5,7 @@ description: 厦门大学模板快速出稿流程（本仓库定制），替代�
 # 厦门大学快速出稿（XMU Quick Deck）
 
 > 目标：用户只说“帮我做一份 XX 汇报，主题是 XX”，就能直接产出一份像人做的厦大风格 PPT。
-> 本流程只适用于 `templates/decks/厦门大学_*` 三套模板；其他模板仍走原有 `workflows/` 流程。
+> 本流程适用于 `templates/decks/厦门大学_*` 全部 14 套模板（3 套官方 + 11 套主题）；非厦大的 deck 或纯自由设计仍走原有 `workflows/` 流程。
 
 ---
 
@@ -33,7 +33,7 @@ description: 厦门大学模板快速出稿流程（本仓库定制），替代�
 
 ### 厦大主题库（11 套，按需扩展）
 
-除三套官方模板外，还有 11 套由原 PPTX 一比一转换的厦大主题模板（均为 `厦门大学_主题_*`）。本库不包含任何非厦大模板。
+除三套官方模板外，还有 11 套由原 PPTX 一比一转换的厦大主题模板（均为 `厦门大学_主题_*`）。`templates/decks/` 下不含任何非厦大 deck。
 
 - 使用方式与官方模板一致：复制 5 页原型、替换文字、保留图形与图片；
 - 原型保留了原示例文字，只改文字即可；
@@ -70,7 +70,7 @@ description: 厦门大学模板快速出稿流程（本仓库定制），替代�
 python3 ${SKILL_DIR}/scripts/project_manager.py init <project_name> --format ppt169
 ```
 
-把模板 5 页复制进 `<project>/svg_output/`，按下列命名重排：
+把模板的 5 页原型（`01_cover.svg` / `02_toc.svg` / `02_chapter.svg` / `03_content.svg` / `04_ending.svg`）连同素材图片复制进 `<project>/svg_output/`，按下列命名重排。`design_spec.md` 与 `preview.png` 只作参考，**不要**复制进 `svg_output/`：
 
 | 输出文件 | 来源 | 处理 |
 | --- | --- | --- |

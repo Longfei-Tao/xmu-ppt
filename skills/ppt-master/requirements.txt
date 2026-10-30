@@ -16,6 +16,16 @@
 # 默认使用 Office 兼容模式（PNG + SVG 双格式），支持所有 Office 版本
 python-pptx>=0.6.21
 
+# YAML parsing for design_spec.md / spec_lock.md
+# 用于解析 design_spec.md 与 spec_lock.md 的 YAML
+# Used by scripts/svg_quality_checker.py (spec_lock drift check) and
+# scripts/register_template.py (frontmatter → index sync). Both degrade to a
+# minimal built-in parser if PyYAML is missing, but that parser only handles
+# the simple `placeholders:` shape — install PyYAML for full fidelity.
+# 缺失时会退回内置极简解析器，只能识别 placeholders: 这类简单结构；
+# 需要完整解析能力时请安装。
+PyYAML>=6.0
+
 # Recorded narration / 录制计时和旁白
 # notes_to_audio.py generates per-slide narration audio on macOS/Linux/Windows.
 # notes_to_audio.py 用于在 macOS/Linux/Windows 上生成逐页旁白音频。
@@ -109,3 +119,13 @@ google-genai>=1.0.0
 # Localhost web editor for annotating SVG elements with edit instructions.
 # 本地 Web 编辑器，用于在 SVG 元素上添加编辑标注指令
 flask>=3.0.0
+
+# ─────────────────────────────────────────────────────────────
+# Optional — visual review / 可选 —— 视觉复核
+# ─────────────────────────────────────────────────────────────
+# scripts/visual_review.py renders pages in a real browser to score them.
+# Not part of the main pipeline; install only if you use that workflow.
+# 该脚本不在主链路上，只做逐页视觉打分时按需安装：
+#   pip install playwright
+#   python3 -m playwright install chromium
+# playwright>=1.40.0

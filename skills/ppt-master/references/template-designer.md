@@ -365,14 +365,13 @@ This section describes downstream reuse. The `Template_Designer` role itself is 
 ```
 templates/
 ├── brands/
-│   ├── anthropic/         # Anthropic brand identity (logo + colors + typography)
-│   └── google/            # Google brand identity
+│   └── 厦门大学/           # XMU brand identity (logo + colors + typography)
 ├── layouts/
 │   ├── academic_defense/  # Academic-defense structure (no identity)
 │   └── pixel_retro/       # Pixel retro / cyberpunk structure (no identity)
 └── decks/
-    ├── 招商银行/          # China Merchants Bank full PPT replica
-    └── 中国电建_常规/      # PowerChina full PPT replica
+    ├── 厦门大学_官方_厦园晴日/   # XMU official deck — full presentation replica
+    └── 厦门大学_主题_凤凰花开/   # XMU themed deck — mirrored from a source PPTX
 ```
 
 ---

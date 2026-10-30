@@ -1560,7 +1560,7 @@ def print_usage() -> None:
     print("  python3 scripts/svg_quality_checker.py examples/project/svg_output")
     print("  python3 scripts/svg_quality_checker.py examples/project")
     print("  python3 scripts/svg_quality_checker.py templates/layouts/academic_defense --template-mode")
-    print("  python3 scripts/svg_quality_checker.py templates/decks/招商银行 --template-mode")
+    print("  python3 scripts/svg_quality_checker.py templates/decks/厦门大学_官方_厦园晴日 --template-mode")
     print("\nOptions:")
     print("  --format <ppt169|ppt43|...>   Expected canvas format")
     print("  --template-mode               Validate a templates/{layouts,decks}/<id> directory:")

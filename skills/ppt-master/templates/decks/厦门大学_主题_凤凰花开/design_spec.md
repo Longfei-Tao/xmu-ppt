@@ -4,7 +4,13 @@ kind: deck
 summary: 厦门大学PPT模板 · 深色照片底 + 凤凰花红 + 白字
 canvas_format: ppt169
 page_count: 5
-primary_color: "#5B9BD5"
+primary_color: "#9A3227"
+placeholders:
+  01_cover: []
+  02_toc: []
+  02_chapter: []
+  03_content: []
+  04_ending: []
 ---
 
 # 厦门大学_主题_凤凰花开 - Design Specification
@@ -15,7 +21,29 @@ primary_color: "#5B9BD5"
 
 - 1280 × 720（viewBox `0 0 1280 720`）
 
-## III. 配色（来自原 PPT 主题）
+## III. 配色（实测自主 SVG 用色）
+
+> 由本套 5 页 SVG 的 `fill` / `stroke` / `stop-color` 频次统计得出，已剔除纯黑、纯白与低饱和灰。
+> 原 PPTX 主题色板只是 Office 默认值，不代表本套视觉主色，仅作追溯，见本节末。
+
+| Token | HEX | 角色 | 出现次数 |
+| --- | --- | --- | --- |
+| `accent1` | `#9A3227` | **主色**（中红） | 28 |
+| `accent2` | `#9DC3E6` | 次级色（浅蓝） | 4 |
+| `accent3` | `#5B9BD5` | 点缀色（中蓝） | 2 |
+| `accent4` | `#CA5549` | 辅助色（中红） | — |
+| `accent5` | `#5E221B` | 辅助色（深红） | — |
+| `accent6` | `#762A22` | 辅助色（深红） | — |
+| `dk1` | `#2E3D3A` | 正文深色文字（中性） | 10 |
+| `dk2` | `#38120E` | 深底／强调（深红） | — |
+| `lt1` | `#FFFFFF` | 主背景（中性） | 86 |
+| `lt2` | `#F5ECEB` | 浅色底块（浅红） | — |
+| `hlink` | `#9A3227` | 链接色（中红） | 28 |
+| `folHlink` | `#9DC3E6` | 已访问链接（浅蓝） | 4 |
+
+**取色规则**：正文与装饰一律取 `accent1`；需要深浅层次时用 `accent1` 的同色系变体，不要引入本表之外的颜色。`dk1` 只用于正文文字，`lt1` 只用于背景。
+
+### 附：原 PPTX 主题色板（仅供追溯，勿用作设计取色）
 
 - `dk1` = `#000000`
 - `lt1` = `#FFFFFF`
@@ -30,20 +58,22 @@ primary_color: "#5B9BD5"
 - `hlink` = `#0563C1`
 - `folHlink` = `#954F72`
 
+---
+
+
 ## IV. 字体
 
 - majorLatin: `Calibri Light`
 - minorLatin: `Calibri`
 
-## V. 页面原型
-
+## V. Page Roster（页面原型）
 | 文件 | 角色 | 原文件中的页码 |
 | --- | --- | --- |
-| 01_cover.svg | 封面 | 1 |
-| 02_toc.svg | 目录 | 2 |
-| 02_chapter.svg | 章节 | 3 |
-| 03_content.svg | 内容 | 4 |
-| 04_ending.svg | 结束 | 11 |
+| `01_cover.svg` | 封面 | 1 |
+| `02_toc.svg` | 目录 | 2 |
+| `02_chapter.svg` | 章节 | 3 |
+| `03_content.svg` | 内容 | 4 |
+| `04_ending.svg` | 结束 | 11 |
 
 ## VI. 使用说明
 

@@ -4,13 +4,15 @@
 
 Single source of truth for what decks exist: [`decks_index.json`](./decks_index.json) (`deck_id → { summary, canvas_format, page_count, primary_color }`). This README explains the kind; it does **not** enumerate decks.
 
-Full data model: [`docs/zh/templates-architecture.md`](../../../../docs/zh/templates-architecture.md).
+Full data model: upstream `docs/zh/templates-architecture.md` (not shipped in this branch — https://github.com/hugohe3/ppt-master).
 
 ---
 
 ## Trigger rule
 
-Deck selection is **opt-in by explicit path**. The main workflow defaults to free design. A deck is only used when the user gives an explicit directory path in their initial message (e.g. `skills/ppt-master/templates/decks/招商银行/`). Bare names do not trigger. See [`SKILL.md`](../../SKILL.md) Step 3.
+Deck selection is **opt-in by explicit path** in the generic pipeline. The main workflow defaults to free design. A deck is only used when the user gives an explicit directory path in their initial message (e.g. `skills/ppt-master/templates/decks/厦门大学_官方_厦园晴日/`). Bare names do not trigger. See [`SKILL.md`](../../SKILL.md) Step 3.
+
+**Exception — the XMU quick lane.** `workflows/xmu-quick.md` is the one path that resolves a bare scenario word ("答辩", "开题", "组会", "读书报告") to a deck without asking for a directory. That lane is scoped to `厦门大学_*` decks only; everything else still obeys the explicit-path rule above.
 
 `decks_index.json` is a **discovery aid**, not a trigger — it lets the AI answer "what decks exist?" by listing ids and paths. Listing alone never advances the pipeline.
 
@@ -69,4 +71,4 @@ The register step updates [`decks_index.json`](./decks_index.json) — the singl
 
 - [`templates/layouts/`](../layouts/) — structure-only templates without identity
 - [`templates/brands/`](../brands/) — identity-only presets without page rosters
-- [`docs/zh/templates-architecture.md`](../../../../docs/zh/templates-architecture.md) — three-class data model + fusion rules
+- upstream `docs/zh/templates-architecture.md` (not shipped in this branch — https://github.com/hugohe3/ppt-master) — three-class data model + fusion rules
