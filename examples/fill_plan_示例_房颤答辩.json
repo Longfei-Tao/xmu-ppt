@@ -1,0 +1,426 @@
+{
+  "schema": "template_fill_pptx_plan.v1",
+  "source_pptx": "skills/ppt-master/templates/decks/厦门大学_官方_厦园晴日/source.pptx",
+  "slides": [
+    {
+      "source_slide": 1,
+      "purpose": "cover",
+      "replacements": [
+        {
+          "slot_id": "s01_sh3",
+          "text": "NLRP3 炎症小体与房颤"
+        },
+        {
+          "slot_id": "s01_sh4",
+          "text": "厦门大学医学院 · 硕士学位论文答辩"
+        },
+        {
+          "slot_id": "s01_sh5",
+          "text": "指导老师：XXX"
+        },
+        {
+          "slot_id": "s01_sh29",
+          "text": "答辩人：陶龙飞"
+        }
+      ]
+    },
+    {
+      "source_slide": 2,
+      "purpose": "toc",
+      "replacements": [
+        {
+          "slot_id": "s02_sh4",
+          "text": "房颤的临床困境"
+        },
+        {
+          "slot_id": "s02_sh15",
+          "text": "NLRP3 通路"
+        },
+        {
+          "slot_id": "s02_sh18",
+          "text": "上下游证据"
+        },
+        {
+          "slot_id": "s02_sh37",
+          "text": "干预与瓶颈"
+        }
+      ]
+    },
+    {
+      "source_slide": 3,
+      "purpose": "chapter-1",
+      "replacements": [
+        {
+          "slot_id": "s03_sh6",
+          "text": "PART 01"
+        },
+        {
+          "slot_id": "s03_sh10",
+          "text": "背景"
+        }
+      ]
+    },
+    {
+      "source_slide": 4,
+      "purpose": "why-refractory",
+      "replacements": [
+        {
+          "slot_id": "s04_sh23",
+          "text": "房颤为什么难治"
+        },
+        {
+          "slot_id": "s04_sh16",
+          "text": "节律控制有限"
+        },
+        {
+          "slot_id": "s04_sh15",
+          "text": "抗凝与消融规范化改善了预后，但术后复发率仍不容忽视"
+        },
+        {
+          "slot_id": "s04_sh18",
+          "text": "心房基质已成"
+        },
+        {
+          "slot_id": "s04_sh17",
+          "text": "单纯消除肺静脉触发灶，不足以逆转已形成的心房基质"
+        },
+        {
+          "slot_id": "s04_sh20",
+          "text": "并发症负担"
+        },
+        {
+          "slot_id": "s04_sh19",
+          "text": "缺血性卒中与心力衰竭，是房颤致残致死的两条主路径"
+        },
+        {
+          "slot_id": "s04_sh21",
+          "text": "正是这一临床落差，推动了疾病概念本身的更新：房颤不再被视为孤立的心电学故障，而被理解为心房心肌病的临床表现。"
+        }
+      ]
+    },
+    {
+      "source_slide": 5,
+      "purpose": "paradigm-shift",
+      "replacements": [
+        {
+          "slot_id": "s05_sh27",
+          "text": "从电学到心肌病"
+        },
+        {
+          "slot_id": "s05_sh21",
+          "text": "电重构"
+        },
+        {
+          "slot_id": "s05_sh20",
+          "text": "离子通道功能改变、钙处理异常，构成触发活动的基础"
+        },
+        {
+          "slot_id": "s05_sh24",
+          "text": "结构重构"
+        },
+        {
+          "slot_id": "s05_sh23",
+          "text": "成纤维细胞活化与基质沉积，形成慢传导通路与阻滞线"
+        },
+        {
+          "slot_id": "s05_sh26",
+          "text": "代谢紊乱"
+        },
+        {
+          "slot_id": "s05_sh25",
+          "text": "与炎症互为因果，形成「房颤引发房颤」的正反馈"
+        },
+        {
+          "slot_id": "s05_sh19",
+          "text": "三者被理解为同一病理过程的不同侧面，研究重心随之从离子通道转向组织与细胞微环境。"
+        }
+      ]
+    },
+    {
+      "source_slide": 6,
+      "purpose": "chapter-2",
+      "replacements": [
+        {
+          "slot_id": "s06_sh4",
+          "text": "PART 02"
+        },
+        {
+          "slot_id": "s06_sh14",
+          "text": "机制"
+        }
+      ]
+    },
+    {
+      "source_slide": 8,
+      "purpose": "two-step-activation",
+      "replacements": [
+        {
+          "slot_id": "s08_sh63",
+          "text": "炎症小体的两步激活"
+        },
+        {
+          "slot_id": "s08_sh25",
+          "text": "启动信号"
+        },
+        {
+          "slot_id": "s08_sh51",
+          "text": "Toll 样受体激活 NF-κB，上调 NLRP3 与 pro-IL-1β 的转录"
+        },
+        {
+          "slot_id": "s08_sh16",
+          "text": "激活信号"
+        },
+        {
+          "slot_id": "s08_sh53",
+          "text": "钾外流、活性氧蓄积、溶酶体破裂，促使复合物寡聚"
+        },
+        {
+          "slot_id": "s08_sh8",
+          "text": "效应输出"
+        },
+        {
+          "slot_id": "s08_sh55",
+          "text": "caspase-1 剪切 pro-IL-1β/18 为成熟体，经非经典分泌释放"
+        },
+        {
+          "slot_id": "s08_sh4",
+          "text": "心肌自主"
+        },
+        {
+          "slot_id": "s08_sh57",
+          "text": "心房肌细胞自身表达全部组分，在模型与患者组织中均处激活态"
+        }
+      ]
+    },
+    {
+      "source_slide": 11,
+      "purpose": "opposing-evidence",
+      "replacements": [
+        {
+          "slot_id": "s11_sh64",
+          "text": "两条相反的线索"
+        },
+        {
+          "slot_id": "s11_sh39",
+          "text": "促炎证据"
+        },
+        {
+          "slot_id": "s11_sh38",
+          "text": "合并房颤的 CKD 患者循环 IL-1β 高于窦律者，心房 NLRP3 活性增强"
+        },
+        {
+          "slot_id": "s11_sh41",
+          "text": "干预可逆"
+        },
+        {
+          "slot_id": "s11_sh40",
+          "text": "敲除 Nlrp3 或中和 IL-1β，左房内径回退、纤维化减轻、诱发率下降"
+        },
+        {
+          "slot_id": "s11_sh21",
+          "text": "抑炎通路"
+        },
+        {
+          "slot_id": "s11_sh42",
+          "text": "SCFA 经 GPR43 下调 NLRP3，补充后可逆转低纤维饮食所致易感"
+        },
+        {
+          "slot_id": "s11_sh24",
+          "text": "证据边界"
+        },
+        {
+          "slot_id": "s11_sh23",
+          "text": "人群多为横断面设计，机制多来自啮齿类，不能直接外推为因果"
+        }
+      ]
+    },
+    {
+      "source_slide": 10,
+      "purpose": "chapter-3",
+      "replacements": [
+        {
+          "slot_id": "s10_sh4",
+          "text": "PART 03"
+        },
+        {
+          "slot_id": "s10_sh14",
+          "text": "上下游"
+        }
+      ]
+    },
+    {
+      "source_slide": 4,
+      "purpose": "upstream-sources",
+      "replacements": [
+        {
+          "slot_id": "s04_sh23",
+          "text": "炎症从何而来"
+        },
+        {
+          "slot_id": "s04_sh16",
+          "text": "克隆性造血"
+        },
+        {
+          "slot_id": "s04_sh15",
+          "text": "CHIP 携带者房颤风险随克隆负荷上升，小鼠 Tet2 缺失加重易感"
+        },
+        {
+          "slot_id": "s04_sh18",
+          "text": "慢性肾病"
+        },
+        {
+          "slot_id": "s04_sh17",
+          "text": "尿毒症环境是炎症小体强刺激源，经 NLRP3/IL-1β 造成双重重构"
+        },
+        {
+          "slot_id": "s04_sh20",
+          "text": "肠道菌群"
+        },
+        {
+          "slot_id": "s04_sh19",
+          "text": "膳食纤维经菌群发酵产生 SCFA，经 GPR43 抑制 NLRP3"
+        },
+        {
+          "slot_id": "s04_sh21",
+          "text": "三条路径性质不同——衰老与克隆演化、代谢废物蓄积、饮食与菌群结构——却汇聚于同一节点。这正是 NLRP3 更适合被理解为「汇聚点」而非「起点」的原因。"
+        }
+      ]
+    },
+    {
+      "source_slide": 12,
+      "purpose": "downstream",
+      "replacements": [
+        {
+          "slot_id": "s12_sh41",
+          "text": "IL-1β 的下游通路"
+        },
+        {
+          "slot_id": "s12_sh23",
+          "text": "结构一侧"
+        },
+        {
+          "slot_id": "s12_sh21",
+          "text": "经 TGF-β1/Smad3 激活成纤维细胞，胶原沉积形成慢传导"
+        },
+        {
+          "slot_id": "s12_sh25",
+          "text": "电学一侧"
+        },
+        {
+          "slot_id": "s12_sh24",
+          "text": "氧化应激与钙处理异常，肌浆网钙泄漏增加"
+        },
+        {
+          "slot_id": "s12_sh35",
+          "text": "结构"
+        },
+        {
+          "slot_id": "s12_sh27",
+          "text": "空间不均"
+        },
+        {
+          "slot_id": "s12_sh26",
+          "text": "多起自肺静脉-左房交界与左房后壁"
+        },
+        {
+          "slot_id": "s12_sh39",
+          "text": "电学"
+        },
+        {
+          "slot_id": "s12_sh29",
+          "text": "正反馈"
+        },
+        {
+          "slot_id": "s12_sh28",
+          "text": "房颤快速激动反过来加重炎症与钙超载"
+        },
+        {
+          "slot_id": "s12_sh36",
+          "text": "结构上的传导异质性与电学上的触发活动相互叠加"
+        },
+        {
+          "slot_id": "s12_sh40",
+          "text": "使房颤得以自我维持，形成「房颤引发房颤」"
+        }
+      ]
+    },
+    {
+      "source_slide": 13,
+      "purpose": "chapter-4",
+      "replacements": [
+        {
+          "slot_id": "s13_sh4",
+          "text": "PART 04"
+        },
+        {
+          "slot_id": "s13_sh14",
+          "text": "干预"
+        }
+      ]
+    },
+    {
+      "source_slide": 14,
+      "purpose": "intervention",
+      "replacements": [
+        {
+          "slot_id": "s14_sh54",
+          "text": "干预策略与瓶颈"
+        },
+        {
+          "slot_id": "s14_sh42",
+          "text": "直接抑制"
+        },
+        {
+          "slot_id": "s14_sh41",
+          "text": "MCC950 及其衍生物，抑制炎症小体组装或 NLRP3 活性"
+        },
+        {
+          "slot_id": "s14_sh15",
+          "text": "阻断下游"
+        },
+        {
+          "slot_id": "s14_sh14",
+          "text": "IL-1 受体拮抗剂，切断效应分子的下游通路"
+        },
+        {
+          "slot_id": "s14_sh17",
+          "text": "间接抗炎"
+        },
+        {
+          "slot_id": "s14_sh16",
+          "text": "秋水仙碱、SGLT2 抑制剂，从代谢层面减少上游刺激"
+        },
+        {
+          "slot_id": "s14_sh19",
+          "text": "瓶颈所在"
+        },
+        {
+          "slot_id": "s14_sh18",
+          "text": "机制证据一致，人群终点有限；长期抑制固有免疫有感染风险"
+        }
+      ]
+    },
+    {
+      "source_slide": 17,
+      "purpose": "ending",
+      "replacements": [
+        {
+          "slot_id": "s17_sh3",
+          "text": "恳请各位老师批评指正"
+        },
+        {
+          "slot_id": "s17_sh4",
+          "text": "厦门大学医学院"
+        },
+        {
+          "slot_id": "s17_sh5",
+          "text": "指导老师：XXX"
+        },
+        {
+          "slot_id": "s17_sh29",
+          "text": "答辩人：陶龙飞"
+        }
+      ]
+    }
+  ]
+}
