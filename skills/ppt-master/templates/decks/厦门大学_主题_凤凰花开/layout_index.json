@@ -1,0 +1,181 @@
+{
+  "deck_id": "厦门大学_主题_凤凰花开",
+  "source": "source.pptx",
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 11,
+  "layout_kinds": [
+    "chapter-divider",
+    "cover",
+    "ending",
+    "list",
+    "numbered-cards",
+    "toc",
+    "two-block"
+  ],
+  "pages": [
+    {
+      "slide": 1,
+      "role": "cover_candidate",
+      "layout": "cover",
+      "slot_count": 7,
+      "filled_slot_count": 6,
+      "type_scale_px": [
+        67,
+        37,
+        13
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "厦门大学 PPT模版 汇  报  人：XXX 汇报时间：XXX 20XX/X/X Xiamen University T"
+    },
+    {
+      "slide": 2,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 19,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        153,
+        32,
+        13
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "请在此输入内容 The user can demonstrate on a projector or computer "
+    },
+    {
+      "slide": 3,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 6,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        128,
+        32,
+        12
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "请在此输入标题内容 点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关"
+    },
+    {
+      "slide": 4,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 20,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        48,
+        32,
+        12
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相"
+    },
+    {
+      "slide": 5,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 6,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        48,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "在此键入内容 点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文"
+    },
+    {
+      "slide": 6,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 12,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        48,
+        12
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "在此键入内容 点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文"
+    },
+    {
+      "slide": 7,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 6,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        128,
+        32,
+        12
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "键入主题 请在此输入标题内容 点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点"
+    },
+    {
+      "slide": 8,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 34,
+      "filled_slot_count": 16,
+      "type_scale_px": [
+        48,
+        32,
+        13
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "01 02 03 04 05 请在此输入内容 The user can demonstrate on a project"
+    },
+    {
+      "slide": 9,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 7,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        48,
+        13
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相"
+    },
+    {
+      "slide": 10,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 13,
+      "filled_slot_count": 10,
+      "type_scale_px": [
+        64,
+        48,
+        27,
+        13
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "在此键入内容 1/ 2/ 3/ The user can demonstrate on a projector or c"
+    },
+    {
+      "slide": 11,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 3,
+      "filled_slot_count": 1,
+      "type_scale_px": [
+        153
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "谢谢观看"
+    }
+  ]
+}

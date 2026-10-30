@@ -1,0 +1,141 @@
+{
+  "deck_id": "厦门大学_主题_光影厦大",
+  "source": "source.pptx",
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 9,
+  "layout_kinds": [
+    "cover",
+    "ending",
+    "toc"
+  ],
+  "pages": [
+    {
+      "slide": 1,
+      "role": "cover_candidate",
+      "layout": "cover",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        72,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "厦门大学 PPT模板 LIGHT AND SHADOW REPORTER：XXX DATA：XXX ——Put your"
+    },
+    {
+      "slide": 2,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 4,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        107,
+        48
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "CONTENT PART1:Put your text here. PART3:Put your text here. "
+    },
+    {
+      "slide": 3,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        117,
+        32,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "TITLE Put your text here, pay attention to the short and cle"
+    },
+    {
+      "slide": 4,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 5,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        53,
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "●PUT YOUR TITLE HERE ·Put your text here, pay attention to t"
+    },
+    {
+      "slide": 5,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 4,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Analysis of influencing factors  2 Put your text here, pay a"
+    },
+    {
+      "slide": 6,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 2,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        59,
+        43
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Put your text here, pay attention to the short and clear exp"
+    },
+    {
+      "slide": 7,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 2,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        72
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "A Put your text here, pay attention to the short and clear e"
+    },
+    {
+      "slide": 8,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 2,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        59,
+        43
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Put your text here, pay attention to the short and clear exp"
+    },
+    {
+      "slide": 9,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 3,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        107,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "THANK YOU! [1]Note: put your text here, pay attention to the"
+    }
+  ]
+}

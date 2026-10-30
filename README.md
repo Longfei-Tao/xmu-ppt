@@ -12,9 +12,25 @@
 
 它会自动完成：选模板 → 拆内容 → 排页面 → 手写 SVG → 导出可编辑 `.pptx`，不需要你先搭框架、选配色、调字号。
 
+### 两种做法，先选一种
+
+| | 原生填充（推荐给别人看） | SVG 出稿（推荐给自己改） |
+| --- | --- | --- |
+| 一句话 | 在**原始模板**里嵌内容 | 照着模板风格**重画** |
+| 模板保真 | 照片、红条、校徽圆章、表格样式、字体字号全部原样 | 图片与装饰能留，复杂版式需手工还原 |
+| 页数 | 版式库有多少用多少，同一版式可反复套用 | 靠复制 5 页原型扩展 |
+| 排版自由度 | 受槽位约束 | 想怎么排怎么排 |
+| 什么时候用 | 答辩、汇报这类「不能改模板」的场合 | 想要新排版、或模板里没有合适的版式 |
+
+说「用这个模板做」，走原生填充；只说「做个厦大风格的 PPT」，走 SVG 出稿。
+
 ## 模板库（纯厦大，共 14 套 + 1 个品牌预设）
 
-> 全部模板均为 16:9 / 1280×720，每套 5 页原型（封面、目录、章节、内容、结束），可复制扩展。库内不含任何非厦门大学的机构模板。
+> 全部模板均为 16:9 / 1280×720。每套模板目录里同时有三种资产：
+>
+> - `source.pptx` — 原始 PPTX（剥离内嵌字体、压缩过图片，体积降 80% 以上），原生填充的克隆源，页数与版式完整
+> - `layout_index.json` — 版式画像：每页是封面 / 目录 / 章节 / 几宫格 / 编号卡片，以及字号与槽位数量
+> - `01_cover.svg` … `04_ending.svg` — 5 页 SVG 原型，供 SVG 出稿路线使用
 
 ### 官方模板（3 套，人工重制，推荐日常使用）
 
@@ -61,16 +77,26 @@
 .
 ├── LICENSE                     # MIT（保留上游与本仓库版权）
 ├── THIRD_PARTY_NOTICES.md      # 上游署名 + 厦大素材使用边界
-├── examples/                   # 三套官方样张 + 一份 11 页成品示例 + 总览图
+├── examples/                   # 官方样张 + SVG 出稿示例 + 原生填充示例 + 总览图
 └── skills/
     └── ppt-master/             # 完整引擎（脚本 / 参考 / 工作流 / 模板）
-        ├── SKILL.md            # 已加入「厦门大学模板优先」路由
+        ├── SKILL.md            # 已加入「厦门大学模板优先」路由（含两条路线判定）
         ├── workflows/
-        │   └── xmu-quick.md    # 快速出稿流程（核心改动）
+        │   ├── xmu-quick.md    # SVG 出稿快速通道
+        │   └── xmu-native.md   # 原生填充快速通道（在原始模板里嵌内容）
         ├── templates/
         │   ├── brands/厦门大学/
         │   └── decks/          # 14 套厦门大学模板
-        ├── scripts/            # svg_to_pptx / svg_quality_checker 等
+        │       └── <deck_id>/
+        │           ├── source.pptx              # 原始模板（克隆源）
+        │           ├── source.slide_library.json # 槽位明细
+        │           ├── layout_index.json        # 版式画像（选页依据）
+        │           └── 01_cover.svg …           # 5 页 SVG 原型
+        ├── scripts/
+        │   ├── build_layout_index.py  # 新模板入库：瘦身 + 版式索引
+        │   ├── template_fill_pptx.py  # 原生填充：scaffold / check-plan / apply
+        │   ├── svg_to_pptx.py
+        │   └── svg_quality_checker.py
         └── references/
 ```
 
@@ -102,6 +128,8 @@ Copy-Item -Recurse skills/ppt-master "$env:USERPROFILE\.codex\skills\ppt-master"
 
 ## 手动使用
 
+### A. SVG 出稿
+
 ```bash
 # 1. 生成项目骨架
 python skills/ppt-master/scripts/project_manager.py init demo --format ppt169
@@ -113,6 +141,35 @@ python skills/ppt-master/scripts/svg_quality_checker.py \
 # 3. 导出
 python skills/ppt-master/scripts/svg_to_pptx.py demo -s svg_output -t fade -a none
 ```
+
+### B. 原生填充
+
+```bash
+# 1. 看版式清单，决定用哪几页
+cat skills/ppt-master/templates/decks/厦门大学_主题_凤凰花开/layout_index.json
+
+# 2. 生成填充计划骨架（--slides 是源页号，可重复、可重排）
+python skills/ppt-master/scripts/template_fill_pptx.py scaffold \
+  skills/ppt-master/templates/decks/厦门大学_主题_凤凰花开/source.slide_library.json \
+  -o fill_plan.json --slides "1,2,3,5,8"
+
+# 3. 手改 fill_plan.json 里的 text
+
+# 4. 校验容量，再导出
+python skills/ppt-master/scripts/template_fill_pptx.py check-plan \
+  skills/ppt-master/templates/decks/厦门大学_主题_凤凰花开/source.slide_library.json fill_plan.json
+python skills/ppt-master/scripts/template_fill_pptx.py apply \
+  skills/ppt-master/templates/decks/厦门大学_主题_凤凰花开/source.pptx fill_plan.json -o out.pptx
+```
+
+### C. 新增一套模板
+
+```bash
+python skills/ppt-master/scripts/build_layout_index.py \
+  "D:/我的模板/某套模板.pptx" --deck-id 厦门大学_主题_某套
+```
+
+它会剥离内嵌字体、压缩图片、生成 `layout_index.json` 与 `source.slide_library.json`，放进 `templates/decks/厦门大学_主题_某套/`。
 
 ## 依赖
 

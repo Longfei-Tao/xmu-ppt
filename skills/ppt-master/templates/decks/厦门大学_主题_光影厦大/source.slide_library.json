@@ -1,0 +1,585 @@
+{
+  "schema": "template_fill_pptx_library.v1",
+  "source_pptx": "D:\\Coding\\xmu-ppt-master\\skills\\ppt-master\\templates\\decks\\厦门大学_主题_光影厦大\\source.pptx",
+  "slide_count": 9,
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "page_type": "cover_candidate",
+      "text_summary": "厦门大学\nPPT模板\nLIGHT AND SHADOW\nREPORTER：XXX\nDATA：XXX\n——Put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+      "slots": [
+        {
+          "slot_id": "s01_sh7",
+          "role": "title_candidate",
+          "text": "厦门大学\nPPT模板\nLIGHT AND SHADOW",
+          "paragraph_count": 3,
+          "geometry": {
+            "x": 776,
+            "y": 103,
+            "width": 443,
+            "height": 242
+          },
+          "text_metrics": {
+            "font_size_px": 72.0,
+            "paragraph_count": 3
+          }
+        },
+        {
+          "slot_id": "s01_sh9",
+          "role": "body_candidate",
+          "text": "REPORTER：XXX\nDATA：XXX",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 937,
+            "y": 460,
+            "width": 264,
+            "height": 110
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s01_sh10",
+          "role": "body_candidate",
+          "text": "——Put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 814,
+            "y": 340,
+            "width": 399,
+            "height": 139
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 2,
+      "page_type": "toc_candidate",
+      "text_summary": "CONTENT\nPART1:Put your text here.\nPART3:Put your text here.\nPART2:Put your text here.",
+      "slots": [
+        {
+          "slot_id": "s02_sh3",
+          "role": "title_candidate",
+          "text": "CONTENT",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 434,
+            "y": 52,
+            "width": 556,
+            "height": 139
+          },
+          "text_metrics": {
+            "font_size_px": 106.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh4",
+          "role": "body_candidate",
+          "text": "PART1:Put your text here.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 376,
+            "y": 250,
+            "width": 556,
+            "height": 68
+          },
+          "text_metrics": {
+            "font_size_px": 48.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh5",
+          "role": "body_candidate",
+          "text": "PART3:Put your text here.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 376,
+            "y": 484,
+            "width": 556,
+            "height": 68
+          },
+          "text_metrics": {
+            "font_size_px": 48.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh6",
+          "role": "body_candidate",
+          "text": "PART2:Put your text here.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 376,
+            "y": 367,
+            "width": 556,
+            "height": 68
+          },
+          "text_metrics": {
+            "font_size_px": 48.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 3,
+      "page_type": "toc_candidate",
+      "text_summary": "TITLE\nPut your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\nNote: put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+      "slots": [
+        {
+          "slot_id": "s03_sh3",
+          "role": "title_candidate",
+          "text": "TITLE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 662,
+            "y": 79,
+            "width": 556,
+            "height": 152
+          },
+          "text_metrics": {
+            "font_size_px": 117.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh4",
+          "role": "body_candidate",
+          "text": "Put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 684,
+            "y": 266,
+            "width": 556,
+            "height": 165
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh8",
+          "role": "body_candidate",
+          "text": "Note: put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 684,
+            "y": 638,
+            "width": 514,
+            "height": 48
+          },
+          "text_metrics": {
+            "font_size_px": 16.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 4,
+      "page_type": "toc_candidate",
+      "text_summary": "●PUT YOUR TITLE HERE\n·Put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\n·Put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\nDescribe your picture",
+      "slots": [
+        {
+          "slot_id": "s04_sh3",
+          "role": "title_candidate",
+          "text": "●PUT YOUR TITLE HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 70,
+            "y": 33,
+            "width": 723,
+            "height": 74
+          },
+          "text_metrics": {
+            "font_size_px": 53.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh4",
+          "role": "body_candidate",
+          "text": "·Put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\n·Put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 680,
+            "y": 258,
+            "width": 461,
+            "height": 397
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s04_sh8",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 135,
+            "y": 282,
+            "width": 453,
+            "height": 275
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s04_sh6",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 123,
+            "y": 543,
+            "width": 477,
+            "height": 66
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s04_sh7",
+          "role": "label_candidate",
+          "text": "Describe your picture",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 261,
+            "y": 556,
+            "width": 402,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 5,
+      "page_type": "toc_candidate",
+      "text_summary": "Analysis of influencing factors  2\nPut your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\nAnalysis of influencing factors  1\nPut your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\nAnalysis of influencing factors  3\nPut your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\nAnalysis",
+      "slots": [
+        {
+          "slot_id": "s05_sh3",
+          "role": "title_candidate",
+          "text": "Analysis of influencing factors  2\nPut your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 691,
+            "y": 137,
+            "width": 492,
+            "height": 174
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s05_sh4",
+          "role": "body_candidate",
+          "text": "Analysis of influencing factors  1\nPut your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 70,
+            "y": 101,
+            "width": 492,
+            "height": 165
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s05_sh5",
+          "role": "body_candidate",
+          "text": "Analysis of influencing factors  3\nPut your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 71,
+            "y": 438,
+            "width": 492,
+            "height": 174
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s05_sh6",
+          "role": "body_candidate",
+          "text": "Analysis of influencing factors 4\nPut your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 729,
+            "y": 490,
+            "width": 492,
+            "height": 165
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 2
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 6,
+      "page_type": "toc_candidate",
+      "text_summary": "Put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\nPUT YOUR TITLE HERE",
+      "slots": [
+        {
+          "slot_id": "s06_sh4",
+          "role": "title_candidate",
+          "text": "Put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 120,
+            "y": 338,
+            "width": 749,
+            "height": 245
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh5",
+          "role": "title_candidate",
+          "text": "PUT YOUR TITLE HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 120,
+            "y": 103,
+            "width": 611,
+            "height": 81
+          },
+          "text_metrics": {
+            "font_size_px": 58.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 7,
+      "page_type": "toc_candidate",
+      "text_summary": "A\nPut your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\nB\nPut your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+      "slots": [
+        {
+          "slot_id": "s07_sh6",
+          "role": "title_candidate",
+          "text": "A\nPut your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 32,
+            "y": 123,
+            "width": 353,
+            "height": 452
+          },
+          "text_metrics": {
+            "font_size_px": 72.0,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s07_sh7",
+          "role": "body_candidate",
+          "text": "B\nPut your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 882,
+            "y": 134,
+            "width": 353,
+            "height": 452
+          },
+          "text_metrics": {
+            "font_size_px": 72.0,
+            "paragraph_count": 2
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 8,
+      "page_type": "toc_candidate",
+      "text_summary": "Put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\nPUT YOUR TITLE HERE",
+      "slots": [
+        {
+          "slot_id": "s08_sh5",
+          "role": "title_candidate",
+          "text": "Put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 254,
+            "y": 293,
+            "width": 749,
+            "height": 245
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh6",
+          "role": "title_candidate",
+          "text": "PUT YOUR TITLE HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 334,
+            "y": 101,
+            "width": 611,
+            "height": 81
+          },
+          "text_metrics": {
+            "font_size_px": 58.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 9,
+      "page_type": "ending_candidate",
+      "text_summary": "THANK YOU!\n[1]Note: put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\n[2]Note: put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\n[3]Note: put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+      "slots": [
+        {
+          "slot_id": "s09_sh3",
+          "role": "title_candidate",
+          "text": "THANK YOU!",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 188,
+            "y": 79,
+            "width": 457,
+            "height": 268
+          },
+          "text_metrics": {
+            "font_size_px": 106.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 133,
+            "y": 111,
+            "width": 34,
+            "height": 204
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s09_sh8",
+          "role": "body_candidate",
+          "text": "[1]Note: put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\n[2]Note: put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.\n[3]Note: put your text here, pay attention to the short and clear expression of the sentence, and divide the content into several points.",
+          "paragraph_count": 3,
+          "geometry": {
+            "x": 133,
+            "y": 509,
+            "width": 532,
+            "height": 149
+          },
+          "text_metrics": {
+            "font_size_px": 16.0,
+            "paragraph_count": 3
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    }
+  ],
+  "plan_contract": {
+    "schema": "template_fill_pptx_plan.v1",
+    "slides": [
+      {
+        "source_slide": 1,
+        "purpose": "封面 / 章节 / 内容 / 结尾",
+        "replacements": [
+          {
+            "slot_id": "s01_sh2",
+            "text": "替换后的文字"
+          }
+        ],
+        "table_edits": [
+          {
+            "table_id": "s01_tbl3",
+            "cells": [
+              {
+                "row": 0,
+                "col": 0,
+                "text": "替换后的单元格"
+              }
+            ]
+          }
+        ],
+        "chart_edits": [
+          {
+            "chart_id": "s01_ch4",
+            "categories": [
+              "A",
+              "B"
+            ],
+            "series": [
+              {
+                "name": "系列1",
+                "values": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

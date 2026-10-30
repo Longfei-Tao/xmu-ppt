@@ -1,0 +1,1384 @@
+{
+  "schema": "template_fill_pptx_library.v1",
+  "source_pptx": "D:\\Coding\\xmu-ppt-master\\skills\\ppt-master\\templates\\decks\\厦门大学_主题_木棉花\\source.pptx",
+  "slide_count": 12,
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "page_type": "cover_candidate",
+      "text_summary": "厦门大学 PPT模板\nThe user can demonstrate on a projector or computer, or print the presentation and make it into a in a wider field\n汇报人 | 小夏      指导老师 | XXX",
+      "slots": [
+        {
+          "slot_id": "s01_sh15",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 262,
+            "y": 224,
+            "width": 1009,
+            "height": 340
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s01_sh8",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 305,
+            "y": 245,
+            "width": 966,
+            "height": 298
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s01_sh11",
+          "role": "label_candidate",
+          "text": "厦门大学 PPT模板",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 585,
+            "y": 284,
+            "width": 644,
+            "height": 97
+          },
+          "text_metrics": {
+            "font_size_px": 72.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh13",
+          "role": "label_candidate",
+          "text": "The user can demonstrate on a projector or computer, or print the presentation and make it into a in a wider field",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 366,
+            "y": 464,
+            "width": 511,
+            "height": 56
+          },
+          "text_metrics": {
+            "font_size_px": 17.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh14",
+          "role": "body_candidate",
+          "text": "汇报人 | 小夏      指导老师 | XXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 863,
+            "y": 398,
+            "width": 351,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 2,
+      "page_type": "content_candidate",
+      "text_summary": "PLEASE ENTER YOUR TITLE HERE\n点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。\n点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。\n请输入标题文本",
+      "slots": [
+        {
+          "slot_id": "s02_sh30",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 151,
+            "width": 1280,
+            "height": 573
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s02_sh12",
+          "role": "label_candidate",
+          "text": "PLEASE ENTER YOUR TITLE HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 438,
+            "y": 289,
+            "width": 404,
+            "height": 27
+          },
+          "text_metrics": {
+            "font_size_px": 14.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh14",
+          "role": "body_candidate",
+          "text": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。\n点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 261,
+            "y": 396,
+            "width": 791,
+            "height": 163
+          },
+          "text_metrics": {
+            "font_size_px": 17.33,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s02_sh6",
+          "role": "label_candidate",
+          "text": "请输入标题文本",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 471,
+            "y": 193,
+            "width": 339,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh5",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 438,
+            "y": 190,
+            "width": 30,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s02_sh19",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 807,
+            "y": 218,
+            "width": 30,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 3,
+      "page_type": "toc_candidate",
+      "text_summary": "目 录\nCONTENTS\n请在此输入内容\n03.\nADD YOUR TEXT HERE  ADD YOUR TEXT HERE\n请在此输入内容\n02.\nADD YOUR TEXT HERE  ADD YOUR TEXT HERE\n请在此输入内容\n01.\nADD YOUR TEXT HERE  ADD YOUR TEXT HERE\n请在此输入内容\n04.\nADD YOUR TEXT HERE  ADD YOUR TEXT HERE",
+      "slots": [
+        {
+          "slot_id": "s03_sh11",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s03_sh2",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 168,
+            "y": 0,
+            "width": 166,
+            "height": 349
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s03_sh13",
+          "role": "title_candidate",
+          "text": "目 录",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 199,
+            "y": 63,
+            "width": 102,
+            "height": 242
+          },
+          "text_metrics": {
+            "font_size_px": 80.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh19",
+          "role": "label_candidate",
+          "text": "CONTENTS",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 184,
+            "y": 270,
+            "width": 305,
+            "height": 67
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh16",
+          "role": "title_candidate",
+          "text": "请在此输入内容",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 800,
+            "y": 118,
+            "width": 298,
+            "height": 55
+          },
+          "text_metrics": {
+            "font_size_px": 36.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh14",
+          "role": "title_candidate",
+          "text": "03.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 658,
+            "y": 115,
+            "width": 170,
+            "height": 81
+          },
+          "text_metrics": {
+            "font_size_px": 58.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh40",
+          "role": "label_candidate",
+          "text": "ADD YOUR TEXT HERE  ADD YOUR TEXT HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 802,
+            "y": 167,
+            "width": 367,
+            "height": 29
+          },
+          "text_metrics": {
+            "font_size_px": 16.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh42",
+          "role": "title_candidate",
+          "text": "请在此输入内容",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 800,
+            "y": 118,
+            "width": 298,
+            "height": 55
+          },
+          "text_metrics": {
+            "font_size_px": 36.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh43",
+          "role": "title_candidate",
+          "text": "02.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 658,
+            "y": 115,
+            "width": 170,
+            "height": 81
+          },
+          "text_metrics": {
+            "font_size_px": 58.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh44",
+          "role": "label_candidate",
+          "text": "ADD YOUR TEXT HERE  ADD YOUR TEXT HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 802,
+            "y": 167,
+            "width": 367,
+            "height": 29
+          },
+          "text_metrics": {
+            "font_size_px": 16.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh46",
+          "role": "title_candidate",
+          "text": "请在此输入内容",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 800,
+            "y": 118,
+            "width": 298,
+            "height": 55
+          },
+          "text_metrics": {
+            "font_size_px": 36.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh47",
+          "role": "title_candidate",
+          "text": "01.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 658,
+            "y": 115,
+            "width": 170,
+            "height": 81
+          },
+          "text_metrics": {
+            "font_size_px": 58.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh48",
+          "role": "label_candidate",
+          "text": "ADD YOUR TEXT HERE  ADD YOUR TEXT HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 802,
+            "y": 167,
+            "width": 367,
+            "height": 29
+          },
+          "text_metrics": {
+            "font_size_px": 16.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh50",
+          "role": "title_candidate",
+          "text": "请在此输入内容",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 800,
+            "y": 118,
+            "width": 298,
+            "height": 55
+          },
+          "text_metrics": {
+            "font_size_px": 36.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh51",
+          "role": "title_candidate",
+          "text": "04.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 658,
+            "y": 115,
+            "width": 170,
+            "height": 81
+          },
+          "text_metrics": {
+            "font_size_px": 58.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh52",
+          "role": "label_candidate",
+          "text": "ADD YOUR TEXT HERE  ADD YOUR TEXT HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 802,
+            "y": 167,
+            "width": 367,
+            "height": 29
+          },
+          "text_metrics": {
+            "font_size_px": 16.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 4,
+      "page_type": "content_candidate",
+      "text_summary": "在此输入标题\nPLEASE ENTER YOUR TITLE HERE\n01",
+      "slots": [
+        {
+          "slot_id": "s04_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s04_sh12",
+          "role": "label_candidate",
+          "text": "在此输入标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 431,
+            "y": 333,
+            "width": 500,
+            "height": 97
+          },
+          "text_metrics": {
+            "font_size_px": 70.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh16",
+          "role": "label_candidate",
+          "text": "PLEASE ENTER YOUR TITLE HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 410,
+            "y": 449,
+            "width": 500,
+            "height": 37
+          },
+          "text_metrics": {
+            "font_size_px": 22.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh15",
+          "role": "label_candidate",
+          "text": "01",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 568,
+            "y": 164,
+            "width": 139,
+            "height": 139
+          },
+          "text_metrics": {
+            "font_size_px": 53.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 5,
+      "page_type": "content_candidate",
+      "text_summary": "输入标题\nADD YOUR TEXT HERE\nADD YOUR TEXT HERE\nADD YOUR TEXT HERE",
+      "slots": [
+        {
+          "slot_id": "s05_sh6",
+          "role": "title_candidate",
+          "text": "输入标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 118,
+            "y": 63,
+            "width": 221,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 85,
+            "y": 50,
+            "width": 12,
+            "height": 74
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s05_sh15",
+          "role": "label_candidate",
+          "text": "ADD YOUR TEXT HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 467,
+            "y": 272,
+            "width": 297,
+            "height": 26
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh28",
+          "role": "label_candidate",
+          "text": "ADD YOUR TEXT HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 467,
+            "y": 409,
+            "width": 297,
+            "height": 26
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh29",
+          "role": "label_candidate",
+          "text": "ADD YOUR TEXT HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 467,
+            "y": 545,
+            "width": 297,
+            "height": 26
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 6,
+      "page_type": "content_candidate",
+      "text_summary": "输入标题\n点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。\n请替换文字内容\nPLEASE ADD YOUR TITLE HERE",
+      "slots": [
+        {
+          "slot_id": "s06_sh6",
+          "role": "title_candidate",
+          "text": "输入标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 118,
+            "y": 63,
+            "width": 221,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 85,
+            "y": 50,
+            "width": 12,
+            "height": 74
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s06_sh12",
+          "role": "body_candidate",
+          "text": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 310,
+            "y": 157,
+            "width": 287,
+            "height": 201
+          },
+          "text_metrics": {
+            "font_size_px": 17.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh13",
+          "role": "title_candidate",
+          "text": "请替换文字内容",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 310,
+            "y": 54,
+            "width": 201,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": 37.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh14",
+          "role": "title_candidate",
+          "text": "PLEASE ADD YOUR TITLE HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 312,
+            "y": 101,
+            "width": 284,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 58.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 7,
+      "page_type": "content_candidate",
+      "text_summary": "在此输入标题\nPLEASE ENTER YOUR TITLE HERE\n02",
+      "slots": [
+        {
+          "slot_id": "s07_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s07_sh12",
+          "role": "label_candidate",
+          "text": "在此输入标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 431,
+            "y": 333,
+            "width": 500,
+            "height": 97
+          },
+          "text_metrics": {
+            "font_size_px": 70.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh16",
+          "role": "label_candidate",
+          "text": "PLEASE ENTER YOUR TITLE HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 410,
+            "y": 449,
+            "width": 500,
+            "height": 37
+          },
+          "text_metrics": {
+            "font_size_px": 22.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh15",
+          "role": "label_candidate",
+          "text": "02",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 568,
+            "y": 164,
+            "width": 139,
+            "height": 139
+          },
+          "text_metrics": {
+            "font_size_px": 53.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 8,
+      "page_type": "content_candidate",
+      "text_summary": "输入标题\n点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。\n请替换文字内容\nADD YOUR TEXT HERE",
+      "slots": [
+        {
+          "slot_id": "s08_sh6",
+          "role": "title_candidate",
+          "text": "输入标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 118,
+            "y": 63,
+            "width": 221,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 85,
+            "y": 50,
+            "width": 12,
+            "height": 74
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s08_sh12",
+          "role": "body_candidate",
+          "text": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 341,
+            "y": 314,
+            "width": 451,
+            "height": 283
+          },
+          "text_metrics": {
+            "font_size_px": 17.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh17",
+          "role": "label_candidate",
+          "text": "请替换文字内容",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 95,
+            "y": 180,
+            "width": 208,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh19",
+          "role": "label_candidate",
+          "text": "ADD YOUR TEXT HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 98,
+            "y": 230,
+            "width": 519,
+            "height": 27
+          },
+          "text_metrics": {
+            "font_size_px": 14.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 9,
+      "page_type": "content_candidate",
+      "text_summary": "输入标题\n点击添加相关文字\nPLEASE ENTER YOUR TITLE HERE\n点击添加相关文字\nPLEASE ENTER YOUR TITLE HERE\n点击添加相关文字\nPLEASE ENTER YOUR TITLE HERE\n点击添加相关文字\nPLEASE ENTER YOUR TITLE HERE",
+      "slots": [
+        {
+          "slot_id": "s09_sh6",
+          "role": "title_candidate",
+          "text": "输入标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 118,
+            "y": 63,
+            "width": 221,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 85,
+            "y": 50,
+            "width": 12,
+            "height": 74
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s09_sh17",
+          "role": "label_candidate",
+          "text": "点击添加相关文字\nPLEASE ENTER YOUR TITLE HERE",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 98,
+            "y": 210,
+            "width": 439,
+            "height": 103
+          },
+          "text_metrics": {
+            "font_size_px": 14.0,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s09_sh23",
+          "role": "label_candidate",
+          "text": "点击添加相关文字\nPLEASE ENTER YOUR TITLE HERE",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 98,
+            "y": 308,
+            "width": 439,
+            "height": 103
+          },
+          "text_metrics": {
+            "font_size_px": 14.0,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s09_sh24",
+          "role": "label_candidate",
+          "text": "点击添加相关文字\nPLEASE ENTER YOUR TITLE HERE",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 98,
+            "y": 406,
+            "width": 439,
+            "height": 103
+          },
+          "text_metrics": {
+            "font_size_px": 14.0,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s09_sh25",
+          "role": "label_candidate",
+          "text": "点击添加相关文字\nPLEASE ENTER YOUR TITLE HERE",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 98,
+            "y": 510,
+            "width": 439,
+            "height": 103
+          },
+          "text_metrics": {
+            "font_size_px": 14.0,
+            "paragraph_count": 2
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [
+        {
+          "chart_id": "s09_ch8",
+          "chart_type": "lineChart",
+          "category_count": 4,
+          "series_count": 3,
+          "categories": [
+            "类别 1",
+            "类别 2",
+            "类别 3",
+            "类别 4"
+          ],
+          "series": [
+            {
+              "name": "系列 1",
+              "values": [
+                4.3,
+                2.5,
+                3.5,
+                4.5
+              ],
+              "chart_type": "lineChart"
+            },
+            {
+              "name": "系列 2",
+              "values": [
+                2.4,
+                4.4,
+                1.8,
+                2.8
+              ],
+              "chart_type": "lineChart"
+            },
+            {
+              "name": "系列 3",
+              "values": [
+                2,
+                2,
+                3,
+                5
+              ],
+              "chart_type": "lineChart"
+            }
+          ],
+          "plot_types": [
+            "lineChart"
+          ]
+        }
+      ],
+      "fill_risk": {
+        "has_non_text_content": true,
+        "reason": "has non-text content (chart) that text-fill cannot replace; provide table_edits/chart_edits or pick another source slide"
+      }
+    },
+    {
+      "slide_index": 10,
+      "page_type": "content_candidate",
+      "text_summary": "在此输入标题\nPLEASE ENTER YOUR TITLE HERE\n03",
+      "slots": [
+        {
+          "slot_id": "s10_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s10_sh12",
+          "role": "label_candidate",
+          "text": "在此输入标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 431,
+            "y": 333,
+            "width": 500,
+            "height": 97
+          },
+          "text_metrics": {
+            "font_size_px": 70.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh16",
+          "role": "label_candidate",
+          "text": "PLEASE ENTER YOUR TITLE HERE",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 410,
+            "y": 449,
+            "width": 500,
+            "height": 37
+          },
+          "text_metrics": {
+            "font_size_px": 22.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh15",
+          "role": "label_candidate",
+          "text": "03",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 568,
+            "y": 164,
+            "width": 139,
+            "height": 139
+          },
+          "text_metrics": {
+            "font_size_px": 53.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 11,
+      "page_type": "content_candidate",
+      "text_summary": "输入标题\n点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，\n点击添加相关标题文字。\n点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。",
+      "slots": [
+        {
+          "slot_id": "s11_sh30",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 728
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s11_sh6",
+          "role": "title_candidate",
+          "text": "输入标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 118,
+            "y": 63,
+            "width": 221,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 85,
+            "y": 50,
+            "width": 12,
+            "height": 74
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s11_sh37",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 817,
+            "y": 124,
+            "width": 378,
+            "height": 554
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s11_sh41",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 84,
+            "y": 382,
+            "width": 691,
+            "height": 222
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s11_sh10",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 84,
+            "y": 209,
+            "width": 691,
+            "height": 222
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s11_sh11",
+          "role": "body_candidate",
+          "text": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，\n点击添加相关标题文字。",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 113,
+            "y": 232,
+            "width": 614,
+            "height": 188
+          },
+          "text_metrics": {
+            "font_size_px": 17.33,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s11_sh12",
+          "role": "label_candidate",
+          "text": "点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 115,
+            "y": 437,
+            "width": 609,
+            "height": 157
+          },
+          "text_metrics": {
+            "font_size_px": 17.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 12,
+      "page_type": "ending_candidate",
+      "text_summary": "谢谢观看\n汇报人 | 小夏      指导老师 | XXX\nTHANK YOU FOR WATCHING",
+      "slots": [
+        {
+          "slot_id": "s12_sh20",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh13",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 218,
+            "y": 77,
+            "width": 844,
+            "height": 566
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh17",
+          "role": "title_candidate",
+          "text": "谢谢观看",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 551,
+            "y": 159,
+            "width": 254,
+            "height": 204
+          },
+          "text_metrics": {
+            "font_size_px": 80.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh21",
+          "role": "body_candidate",
+          "text": "汇报人 | 小夏      指导老师 | XXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 498,
+            "y": 442,
+            "width": 351,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh29",
+          "role": "label_candidate",
+          "text": "THANK YOU FOR WATCHING",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 488,
+            "y": 366,
+            "width": 341,
+            "height": 27
+          },
+          "text_metrics": {
+            "font_size_px": 14.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    }
+  ],
+  "plan_contract": {
+    "schema": "template_fill_pptx_plan.v1",
+    "slides": [
+      {
+        "source_slide": 1,
+        "purpose": "封面 / 章节 / 内容 / 结尾",
+        "replacements": [
+          {
+            "slot_id": "s01_sh2",
+            "text": "替换后的文字"
+          }
+        ],
+        "table_edits": [
+          {
+            "table_id": "s01_tbl3",
+            "cells": [
+              {
+                "row": 0,
+                "col": 0,
+                "text": "替换后的单元格"
+              }
+            ]
+          }
+        ],
+        "chart_edits": [
+          {
+            "chart_id": "s01_ch4",
+            "categories": [
+              "A",
+              "B"
+            ],
+            "series": [
+              {
+                "name": "系列1",
+                "values": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

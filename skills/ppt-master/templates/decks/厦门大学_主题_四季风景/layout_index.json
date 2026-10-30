@@ -1,0 +1,165 @@
+{
+  "deck_id": "厦门大学_主题_四季风景",
+  "source": "source.pptx",
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 11,
+  "layout_kinds": [
+    "chapter-divider",
+    "cover",
+    "ending",
+    "hero-statement",
+    "toc"
+  ],
+  "pages": [
+    {
+      "slide": 1,
+      "role": "cover_candidate",
+      "layout": "cover",
+      "slot_count": 9,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        53,
+        37
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "厦门大学PPT模板 XXX主题 ——基于XXX副主题填入 汇报人 小夏 指导老师 XXX 汇报组员 XXX XXX XX"
+    },
+    {
+      "slide": 2,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 8,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        59,
+        37
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "目录CONTENT 第一部分 基础知识 第二部分 学科结构 第二部分 学科结构"
+    },
+    {
+      "slide": 3,
+      "role": "chapter_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 4,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        333,
+        37
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "第一 基础知识的初步绍·副标题 部分"
+    },
+    {
+      "slide": 4,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 3,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        59,
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "文本页：在此插入本页标题 无论是扎根于厦大这片热土辛勤耕耘的全体师生，还是从温暖的厦大校园走向五湖四海的广大校友，都怀着"
+    },
+    {
+      "slide": 5,
+      "role": "chapter_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 4,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        333,
+        37
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "第二 学科结构的初步绍·副标题 部分"
+    },
+    {
+      "slide": 6,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 6,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        59,
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "标题1国内观点评析 标题2西方观点评析 在此插入文本内容，在此插入文本内容，在此插入文本内容，在此插入文本内容。在此插入"
+    },
+    {
+      "slide": 7,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 4,
+      "filled_slot_count": 0,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": ""
+    },
+    {
+      "slide": 8,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 0,
+      "filled_slot_count": 0,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 1,
+      "summary": ""
+    },
+    {
+      "slide": 9,
+      "role": "chapter_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 4,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        333,
+        37
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "第三 学科结构的初步绍·副标题 部分"
+    },
+    {
+      "slide": 10,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 23,
+      "filled_slot_count": 6,
+      "type_scale_px": [
+        71,
+        48
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "添加标题 添加标题 添加标题 添加标题 添加标题 单击此处添加文本具体内容，简明扼要的阐述您的观点。"
+    },
+    {
+      "slide": 11,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 1,
+      "filled_slot_count": 1,
+      "type_scale_px": [
+        88
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "谢谢观看！"
+    }
+  ]
+}

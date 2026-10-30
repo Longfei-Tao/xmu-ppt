@@ -1,0 +1,197 @@
+{
+  "deck_id": "厦门大学_主题_晕染风",
+  "source": "source.pptx",
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 12,
+  "layout_kinds": [
+    "chapter-divider",
+    "content",
+    "cover",
+    "ending",
+    "hero-statement",
+    "list",
+    "multi-block"
+  ],
+  "pages": [
+    {
+      "slide": 1,
+      "role": "cover_candidate",
+      "layout": "cover",
+      "slot_count": 4,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        72,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "厦门大学 PPT模板 ——关于XXX主题 汇 报 人 ：甲 乙 丙"
+    },
+    {
+      "slide": 2,
+      "role": "chapter_candidate",
+      "layout": "list",
+      "slot_count": 13,
+      "filled_slot_count": 11,
+      "type_scale_px": [
+        53,
+        43,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "目 录--- ABOUT 0 1     第一部分 A B O U T-- 0 2     第二部分 0 3     第"
+    },
+    {
+      "slide": 3,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 7,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        72,
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "第一部分 --- 汇 报 人 ：甲 乙 丙 ABOUT P A R T    0 1 A B O U T---"
+    },
+    {
+      "slide": 4,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 16,
+      "filled_slot_count": 12,
+      "type_scale_px": [
+        72,
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "此处 输入大标题 此处输入一段文本 P A R T    0 1 A B O U T--- 此处输入一段文本 此处输入一"
+    },
+    {
+      "slide": 5,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 13,
+      "filled_slot_count": 12,
+      "type_scale_px": [
+        72,
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "此处 输入大标题 此处输入一段文本， 此处，插入一段文本此处，插入一段。 P A R T    0 1 A B O U "
+    },
+    {
+      "slide": 6,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 5,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        72,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "此处 输入大标题 此处输入一段文本此处输入一段文本，此处输入一段文本 小标题-- 此处输入一段文本此处输入一段文本，此处"
+    },
+    {
+      "slide": 7,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 7,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        72,
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "第二部分 --- 汇 报 人 ：甲 乙 丙 ABOUT P A R T    0 2 A B O U T---"
+    },
+    {
+      "slide": 8,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 20,
+      "filled_slot_count": 15,
+      "type_scale_px": [
+        72,
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "此处 输入 大标题 此处输入一段文本 P A R T    0 2 A B O U T--- 此处输入一段文本 此处输入"
+    },
+    {
+      "slide": 9,
+      "role": "content_candidate",
+      "layout": "content",
+      "slot_count": 9,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        72,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "此处 输入大标题 P A R T    0 2 A B O U T --- --- ABOUT 01  插入一段文本插入"
+    },
+    {
+      "slide": 10,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 6,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        117,
+        72,
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "此处输入 大标题 P A R T    0 2 ABOUT 19210406 此处输入一段文本此处输入一段文本，此处输入"
+    },
+    {
+      "slide": 11,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 4,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        72,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "此处 输入大标题--- 此处输入一段文本此处输入一段文本，此处输入一段文本，此处， 插入一段文本文本文本，此处插入一段文"
+    },
+    {
+      "slide": 12,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 7,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        72,
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "感谢观看 --- 汇 报 人 ：甲 乙 丙 ABOUT THANKS       FOR        WATCHING"
+    }
+  ]
+}

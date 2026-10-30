@@ -1,0 +1,196 @@
+{
+  "deck_id": "厦门大学_主题_木棉花",
+  "source": "source.pptx",
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 12,
+  "layout_kinds": [
+    "cover",
+    "ending",
+    "hero-statement",
+    "toc"
+  ],
+  "pages": [
+    {
+      "slide": 1,
+      "role": "cover_candidate",
+      "layout": "cover",
+      "slot_count": 5,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        72,
+        17
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "厦门大学 PPT模板 The user can demonstrate on a projector or comput"
+    },
+    {
+      "slide": 2,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 6,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        43,
+        17,
+        15
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "PLEASE ENTER YOUR TITLE HERE 点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文"
+    },
+    {
+      "slide": 3,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 16,
+      "filled_slot_count": 14,
+      "type_scale_px": [
+        80,
+        59,
+        43,
+        36,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "目 录 CONTENTS 请在此输入内容 03. ADD YOUR TEXT HERE  ADD YOUR TEXT H"
+    },
+    {
+      "slide": 4,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 4,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        71,
+        53,
+        23
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "在此输入标题 PLEASE ENTER YOUR TITLE HERE 01"
+    },
+    {
+      "slide": 5,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 5,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        43,
+        13
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "输入标题 ADD YOUR TEXT HERE ADD YOUR TEXT HERE ADD YOUR TEXT HER"
+    },
+    {
+      "slide": 6,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 5,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        59,
+        43,
+        37,
+        17
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "输入标题 点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，"
+    },
+    {
+      "slide": 7,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 4,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        71,
+        53,
+        23
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "在此输入标题 PLEASE ENTER YOUR TITLE HERE 02"
+    },
+    {
+      "slide": 8,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 5,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        43,
+        27,
+        17,
+        15
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "输入标题 点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，"
+    },
+    {
+      "slide": 9,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 6,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        43,
+        14
+      ],
+      "tables": 0,
+      "charts": 1,
+      "summary": "输入标题 点击添加相关文字 PLEASE ENTER YOUR TITLE HERE 点击添加相关文字 PLEASE E"
+    },
+    {
+      "slide": 10,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 4,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        71,
+        53,
+        23
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "在此输入标题 PLEASE ENTER YOUR TITLE HERE 03"
+    },
+    {
+      "slide": 11,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 8,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        43,
+        17
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "输入标题 点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，"
+    },
+    {
+      "slide": 12,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 5,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        80,
+        15
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "谢谢观看 汇报人 | 小夏      指导老师 | XXX THANK YOU FOR WATCHING"
+    }
+  ]
+}

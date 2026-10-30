@@ -1,0 +1,268 @@
+{
+  "deck_id": "厦门大学_主题_清凉一厦",
+  "source": "source.pptx",
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 16,
+  "layout_kinds": [
+    "chapter-divider",
+    "cover",
+    "ending",
+    "hero-statement",
+    "list",
+    "numbered-cards",
+    "two-block"
+  ],
+  "pages": [
+    {
+      "slide": 1,
+      "role": "cover_candidate",
+      "layout": "cover",
+      "slot_count": 4,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        96,
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "输入标题Title 报告人：小夏 指导老师：XXX 汇报时间：2022.3.23"
+    },
+    {
+      "slide": 2,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 11,
+      "filled_slot_count": 11,
+      "type_scale_px": [
+        117,
+        49,
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "输入内容 01 目 录 输入内容 02 输入内容 03 输入内容 04 输入内容 05"
+    },
+    {
+      "slide": 3,
+      "role": "chapter_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 2,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        96,
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Part 01 输入文字"
+    },
+    {
+      "slide": 4,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 26,
+      "filled_slot_count": 14,
+      "type_scale_px": [
+        57,
+        50,
+        32,
+        21,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "04 添加标题 请在此处输入具体内容，文字请尽量言简意赅，此处为具体文字，请尽量言简意赅，表达意思即可。 03 添加标题"
+    },
+    {
+      "slide": 5,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 46,
+      "filled_slot_count": 15,
+      "type_scale_px": [
+        50,
+        32,
+        28,
+        21,
+        13
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "请在此处输入具体内容，文字请尽量言简意赅，此处为具体文字，请尽量言简意赅，表达意思即可。 请在此处输入具体内容，文字请尽"
+    },
+    {
+      "slide": 6,
+      "role": "chapter_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 2,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        96,
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Part 02 输入文字"
+    },
+    {
+      "slide": 7,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 22,
+      "filled_slot_count": 10,
+      "type_scale_px": [
+        50,
+        32,
+        24,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "输入标题 在这里输入你需要的文本内容在这里输入你需要的文本内容在这里输入你需要的文本内容 输入标题 在这里输入你需要的文"
+    },
+    {
+      "slide": 8,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 26,
+      "filled_slot_count": 10,
+      "type_scale_px": [
+        50,
+        32,
+        24,
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "标题文字添加 标题文字添加 标题文字添加 标题文字添加 输入文字 在这里输入你需要的文本内容在这里输入你需要的文本内容在"
+    },
+    {
+      "slide": 9,
+      "role": "chapter_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 2,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        96,
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Part 03 输入文字"
+    },
+    {
+      "slide": 10,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 7,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        50,
+        32,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "输入文字 在这里输入你需要的文本内容在这里输入你需要的文本内容在这里输入你需要的文本内容在这里输入你需要的文本内容在这里"
+    },
+    {
+      "slide": 11,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        50,
+        32,
+        21
+      ],
+      "tables": 0,
+      "charts": 1,
+      "summary": "输入标题名称 输入文字 在这里输入你需要的文本内容在这里输入你需要的文本内容在这里输入你需要的文本内容在这里输入你需要的"
+    },
+    {
+      "slide": 12,
+      "role": "chapter_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 24,
+      "filled_slot_count": 15,
+      "type_scale_px": [
+        50,
+        43,
+        32,
+        28,
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "1 2 3 4 添加标题 说明一 请在此处输入具体内容，文字请尽量言简意赅，此处为章节文字，表述该章节文字主题。 1 2"
+    },
+    {
+      "slide": 13,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 27,
+      "filled_slot_count": 14,
+      "type_scale_px": [
+        50,
+        32,
+        27,
+        20,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "55 70 85 40 60 80 请在此输入文字 Life is not waiting for the storm "
+    },
+    {
+      "slide": 14,
+      "role": "chapter_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 41,
+      "filled_slot_count": 17,
+      "type_scale_px": [
+        50,
+        32,
+        20,
+        16,
+        13
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "2017 2016 2015 2014 2013 输入此处标题 请在此处输入具体内容，文字请尽量言简意赅，此处为章节文字"
+    },
+    {
+      "slide": 15,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 4,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        50,
+        32,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "输入标题名称 输入文字 在这里输入你需要的文本内容在这里输入你需要的文本内容在这里输入你需要的文本内容在这里输入你需要的"
+    },
+    {
+      "slide": 16,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 2,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        96,
+        37
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "The End 报告完毕，感谢观看"
+    }
+  ]
+}

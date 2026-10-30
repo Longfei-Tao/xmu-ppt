@@ -1,0 +1,272 @@
+{
+  "deck_id": "厦门大学_官方_厦园晴日",
+  "source": "source.pptx",
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 17,
+  "layout_kinds": [
+    "cover",
+    "ending",
+    "hero-statement",
+    "list",
+    "multi-block",
+    "numbered-cards",
+    "toc"
+  ],
+  "pages": [
+    {
+      "slide": 1,
+      "role": "cover_candidate",
+      "layout": "cover",
+      "slot_count": 25,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        72,
+        27,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "学术汇报论文答辩模板 单击添加学院名称/班级名称/专业名称 指导老师：XXX 答辩人：XXX"
+    },
+    {
+      "slide": 2,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 27,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        72,
+        43,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "目录/Contents 01 选题背景与意义 02 研究方法与过程 03 04 研究成果与展示 论文总结与启示"
+    },
+    {
+      "slide": 3,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 20,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        64,
+        43,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "PART 01 选题背景与意义"
+    },
+    {
+      "slide": 4,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 26,
+      "filled_slot_count": 8,
+      "type_scale_px": [
+        37,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "本模板内所有图片及字体仅供参考，请根据您的实际情况进行替换或更改，并根据实际情况编辑文字内容。 输入小标题 本模板内所有"
+    },
+    {
+      "slide": 5,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 30,
+      "filled_slot_count": 8,
+      "type_scale_px": [
+        37,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "本模板内所有图片及字体仅供参考，请根据您的实际情况进行替换或更改，并根据实际情况编辑文字内容。本模板内所有图片及字体仅供"
+    },
+    {
+      "slide": 6,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 20,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        64,
+        43,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "PART 02 研究方法与过程"
+    },
+    {
+      "slide": 7,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 42,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        72,
+        37,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "01 02 03 04 本模板内所有图片及字体仅供参考，请根据您的实际情况进行替换或更改，并根据实际情况编辑文字内容。 "
+    },
+    {
+      "slide": 8,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 32,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        37,
+        24,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "输入小标题 输入小标题 输入小标题 输入小标题 01 02 03 04 本模板内所有图片及字体仅供参考，请根据您的实际情"
+    },
+    {
+      "slide": 9,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 87,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        37,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "本模板内所有图片及字体仅供参考，请根据您的实际情况进行替换或更改，并根据实际情况编辑文字内容。 本模板内所有图片及字体仅"
+    },
+    {
+      "slide": 10,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 20,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        64,
+        43,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "PART 03 研究成果与展示"
+    },
+    {
+      "slide": 11,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 47,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        37,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "本模板内所有图片及字体仅供参考，请根据您的实际情况进行替换或更改，并根据实际情况编辑文字内容。 输入小标题 本模板内所有"
+    },
+    {
+      "slide": 12,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 39,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        37,
+        24,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "本模板内所有图片及字体仅供参考，请根据您的实际情况进行替换或更改，并根据实际情况编辑文字内容。 输入小标题 本模板内所有"
+    },
+    {
+      "slide": 13,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 20,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        64,
+        43,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "PART 04 论文总结与启示"
+    },
+    {
+      "slide": 14,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 32,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        80,
+        37,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "1 2 3 4 本模板内所有图片及字体仅供参考，请根据您的实际情况进行替换或更改，并根据实际情况编辑文字内容。 输入小标"
+    },
+    {
+      "slide": 15,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 32,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        43,
+        37,
+        32,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "本模板内所有图片及字体仅供参考，请根据您的实际情况进行替换或更改，并根据实际情况编辑文字内容。 输入小标题 本模板内所有"
+    },
+    {
+      "slide": 16,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 45,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        37,
+        24,
+        18
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "本模板内所有图片及字体仅供参考，请根据您的实际情况进行替换或更改，并根据实际情况编辑文字内容。 输入小标题 本模板内所有"
+    },
+    {
+      "slide": 17,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 25,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        72,
+        27,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "恳请各位老师批评指正 单击添加学院名称/班级名称/专业名称 指导老师：XXX 答辩人：XXX"
+    }
+  ]
+}

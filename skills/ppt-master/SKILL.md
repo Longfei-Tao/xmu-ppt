@@ -20,11 +20,22 @@ description: >
 >
 > 当用户用中文提出「答辩 / 开题 / 组会 / 工作汇报 / 课程展示 / 读书报告 / 宣讲 / 调研」类 PPT，或明确提到「厦大模板 / 厦门大学模板」时：
 >
+> **第一步：选路线。** 两条路线都能用 14 套厦大模板，区别只在「要不要动原模板」：
+>
+> | 用户信号 | 路线 | 底层 |
+> | --- | --- | --- |
+> | 提到「用这个模板 / 保留原样式 / 别改我的模板」、上传了 `.pptx`、要表格或图表原样保留 | **原生填充** → [`workflows/xmu-native.md`](workflows/xmu-native.md) | 克隆原页 + 改 OOXML，不生成 SVG |
+> | 只给主题或文字材料，要求排版自由、每页版式可以不一样 | **SVG 出稿** → [`workflows/xmu-quick.md`](workflows/xmu-quick.md) | 逐页手写 SVG 再导出 |
+>
+> 拿不准时先问一句「要保留模板原样，还是允许重新排版」，不要替用户决定。
+>
+> **通用要求（两条路线都适用）：**
 > 1. **跳过** Eight Confirmations、策略师长报告与项目初始化问答；
-> 2. 直接读取并执行 [`workflows/xmu-quick.md`](workflows/xmu-quick.md)；
-> 3. 模板从 14 套厦大模板中按场景选择：`厦门大学_官方_厦园晴日`（答辩/开题）、`厦门大学_官方_凤栖青橙`（人文社科/课程）、`厦门大学_官方_南强蔚蓝`（组会/工作汇报/宣讲），或按用户点名的 `厦门大学_主题_*` 原型；
-> 4. 确认话术最多一次，三行以内；用户已给足主题与内容时直接产出 `.pptx`，交付时说明模板选择与需补充项；
-> 5. 本快速通道仍遵守「SVG 逐页手写、禁止脚本批量生成、导出前跑质量检查」三条底线。
+> 2. 模板从 14 套厦大模板中按场景选择：`厦门大学_官方_厦园晴日`（答辩/开题）、`厦门大学_官方_凤栖青橙`（人文社科/课程）、`厦门大学_官方_南强蔚蓝`（组会/工作汇报/宣讲），或按用户点名的 `厦门大学_主题_*`；
+> 3. 确认话术最多一次，三行以内；用户已给足主题与内容时直接产出 `.pptx`；
+> 4. SVG 路线仍遵守「逐页手写、禁止脚本批量生成、导出前跑质量检查」；原生填充路线遵守「禁止跑 SVG 转换、只改 fill_plan」。
+>
+> `templates/decks/<id>/` 每套现在同时带三样东西：`source.pptx`（原始模板，原生填充的克隆源）、`source.slide_library.json`（槽位明细）、`layout_index.json`（版式画像，选页依据），以及原有的 5 页 SVG 原型。
 >
 > 本仓库的 `templates/decks/` 只保留厦门大学 deck（14 套），不含任何其他机构 deck；`templates/layouts/` 仍保留 7 套通用版式（`academic_defense`、`medical_university`、`government_blue` 等）作为「结构叠加层」，仅在用户显式给出路径时参与融合，不参与场景路由。库外风格不再作为兜底选项。
 
@@ -94,7 +105,8 @@ For complete tool documentation, see `${SKILL_DIR}/scripts/README.md`.
 
 | Workflow | Path | Purpose |
 |----------|------|---------|
-| `xmu-quick` | `workflows/xmu-quick.md` | 厦门大学模板快速出稿 — 场景选模板、一次轻确认、直接填页导出（优先于 Eight Confirmations） |
+| `xmu-quick` | `workflows/xmu-quick.md` | 厦门大学模板快速出稿 — 场景选模板、一次轻确认、手写 SVG 再导出（优先于 Eight Confirmations） |
+| `xmu-native` | `workflows/xmu-native.md` | 厦门大学模板原生填充 — 在 `source.pptx` 里按版式清单挑页、改 OOXML、不生成 SVG（模板保真最高） |
 | `topic-research` | `workflows/topic-research.md` | Pre-pipeline — gather web sources when the user supplies only a topic with no source files |
 | `template-fill` | `workflows/template-fill-pptx.md` | Give a native PPTX template deck plus source material; select fitting pages (a page may be reused for several output slides) and fill text back without SVG conversion |
 | `beautify` | `workflows/beautify-pptx.md` | Re-layout an existing PPTX through the SVG pipeline — preserve its text verbatim, inherit its palette/fonts as truth, redo only layout; mirror of `template-fill` |

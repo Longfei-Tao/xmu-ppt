@@ -1,0 +1,333 @@
+{
+  "deck_id": "厦门大学_主题_米金书法",
+  "source": "source.pptx",
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 22,
+  "layout_kinds": [
+    "chapter-divider",
+    "content",
+    "cover",
+    "ending",
+    "hero-statement",
+    "list",
+    "toc",
+    "two-block"
+  ],
+  "pages": [
+    {
+      "slide": 1,
+      "role": "cover_candidate",
+      "layout": "cover",
+      "slot_count": 18,
+      "filled_slot_count": 12,
+      "type_scale_px": [
+        192,
+        184,
+        160,
+        43,
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "止 于 至 善 厦门大学毕业答辩PPT模板 制作人：xxx 学号：xxxxxx General PowerPoint T"
+    },
+    {
+      "slide": 2,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 17,
+      "filled_slot_count": 10,
+      "type_scale_px": [
+        133,
+        72,
+        53,
+        48
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "目录 1 2 3 4 学校信息 文化传统 历史沿革 师资力量 contents"
+    },
+    {
+      "slide": 3,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 6,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        128,
+        117
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "1 学校信息"
+    },
+    {
+      "slide": 4,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 3,
+      "filled_slot_count": 1,
+      "type_scale_px": [
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "厦门大学（Xiamen University），简称厦大(XMU) ，由著名爱国华侨领袖陈嘉庚先生于1921年创办, 是"
+    },
+    {
+      "slide": 5,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 10,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "厦门大学由爱国华侨领袖陈嘉庚先生于1921年创办，是中国近代教育史上第一所华侨创办的大学、国内最早招收研究生的大学之一、"
+    },
+    {
+      "slide": 6,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 8,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        32,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "学校发展 1978年12月，中国共产党十一届三中全会胜利召开，中国进入了改革开放的历史新时期。伴随着改革开放的伟大历程，"
+    },
+    {
+      "slide": 7,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 8,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        48,
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "厦门大学图书馆始建于1921年，著名图书馆学家裘开明、文学巨匠林语堂、历史学家郑天挺、人类学家冯汉骥、金融学家朱保训和数"
+    },
+    {
+      "slide": 8,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 16,
+      "filled_slot_count": 8,
+      "type_scale_px": [
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "建校之初，陈嘉庚先生就提出“为吾国放一异彩”，何等宏图大志！ 有格局 “宁可卖大厦，也要建厦大”，倾其所有为我厦，从此铭"
+    },
+    {
+      "slide": 9,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 7,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        128,
+        117
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "--自强不息，止于至善-- cultural tradition 文化传统 2"
+    },
+    {
+      "slide": 10,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 17,
+      "filled_slot_count": 6,
+      "type_scale_px": [
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "这里是小标题 这里是小标题 这里是小标题 1921年陈嘉庚先生创办厦门大学时即把“自强不息，止于至善”定为校训。“自强不"
+    },
+    {
+      "slide": 11,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 8,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        128,
+        117,
+        80
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "--自强不息，止于至善-- cultural tradition 历史沿革 3 Historical revolutio"
+    },
+    {
+      "slide": 12,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 25,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "1921年4月6日，厦门大学借集美学校举行开校式，初创时为私立，设有师范（包括文、理科）、商学两部。 1937年7月1日"
+    },
+    {
+      "slide": 13,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 22,
+      "filled_slot_count": 10,
+      "type_scale_px": [
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "1921. 04. 06 1921年4月6日，厦门大学借集美学校举行开校式，初创时为私立，设有师范（包括文、理科）、商学"
+    },
+    {
+      "slide": 14,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 14,
+      "filled_slot_count": 6,
+      "type_scale_px": [
+        32,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "省市级荣誉 这里是所获荣誉名称 这里是所获荣誉名称 这里是所获荣誉名称 这里是所获荣誉名称 这里是所获荣誉名称 国家级荣"
+    },
+    {
+      "slide": 15,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 6,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        128,
+        117,
+        64
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "--自强不息，止于至善-- Faculty and employee 师资力量 4"
+    },
+    {
+      "slide": 16,
+      "role": "content_candidate",
+      "layout": "content",
+      "slot_count": 10,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        27,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "厦门大学共有两院院士32人（含双聘18人），文科资深教授1人，发展中国家科学院院士4人。 两院院士 固体物理表面化学研究"
+    },
+    {
+      "slide": 17,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 15,
+      "filled_slot_count": 6,
+      "type_scale_px": [
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "陈嘉庚（1879-1961) 1921年4月6日，陈嘉庚创办了中国历史上的第一所侨办大学——厦门大学。 陈嘉庚（1879"
+    },
+    {
+      "slide": 18,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 4,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        37
+      ],
+      "tables": 0,
+      "charts": 1,
+      "summary": "从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中"
+    },
+    {
+      "slide": 19,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 6,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        37,
+        27,
+        24
+      ],
+      "tables": 1,
+      "charts": 0,
+      "summary": "从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中"
+    },
+    {
+      "slide": 20,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 12,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        43,
+        32,
+        21
+      ],
+      "tables": 0,
+      "charts": 3,
+      "summary": "这里是小标题 80% 从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出 这里是小标题 55% 从图表中可"
+    },
+    {
+      "slide": 21,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 8,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        128,
+        64,
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Thank you for watching 感谢您的观看 制作人：XXXX 学号：XXXXXXXXXX"
+    },
+    {
+      "slide": 22,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 9,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        277,
+        231,
+        48
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "感 谢 观 看 厦门大学毕业答辩PPT模板"
+    }
+  ]
+}

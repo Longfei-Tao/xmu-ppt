@@ -1,0 +1,333 @@
+{
+  "schema": "template_fill_pptx_plan.v1",
+  "source_pptx": "D:\\Coding\\xmu-ppt-master\\.tmp-probe\\source_slim.pptx",
+  "slides": [
+    {
+      "source_slide": 1,
+      "purpose": "cover",
+      "replacements": [
+        {
+          "slot_id": "s01_sh42",
+          "old_text": "厦门大学\nPPT模版",
+          "text": "厦门大学\n论文投稿"
+        },
+        {
+          "slot_id": "s01_sh44",
+          "old_text": "汇  报  人：XXX",
+          "text": "汇  报  人：陶龙飞"
+        },
+        {
+          "slot_id": "s01_sh45",
+          "old_text": "汇报时间：XXX",
+          "text": "汇报时间：2026.10"
+        },
+        {
+          "slot_id": "s01_sh46",
+          "old_text": "20XX/X/X",
+          "text": "2026/10"
+        },
+        {
+          "slot_id": "s01_sh51",
+          "old_text": "Xiamen University",
+          "text": "Xiamen University"
+        },
+        {
+          "slot_id": "s01_sh52",
+          "old_text": "The user can demonstrate on a projector or computer, or print the presentation and make it into a in a wider field.",
+          "text": "从邮件来回到看板可见"
+        }
+      ],
+      "table_edits": [],
+      "chart_edits": []
+    },
+    {
+      "source_slide": 2,
+      "purpose": "toc",
+      "replacements": [
+        {
+          "slot_id": "s02_sh10",
+          "old_text": "请在此输入内容",
+          "text": "问题"
+        },
+        {
+          "slot_id": "s02_sh12",
+          "old_text": "The user can demonstrate on a projector or computer",
+          "text": "状态散落在邮件与聊天里"
+        },
+        {
+          "slot_id": "s02_sh19",
+          "old_text": "02.",
+          "text": "02."
+        },
+        {
+          "slot_id": "s02_sh27",
+          "old_text": "请在此输入内容",
+          "text": "方案"
+        },
+        {
+          "slot_id": "s02_sh28",
+          "old_text": "The user can demonstrate on a projector or computer",
+          "text": "一个状态机加一块看板"
+        },
+        {
+          "slot_id": "s02_sh30",
+          "old_text": "01.",
+          "text": "01."
+        },
+        {
+          "slot_id": "s02_sh36",
+          "old_text": "03.",
+          "text": "03."
+        },
+        {
+          "slot_id": "s02_sh37",
+          "old_text": "请在此输入内容",
+          "text": "落地"
+        },
+        {
+          "slot_id": "s02_sh38",
+          "old_text": "The user can demonstrate on a projector or computer",
+          "text": "从手动维护到自动同步"
+        },
+        {
+          "slot_id": "s02_sh49",
+          "old_text": "04.",
+          "text": "04."
+        },
+        {
+          "slot_id": "s02_sh50",
+          "old_text": "请在此输入内容",
+          "text": "复盘"
+        },
+        {
+          "slot_id": "s02_sh51",
+          "old_text": "The user can demonstrate on a projector or computer",
+          "text": "三个月用下来的取舍"
+        },
+        {
+          "slot_id": "s02_sh42",
+          "old_text": "目录",
+          "text": "目录"
+        }
+      ],
+      "table_edits": [],
+      "chart_edits": []
+    },
+    {
+      "source_slide": 3,
+      "purpose": "chapter",
+      "replacements": [
+        {
+          "slot_id": "s03_sh9",
+          "old_text": "请在此输入标题内容",
+          "text": "第一部分"
+        },
+        {
+          "slot_id": "s03_sh52",
+          "old_text": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。\nThe user can demonstrate on a projector or computer, or print the presentation and make it into a in a wider field.",
+          "text": "状态散落在邮件、微信与一张 Excel 里。谁在审、审到哪一步，只有通讯作者知道。"
+        },
+        {
+          "slot_id": "s03_sh42",
+          "old_text": "键入主题",
+          "text": "问题"
+        }
+      ],
+      "table_edits": [],
+      "chart_edits": []
+    },
+    {
+      "source_slide": 5,
+      "purpose": "content",
+      "replacements": [
+        {
+          "slot_id": "s05_sh89",
+          "old_text": "在此键入内容",
+          "text": "四个信息孤岛"
+        },
+        {
+          "slot_id": "s05_sh12",
+          "old_text": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。\nThe user can demonstrate on a projector or computer, or print the presentation and make it into a in a wider field.",
+          "text": "投稿记录在作者邮箱，初审记录在投稿系统，外审记录在审稿人邮件，最终决定记录在主编通知。四段信息互不相通，想知道进度只能挨个问人。"
+        },
+        {
+          "slot_id": "s05_sh14",
+          "old_text": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。\nThe user can demonstrate on a projector or computer, or print the presentation and make it into a in a wider field.",
+          "text": "而每个人记住的版本都不一样：代理人记得已经投了，通讯作者记得还在改，导师记得还没投。核对一次要花半天。"
+        }
+      ],
+      "table_edits": [],
+      "chart_edits": []
+    },
+    {
+      "source_slide": 3,
+      "purpose": "chapter",
+      "replacements": [
+        {
+          "slot_id": "s03_sh9",
+          "old_text": "请在此输入标题内容",
+          "text": "第二部分"
+        },
+        {
+          "slot_id": "s03_sh52",
+          "old_text": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。\nThe user can demonstrate on a projector or computer, or print the presentation and make it into a in a wider field.",
+          "text": "把投稿过程建模成有限状态机，落到一块所有成员都能看见的看板上。"
+        },
+        {
+          "slot_id": "s03_sh42",
+          "old_text": "键入主题",
+          "text": "方案"
+        }
+      ],
+      "table_edits": [],
+      "chart_edits": []
+    },
+    {
+      "source_slide": 8,
+      "purpose": "content",
+      "replacements": [
+        {
+          "slot_id": "s08_sh59",
+          "old_text": "01",
+          "text": "01"
+        },
+        {
+          "slot_id": "s08_sh60",
+          "old_text": "02",
+          "text": "02"
+        },
+        {
+          "slot_id": "s08_sh61",
+          "old_text": "03",
+          "text": "03"
+        },
+        {
+          "slot_id": "s08_sh62",
+          "old_text": "04",
+          "text": "04"
+        },
+        {
+          "slot_id": "s08_sh63",
+          "old_text": "05",
+          "text": "05"
+        },
+        {
+          "slot_id": "s08_sh64",
+          "old_text": "请在此输入内容",
+          "text": "状态机"
+        },
+        {
+          "slot_id": "s08_sh65",
+          "old_text": "The user can demonstrate on a projector or computer",
+          "text": "六个状态，十条转移"
+        },
+        {
+          "slot_id": "s08_sh66",
+          "old_text": "请在此输入内容",
+          "text": "单一数据源"
+        },
+        {
+          "slot_id": "s08_sh67",
+          "old_text": "The user can demonstrate on a projector or computer",
+          "text": "一张主表撑起全部视图"
+        },
+        {
+          "slot_id": "s08_sh68",
+          "old_text": "请在此输入内容",
+          "text": "权限分层"
+        },
+        {
+          "slot_id": "s08_sh69",
+          "old_text": "The user can demonstrate on a projector or computer",
+          "text": "组内可写，对外只读"
+        },
+        {
+          "slot_id": "s08_sh70",
+          "old_text": "请在此输入内容",
+          "text": "事件留痕"
+        },
+        {
+          "slot_id": "s08_sh71",
+          "old_text": "The user can demonstrate on a projector or computer",
+          "text": "每次变更追加一条"
+        },
+        {
+          "slot_id": "s08_sh72",
+          "old_text": "请在此输入内容",
+          "text": "逾期预警"
+        },
+        {
+          "slot_id": "s08_sh73",
+          "old_text": "The user can demonstrate on a projector or computer",
+          "text": "超期自动标红"
+        },
+        {
+          "slot_id": "s08_sh89",
+          "old_text": "在此键入内容",
+          "text": "五个设计决定"
+        }
+      ],
+      "table_edits": [],
+      "chart_edits": []
+    },
+    {
+      "source_slide": 3,
+      "purpose": "chapter",
+      "replacements": [
+        {
+          "slot_id": "s03_sh9",
+          "old_text": "请在此输入标题内容",
+          "text": "第三部分"
+        },
+        {
+          "slot_id": "s03_sh52",
+          "old_text": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。\nThe user can demonstrate on a projector or computer, or print the presentation and make it into a in a wider field.",
+          "text": "部署在 Cloudflare 上，组内七个人用了三个月，替代了原来的 Excel。"
+        },
+        {
+          "slot_id": "s03_sh42",
+          "old_text": "键入主题",
+          "text": "落地"
+        }
+      ],
+      "table_edits": [],
+      "chart_edits": []
+    },
+    {
+      "source_slide": 5,
+      "purpose": "content",
+      "replacements": [
+        {
+          "slot_id": "s05_sh89",
+          "old_text": "在此键入内容",
+          "text": "组会不再问进度"
+        },
+        {
+          "slot_id": "s05_sh12",
+          "old_text": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。\nThe user can demonstrate on a projector or computer, or print the presentation and make it into a in a wider field.",
+          "text": "12 篇在途稿件全部进入看板，7 名成员每周至少查看一次，状态变更到看板刷新平均 3 分钟。组会上不再逐篇问进度。"
+        },
+        {
+          "slot_id": "s05_sh14",
+          "old_text": "点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字，点击添加相关标题文字。\nThe user can demonstrate on a projector or computer, or print the presentation and make it into a in a wider field.",
+          "text": "现在只看两件事：谁逾期，谁该催。剩下的属于判断，不属于工具——这一点不会因为上了系统就自动变好。"
+        }
+      ],
+      "table_edits": [],
+      "chart_edits": []
+    },
+    {
+      "source_slide": 11,
+      "purpose": "ending",
+      "replacements": [
+        {
+          "slot_id": "s11_sh42",
+          "old_text": "谢谢观看",
+          "text": "谢谢观看"
+        }
+      ],
+      "table_edits": [],
+      "chart_edits": []
+    }
+  ]
+}

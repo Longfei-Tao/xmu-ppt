@@ -1,0 +1,226 @@
+{
+  "deck_id": "厦门大学_主题_厦大蓝",
+  "source": "source.pptx",
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 15,
+  "layout_kinds": [
+    "chapter-divider",
+    "cover",
+    "ending",
+    "hero-statement",
+    "numbered-cards",
+    "two-block"
+  ],
+  "pages": [
+    {
+      "slide": 1,
+      "role": "cover_candidate",
+      "layout": "cover",
+      "slot_count": 6,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        80,
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "厦门大学PPT模板 单击此处编辑副标题 汇报人：xxx      指导老师：xxx"
+    },
+    {
+      "slide": 2,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 13,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        221,
+        48,
+        37
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "目 录 01 02 03 04 单击此处编辑 单击此处编辑 单击此处编辑 单击此处编辑"
+    },
+    {
+      "slide": 3,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 5,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        184,
+        64,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "单击此处添加文本， 单击此处添加文本， 单击此处添加文本， 单击此处添加文本， 单击此处添加文本， 单击此处添加文本。 "
+    },
+    {
+      "slide": 4,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 12,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "单击此处编辑标题样式 单击此处编辑 文本 单击此处编辑 文本 单击此处编辑 文本 单击此处编辑 文本"
+    },
+    {
+      "slide": 5,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 5,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        59,
+        24
+      ],
+      "tables": 0,
+      "charts": 1,
+      "summary": "单击此处编辑标题 单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加"
+    },
+    {
+      "slide": 6,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 6,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        184,
+        64,
+        24,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "单击此处编辑文本 单击此处编辑标题 02. 单击此处添加文本， 单击此处添加文本， 单击此处添加文本， 单击此处添加文本"
+    },
+    {
+      "slide": 7,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 15,
+      "filled_slot_count": 4,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "单击此处编辑 单击此处编辑 单击此处编辑 单击此处编辑"
+    },
+    {
+      "slide": 8,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 6,
+      "filled_slot_count": 1,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加"
+    },
+    {
+      "slide": 9,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 5,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        184,
+        64,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "单击此处编辑标题 03. 单击此处添加文本， 单击此处添加文本， 单击此处添加文本， 单击此处添加文本， 单击此处添加文"
+    },
+    {
+      "slide": 10,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 6,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        53,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "单击此处添加标题 单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加"
+    },
+    {
+      "slide": 11,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 6,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        53,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "单击此处添加标题 单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加"
+    },
+    {
+      "slide": 12,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 5,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        184,
+        64,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "单击此处编辑标题 04. 单击此处添加文本， 单击此处添加文本， 单击此处添加文本， 单击此处添加文本， 单击此处添加文"
+    },
+    {
+      "slide": 13,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 14,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        43,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "观 点 一 观 点 二 单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此"
+    },
+    {
+      "slide": 14,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 6,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        64
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加文本，单击此处添加"
+    },
+    {
+      "slide": 15,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 5,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        117
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "THANKS 汇报人：xxx      指导老师：xxx"
+    }
+  ]
+}

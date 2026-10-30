@@ -1,0 +1,296 @@
+{
+  "deck_id": "厦门大学_主题_蓝天校门",
+  "source": "source.pptx",
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 22,
+  "layout_kinds": [
+    "cover",
+    "ending",
+    "hero-statement",
+    "list",
+    "multi-block",
+    "numbered-cards"
+  ],
+  "pages": [
+    {
+      "slide": 1,
+      "role": "cover_candidate",
+      "layout": "cover",
+      "slot_count": 5,
+      "filled_slot_count": 4,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "制作人：XXXX 学院：法学院 学号：XXXXXXXXXXXX 厦门大学毕业答辩PPT模板"
+    },
+    {
+      "slide": 2,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 8,
+      "filled_slot_count": 8,
+      "type_scale_px": [
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "01 研究方法及过程 研究成果展示及其应用 论文总结与致谢 选题背景与意义 02 03 04"
+    },
+    {
+      "slide": 3,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "选题的背景与意义 BACKGROUND AND SIGNIFICANCE OF THE SELECTED TOPIC P"
+    },
+    {
+      "slide": 4,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "简介 Xiamen University 厦门大学（Xiamen University），简称厦大(XMU) ，由著名爱"
+    },
+    {
+      "slide": 5,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "简介 Xiamen University 厦门大学建有思明校区、漳州校区、翔安校区和马来西亚分校，设有研究生院、6个学部"
+    },
+    {
+      "slide": 6,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 18,
+      "filled_slot_count": 10,
+      "type_scale_px": [
+        37,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "简介 Xiamen University 1 3 2 4 目前，学校有39个博士学位授权一级学科，47个硕士学位授权一级"
+    },
+    {
+      "slide": 7,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "研究方法及过程 RESEARCH METHODS AND PROCESSES PART TWO"
+    },
+    {
+      "slide": 8,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 10,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        24,
+        15
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "图书馆 厦门大学图书馆始建于1921年，著名图书馆学家裘开明、文学巨匠林语堂、历史学家郑天挺、人类学家冯汉骥、金融学家朱"
+    },
+    {
+      "slide": 9,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 11,
+      "filled_slot_count": 11,
+      "type_scale_px": [
+        27,
+        19
+      ],
+      "tables": 0,
+      "charts": 1,
+      "summary": "图表 Data visualization 01 标 题 Lorem ipsum dolor sit amet, con"
+    },
+    {
+      "slide": 10,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 7,
+      "filled_slot_count": 6,
+      "type_scale_px": [
+        37,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Part 2 Xiamen University 添加标题 添加详细文本描述。 添加标题 添加详细文本描述。"
+    },
+    {
+      "slide": 11,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 5,
+      "filled_slot_count": 5,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "南强 Xiamen University 自强不息 止于至善 南强学府 卷帙飘香 大学之道 在明明德"
+    },
+    {
+      "slide": 12,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "研究成果展示及应用 RESEARCH RESULTS AND ITS APPLICATION PART THREE"
+    },
+    {
+      "slide": 13,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 6,
+      "filled_slot_count": 6,
+      "type_scale_px": [
+        37,
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "颂恩 Xiamen University 点击此处编辑文本 点击此处编辑文本 点击此处编辑文本 点击此处编辑文本 点击此"
+    },
+    {
+      "slide": 14,
+      "role": "chapter_candidate",
+      "layout": "list",
+      "slot_count": 11,
+      "filled_slot_count": 8,
+      "type_scale_px": [
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Part 3 SmartArt 小标题 请在这里输入您的阐述 请在这里输入您的阐述 小标题 请在这里输入您的阐述 小标题"
+    },
+    {
+      "slide": 15,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 10,
+      "filled_slot_count": 6,
+      "type_scale_px": [
+        15
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Part 3 Xiamen University Please enter the font and title wha"
+    },
+    {
+      "slide": 16,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 8,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "主标题 陈嘉庚先生是伟大的爱国主义者、杰出的华侨领袖、著名实业家、教育家。 01 陈嘉庚身居异邦，心怀乡国，经营实业不谋"
+    },
+    {
+      "slide": 17,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "论文总结与致谢 THE SUMMARY AND ACKNOWLEDGMENT PART FOUR"
+    },
+    {
+      "slide": 18,
+      "role": "chapter_candidate",
+      "layout": "multi-block",
+      "slot_count": 12,
+      "filled_slot_count": 12,
+      "type_scale_px": [
+        27,
+        24
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Part 4 PUT YOUR TITLE HERE 点击此处输入文本 点击此处输入文本 点击此处输入文本 点击此处输入"
+    },
+    {
+      "slide": 19,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 7,
+      "filled_slot_count": 6,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Part 4 PUT YOUR TITLE HERE 点击此处输入文本   Put your text here 点击此"
+    },
+    {
+      "slide": 20,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 4,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "结论 CONCLUSION In recent years, in addition to the teachers a"
+    },
+    {
+      "slide": 21,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 8,
+      "filled_slot_count": 2,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "参考文献 BIBLIOGRAPHY"
+    },
+    {
+      "slide": 22,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 4,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        16,
+        15
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "感谢各位专家批评指正 答辩学生：X X X 指导老师：XXX THANK YOU FOR WATCHING"
+    }
+  ]
+}

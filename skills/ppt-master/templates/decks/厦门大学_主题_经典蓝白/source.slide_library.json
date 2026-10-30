@@ -1,0 +1,2329 @@
+{
+  "schema": "template_fill_pptx_library.v1",
+  "source_pptx": "D:\\Coding\\xmu-ppt-master\\skills\\ppt-master\\templates\\decks\\厦门大学_主题_经典蓝白\\source.pptx",
+  "slide_count": 21,
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "page_type": "cover_candidate",
+      "text_summary": "厦门大学毕业答辩PPT模板\nThesis Oral Defense PPT Template of Xiamen University\n答辩人：XXX   指导老师：XXX    答辩时间： xxxx年xx月xx日",
+      "slots": [
+        {
+          "slot_id": "s01_sh18",
+          "role": "title_candidate",
+          "text": "厦门大学毕业答辩PPT模板\nThesis Oral Defense PPT Template of Xiamen University",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 0,
+            "y": 240,
+            "width": 1282,
+            "height": 211
+          },
+          "text_metrics": {
+            "font_size_px": 88.0,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s01_sh2",
+          "role": "body_candidate",
+          "text": "答辩人：XXX   指导老师：XXX    答辩时间： xxxx年xx月xx日",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 474,
+            "width": 1282,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 2,
+      "page_type": "content_candidate",
+      "text_summary": "问题提出\n研究设计\n研究发现\n结论建议\n反思展望\n1\n2\n3\n4\n5",
+      "slots": [
+        {
+          "slot_id": "s02_sh3",
+          "role": "title_candidate",
+          "text": "问题提出",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 544,
+            "y": 138,
+            "width": 580,
+            "height": 64
+          },
+          "text_metrics": {
+            "font_size_px": 37.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh4",
+          "role": "label_candidate",
+          "text": "研究设计",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 544,
+            "y": 241,
+            "width": 580,
+            "height": 64
+          },
+          "text_metrics": {
+            "font_size_px": 37.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh6",
+          "role": "label_candidate",
+          "text": "研究发现",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 544,
+            "y": 345,
+            "width": 580,
+            "height": 64
+          },
+          "text_metrics": {
+            "font_size_px": 37.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh7",
+          "role": "label_candidate",
+          "text": "结论建议",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 544,
+            "y": 448,
+            "width": 580,
+            "height": 64
+          },
+          "text_metrics": {
+            "font_size_px": 37.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh9",
+          "role": "label_candidate",
+          "text": "反思展望",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 544,
+            "y": 551,
+            "width": 580,
+            "height": 64
+          },
+          "text_metrics": {
+            "font_size_px": 37.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh10",
+          "role": "title_candidate",
+          "text": "1",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 442,
+            "y": 138,
+            "width": 68,
+            "height": 64
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh11",
+          "role": "label_candidate",
+          "text": "2",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 442,
+            "y": 241,
+            "width": 68,
+            "height": 64
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh12",
+          "role": "label_candidate",
+          "text": "3",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 442,
+            "y": 345,
+            "width": 68,
+            "height": 64
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh13",
+          "role": "label_candidate",
+          "text": "4",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 442,
+            "y": 448,
+            "width": 68,
+            "height": 64
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh14",
+          "role": "label_candidate",
+          "text": "5",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 442,
+            "y": 551,
+            "width": 68,
+            "height": 64
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 3,
+      "page_type": "chapter_candidate",
+      "text_summary": "PART 1. 问题提出",
+      "slots": [
+        {
+          "slot_id": "s03_sh4",
+          "role": "title_candidate",
+          "text": "PART 1. 问题提出",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 395,
+            "y": 329,
+            "width": 630,
+            "height": 87
+          },
+          "text_metrics": {
+            "font_size_px": 64.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 4,
+      "page_type": "content_candidate",
+      "text_summary": "1.1 厦门大学简介\n厦门大学（Xiamen University），简称厦大(XMU) ，由著名爱国华侨领袖陈嘉庚先生于1921年创办, 是中国近代教育史上第一所华侨创办的大学。学校秉持爱国华侨领袖陈嘉庚先生的立校志向，形成了“爱国、革命、自强、科学”的优良校风，打造了鲜明的办学特色，培养了大批优秀人才，为国家富强、人民幸福和中华文化海外传播作出了积极贡献。",
+      "slots": [
+        {
+          "slot_id": "s04_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 91,
+            "y": 182,
+            "width": 1053,
+            "height": 416
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s04_sh14",
+          "role": "title_candidate",
+          "text": "1.1 厦门大学简介",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 116,
+            "y": 50,
+            "width": 376,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh5",
+          "role": "body_candidate",
+          "text": "厦门大学（Xiamen University），简称厦大(XMU) ，由著名爱国华侨领袖陈嘉庚先生于1921年创办, 是中国近代教育史上第一所华侨创办的大学。学校秉持爱国华侨领袖陈嘉庚先生的立校志向，形成了“爱国、革命、自强、科学”的优良校风，打造了鲜明的办学特色，培养了大批优秀人才，为国家富强、人民幸福和中华文化海外传播作出了积极贡献。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 199,
+            "y": 265,
+            "width": 882,
+            "height": 252
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh16",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 116,
+            "y": 0,
+            "width": 8,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 5,
+      "page_type": "content_candidate",
+      "text_summary": "厦门大学在哲学、经济学、法学、教育学、文学、历史学、理学、工学、医学、管理学、艺术学、交叉学科12个学科门类中授予博士或硕士学位。目前，学校有37个博士学位授权一级学科，46个硕士学位授权一级学科，8个二级交叉学科学位授权点，2个博士专业学位授权类别，29个硕士专业学位授权类别。\n2018年上半年，学校成为全国首批二十所学位授权自主审核单位之一。现有5个一级学科国家重点学科（理论经济学、应用经济学、化学、海洋科学、工商管理）、9个二级学科国家重点学科（国际法学、高等教育学、专门史、基础数学、凝聚态物理、动物学、水生生物学、细胞生物学、环境科学）。2017年，化学、海洋科学、生物学、生态学、统计学5个学科入选国家公布的世界一流学科建设名单。\n1.2 厦门大学优势学科\n优势学科\n学科门类",
+      "slots": [
+        {
+          "slot_id": "s05_sh16",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 218,
+            "y": 425,
+            "width": 1011,
+            "height": 204
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s05_sh14",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 70,
+            "y": 185,
+            "width": 1013,
+            "height": 204
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s05_sh2",
+          "role": "body_candidate",
+          "text": "厦门大学在哲学、经济学、法学、教育学、文学、历史学、理学、工学、医学、管理学、艺术学、交叉学科12个学科门类中授予博士或硕士学位。目前，学校有37个博士学位授权一级学科，46个硕士学位授权一级学科，8个二级交叉学科学位授权点，2个博士专业学位授权类别，29个硕士专业学位授权类别。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 105,
+            "y": 206,
+            "width": 952,
+            "height": 165
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh3",
+          "role": "body_candidate",
+          "text": "2018年上半年，学校成为全国首批二十所学位授权自主审核单位之一。现有5个一级学科国家重点学科（理论经济学、应用经济学、化学、海洋科学、工商管理）、9个二级学科国家重点学科（国际法学、高等教育学、专门史、基础数学、凝聚态物理、动物学、水生生物学、细胞生物学、环境科学）。2017年，化学、海洋科学、生物学、生态学、统计学5个学科入选国家公布的世界一流学科建设名单。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 227,
+            "y": 443,
+            "width": 992,
+            "height": 165
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh11",
+          "role": "title_candidate",
+          "text": "1.2 厦门大学优势学科",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 116,
+            "y": 52,
+            "width": 510,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh6",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 1,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s05_sh18",
+          "role": "title_candidate",
+          "text": "优势学科",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 1,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh5",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 2,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s05_sh17",
+          "role": "title_candidate",
+          "text": "学科门类",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 2,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 6,
+      "page_type": "content_candidate",
+      "text_summary": "1.3  厦门大学图书馆\n厦门大学图书馆始建于1921年，著名图书馆学家裘开明、文学巨匠林语堂、历史学家郑天挺、人类学家冯汉骥、金融学家朱保训和数学奇才陈景润等都曾任职于此。\n历经百年积累，截至2022年12月，馆藏总量达1468万册。其中，纸本馆藏470万册，电子馆藏998万册，数据库计188个。纸本馆藏涵盖各个领域，哲学、语言学、历史学、政治学、法学、经济学、管理学等方面的文献尤其丰富，在东南亚和台湾研究的资料建设方面颇具优势。馆内还藏有大量古籍线装书、缩微平片等资源，是全国古籍重点保护单位。",
+      "slots": [
+        {
+          "slot_id": "s06_sh14",
+          "role": "title_candidate",
+          "text": "1.3  厦门大学图书馆",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 90,
+            "y": 52,
+            "width": 437,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh4",
+          "role": "body_candidate",
+          "text": "厦门大学图书馆始建于1921年，著名图书馆学家裘开明、文学巨匠林语堂、历史学家郑天挺、人类学家冯汉骥、金融学家朱保训和数学奇才陈景润等都曾任职于此。\n历经百年积累，截至2022年12月，馆藏总量达1468万册。其中，纸本馆藏470万册，电子馆藏998万册，数据库计188个。纸本馆藏涵盖各个领域，哲学、语言学、历史学、政治学、法学、经济学、管理学等方面的文献尤其丰富，在东南亚和台湾研究的资料建设方面颇具优势。馆内还藏有大量古籍线装书、缩微平片等资源，是全国古籍重点保护单位。",
+          "paragraph_count": 2,
+          "geometry": {
+            "x": 138,
+            "y": 207,
+            "width": 1041,
+            "height": 397
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 2
+          }
+        },
+        {
+          "slot_id": "s06_sh2",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 1004,
+            "y": 559,
+            "width": 207,
+            "height": 86
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s06_sh15",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 91,
+            "y": 169,
+            "width": 8,
+            "height": 474
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 7,
+      "page_type": "chapter_candidate",
+      "text_summary": "PART 2. 研究设计",
+      "slots": [
+        {
+          "slot_id": "s07_sh4",
+          "role": "title_candidate",
+          "text": "PART 2. 研究设计",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 395,
+            "y": 329,
+            "width": 630,
+            "height": 87
+          },
+          "text_metrics": {
+            "font_size_px": 64.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 8,
+      "page_type": "content_candidate",
+      "text_summary": "2.1  研究对象\n表1 研究对象基本情况\n注：XXXXXXXXXXXXXXXXXXXXXXXXXXXXX。\n案例1\n案例2\n案例3\n案例4\n案例5\n属性A\n属性B\n属性C\n属性D\n属性E",
+      "slots": [
+        {
+          "slot_id": "s08_sh8",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 806,
+            "y": 242,
+            "width": 418,
+            "height": 320
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s08_sh14",
+          "role": "title_candidate",
+          "text": "2.1  研究对象",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 90,
+            "y": 52,
+            "width": 328,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh3",
+          "role": "label_candidate",
+          "text": "表1 研究对象基本情况",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 277,
+            "y": 192,
+            "width": 286,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh4",
+          "role": "label_candidate",
+          "text": "注：XXXXXXXXXXXXXXXXXXXXXXXXXXXXX。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 57,
+            "y": 585,
+            "width": 726,
+            "height": 35
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh2",
+          "role": "body_candidate",
+          "text": "案例1\n案例2\n案例3\n案例4\n案例5\n属性A\n属性B\n属性C\n属性D\n属性E",
+          "paragraph_count": 10,
+          "geometry": {
+            "x": 57,
+            "y": 242,
+            "width": 726,
+            "height": 320
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 10
+          }
+        }
+      ],
+      "tables": [
+        {
+          "table_id": "s08_tbl2",
+          "row_count": 6,
+          "column_count": 6,
+          "rows": [
+            {
+              "row": 0,
+              "cells": [
+                {
+                  "row": 0,
+                  "col": 0,
+                  "text": ""
+                },
+                {
+                  "row": 0,
+                  "col": 1,
+                  "text": "案例1"
+                },
+                {
+                  "row": 0,
+                  "col": 2,
+                  "text": "案例2"
+                },
+                {
+                  "row": 0,
+                  "col": 3,
+                  "text": "案例3"
+                },
+                {
+                  "row": 0,
+                  "col": 4,
+                  "text": "案例4"
+                },
+                {
+                  "row": 0,
+                  "col": 5,
+                  "text": "案例5"
+                }
+              ]
+            },
+            {
+              "row": 1,
+              "cells": [
+                {
+                  "row": 1,
+                  "col": 0,
+                  "text": "属性A"
+                },
+                {
+                  "row": 1,
+                  "col": 1,
+                  "text": ""
+                },
+                {
+                  "row": 1,
+                  "col": 2,
+                  "text": ""
+                },
+                {
+                  "row": 1,
+                  "col": 3,
+                  "text": ""
+                },
+                {
+                  "row": 1,
+                  "col": 4,
+                  "text": ""
+                },
+                {
+                  "row": 1,
+                  "col": 5,
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "row": 2,
+              "cells": [
+                {
+                  "row": 2,
+                  "col": 0,
+                  "text": "属性B"
+                },
+                {
+                  "row": 2,
+                  "col": 1,
+                  "text": ""
+                },
+                {
+                  "row": 2,
+                  "col": 2,
+                  "text": ""
+                },
+                {
+                  "row": 2,
+                  "col": 3,
+                  "text": ""
+                },
+                {
+                  "row": 2,
+                  "col": 4,
+                  "text": ""
+                },
+                {
+                  "row": 2,
+                  "col": 5,
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "row": 3,
+              "cells": [
+                {
+                  "row": 3,
+                  "col": 0,
+                  "text": "属性C"
+                },
+                {
+                  "row": 3,
+                  "col": 1,
+                  "text": ""
+                },
+                {
+                  "row": 3,
+                  "col": 2,
+                  "text": ""
+                },
+                {
+                  "row": 3,
+                  "col": 3,
+                  "text": ""
+                },
+                {
+                  "row": 3,
+                  "col": 4,
+                  "text": ""
+                },
+                {
+                  "row": 3,
+                  "col": 5,
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "row": 4,
+              "cells": [
+                {
+                  "row": 4,
+                  "col": 0,
+                  "text": "属性D"
+                },
+                {
+                  "row": 4,
+                  "col": 1,
+                  "text": ""
+                },
+                {
+                  "row": 4,
+                  "col": 2,
+                  "text": ""
+                },
+                {
+                  "row": 4,
+                  "col": 3,
+                  "text": ""
+                },
+                {
+                  "row": 4,
+                  "col": 4,
+                  "text": ""
+                },
+                {
+                  "row": 4,
+                  "col": 5,
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "row": 5,
+              "cells": [
+                {
+                  "row": 5,
+                  "col": 0,
+                  "text": "属性E"
+                },
+                {
+                  "row": 5,
+                  "col": 1,
+                  "text": ""
+                },
+                {
+                  "row": 5,
+                  "col": 2,
+                  "text": ""
+                },
+                {
+                  "row": 5,
+                  "col": 3,
+                  "text": ""
+                },
+                {
+                  "row": 5,
+                  "col": 4,
+                  "text": ""
+                },
+                {
+                  "row": 5,
+                  "col": 5,
+                  "text": ""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "charts": [],
+      "fill_risk": {
+        "has_non_text_content": true,
+        "reason": "has non-text content (table) that text-fill cannot replace; provide table_edits/chart_edits or pick another source slide"
+      }
+    },
+    {
+      "slide_index": 9,
+      "page_type": "content_candidate",
+      "text_summary": "2.2  研究方法\n文献调查\n深度访谈\n开放问卷\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "slots": [
+        {
+          "slot_id": "s09_sh14",
+          "role": "title_candidate",
+          "text": "2.2  研究方法",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 90,
+            "y": 52,
+            "width": 328,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh15",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 1
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s09_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s09_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 1
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s09_sh8",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s09_sh10",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 1
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s09_sh11",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s09_sh19",
+          "role": "label_candidate",
+          "text": "文献调查",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 199,
+            "y": 387,
+            "width": 131,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh20",
+          "role": "label_candidate",
+          "text": "深度访谈",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 574,
+            "y": 387,
+            "width": 131,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh22",
+          "role": "label_candidate",
+          "text": "开放问卷",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 961,
+            "y": 387,
+            "width": 131,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh31",
+          "role": "label_candidate",
+          "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 178,
+            "y": 441,
+            "width": 173,
+            "height": 155
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh23",
+          "role": "label_candidate",
+          "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 940,
+            "y": 441,
+            "width": 173,
+            "height": 155
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh24",
+          "role": "label_candidate",
+          "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 554,
+            "y": 441,
+            "width": 173,
+            "height": 155
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 10,
+      "page_type": "chapter_candidate",
+      "text_summary": "PART 3. 研究发现",
+      "slots": [
+        {
+          "slot_id": "s10_sh4",
+          "role": "title_candidate",
+          "text": "PART 3. 研究发现",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 395,
+            "y": 329,
+            "width": 630,
+            "height": 87
+          },
+          "text_metrics": {
+            "font_size_px": 64.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 11,
+      "page_type": "content_candidate",
+      "text_summary": "3.1  研究发现A\nXXXXXXXXXXX\n1\nXXXXXXXXXXX\n2\nXXXXXXXXXXX\n3",
+      "slots": [
+        {
+          "slot_id": "s11_sh14",
+          "role": "title_candidate",
+          "text": "3.1  研究发现A",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 90,
+            "y": 52,
+            "width": 338,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh7",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 662,
+            "y": 381,
+            "width": 83,
+            "height": 95
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s11_sh5",
+          "role": "title_candidate",
+          "text": "XXXXXXXXXXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1,
+            "y": 0,
+            "width": 1,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh10",
+          "role": "title_candidate",
+          "text": "1",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh15",
+          "role": "title_candidate",
+          "text": "XXXXXXXXXXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1,
+            "y": 0,
+            "width": 1,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh16",
+          "role": "title_candidate",
+          "text": "2",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh18",
+          "role": "title_candidate",
+          "text": "XXXXXXXXXXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1,
+            "y": 0,
+            "width": 1,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh19",
+          "role": "title_candidate",
+          "text": "3",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [
+        {
+          "chart_id": "s11_ch4",
+          "chart_type": "radarChart",
+          "category_count": 5,
+          "series_count": 2,
+          "categories": [
+            "37261",
+            "37262",
+            "37263",
+            "37264",
+            "37265"
+          ],
+          "series": [
+            {
+              "name": "系列 1",
+              "values": [
+                32,
+                32,
+                28,
+                12,
+                15
+              ],
+              "chart_type": "radarChart"
+            },
+            {
+              "name": "系列 2",
+              "values": [
+                12,
+                12,
+                12,
+                21,
+                28
+              ],
+              "chart_type": "radarChart"
+            }
+          ],
+          "plot_types": [
+            "radarChart"
+          ]
+        }
+      ],
+      "fill_risk": {
+        "has_non_text_content": true,
+        "reason": "has non-text content (chart) that text-fill cannot replace; provide table_edits/chart_edits or pick another source slide"
+      }
+    },
+    {
+      "slide_index": 12,
+      "page_type": "content_candidate",
+      "text_summary": "3.2  研究发现B\nXXXXXXXXXXX\nXXXXXXXXXXX\nXXXXXXXXXXX",
+      "slots": [
+        {
+          "slot_id": "s12_sh14",
+          "role": "title_candidate",
+          "text": "3.2  研究发现B",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 90,
+            "y": 52,
+            "width": 338,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh18",
+          "role": "title_candidate",
+          "text": "XXXXXXXXXXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh19",
+          "role": "title_candidate",
+          "text": "XXXXXXXXXXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 1,
+            "width": 1,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh20",
+          "role": "title_candidate",
+          "text": "XXXXXXXXXXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 1,
+            "width": 1,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [
+        {
+          "chart_id": "s12_ch2",
+          "chart_type": "comboChart",
+          "category_count": 4,
+          "series_count": 3,
+          "categories": [
+            "类别1",
+            "类别2",
+            "类别3",
+            "类别4"
+          ],
+          "series": [
+            {
+              "name": "系列 1",
+              "values": [
+                4.3,
+                2.5,
+                3.5,
+                4.5
+              ],
+              "chart_type": "barChart"
+            },
+            {
+              "name": "系列 2",
+              "values": [
+                2.4,
+                4.4,
+                1.8,
+                2.8
+              ],
+              "chart_type": "barChart"
+            },
+            {
+              "name": "系列 3",
+              "values": [
+                2,
+                2,
+                3,
+                5
+              ],
+              "chart_type": "lineChart"
+            }
+          ],
+          "plot_types": [
+            "barChart",
+            "lineChart"
+          ]
+        }
+      ],
+      "fill_risk": {
+        "has_non_text_content": true,
+        "reason": "has non-text content (chart) that text-fill cannot replace; provide table_edits/chart_edits or pick another source slide"
+      }
+    },
+    {
+      "slide_index": 13,
+      "page_type": "content_candidate",
+      "text_summary": "3.3  研究发现C\nXXXXXXXXXXXXXXXX\n1\nXXXXXXXXXXXXXXXX\n2\nXXXXXXXXXXXXXXXX\n3",
+      "slots": [
+        {
+          "slot_id": "s13_sh14",
+          "role": "title_candidate",
+          "text": "3.3  研究发现C",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 90,
+            "y": 52,
+            "width": 338,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh18",
+          "role": "title_candidate",
+          "text": "XXXXXXXXXXXXXXXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1,
+            "y": 0,
+            "width": 1,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh15",
+          "role": "title_candidate",
+          "text": "1",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh19",
+          "role": "title_candidate",
+          "text": "XXXXXXXXXXXXXXXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1,
+            "y": 0,
+            "width": 1,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh22",
+          "role": "title_candidate",
+          "text": "2",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh24",
+          "role": "title_candidate",
+          "text": "XXXXXXXXXXXXXXXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1,
+            "y": 0,
+            "width": 1,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh27",
+          "role": "title_candidate",
+          "text": "3",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [
+        {
+          "chart_id": "s13_ch5",
+          "chart_type": "barChart",
+          "category_count": 4,
+          "series_count": 3,
+          "categories": [
+            "类别1",
+            "类别2",
+            "类别3",
+            "类别4"
+          ],
+          "series": [
+            {
+              "name": "系列 1",
+              "values": [
+                4.3,
+                2.5,
+                3.5,
+                4.5
+              ],
+              "chart_type": "barChart"
+            },
+            {
+              "name": "系列 2",
+              "values": [
+                2.4,
+                4.4,
+                1.8,
+                2.8
+              ],
+              "chart_type": "barChart"
+            },
+            {
+              "name": "系列 3",
+              "values": [
+                2,
+                2,
+                3,
+                5
+              ],
+              "chart_type": "barChart"
+            }
+          ],
+          "plot_types": [
+            "barChart"
+          ]
+        }
+      ],
+      "fill_risk": {
+        "has_non_text_content": true,
+        "reason": "has non-text content (chart) that text-fill cannot replace; provide table_edits/chart_edits or pick another source slide"
+      }
+    },
+    {
+      "slide_index": 14,
+      "page_type": "chapter_candidate",
+      "text_summary": "PART 4. 结论建议",
+      "slots": [
+        {
+          "slot_id": "s14_sh4",
+          "role": "title_candidate",
+          "text": "PART 4. 结论建议",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 395,
+            "y": 329,
+            "width": 630,
+            "height": 87
+          },
+          "text_metrics": {
+            "font_size_px": 64.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 15,
+      "page_type": "content_candidate",
+      "text_summary": "4.1 研究结论\n结论1:  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n结论3:  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n结论2:  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "slots": [
+        {
+          "slot_id": "s15_sh2",
+          "role": "title_candidate",
+          "text": "4.1 研究结论",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 97,
+            "y": 52,
+            "width": 285,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s15_sh15",
+          "role": "title_candidate",
+          "text": "结论1:  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s15_sh17",
+          "role": "title_candidate",
+          "text": "结论3:  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 1,
+            "width": 1,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s15_sh16",
+          "role": "title_candidate",
+          "text": "结论2:  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 1,
+            "width": 1,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 16,
+      "page_type": "content_candidate",
+      "text_summary": "4.2 对策建议\n1\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n2\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n3\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "slots": [
+        {
+          "slot_id": "s16_sh2",
+          "role": "title_candidate",
+          "text": "4.2 对策建议",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 99,
+            "y": 52,
+            "width": 283,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s16_sh15",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 1
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s16_sh7",
+          "role": "title_candidate",
+          "text": "1",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 1,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s16_sh19",
+          "role": "title_candidate",
+          "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s16_sh29",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 1
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s16_sh30",
+          "role": "title_candidate",
+          "text": "2",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 1,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s16_sh31",
+          "role": "title_candidate",
+          "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s16_sh33",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 1
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s16_sh34",
+          "role": "title_candidate",
+          "text": "3",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 1,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s16_sh35",
+          "role": "title_candidate",
+          "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 17,
+      "page_type": "chapter_candidate",
+      "text_summary": "PART 5. 反思展望",
+      "slots": [
+        {
+          "slot_id": "s17_sh4",
+          "role": "title_candidate",
+          "text": "PART 5. 反思展望",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 395,
+            "y": 329,
+            "width": 630,
+            "height": 87
+          },
+          "text_metrics": {
+            "font_size_px": 64.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 18,
+      "page_type": "content_candidate",
+      "text_summary": "5.1 研究不足\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx",
+      "slots": [
+        {
+          "slot_id": "s18_sh2",
+          "role": "title_candidate",
+          "text": "5.1 研究不足",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 94,
+            "y": 52,
+            "width": 288,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s18_sh14",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 106,
+            "y": 223,
+            "width": 522,
+            "height": 395
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s18_sh15",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 667,
+            "y": 223,
+            "width": 522,
+            "height": 395
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s18_sh19",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 1,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s18_sh20",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 2,
+            "y": 1,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s18_sh23",
+          "role": "body_candidate",
+          "text": "xxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 5,
+          "geometry": {
+            "x": 748,
+            "y": 294,
+            "width": 386,
+            "height": 252
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 5
+          }
+        },
+        {
+          "slot_id": "s18_sh25",
+          "role": "body_candidate",
+          "text": "xxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 5,
+          "geometry": {
+            "x": 205,
+            "y": 294,
+            "width": 386,
+            "height": 252
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 5
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 19,
+      "page_type": "content_candidate",
+      "text_summary": "5.2 进一步研究展望\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx",
+      "slots": [
+        {
+          "slot_id": "s19_sh2",
+          "role": "title_candidate",
+          "text": "5.2 进一步研究展望",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 96,
+            "y": 52,
+            "width": 415,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s19_sh12",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 653,
+            "y": 173,
+            "width": 459,
+            "height": 215
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s19_sh5",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 168,
+            "y": 173,
+            "width": 459,
+            "height": 215
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s19_sh6",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 168,
+            "y": 413,
+            "width": 459,
+            "height": 215
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s19_sh7",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 653,
+            "y": 413,
+            "width": 459,
+            "height": 215
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s19_sh16",
+          "role": "label_candidate",
+          "text": "xxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 3,
+          "geometry": {
+            "x": 292,
+            "y": 197,
+            "width": 305,
+            "height": 155
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 3
+          }
+        },
+        {
+          "slot_id": "s19_sh17",
+          "role": "label_candidate",
+          "text": "xxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 3,
+          "geometry": {
+            "x": 779,
+            "y": 446,
+            "width": 305,
+            "height": 155
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 3
+          }
+        },
+        {
+          "slot_id": "s19_sh18",
+          "role": "label_candidate",
+          "text": "xxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 3,
+          "geometry": {
+            "x": 779,
+            "y": 197,
+            "width": 305,
+            "height": 155
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 3
+          }
+        },
+        {
+          "slot_id": "s19_sh19",
+          "role": "label_candidate",
+          "text": "xxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx",
+          "paragraph_count": 3,
+          "geometry": {
+            "x": 292,
+            "y": 446,
+            "width": 305,
+            "height": 155
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 3
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 20,
+      "page_type": "content_candidate",
+      "text_summary": "参考文献\n[1] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[2] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[3] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[4] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[5] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[6] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[7] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[8] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[9] xxx",
+      "slots": [
+        {
+          "slot_id": "s20_sh13",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 104,
+            "y": 73,
+            "width": 1125,
+            "height": 588
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s20_sh10",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s20_sh12",
+          "role": "title_candidate",
+          "text": "参考文献",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 1,
+            "width": 0,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 37.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s20_sh14",
+          "role": "body_candidate",
+          "text": "[1] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[2] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[3] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[4] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[5] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[6] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[7] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[8] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.\n[9] xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.",
+          "paragraph_count": 9,
+          "geometry": {
+            "x": 338,
+            "y": 159,
+            "width": 810,
+            "height": 402
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 9
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 21,
+      "page_type": "ending_candidate",
+      "text_summary": "答辩人：XXX\nTHANKS",
+      "slots": [
+        {
+          "slot_id": "s21_sh16",
+          "role": "title_candidate",
+          "text": "答辩人：XXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1050,
+            "y": 644,
+            "width": 230,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s21_sh13",
+          "role": "title_candidate",
+          "text": "THANKS",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 2,
+            "height": 0
+          },
+          "text_metrics": {
+            "font_size_px": 153.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    }
+  ],
+  "plan_contract": {
+    "schema": "template_fill_pptx_plan.v1",
+    "slides": [
+      {
+        "source_slide": 1,
+        "purpose": "封面 / 章节 / 内容 / 结尾",
+        "replacements": [
+          {
+            "slot_id": "s01_sh2",
+            "text": "替换后的文字"
+          }
+        ],
+        "table_edits": [
+          {
+            "table_id": "s01_tbl3",
+            "cells": [
+              {
+                "row": 0,
+                "col": 0,
+                "text": "替换后的单元格"
+              }
+            ]
+          }
+        ],
+        "chart_edits": [
+          {
+            "chart_id": "s01_ch4",
+            "categories": [
+              "A",
+              "B"
+            ],
+            "series": [
+              {
+                "name": "系列1",
+                "values": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

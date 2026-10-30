@@ -1,0 +1,4555 @@
+{
+  "schema": "template_fill_pptx_library.v1",
+  "source_pptx": "D:\\Coding\\xmu-ppt-master\\skills\\ppt-master\\templates\\decks\\厦门大学_主题_米金书法\\source.pptx",
+  "slide_count": 22,
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "page_type": "cover_candidate",
+      "text_summary": "止\n于\n至\n善\n厦门大学毕业答辩PPT模板\n制作人：xxx\n学号：xxxxxx\nGeneral PowerPoint Template Of Xiamen University\n自\n不\n息\n强",
+      "slots": [
+        {
+          "slot_id": "s01_sh9",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": -121,
+            "y": -115,
+            "width": 928,
+            "height": 928
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s01_sh8",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 786,
+            "height": 721
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s01_sh16",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s01_sh21",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 290,
+            "y": 1,
+            "width": 1033,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s01_sh38",
+          "role": "title_candidate",
+          "text": "止",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 385,
+            "y": 104,
+            "width": 205,
+            "height": 233
+          },
+          "text_metrics": {
+            "font_size_px": 184.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh39",
+          "role": "label_candidate",
+          "text": "于",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 482,
+            "y": 182,
+            "width": 181,
+            "height": 204
+          },
+          "text_metrics": {
+            "font_size_px": 160.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh40",
+          "role": "title_candidate",
+          "text": "至",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 586,
+            "y": 110,
+            "width": 205,
+            "height": 233
+          },
+          "text_metrics": {
+            "font_size_px": 184.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh41",
+          "role": "label_candidate",
+          "text": "善",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 723,
+            "y": 165,
+            "width": 181,
+            "height": 204
+          },
+          "text_metrics": {
+            "font_size_px": 160.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh43",
+          "role": "label_candidate",
+          "text": "厦门大学毕业答辩PPT模板",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 394,
+            "width": 629,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh50",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 85,
+            "y": 539,
+            "width": 227,
+            "height": 53
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s01_sh51",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 354,
+            "y": 539,
+            "width": 280,
+            "height": 53
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s01_sh46",
+          "role": "label_candidate",
+          "text": "制作人：xxx",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 89,
+            "y": 544,
+            "width": 213,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh48",
+          "role": "label_candidate",
+          "text": "学号：xxxxxx",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 360,
+            "y": 544,
+            "width": 280,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh54",
+          "role": "label_candidate",
+          "text": "General PowerPoint Template Of Xiamen University",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 65,
+            "y": 462,
+            "width": 607,
+            "height": 36
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh34",
+          "role": "title_candidate",
+          "text": "自",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": -36,
+            "y": 134,
+            "width": 213,
+            "height": 242
+          },
+          "text_metrics": {
+            "font_size_px": 192.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh36",
+          "role": "title_candidate",
+          "text": "不",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 189,
+            "y": 119,
+            "width": 205,
+            "height": 233
+          },
+          "text_metrics": {
+            "font_size_px": 184.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh37",
+          "role": "label_candidate",
+          "text": "息",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 295,
+            "y": 178,
+            "width": 181,
+            "height": 204
+          },
+          "text_metrics": {
+            "font_size_px": 160.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh35",
+          "role": "label_candidate",
+          "text": "强",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 100,
+            "y": 195,
+            "width": 181,
+            "height": 204
+          },
+          "text_metrics": {
+            "font_size_px": 160.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 2,
+      "page_type": "toc_candidate",
+      "text_summary": "目录\n1\n2\n3\n4\n学校信息\n文化传统\n历史沿革\n师资力量\ncontents",
+      "slots": [
+        {
+          "slot_id": "s02_sh10",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": -6,
+            "y": 0,
+            "width": 512,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s02_sh9",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 273,
+            "y": 0,
+            "width": 1007,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s02_sh12",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 273,
+            "y": 0,
+            "width": 1007,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s02_sh13",
+          "role": "title_candidate",
+          "text": "目录",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 729,
+            "y": -19,
+            "width": 416,
+            "height": 232
+          },
+          "text_metrics": {
+            "font_size_px": 133.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh14",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 633,
+            "y": 201,
+            "width": 81,
+            "height": 81
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s02_sh19",
+          "role": "label_candidate",
+          "text": "1",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 621,
+            "y": 190,
+            "width": 105,
+            "height": 87
+          },
+          "text_metrics": {
+            "font_size_px": 48.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh15",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 614,
+            "y": 319,
+            "width": 81,
+            "height": 81
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s02_sh20",
+          "role": "label_candidate",
+          "text": "2",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 603,
+            "y": 307,
+            "width": 105,
+            "height": 87
+          },
+          "text_metrics": {
+            "font_size_px": 48.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh16",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 618,
+            "y": 433,
+            "width": 81,
+            "height": 81
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s02_sh21",
+          "role": "label_candidate",
+          "text": "3",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 606,
+            "y": 421,
+            "width": 105,
+            "height": 87
+          },
+          "text_metrics": {
+            "font_size_px": 48.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh17",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 633,
+            "y": 540,
+            "width": 81,
+            "height": 81
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s02_sh22",
+          "role": "label_candidate",
+          "text": "4",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 621,
+            "y": 525,
+            "width": 105,
+            "height": 87
+          },
+          "text_metrics": {
+            "font_size_px": 48.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh23",
+          "role": "label_candidate",
+          "text": "学校信息",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 749,
+            "y": 206,
+            "width": 305,
+            "height": 95
+          },
+          "text_metrics": {
+            "font_size_px": 53.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh24",
+          "role": "label_candidate",
+          "text": "文化传统",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 751,
+            "y": 316,
+            "width": 305,
+            "height": 95
+          },
+          "text_metrics": {
+            "font_size_px": 53.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh25",
+          "role": "label_candidate",
+          "text": "历史沿革",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 751,
+            "y": 427,
+            "width": 305,
+            "height": 95
+          },
+          "text_metrics": {
+            "font_size_px": 53.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh26",
+          "role": "label_candidate",
+          "text": "师资力量",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 756,
+            "y": 541,
+            "width": 305,
+            "height": 95
+          },
+          "text_metrics": {
+            "font_size_px": 53.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh27",
+          "role": "title_candidate",
+          "text": "contents",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 730,
+            "y": 38,
+            "width": 304,
+            "height": 124
+          },
+          "text_metrics": {
+            "font_size_px": 72.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 3,
+      "page_type": "content_candidate",
+      "text_summary": "1\n学校信息",
+      "slots": [
+        {
+          "slot_id": "s03_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 3,
+            "width": 480,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s03_sh18",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 376
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s03_sh29",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 155,
+            "width": 1280,
+            "height": 568
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s03_sh14",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 375,
+            "y": 378,
+            "width": 165,
+            "height": 165
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s03_sh19",
+          "role": "label_candidate",
+          "text": "1",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 408,
+            "y": 330,
+            "width": 118,
+            "height": 215
+          },
+          "text_metrics": {
+            "font_size_px": 128.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh23",
+          "role": "label_candidate",
+          "text": "学校信息",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 496,
+            "y": 293,
+            "width": 585,
+            "height": 198
+          },
+          "text_metrics": {
+            "font_size_px": 117.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 4,
+      "page_type": "content_candidate",
+      "text_summary": "厦门大学（Xiamen University），简称厦大(XMU) ，由著名爱国华侨领袖陈嘉庚先生于1921年创办, 是中国近代教育史上第一所华侨创办的大学。学校秉持爱国华侨领袖陈嘉庚先生的立校志向，形成了“爱国、革命、自强、科学”的优良校风，打造了鲜明的办学特色，培养了大批优秀人才，为国家富强、人民幸福和中华文化海外传播作出了积极贡献。厦门大学建有思明校区、漳州校区、翔安校区和马来西亚分校，设有研究生院、6个学部以及33个学院（直属系）和16个研究院，形成了覆盖哲学、经济学、法学、教育学、文学、历史学、理学、工学、医学、管理学、艺术学、交叉学科12个学科门类的学科体系。目前，学校有39个博士学位授权一级学科，47个硕士学位授权一级学科，8个二级交叉学科学位授权点，3个博士专业学位授权类别，30个硕士专业学位授权类别。2018年，学校成为全国首批二十所学位授权自主审核单位之一。2022年，化学、生物学、海洋科学、生态学、统计学、教育学6个学科入选国家公布的第二轮“双一流”建设学科。截止2023年4月，全校研究生24000余人，其中，硕士研究生19000多人、博士研究生5000多人。",
+      "slots": [
+        {
+          "slot_id": "s04_sh15",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": -137,
+            "y": 148,
+            "width": 1485,
+            "height": 472
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s04_sh16",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 164,
+            "y": 131,
+            "width": 958,
+            "height": 511
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s04_sh11",
+          "role": "body_candidate",
+          "text": "厦门大学（Xiamen University），简称厦大(XMU) ，由著名爱国华侨领袖陈嘉庚先生于1921年创办, 是中国近代教育史上第一所华侨创办的大学。学校秉持爱国华侨领袖陈嘉庚先生的立校志向，形成了“爱国、革命、自强、科学”的优良校风，打造了鲜明的办学特色，培养了大批优秀人才，为国家富强、人民幸福和中华文化海外传播作出了积极贡献。厦门大学建有思明校区、漳州校区、翔安校区和马来西亚分校，设有研究生院、6个学部以及33个学院（直属系）和16个研究院，形成了覆盖哲学、经济学、法学、教育学、文学、历史学、理学、工学、医学、管理学、艺术学、交叉学科12个学科门类的学科体系。目前，学校有39个博士学位授权一级学科，47个硕士学位授权一级学科，8个二级交叉学科学位授权点，3个博士专业学位授权类别，30个硕士专业学位授权类别。2018年，学校成为全国首批二十所学位授权自主审核单位之一。2022年，化学、生物学、海洋科学、生态学、统计学、教育学6个学科入选国家公布的第二轮“双一流”建设学科。截止2023年4月，全校研究生24000余人，其中，硕士研究生19000多人、博士研究生5000多人。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 192,
+            "y": 149,
+            "width": 905,
+            "height": 470
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 5,
+      "page_type": "content_candidate",
+      "text_summary": "厦门大学由爱国华侨领袖陈嘉庚先生于1921年创办，是中国近代教育史上第一所华侨创办的大学、国内最早招收研究生的大学之一、设立厦门大学马来西亚分校，成为中国首个在海外建设独立校园的大学、早期建筑入选全国重点文物保护单位和“首批中国20世纪建筑遗产”名录，被誉为“南方之强““中国最美大学”。\n截至2022年4月，学校建有思明校区、漳州校区、翔安校区和马来西亚分校，4个校园占地9700多亩，其中马来西亚分校约900亩；有研究生院、6个学部、33个学院和16个研究院；有专任教师近3000人，两院院士32人；在校学生44000余人，本研比约为1:1。\n这里是小标题\n这里是小标题",
+      "slots": [
+        {
+          "slot_id": "s05_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 419,
+            "y": 384,
+            "width": 608,
+            "height": 185
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s05_sh2",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 213,
+            "y": 162,
+            "width": 684,
+            "height": 191
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s05_sh16",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 60,
+            "y": 163,
+            "width": 509,
+            "height": 433
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s05_sh5",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 713,
+            "y": 163,
+            "width": 507,
+            "height": 433
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s05_sh14",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 819,
+            "y": 140,
+            "width": 311,
+            "height": 58
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s05_sh17",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 147,
+            "y": 140,
+            "width": 311,
+            "height": 58
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s05_sh18",
+          "role": "body_candidate",
+          "text": "厦门大学由爱国华侨领袖陈嘉庚先生于1921年创办，是中国近代教育史上第一所华侨创办的大学、国内最早招收研究生的大学之一、设立厦门大学马来西亚分校，成为中国首个在海外建设独立校园的大学、早期建筑入选全国重点文物保护单位和“首批中国20世纪建筑遗产”名录，被誉为“南方之强““中国最美大学”。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 91,
+            "y": 206,
+            "width": 454,
+            "height": 352
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh19",
+          "role": "body_candidate",
+          "text": "截至2022年4月，学校建有思明校区、漳州校区、翔安校区和马来西亚分校，4个校园占地9700多亩，其中马来西亚分校约900亩；有研究生院、6个学部、33个学院和16个研究院；有专任教师近3000人，两院院士32人；在校学生44000余人，本研比约为1:1。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 743,
+            "y": 206,
+            "width": 454,
+            "height": 308
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh20",
+          "role": "title_candidate",
+          "text": "这里是小标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 186,
+            "y": 138,
+            "width": 207,
+            "height": 51
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh23",
+          "role": "title_candidate",
+          "text": "这里是小标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 863,
+            "y": 138,
+            "width": 212,
+            "height": 51
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 6,
+      "page_type": "content_candidate",
+      "text_summary": "学校发展\n1978年12月，中国共产党十一届三中全会胜利召开，中国进入了改革开放的历史新时期。伴随着改革开放的伟大历程，厦门大学迎来了大改革、大发展的春天。在党和国家的亲切关怀下，学校以“南方之强\"的雄姿，继承发扬“自强不息、止于至善”和“爱国、革命、自强、科学\"的精神，紧跟时代步伐，适应国家需求，明确目标定位，抓住发展机遇，坚持改革开放，推动科学发展，取得一个又一个辉煌的业绩。\n今天的厦门大学已建设成为一所学科门类齐全的综合性大学，也是国家“211工程\"、“985工程\"重点建设的高水平大学，2017年入选国家公布的A类世界一流大学建设高校名单，师资力量雄厚，精英人才辈出，科学研究硕果累累，国际交流频繁深入，办学优贽和特色更加鲜明突出，正朝着创建世界一流大学的奋斗目标迈进。\n过去\n现在",
+      "slots": [
+        {
+          "slot_id": "s06_sh178",
+          "role": "title_candidate",
+          "text": "学校发展",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 542,
+            "y": 122,
+            "width": 193,
+            "height": 55
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh181",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 450,
+            "y": 172,
+            "width": 463,
+            "height": 463
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s06_sh182",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 328,
+            "y": 172,
+            "width": 463,
+            "height": 463
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s06_sh184",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 539,
+            "y": 317,
+            "width": 161,
+            "height": 161
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s06_sh211",
+          "role": "body_candidate",
+          "text": "1978年12月，中国共产党十一届三中全会胜利召开，中国进入了改革开放的历史新时期。伴随着改革开放的伟大历程，厦门大学迎来了大改革、大发展的春天。在党和国家的亲切关怀下，学校以“南方之强\"的雄姿，继承发扬“自强不息、止于至善”和“爱国、革命、自强、科学\"的精神，紧跟时代步伐，适应国家需求，明确目标定位，抓住发展机遇，坚持改革开放，推动科学发展，取得一个又一个辉煌的业绩。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 37,
+            "y": 182,
+            "width": 306,
+            "height": 441
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh212",
+          "role": "body_candidate",
+          "text": "今天的厦门大学已建设成为一所学科门类齐全的综合性大学，也是国家“211工程\"、“985工程\"重点建设的高水平大学，2017年入选国家公布的A类世界一流大学建设高校名单，师资力量雄厚，精英人才辈出，科学研究硕果累累，国际交流频繁深入，办学优贽和特色更加鲜明突出，正朝着创建世界一流大学的奋斗目标迈进。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 947,
+            "y": 202,
+            "width": 311,
+            "height": 432
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh213",
+          "role": "label_candidate",
+          "text": "过去",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 275,
+            "y": 358,
+            "width": 351,
+            "height": 55
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh214",
+          "role": "label_candidate",
+          "text": "现在",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 662,
+            "y": 363,
+            "width": 351,
+            "height": 55
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 7,
+      "page_type": "content_candidate",
+      "text_summary": "厦门大学图书馆始建于1921年，著名图书馆学家裘开明、文学巨匠林语堂、历史学家郑天挺、人类学家冯汉骥、金融学家朱保训和数学奇才陈景润等都曾任职于此。历经百年积累，截至2022年12月，馆藏总量达1468万册。其中，纸本馆藏470万册，电子馆藏998万册，数据库计188个。纸本馆藏涵盖各个领域，哲学、语言学、历史学、政治学、法学、经济学、管理学等方面的文献尤其丰富，在东南亚和台湾研究的资料建设方面颇具优势。馆内还藏有大量古籍线装书、缩微平片等资源，是全国古籍重点保护单位。\n厦门大学图书馆\n“教育为立国之本，兴学乃国民天职\"\n“为吾国放一异彩\"",
+      "slots": [
+        {
+          "slot_id": "s07_sh2",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 59,
+            "y": 153,
+            "width": 533,
+            "height": 329
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s07_sh3",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 40,
+            "y": 126,
+            "width": 529,
+            "height": 329
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s07_sh17",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 479,
+            "y": 230,
+            "width": 747,
+            "height": 412
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s07_sh18",
+          "role": "body_candidate",
+          "text": "厦门大学图书馆始建于1921年，著名图书馆学家裘开明、文学巨匠林语堂、历史学家郑天挺、人类学家冯汉骥、金融学家朱保训和数学奇才陈景润等都曾任职于此。历经百年积累，截至2022年12月，馆藏总量达1468万册。其中，纸本馆藏470万册，电子馆藏998万册，数据库计188个。纸本馆藏涵盖各个领域，哲学、语言学、历史学、政治学、法学、经济学、管理学等方面的文献尤其丰富，在东南亚和台湾研究的资料建设方面颇具优势。馆内还藏有大量古籍线装书、缩微平片等资源，是全国古籍重点保护单位。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 494,
+            "y": 284,
+            "width": 722,
+            "height": 352
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh20",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 742,
+            "y": 280,
+            "width": 255,
+            "height": 8
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s07_sh23",
+          "role": "label_candidate",
+          "text": "厦门大学图书馆",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 762,
+            "y": 223,
+            "width": 215,
+            "height": 52
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh37",
+          "role": "title_candidate",
+          "text": "“教育为立国之本，兴学乃国民天职\"",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 812,
+            "y": 88,
+            "width": 482,
+            "height": 126
+          },
+          "text_metrics": {
+            "font_size_px": 48.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh38",
+          "role": "label_candidate",
+          "text": "“为吾国放一异彩\"",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 6,
+            "y": 577,
+            "width": 431,
+            "height": 68
+          },
+          "text_metrics": {
+            "font_size_px": 48.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 8,
+      "page_type": "content_candidate",
+      "text_summary": "建校之初，陈嘉庚先生就提出“为吾国放一异彩”，何等宏图大志！\n有格局\n“宁可卖大厦，也要建厦大”，倾其所有为我厦，从此铭刻心中！\n重传统\n100年来，踏着校主的足迹，一代代厦大人，呕心沥血砥砺前行！\n讲情怀\n热爱厦大、支持厦大、感恩厦大，永远的赤子之心！\n懂感恩",
+      "slots": [
+        {
+          "slot_id": "s08_sh17",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 55,
+            "y": 394,
+            "width": 280,
+            "height": 247
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s08_sh18",
+          "role": "label_candidate",
+          "text": "建校之初，陈嘉庚先生就提出“为吾国放一异彩”，何等宏图大志！",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 71,
+            "y": 448,
+            "width": 252,
+            "height": 177
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh23",
+          "role": "label_candidate",
+          "text": "有格局",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 138,
+            "y": 394,
+            "width": 120,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 55,
+            "y": 126,
+            "width": 280,
+            "height": 268
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s08_sh217",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 350,
+            "y": 394,
+            "width": 280,
+            "height": 247
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s08_sh218",
+          "role": "label_candidate",
+          "text": "“宁可卖大厦，也要建厦大”，倾其所有为我厦，从此铭刻心中！",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 366,
+            "y": 448,
+            "width": 252,
+            "height": 177
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh219",
+          "role": "label_candidate",
+          "text": "重传统",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 433,
+            "y": 394,
+            "width": 120,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh220",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 350,
+            "y": 126,
+            "width": 280,
+            "height": 268
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s08_sh221",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 644,
+            "y": 394,
+            "width": 280,
+            "height": 247
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s08_sh222",
+          "role": "label_candidate",
+          "text": "100年来，踏着校主的足迹，一代代厦大人，呕心沥血砥砺前行！",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 660,
+            "y": 448,
+            "width": 252,
+            "height": 179
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh223",
+          "role": "label_candidate",
+          "text": "讲情怀",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 730,
+            "y": 394,
+            "width": 131,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh224",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 644,
+            "y": 126,
+            "width": 280,
+            "height": 268
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s08_sh225",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 938,
+            "y": 394,
+            "width": 280,
+            "height": 247
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s08_sh226",
+          "role": "label_candidate",
+          "text": "热爱厦大、支持厦大、感恩厦大，永远的赤子之心！",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 955,
+            "y": 448,
+            "width": 252,
+            "height": 135
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh227",
+          "role": "label_candidate",
+          "text": "懂感恩",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1020,
+            "y": 394,
+            "width": 128,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh228",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 938,
+            "y": 126,
+            "width": 280,
+            "height": 268
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 9,
+      "page_type": "content_candidate",
+      "text_summary": "--自强不息，止于至善--\ncultural tradition\n文化传统\n2",
+      "slots": [
+        {
+          "slot_id": "s09_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 3,
+            "width": 480,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s09_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": -4,
+            "width": 1280,
+            "height": 728
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s09_sh12",
+          "role": "label_candidate",
+          "text": "--自强不息，止于至善--",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 524,
+            "y": 651,
+            "width": 421,
+            "height": 50
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh15",
+          "role": "label_candidate",
+          "text": "cultural tradition",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 57,
+            "y": 334,
+            "width": 1165,
+            "height": 165
+          },
+          "text_metrics": {
+            "font_size_px": 128.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh6",
+          "role": "label_candidate",
+          "text": "文化传统",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 508,
+            "y": 204,
+            "width": 558,
+            "height": 198
+          },
+          "text_metrics": {
+            "font_size_px": 117.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh20",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 307,
+            "y": 246,
+            "width": 165,
+            "height": 165
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s09_sh5",
+          "role": "label_candidate",
+          "text": "2",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 343,
+            "y": 197,
+            "width": 105,
+            "height": 215
+          },
+          "text_metrics": {
+            "font_size_px": 128.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 10,
+      "page_type": "content_candidate",
+      "text_summary": "这里是小标题\n这里是小标题\n这里是小标题\n1921年陈嘉庚先生创办厦门大学时即把“自强不息，止于至善”定为校训。“自强不息”指自觉地积极向上、奋发图强、永不懈怠。最早见于《周易·乾》：“天行健，君子以自强不息”。\n“止于至善”指通过不懈的努力，以臻尽善尽美而后才停止，也就是说不达到十分完美的境界绝不停止自己的努力。语出《礼记·大学》：“大学之道，在明明德，在亲民，在止于至善” 。\n陈嘉庚先生在筹办厦门大学之时，于1920年11月发表了“筹办厦门大学演词”，就强调要把厦大办成“南方之强”。1940年8月至1941年，国民政府教育部全国通令嘉奖，厦大由此被广泛称誉为“南方之强”。",
+      "slots": [
+        {
+          "slot_id": "s10_sh38",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": -57,
+            "y": 347,
+            "width": 1412,
+            "height": 100
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s10_sh37",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": -74,
+            "y": 195,
+            "width": 1407,
+            "height": 100
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s10_sh16",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 65,
+            "y": 143,
+            "width": 318,
+            "height": 433
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s10_sh3",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 75,
+            "y": 150,
+            "width": 318,
+            "height": 433
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s10_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 460,
+            "y": 143,
+            "width": 318,
+            "height": 433
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s10_sh11",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 470,
+            "y": 150,
+            "width": 318,
+            "height": 433
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s10_sh18",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 863,
+            "y": 137,
+            "width": 318,
+            "height": 433
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s10_sh19",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 874,
+            "y": 143,
+            "width": 318,
+            "height": 433
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s10_sh20",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 96,
+            "y": 551,
+            "width": 267,
+            "height": 58
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s10_sh23",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 496,
+            "y": 551,
+            "width": 267,
+            "height": 58
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s10_sh29",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 901,
+            "y": 551,
+            "width": 267,
+            "height": 58
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s10_sh34",
+          "role": "label_candidate",
+          "text": "这里是小标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 128,
+            "y": 550,
+            "width": 208,
+            "height": 52
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh35",
+          "role": "label_candidate",
+          "text": "这里是小标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 524,
+            "y": 550,
+            "width": 199,
+            "height": 52
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh36",
+          "role": "label_candidate",
+          "text": "这里是小标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 922,
+            "y": 551,
+            "width": 216,
+            "height": 52
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh39",
+          "role": "body_candidate",
+          "text": "1921年陈嘉庚先生创办厦门大学时即把“自强不息，止于至善”定为校训。“自强不息”指自觉地积极向上、奋发图强、永不懈怠。最早见于《周易·乾》：“天行健，君子以自强不息”。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 86,
+            "y": 159,
+            "width": 291,
+            "height": 352
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh40",
+          "role": "body_candidate",
+          "text": "“止于至善”指通过不懈的努力，以臻尽善尽美而后才停止，也就是说不达到十分完美的境界绝不停止自己的努力。语出《礼记·大学》：“大学之道，在明明德，在亲民，在止于至善” 。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 481,
+            "y": 159,
+            "width": 291,
+            "height": 352
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh41",
+          "role": "body_candidate",
+          "text": "陈嘉庚先生在筹办厦门大学之时，于1920年11月发表了“筹办厦门大学演词”，就强调要把厦大办成“南方之强”。1940年8月至1941年，国民政府教育部全国通令嘉奖，厦大由此被广泛称誉为“南方之强”。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 885,
+            "y": 159,
+            "width": 291,
+            "height": 395
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 11,
+      "page_type": "content_candidate",
+      "text_summary": "--自强不息，止于至善--\ncultural tradition\n历史沿革\n3\nHistorical revolution",
+      "slots": [
+        {
+          "slot_id": "s11_sh47",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": -34,
+            "y": -198,
+            "width": 1345,
+            "height": 821
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s11_sh42",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": -26,
+            "y": 196,
+            "width": 1328,
+            "height": 739
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s11_sh50",
+          "role": "label_candidate",
+          "text": "--自强不息，止于至善--",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 524,
+            "y": 651,
+            "width": 421,
+            "height": 50
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh51",
+          "role": "label_candidate",
+          "text": "cultural tradition",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 57,
+            "y": 334,
+            "width": 1165,
+            "height": 165
+          },
+          "text_metrics": {
+            "font_size_px": 128.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh52",
+          "role": "label_candidate",
+          "text": "历史沿革",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 477,
+            "y": 206,
+            "width": 571,
+            "height": 205
+          },
+          "text_metrics": {
+            "font_size_px": 117.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh53",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 307,
+            "y": 246,
+            "width": 165,
+            "height": 165
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s11_sh54",
+          "role": "label_candidate",
+          "text": "3",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 343,
+            "y": 197,
+            "width": 105,
+            "height": 223
+          },
+          "text_metrics": {
+            "font_size_px": 128.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh60",
+          "role": "label_candidate",
+          "text": "Historical revolution",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 421,
+            "y": 364,
+            "width": 880,
+            "height": 137
+          },
+          "text_metrics": {
+            "font_size_px": 80.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 12,
+      "page_type": "content_candidate",
+      "text_summary": "1921年4月6日，厦门大学借集美学校举行开校式，初创时为私立，设有师范（包括文、理科）、商学两部。\n1937年7月1日，经陈嘉庚函请，南京国民政府同意将私立厦门大学改为国立。\n1946年6月1日，厦门大学校本部开始迁回厦门，长汀各界在体育场举行欢送大会，赠送大匾额一块，上刻“南方之强”四个大字。\n1963年9月，经中央批准，厦门大学改为直属教育部的全国重点综合性大学。1995年7月，厦门大学进入国家“211工程”建设行列。\n2021年4月，厦门大学四校园（思明本部、翔安校区、漳州校区、马来西亚分校）隆重庆祝了厦门大学100周年校庆。",
+      "slots": [
+        {
+          "slot_id": "s12_sh35",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 79,
+            "y": 322,
+            "width": 34,
+            "height": 34
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh36",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 88,
+            "y": 331,
+            "width": 16,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh41",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 79,
+            "y": 322,
+            "width": 34,
+            "height": 34
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh167",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 88,
+            "y": 331,
+            "width": 16,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh196",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 79,
+            "y": 322,
+            "width": 34,
+            "height": 34
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh197",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 88,
+            "y": 331,
+            "width": 16,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh199",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 79,
+            "y": 322,
+            "width": 34,
+            "height": 34
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh200",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 88,
+            "y": 331,
+            "width": 16,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh202",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 79,
+            "y": 322,
+            "width": 34,
+            "height": 34
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh203",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 88,
+            "y": 331,
+            "width": 16,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh206",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 278,
+            "y": 108,
+            "width": 256,
+            "height": 245
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh213",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 288,
+            "y": 354,
+            "width": 231,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh204",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 79,
+            "y": 411,
+            "width": 256,
+            "height": 245
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh214",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 90,
+            "y": 393,
+            "width": 231,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh208",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 522,
+            "y": 411,
+            "width": 256,
+            "height": 245
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh215",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 529,
+            "y": 393,
+            "width": 231,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh210",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 956,
+            "y": 411,
+            "width": 256,
+            "height": 245
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh216",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 964,
+            "y": 393,
+            "width": 231,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh209",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 738,
+            "y": 109,
+            "width": 256,
+            "height": 245
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh217",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 751,
+            "y": 354,
+            "width": 231,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s12_sh223",
+          "role": "body_candidate",
+          "text": "1921年4月6日，厦门大学借集美学校举行开校式，初创时为私立，设有师范（包括文、理科）、商学两部。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 82,
+            "y": 435,
+            "width": 252,
+            "height": 198
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh224",
+          "role": "title_candidate",
+          "text": "1937年7月1日，经陈嘉庚函请，南京国民政府同意将私立厦门大学改为国立。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 279,
+            "y": 147,
+            "width": 252,
+            "height": 159
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh225",
+          "role": "body_candidate",
+          "text": "1946年6月1日，厦门大学校本部开始迁回厦门，长汀各界在体育场举行欢送大会，赠送大匾额一块，上刻“南方之强”四个大字。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 522,
+            "y": 415,
+            "width": 252,
+            "height": 236
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh226",
+          "role": "title_candidate",
+          "text": "1963年9月，经中央批准，厦门大学改为直属教育部的全国重点综合性大学。1995年7月，厦门大学进入国家“211工程”建设行列。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 741,
+            "y": 108,
+            "width": 252,
+            "height": 236
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh227",
+          "role": "body_candidate",
+          "text": "2021年4月，厦门大学四校园（思明本部、翔安校区、漳州校区、马来西亚分校）隆重庆祝了厦门大学100周年校庆。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 958,
+            "y": 435,
+            "width": 252,
+            "height": 198
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 13,
+      "page_type": "content_candidate",
+      "text_summary": "1921. 04. 06\n1921年4月6日，厦门大学借集美学校举行开校式，初创时为私立，设有师范（包括文、理科）、商学两部。\n1937. 07. 01\n1937年7月1日，经陈嘉庚函请，南京国民政府同意将私立厦门大学改为国立。\n1947. 06. 01\n1963. 09. 01\n2021. 04. 06\n1946年6月1日，厦门大学校本部开始迁回厦门，长汀各界在体育场举行欢送大会，赠送大匾额一块，上刻“南方之强”四个大字。\n1963年9月，经中央批准，厦门大学改为直属教育部的全国重点综合性大学。1995年7月，厦门大学进入国家“211工程”建设行列。\n2021年4月，厦门大学四校园（思明本部、翔安校区、漳州校区、马来西亚分校）隆重庆祝了厦门大学100周年校庆。",
+      "slots": [
+        {
+          "slot_id": "s13_sh7",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 959,
+            "y": 221,
+            "width": 149,
+            "height": 111
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s13_sh11",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 158,
+            "y": 367,
+            "width": 148,
+            "height": 115
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s13_sh16",
+          "role": "label_candidate",
+          "text": "1921. 04. 06",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 237,
+            "y": 295,
+            "width": 196,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh189",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 405,
+            "y": 483,
+            "width": 12,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s13_sh190",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 399,
+            "y": 477,
+            "width": 24,
+            "height": 24
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s13_sh191",
+          "role": "title_candidate",
+          "text": "1921年4月6日，厦门大学借集美学校举行开校式，初创时为私立，设有师范（包括文、理科）、商学两部。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 150,
+            "y": 122,
+            "width": 361,
+            "height": 121
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh193",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 405,
+            "y": 483,
+            "width": 12,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s13_sh194",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 399,
+            "y": 477,
+            "width": 24,
+            "height": 24
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s13_sh205",
+          "role": "label_candidate",
+          "text": "1937. 07. 01",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 834,
+            "y": 295,
+            "width": 196,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh207",
+          "role": "title_candidate",
+          "text": "1937年7月1日，经陈嘉庚函请，南京国民政府同意将私立厦门大学改为国立。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 788,
+            "y": 122,
+            "width": 350,
+            "height": 121
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh212",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 405,
+            "y": 483,
+            "width": 12,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s13_sh228",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 399,
+            "y": 477,
+            "width": 24,
+            "height": 24
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s13_sh230",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 405,
+            "y": 483,
+            "width": 12,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s13_sh231",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 399,
+            "y": 477,
+            "width": 24,
+            "height": 24
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s13_sh233",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 405,
+            "y": 483,
+            "width": 12,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s13_sh234",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 399,
+            "y": 477,
+            "width": 24,
+            "height": 24
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s13_sh235",
+          "role": "label_candidate",
+          "text": "1947. 06. 01",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 158,
+            "y": 368,
+            "width": 196,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh236",
+          "role": "label_candidate",
+          "text": "1963. 09. 01",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 582,
+            "y": 368,
+            "width": 196,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh237",
+          "role": "label_candidate",
+          "text": "2021. 04. 06",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 1014,
+            "y": 368,
+            "width": 196,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh238",
+          "role": "body_candidate",
+          "text": "1946年6月1日，厦门大学校本部开始迁回厦门，长汀各界在体育场举行欢送大会，赠送大匾额一块，上刻“南方之强”四个大字。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 77,
+            "y": 444,
+            "width": 351,
+            "height": 160
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh239",
+          "role": "body_candidate",
+          "text": "1963年9月，经中央批准，厦门大学改为直属教育部的全国重点综合性大学。1995年7月，厦门大学进入国家“211工程”建设行列。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 503,
+            "y": 444,
+            "width": 353,
+            "height": 160
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s13_sh240",
+          "role": "body_candidate",
+          "text": "2021年4月，厦门大学四校园（思明本部、翔安校区、漳州校区、马来西亚分校）隆重庆祝了厦门大学100周年校庆。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 936,
+            "y": 444,
+            "width": 315,
+            "height": 160
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 14,
+      "page_type": "content_candidate",
+      "text_summary": "省市级荣誉\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n国家级荣誉\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n院校级荣誉\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称",
+      "slots": [
+        {
+          "slot_id": "s14_sh4",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": -103,
+            "y": 136,
+            "width": 1480,
+            "height": 406
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s14_sh15",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": -101,
+            "y": 163,
+            "width": 1480,
+            "height": 384
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s14_sh18",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 129,
+            "y": 203,
+            "width": 279,
+            "height": 364
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s14_sh19",
+          "role": "label_candidate",
+          "text": "省市级荣誉",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 148,
+            "y": 242,
+            "width": 242,
+            "height": 55
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s14_sh23",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 144,
+            "y": 217,
+            "width": 249,
+            "height": 336
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s14_sh29",
+          "role": "body_candidate",
+          "text": "这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称",
+          "paragraph_count": 5,
+          "geometry": {
+            "x": 157,
+            "y": 317,
+            "width": 223,
+            "height": 199
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 5
+          }
+        },
+        {
+          "slot_id": "s14_sh35",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 129,
+            "y": 203,
+            "width": 279,
+            "height": 364
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s14_sh36",
+          "role": "label_candidate",
+          "text": "国家级荣誉",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 148,
+            "y": 242,
+            "width": 242,
+            "height": 50
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s14_sh38",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 144,
+            "y": 217,
+            "width": 249,
+            "height": 336
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s14_sh39",
+          "role": "body_candidate",
+          "text": "这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称",
+          "paragraph_count": 5,
+          "geometry": {
+            "x": 157,
+            "y": 320,
+            "width": 223,
+            "height": 199
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 5
+          }
+        },
+        {
+          "slot_id": "s14_sh41",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 129,
+            "y": 203,
+            "width": 279,
+            "height": 364
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s14_sh167",
+          "role": "label_candidate",
+          "text": "院校级荣誉",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 148,
+            "y": 242,
+            "width": 242,
+            "height": 55
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s14_sh169",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 144,
+            "y": 217,
+            "width": 249,
+            "height": 336
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s14_sh170",
+          "role": "body_candidate",
+          "text": "这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称\n这里是所获荣誉名称",
+          "paragraph_count": 5,
+          "geometry": {
+            "x": 157,
+            "y": 317,
+            "width": 223,
+            "height": 199
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 5
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 15,
+      "page_type": "content_candidate",
+      "text_summary": "--自强不息，止于至善--\nFaculty and employee\n师资力量\n4",
+      "slots": [
+        {
+          "slot_id": "s15_sh9",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s15_sh19",
+          "role": "label_candidate",
+          "text": "--自强不息，止于至善--",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 524,
+            "y": 651,
+            "width": 421,
+            "height": 50
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s15_sh27",
+          "role": "label_candidate",
+          "text": "Faculty and employee",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 430,
+            "y": 436,
+            "width": 817,
+            "height": 87
+          },
+          "text_metrics": {
+            "font_size_px": 64.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s15_sh28",
+          "role": "label_candidate",
+          "text": "师资力量",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 542,
+            "y": 223,
+            "width": 794,
+            "height": 205
+          },
+          "text_metrics": {
+            "font_size_px": 117.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s15_sh30",
+          "role": "label_candidate",
+          "text": "4",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 383,
+            "y": 209,
+            "width": 428,
+            "height": 223
+          },
+          "text_metrics": {
+            "font_size_px": 128.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s15_sh2",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 348,
+            "y": 259,
+            "width": 165,
+            "height": 165
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 16,
+      "page_type": "content_candidate",
+      "text_summary": "厦门大学共有两院院士32人（含双聘18人），文科资深教授1人，发展中国家科学院院士4人。\n两院院士\n固体物理表面化学研究、海洋生物地球化学过程和机制、团簇化学、肿瘤生长和抑制相关传导的调控、界面电化学。\n国家自然科学基金委创新研究群体\n海洋生物地球化学过程和机制、传染病诊断和疫苗研究、海洋环境生理与毒理学研究、杂环化学、谱学分析。\n教育部创新团队\n截至2022年6月，厦门大学有专任教师2845人，其中，教授、副教授2107人，占专任教师总数74.1%；拥有博士学历的有2488人，占87.5%。厦门大学共有两院院士32人（含双聘18人）。",
+      "slots": [
+        {
+          "slot_id": "s16_sh11",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 50,
+            "y": 151,
+            "width": 284,
+            "height": 445
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s16_sh14",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 357,
+            "y": 151,
+            "width": 863,
+            "height": 451
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s16_sh20",
+          "role": "body_candidate",
+          "text": "厦门大学共有两院院士32人（含双聘18人），文科资深教授1人，发展中国家科学院院士4人。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 497,
+            "y": 204,
+            "width": 636,
+            "height": 92
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s16_sh7",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 420,
+            "y": 492,
+            "width": 50,
+            "height": 50
+          },
+          "text_metrics": {
+            "font_size_px": 24.0,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s16_sh34",
+          "role": "title_candidate",
+          "text": "两院院士",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 496,
+            "y": 152,
+            "width": 137,
+            "height": 52
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s16_sh35",
+          "role": "label_candidate",
+          "text": "固体物理表面化学研究、海洋生物地球化学过程和机制、团簇化学、肿瘤生长和抑制相关传导的调控、界面电化学。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 496,
+            "y": 353,
+            "width": 687,
+            "height": 92
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s16_sh36",
+          "role": "label_candidate",
+          "text": "国家自然科学基金委创新研究群体",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 495,
+            "y": 301,
+            "width": 452,
+            "height": 52
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s16_sh40",
+          "role": "label_candidate",
+          "text": "海洋生物地球化学过程和机制、传染病诊断和疫苗研究、海洋环境生理与毒理学研究、杂环化学、谱学分析。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 492,
+            "y": 492,
+            "width": 711,
+            "height": 92
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s16_sh41",
+          "role": "label_candidate",
+          "text": "教育部创新团队",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 491,
+            "y": 440,
+            "width": 221,
+            "height": 52
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s16_sh167",
+          "role": "body_candidate",
+          "text": "截至2022年6月，厦门大学有专任教师2845人，其中，教授、副教授2107人，占专任教师总数74.1%；拥有博士学历的有2488人，占87.5%。厦门大学共有两院院士32人（含双聘18人）。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 61,
+            "y": 176,
+            "width": 262,
+            "height": 395
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 17,
+      "page_type": "content_candidate",
+      "text_summary": "陈嘉庚（1879-1961)\n1921年4月6日，陈嘉庚创办了中国历史上的第一所侨办大学——厦门大学。\n陈嘉庚（1879-1961)\n1921年4月6日，陈嘉庚创办了中国历史上的第一所侨办大学——厦门大学。\n陈嘉庚（1879-1961)\n1921年4月6日，陈嘉庚创办了中国历史上的第一所侨办大学——厦门大学。",
+      "slots": [
+        {
+          "slot_id": "s17_sh3",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 78,
+            "y": 145,
+            "width": 310,
+            "height": 310
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s17_sh5",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 67,
+            "y": 132,
+            "width": 300,
+            "height": 300
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s17_sh16",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 87,
+            "y": 516,
+            "width": 255,
+            "height": 8
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s17_sh17",
+          "role": "label_candidate",
+          "text": "陈嘉庚（1879-1961)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 83,
+            "y": 456,
+            "width": 292,
+            "height": 52
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s17_sh18",
+          "role": "body_candidate",
+          "text": "1921年4月6日，陈嘉庚创办了中国历史上的第一所侨办大学——厦门大学。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 44,
+            "y": 539,
+            "width": 375,
+            "height": 83
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s17_sh29",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 498,
+            "y": 145,
+            "width": 310,
+            "height": 310
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s17_sh19",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 487,
+            "y": 132,
+            "width": 300,
+            "height": 300
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s17_sh38",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 506,
+            "y": 516,
+            "width": 255,
+            "height": 8
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s17_sh39",
+          "role": "label_candidate",
+          "text": "陈嘉庚（1879-1961)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 528,
+            "y": 456,
+            "width": 272,
+            "height": 52
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s17_sh168",
+          "role": "body_candidate",
+          "text": "1921年4月6日，陈嘉庚创办了中国历史上的第一所侨办大学——厦门大学。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 464,
+            "y": 539,
+            "width": 375,
+            "height": 83
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s17_sh174",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 902,
+            "y": 145,
+            "width": 310,
+            "height": 310
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s17_sh20",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 891,
+            "y": 132,
+            "width": 300,
+            "height": 300
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s17_sh176",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 911,
+            "y": 516,
+            "width": 255,
+            "height": 8
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s17_sh177",
+          "role": "label_candidate",
+          "text": "陈嘉庚（1879-1961)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 931,
+            "y": 456,
+            "width": 295,
+            "height": 52
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s17_sh178",
+          "role": "body_candidate",
+          "text": "1921年4月6日，陈嘉庚创办了中国历史上的第一所侨办大学——厦门大学。",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 868,
+            "y": 539,
+            "width": 375,
+            "height": 83
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 18,
+      "page_type": "content_candidate",
+      "text_summary": "从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出\n这里是小标题",
+      "slots": [
+        {
+          "slot_id": "s18_sh37",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 865,
+            "y": 222,
+            "width": 388,
+            "height": 350
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s18_sh15",
+          "role": "label_candidate",
+          "text": "从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 915,
+            "y": 308,
+            "width": 291,
+            "height": 271
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s18_sh16",
+          "role": "label_candidate",
+          "text": "这里是小标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 915,
+            "y": 229,
+            "width": 283,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 37.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s18_sh2",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 844,
+            "y": 268,
+            "width": 55,
+            "height": 25
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [
+        {
+          "chart_id": "s18_ch18",
+          "chart_type": "barChart",
+          "category_count": 5,
+          "series_count": 3,
+          "categories": [
+            "类别 1",
+            "类别 2",
+            "类别 3",
+            "类别 4",
+            "类别 5"
+          ],
+          "series": [
+            {
+              "name": "系列 1",
+              "values": [
+                4.2,
+                2.5,
+                3.7,
+                4.5,
+                5.3
+              ],
+              "chart_type": "barChart"
+            },
+            {
+              "name": "系列 2",
+              "values": [
+                2.3,
+                4.3,
+                1.8,
+                2.9,
+                3.2
+              ],
+              "chart_type": "barChart"
+            },
+            {
+              "name": "系列 3",
+              "values": [
+                3.8,
+                2.8,
+                2.2,
+                3.2,
+                4.4
+              ],
+              "chart_type": "barChart"
+            }
+          ],
+          "plot_types": [
+            "barChart"
+          ]
+        }
+      ],
+      "fill_risk": {
+        "has_non_text_content": true,
+        "reason": "has non-text content (chart) that text-fill cannot replace; provide table_edits/chart_edits or pick another source slide"
+      }
+    },
+    {
+      "slide_index": 19,
+      "page_type": "content_candidate",
+      "text_summary": "从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出\n这里是小标题\n请输入您的表格标题\n表头1\n表头2\n表头3\n表头4\n表头5\n类别1\n21.9\n26.4\n28.0\n29.0\n27.8\n类别2\n13.9\n16.6\n13.6\n17.6\n18.4\n类别3\n31.6\n32.5\n33.7\n36.5\n34.3\n类别4\n30.2\n28.5\n27.7\n25.9\n26.9",
+      "slots": [
+        {
+          "slot_id": "s19_sh37",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 866,
+            "y": 204,
+            "width": 388,
+            "height": 350
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s19_sh15",
+          "role": "label_candidate",
+          "text": "从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 916,
+            "y": 290,
+            "width": 291,
+            "height": 271
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s19_sh16",
+          "role": "label_candidate",
+          "text": "这里是小标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 916,
+            "y": 211,
+            "width": 283,
+            "height": 61
+          },
+          "text_metrics": {
+            "font_size_px": 37.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s19_sh2",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 845,
+            "y": 250,
+            "width": 55,
+            "height": 25
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s19_sh4",
+          "role": "label_candidate",
+          "text": "请输入您的表格标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 291,
+            "y": 167,
+            "width": 329,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s19_sh3",
+          "role": "body_candidate",
+          "text": "表头1\n表头2\n表头3\n表头4\n表头5\n类别1\n21.9\n26.4\n28.0\n29.0\n27.8\n类别2\n13.9\n16.6\n13.6\n17.6\n18.4\n类别3\n31.6\n32.5\n33.7\n36.5\n34.3\n类别4\n30.2\n28.5\n27.7\n25.9\n26.9",
+          "paragraph_count": 29,
+          "geometry": {
+            "x": 70,
+            "y": 232,
+            "width": 770,
+            "height": 342
+          },
+          "text_metrics": {
+            "font_size_px": 24.0,
+            "paragraph_count": 29
+          }
+        }
+      ],
+      "tables": [
+        {
+          "table_id": "s19_tbl3",
+          "row_count": 5,
+          "column_count": 6,
+          "rows": [
+            {
+              "row": 0,
+              "cells": [
+                {
+                  "row": 0,
+                  "col": 0,
+                  "text": ""
+                },
+                {
+                  "row": 0,
+                  "col": 1,
+                  "text": "表头1"
+                },
+                {
+                  "row": 0,
+                  "col": 2,
+                  "text": "表头2"
+                },
+                {
+                  "row": 0,
+                  "col": 3,
+                  "text": "表头3"
+                },
+                {
+                  "row": 0,
+                  "col": 4,
+                  "text": "表头4"
+                },
+                {
+                  "row": 0,
+                  "col": 5,
+                  "text": "表头5"
+                }
+              ]
+            },
+            {
+              "row": 1,
+              "cells": [
+                {
+                  "row": 1,
+                  "col": 0,
+                  "text": "类别1"
+                },
+                {
+                  "row": 1,
+                  "col": 1,
+                  "text": "21.9"
+                },
+                {
+                  "row": 1,
+                  "col": 2,
+                  "text": "26.4"
+                },
+                {
+                  "row": 1,
+                  "col": 3,
+                  "text": "28.0"
+                },
+                {
+                  "row": 1,
+                  "col": 4,
+                  "text": "29.0"
+                },
+                {
+                  "row": 1,
+                  "col": 5,
+                  "text": "27.8"
+                }
+              ]
+            },
+            {
+              "row": 2,
+              "cells": [
+                {
+                  "row": 2,
+                  "col": 0,
+                  "text": "类别2"
+                },
+                {
+                  "row": 2,
+                  "col": 1,
+                  "text": "13.9"
+                },
+                {
+                  "row": 2,
+                  "col": 2,
+                  "text": "16.6"
+                },
+                {
+                  "row": 2,
+                  "col": 3,
+                  "text": "13.6"
+                },
+                {
+                  "row": 2,
+                  "col": 4,
+                  "text": "17.6"
+                },
+                {
+                  "row": 2,
+                  "col": 5,
+                  "text": "18.4"
+                }
+              ]
+            },
+            {
+              "row": 3,
+              "cells": [
+                {
+                  "row": 3,
+                  "col": 0,
+                  "text": "类别3"
+                },
+                {
+                  "row": 3,
+                  "col": 1,
+                  "text": "31.6"
+                },
+                {
+                  "row": 3,
+                  "col": 2,
+                  "text": "32.5"
+                },
+                {
+                  "row": 3,
+                  "col": 3,
+                  "text": "33.7"
+                },
+                {
+                  "row": 3,
+                  "col": 4,
+                  "text": "36.5"
+                },
+                {
+                  "row": 3,
+                  "col": 5,
+                  "text": "34.3"
+                }
+              ]
+            },
+            {
+              "row": 4,
+              "cells": [
+                {
+                  "row": 4,
+                  "col": 0,
+                  "text": "类别4"
+                },
+                {
+                  "row": 4,
+                  "col": 1,
+                  "text": "30.2"
+                },
+                {
+                  "row": 4,
+                  "col": 2,
+                  "text": "28.5"
+                },
+                {
+                  "row": 4,
+                  "col": 3,
+                  "text": "27.7"
+                },
+                {
+                  "row": 4,
+                  "col": 4,
+                  "text": "25.9"
+                },
+                {
+                  "row": 4,
+                  "col": 5,
+                  "text": "26.9"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "charts": [],
+      "fill_risk": {
+        "has_non_text_content": true,
+        "reason": "has non-text content (table) that text-fill cannot replace; provide table_edits/chart_edits or pick another source slide"
+      }
+    },
+    {
+      "slide_index": 20,
+      "page_type": "content_candidate",
+      "text_summary": "这里是小标题\n80%\n从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出\n这里是小标题\n55%\n从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出\n这里是小标题\n30%\n从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出",
+      "slots": [
+        {
+          "slot_id": "s20_sh2",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 70,
+            "y": 153,
+            "width": 323,
+            "height": 460
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s20_sh3",
+          "role": "label_candidate",
+          "text": "这里是小标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 110,
+            "y": 175,
+            "width": 243,
+            "height": 55
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s20_sh5",
+          "role": "label_candidate",
+          "text": "80%",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 183,
+            "y": 309,
+            "width": 98,
+            "height": 70
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s20_sh11",
+          "role": "label_candidate",
+          "text": "从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 97,
+            "y": 478,
+            "width": 270,
+            "height": 107
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s20_sh14",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 470,
+            "y": 153,
+            "width": 323,
+            "height": 460
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s20_sh19",
+          "role": "label_candidate",
+          "text": "这里是小标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 510,
+            "y": 175,
+            "width": 243,
+            "height": 55
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s20_sh29",
+          "role": "label_candidate",
+          "text": "55%",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 583,
+            "y": 309,
+            "width": 98,
+            "height": 70
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s20_sh35",
+          "role": "label_candidate",
+          "text": "从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 497,
+            "y": 478,
+            "width": 270,
+            "height": 107
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s20_sh36",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 881,
+            "y": 153,
+            "width": 323,
+            "height": 460
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s20_sh38",
+          "role": "label_candidate",
+          "text": "这里是小标题",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 921,
+            "y": 175,
+            "width": 243,
+            "height": 55
+          },
+          "text_metrics": {
+            "font_size_px": 32.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s20_sh40",
+          "role": "label_candidate",
+          "text": "30%",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 993,
+            "y": 309,
+            "width": 98,
+            "height": 70
+          },
+          "text_metrics": {
+            "font_size_px": 42.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s20_sh167",
+          "role": "label_candidate",
+          "text": "从图表中可以看出从图表中可以看出从图表中可以看出从图表中可以看出",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 907,
+            "y": 478,
+            "width": 270,
+            "height": 107
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [
+        {
+          "chart_id": "s20_ch4",
+          "chart_type": "doughnutChart",
+          "category_count": 2,
+          "series_count": 1,
+          "categories": [
+            "第一阶段",
+            "第二阶段"
+          ],
+          "series": [
+            {
+              "name": "占比",
+              "values": [
+                80,
+                20
+              ],
+              "chart_type": "doughnutChart"
+            }
+          ],
+          "plot_types": [
+            "doughnutChart"
+          ]
+        },
+        {
+          "chart_id": "s20_ch20",
+          "chart_type": "doughnutChart",
+          "category_count": 2,
+          "series_count": 1,
+          "categories": [
+            "第一阶段",
+            "第二阶段"
+          ],
+          "series": [
+            {
+              "name": "占比",
+              "values": [
+                55,
+                45
+              ],
+              "chart_type": "doughnutChart"
+            }
+          ],
+          "plot_types": [
+            "doughnutChart"
+          ]
+        },
+        {
+          "chart_id": "s20_ch39",
+          "chart_type": "doughnutChart",
+          "category_count": 2,
+          "series_count": 1,
+          "categories": [
+            "第一阶段",
+            "第二阶段"
+          ],
+          "series": [
+            {
+              "name": "占比",
+              "values": [
+                30,
+                70
+              ],
+              "chart_type": "doughnutChart"
+            }
+          ],
+          "plot_types": [
+            "doughnutChart"
+          ]
+        }
+      ],
+      "fill_risk": {
+        "has_non_text_content": true,
+        "reason": "has non-text content (chart) that text-fill cannot replace; provide table_edits/chart_edits or pick another source slide"
+      }
+    },
+    {
+      "slide_index": 21,
+      "page_type": "ending_candidate",
+      "text_summary": "Thank you for watching\n感谢您的观看\n制作人：XXXX\n学号：XXXXXXXXXX",
+      "slots": [
+        {
+          "slot_id": "s21_sh2",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": -2,
+            "y": 0,
+            "width": 1282,
+            "height": 311
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s21_sh3",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 701,
+            "width": 1282,
+            "height": 21
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s21_sh7",
+          "role": "label_candidate",
+          "text": "Thank you for watching",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 244,
+            "y": 462,
+            "width": 817,
+            "height": 87
+          },
+          "text_metrics": {
+            "font_size_px": 64.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s21_sh10",
+          "role": "label_candidate",
+          "text": "感谢您的观看",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 244,
+            "y": 274,
+            "width": 879,
+            "height": 223
+          },
+          "text_metrics": {
+            "font_size_px": 128.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s21_sh11",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 279,
+            "y": 570,
+            "width": 267,
+            "height": 58
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s21_sh12",
+          "role": "label_candidate",
+          "text": "制作人：XXXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 286,
+            "y": 568,
+            "width": 252,
+            "height": 51
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s21_sh13",
+          "role": "label_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 728,
+            "y": 567,
+            "width": 323,
+            "height": 58
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s21_sh14",
+          "role": "label_candidate",
+          "text": "学号：XXXXXXXXXX",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 734,
+            "y": 565,
+            "width": 311,
+            "height": 51
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_index": 22,
+      "page_type": "ending_candidate",
+      "text_summary": "感\n谢\n观\n看\n厦门大学毕业答辩PPT模板",
+      "slots": [
+        {
+          "slot_id": "s22_sh9",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": -121,
+            "y": -115,
+            "width": 928,
+            "height": 928
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s22_sh8",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 786,
+            "height": 721
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s22_sh16",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s22_sh21",
+          "role": "title_candidate",
+          "text": "",
+          "paragraph_count": 0,
+          "geometry": {
+            "x": 290,
+            "y": 1,
+            "width": 1033,
+            "height": 720
+          },
+          "text_metrics": {
+            "font_size_px": null,
+            "paragraph_count": 0
+          }
+        },
+        {
+          "slot_id": "s22_sh2",
+          "role": "label_candidate",
+          "text": "感",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": -63,
+            "y": 212,
+            "width": 299,
+            "height": 346
+          },
+          "text_metrics": {
+            "font_size_px": 277.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s22_sh3",
+          "role": "label_candidate",
+          "text": "谢",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 176,
+            "y": 186,
+            "width": 252,
+            "height": 289
+          },
+          "text_metrics": {
+            "font_size_px": 230.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s22_sh4",
+          "role": "label_candidate",
+          "text": "观",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 325,
+            "y": 228,
+            "width": 299,
+            "height": 346
+          },
+          "text_metrics": {
+            "font_size_px": 277.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s22_sh5",
+          "role": "label_candidate",
+          "text": "看",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 550,
+            "y": 196,
+            "width": 252,
+            "height": 289
+          },
+          "text_metrics": {
+            "font_size_px": 230.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s22_sh18",
+          "role": "label_candidate",
+          "text": "厦门大学毕业答辩PPT模板",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 61,
+            "y": 616,
+            "width": 695,
+            "height": 68
+          },
+          "text_metrics": {
+            "font_size_px": 48.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": []
+    }
+  ],
+  "plan_contract": {
+    "schema": "template_fill_pptx_plan.v1",
+    "slides": [
+      {
+        "source_slide": 1,
+        "purpose": "封面 / 章节 / 内容 / 结尾",
+        "replacements": [
+          {
+            "slot_id": "s01_sh2",
+            "text": "替换后的文字"
+          }
+        ],
+        "table_edits": [
+          {
+            "table_id": "s01_tbl3",
+            "cells": [
+              {
+                "row": 0,
+                "col": 0,
+                "text": "替换后的单元格"
+              }
+            ]
+          }
+        ],
+        "chart_edits": [
+          {
+            "chart_id": "s01_ch4",
+            "categories": [
+              "A",
+              "B"
+            ],
+            "series": [
+              {
+                "name": "系列1",
+                "values": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

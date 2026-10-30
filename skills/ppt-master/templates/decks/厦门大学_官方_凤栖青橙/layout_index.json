@@ -1,0 +1,281 @@
+{
+  "deck_id": "厦门大学_官方_凤栖青橙",
+  "source": "source.pptx",
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 18,
+  "layout_kinds": [
+    "chapter-divider",
+    "cover",
+    "ending",
+    "hero-statement",
+    "numbered-cards",
+    "toc"
+  ],
+  "pages": [
+    {
+      "slide": 1,
+      "role": "cover_candidate",
+      "layout": "cover",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        133,
+        40,
+        37
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "答辩大标题 姓名 指导老师等 单击此处添加副标题"
+    },
+    {
+      "slide": 2,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 14,
+      "filled_slot_count": 14,
+      "type_scale_px": [
+        200,
+        133,
+        53,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "Content page 目录 01 02 03 04 Little  Description Little  Desc"
+    },
+    {
+      "slide": 3,
+      "role": "chapter_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 2,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        200,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "重点 这一页可以写重点或者介绍 无论是大段文字还是图片、图表，这里都可以放哦~"
+    },
+    {
+      "slide": 4,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        142,
+        50,
+        15
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "添加目录标题文字 添加简介 ONE"
+    },
+    {
+      "slide": 5,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 9,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        72,
+        53,
+        40,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "01 在这里写点什么 02 在这里写点什么 03 在这里写点什么 在这里写个大标题！ 在这里写一些简介在这里写一些简介在"
+    },
+    {
+      "slide": 6,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 4,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        72,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "在这里写个大标题！ 在这里写一些简介在这里写一些简介在这里写一些简介在这里写一些简介在这里写一些简介在这里写一些简介 在"
+    },
+    {
+      "slide": 7,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        142,
+        50,
+        15
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "添加目录标题文字 添加简介 TWO"
+    },
+    {
+      "slide": 8,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 2,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        72,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "在这里写个大标题！ 在这里写点什么在这里写点什么在这里写点什么 在这里写点什么在这里写点什么在这里写点什么 在这里写点什"
+    },
+    {
+      "slide": 9,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "在这里写点什么在这里写点什么 在这里写点什么在这里写点什么 在这里写点什么在这里写点什么 在这里写点什么在这里写点什么 "
+    },
+    {
+      "slide": 10,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        142,
+        50,
+        15
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "添加目录标题文字 添加简介 THREE"
+    },
+    {
+      "slide": 11,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        72,
+        40,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "在这里写个大标题！ 这里写一个副标题or ENGLISH 在这里写点什么 在这里写点什么 在这里写点什么"
+    },
+    {
+      "slide": 12,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 2,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        40,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "在这写一点比较重要的东西 在这写一点比较重要的东西 在这写一点比较重要的东西 在这写一点比较重要的东西 在这里写点什么在"
+    },
+    {
+      "slide": 13,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        142,
+        50,
+        15
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "添加目录标题文字 添加简介 FOUR"
+    },
+    {
+      "slide": 14,
+      "role": "chapter_candidate",
+      "layout": "hero-statement",
+      "slot_count": 2,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        53,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "在这里写个大标题！ 在这里添加您的描述吧！ 在这里添加您的描述吧！ 在这里添加您的描述吧！ 在这里添加您的描述吧！ 在这"
+    },
+    {
+      "slide": 15,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 10,
+      "filled_slot_count": 10,
+      "type_scale_px": [
+        53,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "01 在这里写点什么在这里写点什么 在这里写点什么在这里写点什么 在这里写点什么 02 在这里写点什么在这里写点什么 在"
+    },
+    {
+      "slide": 16,
+      "role": "chapter_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 2,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        142,
+        50
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "结语 FIVE"
+    },
+    {
+      "slide": 17,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 7,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        53,
+        32,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "01 在这里写点什么 02 在这里写点什么 03 在这里写点什么 在这写一点比较重要的东西 在这写一点比较重要的东西 在"
+    },
+    {
+      "slide": 18,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 3,
+      "filled_slot_count": 3,
+      "type_scale_px": [
+        107,
+        32
+      ],
+      "tables": 1,
+      "charts": 0,
+      "summary": "感谢 垂听 恳请各位老师批评指正 END"
+    }
+  ]
+}
