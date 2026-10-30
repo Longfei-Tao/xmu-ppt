@@ -1,7 +1,7 @@
 ---
 name: ppt-master
 description: >
-  厦门大学 PPT 模板库与 SVG→PPTX 出稿引擎：14 套厦大模板（官方 3 套 + 主题 11 套），
+  厦门大学 PPT 模板库与 SVG→PPTX 出稿引擎：14 套厦大模板（精修 3 套 + 主题 11 套），
   一句话出稿，导出文字可编辑的原生 .pptx。
   AI-driven SVG presentation engine that hand-authors every page and exports
   editable PPTX. Use when the user asks to "create PPT", "make presentation",

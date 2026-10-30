@@ -3,6 +3,32 @@ MIT License
 Copyright (c) 2025-2026 Hugo He (upstream: https://github.com/hugohe3/ppt-master)
 Copyright (c) 2026 XMU PPT Master contributors (厦门大学模板与快速通道改动)
 
+--- SCOPE EXCLUSION / 授权范围排除 ---
+
+The MIT permission below applies ONLY to the source code, scripts, workflows and
+template structure (SVG / JSON layout definitions) of this repository.
+
+It does NOT apply to, and grants no rights in, the following materials:
+
+  * Xiamen University logo / emblem files (xmu_logo.png and any copies thereof);
+  * Campus photographs, decorative artwork and other institutional visual assets
+    under skills/ppt-master/templates/decks/<deck_id>/assets/ and equivalent paths;
+  * The contents of examples/*.pptx that embed the above assets.
+
+Such materials remain the property of Xiamen University and/or their respective
+authors. They are included solely for on-campus, non-commercial educational and
+research demonstration, and may not be sold, sublicensed, or redistributed as part
+of a commercial product. Users must verify compliance with the university's current
+visual identity guidelines before any public or commercial use.
+
+本 MIT 许可仅覆盖代码、脚本、工作流与模板结构；校徽、校名标准字、校园照片等学校素材不在
+授权范围内，版权归厦门大学或原作者所有，仅限校内非商业教学科研演示使用。
+
+This project is unofficial and is not affiliated with, authorized by, or endorsed
+by Xiamen University.
+
+---
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
