@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="18" height="720" fill="#005FA5"/>
+  <rect x="880" y="0" width="400" height="720" fill="#EDF5FC"/>
+  <path d="M880 720 L1280 320 L1280 720 Z" fill="#BAE2FF"/>
+  <path d="M960 720 L1280 400" stroke="#005FA5" stroke-width="2" fill="none"/>
+  <text x="80" y="90" font-family="Microsoft YaHei" font-size="20" fill="#005FA5">XMU PPT MASTER / 工作流演示</text>
+  <rect x="80" y="213" width="64" height="6" fill="#005FA5"/>
+  <text x="80" y="304" font-family="Microsoft YaHei" font-size="56" font-weight="bold" fill="#17324D">校园科研协作</text>
+  <text x="80" y="382" font-family="Microsoft YaHei" font-size="56" font-weight="bold" fill="#17324D">项目汇报</text>
+  <text x="80" y="454" font-family="Microsoft YaHei" font-size="26" fill="#50677E">问题梳理 · 协作方案 · 进度展示</text>
+  <text x="80" y="625" font-family="Microsoft YaHei" font-size="18" fill="#50677E">自主编写示例 / 非真实研究或用户案例</text>
+  <text x="1020" y="180" font-family="Microsoft YaHei" font-size="100" fill="#005FA5">01</text>
+  <text x="80" y="680" font-family="Microsoft YaHei" font-size="16" fill="#50677E">蓝白排版演示，不含校徽、校园照片或校名标准字素材</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect width="18" height="720" fill="#005FA5"/>
+  <text x="80" y="92" font-family="Microsoft YaHei" font-size="20" fill="#005FA5">XMU PPT MASTER / 工作流演示</text>
+  <text x="80" y="187" font-family="Microsoft YaHei" font-size="44" font-weight="bold" fill="#17324D">任务进度展示</text>
+  <text x="80" y="240" font-family="Microsoft YaHei" font-size="24" fill="#50677E">以下均为虚构示意数据，仅用于展示图表排版</text>
+  <line x1="80" y1="278" x2="1200" y2="278" stroke="#BAE2FF" stroke-width="2"/>
+  <text x="80" y="356" font-family="Microsoft YaHei" font-size="26" fill="#17324D">资料整理</text>
+  <rect x="260" y="324" width="600" height="42" fill="#EDF5FC"/>
+  <rect x="260" y="324" width="480" height="42" fill="#005FA5"/>
+  <text x="890" y="356" font-family="Microsoft YaHei" font-size="26" fill="#005FA5">80%</text>
+  <text x="80" y="450" font-family="Microsoft YaHei" font-size="26" fill="#17324D">方案撰写</text>
+  <rect x="260" y="418" width="600" height="42" fill="#EDF5FC"/>
+  <rect x="260" y="418" width="360" height="42" fill="#005FA5"/>
+  <text x="890" y="450" font-family="Microsoft YaHei" font-size="26" fill="#005FA5">60%</text>
+  <text x="80" y="544" font-family="Microsoft YaHei" font-size="26" fill="#17324D">演示准备</text>
+  <rect x="260" y="512" width="600" height="42" fill="#EDF5FC"/>
+  <rect x="260" y="512" width="240" height="42" fill="#005FA5"/>
+  <text x="890" y="544" font-family="Microsoft YaHei" font-size="26" fill="#005FA5">40%</text>
+  <line x1="80" y1="635" x2="1200" y2="635" stroke="#BAE2FF" stroke-width="2"/>
+  <text x="80" y="680" font-family="Microsoft YaHei" font-size="16" fill="#50677E">图表由文字与矩形组成，不是带数据工作簿的原生图表</text>
+  <text x="1160" y="680" font-family="Microsoft YaHei" font-size="16" fill="#005FA5">04</text>
+</svg>
