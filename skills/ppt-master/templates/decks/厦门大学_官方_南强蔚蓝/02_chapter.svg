@@ -10,6 +10,9 @@
 
   <rect x="0" y="0" width="1280" height="720" fill="url(#bgGradient)"/>
 
+  <!-- 章节页水印：校徽以 10% 不透明度压在背景上、内容之下 -->
+  <image x="70" y="175" width="380" height="109.1" xlink:href="xmu_logo_wm.png" preserveAspectRatio="xMidYMid meet"/>
+
   <!-- 分栏白线 -->
   <line x1="480" y1="0" x2="480" y2="720" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="2"/>
   <line x1="480" y1="350" x2="1280" y2="350" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="2"/>

@@ -18,7 +18,7 @@ MIT 许可证允许修改、再分发与商用，但要求在任何副本中保�
 
 | 素材 | 位置 | 说明 |
 | --- | --- | --- |
-| 厦门大学校徽组合标志 | `skills/ppt-master/templates/brands/厦门大学/xmu_logo.png` 及各 deck 目录 | 校徽与校名标准字 |
+| 厦门大学校徽组合标志 | `skills/ppt-master/templates/brands/厦门大学/xmu_logo.png` 及各 deck 目录（含半透明水印版 `xmu_logo_wm.png`） | 校徽与校名标准字 |
 | 校园实景照片 | `厦门大学_官方_厦园晴日/campus_bg.jpg`、`chapter_bg.jpg`、`ending_bg.jpg` | 原始模板内嵌照片 |
 | 校训竖版图 | `厦门大学_官方_厦园晴日/side_tab.jpg` | 校徽 + 自强不息 止于至善 |
 | 凤凰花、天鹅装饰 | `厦门大学_官方_厦园晴日/flower.png`、`swan.png` | 原始模板装饰素材 |
