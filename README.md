@@ -85,8 +85,11 @@
 
 ```text
 .
-├── LICENSE                     # MIT（保留上游与本仓库版权）
+├── LICENSE                     # MIT（保留上游与本仓库版权；顶部含素材排除条款）
 ├── THIRD_PARTY_NOTICES.md      # 上游署名 + 厦大素材使用边界
+├── CREDITS.md                  # 致谢与引用说明（参考了哪些开源项目、各自许可）
+├── references/
+│   └── xmu-design-tokens.md    # 厦大视觉规范参考（配色 / 字体 / 版式 / 字号）
 ├── examples/                   # 精修样张 + SVG 出稿示例 + 原生填充示例 + 总览图
 └── skills/
     └── ppt-master/             # 完整引擎（脚本 / 参考 / 工作流 / 模板）
@@ -222,3 +225,4 @@ python skills/ppt-master/scripts/review_pptx.py out.pptx --min-level warn
 
 - PPT Master by Hugo He — <https://github.com/hugohe3/ppt-master>
 - 本分支的模板结构、占位符体系与 SVG 技术约束均沿用上游规范。
+- 视觉规范参考了社区开源项目 `F5Soft/xmu-template`（MIT）与 `liu-qilong/college-beamer`（CC BY 4.0）。整理结果见 [references/xmu-design-tokens.md](references/xmu-design-tokens.md)，完整的引用范围与许可界定见 [CREDITS.md](CREDITS.md)。
