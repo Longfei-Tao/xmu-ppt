@@ -88,3 +88,7 @@ placeholders:
 2. 只使用基础图形、文本、图片与 `linearGradient`
 3. 禁止 `mask`、`<style>`、`class`、`foreignObject`、`textPath`、`animate*`、`script`
 4. 图片相对路径引用 `assets/`
+
+## 成稿正文可读性
+
+SVG 原型中的示例小字不作为新写正文的字号标准。1280×720 画布下，新写正文优先使用 24–28px，注释 16–18px；写入项目 `spec_lock.md`，空间不足时拆页或精简。固定页脚、品牌字和原模板装饰文字可保留原尺寸。原生填充保留源样式，交付前需以实际投影用途检查可读性。

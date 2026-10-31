@@ -15,7 +15,7 @@ description: 厦门大学模板快速出稿流程（本仓库定制），替代�
 
 1. SVG 必须逐页手写，禁止用脚本批量生成页面；
 2. 每页只继承模板的页眉、页脚、装饰，正文必须按内容重新组织；
-3. 颜色、字体只能来自对应 `design_spec.md`；
+3. 从对应 `design_spec.md` 提取配色、字体、字号与素材路径，写入项目根目录 `spec_lock.md`，逐页读取后创作；
 4. 导出前必须跑 `svg_quality_checker.py`；
 5. 只做**一次**轻确认，不反复打断用户。
 
@@ -53,12 +53,13 @@ description: 厦门大学模板快速出稿流程（本仓库定制），替代�
 ## 2. 收集内容
 
 - 用户给了文件：先转 Markdown（`scripts/source_to_md/`），再提炼。
-- 用户只给主题：按「背景 → 问题 → 方法/做法 → 结果 → 结论 → 展望」补全，不允许出现空页或“此处填写”。
+- 用户只给主题：默认做 10 页科普、方案或研究思路稿，按「背景 → 问题 → 方案 → 实施路径 → 预期与局限 → 下一步」组织，不冒充已完成的研究。没有实测数据时不用数据卡或结果图，不编造实验结果、统计数值、参考文献、姓名、导师或联系方式。未知身份字段省略整行；内容需数据支撑时使用有来源的资料，或改成明确标注的建议。
+- 用户要求呈现真实研究结果但未提供材料时，询问缺少的关键材料；仍可先完成其余页面，待补齐后交付结果稿。
 - 页数建议 8–14 页：
   - 1 封面
   - 1 目录
-  - 3–4 个章节过渡
-  - 4–6 个内容页
+  - 0–2 个章节过渡（短稿可省略，避免过渡页多于实质内容）
+  - 5–9 个内容页
   - 1 结束页
 - 每页只讲一件事，标题写结论而不是写“背景介绍”。
 
@@ -76,13 +77,19 @@ python3 ${SKILL_DIR}/scripts/project_manager.py init <project_name> --format ppt
 | --- | --- | --- |
 | `01_cover.svg` | `01_cover.svg` | 填封面占位符 |
 | `02_toc.svg` | `02_toc.svg` | 填 4 个目录条目 |
-| `03_chapter_01.svg` … | `02_chapter.svg` | 每章复制一份，改序号/标题/说明 |
-| `04_content_01.svg` … | `03_content.svg` | 每页复制一份，替换标题/观点，正文在内容区内重新排版 |
-| `99_ending.svg` | `04_ending.svg` | 填致谢与联系方式 |
+| `03_chapter_01.svg`（可选） | `02_chapter.svg` | 每章复制一份，改序号/标题/说明 |
+| `04_content_01.svg`、`05_content_02.svg` … | `03_content.svg` | 每页复制一份，替换标题/观点，正文在内容区内重新排版 |
+| `<最后序号>_ending.svg` | `04_ending.svg` | 填致谢与联系方式 |
+
+文件必须按**实际演示顺序**用唯一的两位数字前缀连续编号；章节页插在所属内容页前，不能统一用 `03_chapter_*` / `04_content_*` 导致所有章节先播放。超过 99 页时统一改用三位前缀。
+
+`assets/` 子目录和独立图片必须按原相对路径复制；不能只拷 SVG。校徽保留宽高比，不重画、不拉伸，封面和结束页必须可见。
 
 复制时只改文字层，**不要动**弧形色块、三角阵列、校徽、照片、侧边条等固定装饰；正文页的内容框可以按版式需要调整位置，但不能改变页面边距与页眉页脚。
 
 ---
+
+`spec_lock.md` 格式见 [执行锁规范](../templates/spec_lock_reference.md)：使用 `## colors`、`## typography`、`## images` 等固定英文节名和 `- key: value` 数据行。字号填无单位数字（如 `body_size: 24`），不能填 `24px` 或 `24–28`；把实际使用的每档字号单独列出。不要直接复制规范中的示例颜色或占位值。
 
 ## 4. 占位符对照
 
@@ -128,9 +135,9 @@ python3 ${SKILL_DIR}/scripts/project_manager.py init <project_name> --format ppt
 
 每页必须满足：
 
-- 有一个**结论句**（16–20px），不要只写“背景介绍”；
+- 有一个**结论句**（24–28px），不要只写“背景介绍”；
 - 标题 ≤ 16 个汉字；正文单行 ≤ 42 个汉字；
-- 正文字号 14–18px，注释 12px，标题按 `design_spec.md`；
+- 投影用正文优先 24–28px（约 18–21pt），辅助注释 16–18px；标题按 `design_spec.md`。主题模板原示例的小字只作结构参考，新写正文遵守此下限并写入 `spec_lock.md`；内容过多就拆页，不通过缩小字号塞入；
 - 留白 ≥ 24px，模块之间 ≥ 24px；
 - 同页颜色 ≤ 3 种（主色、深色文字、浅色块）；
 - 图标只用线性图标，不用 emoji。
@@ -142,12 +149,14 @@ python3 ${SKILL_DIR}/scripts/project_manager.py init <project_name> --format ppt
 ## 6. 导出与自检
 
 ```bash
-python3 ${SKILL_DIR}/scripts/svg_quality_checker.py <project>/svg_output --template-mode --canonical-authoring
+python3 ${SKILL_DIR}/scripts/svg_quality_checker.py <project>/svg_output --canonical-authoring
 python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project> -s svg_output -t fade -a none
 
 # 导出后必跑：版面体检（有 ERROR 不许交付）
-python3 ${SKILL_DIR}/scripts/review_pptx.py <project>/exports/<name>.pptx --min-level warn
+python3 ${SKILL_DIR}/scripts/review_pptx.py <实际导出路径>.pptx --min-level warn
 ```
+
+导出文件名可能自动附加时间戳，以上质检命令必须使用导出日志打印的实际路径。模板库体检才使用 `--template-mode`，成稿不能用该开关跳过 `spec_lock` 检查。
 
 `review_pptx.py` 会按页列出溢出、字体被挤压、元素重叠、越界、间距过密、占位符残留等问题，
 每条给出实测值与修改建议。**退出码为 1 表示有硬伤**，必须先改再交付。
@@ -160,7 +169,7 @@ python3 ${SKILL_DIR}/scripts/review_pptx.py <project>/exports/<name>.pptx --min-
 - [ ] 每页页码连续；
 - [ ] 目录条目与正文章节一一对应；
 - [ ] 导出的 `.pptx` 能在 PowerPoint 里正常打开，文字可编辑；
-- [ ] 至少抽查 3 页的渲染截图。
+- [ ] 检查全部页面的渲染，至少放大核对封面、最密正文页和结束页；确认 Logo 可见且未变形。无渲染环境时明确标注“结构检查通过，视觉复核未完成”，不可声称视觉验收通过。
 
 ---
 
@@ -169,6 +178,7 @@ python3 ${SKILL_DIR}/scripts/review_pptx.py <project>/exports/<name>.pptx --min-
 ```text
 已生成：<路径>
 模板：厦门大学_官方_厦园晴日 ｜ 页数：10
-用了你的内容：<列出 3 个关键信息来源>
-需要你补的：第 6 页的数据图，可发我 Excel 或截图，我再替换。
+用了你的内容：<按实际列明用户提供的材料；仅给主题时说明为主题扩写>
+内容依据：用户材料 / 有来源的公开资料 / 方案建议（按实际列明）
+验证：结构检查结果、视觉复核范围和未完成项
 ```

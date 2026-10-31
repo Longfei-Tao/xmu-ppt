@@ -58,7 +58,7 @@ primary_color: "#005FA5"
 | H2 | 章节标题 | 52px | Bold |
 | H3 | 内容页标题 | 34px | Bold |
 | H4 | 目录条目 | 38px | Regular |
-| P | 正文／说明 | 14–20px | Regular |
+| P | 新写正文 | 24–28px | Regular |
 | Num | 目录数字 | 64px | Bold |
 | Sub | 页脚 | 12–13px | Regular |
 
@@ -173,3 +173,7 @@ primary_color: "#005FA5"
 | `{{THANK_YOU}}` | 结束页致谢语 |
 | `{{CONTACT_INFO}}` | 联系方式 |
 | `{{TOC_ITEM_1_TITLE}}` … `{{TOC_ITEM_4_TITLE}}` | 目录条目 |
+
+## 成稿正文可读性
+
+SVG 原型中的示例小字不作为新写正文的字号标准。1280×720 画布下，新写正文优先使用 24–28px，注释 16–18px；写入项目 `spec_lock.md`，空间不足时拆页或精简。固定页脚、品牌字和原模板装饰文字可保留原尺寸。原生填充保留源样式，交付前需以实际投影用途检查可读性。

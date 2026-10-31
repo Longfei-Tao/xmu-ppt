@@ -54,7 +54,7 @@ TIGHT_GAP_PT = 4.0
 TINY_PT = 9.0
 SQUEEZE_WARN = 0.90
 
-PLACEHOLDER_RE = re.compile(r"\{\{[A-Z0-9_]+\}\}|\bXXX\b")
+PLACEHOLDER_RE = re.compile(r"\{\{[^{}]+\}\}|\bXXX\b")
 CJK_RE = re.compile(r"[\u4e00-\u9fff]")
 
 LEVEL_ORDER = {"info": 0, "warn": 1, "error": 2}
@@ -360,20 +360,23 @@ def check_squeeze(box: Box) -> Issue | None:
     )
 
 
-def check_bounds(box: Box, page_w: int) -> Issue | None:
+def check_bounds(box: Box, page_w: int, page_h: int | None = None) -> Issue | None:
     if box.text_emu is None:
         return None
-    x, _y, w, _h = box.text_emu
-    over = x + w - page_w
+    x, y, w, h = box.text_emu
     tol = 2 * EMU_PER_PX96
-    if over <= tol and x >= -tol:
+    edges = [("右", x + w - page_w), ("左", -x)]
+    if page_h is not None:
+        edges.extend([("下", y + h - page_h), ("上", -y)])
+    outside = [(edge, over) for edge, over in edges if over > tol]
+    if not outside:
         return None
     return Issue(
         slide=box.slide, kind="OUT_OF_BOUNDS", level="warn",
         where=f's{box.slide:02d}#{box.shape_id} "{box.text[:18]}"',
-        detail=(f"文字右端超出画布 {over/EMU_PER_PX96:.0f}px" if over > tol
-                else f"文字左端超出画布 {-x/EMU_PER_PX96:.0f}px"),
-        advice="缩短这一行，或把文本框左移；投影时超界部分会被裁掉",
+        detail="；".join(f"文字{edge}端超出画布 {over/EMU_PER_PX96:.0f}px"
+                         for edge, over in outside),
+        advice="缩短文字或把文本框移回画布；投影时超界部分会被裁掉",
         shape_id=box.shape_id,
     )
 
@@ -489,6 +492,7 @@ def check_gap(a: Box, b: Box) -> Issue | None:
 def review(path: str) -> tuple[list[Issue], dict]:
     prs = Presentation(path)
     page_w = int(prs.slide_width)
+    page_h = int(prs.slide_height)
     issues: list[Issue] = []
     per_slide = []
 
@@ -500,10 +504,23 @@ def review(path: str) -> tuple[list[Issue], dict]:
         for box in boxes:
             shape = shapes.get(box.shape_id)
             got = check_overflow(shape, box) if shape is not None else None
-            for issue in (got, check_squeeze(box), check_bounds(box, page_w),
-                          check_unreplaced(box), check_tiny(box), check_drift(box)):
+            for issue in (got, check_squeeze(box), check_bounds(box, page_w, page_h),
+                          check_tiny(box), check_drift(box)):
                 if issue:
                     issues.append(issue)
+
+        # Scan all DrawingML text, including grouped shapes and table cells.
+        # Their coordinates need separate transforms; text-only checks do not.
+        for node in slide._element.iter(f"{A_NS}p"):
+            text = "".join(t.text or "" for t in node.iter(f"{A_NS}t"))
+            match = PLACEHOLDER_RE.search(text)
+            if match:
+                issues.append(Issue(
+                    slide=idx, kind="UNREPLACED", level="error",
+                    where=f's{idx:02d} "{text[:18]}"',
+                    detail=f"残留占位符 {match.group(0)}",
+                    advice="替换为实际内容，未知的个人信息请省略该字段",
+                ))
 
         for i in range(len(texts)):
             for j in range(i + 1, len(texts)):
@@ -566,6 +583,9 @@ def render(issues: list[Issue], summary: dict, min_level: str) -> str:
 
 
 def main() -> int:
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(errors="backslashreplace")
     ap = argparse.ArgumentParser(description="Post-generation layout QA for a .pptx")
     ap.add_argument("pptx")
     ap.add_argument("--json", help="Write the full report as JSON here")

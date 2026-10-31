@@ -1570,6 +1570,11 @@ def print_usage() -> None:
 
 
 def main() -> None:
+    # Redirected Windows output can use GBK (or an explicitly narrow codec).
+    # Diagnostics must never turn a valid template into a failed check.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(errors="backslashreplace")
     """Run the CLI entry point."""
     if len(sys.argv) < 2:
         print_usage()

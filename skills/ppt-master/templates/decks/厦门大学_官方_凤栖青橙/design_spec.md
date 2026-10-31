@@ -58,7 +58,7 @@ primary_color: "#D37820"
 | H2 | 章节数字 | 110px | Bold |
 | H3 | 页面标题 | 46px | Bold |
 | H4 | 目录条目 | 26px | Regular |
-| P | 正文 | 17–20px | Regular |
+| P | 新写正文 | 24–28px | Regular |
 | Num | 目录序号 | 44px | Bold |
 
 **Font Stack**：`"华文中宋", "Source Han Serif SC", "思源宋体", "SimSun", serif`；数字用 `"Manrope", Arial, sans-serif`。
@@ -174,3 +174,7 @@ primary_color: "#D37820"
 | `{{CONTACT_INFO}}` | 联系方式 |
 | `{{TOC_ITEM_1_TITLE}}` … `{{TOC_ITEM_4_TITLE}}` | 目录条目标题 |
 | `{{TOC_ITEM_1_DESC}}` … `{{TOC_ITEM_4_DESC}}` | 目录条目说明 |
+
+## 成稿正文可读性
+
+SVG 原型中的示例小字不作为新写正文的字号标准。1280×720 画布下，新写正文优先使用 24–28px，注释 16–18px；写入项目 `spec_lock.md`，空间不足时拆页或精简。固定页脚、品牌字和原模板装饰文字可保留原尺寸。原生填充保留源样式，交付前需以实际投影用途检查可读性。

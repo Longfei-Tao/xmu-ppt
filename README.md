@@ -18,9 +18,11 @@
 
 > 帮我做一份组会汇报，主题是「术后营养管理与加速康复」，内容我发你。
 
+仅给主题时默认生成约 10 页的方案或知识介绍稿；不会编造研究结果、数字、引用或个人信息。真实结果汇报需要你提供结果材料。
+
 它会自动完成：选模板 → 拆内容 → 排页面 → 手写 SVG → 导出可编辑 `.pptx`，不需要你先搭框架、选配色、调字号。
 
-### 两种做法，先选一种
+### 两条出稿路线，按需求自动选择
 
 | | 原生填充（推荐给别人看） | SVG 出稿（推荐给自己改） |
 | --- | --- | --- |
@@ -34,7 +36,7 @@
 
 ## 模板库（纯厦大，共 14 套 + 1 个品牌预设）
 
-> 全部模板均为 16:9 / 1280×720。每套模板目录里同时有三种资产：
+> 全部模板均为 16:9 / 1280×720。14 套均有 SVG 原型，其中 13 套还包含原生填充资产；`厦门大学_官方_南强蔚蓝` 目前仅支持 SVG 出稿，缺少下列源 PPTX 和索引，不能用于原生填充：
 >
 > - `source.pptx` — 原始 PPTX（剥离内嵌字体、压缩过图片，体积降 80% 以上），原生填充的克隆源，页数与版式完整
 > - `layout_index.json` — 版式画像：每页是封面 / 目录 / 章节 / 几宫格 / 编号卡片，以及字号与槽位数量
@@ -116,17 +118,22 @@
 ## 安装
 
 ```bash
-git clone <your-repo-url> xmu-ppt-master
+git clone https://github.com/Longfei-Tao/xmu-ppt.git xmu-ppt-master
 cd xmu-ppt-master
-pip install -r skills/ppt-master/requirements.txt
+python -m pip install -r skills/ppt-master/requirements-core.txt
 ```
 
-然后把 `skills/ppt-master` 整个目录复制到你的 Agent 技能目录（Codex 默认是 `~/.codex/skills/`）：
+本仓库交付的是 **Agent Skill 与本地 Python 工具**，不依赖远程 MCP 服务或 API Key；主题组织和逐页创作由加载该 Skill 的 AI Agent 执行，并非脱离 Agent 的自动生成服务。
+
+使用 CC Switch 管理共享 Skills 时，在 **CC Switch 中导入或关联本仓库的 `skills/ppt-master`**，由它分发到各客户端。不要直接覆盖 CC Switch 生成的副本；已有同名技能时先备份并核对来源。未使用管理器时，可按 Agent 的技能安装机制安装整个目录，必须保留 `scripts/`、`templates/`、`workflows/` 和 `references/`，不能仅复制 `SKILL.md`。
+
+安装后先运行离线体检：
 
 ```bash
-# Windows PowerShell
-Copy-Item -Recurse skills/ppt-master "$env:USERPROFILE\.codex\skills\ppt-master"
+python skills/ppt-master/scripts/audit_xmu.py --check-svg
 ```
+
+期望结果：14 套 SVG、13 套原生填充、0 个错误；南强蔚蓝仅支持 SVG 的提示属于已知能力边界。完成安装不等于已完成出稿验收，还需要运行一次实际生成并检查页面。
 
 重启会话后，直接说「用 ppt-master 做一份厦大组会汇报」即可。
 
@@ -147,7 +154,7 @@ Copy-Item -Recurse skills/ppt-master "$env:USERPROFILE\.codex\skills\ppt-master"
 # 1. 生成项目骨架
 python skills/ppt-master/scripts/project_manager.py init demo --format ppt169
 
-# 2. 校验模板页
+# 2. 校验模板页（这不是成稿；需由 Agent 写好 demo/svg_output/ 页面后才能执行第 3 步）
 python skills/ppt-master/scripts/svg_quality_checker.py \
   skills/ppt-master/templates/decks/厦门大学_官方_厦园晴日 --template-mode --canonical-authoring
 
@@ -173,6 +180,7 @@ python skills/ppt-master/scripts/template_fill_pptx.py check-plan \
   skills/ppt-master/templates/decks/厦门大学_主题_凤凰花开/source.slide_library.json fill_plan.json
 python skills/ppt-master/scripts/template_fill_pptx.py apply \
   skills/ppt-master/templates/decks/厦门大学_主题_凤凰花开/source.pptx fill_plan.json -o out.pptx
+# 输出自动附加时间戳，后续检查请使用日志中的实际文件路径。
 ```
 
 ### C. 新增一套模板
@@ -187,7 +195,7 @@ python skills/ppt-master/scripts/build_layout_index.py \
 ### D. 生成后自检（两条路线都适用）
 
 ```bash
-python skills/ppt-master/scripts/review_pptx.py out.pptx --min-level warn
+python skills/ppt-master/scripts/review_pptx.py <实际导出路径>.pptx --min-level warn
 ```
 
 直接读 PPTX 的 OOXML 做版面体检，不需要打开 PowerPoint，也不需要截图：
@@ -208,10 +216,21 @@ python skills/ppt-master/scripts/review_pptx.py out.pptx --min-level warn
 ## 依赖
 
 - **Python 3.10+**（脚本使用 `X | None` 形式的类型注解，3.9 会在导入时抛 `TypeError`）
-- 核心：`python-pptx`、`PyYAML`、`Pillow`、`requests`
+- 核心：`requirements-core.txt`（`python-pptx`、`PyYAML`、`Pillow`、`requests`），默认出稿不需要图片生成 API 或 TTS
 - 按需：PDF / Word / Excel 转换、图片搜索、TTS 等，完整清单见 `skills/ppt-master/requirements.txt`
 - 可选：`cairosvg` 或 `svglib`（导出时生成 PNG 后备图）、`playwright`（逐页视觉复核）
 - 可选：Microsoft PowerPoint（用于导出 PNG 预览）
+
+## 开发验证
+
+```bash
+python -m unittest discover -s tests -v
+python skills/ppt-master/scripts/audit_xmu.py --check-svg --json .cache/xmu-audit.json
+```
+
+GitHub Actions 会在 Windows / Linux、Python 3.10 / 3.13 上运行回归与资产检查。结构检查不能替代演示软件渲染；交付前应检查全部页面，并放大检查封面、最密正文页、结束页和 Logo。`review_pptx.py` 对顶层文本做估算排版检查，对组合形状和表格只扫描占位符，不能保证所有复杂版面都无溢出。
+
+审查范围、已修复项和能力边界见 [审查记录](docs/plugin-audit.md)。
 
 ## 许可证与素材边界
 

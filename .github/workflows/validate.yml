@@ -1,0 +1,20 @@
+name: Validate XMU templates
+on: [push, pull_request]
+jobs:
+  validate:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.10', '3.13']
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONIOENCODING: utf-8
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -r skills/ppt-master/requirements-core.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python skills/ppt-master/scripts/audit_xmu.py --check-svg

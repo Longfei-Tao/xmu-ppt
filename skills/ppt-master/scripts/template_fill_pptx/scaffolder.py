@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from copy import deepcopy
 from typing import Any
 
 
@@ -12,12 +13,15 @@ def scaffold_plan(
     include_empty: bool = False,
 ) -> dict[str, Any]:
     """Build an editable fill plan skeleton from a slide library."""
-    selected = set(selected_slides or [])
     source_slides = library.get("slides", [])
-    if not selected:
+    if selected_slides is None:
         source_slides = source_slides[: min(6, len(source_slides))]
     else:
-        source_slides = [slide for slide in source_slides if int(slide["slide_index"]) in selected]
+        by_index = {int(slide["slide_index"]): slide for slide in source_slides}
+        missing = [index for index in selected_slides if index not in by_index]
+        if missing:
+            raise RuntimeError(f"Unknown source slide(s): {missing}")
+        source_slides = [by_index[index] for index in selected_slides]
 
     slides: list[dict[str, Any]] = []
     for slide in source_slides:
@@ -54,8 +58,8 @@ def scaffold_plan(
             chart_edits.append(
                 {
                     "chart_id": chart["chart_id"],
-                    "categories": chart.get("categories", []),
-                    "series": chart.get("series") or [{"name": "系列1", "values": []}],
+                    "categories": deepcopy(chart.get("categories", [])),
+                    "series": deepcopy(chart.get("series") or [{"name": "系列1", "values": []}]),
                 }
             )
         slides.append(

@@ -11,6 +11,8 @@ description: >
 
 # PPT Master Skill
 
+本项目为非官方个人作品，校徽、校名与校园图片不包含在 MIT 授权中。独立安装本技能时，保留同目录 [LICENSE](LICENSE) 和 [素材声明](THIRD_PARTY_NOTICES.md)。
+
 > AI-driven multi-format SVG content generation system. Converts source documents into high-quality SVG pages through multi-role collaboration and exports to PPTX.
 
 **Core Pipeline**: `Source Document → Create Project → [Template] → Strategist → [Image_Generator] → Executor Live Preview → Quality Check → Post-processing → Export`
@@ -18,24 +20,30 @@ description: >
 > [!IMPORTANT]
 > ## 🎓 厦门大学模板优先（本仓库定制）
 >
-> 当用户用中文提出「答辩 / 开题 / 组会 / 工作汇报 / 课程展示 / 读书报告 / 宣讲 / 调研」类 PPT，或明确提到「厦大模板 / 厦门大学模板」时：
+> 本插件默认产出厦门大学风格 PPT，适用于中文和英文请求。用户仅提供主题或想法时，直接走下面的厦大路线；用户明确要求其他机构风格时，说明本插件的适用范围，不擅自套用厦大标识。
 >
-> **第一步：选路线。** 两条路线都能用 14 套厦大模板，区别只在「要不要动原模板」：
+> **第一步：选路线。** SVG 路线可用 14 套，原生填充可用 13 套（南强蔚蓝缺少原生源文件），区别只在「要不要动原模板」：
 >
 > | 用户信号 | 路线 | 底层 |
 > | --- | --- | --- |
-> | 提到「用这个模板 / 保留原样式 / 别改我的模板」、上传了 `.pptx`、要表格或图表原样保留 | **原生填充** → [`workflows/xmu-native.md`](workflows/xmu-native.md) | 克隆原页 + 改 OOXML，不生成 SVG |
+> | 提到「用这个模板 / 保留原样式 / 别改我的模板」、上传 `.pptx` 并要求保留其原生版式、要表格或图表原样保留 | **原生填充** → [`workflows/xmu-native.md`](workflows/xmu-native.md) | 克隆原页 + 改 OOXML，不生成 SVG |
 > | 只给主题或文字材料，要求排版自由、每页版式可以不一样 | **SVG 出稿** → [`workflows/xmu-quick.md`](workflows/xmu-quick.md) | 逐页手写 SVG 再导出 |
 >
-> 拿不准时先问一句「要保留模板原样，还是允许重新排版」，不要替用户决定。
+> 上传的 PPTX 如果只是事实材料，走 SVG 路线重新组织；不能仅凭文件格式判定原生填充。用户要求保留上传模板时，按 [`workflows/template-fill-pptx.md`](workflows/template-fill-pptx.md) 分析并填充用户的源文件，不能替换为内置模板。仍需遵守厦大标识、内容真实性和视觉复核要求。
+>
+> 只给主题时默认 SVG 出稿，无需询问路线。原生填充前先检查三个必需文件是否存在；南强蔚蓝仅支持 SVG。用户要求保留南强蔚蓝原模板时，说明缺少源 PPTX，等待用户提供源文件或同意 SVG 重绘。
+>
+> **优先级：** 厦大路线明确覆盖下文通用流程的 Eight Confirmations、模板确认、策略师报告和阶段硬停。选定厦大路线后按对应工作流连续执行，不再进入通用确认流程。保留逐页创作和质量门禁。
 >
 > **通用要求（两条路线都适用）：**
 > 1. **跳过** Eight Confirmations、策略师长报告与项目初始化问答；
 > 2. 模板从 14 套厦大模板中按场景选择：`厦门大学_官方_厦园晴日`（答辩/开题）、`厦门大学_官方_凤栖青橙`（人文社科/课程）、`厦门大学_官方_南强蔚蓝`（组会/工作汇报/宣讲），或按用户点名的 `厦门大学_主题_*`；
 > 3. 确认话术最多一次，三行以内；用户已给足主题与内容时直接产出 `.pptx`；
-> 4. SVG 路线仍遵守「逐页手写、禁止脚本批量生成、导出前跑质量检查」；原生填充路线遵守「禁止跑 SVG 转换、只改 fill_plan」。
+> 4. 品牌标识必须复用模板内真实 Logo 图片，保留宽高比，不用文字、AI 图片或自画图形替代。封面和结束页必须可见；正文继承所选模板的位置。
+> 5. 只给主题时可以补充叙事和建议，不得编造实验结果、统计数据、引用或个人信息；未知姓名、导师、单位、联系方式直接省略字段。
+> 6. SVG 路线仍遵守「逐页手写、禁止脚本批量生成、导出前跑质量检查」；原生填充路线遵守「禁止跑 SVG 转换、只改 fill_plan」。
 >
-> `templates/decks/<id>/` 每套现在同时带三样东西：`source.pptx`（原始模板，原生填充的克隆源）、`source.slide_library.json`（槽位明细）、`layout_index.json`（版式画像，选页依据），以及原有的 5 页 SVG 原型。
+> 除南强蔚蓝外，`templates/decks/<id>/` 每套同时带三样东西：`source.pptx`（原始模板，原生填充的克隆源）、`source.slide_library.json`（槽位明细）、`layout_index.json`（版式画像，选页依据），以及原有的 5 页 SVG 原型。
 >
 > 本仓库的 `templates/decks/` 只保留厦门大学 deck（14 套），不含任何其他机构 deck；`templates/layouts/` 仍保留 7 套通用版式（`academic_defense`、`medical_university`、`government_blue` 等）作为「结构叠加层」，仅在用户显式给出路径时参与融合，不参与场景路由。库外风格不再作为兜底选项。
 
