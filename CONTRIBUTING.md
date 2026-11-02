@@ -4,11 +4,11 @@
 
 ## 本地检查
 
-安装 `skills/ppt-master/requirements-core.txt` 后，从仓库根目录运行：
+安装 `skills/xmu-ppt/requirements-core.txt` 后，从仓库根目录运行：
 
 ```bash
 python -m unittest discover -s tests -v
-python skills/ppt-master/scripts/audit_xmu.py --check-svg
+python skills/xmu-ppt/scripts/audit_xmu.py --check-svg
 python scripts/check_docs.py
 ```
 

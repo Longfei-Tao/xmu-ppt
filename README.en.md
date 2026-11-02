@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)](docs/quickstart.md)
 [![GitHub stars](https://img.shields.io/github/stars/Longfei-Tao/xmu-ppt.svg)](https://github.com/Longfei-Tao/xmu-ppt/stargazers)
 
-Turn a topic, outline, or source material into a Xiamen University style presentation with a file-capable AI agent.
+Turn a topic, outline, or source material into a Xiamen University style presentation with a file-capable AI agent. Built on the SVG → PPTX engine of [PPT Master](https://github.com/hugohe3/ppt-master) (MIT), adding 14 XMU template decks and two authoring routes.
 
 **[Browse every slide online](https://longfei-tao.github.io/xmu-ppt/)** · [中文首页](README.md) · [Getting started (Chinese)](docs/quickstart.md) · [Tool setup](docs/tools/README.md)
 
@@ -28,7 +28,7 @@ Turn a topic, outline, or source material into a Xiamen University style present
 
 <sub>All three are PowerPoint screenshots of real exported files, not design mockups. [Flip through them online →](https://longfei-tao.github.io/xmu-ppt/)</sub>
 
-> Repository and project name: `xmu-ppt`. The skill inside is still named `ppt-master` after its upstream. Former names `xmu-ppt-master` and "XMU PPT Master" refer to this same repository.
+> Repository and project name: `xmu-ppt`. The skill inside is still named `xmu-ppt` after its upstream. Former names `xmu-xmu-ppt` and "XMU PPT Master" refer to this same repository.
 
 ## What it is, and what it is not
 
@@ -58,12 +58,12 @@ cd xmu-ppt
 python -m venv .venv
 ```
 
-Install core dependencies using `.venv/bin/python -m pip install -r skills/ppt-master/requirements-core.txt` on macOS/Linux, or `.venv\Scripts\python.exe -m pip install -r skills/ppt-master/requirements-core.txt` on Windows.
+Install core dependencies using `.venv/bin/python -m pip install -r skills/xmu-ppt/requirements-core.txt` on macOS/Linux, or `.venv\Scripts\python.exe -m pip install -r skills/xmu-ppt/requirements-core.txt` on Windows.
 
 Open the repository in an agent that can read files and execute Python, then ask:
 
 ```text
-Read skills/ppt-master/SKILL.md and follow the XMU workflow.
+Read skills/xmu-ppt/SKILL.md and follow the XMU workflow.
 Create a 10-slide proposal on collaboration within a campus research team.
 Use the repository's virtual environment. Do not invent research data or references.
 Return the actual PPTX path and any material limitations.
@@ -76,7 +76,7 @@ No Git? Download [main.zip](https://github.com/Longfei-Tao/xmu-ppt/archive/refs/
 ### Updating
 
 ```bash
-python skills/ppt-master/scripts/update_repo.py
+python skills/xmu-ppt/scripts/update_repo.py
 ```
 
 It refuses to run while you have uncommitted local changes, then pulls the latest code and reinstalls dependencies only when `requirements.txt` changed (`--skip-pip` skips that step). `git pull` works too, but can overwrite files you have edited.

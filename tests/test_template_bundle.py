@@ -8,8 +8,8 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPTS = ROOT / "skills/ppt-master/scripts"
-DECKS = ROOT / "skills/ppt-master/templates/decks"
+SCRIPTS = ROOT / "skills/xmu-ppt/scripts"
+DECKS = ROOT / "skills/xmu-ppt/templates/decks"
 
 
 class BundleTests(unittest.TestCase):
@@ -22,7 +22,7 @@ class BundleTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr.decode("ascii", errors="replace"))
 
     def test_installable_skill_keeps_license_and_asset_notice(self):
-        skill = ROOT / "skills/ppt-master"
+        skill = ROOT / "skills/xmu-ppt"
         for name in ("LICENSE", "THIRD_PARTY_NOTICES.md"):
             self.assertEqual((ROOT / name).read_bytes(), (skill / name).read_bytes())
 

@@ -23,7 +23,7 @@ MIT 许可证允许修改、再分发与商用，但要求在任何副本中保�
 `LICENSE` 中的 MIT 许可仅覆盖本仓库的源代码、脚本、工作流与模板结构（SVG / JSON 版式定义）；以下材料不在授权范围内，也不随 MIT 一并授予任何权利：
 
 - 厦门大学校徽 / 校名标志文件（`xmu_logo.png` 及其任何副本，含半透明水印版 `xmu_logo_wm.png`）；
-- `skills/ppt-master/templates/decks/<deck_id>/` 及同类路径下的校园照片、装饰插画与其他学校视觉素材；
+- `skills/xmu-ppt/templates/decks/<deck_id>/` 及同类路径下的校园照片、装饰插画与其他学校视觉素材；
 - 内嵌上述素材的 `examples/*.pptx` 内容。
 
 上述材料版权归厦门大学和/或各自作者所有，仅随本仓库用于校内非商业教学、科研演示，不得单独售卖、再许可或作为商业产品的组成部分再分发。任何公开或商业使用前，使用者须自行核对学校现行视觉识别规范。
@@ -34,13 +34,13 @@ MIT 许可证允许修改、再分发与商用，但要求在任何副本中保�
 
 | 素材 | 位置 | 说明 |
 | --- | --- | --- |
-| 厦门大学校徽组合标志 | `skills/ppt-master/templates/brands/厦门大学/xmu_logo.png` 及各 deck 目录（含半透明水印版 `xmu_logo_wm.png`） | 校徽与校名标准字 |
+| 厦门大学校徽组合标志 | `skills/xmu-ppt/templates/brands/厦门大学/xmu_logo.png` 及各 deck 目录（含半透明水印版 `xmu_logo_wm.png`） | 校徽与校名标准字 |
 | 校园实景照片 | `厦门大学_官方_厦园晴日/campus_bg.jpg`、`chapter_bg.jpg`、`ending_bg.jpg` | 原始模板内嵌照片 |
 | 校训竖版图 | `厦门大学_官方_厦园晴日/side_tab.jpg` | 校徽 + 自强不息 止于至善 |
 | 凤凰花、天鹅装饰 | `厦门大学_官方_厦园晴日/flower.png`、`swan.png` | 原始模板装饰素材 |
 | 宣纸底纹、绿瓦屋顶、陈嘉庚雕像 | `厦门大学_官方_凤栖青橙/paper_bg.jpg`、`roof.png`、`statue.png` | 原始模板素材 |
 | 扁平化建筑插画 | `厦门大学_官方_南强蔚蓝/building.png` | 原始模板素材 |
-| 原始 PPTX 模板 | `skills/ppt-master/templates/decks/<deck_id>/source.pptx` | 已剥离内嵌商业字体、图片降采样；权属及公开再分发授权待逐文件核验 |
+| 原始 PPTX 模板 | `skills/xmu-ppt/templates/decks/<deck_id>/source.pptx` | 已剥离内嵌商业字体、图片降采样；权属及公开再分发授权待逐文件核验 |
 
 ### 2.1 关于 `source.pptx`
 
@@ -78,6 +78,6 @@ MIT 许可证允许修改、再分发与商用，但要求在任何副本中保�
 
 实际直接引用的第三方包为：`python-pptx`、`PyYAML`、`Pillow`、`requests`、`beautifulsoup4`、`curl_cffi`、`PyMuPDF`、`openpyxl`、`mammoth`、`markdownify`、`ebooklib`、`nbconvert`、`edge-tts`、`google-genai`、`flask`、`numpy`、`svglib`、`reportlab`。可选：`cairosvg`、`playwright`。
 
-完整清单与用途见 `skills/ppt-master/requirements.txt`，各包遵循其自身的开源许可证。
+完整清单与用途见 `skills/xmu-ppt/requirements.txt`，各包遵循其自身的开源许可证。
 
 > 说明：`XlsxWriter` 不是本项目的直接依赖（仅在安装 `python-pptx` 时被间接引入）；`skia-pathops`、`uharfbuzz` 在上游旧版本中使用，本分支代码已不再引用两者。

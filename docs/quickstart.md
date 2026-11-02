@@ -18,7 +18,7 @@
 可先导出仓库自带的四页演示，确认本地转换链路可用：
 
 ```bash
-python skills/ppt-master/scripts/svg_to_pptx.py examples/quickstart -s svg_output -o .cache/first-demo.pptx -t none -a none
+python skills/xmu-ppt/scripts/svg_to_pptx.py examples/quickstart -s svg_output -o .cache/first-demo.pptx -t none -a none
 ```
 
 这是已有 SVG 的导出，不是自动生成新主题；预期结果是 `.cache/first-demo.pptx`。下载已有产物也可直接[查看演示](../examples/quickstart/demo.pptx)。
@@ -37,7 +37,7 @@ python skills/ppt-master/scripts/svg_to_pptx.py examples/quickstart -s svg_outpu
 在 AI 工具中打开仓库，发送下面的完整需求：
 
 ```text
-请读取 skills/ppt-master/SKILL.md，按厦大工作流制作约 10 页 PPT。
+请读取 skills/xmu-ppt/SKILL.md，按厦大工作流制作约 10 页 PPT。
 主题：校园科研协作。听众：课题组同学。用途：组会讨论。
 内容：资料管理、任务分工、进度安排、提交复核。
 仅写方案建议，不编造研究数据、引用、姓名或单位。
@@ -45,9 +45,9 @@ python skills/ppt-master/scripts/svg_to_pptx.py examples/quickstart -s svg_outpu
 将产物放入独立项目目录；完成检查后给我 PPTX 路径和必要说明。
 ```
 
-技能根目录为 `skills/ppt-master` 的绝对路径。Skill 文档中的 `${SKILL_DIR}` 是这个根目录的表示方法；Agent 需要自行解析，不能把它当作各宿主都会自动设置的环境变量。
+技能根目录为 `skills/xmu-ppt` 的绝对路径。Skill 文档中的 `${SKILL_DIR}` 是这个根目录的表示方法；Agent 需要自行解析，不能把它当作各宿主都会自动设置的环境变量。
 
-有材料时，把文件放到 Agent 可以访问的目录，说明它是内容来源还是要保留的版式。使用 PDF、Word 等输入时，可能需要按[完整依赖文件](../skills/ppt-master/requirements.txt)安装对应转换依赖。
+有材料时，把文件放到 Agent 可以访问的目录，说明它是内容来源还是要保留的版式。使用 PDF、Word 等输入时，可能需要按[完整依赖文件](../skills/xmu-ppt/requirements.txt)安装对应转换依赖。
 
 ## 3. 需要保留模板时这样说
 
@@ -80,6 +80,6 @@ python skills/ppt-master/scripts/svg_to_pptx.py examples/quickstart -s svg_outpu
 
 安装失败、依赖缺失、换行不一致、模型选择、更新与素材边界，统一收在[常见问题](faq.md)。这里只留两条最常撞上的：
 
-**找不到 `ppt-master`？** `skills/ppt-master` 是源码目录，不一定是工具自动发现的安装目录。先用上面的源码调用，或按[对应工具入口](tools/README.md)安装完整目录；不要只复制 `SKILL.md`。
+**找不到 `xmu-ppt`？** `skills/xmu-ppt` 是源码目录，不一定是工具自动发现的安装目录。先用上面的源码调用，或按[对应工具入口](tools/README.md)安装完整目录；不要只复制 `SKILL.md`。
 
 **想只用 Python 输入主题自动生成？** 当前没有这样的独立主题生成命令。脚本需要由 Agent 提供 SVG 页面或填充计划。

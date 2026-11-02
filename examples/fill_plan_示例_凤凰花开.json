@@ -1,6 +1,6 @@
 {
   "schema": "template_fill_pptx_plan.v1",
-  "source_pptx": "skills/ppt-master/templates/decks/厦门大学_主题_凤凰花开/source.pptx",
+  "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_凤凰花开/source.pptx",
   "slides": [
     {
       "source_slide": 1,

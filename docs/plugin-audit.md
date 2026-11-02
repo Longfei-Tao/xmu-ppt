@@ -41,9 +41,9 @@
 ## 复现
 
 ```bash
-python -m pip install -r skills/ppt-master/requirements-core.txt
+python -m pip install -r skills/xmu-ppt/requirements-core.txt
 python -m unittest discover -s tests -v
-python skills/ppt-master/scripts/audit_xmu.py --check-svg --json .cache/xmu-audit.json
+python skills/xmu-ppt/scripts/audit_xmu.py --check-svg --json .cache/xmu-audit.json
 ```
 
 更改模板后需重跑以上命令。面向使用者交付实际演示稿时，另需检查全部页面的渲染、Logo、字体替换、内容真实性与讲者备注。

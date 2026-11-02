@@ -10,7 +10,7 @@
 
 ```bash
 gemini skills list --all
-gemini skills install ./skills/ppt-master --scope workspace
+gemini skills install ./skills/xmu-ppt --scope workspace
 ```
 
 先检查列表是否存在同名技能，冲突时先备份并核对来源，不继续安装覆盖。使用 CC Switch 时由它分发，不重复安装。保留宿主的安装及启用确认，不加入跳过确认的选项。
@@ -18,7 +18,7 @@ gemini skills install ./skills/ppt-master --scope workspace
 开始新会话或在会话里运行 `/skills reload`，再用 `/skills list` 确认名称和位置，发送：
 
 ```text
-请启用 ppt-master 技能，制作约 10 页厦大风格的校园科研协作方案汇报。
+请启用 xmu-ppt 技能，制作约 10 页厦大风格的校园科研协作方案汇报。
 使用仓库 .venv 的 Python。没有真实数据，不编造实验结果。
 将 PPTX 保存到独立项目目录，并给我实际路径。
 ```

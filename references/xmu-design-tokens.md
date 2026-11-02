@@ -37,7 +37,7 @@
 
 ### 2.1 本项目当前配色
 
-`skills/ppt-master/templates/brands/厦门大学/design_spec.md` 与各 deck 的 `layout_index.json` 中已有取值。本文档作为**参考基线**，不强制替换现有模板——现有模板的成品质感已经过高保真校验，改动应单独评估。
+`skills/xmu-ppt/templates/brands/厦门大学/design_spec.md` 与各 deck 的 `layout_index.json` 中已有取值。本文档作为**参考基线**，不强制替换现有模板——现有模板的成品质感已经过高保真校验，改动应单独评估。
 
 ---
 

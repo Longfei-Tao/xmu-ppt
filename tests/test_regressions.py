@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPTS = ROOT / "skills/ppt-master/scripts"
+SCRIPTS = ROOT / "skills/xmu-ppt/scripts"
 sys.path.insert(0, str(SCRIPTS))
 TEMP = ROOT / ".cache" / "tests"
 TEMP.mkdir(parents=True, exist_ok=True)

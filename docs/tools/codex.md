@@ -6,18 +6,18 @@
 
 ## 在本项目使用
 
-最短路径是不安装：在 Codex 中打开仓库，按[快速开始](../quickstart.md)要求读取 `skills/ppt-master/SKILL.md`。需要技能自动发现时，可在未受 CC Switch 管理的工作区终端，从仓库根目录执行：
+最短路径是不安装：在 Codex 中打开仓库，按[快速开始](../quickstart.md)要求读取 `skills/xmu-ppt/SKILL.md`。需要技能自动发现时，可在未受 CC Switch 管理的工作区终端，从仓库根目录执行：
 
 ```bash
-python -c "from pathlib import Path; import shutil; d=Path('.agents/skills/ppt-master'); assert not d.exists(), 'Existing skill: back up and resolve first'; d.parent.mkdir(parents=True, exist_ok=True); shutil.copytree('skills/ppt-master', d, ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))"
+python -c "from pathlib import Path; import shutil; d=Path('.agents/skills/xmu-ppt'); assert not d.exists(), 'Existing skill: back up and resolve first'; d.parent.mkdir(parents=True, exist_ok=True); shutil.copytree('skills/xmu-ppt', d, ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))"
 ```
 
-该命令只建立项目副本，已有同名目录时停止；不修改全局配置。重新打开会话，在技能选择界面确认 `ppt-master` 的路径属于当前项目，避免同名上游技能。
+该命令只建立项目副本，已有同名目录时停止；不修改全局配置。重新打开会话，在技能选择界面确认 `xmu-ppt` 的路径属于当前项目，避免同名上游技能。
 
 在 Codex CLI / IDE 中可用 `/skills` 或 `$` 选择技能；界面入口以所用版本为准。调用示例：
 
 ```text
-$ppt-master
+$xmu-ppt
 制作一份 10 页厦大风格的校园科研协作方案汇报。
 使用项目 .venv 的 Python。没有研究数据，不编造结果。
 把 PPTX 放在独立项目目录并返回实际路径。

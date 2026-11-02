@@ -9,13 +9,13 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "skills/ppt-master/scripts"))
+sys.path.insert(0, str(ROOT / "skills/xmu-ppt/scripts"))
 from svg_to_pptx import create_pptx_with_native_svg
 from template_fill_pptx.applier import apply_plan
 from template_fill_pptx.scaffolder import scaffold_plan
 from pptx import Presentation
 
-DECKS = ROOT / "skills/ppt-master/templates/decks"
+DECKS = ROOT / "skills/xmu-ppt/templates/decks"
 
 
 class ExportSmokeTests(unittest.TestCase):

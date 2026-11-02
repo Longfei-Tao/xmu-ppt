@@ -6,7 +6,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)](docs/quickstart.md)
 [![GitHub stars](https://img.shields.io/github/stars/Longfei-Tao/xmu-ppt.svg)](https://github.com/Longfei-Tao/xmu-ppt/stargazers)
 
-把主题、提纲或现有材料，整理成厦大风格的演示文稿。由 AI Agent 逐页排版，导出**文字可编辑**的 `.pptx`。
+把主题、提纲或现有材料，整理成厦大风格的演示文稿。由 AI Agent 逐页排版，导出**文字可编辑**的 `.pptx`。基于 [PPT Master](https://github.com/hugohe3/ppt-master) 的 SVG → PPTX 引擎，增补 14 套厦大模板与两条出稿路线。
 
 **[在线逐页预览](https://longfei-tao.github.io/xmu-ppt/)** · [快速开始](docs/quickstart.md) · [模板风格](docs/templates.md) · [常见问题](docs/faq.md) · [选择你的 AI 工具](docs/tools/README.md) · [English](README.en.md)
 
@@ -58,7 +58,7 @@
 你可以直接这样说：
 
 ```text
-用 ppt-master 做一份厦大风格的校园科研协作汇报，约 10 页。
+用 xmu-ppt 做一份厦大风格的校园科研协作汇报，约 10 页。
 内容包括：材料管理、责任分工、进度安排与提交复核。
 没有实测数据，请写成方案建议，不编造结果。输出 PPTX。
 ```
@@ -93,13 +93,13 @@ cd xmu-ppt
 ```powershell
 # Windows PowerShell
 python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r skills/ppt-master/requirements-core.txt
+.\.venv\Scripts\python.exe -m pip install -r skills/xmu-ppt/requirements-core.txt
 ```
 
 ```bash
 # macOS / Linux
 python3 -m venv .venv
-.venv/bin/python -m pip install -r skills/ppt-master/requirements-core.txt
+.venv/bin/python -m pip install -r skills/xmu-ppt/requirements-core.txt
 ```
 
 ### 把需求交给 Agent
@@ -107,7 +107,7 @@ python3 -m venv .venv
 在 AI 工具中打开这个仓库，把下面一段发给它，即可先从源码使用，无需修改全局配置：
 
 ```text
-请读取 skills/ppt-master/SKILL.md，按其中的厦大工作流制作上一条需求的 PPT。
+请读取 skills/xmu-ppt/SKILL.md，按其中的厦大工作流制作上一条需求的 PPT。
 以该文件所在目录为技能根目录，使用本仓库 .venv 内的 Python。
 把生成文件放在独立项目目录中，完成后给我 PPTX 的实际路径。
 ```
@@ -117,7 +117,7 @@ python3 -m venv .venv
 ### 更新到最新版
 
 ```bash
-python skills/ppt-master/scripts/update_repo.py
+python skills/xmu-ppt/scripts/update_repo.py
 ```
 
 它会先检查本地改动，有未提交的修改就停下让你处理；然后拉取最新代码，**只在 `requirements.txt` 变化时**才重装依赖，加 `--skip-pip` 可跳过依赖同步。ZIP 用户重新下载覆盖即可。
@@ -135,7 +135,7 @@ git pull
 | 工具 | 使用入口 | 本仓库验证范围 |
 | --- | --- | --- |
 | Codex | [项目 Skill 与源码调用](docs/tools/codex.md) | 当前 Windows 会话已运行本地脚本；未做全新安装验收 |
-| Claude Code | [项目 Skill 与 `/ppt-master`](docs/tools/claude-code.md) | 已按官方机制编写文档，未实机验证 |
+| Claude Code | [项目 Skill 与 `/xmu-ppt`](docs/tools/claude-code.md) | 已按官方机制编写文档，未实机验证 |
 | GitHub Copilot | [Agent 模式与项目 Skill](docs/tools/copilot.md) | 已按官方机制编写文档，未实机验证 |
 | Gemini CLI | [工作区 Skill](docs/tools/gemini-cli.md) | 已按官方机制编写文档，未实机验证 |
 | 网页聊天或其他工具 | [环境要求与手动流程](docs/tools/README.md) | 有文件执行环境才可能运行；不承诺原生安装 |
@@ -182,6 +182,6 @@ git pull
 
 ---
 
-<sub>项目名 `xmu-ppt`；技能名沿用上游的 `ppt-master`。旧称 `xmu-ppt-master`、XMU PPT Master 均指本仓库。</sub>
+<sub>项目名 `xmu-ppt`；技能名沿用上游的 `xmu-ppt`。旧称 `xmu-xmu-ppt`、XMU PPT Master 均指本仓库。</sub>
 
 [进阶命令与依赖](docs/advanced.md) · [贡献指南](CONTRIBUTING.md) · [素材与许可](docs/assets.md) · [上游致谢](CREDITS.md)

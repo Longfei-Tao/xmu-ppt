@@ -9,13 +9,13 @@
 先完成共用依赖步骤。在未受管理的仓库根目录执行：
 
 ```bash
-python -c "from pathlib import Path; import shutil; d=Path('.claude/skills/ppt-master'); assert not d.exists(), 'Existing skill: back up and resolve first'; d.parent.mkdir(parents=True, exist_ok=True); shutil.copytree('skills/ppt-master', d, ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))"
+python -c "from pathlib import Path; import shutil; d=Path('.claude/skills/xmu-ppt'); assert not d.exists(), 'Existing skill: back up and resolve first'; d.parent.mkdir(parents=True, exist_ok=True); shutil.copytree('skills/xmu-ppt', d, ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))"
 ```
 
 已有目录时命令停止，不覆盖。使用 CC Switch 时改由它分发。打开或重新打开该目录的 Claude Code 会话，检查 `/skills` 列表中的名称与来源，再发送：
 
 ```text
-/ppt-master 用厦园晴日风格做一份校园科研协作方案汇报，约 10 页。
+/xmu-ppt 用厦园晴日风格做一份校园科研协作方案汇报，约 10 页。
 使用仓库 .venv 的 Python；仅写建议，不编造数据。
 完成后给我 PPTX 路径与必要说明。
 ```

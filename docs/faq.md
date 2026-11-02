@@ -4,12 +4,12 @@
 
 ## 安装与运行
 
-### 装完技能，Agent 里没出现 `/ppt-master`
+### 装完技能，Agent 里没出现 `/xmu-ppt`
 
-1. 确认复制的是**整个目录** `skills/ppt-master/`，不是只有 `SKILL.md`；脚本、模板、工作流都在同级子目录里。
+1. 确认复制的是**整个目录** `skills/xmu-ppt/`，不是只有 `SKILL.md`；脚本、模板、工作流都在同级子目录里。
 2. 确认目标路径是宿主认的目录（Claude Code 用户级 `~/.claude/skills/`，项目级 `.claude/skills/`；其他宿主见[工具目录](tools/README.md)）。
 3. 开一个新会话再试——技能列表通常在会话启动时读取。
-4. 仍然不行就走源码调用：直接在仓库目录里开 Agent，让它读 `skills/ppt-master/SKILL.md`，效果等价。
+4. 仍然不行就走源码调用：直接在仓库目录里开 Agent，让它读 `skills/xmu-ppt/SKILL.md`，效果等价。
 
 ### 报 `ModuleNotFoundError` 或 `No module named 'pptx'`
 
@@ -17,9 +17,9 @@ Agent 用错了 Python。仓库里的脚本必须用装了依赖的那一个解�
 
 ```bash
 # Windows
-.\.venv\Scripts\python.exe skills/ppt-master/scripts/svg_to_pptx.py ...
+.\.venv\Scripts\python.exe skills/xmu-ppt/scripts/svg_to_pptx.py ...
 # macOS / Linux
-.venv/bin/python skills/ppt-master/scripts/svg_to_pptx.py ...
+.venv/bin/python skills/xmu-ppt/scripts/svg_to_pptx.py ...
 ```
 
 没建过虚拟环境就手动补核心依赖：`pip install python-pptx Pillow PyYAML requests`。
@@ -76,7 +76,7 @@ Agent 用错了 Python。仓库里的脚本必须用装了依赖的那一个解�
 ### 怎么更新到最新版
 
 ```bash
-python skills/ppt-master/scripts/update_repo.py
+python skills/xmu-ppt/scripts/update_repo.py
 ```
 
 它会先检查本地改动，**有未提交的修改会拒绝执行**——先 commit 或 stash 再跑；然后拉取最新代码，并且只在 `requirements.txt` 变化时才重装依赖。加 `--skip-pip` 可跳过依赖同步。ZIP 用户重新下载覆盖即可，注意先备份自己改过的模板。

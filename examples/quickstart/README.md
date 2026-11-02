@@ -27,12 +27,12 @@
 
 ## 复现导出
 
-在仓库根目录，使用已安装[核心依赖](../../skills/ppt-master/requirements-core.txt)的 Python：
+在仓库根目录，使用已安装[核心依赖](../../skills/xmu-ppt/requirements-core.txt)的 Python：
 
 ```bash
-python skills/ppt-master/scripts/svg_quality_checker.py examples/quickstart/svg_output --canonical-authoring
-python skills/ppt-master/scripts/svg_to_pptx.py examples/quickstart -s svg_output -o .cache/quickstart-demo.pptx -t none -a none
-python skills/ppt-master/scripts/review_pptx.py .cache/quickstart-demo.pptx --min-level warn
+python skills/xmu-ppt/scripts/svg_quality_checker.py examples/quickstart/svg_output --canonical-authoring
+python skills/xmu-ppt/scripts/svg_to_pptx.py examples/quickstart -s svg_output -o .cache/quickstart-demo.pptx -t none -a none
+python skills/xmu-ppt/scripts/review_pptx.py .cache/quickstart-demo.pptx --min-level warn
 ```
 
 复现命令写到 `.cache/`，不会覆盖已提交的示例。要更新展示产物，请先备份和比较，再显式替换 `examples/quickstart/demo.pptx`。

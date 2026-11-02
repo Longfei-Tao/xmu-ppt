@@ -9,18 +9,18 @@
 在支持该功能的 IDE 中打开仓库，完成 Python 环境准备。从仓库根目录执行：
 
 ```bash
-python -c "from pathlib import Path; import shutil; d=Path('.github/skills/ppt-master'); assert not d.exists(), 'Existing skill: back up and resolve first'; d.parent.mkdir(parents=True, exist_ok=True); shutil.copytree('skills/ppt-master', d, ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))"
+python -c "from pathlib import Path; import shutil; d=Path('.github/skills/xmu-ppt'); assert not d.exists(), 'Existing skill: back up and resolve first'; d.parent.mkdir(parents=True, exist_ok=True); shutil.copytree('skills/xmu-ppt', d, ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))"
 ```
 
 已有同名目录时停止，先备份比较。CC Switch 管理的技能由管理器分发。重新打开工作区，使用能执行终端命令的 Agent 模式发送：
 
 ```text
-请使用项目中的 ppt-master 技能，制作 10 页厦大风格的课程项目汇报。
+请使用项目中的 xmu-ppt 技能，制作 10 页厦大风格的课程项目汇报。
 主题是校园科研协作，只写方案建议，不编造研究结果。
 用仓库 .venv 的 Python 执行，最后给我 PPTX 路径。
 ```
 
-不要把普通补全模式或只读问答当作文件生成环境。不能发现技能时，手动指定 `skills/ppt-master/SKILL.md`，并确认它确实能访问脚本与模板。
+不要把普通补全模式或只读问答当作文件生成环境。不能发现技能时，手动指定 `skills/xmu-ppt/SKILL.md`，并确认它确实能访问脚本与模板。
 
 ## Copilot CLI 和云端 Agent
 

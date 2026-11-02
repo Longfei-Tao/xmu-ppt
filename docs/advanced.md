@@ -10,43 +10,43 @@
 
 ```bash
 # 1. 生成项目骨架
-python skills/ppt-master/scripts/project_manager.py init demo --format ppt169
+python skills/xmu-ppt/scripts/project_manager.py init demo --format ppt169
 
 # 2. 校验模板页（只检查素材库，不是成稿验收）
-python skills/ppt-master/scripts/svg_quality_checker.py \
-  skills/ppt-master/templates/decks/厦门大学_官方_厦园晴日 --template-mode --canonical-authoring
+python skills/xmu-ppt/scripts/svg_quality_checker.py \
+  skills/xmu-ppt/templates/decks/厦门大学_官方_厦园晴日 --template-mode --canonical-authoring
 
 # 3. Agent 在实际项目目录写好页面与 spec_lock 后，先检查成稿再导出
 # init 打印的目录一般为 projects/demo_ppt169_YYYYMMDD，请用日志中的实际值
-python skills/ppt-master/scripts/svg_quality_checker.py "<实际项目目录>/svg_output" --canonical-authoring
-python skills/ppt-master/scripts/svg_to_pptx.py "<实际项目目录>" -s svg_output -t fade -a none
+python skills/xmu-ppt/scripts/svg_quality_checker.py "<实际项目目录>/svg_output" --canonical-authoring
+python skills/xmu-ppt/scripts/svg_to_pptx.py "<实际项目目录>" -s svg_output -t fade -a none
 ```
 
 ### B. 原生填充
 
 ```bash
 # 1. 看版式清单，决定用哪几页
-cat skills/ppt-master/templates/decks/厦门大学_主题_凤凰花开/layout_index.json
+cat skills/xmu-ppt/templates/decks/厦门大学_主题_凤凰花开/layout_index.json
 
 # 2. 生成填充计划骨架（--slides 是源页号，可重复、可重排）
-python skills/ppt-master/scripts/template_fill_pptx.py scaffold \
-  skills/ppt-master/templates/decks/厦门大学_主题_凤凰花开/source.slide_library.json \
+python skills/xmu-ppt/scripts/template_fill_pptx.py scaffold \
+  skills/xmu-ppt/templates/decks/厦门大学_主题_凤凰花开/source.slide_library.json \
   -o fill_plan.json --slides "1,2,3,5,8"
 
 # 3. 手改 fill_plan.json 里的 text
 
 # 4. 校验容量，再导出
-python skills/ppt-master/scripts/template_fill_pptx.py check-plan \
-  skills/ppt-master/templates/decks/厦门大学_主题_凤凰花开/source.slide_library.json fill_plan.json
-python skills/ppt-master/scripts/template_fill_pptx.py apply \
-  skills/ppt-master/templates/decks/厦门大学_主题_凤凰花开/source.pptx fill_plan.json -o out.pptx
+python skills/xmu-ppt/scripts/template_fill_pptx.py check-plan \
+  skills/xmu-ppt/templates/decks/厦门大学_主题_凤凰花开/source.slide_library.json fill_plan.json
+python skills/xmu-ppt/scripts/template_fill_pptx.py apply \
+  skills/xmu-ppt/templates/decks/厦门大学_主题_凤凰花开/source.pptx fill_plan.json -o out.pptx
 # 输出自动附加时间戳，后续检查请使用日志中的实际文件路径。
 ```
 
 ### C. 新增一套模板
 
 ```bash
-python skills/ppt-master/scripts/build_layout_index.py \
+python skills/xmu-ppt/scripts/build_layout_index.py \
   "D:/我的模板/某套模板.pptx" --deck-id 厦门大学_主题_某套
 ```
 
@@ -55,7 +55,7 @@ python skills/ppt-master/scripts/build_layout_index.py \
 ### D. 生成后自检（两条路线都适用）
 
 ```bash
-python skills/ppt-master/scripts/review_pptx.py "<实际导出路径>.pptx" --min-level warn
+python skills/xmu-ppt/scripts/review_pptx.py "<实际导出路径>.pptx" --min-level warn
 ```
 
 直接读 PPTX 的 OOXML 做版面体检，不需要打开 PowerPoint，也不需要截图：
@@ -79,7 +79,7 @@ python skills/ppt-master/scripts/review_pptx.py "<实际导出路径>.pptx" --mi
 
 - **Python 3.10+**（脚本使用 `X | None` 形式的类型注解，3.9 会在导入时抛 `TypeError`）
 - 核心：`requirements-core.txt`（`python-pptx`、`PyYAML`、`Pillow`、`requests`），默认出稿不需要图片生成 API 或 TTS
-- 按需：PDF / Word / Excel 转换、图片搜索、TTS 等，完整清单见 `skills/ppt-master/requirements.txt`
+- 按需：PDF / Word / Excel 转换、图片搜索、TTS 等，完整清单见 `skills/xmu-ppt/requirements.txt`
 - 可选：`cairosvg` 或 `svglib`（导出时生成 PNG 后备图）、`playwright`（逐页视觉复核）
 - 可选：Microsoft PowerPoint（用于导出 PNG 预览）
 
@@ -87,7 +87,7 @@ python skills/ppt-master/scripts/review_pptx.py "<实际导出路径>.pptx" --mi
 
 ```bash
 python -m unittest discover -s tests -v
-python skills/ppt-master/scripts/audit_xmu.py --check-svg --json .cache/xmu-audit.json
+python skills/xmu-ppt/scripts/audit_xmu.py --check-svg --json .cache/xmu-audit.json
 python scripts/check_docs.py
 ```
 
