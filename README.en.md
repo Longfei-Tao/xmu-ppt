@@ -71,6 +71,16 @@ Return the actual PPTX path and any material limitations.
 
 Native discovery instructions are documented for [Codex](docs/tools/codex.md), [Claude Code](docs/tools/claude-code.md), [GitHub Copilot](docs/tools/copilot.md), and [Gemini CLI](docs/tools/gemini-cli.md). Documentation adaptation does not mean end-to-end compatibility has been tested. If CC Switch manages your skills, maintain and distribute them there instead of overwriting generated client copies.
 
+No Git? Download [main.zip](https://github.com/Longfei-Tao/xmu-ppt/archive/refs/heads/main.zip) and run the same commands inside the extracted `xmu-ppt-main` folder. ZIP copies cannot be updated with `git pull`; download again to upgrade.
+
+### Updating
+
+```bash
+python skills/ppt-master/scripts/update_repo.py
+```
+
+It refuses to run while you have uncommitted local changes, then pulls the latest code and reinstalls dependencies only when `requirements.txt` changed (`--skip-pip` skips that step). `git pull` works too, but can overwrite files you have edited.
+
 ## Limits and licensing
 
 The Nanqiang Weilan style currently supports SVG export only. Font availability and the target presentation app can change layout. Review every slide before presenting; native text does not imply that every chart or object is editable.

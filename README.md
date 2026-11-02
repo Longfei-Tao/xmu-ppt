@@ -7,7 +7,7 @@
 
 把主题、提纲或现有材料，整理成厦大风格的演示文稿。由 AI Agent 逐页排版，导出**文字可编辑**的 `.pptx`。
 
-**[在线逐页预览](https://longfei-tao.github.io/xmu-ppt/)** · [快速开始](docs/quickstart.md) · [模板风格](docs/templates.md) · [选择你的 AI 工具](docs/tools/README.md) · [English](README.en.md)
+**[在线逐页预览](https://longfei-tao.github.io/xmu-ppt/)** · [快速开始](docs/quickstart.md) · [模板风格](docs/templates.md) · [常见问题](docs/faq.md) · [选择你的 AI 工具](docs/tools/README.md) · [English](README.en.md)
 
 <table>
   <tr>
@@ -38,6 +38,8 @@
 | **是** | 14 套厦大模板（3 套精修 + 11 套主题），其中 13 套支持直接在原始 PPTX 里填内容 |
 | **不是** | 不是在线生成服务，也不是插件商店里的安装包；需要本地 Python 和能执行命令的 Agent |
 | **不保证** | 复杂图表与原版式完全还原；照片仍是图片。上台前请用演示软件逐页检查 |
+
+默认**不跑多轮确认**：给足主题就直接出稿，不会先问你三轮“材料是什么、设计怎么做、要几页”。答辩前一晚你会需要这一点。
 
 ## 两条路线
 
@@ -70,25 +72,36 @@
 
 ## 快速开始
 
-需要 **Python 3.10+**、Git，以及能读取文件和运行 Python 的 AI Agent。先在本机终端准备源码和依赖：
+需要 **Python 3.10+**、Git（或改用下面的 ZIP 方式），以及能读取文件和运行 Python 的 AI Agent。
+
+### 准备源码
+
+**方式 A · Git（推荐，后续可一行命令更新）**
 
 ```bash
 git clone https://github.com/Longfei-Tao/xmu-ppt.git xmu-ppt
 cd xmu-ppt
-python -m venv .venv
 ```
 
-按系统安装核心依赖：
+**方式 B · 下载 ZIP（没装 Git 时用）**
+
+下载 [main.zip](https://github.com/Longfei-Tao/xmu-ppt/archive/refs/heads/main.zip) 并解压，进入解压出来的 `xmu-ppt-main` 目录。ZIP 版没有 git 历史，升级时重新下载覆盖，先备份自己改过的模板。
+
+### 安装依赖
 
 ```powershell
 # Windows PowerShell
+python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r skills/ppt-master/requirements-core.txt
 ```
 
 ```bash
 # macOS / Linux
+python3 -m venv .venv
 .venv/bin/python -m pip install -r skills/ppt-master/requirements-core.txt
 ```
+
+### 把需求交给 Agent
 
 在 AI 工具中打开这个仓库，把下面一段发给它，即可先从源码使用，无需修改全局配置：
 
@@ -99,6 +112,22 @@ python -m venv .venv
 ```
 
 第一次使用时把“上一条需求”替换成自己的主题，或先发送上面的示例需求。完整步骤、环境说明及常见问题见[快速开始](docs/quickstart.md)。
+
+### 更新到最新版
+
+```bash
+python skills/ppt-master/scripts/update_repo.py
+```
+
+它会先检查本地改动，有未提交的修改就停下让你处理；然后拉取最新代码，**只在 `requirements.txt` 变化时**才重装依赖，加 `--skip-pip` 可跳过依赖同步。ZIP 用户重新下载覆盖即可。
+
+已有仓库也可以直接用 git：
+
+```bash
+git pull
+```
+
+注意 `git pull` 会覆盖同名文件，自己改过的模板请先另存或提交到独立分支。
 
 ## 在你的 AI 工具中使用
 
@@ -111,6 +140,8 @@ python -m venv .venv
 | 网页聊天或其他工具 | [环境要求与手动流程](docs/tools/README.md) | 有文件执行环境才可能运行；不承诺原生安装 |
 
 使用 CC Switch 管理共享 Skills 时，请在 CC Switch 中维护和分发；不要直接覆盖它生成的客户端副本。本仓库尚未提供插件商店安装包或远程 MCP 服务。
+
+**用哪个模型？** 本仓库不调用模型，排版与文案由你选的 Agent 完成，所以任何能执行命令的 Claude / GPT / Gemini / 本地模型都能跑。差异主要来自上下文窗口：稿子越长，模型越容易忘记 `spec_lock.md` 里的配色与字号，10 页以上建议用上下文大的模型。
 
 ## 选择风格
 
@@ -133,7 +164,8 @@ python -m venv .venv
 
 | 文档 | 内容 |
 | --- | --- |
-| [快速开始](docs/quickstart.md) | 环境准备、首次出稿、常见问题 |
+| [快速开始](docs/quickstart.md) | 环境准备、首次出稿、没有 Git 怎么装 |
+| [常见问题](docs/faq.md) | 安装、依赖、换行、容量、更新、素材边界 |
 | [模板总览](docs/templates.md) | 14 套模板清单与既有原型 |
 | [进阶命令](docs/advanced.md) | 完整依赖、可选工具、批量命令 |
 | [选择你的 AI 工具](docs/tools/README.md) | 各宿主的技能目录与调用方式 |

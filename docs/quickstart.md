@@ -23,6 +23,15 @@ python skills/ppt-master/scripts/svg_to_pptx.py examples/quickstart -s svg_outpu
 
 这是已有 SVG 的导出，不是自动生成新主题；预期结果是 `.cache/first-demo.pptx`。下载已有产物也可直接[查看演示](../examples/quickstart/demo.pptx)。
 
+### 没有 Git
+
+下载 [ZIP 压缩包](https://github.com/Longfei-Tao/xmu-ppt/archive/refs/heads/main.zip)，解压到任意目录，然后在解压出来的目录里建 `.venv` 并安装依赖，步骤与上表一致。
+
+两点区别：
+
+- 解压后的目录名是 `xmu-ppt-main`，本文其他命令里的路径请按实际目录名替换；
+- ZIP 版没有 git 历史，不能用 `git pull` 或 `update_repo.py` 更新，升级时重新下载覆盖即可（先备份自己改过的模板）。
+
 ## 2. 把主题告诉 Agent
 
 在 AI 工具中打开仓库，发送下面的完整需求：
@@ -69,12 +78,8 @@ python skills/ppt-master/scripts/svg_to_pptx.py examples/quickstart -s svg_outpu
 
 ## 常见问题
 
-**找不到 `ppt-master`？** `skills/ppt-master` 是源码目录，不一定是工具自动发现的安装目录。先用上面的源码调用，或按[对应工具入口](tools/README.md)安装完整目录。不要只复制 `SKILL.md`。
+安装失败、依赖缺失、换行不一致、模型选择、更新与素材边界，统一收在[常见问题](faq.md)。这里只留两条最常撞上的：
 
-**提示缺少模块？** 先确认 Agent 用的是安装了依赖的那一个 Python。核心依赖不包含所有输入格式转换工具；按实际报错安装所需可选项。
-
-**PPT 能打开但换行不同？** 对照制作与播放机器的字体。仓库不附带字体文件；换字体后重新检查版面，不承诺固定回退到某一种中文字体。
+**找不到 `ppt-master`？** `skills/ppt-master` 是源码目录，不一定是工具自动发现的安装目录。先用上面的源码调用，或按[对应工具入口](tools/README.md)安装完整目录；不要只复制 `SKILL.md`。
 
 **想只用 Python 输入主题自动生成？** 当前没有这样的独立主题生成命令。脚本需要由 Agent 提供 SVG 页面或填充计划。
-
-**希望做校外或商业展示？** 先检查[素材待核验清单](assets.md)，代码的 MIT 许可不等于校方素材获授权。
