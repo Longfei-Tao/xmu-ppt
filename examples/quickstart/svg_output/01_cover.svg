@@ -4,7 +4,7 @@
   <rect x="880" y="0" width="400" height="720" fill="#EDF5FC"/>
   <path d="M880 720 L1280 320 L1280 720 Z" fill="#BAE2FF"/>
   <path d="M960 720 L1280 400" stroke="#005FA5" stroke-width="2" fill="none"/>
-  <text x="80" y="90" font-family="Microsoft YaHei" font-size="20" fill="#005FA5">XMU PPT MASTER / 工作流演示</text>
+  <text x="80" y="90" font-family="Microsoft YaHei" font-size="20" fill="#005FA5">xmu-ppt / 工作流演示</text>
   <rect x="80" y="213" width="64" height="6" fill="#005FA5"/>
   <text x="80" y="304" font-family="Microsoft YaHei" font-size="56" font-weight="bold" fill="#17324D">校园科研协作</text>
   <text x="80" y="382" font-family="Microsoft YaHei" font-size="56" font-weight="bold" fill="#17324D">项目汇报</text>

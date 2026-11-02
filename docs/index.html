@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>xmu-ppt · 在线预览</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --panel:#ffffff; --ink:#1b1f2a; --muted:#6b7280;
+    --line:#e3e6ec; --accent:#4661cc; --accent-soft:#eef1fb;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    display:flex; flex-direction:column;
+  }
+  header{
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    padding:16px 24px; border-bottom:1px solid var(--line); background:var(--panel);
+    flex-wrap:wrap;
+  }
+  .brand{display:flex; align-items:baseline; gap:12px; min-width:0}
+  .brand b{font-size:16px; letter-spacing:.2px}
+  .brand span{color:var(--muted); font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .brand a{color:var(--accent); text-decoration:none; font-size:13px}
+  .brand a:hover{text-decoration:underline}
+  .decks{display:flex; gap:6px; flex-wrap:wrap}
+  .decks button{
+    border:1px solid var(--line); background:var(--panel); color:var(--muted);
+    padding:6px 14px; border-radius:999px; font-size:13px; cursor:pointer;
+    transition:background .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .decks button:hover{border-color:#c9cfe0; color:var(--ink)}
+  .decks button[aria-pressed="true"]{background:var(--accent-soft); border-color:#c3cdf2; color:var(--accent); font-weight:600}
+  main{flex:1; display:flex; align-items:center; justify-content:center; padding:20px 24px 8px; min-height:0}
+  .stage{
+    width:100%;
+    max-width:min(1180px, calc((100vh - 250px) * 16 / 9));
+    background:#fff; border-radius:10px;
+    box-shadow:0 1px 2px rgba(20,24,40,.05), 0 12px 32px rgba(20,24,40,.07);
+    overflow:hidden; line-height:0;
+  }
+  .stage img{width:100%; height:auto; display:block; aspect-ratio:16/9; object-fit:contain; background:#fff}
+  footer{display:flex; align-items:center; justify-content:center; gap:18px; padding:10px 24px 0}
+  .nav{
+    width:36px; height:36px; border-radius:50%; border:1px solid var(--line); background:var(--panel);
+    color:var(--ink); font-size:18px; line-height:1; cursor:pointer; display:grid; place-items:center;
+    transition:background .15s ease, border-color .15s ease;
+  }
+  .nav:hover:not(:disabled){background:#fbfbfd; border-color:#c9cfe0}
+  .nav:disabled{opacity:.35; cursor:default}
+  .counter{font-variant-numeric:tabular-nums; color:var(--muted); font-size:13px; min-width:64px; text-align:center}
+  .thumbs{
+    display:flex; gap:8px; overflow-x:auto; padding:14px 24px 20px;
+    scrollbar-width:thin;
+  }
+  .thumbs button{
+    flex:0 0 auto; padding:0; border:2px solid transparent; border-radius:6px; background:none;
+    cursor:pointer; line-height:0; opacity:.62; transition:opacity .15s ease, border-color .15s ease;
+  }
+  .thumbs button:hover{opacity:1}
+  .thumbs button[aria-current="true"]{border-color:var(--accent); opacity:1}
+  .thumbs img{width:104px; aspect-ratio:16/9; object-fit:cover; border-radius:4px; background:#eef0f4}
+  .hint{color:var(--muted); font-size:12px; text-align:center; padding-bottom:14px}
+  kbd{
+    font:11px/1 ui-monospace,monospace; border:1px solid var(--line); border-bottom-width:2px;
+    border-radius:4px; padding:2px 5px; background:var(--panel); color:var(--muted);
+  }
+  @media (max-width:640px){
+    .brand span{display:none}
+    .thumbs img{width:76px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <b>xmu-ppt</b>
+    <span>厦门大学 PPT 模板 · 在线预览</span>
+    <a href="https://github.com/Longfei-Tao/xmu-ppt">GitHub ↗</a>
+  </div>
+  <div class="decks" id="decks"></div>
+</header>
+
+<main>
+  <div class="stage"><img id="slide" alt=""></div>
+</main>
+
+<footer>
+  <button class="nav" id="prev" aria-label="上一页">‹</button>
+  <span class="counter" id="counter"></span>
+  <button class="nav" id="next" aria-label="下一页">›</button>
+</footer>
+
+<div class="thumbs" id="thumbs"></div>
+<div class="hint">← → 翻页 · Home / End 跳首尾 · 点击缩略图跳转</div>
+
+<script>
+const DECKS = {
+  defense: {
+    label: "答辩 · 厦园晴日",
+    dir: "preview/defense/",
+    ext: ".webp",
+    pages: 14
+  },
+  group: {
+    label: "组会汇报 · 南强蔚蓝",
+    dir: "preview/group/",
+    ext: ".webp",
+    pages: 11
+  },
+  native: {
+    label: "原生填充 · 凤凰花开",
+    dir: "preview/native/",
+    ext: ".webp",
+    pages: 9
+  }
+};
+
+const state = { deck: "defense", index: 0 };
+
+const el = {
+  decks: document.getElementById("decks"),
+  slide: document.getElementById("slide"),
+  counter: document.getElementById("counter"),
+  prev: document.getElementById("prev"),
+  next: document.getElementById("next"),
+  thumbs: document.getElementById("thumbs")
+};
+
+function srcFor(deck, i){
+  const d = DECKS[deck];
+  return d.dir + String(i + 1).padStart(2, "0") + d.ext;
+}
+
+function renderDecks(){
+  el.decks.innerHTML = "";
+  for (const [key, d] of Object.entries(DECKS)){
+    const b = document.createElement("button");
+    b.textContent = d.label;
+    b.setAttribute("aria-pressed", String(key === state.deck));
+    b.addEventListener("click", () => go(key, 0));
+    el.decks.appendChild(b);
+  }
+}
+
+function renderThumbs(){
+  el.thumbs.innerHTML = "";
+  const total = DECKS[state.deck].pages;
+  for (let i = 0; i < total; i++){
+    const b = document.createElement("button");
+    b.setAttribute("aria-current", String(i === state.index));
+    b.addEventListener("click", () => go(state.deck, i));
+    const img = document.createElement("img");
+    img.loading = "lazy";
+    img.alt = "第 " + (i + 1) + " 页";
+    img.src = srcFor(state.deck, i);
+    b.appendChild(img);
+    el.thumbs.appendChild(b);
+  }
+  const active = el.thumbs.children[state.index];
+  if (active) active.scrollIntoView({ block: "nearest", inline: "center" });
+}
+
+function render(){
+  const total = DECKS[state.deck].pages;
+  el.slide.src = srcFor(state.deck, state.index);
+  el.slide.alt = DECKS[state.deck].label + " 第 " + (state.index + 1) + " 页";
+  el.counter.textContent = (state.index + 1) + " / " + total;
+  el.prev.disabled = state.index === 0;
+  el.next.disabled = state.index === total - 1;
+  history.replaceState(null, "", "#" + state.deck + "/" + (state.index + 1));
+}
+
+function go(deck, index){
+  state.deck = DECKS[deck] ? deck : "defense";
+  const max = DECKS[state.deck].pages - 1;
+  state.index = Math.min(Math.max(index, 0), max);
+  renderDecks(); renderThumbs(); render();
+}
+
+function step(delta){
+  go(state.deck, state.index + delta);
+}
+
+el.prev.addEventListener("click", () => step(-1));
+el.next.addEventListener("click", () => step(1));
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowLeft") step(-1);
+  else if (e.key === "ArrowRight") step(1);
+  else if (e.key === "Home") go(state.deck, 0);
+  else if (e.key === "End") go(state.deck, DECKS[state.deck].pages - 1);
+});
+
+// #report/7 → 直接打开某一页
+(function init(){
+  const m = location.hash.match(/^#([a-z]+)\/(\d+)$/);
+  if (m) go(m[1], parseInt(m[2], 10) - 1);
+  else go("report", 0);
+})();
+</script>
+</body>
+</html>

@@ -1,14 +1,43 @@
 # xmu-ppt — Xiamen University PPT templates
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Templates](https://img.shields.io/badge/templates-14-4661CC)](docs/templates.md)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)](docs/quickstart.md)
+[![GitHub stars](https://img.shields.io/github/stars/Longfei-Tao/xmu-ppt.svg)](https://github.com/Longfei-Tao/xmu-ppt/stargazers)
+
 Turn a topic, outline, or source material into a Xiamen University style presentation with a file-capable AI agent.
+
+**[Browse every slide online](https://longfei-tao.github.io/xmu-ppt/)** · [中文首页](README.md) · [Getting started (Chinese)](docs/quickstart.md) · [Tool setup](docs/tools/README.md)
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <a href="https://longfei-tao.github.io/xmu-ppt/#defense/1"><img src="docs/assets/screenshots/defense-cover.webp" alt="Thesis defense cover, Xiayuan Qingri template" /></a><br/>
+      <sub><b>Xiayuan Qingri</b> — 14-slide defense deck: emblem, campus photography and type scale kept</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://longfei-tao.github.io/xmu-ppt/#group/8"><img src="docs/assets/screenshots/report-content.webp" alt="Group meeting content slide, Nanqiang Weilan template" /></a><br/>
+      <sub><b>Nanqiang Weilan</b> — 11-slide group report: body layouts recomposed per page, not card grids</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://longfei-tao.github.io/xmu-ppt/#native/3"><img src="docs/assets/screenshots/native-chapter.webp" alt="Native-filled chapter slide, Phoenix Flower template" /></a><br/>
+      <sub><b>Phoenix Flower</b> — 9 slides filled inside the original PPTX; photos and bars untouched</sub>
+    </td>
+  </tr>
+</table>
+
+<sub>All three are PowerPoint screenshots of real exported files, not design mockups. [Flip through them online →](https://longfei-tao.github.io/xmu-ppt/)</sub>
 
 > Repository and project name: `xmu-ppt`. The skill inside is still named `ppt-master` after its upstream. Former names `xmu-ppt-master` and "XMU PPT Master" refer to this same repository.
 
-[中文首页](README.md) · [Getting started (Chinese)](docs/quickstart.md) · [Tool setup](docs/tools/README.md)
+## What it is, and what it is not
 
-![Four original sample slides rendered from the exported PPTX in PowerPoint](examples/quickstart/preview/overview.png)
-
-This is an original blue-and-white workflow demo, not a real research report. It contains no university logo or campus photography. [Download the PPTX](examples/quickstart/demo.pptx) or inspect the [brief and SVG sources](examples/quickstart/README.md). See the [existing template gallery](docs/templates.md) for university-branded layouts.
+| | |
+| --- | --- |
+| **Is** | An Agent Skill: give it a topic or material, it authors each SVG page and exports an editable `.pptx` |
+| **Is** | 14 XMU template decks (3 refined + 11 themed); 13 of them can also fill an existing PPTX in place |
+| **Is not** | Not an online service and not a marketplace plugin; it needs local Python and an agent that can run commands |
+| **Not guaranteed** | Complex charts and original layouts are not reproduced exactly, and photos stay as images |
 
 ## What it does
 

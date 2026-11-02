@@ -1,18 +1,54 @@
 # xmu-ppt · 厦门大学 PPT 模板
 
-把主题、提纲或现有材料，整理成厦大风格的演示文稿。
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![模板](https://img.shields.io/badge/%E6%A8%A1%E6%9D%BF-14%20%E5%A5%97-4661CC)](docs/templates.md)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)](docs/quickstart.md)
+[![GitHub stars](https://img.shields.io/github/stars/Longfei-Tao/xmu-ppt.svg)](https://github.com/Longfei-Tao/xmu-ppt/stargazers)
 
-面向论文答辩、科研组会、课程展示与校园项目汇报。基于 [PPT Master](https://github.com/hugohe3/ppt-master) 的 SVG → PPTX 引擎，提供 **14 套厦大 SVG 模板、13 套原生填充模板**，由 AI Agent 组织内容、排版并导出 `.pptx`。
+把主题、提纲或现有材料，整理成厦大风格的演示文稿。由 AI Agent 逐页排版，导出**文字可编辑**的 `.pptx`。
 
-> 仓库与项目名统一为 `xmu-ppt`；内部技能名沿用上游的 `ppt-master`。此前用过的 `xmu-ppt-master`、XMU PPT Master 均指本仓库。
+**[在线逐页预览](https://longfei-tao.github.io/xmu-ppt/)** · [快速开始](docs/quickstart.md) · [模板风格](docs/templates.md) · [选择你的 AI 工具](docs/tools/README.md) · [English](README.en.md)
 
-[快速开始](docs/quickstart.md) · [选择你的 AI 工具](docs/tools/README.md) · [模板风格](docs/templates.md) · [English](README.en.md)
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <a href="https://longfei-tao.github.io/xmu-ppt/#defense/1"><img src="docs/assets/screenshots/defense-cover.webp" alt="厦园晴日硕士答辩稿封面" /></a><br/>
+      <sub><b>厦园晴日</b> — 硕士答辩 14 页：校徽、校园照片与标题层级按模板还原</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://longfei-tao.github.io/xmu-ppt/#group/8"><img src="docs/assets/screenshots/report-content.webp" alt="南强蔚蓝组会汇报内容页" /></a><br/>
+      <sub><b>南强蔚蓝</b> — 组会汇报 11 页：正文版式按内容重排，不是每页套卡片</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://longfei-tao.github.io/xmu-ppt/#native/3"><img src="docs/assets/screenshots/native-chapter.webp" alt="凤凰花开原生填充章节页" /></a><br/>
+      <sub><b>凤凰花开</b> — 原生填充 9 页：在原 PPTX 里换字，照片与色条不动</sub>
+    </td>
+  </tr>
+</table>
 
-![自主编写的蓝白演示稿：封面、目录、正文和示意图表，来自实际 PPTX 的 PowerPoint 截图](examples/quickstart/preview/overview.png)
-
-上图是本仓库引擎导出的四页演示，使用虚构示意内容，不含校徽或校园照片，不代表完整厦大品牌模板。[下载 PPTX](examples/quickstart/demo.pptx) · [查看需求、源稿与单页大图](examples/quickstart/README.md)。已有校徽模板的外观见[模板总览](docs/templates.md)。
+<sub>三张图都是 PowerPoint 打开真实导出产物的截图，不是设计稿。[在线翻完这三套 →](https://longfei-tao.github.io/xmu-ppt/)</sub>
 
 > 非官方个人项目，与厦门大学不存在已确认的授权或合作关系。代码与模板结构适用 [MIT](LICENSE)；校徽、照片、字体等不因此获得授权。部分既有素材的公开再分发条件仍[待核验](docs/assets.md)。
+
+## 这是什么
+
+| | |
+| --- | --- |
+| **是** | 一个 AI Agent 技能：给它主题或材料，它逐页手写 SVG，再导出可编辑 PPTX |
+| **是** | 14 套厦大模板（3 套精修 + 11 套主题），其中 13 套支持直接在原始 PPTX 里填内容 |
+| **不是** | 不是在线生成服务，也不是插件商店里的安装包；需要本地 Python 和能执行命令的 Agent |
+| **不保证** | 复杂图表与原版式完全还原；照片仍是图片。上台前请用演示软件逐页检查 |
+
+## 两条路线
+
+模板保真和排版自由是矛盾的，所以分成两条路；只给主题时默认第二条。
+
+| 你的说法 | 路线 | 做法 | 代价 |
+| --- | --- | --- | --- |
+| 「用这个模板」「别改我的样式」「表格图表要原样」 | 原生填充 | 克隆源页 + 改 `fill_plan`，不生成 SVG | 版式受槽位约束，文字长度有硬上限 |
+| 只给主题或材料，排版可以自由 | SVG 出稿 | 逐页手写 SVG 再导出 | 每页重画，模板保真度中等 |
+
+原生填充可用 13 套；`南强蔚蓝` 原始文件是 `.ppt`，仅支持 SVG 路线。
 
 ## 输入与输出
 
@@ -86,6 +122,23 @@ python -m venv .venv
 
 还有凤凰花开、经典蓝白、米金书法等 11 套主题。[查看完整清单与既有原型](docs/templates.md)。
 
+## 示例与文档
+
+| 示例 | 内容 |
+| --- | --- |
+| [四页工作流演示](examples/quickstart/) | 不含校徽与照片，用于验证导出链路是否可用 |
+| [硕士答辩 14 页](examples/房颤NLRP3答辩_厦园晴日.pptx) | 厦园晴日，含校园照片与原生文字 |
+| [组会汇报 11 页](examples/组会汇报_南强蔚蓝.pptx) | 南强蔚蓝，逐页按内容重排 |
+| [原生填充 9 页](examples/原生填充_凤凰花开.pptx) | 在原始模板里填字，版式未改动 |
+
+| 文档 | 内容 |
+| --- | --- |
+| [快速开始](docs/quickstart.md) | 环境准备、首次出稿、常见问题 |
+| [模板总览](docs/templates.md) | 14 套模板清单与既有原型 |
+| [进阶命令](docs/advanced.md) | 完整依赖、可选工具、批量命令 |
+| [选择你的 AI 工具](docs/tools/README.md) | 各宿主的技能目录与调用方式 |
+| [素材与许可](docs/assets.md) | 校徽、照片、字体的边界与核验状态 |
+
 ## 使用前了解
 
 - **生成需要 Agent。** Python 脚本负责分析、转换与检查，不会独立调用大模型完成主题创作；AI 工具本身的账号或费用另计。
@@ -93,5 +146,9 @@ python -m venv .venv
 - **效果受环境影响。** 缺少字体会改变换行；SVG 转换与原生填充也各有边界。上台前请用目标演示软件检查全部页面。
 - **数据不自动“全程本地”。** 转换脚本在执行环境运行，交给 AI 的材料仍受所选工具的数据政策影响；云端也无法直接访问本机路径。
 - **学校素材单独核验。** 公开下载入口不等于公开再分发许可；本项目不代表厦门大学官方出品。
+
+---
+
+<sub>项目名 `xmu-ppt`；技能名沿用上游的 `ppt-master`。旧称 `xmu-ppt-master`、XMU PPT Master 均指本仓库。</sub>
 
 [进阶命令与依赖](docs/advanced.md) · [贡献指南](CONTRIBUTING.md) · [素材与许可](docs/assets.md) · [上游致谢](CREDITS.md)
