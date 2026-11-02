@@ -1,5 +1,6 @@
 # xmu-ppt · 厦门大学 PPT 模板
 
+[![Version](https://img.shields.io/github/v/release/Longfei-Tao/xmu-ppt?label=version&color=blue)](https://github.com/Longfei-Tao/xmu-ppt/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![模板](https://img.shields.io/badge/%E6%A8%A1%E6%9D%BF-14%20%E5%A5%97-4661CC)](docs/templates.md)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)](docs/quickstart.md)
