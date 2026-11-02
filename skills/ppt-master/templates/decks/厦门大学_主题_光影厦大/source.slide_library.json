@@ -1,6 +1,6 @@
 {
   "schema": "template_fill_pptx_library.v1",
-  "source_pptx": "D:\\Coding\\xmu-ppt-master\\skills\\ppt-master\\templates\\decks\\厦门大学_主题_光影厦大\\source.pptx",
+  "source_pptx": "skills/ppt-master/templates/decks/厦门大学_主题_光影厦大/source.pptx",
   "slide_count": 9,
   "canvas_px": {
     "width": 1280,

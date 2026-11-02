@@ -10,6 +10,7 @@ venv/
 projects/
 exports/
 backup/
+output/
 *.trace.json
 
 # 本地配置

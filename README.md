@@ -1,8 +1,10 @@
-# 厦门大学 PPT / XMU PPT Master
+# xmu-ppt · 厦门大学 PPT 模板
 
 把主题、提纲或现有材料，整理成厦大风格的演示文稿。
 
 面向论文答辩、科研组会、课程展示与校园项目汇报。基于 [PPT Master](https://github.com/hugohe3/ppt-master) 的 SVG → PPTX 引擎，提供 **14 套厦大 SVG 模板、13 套原生填充模板**，由 AI Agent 组织内容、排版并导出 `.pptx`。
+
+> 仓库与项目名统一为 `xmu-ppt`；内部技能名沿用上游的 `ppt-master`。此前用过的 `xmu-ppt-master`、XMU PPT Master 均指本仓库。
 
 [快速开始](docs/quickstart.md) · [选择你的 AI 工具](docs/tools/README.md) · [模板风格](docs/templates.md) · [English](README.en.md)
 
@@ -35,8 +37,8 @@
 需要 **Python 3.10+**、Git，以及能读取文件和运行 Python 的 AI Agent。先在本机终端准备源码和依赖：
 
 ```bash
-git clone https://github.com/Longfei-Tao/xmu-ppt.git xmu-ppt-master
-cd xmu-ppt-master
+git clone https://github.com/Longfei-Tao/xmu-ppt.git xmu-ppt
+cd xmu-ppt
 python -m venv .venv
 ```
 

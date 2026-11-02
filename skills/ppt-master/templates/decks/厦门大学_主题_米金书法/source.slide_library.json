@@ -1,6 +1,6 @@
 {
   "schema": "template_fill_pptx_library.v1",
-  "source_pptx": "D:\\Coding\\xmu-ppt-master\\skills\\ppt-master\\templates\\decks\\厦门大学_主题_米金书法\\source.pptx",
+  "source_pptx": "skills/ppt-master/templates/decks/厦门大学_主题_米金书法/source.pptx",
   "slide_count": 22,
   "canvas_px": {
     "width": 1280,

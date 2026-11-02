@@ -1,6 +1,8 @@
-# XMU PPT Master
+# xmu-ppt — Xiamen University PPT templates
 
 Turn a topic, outline, or source material into a Xiamen University style presentation with a file-capable AI agent.
+
+> Repository and project name: `xmu-ppt`. The skill inside is still named `ppt-master` after its upstream. Former names `xmu-ppt-master` and "XMU PPT Master" refer to this same repository.
 
 [中文首页](README.md) · [Getting started (Chinese)](docs/quickstart.md) · [Tool setup](docs/tools/README.md)
 
@@ -22,8 +24,8 @@ This repository is an Agent Skill with local tools. It is not a standalone topic
 Install Python 3.10+ and Git, then clone the repository and create a virtual environment:
 
 ```bash
-git clone https://github.com/Longfei-Tao/xmu-ppt.git xmu-ppt-master
-cd xmu-ppt-master
+git clone https://github.com/Longfei-Tao/xmu-ppt.git xmu-ppt
+cd xmu-ppt
 python -m venv .venv
 ```
 

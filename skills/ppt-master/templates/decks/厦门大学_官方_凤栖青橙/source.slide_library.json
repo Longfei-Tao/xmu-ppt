@@ -1,6 +1,6 @@
 {
   "schema": "template_fill_pptx_library.v1",
-  "source_pptx": "D:\\Coding\\xmu-ppt-master\\skills\\ppt-master\\templates\\decks\\厦门大学_官方_凤栖青橙\\source.pptx",
+  "source_pptx": "skills/ppt-master/templates/decks/厦门大学_官方_凤栖青橙/source.pptx",
   "slide_count": 18,
   "canvas_px": {
     "width": 1280,
