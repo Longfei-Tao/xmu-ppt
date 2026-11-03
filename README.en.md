@@ -7,7 +7,7 @@
 
 Turn a topic, outline, or source material into a Xiamen University style presentation with a file-capable AI agent. Built on the SVG → PPTX engine of [PPT Master](https://github.com/hugohe3/ppt-master) (MIT), adding 14 XMU template decks and two authoring routes.
 
-**[Browse every slide online](https://longfei-tao.github.io/xmu-ppt/)** · [中文首页](README.md) · [Getting started (Chinese)](docs/quickstart.md) · [Tool setup](docs/tools/README.md)
+**[Choose a visual template](https://longfei-tao.github.io/xmu-ppt/templates/)** · **[Browse every slide online](https://longfei-tao.github.io/xmu-ppt/)** · [中文首页](README.md) · [Getting started (Chinese)](docs/quickstart.md) · [Tool setup](docs/tools/README.md)
 
 <table>
   <tr>
@@ -39,6 +39,8 @@ Turn a topic, outline, or source material into a Xiamen University style present
 | **Is not** | Not an online service and not a marketplace plugin; it needs local Python and an agent that can run commands |
 | **Not guaranteed** | Complex charts and original layouts are not reproduced exactly, and photos stay as images |
 
+The default flow is **describe your topic → choose a visual template → generate the PPTX**. The agent waits for your selection. Name a template upfront to skip the picker, or explicitly ask the agent to choose for you.
+
 ## What it does
 
 - Provides 14 SVG template styles and 13 source PPTX templates for native filling.
@@ -65,6 +67,7 @@ Open the repository in an agent that can read files and execute Python, then ask
 ```text
 Read skills/xmu-ppt/SKILL.md and follow the XMU workflow.
 Create a 10-slide proposal on collaboration within a campus research team.
+Show template previews and wait for my choice before authoring slides.
 Use the repository's virtual environment. Do not invent research data or references.
 Return the actual PPTX path and any material limitations.
 ```

@@ -1,0 +1,214 @@
+[
+  {
+    "number": 1,
+    "id": "厦门大学_官方_厦园晴日",
+    "name": "厦园晴日",
+    "style": "蓝白校园实景、三角装饰",
+    "tags": [
+      "答辩",
+      "开题",
+      "毕业汇报"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/01.png"
+  },
+  {
+    "number": 2,
+    "id": "厦门大学_官方_凤栖青橙",
+    "name": "凤栖青橙",
+    "style": "宣纸底纹、绿瓦屋顶",
+    "tags": [
+      "人文社科",
+      "课程",
+      "读书报告"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/02.png"
+  },
+  {
+    "number": 3,
+    "id": "厦门大学_官方_南强蔚蓝",
+    "name": "南强蔚蓝",
+    "style": "蓝紫渐变、建筑插画",
+    "tags": [
+      "组会",
+      "工作汇报",
+      "项目进展"
+    ],
+    "routes": [
+      "svg"
+    ],
+    "preview": "previews/03.png"
+  },
+  {
+    "number": 4,
+    "id": "厦门大学_主题_光影厦大",
+    "name": "光影厦大",
+    "style": "深蓝几何光影",
+    "tags": [
+      "项目进展",
+      "组会"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/04.png"
+  },
+  {
+    "number": 5,
+    "id": "厦门大学_主题_凤凰花开",
+    "name": "凤凰花开",
+    "style": "深色照片、凤凰花红",
+    "tags": [
+      "毕业汇报",
+      "课程"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/05.png"
+  },
+  {
+    "number": 6,
+    "id": "厦门大学_主题_厦大蓝",
+    "name": "厦大蓝",
+    "style": "清爽蓝白、斜向蓝条",
+    "tags": [
+      "答辩",
+      "工作汇报"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/06.png"
+  },
+  {
+    "number": 7,
+    "id": "厦门大学_主题_四季风景",
+    "name": "四季风景",
+    "style": "校园四季实景、蓝白卡片",
+    "tags": [
+      "课程",
+      "工作汇报"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/07.png"
+  },
+  {
+    "number": 8,
+    "id": "厦门大学_主题_晕染风",
+    "name": "晕染风",
+    "style": "紫蓝水彩、留白",
+    "tags": [
+      "人文社科",
+      "课程"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/08.png"
+  },
+  {
+    "number": 9,
+    "id": "厦门大学_主题_晚霞",
+    "name": "晚霞",
+    "style": "暖橙几何、晚霞照片",
+    "tags": [
+      "人文社科",
+      "课程"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/09.png"
+  },
+  {
+    "number": 10,
+    "id": "厦门大学_主题_木棉花",
+    "name": "木棉花",
+    "style": "木棉花照片、深蓝标题条",
+    "tags": [
+      "毕业汇报",
+      "课程"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/10.png"
+  },
+  {
+    "number": 11,
+    "id": "厦门大学_主题_清凉一厦",
+    "name": "清凉一厦",
+    "style": "浅绿清新、校园插画",
+    "tags": [
+      "课程",
+      "组会"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/11.png"
+  },
+  {
+    "number": 12,
+    "id": "厦门大学_主题_蓝天校门",
+    "name": "蓝天校门",
+    "style": "蓝天实景、简洁白底",
+    "tags": [
+      "答辩",
+      "开题"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/12.png"
+  },
+  {
+    "number": 13,
+    "id": "厦门大学_主题_米金书法",
+    "name": "米金书法",
+    "style": "米金底色、书法校训",
+    "tags": [
+      "人文社科",
+      "读书报告"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/13.png"
+  },
+  {
+    "number": 14,
+    "id": "厦门大学_主题_经典蓝白",
+    "name": "经典蓝白",
+    "style": "经典蓝白、校门照片",
+    "tags": [
+      "答辩",
+      "开题"
+    ],
+    "routes": [
+      "svg",
+      "native"
+    ],
+    "preview": "previews/14.png"
+  }
+]

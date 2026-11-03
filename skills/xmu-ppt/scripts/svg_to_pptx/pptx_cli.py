@@ -251,6 +251,12 @@ Recorded narration:
     args = parser.parse_args(argv)
 
     project_path = Path(args.project_path)
+    from template_selection import require_selection
+    try:
+        require_selection(project_path, 'svg')
+    except (ValueError, OSError) as exc:
+        print(f'Template selection required: {exc}', file=sys.stderr)
+        return 1
     if not project_path.exists():
         print(f"Error: Path does not exist: {project_path}")
         return 1

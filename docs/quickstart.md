@@ -4,7 +4,7 @@
 
 ## 1. 准备执行环境
 
-本项目需要能读写文件、运行 Python 的 AI Agent。终端准备步骤见[首页](../README.md#快速开始)。核心依赖为 `python-pptx`、Pillow、PyYAML、requests；默认出稿不需要配置图片生成或 TTS API。AI 工具自己的登录与模型访问不由本项目提供。
+本项目需要能读写文件、运行 Python 的 AI Agent。终端准备步骤见[首页](../README.md#快速开始)。核心依赖为 `python-pptx`、Pillow、PyYAML、requests、Flask；默认出稿不需要配置图片生成或 TTS API。AI 工具自己的登录与模型访问不由本项目提供。
 
 建议使用仓库内的 `.venv`。以下“Python”均指它的解释器：
 
@@ -41,7 +41,7 @@ python skills/xmu-ppt/scripts/svg_to_pptx.py examples/quickstart -s svg_output -
 主题：校园科研协作。听众：课题组同学。用途：组会讨论。
 内容：资料管理、任务分工、进度安排、提交复核。
 仅写方案建议，不编造研究数据、引用、姓名或单位。
-默认选择适合的厦大模板，使用仓库 .venv 的 Python。
+先展示视觉模板并等待我选定，使用仓库 .venv 的 Python。
 将产物放入独立项目目录；完成检查后给我 PPTX 路径和必要说明。
 ```
 
@@ -49,7 +49,13 @@ python skills/xmu-ppt/scripts/svg_to_pptx.py examples/quickstart -s svg_output -
 
 有材料时，把文件放到 Agent 可以访问的目录，说明它是内容来源还是要保留的版式。使用 PDF、Word 等输入时，可能需要按[完整依赖文件](../skills/xmu-ppt/requirements.txt)安装对应转换依赖。
 
-## 3. 需要保留模板时这样说
+## 3. 选择视觉模板
+
+在本地选择页查看封面、正文和章节页，选择制作方式，再点击“确认使用此模板”。也可以在聊天中回复模板名称或编号。明确说“你帮我选”即可授权 AI 代选。关闭页面或等待超时后仍需选择。
+
+从 [在线模板画廊](https://longfei-tao.github.io/xmu-ppt/templates/) 浏览时，点击“复制使用指令”，粘贴到 AI 聊天中并填写主题与页数。公开页面的选择通过这条指令传递给 AI。
+
+### 需要保留原版式时这样说
 
 ```text
 使用“厦门大学_主题_凤凰花开”的原生 PPTX 模板，保留原页面样式。

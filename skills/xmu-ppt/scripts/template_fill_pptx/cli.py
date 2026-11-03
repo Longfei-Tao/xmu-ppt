@@ -159,6 +159,11 @@ def main(argv: list[str] | None = None) -> int:
 
         if args.command == "apply":
             pptx_path = Path(args.pptx_file).expanduser().resolve()
+            from template_selection import require_selection
+            for folder in Path(args.plan_json).resolve().parents:
+                if (folder / 'confirm_ui/recommendations.json').exists():
+                    require_selection(folder, 'native', pptx_path)
+                    break
             plan = _load_json(Path(args.plan_json).expanduser().resolve())
             output_path = _timestamped_pptx_path(Path(args.output).expanduser().resolve())
             apply_plan(
@@ -170,7 +175,7 @@ def main(argv: list[str] | None = None) -> int:
             )
             print(f"Template-filled PPTX -> {output_path}", file=sys.stderr)
             return 0
-    except RuntimeError as exc:
+    except (RuntimeError, ValueError, OSError) as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
 

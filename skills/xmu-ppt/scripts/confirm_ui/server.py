@@ -336,7 +336,46 @@ def create_app(
 
     @app.route('/')
     def index():
+        rec_file = confirm_dir / RECOMMENDATIONS_NAME
+        if rec_file.exists() and json.loads(rec_file.read_text(encoding='utf-8')).get('kind') == 'template':
+            return send_from_directory(app.static_folder, 'gallery.html')
         return send_from_directory(app.static_folder, 'index.html')
+
+    @app.route('/api/templates')
+    def templates():
+        from template_selection import catalog
+        response = jsonify(catalog())
+        response.headers['Cache-Control'] = 'no-store'
+        return response
+
+    @app.route('/previews/<int:number>.png')
+    def template_preview(number):
+        from template_selection import catalog, DECKS
+        deck = next((d for d in catalog() if d['number'] == number), None)
+        if deck is None:
+            return jsonify({'error': 'Unknown template'}), 404
+        return send_from_directory(DECKS / deck['id'], 'preview.png')
+
+    @app.route('/api/template-confirm', methods=['POST'])
+    def template_confirm():
+        from template_selection import confirm
+        payload = request.get_json(silent=True)
+        if not isinstance(payload, dict):
+            return jsonify({'error': 'Invalid selection'}), 400
+        try:
+            result = confirm(project_path, payload.get('request_id'),
+                             payload.get('template_id'), payload.get('route'), 'browser')
+            return jsonify(result)
+        except (ValueError, OSError) as exc:
+            return jsonify({'error': str(exc)}), 400
+
+    @app.route('/previews/<int:number>-<page>.svg')
+    def template_page_preview(number, page):
+        from template_selection import preview_svg
+        try:
+            return app.response_class(preview_svg(number, page), mimetype='image/svg+xml')
+        except (ValueError, OSError):
+            return jsonify({'error': 'Preview unavailable'}), 404
 
     @app.route('/api/catalogs')
     def get_catalogs():
@@ -378,6 +417,9 @@ def create_app(
     @app.route('/api/confirm', methods=['POST'])
     def confirm():
         """Persist the user's final choices to result.json for the AI to read."""
+        rec_file = confirm_dir / RECOMMENDATIONS_NAME
+        if rec_file.exists() and json.loads(rec_file.read_text(encoding='utf-8')).get('kind') == 'template':
+            return jsonify({'error': 'Use the template confirmation endpoint'}), 400
         payload = request.get_json(silent=True)
         if not isinstance(payload, dict):
             return jsonify({'error': 'invalid payload'}), 400
