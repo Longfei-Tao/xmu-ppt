@@ -1,7 +1,7 @@
 ---
 name: xmu-ppt
 description: >
-  厦门大学 PPT 模板库与 SVG→PPTX 出稿引擎：14 套厦大模板（精修 3 套 + 主题 11 套），
+  厦门大学 PPT 模板库与 SVG→PPTX 出稿引擎：15 套厦大模板（精修 3 套 + 主题 12 套），
   一句话出稿，导出文字可编辑的原生 .pptx。
   AI-driven SVG presentation engine that hand-authors every page and exports
   editable PPTX. Use when the user asks to "create PPT", "make presentation",
@@ -24,7 +24,7 @@ description: >
 >
 > 本插件默认产出厦门大学风格 PPT，适用于中文和英文请求。用户仅提供主题或想法时，先按 `workflows/select-template.md` 展示模板并等待选定，再走下面的厦大路线；用户明确要求其他机构风格时，说明本插件的适用范围，不擅自套用厦大标识。
 >
-> **第一步：选模板并确定路线。** 先执行 [`workflows/select-template.md`](workflows/select-template.md)。用户指定模板或明确授权 AI 代选时，记录选择后继续；其余情况等待明确选择。 SVG 路线可用 14 套，原生填充可用 13 套（南强蔚蓝缺少原生源文件），区别只在「要不要动原模板」：
+> **第一步：选模板并确定路线。** 先执行 [`workflows/select-template.md`](workflows/select-template.md)。用户指定模板或明确授权 AI 代选时，记录选择后继续；其余情况等待明确选择。 SVG 路线可用 15 套，原生填充可用 14 套（南强蔚蓝缺少原生源文件），区别只在「要不要动原模板」：
 >
 > | 用户信号 | 路线 | 底层 |
 > | --- | --- | --- |
@@ -39,7 +39,7 @@ description: >
 >
 > **通用要求（两条路线都适用）：**
 > 1. **跳过** Eight Confirmations、策略师长报告与项目初始化问答；
-> 2. 模板从 14 套厦大模板中由用户选定，以下场景映射仅用于推荐：`厦门大学_官方_厦园晴日`（答辩/开题）、`厦门大学_官方_凤栖青橙`（人文社科/课程）、`厦门大学_官方_南强蔚蓝`（组会/工作汇报/宣讲），或按用户点名的 `厦门大学_主题_*`；
+> 2. 模板从 15 套厦大模板中由用户选定，以下场景映射仅用于推荐：`厦门大学_官方_厦园晴日`（答辩/开题）、`厦门大学_官方_凤栖青橙`（人文社科/课程）、`厦门大学_官方_南强蔚蓝`（组会/工作汇报/宣讲），或按用户点名的 `厦门大学_主题_*`；
 > 3. 模板只需明确确认一次；用户已指定模板或授权 AI 代选时记录后继续。内容充足也须先完成模板选择。默认只交付 PPTX 与必要说明，检查报告和项目源稿留在项目中，不要求用户接收额外附件；
 > 4. 品牌标识必须复用模板内真实 Logo 图片，保留宽高比，不用文字、AI 图片或自画图形替代。封面和结束页必须可见；正文继承所选模板的位置。
 > 5. 只给主题时可以补充叙事和建议，不得编造实验结果、统计数据、引用或个人信息；未知姓名、导师、单位、联系方式直接省略字段。
@@ -47,7 +47,7 @@ description: >
 >
 > 除南强蔚蓝外，`templates/decks/<id>/` 每套同时带三样东西：`source.pptx`（原始模板，原生填充的克隆源）、`source.slide_library.json`（槽位明细）、`layout_index.json`（版式画像，选页依据），以及原有的 5 页 SVG 原型。
 >
-> 本仓库的 `templates/decks/` 只保留厦门大学 deck（14 套），不含任何其他机构 deck；`templates/layouts/` 仍保留 7 套通用版式（`academic_defense`、`medical_university`、`government_blue` 等）作为「结构叠加层」，仅在用户显式给出路径时参与融合，不参与场景路由。库外风格不再作为兜底选项。
+> 本仓库的 `templates/decks/` 只保留厦门大学 deck（15 套），不含任何其他机构 deck；`templates/layouts/` 仍保留 7 套通用版式（`academic_defense`、`medical_university`、`government_blue` 等）作为「结构叠加层」，仅在用户显式给出路径时参与融合，不参与场景路由。库外风格不再作为兜底选项。
 
 > [!CAUTION]
 > ## 🚨 Global Execution Discipline (MANDATORY)

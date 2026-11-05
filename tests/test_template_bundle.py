@@ -35,8 +35,8 @@ class BundleTests(unittest.TestCase):
     def test_shipped_bundle(self):
         report = self.audit(DECKS)
         self.assertEqual(report["errors"], [])
-        self.assertEqual(len(report["decks"]), 14)
-        self.assertEqual(sum(d["native"] for d in report["decks"]), 13)
+        self.assertEqual(len(report["decks"]), 15)
+        self.assertEqual(sum(d["native"] for d in report["decks"]), 14)
 
     def test_missing_image_blocks_delivery(self):
         cache = ROOT / ".cache"

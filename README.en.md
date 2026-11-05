@@ -1,11 +1,11 @@
 # xmu-ppt — Xiamen University PPT templates
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Templates](https://img.shields.io/badge/templates-14-4661CC)](docs/templates.md)
+[![Templates](https://img.shields.io/badge/templates-15-4661CC)](docs/templates.md)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)](docs/quickstart.md)
 [![GitHub stars](https://img.shields.io/github/stars/Longfei-Tao/xmu-ppt.svg)](https://github.com/Longfei-Tao/xmu-ppt/stargazers)
 
-Turn a topic, outline, or source material into a Xiamen University style presentation with a file-capable AI agent. Built on the SVG → PPTX engine of [PPT Master](https://github.com/hugohe3/ppt-master) (MIT), adding 14 XMU template decks and two authoring routes.
+Turn a topic, outline, or source material into a Xiamen University style presentation with a file-capable AI agent. Built on the SVG → PPTX engine of [PPT Master](https://github.com/hugohe3/ppt-master) (MIT), adding 15 XMU template decks and two authoring routes.
 
 **[Choose a visual template](https://longfei-tao.github.io/xmu-ppt/templates/)** · **[Browse every slide online](https://longfei-tao.github.io/xmu-ppt/)** · [中文首页](README.md) · [Getting started (Chinese)](docs/quickstart.md) · [Tool setup](docs/tools/README.md)
 
@@ -35,7 +35,7 @@ Turn a topic, outline, or source material into a Xiamen University style present
 | | |
 | --- | --- |
 | **Is** | An Agent Skill: give it a topic or material, it authors each SVG page and exports an editable `.pptx` |
-| **Is** | 14 XMU template decks (3 refined + 11 themed); 13 of them can also fill an existing PPTX in place |
+| **Is** | 15 XMU template decks (3 refined + 12 themed); 14 of them can also fill an existing PPTX in place |
 | **Is not** | Not an online service and not a marketplace plugin; it needs local Python and an agent that can run commands |
 | **Not guaranteed** | Complex charts and original layouts are not reproduced exactly, and photos stay as images |
 
@@ -43,7 +43,7 @@ The default flow is **describe your topic → choose a visual template → gener
 
 ## What it does
 
-- Provides 14 SVG template styles and 13 source PPTX templates for native filling.
+- Provides 15 SVG template styles and 14 source PPTX templates for native filling.
 - Uses an AI agent to structure content, author slides, and run local Python export tools.
 - Exports `.pptx` files with native text and simple shapes where supported. Complex layouts and editability require review.
 - Supports topic-only proposal drafts; factual research presentations need real source material.

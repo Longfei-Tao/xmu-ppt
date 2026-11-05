@@ -30,9 +30,9 @@ class SelectionTests(unittest.TestCase):
     def test_catalog_matches_assets(self):
         from template_selection import catalog
         decks = catalog()
-        self.assertEqual(len(decks), 14)
-        self.assertEqual(sum('native' in d['routes'] for d in decks), 13)
-        self.assertEqual(len({d['number'] for d in decks}), 14)
+        self.assertEqual(len(decks), 15)
+        self.assertEqual(sum('native' in d['routes'] for d in decks), 14)
+        self.assertEqual(len({d['number'] for d in decks}), 15)
 
     def test_pending_and_confirmation(self):
         from template_selection import prepare, confirm, selected
@@ -81,7 +81,7 @@ class SelectionTests(unittest.TestCase):
             client = create_app(str(project), idle_timeout=0).test_client()
             with client.get('/') as response:
                 self.assertIn('gallery.js', response.get_data(as_text=True))
-            self.assertEqual(len(client.get('/api/templates').json), 14)
+            self.assertEqual(len(client.get('/api/templates').json), 15)
             self.assertEqual(client.post('/api/confirm', json={'status': 'confirmed'}).status_code, 400)
             payload = dict(request_id=request['request_id'], template_id='厦门大学_主题_晚霞', route='svg')
             self.assertEqual(client.post('/api/template-confirm', json=payload).status_code, 200)

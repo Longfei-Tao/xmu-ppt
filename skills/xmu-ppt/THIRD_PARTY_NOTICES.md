@@ -41,6 +41,7 @@ MIT 许可证允许修改、再分发与商用，但要求在任何副本中保�
 | 宣纸底纹、绿瓦屋顶、陈嘉庚雕像 | `厦门大学_官方_凤栖青橙/paper_bg.jpg`、`roof.png`、`statue.png` | 原始模板素材 |
 | 扁平化建筑插画 | `厦门大学_官方_南强蔚蓝/building.png` | 原始模板素材 |
 | 原始 PPTX 模板 | `skills/xmu-ppt/templates/decks/<deck_id>/source.pptx` | 已剥离内嵌商业字体、图片降采样；权属及公开再分发授权待逐文件核验 |
+| 鹭江夜澜夜景照片与校徽 | `厦门大学_主题_鹭江夜澜/assets/image1.jpg`、`image41.jpg` | 用户提供的第三方模板内嵌素材（2026-11-05 入库），原作者与许可待核验 |
 
 ### 2.1 关于 `source.pptx`
 

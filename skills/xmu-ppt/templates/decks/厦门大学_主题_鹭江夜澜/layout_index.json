@@ -1,0 +1,997 @@
+{
+  "deck_id": "厦门大学_主题_鹭江夜澜",
+  "source": "source.pptx",
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 70,
+  "layout_kinds": [
+    "chapter-divider",
+    "content",
+    "cover",
+    "ending",
+    "hero-statement",
+    "list",
+    "multi-block",
+    "numbered-cards",
+    "toc",
+    "two-block"
+  ],
+  "pages": [
+    {
+      "slide": 1,
+      "role": "cover_candidate",
+      "layout": "cover",
+      "slot_count": 35,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        64,
+        24,
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "20XX 毕业论文开题答辩通用PPT模板 请输入论文题目这里输入论文题目请输入论文题目 答辩人：偷懒儿ppt 导师：小红"
+    },
+    {
+      "slide": 2,
+      "role": "toc_candidate",
+      "layout": "toc",
+      "slot_count": 16,
+      "filled_slot_count": 14,
+      "type_scale_px": [
+        64,
+        37,
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "目录 CONTENT 01 选题背景 02 研究目标 03 研究内容 04 研究方法 05 论文进度 06 研究成果"
+    },
+    {
+      "slide": 3,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 4,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        320,
+        80
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "选题背景 1"
+    },
+    {
+      "slide": 4,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 17,
+      "filled_slot_count": 11,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "国内研究现状 国外研究现状 研究进展 研究不足 请输入正文内容，简洁明了，避免过多的文字，使用图表或要点来辅助说明 研究"
+    },
+    {
+      "slide": 5,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 15,
+      "filled_slot_count": 12,
+      "type_scale_px": [
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "5 国内研究现状 国外研究现状 方向 这里输入正文内容这里输入正文内容这里输入正文内容这里输入正文内容 这里输入正文内容"
+    },
+    {
+      "slide": 6,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 19,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        48,
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "6 这里输入小标题 这里输入正文内容这里输入正文内容这里输入正文内容这里输入正文内容 这里输入正文内容这里输入正文内容这"
+    },
+    {
+      "slide": 7,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 13,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        59
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "7 01 请输入正文内容，简洁明了，避免过多的文字，使用图表或要点来辅助说明；请输入正文内容，简洁明了，避免过多的文字，"
+    },
+    {
+      "slide": 8,
+      "role": "content_candidate",
+      "layout": "content",
+      "slot_count": 16,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "8 选题背景 这里输入正文内容这里输入正文内容；输入正文内容这里输入内容；这里输入正这里输文输入正文； 选题意义 研究现"
+    },
+    {
+      "slide": 9,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 15,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "9 请输入标题 请输入标题 请输入正文内容，简洁明了，避免过多的文字，使用图表或要点来辅助说明 请输入正文内容，简洁明了"
+    },
+    {
+      "slide": 10,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 27,
+      "filled_slot_count": 11,
+      "type_scale_px": [
+        43,
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "10 输入标题 这里可以添加主要内容这里可以添加主要内容这里可以添加主要内容这里可以添加主要内容可以添加主要内容 01 "
+    },
+    {
+      "slide": 11,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 17,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        53,
+        29,
+        25
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "11 选题意义 选题意义 选题意义 选题意义 03 01 04 02 在此输入相关文字，在此输入相关文字，在此输入相关文"
+    },
+    {
+      "slide": 12,
+      "role": "chapter_candidate",
+      "layout": "multi-block",
+      "slot_count": 21,
+      "filled_slot_count": 18,
+      "type_scale_px": [
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "12 研究领域1 研究领域2 研究领域1 研究领域2 研究现状分析 科学问题 这里输入正文内容这里输入正文内容；这里输入"
+    },
+    {
+      "slide": 13,
+      "role": "content_candidate",
+      "layout": "two-block",
+      "slot_count": 11,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        32,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "13 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文；这里输入正文内容这里输入正文；这里输入正文内容这里"
+    },
+    {
+      "slide": 14,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 4,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        320,
+        80
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "研究目标 2"
+    },
+    {
+      "slide": 15,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 17,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "15 01 这里输入正文内容这里输入正文内容这里输入正文内容这里输入正文内容这里输入正文内容这里输入正文内容 研究目标 "
+    },
+    {
+      "slide": 16,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 10,
+      "filled_slot_count": 8,
+      "type_scale_px": [
+        53,
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "16 研究 目标 研究目标一 研究目标一 研究目标一 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文；这"
+    },
+    {
+      "slide": 17,
+      "role": "content_candidate",
+      "layout": "content",
+      "slot_count": 12,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "17 研究目标一 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文；这里输入正文内容这里输入正文；这里输入"
+    },
+    {
+      "slide": 18,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 20,
+      "filled_slot_count": 8,
+      "type_scale_px": [
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "18 请输入您的文本内容 请输入您的文本内容 请输入您的文本内容 请输入您的文本内容 请输入您的文本内容 请输入您的文本"
+    },
+    {
+      "slide": 19,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 21,
+      "filled_slot_count": 6,
+      "type_scale_px": [
+        32
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "19 输入标题 这里可以添加主要内容这里可以添加主要内容这里可以添加主要内容这里可以添加主要内容可以添加主要内容 输入标"
+    },
+    {
+      "slide": 20,
+      "role": "content_candidate",
+      "layout": "content",
+      "slot_count": 11,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        27,
+        21,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "20 这里输入小标题 这里输入小标题 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文；这里输入正文内容这"
+    },
+    {
+      "slide": 21,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 29,
+      "filled_slot_count": 16,
+      "type_scale_px": [
+        72,
+        27,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "05 这里输入正文内容这里输入正文内容这里输入正文内容这里输入 04 这里输入正文内容这里输入正文内容这里输入正文内容这"
+    },
+    {
+      "slide": 22,
+      "role": "content_candidate",
+      "layout": "content",
+      "slot_count": 18,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        43,
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "22 标题 标题 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文；这里输入正文内容这里输入正文；这里输入"
+    },
+    {
+      "slide": 23,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 15,
+      "filled_slot_count": 8,
+      "type_scale_px": [
+        48,
+        32,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "23 添加 标题 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文；这里输入正文 01 这里输入正文内容这"
+    },
+    {
+      "slide": 24,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 17,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        48,
+        27,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "24 添加标题 在这里输入你的正文阐述与关键词标题相关的具体内容 在这里输入你的正文阐述与关键词标题相关的具体内容 添加"
+    },
+    {
+      "slide": 25,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 4,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        320,
+        80
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "研究内容 3"
+    },
+    {
+      "slide": 26,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 43,
+      "filled_slot_count": 14,
+      "type_scale_px": [
+        32,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "26 请输入 关键词 请输入标题 请输入正文内容，简洁明了，避免过多的文字 请输入标题 请输入正文内容，简洁明了，避免过"
+    },
+    {
+      "slide": 27,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 14,
+      "filled_slot_count": 8,
+      "type_scale_px": [
+        29,
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "27 这里输入正文内容这里输入 正文内容；这里输入正文内容这里输入正文 研究内容一 这里可以输入具体的研究内容安排； 这"
+    },
+    {
+      "slide": 28,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 14,
+      "filled_slot_count": 8,
+      "type_scale_px": [
+        27,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "28 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文；这里输入正文内容这里输入正文；这里输入正文内容 研"
+    },
+    {
+      "slide": 29,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 17,
+      "filled_slot_count": 11,
+      "type_scale_px": [
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "29 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文；这里输入正文内容这里输入正文；这里输入正文内容 这"
+    },
+    {
+      "slide": 30,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 6,
+      "filled_slot_count": 4,
+      "type_scale_px": [
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "30 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文, 这里输入正文内容这里输入 请输入正文内容，简洁明"
+    },
+    {
+      "slide": 31,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 17,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        53,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "01 您的内容打在这里，或者通过复制您的文本后，并选择只保留文字。 02 您的内容打在这里，或者通过复制您的文本后，并选"
+    },
+    {
+      "slide": 32,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 17,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "32 输入你的标题 这里输入正文内容这里输入正文内容；输入正文内容这里输入内容；这里输入正文输入正文 输入你的标题 这里"
+    },
+    {
+      "slide": 33,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 17,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "研究内容四 文字由于2010年10月筹划启动，由标题文字文字中心产品团队打造.文字由于2010年10月筹划启动，由标题文"
+    },
+    {
+      "slide": 34,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 13,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "研究内容一 这里输入正文内容这里输入正文内容；输入正文内容这里输入内容；这里输入正文内容这里输入正文 研究内容三 这里输"
+    },
+    {
+      "slide": 35,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 29,
+      "filled_slot_count": 21,
+      "type_scale_px": [
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "35 输入标题 子标题 这里输入正文内容这里输入正文内容 子标题 这里输入正文内容这里输入正文内容 输入标题 子标题 这"
+    },
+    {
+      "slide": 36,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 4,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        320,
+        80
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "研究方法 4"
+    },
+    {
+      "slide": 37,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 16,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "37 这里输入正文内容这里输入正文内容；输入正文内容这里输入内容；这里输入正文输入正文； 这里输入正文内容这里输入正文内"
+    },
+    {
+      "slide": 38,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 13,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "38 请输入标题 请输入正文内容，简洁明了，避免过多的文字，使用图表或要点来辅助说明；请输入正文内容，简洁明了，避免过多"
+    },
+    {
+      "slide": 39,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 42,
+      "filled_slot_count": 33,
+      "type_scale_px": [
+        16,
+        13
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "39 绪论 理论基础 XXXxXXXX XXXxXXXXX XXXxXXXXX XXXxXXXXX XXXxXXXXXX"
+    },
+    {
+      "slide": 40,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 17,
+      "filled_slot_count": 15,
+      "type_scale_px": [
+        32,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "40 创新点 难点 创新点1 创新点3 难点1 难点2 难点3 创新点2 请输入正文内容，简洁明了，避免过多的文字 请输"
+    },
+    {
+      "slide": 41,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 30,
+      "filled_slot_count": 26,
+      "type_scale_px": [
+        19,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "41 理论基础 xxxx xxxxx xxxx xxxx 研究方法 xxxxx xxxx xxxxxxx xxxxxx "
+    },
+    {
+      "slide": 42,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 19,
+      "filled_slot_count": 10,
+      "type_scale_px": [
+        32,
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "42 研究 方法 研究 方法 一 研究 方法 一 研究 方法 一 研究 方法 一 这里输入正文内容这里输入正文内容这里输"
+    },
+    {
+      "slide": 43,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 20,
+      "filled_slot_count": 17,
+      "type_scale_px": [
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "43 研究过程一 请输入正文内容，简洁明了，避免过多的文字，使用图表或要点来辅助说明 研究过程二 请输入正文内容，简洁明"
+    },
+    {
+      "slide": 44,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 24,
+      "filled_slot_count": 21,
+      "type_scale_px": [
+        43,
+        27,
+        24,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "44 输入小标题 这里输入正文内容这里输入正文内容这里输入正文内容这里 输入小标题 这里输入正文内容这里输入正文内容这里"
+    },
+    {
+      "slide": 45,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 16,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        32,
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "45 这里输入正文内容这里输入正文内容；输入正文内容这里输入内容；这里输入正文输入正文； 研究方法二 这里输入正文内容这"
+    },
+    {
+      "slide": 46,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 16,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        24,
+        21,
+        19,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "46 研究背景 方法论点 研究现状 现状与不足 现状与不足 研究方法 这里输入正文内容这里输入正文内容；这里输入正文内容"
+    },
+    {
+      "slide": 47,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 4,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        320,
+        80
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "论文进度 5"
+    },
+    {
+      "slide": 48,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 3,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        21
+      ],
+      "tables": 1,
+      "charts": 0,
+      "summary": "48 5 6 7 8 9 10 11 12 13 14 15 16 17 18 论文阶段一 论文阶段二 论文阶段三 论文"
+    },
+    {
+      "slide": 49,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 39,
+      "filled_slot_count": 14,
+      "type_scale_px": [
+        21,
+        20
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "49 1月 2月 3月 4月 5月 6月 结束 阅读文献，确定论文题目及框架 完成论文研究计划，提交开题报告 完成定量调"
+    },
+    {
+      "slide": 50,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 21,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "50 20xx年xx月 20xx年xx月 20xx年xx月 20xx年xx月 论文阶段一 这里输入正文内容这里输入正文内"
+    },
+    {
+      "slide": 51,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 27,
+      "filled_slot_count": 16,
+      "type_scale_px": [
+        21,
+        20,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "51 20xx.00 20xx.00 20xx.00 20xx.00 20xx.00 阅读文献，确定论文题目及框架 12"
+    },
+    {
+      "slide": 52,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 26,
+      "filled_slot_count": 19,
+      "type_scale_px": [
+        21,
+        16
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "论文阶段一 请输入正文内容，简洁明了，避免过多的文字，使用图表或要点来辅助说明 论文阶段二 请输入正文内容，简洁明了，避"
+    },
+    {
+      "slide": 53,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 17,
+      "filled_slot_count": 11,
+      "type_scale_px": [
+        37,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "53 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入.正文内容； 论文阶段一 这里输入正文内容这里输入正文内"
+    },
+    {
+      "slide": 54,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 43,
+      "filled_slot_count": 17,
+      "type_scale_px": [
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "54 06.13 11.10 论文阶段一 论文阶段八 07.15 11.08 论文阶段二 论文阶段七 07.23 10."
+    },
+    {
+      "slide": 55,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 23,
+      "filled_slot_count": 11,
+      "type_scale_px": [
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "55 在这里输入你的正文阐述与关键词标题相关的具体内容 论文阶段一 在这里输入你的正文阐述与关键词标题相关的具体内容 论"
+    },
+    {
+      "slide": 56,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 33,
+      "filled_slot_count": 17,
+      "type_scale_px": [
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "56 论文阶段一 请输入正文内容，简洁明了，避免过多的文字，使用图表或要点来辅助说明 论文阶段二 请输入正文内容，简洁明"
+    },
+    {
+      "slide": 57,
+      "role": "content_candidate",
+      "layout": "numbered-cards",
+      "slot_count": 22,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "57 论文阶段一 这里输入正文内容这里输入正文内容这里输入正文内容这里输入正文内容这里输入 论文阶段三 这里输入正文内容"
+    },
+    {
+      "slide": 58,
+      "role": "content_candidate",
+      "layout": "chapter-divider",
+      "slot_count": 4,
+      "filled_slot_count": 2,
+      "type_scale_px": [
+        320,
+        80
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "研究成果 6"
+    },
+    {
+      "slide": 59,
+      "role": "content_candidate",
+      "layout": "content",
+      "slot_count": 15,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        27
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "59 项目立项的依据、课题研究的基本内容、重点和难点、省内外同类课题研究状况、研究方法； 研究成果总结 项目立项的依据、"
+    },
+    {
+      "slide": 60,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 15,
+      "filled_slot_count": 8,
+      "type_scale_px": [
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "60 分析结果 研究内容一 研究内容二 数据处理分析 输入文字内容 输入文字内容 输入文字内容 输入文字内容 输入文字内"
+    },
+    {
+      "slide": 61,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 17,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 4,
+      "summary": "61 研究成果一 80% 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文内容 研究成果二 55% 这里输"
+    },
+    {
+      "slide": 62,
+      "role": "content_candidate",
+      "layout": "content",
+      "slot_count": 13,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "62 文字内容 文字内容 文字内容 分析结果 研究内容一 数据处理分析"
+    },
+    {
+      "slide": 63,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 22,
+      "filled_slot_count": 13,
+      "type_scale_px": [
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "63 关键问题一 研究成果一 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文内容； 这里输入正文内容这里"
+    },
+    {
+      "slide": 64,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 5,
+      "filled_slot_count": 3,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "这里输入正文内容这里输入正文内容；输入正文内容这里输入内容文输入正文； 64 这里输入正文内容这里输入正文内容；输入正文"
+    },
+    {
+      "slide": 65,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 15,
+      "filled_slot_count": 8,
+      "type_scale_px": [
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "65 文字内容 文字内容 文字内容 分析结果 研究内容一 研究内容二 数据处理分析"
+    },
+    {
+      "slide": 66,
+      "role": "content_candidate",
+      "layout": "multi-block",
+      "slot_count": 22,
+      "filled_slot_count": 16,
+      "type_scale_px": [
+        29,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "66 关键词 研究结果一 关键词 关键词 这里输入正文内容这里输入正文内容这里这里输入正文内容这里输入正文内容这里 关键"
+    },
+    {
+      "slide": 67,
+      "role": "content_candidate",
+      "layout": "content",
+      "slot_count": 8,
+      "filled_slot_count": 7,
+      "type_scale_px": [
+        27,
+        19
+      ],
+      "tables": 1,
+      "charts": 0,
+      "summary": "67 这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文内容；这里输入正文内容这里输入正文内容； 研究成果一"
+    },
+    {
+      "slide": 68,
+      "role": "content_candidate",
+      "layout": "list",
+      "slot_count": 21,
+      "filled_slot_count": 9,
+      "type_scale_px": [
+        27,
+        21
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "68 这里输入正文内容这里输入正文内容；输入正文内容这里输入内容；这里输入正文输入正文； 研究成果二 这里输入正文内容这"
+    },
+    {
+      "slide": 69,
+      "role": "content_candidate",
+      "layout": "hero-statement",
+      "slot_count": 35,
+      "filled_slot_count": 5,
+      "type_scale_px": [
+        64,
+        24,
+        21,
+        19
+      ],
+      "tables": 0,
+      "charts": 0,
+      "summary": "敬请各位老师批评指正！ 请输入论文题目这里输入论文题目请输入论文题目 答辩人：偷懒儿ppt 导师：小红书 日期：20xx"
+    },
+    {
+      "slide": 70,
+      "role": "ending_candidate",
+      "layout": "ending",
+      "slot_count": 271,
+      "filled_slot_count": 1,
+      "type_scale_px": [],
+      "tables": 0,
+      "charts": 0,
+      "summary": "70"
+    }
+  ]
+}

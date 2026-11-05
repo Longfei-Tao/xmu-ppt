@@ -2,11 +2,11 @@
 
 [![Version](https://img.shields.io/github/v/release/Longfei-Tao/xmu-ppt?label=version&color=blue)](https://github.com/Longfei-Tao/xmu-ppt/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![模板](https://img.shields.io/badge/%E6%A8%A1%E6%9D%BF-14%20%E5%A5%97-4661CC)](docs/templates.md)
+[![模板](https://img.shields.io/badge/%E6%A8%A1%E6%9D%BF-15%20%E5%A5%97-4661CC)](docs/templates.md)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)](docs/quickstart.md)
 [![GitHub stars](https://img.shields.io/github/stars/Longfei-Tao/xmu-ppt.svg)](https://github.com/Longfei-Tao/xmu-ppt/stargazers)
 
-把主题、提纲或现有材料，整理成厦大风格的演示文稿。由 AI Agent 逐页排版，导出**文字可编辑**的 `.pptx`。基于 [PPT Master](https://github.com/hugohe3/ppt-master) 的 SVG → PPTX 引擎，增补 14 套厦大模板与两条出稿路线。
+把主题、提纲或现有材料，整理成厦大风格的演示文稿。由 AI Agent 逐页排版，导出**文字可编辑**的 `.pptx`。基于 [PPT Master](https://github.com/hugohe3/ppt-master) 的 SVG → PPTX 引擎，增补 15 套厦大模板与两条出稿路线。
 
 **[选择视觉模板](https://longfei-tao.github.io/xmu-ppt/templates/)** · **[在线逐页预览](https://longfei-tao.github.io/xmu-ppt/)** · [快速开始](docs/quickstart.md) · [模板风格](docs/templates.md) · [常见问题](docs/faq.md) · [选择你的 AI 工具](docs/tools/README.md) · [English](README.en.md)
 
@@ -36,7 +36,7 @@
 | | |
 | --- | --- |
 | **是** | 一个 AI Agent 技能：给它主题或材料，它逐页手写 SVG，再导出可编辑 PPTX |
-| **是** | 14 套厦大模板（3 套精修 + 11 套主题），其中 13 套支持直接在原始 PPTX 里填内容 |
+| **是** | 15 套厦大模板（3 套精修 + 12 套主题），其中 14 套支持直接在原始 PPTX 里填内容 |
 | **不是** | 不是在线生成服务，也不是插件商店里的安装包；需要本地 Python 和能执行命令的 Agent |
 | **不保证** | 复杂图表与原版式完全还原；照片仍是图片。上台前请用演示软件逐页检查 |
 
@@ -51,7 +51,7 @@
 | 「保留原版式」「别改我的样式」「表格图表要原样」 | 原生填充 | 克隆源页 + 改 `fill_plan`，不生成 SVG | 版式受槽位约束，文字长度有硬上限 |
 | 只给主题或材料，排版可以自由 | SVG 出稿 | 逐页手写 SVG 再导出 | 每页重画，模板保真度中等 |
 
-原生填充可用 13 套；`南强蔚蓝` 原始文件是 `.ppt`，仅支持 SVG 路线。
+原生填充可用 14 套；`南强蔚蓝` 原始文件是 `.ppt`，仅支持 SVG 路线。
 
 ## 输入与输出
 
@@ -153,7 +153,7 @@ git pull
 | 凤栖青橙：纸感、青绿、橙色点缀 | 人文社科、读书报告、课程展示 |
 | 南强蔚蓝：蓝紫、建筑插画、分栏结构 | 组会、项目与工作汇报；目前仅 SVG 路线 |
 
-还有凤凰花开、经典蓝白、米金书法等 11 套主题。[查看完整清单与既有原型](docs/templates.md)。
+还有凤凰花开、经典蓝白、米金书法等 12 套主题。[查看完整清单与既有原型](docs/templates.md)。
 
 ## 示例与文档
 
@@ -168,7 +168,7 @@ git pull
 | --- | --- |
 | [快速开始](docs/quickstart.md) | 环境准备、首次出稿、没有 Git 怎么装 |
 | [常见问题](docs/faq.md) | 安装、依赖、换行、容量、更新、素材边界 |
-| [模板总览](docs/templates.md) | 14 套模板清单与既有原型 |
+| [模板总览](docs/templates.md) | 15 套模板清单与既有原型 |
 | [进阶命令](docs/advanced.md) | 完整依赖、可选工具、批量命令 |
 | [选择你的 AI 工具](docs/tools/README.md) | 各宿主的技能目录与调用方式 |
 | [素材与许可](docs/assets.md) | 校徽、照片、字体的边界与核验状态 |

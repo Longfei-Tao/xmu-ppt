@@ -118,7 +118,7 @@ async function start() {
   try {
     if (published) {
       templates = await readJSON('catalog.json');
-      $('intro').textContent = '浏览 14 套模板，选定后复制指令发给 AI。';
+      $('intro').textContent = '浏览 15 套模板，选定后复制指令发给 AI。';
     } else {
       [templates, recommendation] = await Promise.all([readJSON('/api/templates'), readJSON('/api/recommendations')]);
       saved = recommendation._already_confirmed;
