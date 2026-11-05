@@ -65,6 +65,20 @@ When the user gives a deck path **with** a brand path or layout path, identity /
 
 The register step updates [`decks_index.json`](./decks_index.json) — the single source of truth for deck discovery.
 
+### Adding a collected XMU PPTX (the themed-decks path)
+
+A real `.pptx` collected from outside uses the repository intake path, not the generic create-template flow above:
+
+1. `python skills/xmu-ppt/scripts/build_layout_index.py <source.pptx> --deck-id <厦门大学_主题_xxx>` — writes `source.pptx` (embedded fonts stripped, oversized media downscaled), `layout_index.json` and `source.slide_library.json` into the deck folder. All three must agree on page count.
+2. `python skills/xmu-ppt/scripts/pptx_template_import.py <deck>/source.pptx -o <workdir> --inheritance-mode flat` — exports one self-contained SVG per source page.
+3. Pick the cover / toc / chapter / content / ending pages as `01_cover.svg` … `04_ending.svg`; copy their images into `assets/` and rewrite `../assets/` hrefs to `assets/`. Add `preview.png` (960×540) and `design_spec.md` (YAML frontmatter + page roster). The last source page is sometimes an icon sheet rather than an ending — check before choosing.
+4. `python skills/xmu-ppt/scripts/register_template.py <deck_id> --kind deck` — updates `decks_index.json`.
+5. Append an entry to [`catalog.json`](./catalog.json) with the next `number`, `name`, `style` and `tags`. The selection UI and gallery read this file, not `decks_index.json`.
+6. `python scripts/build_template_gallery.py` — refreshes the public gallery, catalog and previews.
+7. Update deck counts in `SKILL.md`, workflows, docs and tests; then run `python -m unittest discover -s tests`, `audit_xmu.py --check-svg` and `scripts/check_docs.py`.
+
+Third-party artwork (emblems, campus photos, icons) must be recorded in `docs/assets.md` and `THIRD_PARTY_NOTICES.md` — **both the root copy and the `skills/xmu-ppt/` copy**, which a test asserts are byte-identical. Record provenance and licence status as facts; do not claim a licence that has not been verified.
+
 ---
 
 ## See also
