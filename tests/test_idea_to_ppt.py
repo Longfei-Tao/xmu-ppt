@@ -160,18 +160,20 @@ class GateTests(unittest.TestCase):
 
     def test_07_confirm_allows_gallery_choice_outside_candidates(self):
         flow.recommend("癌症科普", "医护健康科普", limit=6)
+        # 004 是真实固定序号（光影厦大），且不在本次候选里：验证清单外仍可选
         with mock.patch.object(flow, "resolve_source", return_value=(
-            {"name": "医学医疗", "pages": 34}, Path("dummy.pptx")
+            {"name": "光影厦大", "pages": 9}, Path("dummy.pptx")
         )):
-            gate = flow.confirm("SOME-OTHER-ID")
+            gate = flow.confirm("004")
         self.assertEqual(gate["status"], "confirmed")
+        self.assertEqual(gate["serial"], "004")
         self.assertTrue(gate["outside_candidates"])
-        self.assertEqual(flow.require_confirmed({"template_id": "SOME-OTHER-ID"})["status"], "confirmed")
+        self.assertEqual(flow.require_confirmed({"template_id": "004"})["status"], "confirmed")
         with self.assertRaisesRegex(RuntimeError, "不一致"):
-            flow.require_confirmed({"template_id": "DIFFERENT"})
+            flow.require_confirmed({"template_id": "MED-001"})
 
     def test_08_page_layouts_are_grouped_by_role(self):
-        # 只用内存 library 验证版式清单结构，不依赖桌面原件
+        # 只用内存 library 验证版式清单结构，不依赖桌面原件；004 走权威序号解析
         with mock.patch.object(flow, "resolve_source", return_value=({}, Path("x"))), \
              mock.patch.object(flow, "analyze_pptx", return_value={
                  "slides": [
@@ -179,7 +181,7 @@ class GateTests(unittest.TestCase):
                      {"slide_index": 2, "page_type": "content_candidate", "slots": [{}], "text_summary": "正文"},
                  ]
              }):
-            data = flow.page_layouts("X")
+            data = flow.page_layouts("004")
         self.assertEqual(data["slide_count"], 2)
         self.assertEqual(data["pages"][0]["page_type"], "cover_candidate")
 

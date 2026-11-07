@@ -9,11 +9,18 @@ from __future__ import annotations
 
 import io
 import json
+import sys
 import zipfile
 from datetime import date
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
+
+ROOT = Path(__file__).resolve().parents[1]
+sys_scripts = ROOT / "skills" / "xmu-ppt" / "scripts"
+if str(sys_scripts) not in sys.path:
+    sys.path.insert(0, str(sys_scripts))
+import template_numbers as numbers  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 EXTERNAL_CATALOG = ROOT / "skills/xmu-ppt/templates/external/external_catalog.json"
@@ -115,6 +122,8 @@ def collect_cards() -> tuple[list[dict], dict]:
     source_map = (load_json(SOURCE_MAP_FILE, {}) or {}).get("paths", {})
     root = Path(load_json(ROOT_LOCAL)["root"])
     name_by_id = {c["id"]: c["name"] for c in categories}
+    registry = numbers.ensure_registry()
+    serial_by_id = {e["template_id"]: e["serial"] for e in registry["entries"]}
 
     cards: list[dict] = []
 
@@ -134,6 +143,7 @@ def collect_cards() -> tuple[list[dict], dict]:
         has_source = (deck_dir / "source.pptx").exists()
         cards.append({
             "number": int(deck["number"]),
+            "serial": serial_by_id.get(deck["id"], f"{int(deck['number']):03d}"),
             "id": deck["id"],
             "name": display_name(deck["name"]),
             "style": deck.get("style", ""),
@@ -172,6 +182,7 @@ def collect_cards() -> tuple[list[dict], dict]:
             flags.append("含特殊媒体/外部链接")
         cards.append({
             "number": int(item["number"]),
+            "serial": serial_by_id.get(item["id"], f"{int(item['number']):03d}"),
             "id": item["id"],
             "name": display_name(item["name"]),
             "style": item.get("style", ""),

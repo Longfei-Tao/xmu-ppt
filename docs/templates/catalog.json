@@ -13,7 +13,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/01.png"
+    "preview": "previews/01.png",
+    "serial": "001"
   },
   {
     "number": 2,
@@ -29,7 +30,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/02.png"
+    "preview": "previews/02.png",
+    "serial": "002"
   },
   {
     "number": 3,
@@ -44,7 +46,8 @@
     "routes": [
       "svg"
     ],
-    "preview": "previews/03.png"
+    "preview": "previews/03.png",
+    "serial": "003"
   },
   {
     "number": 4,
@@ -59,7 +62,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/04.png"
+    "preview": "previews/04.png",
+    "serial": "004"
   },
   {
     "number": 5,
@@ -74,7 +78,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/05.png"
+    "preview": "previews/05.png",
+    "serial": "005"
   },
   {
     "number": 6,
@@ -89,7 +94,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/06.png"
+    "preview": "previews/06.png",
+    "serial": "006"
   },
   {
     "number": 7,
@@ -104,7 +110,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/07.png"
+    "preview": "previews/07.png",
+    "serial": "007"
   },
   {
     "number": 8,
@@ -119,7 +126,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/08.png"
+    "preview": "previews/08.png",
+    "serial": "008"
   },
   {
     "number": 9,
@@ -134,7 +142,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/09.png"
+    "preview": "previews/09.png",
+    "serial": "009"
   },
   {
     "number": 10,
@@ -149,7 +158,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/10.png"
+    "preview": "previews/10.png",
+    "serial": "010"
   },
   {
     "number": 11,
@@ -164,7 +174,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/11.png"
+    "preview": "previews/11.png",
+    "serial": "011"
   },
   {
     "number": 12,
@@ -179,7 +190,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/12.png"
+    "preview": "previews/12.png",
+    "serial": "012"
   },
   {
     "number": 13,
@@ -194,7 +206,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/13.png"
+    "preview": "previews/13.png",
+    "serial": "013"
   },
   {
     "number": 14,
@@ -209,7 +222,8 @@
       "svg",
       "native"
     ],
-    "preview": "previews/14.png"
+    "preview": "previews/14.png",
+    "serial": "014"
   },
   {
     "number": 15,
@@ -225,6 +239,7 @@
       "svg",
       "native"
     ],
-    "preview": "previews/15.png"
+    "preview": "previews/15.png",
+    "serial": "015"
   }
 ]

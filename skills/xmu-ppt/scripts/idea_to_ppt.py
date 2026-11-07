@@ -33,6 +33,8 @@ from template_fill_pptx.analyzer import analyze_pptx  # noqa: E402
 from template_fill_pptx.applier import apply_plan  # noqa: E402
 from template_fill_pptx.checker import check_plan  # noqa: E402
 import sanitize_pptx  # noqa: E402
+import template_numbers as numbers  # noqa: E402
+import text_fit  # noqa: E402
 
 EXTERNAL = SKILL_ROOT / "templates" / "external"
 CATALOG_FILE = EXTERNAL / "external_catalog.json"
@@ -82,15 +84,28 @@ def _gallery_url(template_id: str | None = None, category: str | None = None) ->
     return base
 
 
+def _registry() -> dict:
+    return numbers.ensure_registry()
+
+
+def resolve_selection(value: str) -> tuple[str, dict]:
+    """权威解析：纯数字按三位序号，其余按模板 ID。返回 (template_id, 注册条目)。"""
+    entry = numbers.lookup(_registry(), value)
+    return entry["template_id"], entry
+
+
 def _all_templates() -> list[dict]:
     """合并内置 15 套与外部 200 套，排除画廊已合并的重复副本。"""
     items: list[dict] = []
+    registry = _registry()
+    entry_by_id = {e["template_id"]: e for e in registry["entries"]}
     removed = {g["remove"] for g in _load(DUP_FILE, {"groups": []}).get("groups", [])}
     for r in _load(CATALOG_FILE)["templates"]:
         if r["id"] in removed:
             continue
         items.append({
-            "id": r["id"], "name": r["name"], "style": r.get("style", ""),
+            "id": r["id"], "serial": entry_by_id.get(r["id"], {}).get("serial", f"{int(r['number']):03d}"),
+            "name": r["name"], "style": r.get("style", ""),
             "category": r["primary_category"], "category_name": r["category_name"],
             "pages": r["page_count"], "namespace": "external",
             "tags": r.get("tags", []), "source_key": r.get("source_key"),
@@ -105,7 +120,8 @@ def _all_templates() -> list[dict]:
             except Exception:
                 pages = None
         items.append({
-            "id": r["id"], "name": r["name"], "style": r.get("style", ""),
+            "id": r["id"], "serial": entry_by_id.get(r["id"], {}).get("serial", f"{int(r['number']):03d}"),
+            "name": r["name"], "style": r.get("style", ""),
             "category": "institution", "category_name": "厦门大学等高校/机构风格",
             "pages": pages, "namespace": "builtin",
             "tags": r.get("tags", []), "source_key": None,
@@ -198,14 +214,15 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
 
     lines = [
         f"## 可选模板清单（主题定位：{positioning or '未指定'}）", "",
-        f"请先在下面的链接里浏览、比较每一页的版式，然后**告诉我你选定的模板 ID**。",
+        "请先点链接浏览、比较每一页的版式，然后**只报三位序号**（如 `004`）即可选定。",
+        "序号是模板的唯一固定编号；纯数字一律按序号解析，不会被当成模板 ID。",
         "在你明确选定之前，我不会开始制作任何页面。", "",
-        "| # | 模板 | 分类 | 风格 | 页数 | 预览链接 |", "|---|---|---|---|---|---|",
+        "| 序号 | 模板 | 分类 | 风格 | 页数 | 预览链接 |", "|---|---|---|---|---|---|",
     ]
-    for i, item in enumerate(chosen, 1):
+    for item in chosen:
         pages = f"{item['pages']} 页" if item["pages"] else "—"
         lines.append(
-            f"| {i} | `{item['id']}` · {item['name']} | {item['category_name']} | "
+            f"| `{item['serial']}` | {item['name']}（`{item['id']}`） | {item['category_name']} | "
             f"{item['style']} | {pages} | [看每一页]({_gallery_url(template_id=item['id'])}) |"
         )
     cat_names = {
@@ -226,16 +243,19 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
 # 2. 用户选定
 # ---------------------------------------------------------------------------
 
-def confirm(template_id: str, request_id: str | None = None) -> dict:
+def confirm(selection: str, request_id: str | None = None) -> dict:
     gate = _load(GATE_FILE)
     if gate.get("status") != "waiting":
         raise RuntimeError("当前没有待选定的请求，请先执行 recommend")
     if request_id and gate.get("request_id") != request_id:
         raise RuntimeError("请求已过期，请重新执行 recommend 生成候选清单")
+    # 纯数字按固定序号解析；模板 ID 仍可用，但绝不与序号混淆
+    template_id, entry = resolve_selection(selection)
     outside = template_id not in gate.get("candidates", [])
     item, source = resolve_source(template_id)
     gate.update({
         "status": "confirmed", "template_id": template_id,
+        "serial": entry["serial"], "selection": str(selection),
         "template_name": item["name"], "page_count": item["pages"],
         "outside_candidates": outside,
         "confirmed_at": datetime.now(timezone.utc).isoformat(),
@@ -251,10 +271,18 @@ def require_confirmed(plan: dict) -> dict:
             "门禁：尚未选定模板。第一步必须先给出候选链接清单并等待用户明确选定，"
             "在此之前禁止制作 PPT。"
         )
-    if plan.get("template_id") and plan["template_id"] != gate["template_id"]:
-        raise RuntimeError(
-            f"门禁：plan 的模板 {plan['template_id']} 与已选定的 {gate['template_id']} 不一致"
-        )
+    requested = plan.get("template_id")
+    if requested:
+        # plan 里写序号（如 "004"）或模板 ID 都允许，统一按注册表归一
+        try:
+            requested, _ = resolve_selection(requested)
+        except RuntimeError:
+            pass
+        if requested != gate["template_id"]:
+            raise RuntimeError(
+                f"门禁：plan 的模板 {plan['template_id']} 与已选定的 "
+                f"{gate.get('serial', '?')} / {gate['template_id']} 不一致"
+            )
     return gate
 
 
@@ -263,6 +291,7 @@ def require_confirmed(plan: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 def page_layouts(template_id: str) -> dict:
+    template_id, _ = resolve_selection(template_id)
     item, source = resolve_source(template_id)
     library = analyze_pptx(source)
     pages = []
@@ -280,7 +309,8 @@ def page_layouts(template_id: str) -> dict:
 # 4. 三项检查
 # ---------------------------------------------------------------------------
 
-def final_check(sanitized_source: Path, output: Path, plan: dict, library: dict) -> dict:
+def final_check(sanitized_source: Path, output: Path, plan: dict, library: dict,
+                *, capacity: dict | None = None) -> dict:
     errors: list[str] = []
     warnings: list[str] = []
 
@@ -310,6 +340,13 @@ def final_check(sanitized_source: Path, output: Path, plan: dict, library: dict)
         errors.append(f"文字适配：check-plan 报 {summary['error']} 个错误")
     if summary.get("warn"):
         warnings.append(f"文字适配：check-plan 报 {summary['warn']} 条轻微宽度提示")
+    # 绝对容量：只看长度比例会漏掉「长示例 → 仍很长的文案」造成的横向溢出
+    if capacity is None:
+        capacity = text_fit.build_capacity_map(sanitized_source, library)
+    overflow = text_fit.validate_plan(plan, capacity)
+    if overflow:
+        sample = "、".join(f"{p['slot_id']}({p['length']}>{p['safe_chars']})" for p in overflow[:4])
+        errors.append(f"文字适配：{len(overflow)} 处文案超出文本框容量：{sample}")
 
     # (3) 模板一致性
     prs_src = Presentation(str(sanitized_source))
@@ -350,6 +387,7 @@ def build(plan_path: Path, output: Path, *, skip_gate: bool = False) -> dict:
     template_id = plan.get("template_id") or gate.get("template_id")
     if not template_id:
         raise RuntimeError("plan 缺少 template_id，且没有已选定的模板")
+    template_id, entry = resolve_selection(template_id)
     item, source = resolve_source(template_id)
 
     # 兜底净化：无论桌面原件是否已净化，出稿源一律干净
@@ -358,15 +396,21 @@ def build(plan_path: Path, output: Path, *, skip_gate: bool = False) -> dict:
     sanitize_pptx.sanitize(source, clean_source)
 
     library = analyze_pptx(clean_source)
+    capacity = text_fit.build_capacity_map(clean_source, library)
+    plan, fit_changes = text_fit.enforce_plan(plan, capacity)
     output.parent.mkdir(parents=True, exist_ok=True)
     apply_plan(clean_source, plan, output, transition="keep")
 
-    result = final_check(clean_source, output, plan, library)
+    result = final_check(clean_source, output, plan, library, capacity=capacity)
     result.update({
-        "template_id": template_id, "template_name": item["name"],
+        "template_id": template_id, "serial": entry["serial"],
+        "template_name": item["name"],
         "output": str(output), "plan": str(plan_path),
         "gate_status": gate.get("status", "bypassed"),
         "source_sanitized": sanitize_pptx.scan(clean_source)["clean"],
+        "text_fit_adjustments": fit_changes,
+        "capacity_slots": len(capacity),
+        "wrap_none_slots": sum(1 for v in capacity.values() if v["wrap"] == "none"),
     })
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     _write(REPORT_DIR / f"{output.stem}.check.json", result)
@@ -382,12 +426,12 @@ def main(argv: list[str] | None = None) -> int:
     rec.add_argument("--positioning", default="")
     rec.add_argument("--limit", type=int, default=8)
 
-    con = sub.add_parser("confirm", help="用户明确选定模板 ID")
-    con.add_argument("template_id")
+    con = sub.add_parser("confirm", help="用户明确选定模板（三位序号或模板 ID）")
+    con.add_argument("selection", help="三位序号如 004，或模板 ID")
     con.add_argument("--request-id")
 
     pag = sub.add_parser("pages", help="列出模板每一页的版式角色，供挑页")
-    pag.add_argument("template_id")
+    pag.add_argument("selection", help="三位序号如 004，或模板 ID")
     pag.add_argument("-o", "--output")
 
     bld = sub.add_parser("build", help="门禁校验 + 净化 + 挑页填充 + 三项检查")
@@ -405,12 +449,13 @@ def main(argv: list[str] | None = None) -> int:
             print(f"\n[门禁] status=waiting，request_id={gate['request_id']}；等待用户选定。", file=sys.stderr)
             return 0
         if args.command == "confirm":
-            gate = confirm(args.template_id, args.request_id)
-            print(json.dumps({k: gate[k] for k in ("status", "template_id", "template_name", "page_count")},
-                            ensure_ascii=False, indent=2))
+            gate = confirm(args.selection, args.request_id)
+            print(json.dumps({k: gate[k] for k in (
+                "status", "serial", "template_id", "template_name", "page_count", "selection")},
+                ensure_ascii=False, indent=2))
             return 0
         if args.command == "pages":
-            data = page_layouts(args.template_id)
+            data = page_layouts(args.selection)
             if args.output:
                 _write(Path(args.output), data)
                 print(f"版式清单 -> {args.output}", file=sys.stderr)

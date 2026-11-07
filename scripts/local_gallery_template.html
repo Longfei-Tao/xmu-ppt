@@ -189,7 +189,7 @@ function render() {
     body.className = 'body';
     const title = document.createElement('p');
     title.className = 'title';
-    title.textContent = String(t.number).padStart(3, '0') + ' · ' + t.name;
+    title.textContent = (t.serial || String(t.number).padStart(3, '0')) + ' · ' + t.name;
     const meta = document.createElement('p');
     meta.className = 'meta';
     meta.textContent = t.category_name + ' · ' + (t.style || '未标注风格') +
@@ -253,7 +253,7 @@ function setPage(n) {
 function showDetail(t) {
   current = t;
   currentPage = 1;
-  $('dlg-title').textContent = String(t.number).padStart(3, '0') + ' · ' + t.name;
+  $('dlg-title').textContent = (t.serial || String(t.number).padStart(3, '0')) + ' · ' + t.name;
   const total = t.pages || 0;
   const film = $('dlg-film');
   film.replaceChildren();
@@ -283,18 +283,18 @@ function showDetail(t) {
     $('dlg-slider').disabled = true;
   }
   $('dlg-facts').textContent =
-    'ID ' + t.id + ' · ' + t.category_name + ' · ' + (t.pages ? t.pages + ' 页' : '内置模板') +
+    '固定序号 ' + (t.serial || String(t.number).padStart(3, '0')) + ' · 模板 ID ' + t.id +
+    ' · ' + t.category_name + ' · ' + (t.pages ? t.pages + ' 页' : '内置模板') +
     (t.sha8 ? ' · 指纹 ' + t.sha8 : '') + '\n' +
     '版权：' + t.rights + '。仅本机浏览与选用，不得公开再分发。' +
     (t.flags && t.flags.length ? '\n注意：' + t.flags.join('、') : '');
-  $('dlg-prompt').value = t.namespace === 'builtin'
-    ? '使用 xmu-ppt 的「' + t.name + '」模板（ID ' + t.id + '）制作关于【填写主题】的 PPT。模板已由我选定。'
-    : '使用 xmu-ppt 的严格保真路线 strict-native，模板 ID ' + t.id + '（' + t.name +
-      '，共 ' + t.pages + ' 页）。制作关于【填写主题】的 PPT。请 1:1 完整保留所选模板全部页面，' +
-      '请 1:1 完整保留所选模板全部页面，尤其第 2、3、4 页版式页的图片、图形、装饰、占位区与版式，' +
-      '只把新文案套入对应文本区域，不删页、不重排、不替换任何素材。' +
-      '请按 workflows/strict-native.md 执行 doctor → inspect → scaffold → apply，出稿必须通过 verify。' +
-      '模板已由我选定。';
+  $('dlg-prompt').value =
+    '我想做一份关于【填写主题】的 PPT，主题定位是【填写定位】。' +
+    '我已选定序号 ' + (t.serial || String(t.number).padStart(3, '0')) + '（' + t.name + '，模板 ID ' + t.id + '）。' +
+    '请按 workflows/idea-to-ppt.md 执行：确认该序号对应的模板 → 只用这套模板已有的页版式挑页 → ' +
+    '只把新文案填入对应文本区域，不自行设计页面、不改动版式与视觉样式。' +
+    '页数由内容决定，不固定；出稿必须通过内容完整性、文字适配、模板一致性三项检查。' +
+    '模板已由我明确选定。';
   $('dlg-hint').textContent = '';
   $('detail').showModal();
   setPage(1);

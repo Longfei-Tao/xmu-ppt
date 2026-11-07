@@ -1,0 +1,2181 @@
+{
+  "schema": "template_number_registry.v1",
+  "generated_on": "2026-11-07",
+  "rule": "序号为三位数字字符串，是模板的唯一权威标识；一经分配永不变更。新增模板只在末尾依次追加，不重排、不复用、不回收（含 hidden 占用的序号）。",
+  "serial_format": "三位数字，001 起；纯数字输入一律按序号解析",
+  "builtin_range": [
+    1,
+    15
+  ],
+  "external_range": [
+    16,
+    215
+  ],
+  "next_number": 216,
+  "hidden_numbers": [
+    196,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    205,
+    206,
+    208,
+    210,
+    215
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "serial": "001",
+      "template_id": "厦门大学_官方_厦园晴日",
+      "name": "厦园晴日",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 2,
+      "serial": "002",
+      "template_id": "厦门大学_官方_凤栖青橙",
+      "name": "凤栖青橙",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 3,
+      "serial": "003",
+      "template_id": "厦门大学_官方_南强蔚蓝",
+      "name": "南强蔚蓝",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 4,
+      "serial": "004",
+      "template_id": "厦门大学_主题_光影厦大",
+      "name": "光影厦大",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 5,
+      "serial": "005",
+      "template_id": "厦门大学_主题_凤凰花开",
+      "name": "凤凰花开",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 6,
+      "serial": "006",
+      "template_id": "厦门大学_主题_厦大蓝",
+      "name": "厦大蓝",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 7,
+      "serial": "007",
+      "template_id": "厦门大学_主题_四季风景",
+      "name": "四季风景",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 8,
+      "serial": "008",
+      "template_id": "厦门大学_主题_晕染风",
+      "name": "晕染风",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 9,
+      "serial": "009",
+      "template_id": "厦门大学_主题_晚霞",
+      "name": "晚霞",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 10,
+      "serial": "010",
+      "template_id": "厦门大学_主题_木棉花",
+      "name": "木棉花",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 11,
+      "serial": "011",
+      "template_id": "厦门大学_主题_清凉一厦",
+      "name": "清凉一厦",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 12,
+      "serial": "012",
+      "template_id": "厦门大学_主题_蓝天校门",
+      "name": "蓝天校门",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 13,
+      "serial": "013",
+      "template_id": "厦门大学_主题_米金书法",
+      "name": "米金书法",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 14,
+      "serial": "014",
+      "template_id": "厦门大学_主题_经典蓝白",
+      "name": "经典蓝白",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 15,
+      "serial": "015",
+      "template_id": "厦门大学_主题_鹭江夜澜",
+      "name": "鹭江夜澜",
+      "namespace": "builtin",
+      "source_key": null,
+      "source_ref_hash": null,
+      "status": "active"
+    },
+    {
+      "number": 16,
+      "serial": "016",
+      "template_id": "MED-001",
+      "name": "医学医疗",
+      "namespace": "external",
+      "source_key": "EXT-016",
+      "source_ref_hash": "4a1391591a3b",
+      "status": "active"
+    },
+    {
+      "number": 17,
+      "serial": "017",
+      "template_id": "MED-002",
+      "name": "医疗通用数据报告",
+      "namespace": "external",
+      "source_key": "EXT-017",
+      "source_ref_hash": "609972d3c583",
+      "status": "active"
+    },
+    {
+      "number": 18,
+      "serial": "018",
+      "template_id": "MED-003",
+      "name": "医院医疗实用场景",
+      "namespace": "external",
+      "source_key": "EXT-018",
+      "source_ref_hash": "d1714af18b1e",
+      "status": "active"
+    },
+    {
+      "number": 19,
+      "serial": "019",
+      "template_id": "MED-004",
+      "name": "医护报告汇报总结",
+      "namespace": "external",
+      "source_key": "EXT-019",
+      "source_ref_hash": "f18a51eade50",
+      "status": "active"
+    },
+    {
+      "number": 20,
+      "serial": "020",
+      "template_id": "MED-005",
+      "name": "医院系统汇报",
+      "namespace": "external",
+      "source_key": "EXT-020",
+      "source_ref_hash": "853babb8494e",
+      "status": "active"
+    },
+    {
+      "number": 21,
+      "serial": "021",
+      "template_id": "MED-006",
+      "name": "医学全流程逻辑图",
+      "namespace": "external",
+      "source_key": "EXT-021",
+      "source_ref_hash": "780d53fc3e8e",
+      "status": "active"
+    },
+    {
+      "number": 22,
+      "serial": "022",
+      "template_id": "MED-007",
+      "name": "分版块总结汇报",
+      "namespace": "external",
+      "source_key": "EXT-022",
+      "source_ref_hash": "5b6d888edfa4",
+      "status": "active"
+    },
+    {
+      "number": 23,
+      "serial": "023",
+      "template_id": "MED-008",
+      "name": "医护通用场景",
+      "namespace": "external",
+      "source_key": "EXT-023",
+      "source_ref_hash": "c70f4e1d45cd",
+      "status": "active"
+    },
+    {
+      "number": 24,
+      "serial": "024",
+      "template_id": "MED-009",
+      "name": "工作汇报医学演示",
+      "namespace": "external",
+      "source_key": "EXT-024",
+      "source_ref_hash": "b9258cfa89f8",
+      "status": "active"
+    },
+    {
+      "number": 25,
+      "serial": "025",
+      "template_id": "MED-010",
+      "name": "强逻辑梳理年度报告",
+      "namespace": "external",
+      "source_key": "EXT-025",
+      "source_ref_hash": "dd23831d5a53",
+      "status": "active"
+    },
+    {
+      "number": 26,
+      "serial": "026",
+      "template_id": "MED-011",
+      "name": "手绘卡通风格医护专用",
+      "namespace": "external",
+      "source_key": "EXT-026",
+      "source_ref_hash": "c5075f9870c2",
+      "status": "active"
+    },
+    {
+      "number": 27,
+      "serial": "027",
+      "template_id": "MED-012",
+      "name": "医疗救护系统报告",
+      "namespace": "external",
+      "source_key": "EXT-027",
+      "source_ref_hash": "f10f71a36bfd",
+      "status": "active"
+    },
+    {
+      "number": 28,
+      "serial": "028",
+      "template_id": "MED-013",
+      "name": "搭起健康的通道",
+      "namespace": "external",
+      "source_key": "EXT-028",
+      "source_ref_hash": "ac208aa9742b",
+      "status": "active"
+    },
+    {
+      "number": 29,
+      "serial": "029",
+      "template_id": "MED-014",
+      "name": "移动互联网智能医疗",
+      "namespace": "external",
+      "source_key": "EXT-029",
+      "source_ref_hash": "d815e9ac1167",
+      "status": "active"
+    },
+    {
+      "number": 30,
+      "serial": "030",
+      "template_id": "MED-015",
+      "name": "精美实用框架完整总结汇报",
+      "namespace": "external",
+      "source_key": "EXT-030",
+      "source_ref_hash": "5df05f8723d3",
+      "status": "active"
+    },
+    {
+      "number": 31,
+      "serial": "031",
+      "template_id": "MED-016",
+      "name": "广泛应用于医院",
+      "namespace": "external",
+      "source_key": "EXT-031",
+      "source_ref_hash": "ebf80d7457d2",
+      "status": "active"
+    },
+    {
+      "number": 32,
+      "serial": "032",
+      "template_id": "MED-017",
+      "name": "寓意明确唯美简约成果汇报",
+      "namespace": "external",
+      "source_key": "EXT-032",
+      "source_ref_hash": "df8bfc94257a",
+      "status": "active"
+    },
+    {
+      "number": 33,
+      "serial": "033",
+      "template_id": "MED-018",
+      "name": "医疗机构工作汇报",
+      "namespace": "external",
+      "source_key": "EXT-033",
+      "source_ref_hash": "0ab9fcc80ebe",
+      "status": "active"
+    },
+    {
+      "number": 34,
+      "serial": "034",
+      "template_id": "MED-019",
+      "name": "医生护士护理",
+      "namespace": "external",
+      "source_key": "EXT-034",
+      "source_ref_hash": "2c4e05ba8116",
+      "status": "active"
+    },
+    {
+      "number": 35,
+      "serial": "035",
+      "template_id": "MED-020",
+      "name": "医护通用汇报",
+      "namespace": "external",
+      "source_key": "EXT-035",
+      "source_ref_hash": "54a4a1a64d28",
+      "status": "active"
+    },
+    {
+      "number": 36,
+      "serial": "036",
+      "template_id": "MED-021",
+      "name": "逻辑清晰动态汇报",
+      "namespace": "external",
+      "source_key": "EXT-036",
+      "source_ref_hash": "fdf79c88ddd7",
+      "status": "active"
+    },
+    {
+      "number": 37,
+      "serial": "037",
+      "template_id": "MED-022",
+      "name": "医疗汇报",
+      "namespace": "external",
+      "source_key": "EXT-037",
+      "source_ref_hash": "92808519c132",
+      "status": "active"
+    },
+    {
+      "number": 38,
+      "serial": "038",
+      "template_id": "MED-023",
+      "name": "医护卫生报告",
+      "namespace": "external",
+      "source_key": "EXT-038",
+      "source_ref_hash": "45164a599b87",
+      "status": "active"
+    },
+    {
+      "number": 39,
+      "serial": "039",
+      "template_id": "MED-024",
+      "name": "护士护理汇报宣教",
+      "namespace": "external",
+      "source_key": "EXT-039",
+      "source_ref_hash": "7e0c4baf3482",
+      "status": "active"
+    },
+    {
+      "number": 40,
+      "serial": "040",
+      "template_id": "MED-025",
+      "name": "实用医护数据展示",
+      "namespace": "external",
+      "source_key": "EXT-040",
+      "source_ref_hash": "782bcb9015e5",
+      "status": "active"
+    },
+    {
+      "number": 41,
+      "serial": "041",
+      "template_id": "MED-026",
+      "name": "护士专用健康医疗",
+      "namespace": "external",
+      "source_key": "EXT-041",
+      "source_ref_hash": "a1668d259263",
+      "status": "active"
+    },
+    {
+      "number": 42,
+      "serial": "042",
+      "template_id": "MED-027",
+      "name": "温馨浅蓝医疗报告",
+      "namespace": "external",
+      "source_key": "EXT-042",
+      "source_ref_hash": "69446b4559ef",
+      "status": "active"
+    },
+    {
+      "number": 43,
+      "serial": "043",
+      "template_id": "MED-028",
+      "name": "护士护理樱花粉",
+      "namespace": "external",
+      "source_key": "EXT-043",
+      "source_ref_hash": "becdbdc59b1e",
+      "status": "active"
+    },
+    {
+      "number": 44,
+      "serial": "044",
+      "template_id": "MED-029",
+      "name": "活泼护士医护专用",
+      "namespace": "external",
+      "source_key": "EXT-044",
+      "source_ref_hash": "cd86a610caff",
+      "status": "active"
+    },
+    {
+      "number": 45,
+      "serial": "045",
+      "template_id": "MED-030",
+      "name": "医学通用总结汇报",
+      "namespace": "external",
+      "source_key": "EXT-045",
+      "source_ref_hash": "790526a5e204",
+      "status": "active"
+    },
+    {
+      "number": 46,
+      "serial": "046",
+      "template_id": "MED-031",
+      "name": "药品医院分析行业用户商业",
+      "namespace": "external",
+      "source_key": "EXT-046",
+      "source_ref_hash": "1b9f80c3d2f9",
+      "status": "active"
+    },
+    {
+      "number": 47,
+      "serial": "047",
+      "template_id": "MED-032",
+      "name": "中医中药大医精诚厚德怀仁",
+      "namespace": "external",
+      "source_key": "EXT-047",
+      "source_ref_hash": "7a8ad9b922da",
+      "status": "active"
+    },
+    {
+      "number": 48,
+      "serial": "048",
+      "template_id": "MED-033",
+      "name": "传统中医养生文化",
+      "namespace": "external",
+      "source_key": "EXT-048",
+      "source_ref_hash": "3e64bf3c6350",
+      "status": "active"
+    },
+    {
+      "number": 49,
+      "serial": "049",
+      "template_id": "MED-034",
+      "name": "经典传统中医中药",
+      "namespace": "external",
+      "source_key": "EXT-049",
+      "source_ref_hash": "3d089d01cf5d",
+      "status": "active"
+    },
+    {
+      "number": 50,
+      "serial": "050",
+      "template_id": "MED-035",
+      "name": "医院简介科室宣传医疗座谈",
+      "namespace": "external",
+      "source_key": "EXT-050",
+      "source_ref_hash": "45e01c42aa4d",
+      "status": "active"
+    },
+    {
+      "number": 51,
+      "serial": "051",
+      "template_id": "MED-036",
+      "name": "简约手绘卡通医护系统",
+      "namespace": "external",
+      "source_key": "EXT-051",
+      "source_ref_hash": "a7bfe3c0ccbe",
+      "status": "active"
+    },
+    {
+      "number": 52,
+      "serial": "052",
+      "template_id": "MED-037",
+      "name": "温馨卡通手绘",
+      "namespace": "external",
+      "source_key": "EXT-052",
+      "source_ref_hash": "cfe450a533ff",
+      "status": "active"
+    },
+    {
+      "number": 53,
+      "serial": "053",
+      "template_id": "MED-038",
+      "name": "医疗护士康复关爱总结",
+      "namespace": "external",
+      "source_key": "EXT-053",
+      "source_ref_hash": "47dfe98e8290",
+      "status": "active"
+    },
+    {
+      "number": 54,
+      "serial": "054",
+      "template_id": "MED-039",
+      "name": "护理康复动态页面",
+      "namespace": "external",
+      "source_key": "EXT-054",
+      "source_ref_hash": "0e2d25315298",
+      "status": "active"
+    },
+    {
+      "number": 55,
+      "serial": "055",
+      "template_id": "MED-040",
+      "name": "简约简洁医学医疗",
+      "namespace": "external",
+      "source_key": "EXT-055",
+      "source_ref_hash": "bcd102f5a38c",
+      "status": "active"
+    },
+    {
+      "number": 56,
+      "serial": "056",
+      "template_id": "MED-041",
+      "name": "急救120救护系统专用",
+      "namespace": "external",
+      "source_key": "EXT-056",
+      "source_ref_hash": "a13d826b59cc",
+      "status": "active"
+    },
+    {
+      "number": 57,
+      "serial": "057",
+      "template_id": "MED-042",
+      "name": "医护总结关爱康复",
+      "namespace": "external",
+      "source_key": "EXT-057",
+      "source_ref_hash": "7152e869724c",
+      "status": "active"
+    },
+    {
+      "number": 58,
+      "serial": "058",
+      "template_id": "MED-043",
+      "name": "医院医疗关键值总结",
+      "namespace": "external",
+      "source_key": "EXT-058",
+      "source_ref_hash": "4d0063e12765",
+      "status": "active"
+    },
+    {
+      "number": 59,
+      "serial": "059",
+      "template_id": "MED-044",
+      "name": "精美实用框架完整护士科室",
+      "namespace": "external",
+      "source_key": "EXT-059",
+      "source_ref_hash": "e67293380861",
+      "status": "active"
+    },
+    {
+      "number": 60,
+      "serial": "060",
+      "template_id": "MED-045",
+      "name": "手术团队专用",
+      "namespace": "external",
+      "source_key": "EXT-060",
+      "source_ref_hash": "3aa33f81216e",
+      "status": "active"
+    },
+    {
+      "number": 61,
+      "serial": "061",
+      "template_id": "MED-046",
+      "name": "白衣天使512护士节",
+      "namespace": "external",
+      "source_key": "EXT-061",
+      "source_ref_hash": "cc846cb90926",
+      "status": "active"
+    },
+    {
+      "number": 62,
+      "serial": "062",
+      "template_id": "MED-047",
+      "name": "国际护士节",
+      "namespace": "external",
+      "source_key": "EXT-062",
+      "source_ref_hash": "1c0fe81a8762",
+      "status": "active"
+    },
+    {
+      "number": 63,
+      "serial": "063",
+      "template_id": "MED-048",
+      "name": "简约创意医疗汇报",
+      "namespace": "external",
+      "source_key": "EXT-063",
+      "source_ref_hash": "af91c9817c1c",
+      "status": "active"
+    },
+    {
+      "number": 64,
+      "serial": "064",
+      "template_id": "MED-049",
+      "name": "网上医疗救助家庭医疗",
+      "namespace": "external",
+      "source_key": "EXT-064",
+      "source_ref_hash": "7eb3d7f5e4ef",
+      "status": "active"
+    },
+    {
+      "number": 65,
+      "serial": "065",
+      "template_id": "MED-050",
+      "name": "医院年度季度工作汇报",
+      "namespace": "external",
+      "source_key": "EXT-065",
+      "source_ref_hash": "0ad070f488ed",
+      "status": "active"
+    },
+    {
+      "number": 66,
+      "serial": "066",
+      "template_id": "MED-051",
+      "name": "简约汇报总结通用",
+      "namespace": "external",
+      "source_key": "EXT-066",
+      "source_ref_hash": "c4d195125373",
+      "status": "active"
+    },
+    {
+      "number": 67,
+      "serial": "067",
+      "template_id": "MED-052",
+      "name": "通用医疗简约素材",
+      "namespace": "external",
+      "source_key": "EXT-067",
+      "source_ref_hash": "7c91f65b7504",
+      "status": "active"
+    },
+    {
+      "number": 68,
+      "serial": "068",
+      "template_id": "MED-053",
+      "name": "简约设计卫生护理",
+      "namespace": "external",
+      "source_key": "EXT-068",
+      "source_ref_hash": "1bed7f5e23bf",
+      "status": "active"
+    },
+    {
+      "number": 69,
+      "serial": "069",
+      "template_id": "MED-054",
+      "name": "医疗医学工作汇报",
+      "namespace": "external",
+      "source_key": "EXT-069",
+      "source_ref_hash": "9d2b2a89b831",
+      "status": "active"
+    },
+    {
+      "number": 70,
+      "serial": "070",
+      "template_id": "MED-055",
+      "name": "高端医学课题研究病理分析",
+      "namespace": "external",
+      "source_key": "EXT-070",
+      "source_ref_hash": "1380c731486f",
+      "status": "active"
+    },
+    {
+      "number": 71,
+      "serial": "071",
+      "template_id": "MED-056",
+      "name": "医疗动态总结",
+      "namespace": "external",
+      "source_key": "EXT-071",
+      "source_ref_hash": "445159ff68e6",
+      "status": "active"
+    },
+    {
+      "number": 72,
+      "serial": "072",
+      "template_id": "MED-057",
+      "name": "医学报告医生实习报告",
+      "namespace": "external",
+      "source_key": "EXT-072",
+      "source_ref_hash": "ed2614465277",
+      "status": "active"
+    },
+    {
+      "number": 73,
+      "serial": "073",
+      "template_id": "MED-058",
+      "name": "绿报告色医疗行业工作",
+      "namespace": "external",
+      "source_key": "EXT-073",
+      "source_ref_hash": "ca6e440741a1",
+      "status": "active"
+    },
+    {
+      "number": 74,
+      "serial": "074",
+      "template_id": "MED-059",
+      "name": "医学报告演示",
+      "namespace": "external",
+      "source_key": "EXT-074",
+      "source_ref_hash": "8beebc7a2880",
+      "status": "active"
+    },
+    {
+      "number": 75,
+      "serial": "075",
+      "template_id": "MED-060",
+      "name": "彩虹圈爱心呵护生命",
+      "namespace": "external",
+      "source_key": "EXT-075",
+      "source_ref_hash": "de02fc3034e6",
+      "status": "active"
+    },
+    {
+      "number": 76,
+      "serial": "076",
+      "template_id": "MED-061",
+      "name": "护士总结汇报",
+      "namespace": "external",
+      "source_key": "EXT-076",
+      "source_ref_hash": "70931c8fd394",
+      "status": "active"
+    },
+    {
+      "number": 77,
+      "serial": "077",
+      "template_id": "MED-062",
+      "name": "创意红医疗医药汇报",
+      "namespace": "external",
+      "source_key": "EXT-077",
+      "source_ref_hash": "4237f2d08f77",
+      "status": "active"
+    },
+    {
+      "number": 78,
+      "serial": "078",
+      "template_id": "MED-063",
+      "name": "医学总结汇报",
+      "namespace": "external",
+      "source_key": "EXT-078",
+      "source_ref_hash": "1a6c9dc84fef",
+      "status": "active"
+    },
+    {
+      "number": 79,
+      "serial": "079",
+      "template_id": "MED-064",
+      "name": "医疗医药行业工作计划",
+      "namespace": "external",
+      "source_key": "EXT-079",
+      "source_ref_hash": "7ec99a368db5",
+      "status": "active"
+    },
+    {
+      "number": 80,
+      "serial": "080",
+      "template_id": "MED-065",
+      "name": "完整框架工作汇报暨阶段",
+      "namespace": "external",
+      "source_key": "EXT-080",
+      "source_ref_hash": "0d8d3b69f5ea",
+      "status": "active"
+    },
+    {
+      "number": 81,
+      "serial": "081",
+      "template_id": "MED-066",
+      "name": "全动画页面框架完整",
+      "namespace": "external",
+      "source_key": "EXT-081",
+      "source_ref_hash": "d9e3b0e2f1d7",
+      "status": "active"
+    },
+    {
+      "number": 82,
+      "serial": "082",
+      "template_id": "MED-067",
+      "name": "大气蓝医药工作汇报",
+      "namespace": "external",
+      "source_key": "EXT-082",
+      "source_ref_hash": "636e84aa3379",
+      "status": "active"
+    },
+    {
+      "number": 83,
+      "serial": "083",
+      "template_id": "MED-068",
+      "name": "互助携手呵护健康",
+      "namespace": "external",
+      "source_key": "EXT-083",
+      "source_ref_hash": "e56730506abc",
+      "status": "active"
+    },
+    {
+      "number": 84,
+      "serial": "084",
+      "template_id": "MED-069",
+      "name": "产科孕妇孕检示意",
+      "namespace": "external",
+      "source_key": "EXT-084",
+      "source_ref_hash": "82ae6af538af",
+      "status": "active"
+    },
+    {
+      "number": 85,
+      "serial": "085",
+      "template_id": "MED-070",
+      "name": "孕妇母婴童育儿二胎",
+      "namespace": "external",
+      "source_key": "EXT-085",
+      "source_ref_hash": "45f43aad0668",
+      "status": "active"
+    },
+    {
+      "number": 86,
+      "serial": "086",
+      "template_id": "MED-071",
+      "name": "妇幼健康育儿启蒙",
+      "namespace": "external",
+      "source_key": "EXT-086",
+      "source_ref_hash": "d373eef25b31",
+      "status": "active"
+    },
+    {
+      "number": 87,
+      "serial": "087",
+      "template_id": "MED-072",
+      "name": "母婴设计育儿护理",
+      "namespace": "external",
+      "source_key": "EXT-087",
+      "source_ref_hash": "a1db651146ff",
+      "status": "active"
+    },
+    {
+      "number": 88,
+      "serial": "088",
+      "template_id": "MED-073",
+      "name": "呵护全家医疗总结汇报",
+      "namespace": "external",
+      "source_key": "EXT-088",
+      "source_ref_hash": "28eb403a8e75",
+      "status": "active"
+    },
+    {
+      "number": 89,
+      "serial": "089",
+      "template_id": "MED-074",
+      "name": "简洁实用医院医疗会议",
+      "namespace": "external",
+      "source_key": "EXT-089",
+      "source_ref_hash": "86851d24a28b",
+      "status": "active"
+    },
+    {
+      "number": 90,
+      "serial": "090",
+      "template_id": "MED-075",
+      "name": "简约全面医疗系统",
+      "namespace": "external",
+      "source_key": "EXT-090",
+      "source_ref_hash": "75459ff3b0e2",
+      "status": "active"
+    },
+    {
+      "number": 91,
+      "serial": "091",
+      "template_id": "MED-076",
+      "name": "简约全面医疗系统",
+      "namespace": "external",
+      "source_key": "EXT-091",
+      "source_ref_hash": "f80cdf7eb57b",
+      "status": "active"
+    },
+    {
+      "number": 92,
+      "serial": "092",
+      "template_id": "MED-077",
+      "name": "简约时尚配色清爽",
+      "namespace": "external",
+      "source_key": "EXT-092",
+      "source_ref_hash": "d2a59d45f05d",
+      "status": "active"
+    },
+    {
+      "number": 93,
+      "serial": "093",
+      "template_id": "MED-078",
+      "name": "医疗医学工作报告",
+      "namespace": "external",
+      "source_key": "EXT-093",
+      "source_ref_hash": "c388675ae696",
+      "status": "active"
+    },
+    {
+      "number": 94,
+      "serial": "094",
+      "template_id": "MED-079",
+      "name": "医学研究",
+      "namespace": "external",
+      "source_key": "EXT-094",
+      "source_ref_hash": "f3faef2c38d1",
+      "status": "active"
+    },
+    {
+      "number": 95,
+      "serial": "095",
+      "template_id": "MED-080",
+      "name": "医疗系统网上医疗家庭医疗",
+      "namespace": "external",
+      "source_key": "EXT-095",
+      "source_ref_hash": "7bb7e598a74b",
+      "status": "active"
+    },
+    {
+      "number": 96,
+      "serial": "096",
+      "template_id": "MED-081",
+      "name": "医学总结计划项目汇报",
+      "namespace": "external",
+      "source_key": "EXT-096",
+      "source_ref_hash": "021f6799d147",
+      "status": "active"
+    },
+    {
+      "number": 97,
+      "serial": "097",
+      "template_id": "MED-082",
+      "name": "医护图表丰富图标多样",
+      "namespace": "external",
+      "source_key": "EXT-097",
+      "source_ref_hash": "a6ceab755ae2",
+      "status": "active"
+    },
+    {
+      "number": 98,
+      "serial": "098",
+      "template_id": "MED-083",
+      "name": "牙齿牙科护理",
+      "namespace": "external",
+      "source_key": "EXT-098",
+      "source_ref_hash": "da530567714a",
+      "status": "active"
+    },
+    {
+      "number": 99,
+      "serial": "099",
+      "template_id": "MED-084",
+      "name": "医疗汇报总结",
+      "namespace": "external",
+      "source_key": "EXT-099",
+      "source_ref_hash": "e6f67c054f28",
+      "status": "active"
+    },
+    {
+      "number": 100,
+      "serial": "100",
+      "template_id": "MED-085",
+      "name": "简约通用医疗",
+      "namespace": "external",
+      "source_key": "EXT-100",
+      "source_ref_hash": "a1b7fc768a01",
+      "status": "active"
+    },
+    {
+      "number": 101,
+      "serial": "101",
+      "template_id": "MED-086",
+      "name": "品管圈医疗",
+      "namespace": "external",
+      "source_key": "EXT-101",
+      "source_ref_hash": "8aca2e073669",
+      "status": "active"
+    },
+    {
+      "number": 102,
+      "serial": "102",
+      "template_id": "MED-087",
+      "name": "微粒体获奖创意品管",
+      "namespace": "external",
+      "source_key": "EXT-102",
+      "source_ref_hash": "c6f1ab2a2383",
+      "status": "active"
+    },
+    {
+      "number": 103,
+      "serial": "103",
+      "template_id": "MED-088",
+      "name": "简约清爽蓝色品管圈",
+      "namespace": "external",
+      "source_key": "EXT-103",
+      "source_ref_hash": "17b978d8a5cc",
+      "status": "active"
+    },
+    {
+      "number": 104,
+      "serial": "104",
+      "template_id": "MED-089",
+      "name": "大型医院工作汇报",
+      "namespace": "external",
+      "source_key": "EXT-104",
+      "source_ref_hash": "6785d7513aaa",
+      "status": "active"
+    },
+    {
+      "number": 105,
+      "serial": "105",
+      "template_id": "MED-090",
+      "name": "医生护士通用",
+      "namespace": "external",
+      "source_key": "EXT-105",
+      "source_ref_hash": "2e20702ba55d",
+      "status": "active"
+    },
+    {
+      "number": 106,
+      "serial": "106",
+      "template_id": "MED-091",
+      "name": "年终总结新年计划",
+      "namespace": "external",
+      "source_key": "EXT-106",
+      "source_ref_hash": "21f0d3c01105",
+      "status": "active"
+    },
+    {
+      "number": 107,
+      "serial": "107",
+      "template_id": "MED-092",
+      "name": "健康口腔工作汇报",
+      "namespace": "external",
+      "source_key": "EXT-107",
+      "source_ref_hash": "5fd987b8579a",
+      "status": "active"
+    },
+    {
+      "number": 108,
+      "serial": "108",
+      "template_id": "MED-093",
+      "name": "母婴设计育儿护理",
+      "namespace": "external",
+      "source_key": "EXT-108",
+      "source_ref_hash": "b633ce67482f",
+      "status": "active"
+    },
+    {
+      "number": 109,
+      "serial": "109",
+      "template_id": "MED-094",
+      "name": "医院年度季度工作报告",
+      "namespace": "external",
+      "source_key": "EXT-109",
+      "source_ref_hash": "f58bdfae5e12",
+      "status": "active"
+    },
+    {
+      "number": 110,
+      "serial": "110",
+      "template_id": "MED-095",
+      "name": "医院医疗救护系统",
+      "namespace": "external",
+      "source_key": "EXT-110",
+      "source_ref_hash": "77663481cae3",
+      "status": "active"
+    },
+    {
+      "number": 111,
+      "serial": "111",
+      "template_id": "MED-096",
+      "name": "动态框架完整精美",
+      "namespace": "external",
+      "source_key": "EXT-111",
+      "source_ref_hash": "23bdcf9082c4",
+      "status": "active"
+    },
+    {
+      "number": 112,
+      "serial": "112",
+      "template_id": "MED-097",
+      "name": "医药医疗通用",
+      "namespace": "external",
+      "source_key": "EXT-112",
+      "source_ref_hash": "e2a5eecb8b35",
+      "status": "active"
+    },
+    {
+      "number": 113,
+      "serial": "113",
+      "template_id": "MED-098",
+      "name": "中医养生冬季养生",
+      "namespace": "external",
+      "source_key": "EXT-113",
+      "source_ref_hash": "bf009fd4256d",
+      "status": "active"
+    },
+    {
+      "number": 114,
+      "serial": "114",
+      "template_id": "MED-099",
+      "name": "医疗护理总结计划",
+      "namespace": "external",
+      "source_key": "EXT-114",
+      "source_ref_hash": "ee299dcbe4b0",
+      "status": "active"
+    },
+    {
+      "number": 115,
+      "serial": "115",
+      "template_id": "MED-100",
+      "name": "医院医疗汇报总结",
+      "namespace": "external",
+      "source_key": "EXT-115",
+      "source_ref_hash": "421ce21e72bf",
+      "status": "active"
+    },
+    {
+      "number": 116,
+      "serial": "116",
+      "template_id": "MED-101",
+      "name": "护士护理工作报告",
+      "namespace": "external",
+      "source_key": "EXT-116",
+      "source_ref_hash": "44742fc2f9cd",
+      "status": "active"
+    },
+    {
+      "number": 117,
+      "serial": "117",
+      "template_id": "MED-102",
+      "name": "医生护士总结",
+      "namespace": "external",
+      "source_key": "EXT-117",
+      "source_ref_hash": "d1287c43fa8f",
+      "status": "active"
+    },
+    {
+      "number": 118,
+      "serial": "118",
+      "template_id": "MED-103",
+      "name": "精美粉色护士护理",
+      "namespace": "external",
+      "source_key": "EXT-118",
+      "source_ref_hash": "dbecb750c7e1",
+      "status": "active"
+    },
+    {
+      "number": 119,
+      "serial": "119",
+      "template_id": "MED-104",
+      "name": "网上医疗网络救助",
+      "namespace": "external",
+      "source_key": "EXT-119",
+      "source_ref_hash": "13ec123ead8a",
+      "status": "active"
+    },
+    {
+      "number": 120,
+      "serial": "120",
+      "template_id": "MED-105",
+      "name": "健康医疗网络医疗",
+      "namespace": "external",
+      "source_key": "EXT-120",
+      "source_ref_hash": "d695fca83c5e",
+      "status": "active"
+    },
+    {
+      "number": 121,
+      "serial": "121",
+      "template_id": "MED-106",
+      "name": "医疗系统专业设计",
+      "namespace": "external",
+      "source_key": "EXT-121",
+      "source_ref_hash": "2f7eab340a60",
+      "status": "active"
+    },
+    {
+      "number": 122,
+      "serial": "122",
+      "template_id": "MED-107",
+      "name": "临床医学技术强院",
+      "namespace": "external",
+      "source_key": "EXT-122",
+      "source_ref_hash": "3911fc550d8c",
+      "status": "active"
+    },
+    {
+      "number": 123,
+      "serial": "123",
+      "template_id": "MED-108",
+      "name": "医疗社区医疗卫生系统",
+      "namespace": "external",
+      "source_key": "EXT-123",
+      "source_ref_hash": "c256d19c379b",
+      "status": "active"
+    },
+    {
+      "number": 124,
+      "serial": "124",
+      "template_id": "MED-109",
+      "name": "网上医疗网络救护",
+      "namespace": "external",
+      "source_key": "EXT-124",
+      "source_ref_hash": "9c95d927449e",
+      "status": "active"
+    },
+    {
+      "number": 125,
+      "serial": "125",
+      "template_id": "MED-110",
+      "name": "医疗系统工作概述",
+      "namespace": "external",
+      "source_key": "EXT-125",
+      "source_ref_hash": "a80a6418e1ba",
+      "status": "active"
+    },
+    {
+      "number": 126,
+      "serial": "126",
+      "template_id": "MED-111",
+      "name": "绿色医药项目推广",
+      "namespace": "external",
+      "source_key": "EXT-126",
+      "source_ref_hash": "ecf1e3e47d3f",
+      "status": "active"
+    },
+    {
+      "number": 127,
+      "serial": "127",
+      "template_id": "MED-112",
+      "name": "大数据医疗融资",
+      "namespace": "external",
+      "source_key": "EXT-127",
+      "source_ref_hash": "c1b17427ec53",
+      "status": "active"
+    },
+    {
+      "number": 128,
+      "serial": "128",
+      "template_id": "MED-113",
+      "name": "内容完整成果汇报",
+      "namespace": "external",
+      "source_key": "EXT-128",
+      "source_ref_hash": "e64e2cc9503f",
+      "status": "active"
+    },
+    {
+      "number": 129,
+      "serial": "129",
+      "template_id": "MED-114",
+      "name": "医疗医学通用总结计划项目汇报",
+      "namespace": "external",
+      "source_key": "EXT-129",
+      "source_ref_hash": "73d27092ffad",
+      "status": "active"
+    },
+    {
+      "number": 130,
+      "serial": "130",
+      "template_id": "MED-115",
+      "name": "医学医疗工作计划总结",
+      "namespace": "external",
+      "source_key": "EXT-130",
+      "source_ref_hash": "3322c35315c2",
+      "status": "active"
+    },
+    {
+      "number": 131,
+      "serial": "131",
+      "template_id": "MED-116",
+      "name": "医疗医学总结汇报",
+      "namespace": "external",
+      "source_key": "EXT-131",
+      "source_ref_hash": "020ee9699854",
+      "status": "active"
+    },
+    {
+      "number": 132,
+      "serial": "132",
+      "template_id": "MED-117",
+      "name": "医院医疗",
+      "namespace": "external",
+      "source_key": "EXT-132",
+      "source_ref_hash": "57b3f365a004",
+      "status": "active"
+    },
+    {
+      "number": 133,
+      "serial": "133",
+      "template_id": "MED-118",
+      "name": "浅蓝总结全流程",
+      "namespace": "external",
+      "source_key": "EXT-133",
+      "source_ref_hash": "ccd147fda104",
+      "status": "active"
+    },
+    {
+      "number": 134,
+      "serial": "134",
+      "template_id": "MED-119",
+      "name": "高度清晰呈现",
+      "namespace": "external",
+      "source_key": "EXT-134",
+      "source_ref_hash": "4abb8c8fd839",
+      "status": "active"
+    },
+    {
+      "number": 135,
+      "serial": "135",
+      "template_id": "MED-120",
+      "name": "医学研究",
+      "namespace": "external",
+      "source_key": "EXT-135",
+      "source_ref_hash": "917ec72ed6eb",
+      "status": "active"
+    },
+    {
+      "number": 136,
+      "serial": "136",
+      "template_id": "MED-121",
+      "name": "爱心医疗护士内容完整",
+      "namespace": "external",
+      "source_key": "EXT-136",
+      "source_ref_hash": "c366637d1d84",
+      "status": "active"
+    },
+    {
+      "number": 137,
+      "serial": "137",
+      "template_id": "MED-122",
+      "name": "医学医疗工作总结述职",
+      "namespace": "external",
+      "source_key": "EXT-137",
+      "source_ref_hash": "1d3042dc6508",
+      "status": "active"
+    },
+    {
+      "number": 138,
+      "serial": "138",
+      "template_id": "MED-123",
+      "name": "框架完整汇报",
+      "namespace": "external",
+      "source_key": "EXT-138",
+      "source_ref_hash": "afd7756e04fc",
+      "status": "active"
+    },
+    {
+      "number": 139,
+      "serial": "139",
+      "template_id": "MED-124",
+      "name": "儿童护理医院",
+      "namespace": "external",
+      "source_key": "EXT-139",
+      "source_ref_hash": "816e2e918a4b",
+      "status": "active"
+    },
+    {
+      "number": 140,
+      "serial": "140",
+      "template_id": "MED-125",
+      "name": "儿童医院",
+      "namespace": "external",
+      "source_key": "EXT-140",
+      "source_ref_hash": "281a99d8b5c7",
+      "status": "active"
+    },
+    {
+      "number": 141,
+      "serial": "141",
+      "template_id": "MED-126",
+      "name": "脑科医疗通用",
+      "namespace": "external",
+      "source_key": "EXT-141",
+      "source_ref_hash": "34a8ceb63cdd",
+      "status": "active"
+    },
+    {
+      "number": 142,
+      "serial": "142",
+      "template_id": "MED-127",
+      "name": "心脏内科医疗研究报告",
+      "namespace": "external",
+      "source_key": "EXT-142",
+      "source_ref_hash": "c8a5c44dfaa3",
+      "status": "active"
+    },
+    {
+      "number": 143,
+      "serial": "143",
+      "template_id": "MED-128",
+      "name": "医疗医药汇报",
+      "namespace": "external",
+      "source_key": "EXT-143",
+      "source_ref_hash": "249657448de4",
+      "status": "active"
+    },
+    {
+      "number": 144,
+      "serial": "144",
+      "template_id": "MED-129",
+      "name": "医学医药类通用",
+      "namespace": "external",
+      "source_key": "EXT-144",
+      "source_ref_hash": "d6cd59aeb29e",
+      "status": "active"
+    },
+    {
+      "number": 145,
+      "serial": "145",
+      "template_id": "MED-130",
+      "name": "医护多用途汇报",
+      "namespace": "external",
+      "source_key": "EXT-145",
+      "source_ref_hash": "8f4fe280a76c",
+      "status": "active"
+    },
+    {
+      "number": 146,
+      "serial": "146",
+      "template_id": "MED-131",
+      "name": "医学工作总结汇报",
+      "namespace": "external",
+      "source_key": "EXT-146",
+      "source_ref_hash": "0da820983ed5",
+      "status": "active"
+    },
+    {
+      "number": 147,
+      "serial": "147",
+      "template_id": "MED-132",
+      "name": "医学手术室医疗团队",
+      "namespace": "external",
+      "source_key": "EXT-147",
+      "source_ref_hash": "11bb91946d54",
+      "status": "active"
+    },
+    {
+      "number": 148,
+      "serial": "148",
+      "template_id": "MED-133",
+      "name": "生物科研微生物",
+      "namespace": "external",
+      "source_key": "EXT-148",
+      "source_ref_hash": "3fc4a6eb999f",
+      "status": "active"
+    },
+    {
+      "number": 149,
+      "serial": "149",
+      "template_id": "MED-134",
+      "name": "医学医药产品推广介绍",
+      "namespace": "external",
+      "source_key": "EXT-149",
+      "source_ref_hash": "11b8d8b5d321",
+      "status": "active"
+    },
+    {
+      "number": 150,
+      "serial": "150",
+      "template_id": "MED-135",
+      "name": "医学细胞学习报告",
+      "namespace": "external",
+      "source_key": "EXT-150",
+      "source_ref_hash": "40549d89c507",
+      "status": "active"
+    },
+    {
+      "number": 151,
+      "serial": "151",
+      "template_id": "MED-136",
+      "name": "医学报告医疗器材",
+      "namespace": "external",
+      "source_key": "EXT-151",
+      "source_ref_hash": "d83b2a11365d",
+      "status": "active"
+    },
+    {
+      "number": 152,
+      "serial": "152",
+      "template_id": "MED-137",
+      "name": "美丽人生从齿开始",
+      "namespace": "external",
+      "source_key": "EXT-152",
+      "source_ref_hash": "2f57fc922535",
+      "status": "active"
+    },
+    {
+      "number": 153,
+      "serial": "153",
+      "template_id": "MED-138",
+      "name": "牙科医疗口腔健康研究",
+      "namespace": "external",
+      "source_key": "EXT-153",
+      "source_ref_hash": "9d653904b298",
+      "status": "active"
+    },
+    {
+      "number": 154,
+      "serial": "154",
+      "template_id": "MED-139",
+      "name": "医院年度工作计划",
+      "namespace": "external",
+      "source_key": "EXT-154",
+      "source_ref_hash": "114b257ff0ff",
+      "status": "active"
+    },
+    {
+      "number": 155,
+      "serial": "155",
+      "template_id": "MED-140",
+      "name": "血液病学医疗研究",
+      "namespace": "external",
+      "source_key": "EXT-155",
+      "source_ref_hash": "4e2e18ca9e9e",
+      "status": "active"
+    },
+    {
+      "number": 156,
+      "serial": "156",
+      "template_id": "MED-141",
+      "name": "体检中心健康报告",
+      "namespace": "external",
+      "source_key": "EXT-156",
+      "source_ref_hash": "9b4440abcd99",
+      "status": "active"
+    },
+    {
+      "number": 157,
+      "serial": "157",
+      "template_id": "MED-142",
+      "name": "医疗医院项目汇报",
+      "namespace": "external",
+      "source_key": "EXT-157",
+      "source_ref_hash": "a3cc12f93893",
+      "status": "active"
+    },
+    {
+      "number": 158,
+      "serial": "158",
+      "template_id": "MED-143",
+      "name": "医护行业通用",
+      "namespace": "external",
+      "source_key": "EXT-158",
+      "source_ref_hash": "80f33ae2a8c3",
+      "status": "active"
+    },
+    {
+      "number": 159,
+      "serial": "159",
+      "template_id": "MED-144",
+      "name": "心脏病研究医疗报告",
+      "namespace": "external",
+      "source_key": "EXT-159",
+      "source_ref_hash": "f6705b77c415",
+      "status": "active"
+    },
+    {
+      "number": 160,
+      "serial": "160",
+      "template_id": "MED-145",
+      "name": "肾脏医学研究报告",
+      "namespace": "external",
+      "source_key": "EXT-160",
+      "source_ref_hash": "d9967b56571d",
+      "status": "active"
+    },
+    {
+      "number": 161,
+      "serial": "161",
+      "template_id": "MED-146",
+      "name": "医疗爱心通用",
+      "namespace": "external",
+      "source_key": "EXT-161",
+      "source_ref_hash": "e220e225d166",
+      "status": "active"
+    },
+    {
+      "number": 162,
+      "serial": "162",
+      "template_id": "MED-147",
+      "name": "医学美容机构",
+      "namespace": "external",
+      "source_key": "EXT-162",
+      "source_ref_hash": "584c5049b206",
+      "status": "active"
+    },
+    {
+      "number": 163,
+      "serial": "163",
+      "template_id": "MED-148",
+      "name": "关爱牙齿口腔健康讲座",
+      "namespace": "external",
+      "source_key": "EXT-163",
+      "source_ref_hash": "4ba69787dbf2",
+      "status": "active"
+    },
+    {
+      "number": 164,
+      "serial": "164",
+      "template_id": "MED-149",
+      "name": "孕妇健康护理粉色唯美",
+      "namespace": "external",
+      "source_key": "EXT-164",
+      "source_ref_hash": "4cb8a9de8e6e",
+      "status": "active"
+    },
+    {
+      "number": 165,
+      "serial": "165",
+      "template_id": "MED-150",
+      "name": "婴幼儿健康护理",
+      "namespace": "external",
+      "source_key": "EXT-165",
+      "source_ref_hash": "40b86bf497ed",
+      "status": "active"
+    },
+    {
+      "number": 166,
+      "serial": "166",
+      "template_id": "MED-151",
+      "name": "瑜伽教学宣传",
+      "namespace": "external",
+      "source_key": "EXT-166",
+      "source_ref_hash": "b8e7cf2ec275",
+      "status": "active"
+    },
+    {
+      "number": 167,
+      "serial": "167",
+      "template_id": "MED-152",
+      "name": "医疗工作总结汇报",
+      "namespace": "external",
+      "source_key": "EXT-167",
+      "source_ref_hash": "31f9ccf91a3b",
+      "status": "active"
+    },
+    {
+      "number": 168,
+      "serial": "168",
+      "template_id": "MED-153",
+      "name": "护理通用汇报",
+      "namespace": "external",
+      "source_key": "EXT-168",
+      "source_ref_hash": "3ed038c587d9",
+      "status": "active"
+    },
+    {
+      "number": 169,
+      "serial": "169",
+      "template_id": "MED-154",
+      "name": "医疗结构工作总结",
+      "namespace": "external",
+      "source_key": "EXT-169",
+      "source_ref_hash": "d84abec71a2d",
+      "status": "active"
+    },
+    {
+      "number": 170,
+      "serial": "170",
+      "template_id": "MED-155",
+      "name": "医学内科护理学说课",
+      "namespace": "external",
+      "source_key": "EXT-170",
+      "source_ref_hash": "25aa32f82567",
+      "status": "active"
+    },
+    {
+      "number": 171,
+      "serial": "171",
+      "template_id": "MED-156",
+      "name": "母乳宝宝要吃多少奶",
+      "namespace": "external",
+      "source_key": "EXT-171",
+      "source_ref_hash": "056d3b277891",
+      "status": "active"
+    },
+    {
+      "number": 172,
+      "serial": "172",
+      "template_id": "MED-157",
+      "name": "美容行业宣传",
+      "namespace": "external",
+      "source_key": "EXT-172",
+      "source_ref_hash": "f9e96c473889",
+      "status": "active"
+    },
+    {
+      "number": 173,
+      "serial": "173",
+      "template_id": "MED-158",
+      "name": "中国风中医通用",
+      "namespace": "external",
+      "source_key": "EXT-173",
+      "source_ref_hash": "ed7bf52c028a",
+      "status": "active"
+    },
+    {
+      "number": 174,
+      "serial": "174",
+      "template_id": "MED-159",
+      "name": "医生护士工作汇报",
+      "namespace": "external",
+      "source_key": "EXT-174",
+      "source_ref_hash": "e54e64aeb2b2",
+      "status": "active"
+    },
+    {
+      "number": 175,
+      "serial": "175",
+      "template_id": "MED-160",
+      "name": "护士汇报总结分享",
+      "namespace": "external",
+      "source_key": "EXT-175",
+      "source_ref_hash": "43832a478f5c",
+      "status": "active"
+    },
+    {
+      "number": 176,
+      "serial": "176",
+      "template_id": "MED-161",
+      "name": "护士护理报告",
+      "namespace": "external",
+      "source_key": "EXT-176",
+      "source_ref_hash": "9d2f540119b5",
+      "status": "active"
+    },
+    {
+      "number": 177,
+      "serial": "177",
+      "template_id": "MED-162",
+      "name": "精美粉色护士护理",
+      "namespace": "external",
+      "source_key": "EXT-177",
+      "source_ref_hash": "f4cd7e74f54e",
+      "status": "active"
+    },
+    {
+      "number": 178,
+      "serial": "178",
+      "template_id": "MED-163",
+      "name": "医学研究报告",
+      "namespace": "external",
+      "source_key": "EXT-178",
+      "source_ref_hash": "a397aae5eb17",
+      "status": "active"
+    },
+    {
+      "number": 179,
+      "serial": "179",
+      "template_id": "MED-164",
+      "name": "医药通用汇报",
+      "namespace": "external",
+      "source_key": "EXT-179",
+      "source_ref_hash": "4789ded426d7",
+      "status": "active"
+    },
+    {
+      "number": 180,
+      "serial": "180",
+      "template_id": "MED-165",
+      "name": "基因医学药品",
+      "namespace": "external",
+      "source_key": "EXT-180",
+      "source_ref_hash": "dd83c72eaa88",
+      "status": "active"
+    },
+    {
+      "number": 181,
+      "serial": "181",
+      "template_id": "MED-166",
+      "name": "医药通用汇报",
+      "namespace": "external",
+      "source_key": "EXT-181",
+      "source_ref_hash": "ce12d70190de",
+      "status": "active"
+    },
+    {
+      "number": 182,
+      "serial": "182",
+      "template_id": "MED-167",
+      "name": "生物医药药品",
+      "namespace": "external",
+      "source_key": "EXT-182",
+      "source_ref_hash": "2a355cc41d80",
+      "status": "active"
+    },
+    {
+      "number": 183,
+      "serial": "183",
+      "template_id": "MED-168",
+      "name": "美容医疗整形通用",
+      "namespace": "external",
+      "source_key": "EXT-183",
+      "source_ref_hash": "5e85d612e09f",
+      "status": "active"
+    },
+    {
+      "number": 184,
+      "serial": "184",
+      "template_id": "MED-169",
+      "name": "中医文化理论总结",
+      "namespace": "external",
+      "source_key": "EXT-184",
+      "source_ref_hash": "60e3de27eed8",
+      "status": "active"
+    },
+    {
+      "number": 185,
+      "serial": "185",
+      "template_id": "MED-170",
+      "name": "中医中药草药文化",
+      "namespace": "external",
+      "source_key": "EXT-185",
+      "source_ref_hash": "64788170fa89",
+      "status": "active"
+    },
+    {
+      "number": 186,
+      "serial": "186",
+      "template_id": "MED-171",
+      "name": "蓝色医疗汇报",
+      "namespace": "external",
+      "source_key": "EXT-186",
+      "source_ref_hash": "69cebc520a30",
+      "status": "active"
+    },
+    {
+      "number": 187,
+      "serial": "187",
+      "template_id": "MED-172",
+      "name": "儿童护理通用",
+      "namespace": "external",
+      "source_key": "EXT-187",
+      "source_ref_hash": "a511f71ed1bb",
+      "status": "active"
+    },
+    {
+      "number": 188,
+      "serial": "188",
+      "template_id": "MED-173",
+      "name": "儿童护理卫生健康",
+      "namespace": "external",
+      "source_key": "EXT-188",
+      "source_ref_hash": "47ebc038775c",
+      "status": "active"
+    },
+    {
+      "number": 189,
+      "serial": "189",
+      "template_id": "MED-174",
+      "name": "生育健康医疗机构",
+      "namespace": "external",
+      "source_key": "EXT-189",
+      "source_ref_hash": "100ea37a4fff",
+      "status": "active"
+    },
+    {
+      "number": 190,
+      "serial": "190",
+      "template_id": "MED-175",
+      "name": "关爱家庭关爱健康",
+      "namespace": "external",
+      "source_key": "EXT-190",
+      "source_ref_hash": "4fc1ed10ec4a",
+      "status": "active"
+    },
+    {
+      "number": 191,
+      "serial": "191",
+      "template_id": "MED-176",
+      "name": "医疗品管全面总结",
+      "namespace": "external",
+      "source_key": "EXT-191",
+      "source_ref_hash": "535ef9127ff2",
+      "status": "active"
+    },
+    {
+      "number": 192,
+      "serial": "192",
+      "template_id": "MED-177",
+      "name": "医学医疗产品推广介绍",
+      "namespace": "external",
+      "source_key": "EXT-192",
+      "source_ref_hash": "be402acb6028",
+      "status": "active"
+    },
+    {
+      "number": 193,
+      "serial": "193",
+      "template_id": "MED-178",
+      "name": "关爱肺部总结汇报",
+      "namespace": "external",
+      "source_key": "EXT-193",
+      "source_ref_hash": "3a9952ad8f15",
+      "status": "active"
+    },
+    {
+      "number": 194,
+      "serial": "194",
+      "template_id": "MED-179",
+      "name": "儿童护理通用",
+      "namespace": "external",
+      "source_key": "EXT-194",
+      "source_ref_hash": "857da0c7606f",
+      "status": "active"
+    },
+    {
+      "number": 195,
+      "serial": "195",
+      "template_id": "MED-180",
+      "name": "医学研究精美排版",
+      "namespace": "external",
+      "source_key": "EXT-195",
+      "source_ref_hash": "4195ea651516",
+      "status": "active"
+    },
+    {
+      "number": 196,
+      "serial": "196",
+      "template_id": "CAMPUS-0b54bb12",
+      "name": "答辩汇报_厦大蓝",
+      "namespace": "external",
+      "source_key": "EXT-196",
+      "source_ref_hash": "76e7eb013d65",
+      "status": "hidden"
+    },
+    {
+      "number": 197,
+      "serial": "197",
+      "template_id": "CAMPUS-12df624b",
+      "name": "蓝紫技术方案_企业汇报",
+      "namespace": "external",
+      "source_key": "EXT-197",
+      "source_ref_hash": "79d6fe7769b5",
+      "status": "active"
+    },
+    {
+      "number": 198,
+      "serial": "198",
+      "template_id": "CAMPUS-262f8e3b",
+      "name": "答辩汇报_晚霞",
+      "namespace": "external",
+      "source_key": "EXT-198",
+      "source_ref_hash": "db5d2aeab176",
+      "status": "hidden"
+    },
+    {
+      "number": 199,
+      "serial": "199",
+      "template_id": "CAMPUS-47275fbb",
+      "name": "毕业答辩",
+      "namespace": "external",
+      "source_key": "EXT-199",
+      "source_ref_hash": "82561bf06e59",
+      "status": "hidden"
+    },
+    {
+      "number": 200,
+      "serial": "200",
+      "template_id": "CAMPUS-58a713ab",
+      "name": "答辩汇报_木棉花",
+      "namespace": "external",
+      "source_key": "EXT-200",
+      "source_ref_hash": "67fd899274ce",
+      "status": "hidden"
+    },
+    {
+      "number": 201,
+      "serial": "201",
+      "template_id": "CAMPUS-5ac2613e",
+      "name": "答辩汇报_凤凰花开",
+      "namespace": "external",
+      "source_key": "EXT-201",
+      "source_ref_hash": "8bd1f196cf4c",
+      "status": "hidden"
+    },
+    {
+      "number": 202,
+      "serial": "202",
+      "template_id": "CAMPUS-60905f1b",
+      "name": "答辩汇报_晕染风",
+      "namespace": "external",
+      "source_key": "EXT-202",
+      "source_ref_hash": "27865e041719",
+      "status": "hidden"
+    },
+    {
+      "number": 203,
+      "serial": "203",
+      "template_id": "CAMPUS-71d7494b",
+      "name": "厦门大学毕业论文开题答辩通用_S01",
+      "namespace": "external",
+      "source_key": "EXT-203",
+      "source_ref_hash": "353bb08d88da",
+      "status": "hidden"
+    },
+    {
+      "number": 204,
+      "serial": "204",
+      "template_id": "CAMPUS-7775d59e",
+      "name": "论文答辩_凤栖青橙",
+      "namespace": "external",
+      "source_key": "EXT-204",
+      "source_ref_hash": "4e03f6386372",
+      "status": "active"
+    },
+    {
+      "number": 205,
+      "serial": "205",
+      "template_id": "CAMPUS-8291f99f",
+      "name": "答辩汇报_四季风景",
+      "namespace": "external",
+      "source_key": "EXT-205",
+      "source_ref_hash": "d2bb7c420e6e",
+      "status": "hidden"
+    },
+    {
+      "number": 206,
+      "serial": "206",
+      "template_id": "CAMPUS-8c6564ce",
+      "name": "毕业答辩",
+      "namespace": "external",
+      "source_key": "EXT-206",
+      "source_ref_hash": "9a533d7e02e2",
+      "status": "hidden"
+    },
+    {
+      "number": 207,
+      "serial": "207",
+      "template_id": "CAMPUS-a1d14b89",
+      "name": "PPT制作软件推荐_粉紫云彩",
+      "namespace": "external",
+      "source_key": "EXT-207",
+      "source_ref_hash": "8b02db0772c8",
+      "status": "active"
+    },
+    {
+      "number": 208,
+      "serial": "208",
+      "template_id": "CAMPUS-a69d6d54",
+      "name": "毕业答辩",
+      "namespace": "external",
+      "source_key": "EXT-208",
+      "source_ref_hash": "f0516bbbd4dc",
+      "status": "hidden"
+    },
+    {
+      "number": 209,
+      "serial": "209",
+      "template_id": "CAMPUS-a6fc4eb9",
+      "name": "毕业论文中期答辩_L01",
+      "namespace": "external",
+      "source_key": "EXT-209",
+      "source_ref_hash": "a7e30769c77b",
+      "status": "active"
+    },
+    {
+      "number": 210,
+      "serial": "210",
+      "template_id": "CAMPUS-a8bcb057",
+      "name": "答辩汇报_清凉一厦",
+      "namespace": "external",
+      "source_key": "EXT-210",
+      "source_ref_hash": "9d262ddaf265",
+      "status": "hidden"
+    },
+    {
+      "number": 211,
+      "serial": "211",
+      "template_id": "CAMPUS-ad48ae04",
+      "name": "论文答辩_晴日",
+      "namespace": "external",
+      "source_key": "EXT-211",
+      "source_ref_hash": "21b1ea2b7860",
+      "status": "active"
+    },
+    {
+      "number": 212,
+      "serial": "212",
+      "template_id": "CAMPUS-b0655f73",
+      "name": "中期汇报答辩_Q015",
+      "namespace": "external",
+      "source_key": "EXT-212",
+      "source_ref_hash": "651ca52624b7",
+      "status": "active"
+    },
+    {
+      "number": 213,
+      "serial": "213",
+      "template_id": "CAMPUS-b998bf5d",
+      "name": "护理重点专科建设_蓝色医疗风",
+      "namespace": "external",
+      "source_key": "EXT-213",
+      "source_ref_hash": "3992e2be6c16",
+      "status": "active"
+    },
+    {
+      "number": 214,
+      "serial": "214",
+      "template_id": "CAMPUS-c8981441",
+      "name": "毕业论文答辩_M04",
+      "namespace": "external",
+      "source_key": "EXT-214",
+      "source_ref_hash": "ac8d47680b32",
+      "status": "active"
+    },
+    {
+      "number": 215,
+      "serial": "215",
+      "template_id": "CAMPUS-cff0b2f4",
+      "name": "答辩汇报_光影厦大",
+      "namespace": "external",
+      "source_key": "EXT-215",
+      "source_ref_hash": "49f39ee249e1",
+      "status": "hidden"
+    }
+  ]
+}

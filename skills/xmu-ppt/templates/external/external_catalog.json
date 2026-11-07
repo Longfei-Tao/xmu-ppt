@@ -56,7 +56,8 @@
       },
       "status": "ok",
       "number": 16,
-      "source_key": "EXT-016"
+      "source_key": "EXT-016",
+      "serial": "016"
     },
     {
       "id": "MED-002",
@@ -94,7 +95,8 @@
       },
       "status": "ok",
       "number": 17,
-      "source_key": "EXT-017"
+      "source_key": "EXT-017",
+      "serial": "017"
     },
     {
       "id": "MED-003",
@@ -133,7 +135,8 @@
       },
       "status": "ok",
       "number": 18,
-      "source_key": "EXT-018"
+      "source_key": "EXT-018",
+      "serial": "018"
     },
     {
       "id": "MED-004",
@@ -169,7 +172,8 @@
       },
       "status": "ok",
       "number": 19,
-      "source_key": "EXT-019"
+      "source_key": "EXT-019",
+      "serial": "019"
     },
     {
       "id": "MED-005",
@@ -205,7 +209,8 @@
       },
       "status": "ok",
       "number": 20,
-      "source_key": "EXT-020"
+      "source_key": "EXT-020",
+      "serial": "020"
     },
     {
       "id": "MED-006",
@@ -243,7 +248,8 @@
       },
       "status": "ok",
       "number": 21,
-      "source_key": "EXT-021"
+      "source_key": "EXT-021",
+      "serial": "021"
     },
     {
       "id": "MED-007",
@@ -279,7 +285,8 @@
       },
       "status": "ok",
       "number": 22,
-      "source_key": "EXT-022"
+      "source_key": "EXT-022",
+      "serial": "022"
     },
     {
       "id": "MED-008",
@@ -319,7 +326,8 @@
       },
       "status": "ok",
       "number": 23,
-      "source_key": "EXT-023"
+      "source_key": "EXT-023",
+      "serial": "023"
     },
     {
       "id": "MED-009",
@@ -357,7 +365,8 @@
       },
       "status": "ok",
       "number": 24,
-      "source_key": "EXT-024"
+      "source_key": "EXT-024",
+      "serial": "024"
     },
     {
       "id": "MED-010",
@@ -393,7 +402,8 @@
       },
       "status": "ok",
       "number": 25,
-      "source_key": "EXT-025"
+      "source_key": "EXT-025",
+      "serial": "025"
     },
     {
       "id": "MED-011",
@@ -435,7 +445,8 @@
       },
       "status": "ok",
       "number": 26,
-      "source_key": "EXT-026"
+      "source_key": "EXT-026",
+      "serial": "026"
     },
     {
       "id": "MED-012",
@@ -474,7 +485,8 @@
       },
       "status": "ok",
       "number": 27,
-      "source_key": "EXT-027"
+      "source_key": "EXT-027",
+      "serial": "027"
     },
     {
       "id": "MED-013",
@@ -512,7 +524,8 @@
       },
       "status": "ok",
       "number": 28,
-      "source_key": "EXT-028"
+      "source_key": "EXT-028",
+      "serial": "028"
     },
     {
       "id": "MED-014",
@@ -551,7 +564,8 @@
       },
       "status": "ok",
       "number": 29,
-      "source_key": "EXT-029"
+      "source_key": "EXT-029",
+      "serial": "029"
     },
     {
       "id": "MED-015",
@@ -590,7 +604,8 @@
       },
       "status": "ok",
       "number": 30,
-      "source_key": "EXT-030"
+      "source_key": "EXT-030",
+      "serial": "030"
     },
     {
       "id": "MED-016",
@@ -628,7 +643,8 @@
       },
       "status": "ok",
       "number": 31,
-      "source_key": "EXT-031"
+      "source_key": "EXT-031",
+      "serial": "031"
     },
     {
       "id": "MED-017",
@@ -668,7 +684,8 @@
       },
       "status": "ok",
       "number": 32,
-      "source_key": "EXT-032"
+      "source_key": "EXT-032",
+      "serial": "032"
     },
     {
       "id": "MED-018",
@@ -706,7 +723,8 @@
       },
       "status": "ok",
       "number": 33,
-      "source_key": "EXT-033"
+      "source_key": "EXT-033",
+      "serial": "033"
     },
     {
       "id": "MED-019",
@@ -744,7 +762,8 @@
       },
       "status": "ok",
       "number": 34,
-      "source_key": "EXT-034"
+      "source_key": "EXT-034",
+      "serial": "034"
     },
     {
       "id": "MED-020",
@@ -780,7 +799,8 @@
       },
       "status": "ok",
       "number": 35,
-      "source_key": "EXT-035"
+      "source_key": "EXT-035",
+      "serial": "035"
     },
     {
       "id": "MED-021",
@@ -818,7 +838,8 @@
       },
       "status": "ok",
       "number": 36,
-      "source_key": "EXT-036"
+      "source_key": "EXT-036",
+      "serial": "036"
     },
     {
       "id": "MED-022",
@@ -856,7 +877,8 @@
       },
       "status": "ok",
       "number": 37,
-      "source_key": "EXT-037"
+      "source_key": "EXT-037",
+      "serial": "037"
     },
     {
       "id": "MED-023",
@@ -894,7 +916,8 @@
       },
       "status": "ok",
       "number": 38,
-      "source_key": "EXT-038"
+      "source_key": "EXT-038",
+      "serial": "038"
     },
     {
       "id": "MED-024",
@@ -933,7 +956,8 @@
       },
       "status": "ok",
       "number": 39,
-      "source_key": "EXT-039"
+      "source_key": "EXT-039",
+      "serial": "039"
     },
     {
       "id": "MED-025",
@@ -969,7 +993,8 @@
       },
       "status": "ok",
       "number": 40,
-      "source_key": "EXT-040"
+      "source_key": "EXT-040",
+      "serial": "040"
     },
     {
       "id": "MED-026",
@@ -1007,7 +1032,8 @@
       },
       "status": "ok",
       "number": 41,
-      "source_key": "EXT-041"
+      "source_key": "EXT-041",
+      "serial": "041"
     },
     {
       "id": "MED-027",
@@ -1045,7 +1071,8 @@
       },
       "status": "ok",
       "number": 42,
-      "source_key": "EXT-042"
+      "source_key": "EXT-042",
+      "serial": "042"
     },
     {
       "id": "MED-028",
@@ -1081,7 +1108,8 @@
       },
       "status": "ok",
       "number": 43,
-      "source_key": "EXT-043"
+      "source_key": "EXT-043",
+      "serial": "043"
     },
     {
       "id": "MED-029",
@@ -1119,7 +1147,8 @@
       },
       "status": "ok",
       "number": 44,
-      "source_key": "EXT-044"
+      "source_key": "EXT-044",
+      "serial": "044"
     },
     {
       "id": "MED-030",
@@ -1158,7 +1187,8 @@
       },
       "status": "ok",
       "number": 45,
-      "source_key": "EXT-045"
+      "source_key": "EXT-045",
+      "serial": "045"
     },
     {
       "id": "MED-031",
@@ -1197,7 +1227,8 @@
       },
       "status": "ok",
       "number": 46,
-      "source_key": "EXT-046"
+      "source_key": "EXT-046",
+      "serial": "046"
     },
     {
       "id": "MED-032",
@@ -1233,7 +1264,8 @@
       },
       "status": "ok",
       "number": 47,
-      "source_key": "EXT-047"
+      "source_key": "EXT-047",
+      "serial": "047"
     },
     {
       "id": "MED-033",
@@ -1271,7 +1303,8 @@
       },
       "status": "ok",
       "number": 48,
-      "source_key": "EXT-048"
+      "source_key": "EXT-048",
+      "serial": "048"
     },
     {
       "id": "MED-034",
@@ -1309,7 +1342,8 @@
       },
       "status": "ok",
       "number": 49,
-      "source_key": "EXT-049"
+      "source_key": "EXT-049",
+      "serial": "049"
     },
     {
       "id": "MED-035",
@@ -1345,7 +1379,8 @@
       },
       "status": "ok",
       "number": 50,
-      "source_key": "EXT-050"
+      "source_key": "EXT-050",
+      "serial": "050"
     },
     {
       "id": "MED-036",
@@ -1387,7 +1422,8 @@
       },
       "status": "ok",
       "number": 51,
-      "source_key": "EXT-051"
+      "source_key": "EXT-051",
+      "serial": "051"
     },
     {
       "id": "MED-037",
@@ -1423,7 +1459,8 @@
       },
       "status": "ok",
       "number": 52,
-      "source_key": "EXT-052"
+      "source_key": "EXT-052",
+      "serial": "052"
     },
     {
       "id": "MED-038",
@@ -1461,7 +1498,8 @@
       },
       "status": "ok",
       "number": 53,
-      "source_key": "EXT-053"
+      "source_key": "EXT-053",
+      "serial": "053"
     },
     {
       "id": "MED-039",
@@ -1499,7 +1537,8 @@
       },
       "status": "ok",
       "number": 54,
-      "source_key": "EXT-054"
+      "source_key": "EXT-054",
+      "serial": "054"
     },
     {
       "id": "MED-040",
@@ -1535,7 +1574,8 @@
       },
       "status": "ok",
       "number": 55,
-      "source_key": "EXT-055"
+      "source_key": "EXT-055",
+      "serial": "055"
     },
     {
       "id": "MED-041",
@@ -1574,7 +1614,8 @@
       },
       "status": "ok",
       "number": 56,
-      "source_key": "EXT-056"
+      "source_key": "EXT-056",
+      "serial": "056"
     },
     {
       "id": "MED-042",
@@ -1610,7 +1651,8 @@
       },
       "status": "ok",
       "number": 57,
-      "source_key": "EXT-057"
+      "source_key": "EXT-057",
+      "serial": "057"
     },
     {
       "id": "MED-043",
@@ -1649,7 +1691,8 @@
       },
       "status": "ok",
       "number": 58,
-      "source_key": "EXT-058"
+      "source_key": "EXT-058",
+      "serial": "058"
     },
     {
       "id": "MED-044",
@@ -1690,7 +1733,8 @@
       },
       "status": "ok",
       "number": 59,
-      "source_key": "EXT-059"
+      "source_key": "EXT-059",
+      "serial": "059"
     },
     {
       "id": "MED-045",
@@ -1728,7 +1772,8 @@
       },
       "status": "ok",
       "number": 60,
-      "source_key": "EXT-060"
+      "source_key": "EXT-060",
+      "serial": "060"
     },
     {
       "id": "MED-046",
@@ -1764,7 +1809,8 @@
       },
       "status": "ok",
       "number": 61,
-      "source_key": "EXT-061"
+      "source_key": "EXT-061",
+      "serial": "061"
     },
     {
       "id": "MED-047",
@@ -1802,7 +1848,8 @@
       },
       "status": "ok",
       "number": 62,
-      "source_key": "EXT-062"
+      "source_key": "EXT-062",
+      "serial": "062"
     },
     {
       "id": "MED-048",
@@ -1840,7 +1887,8 @@
       },
       "status": "ok",
       "number": 63,
-      "source_key": "EXT-063"
+      "source_key": "EXT-063",
+      "serial": "063"
     },
     {
       "id": "MED-049",
@@ -1876,7 +1924,8 @@
       },
       "status": "ok",
       "number": 64,
-      "source_key": "EXT-064"
+      "source_key": "EXT-064",
+      "serial": "064"
     },
     {
       "id": "MED-050",
@@ -1915,7 +1964,8 @@
       },
       "status": "ok",
       "number": 65,
-      "source_key": "EXT-065"
+      "source_key": "EXT-065",
+      "serial": "065"
     },
     {
       "id": "MED-051",
@@ -1953,7 +2003,8 @@
       },
       "status": "ok",
       "number": 66,
-      "source_key": "EXT-066"
+      "source_key": "EXT-066",
+      "serial": "066"
     },
     {
       "id": "MED-052",
@@ -1992,7 +2043,8 @@
       },
       "status": "ok",
       "number": 67,
-      "source_key": "EXT-067"
+      "source_key": "EXT-067",
+      "serial": "067"
     },
     {
       "id": "MED-053",
@@ -2028,7 +2080,8 @@
       },
       "status": "ok",
       "number": 68,
-      "source_key": "EXT-068"
+      "source_key": "EXT-068",
+      "serial": "068"
     },
     {
       "id": "MED-054",
@@ -2066,7 +2119,8 @@
       },
       "status": "ok",
       "number": 69,
-      "source_key": "EXT-069"
+      "source_key": "EXT-069",
+      "serial": "069"
     },
     {
       "id": "MED-055",
@@ -2105,7 +2159,8 @@
       },
       "status": "ok",
       "number": 70,
-      "source_key": "EXT-070"
+      "source_key": "EXT-070",
+      "serial": "070"
     },
     {
       "id": "MED-056",
@@ -2143,7 +2198,8 @@
       },
       "status": "ok",
       "number": 71,
-      "source_key": "EXT-071"
+      "source_key": "EXT-071",
+      "serial": "071"
     },
     {
       "id": "MED-057",
@@ -2181,7 +2237,8 @@
       },
       "status": "ok",
       "number": 72,
-      "source_key": "EXT-072"
+      "source_key": "EXT-072",
+      "serial": "072"
     },
     {
       "id": "MED-058",
@@ -2221,7 +2278,8 @@
       },
       "status": "ok",
       "number": 73,
-      "source_key": "EXT-073"
+      "source_key": "EXT-073",
+      "serial": "073"
     },
     {
       "id": "MED-059",
@@ -2257,7 +2315,8 @@
       },
       "status": "ok",
       "number": 74,
-      "source_key": "EXT-074"
+      "source_key": "EXT-074",
+      "serial": "074"
     },
     {
       "id": "MED-060",
@@ -2296,7 +2355,8 @@
       },
       "status": "ok",
       "number": 75,
-      "source_key": "EXT-075"
+      "source_key": "EXT-075",
+      "serial": "075"
     },
     {
       "id": "MED-061",
@@ -2334,7 +2394,8 @@
       },
       "status": "ok",
       "number": 76,
-      "source_key": "EXT-076"
+      "source_key": "EXT-076",
+      "serial": "076"
     },
     {
       "id": "MED-062",
@@ -2370,7 +2431,8 @@
       },
       "status": "ok",
       "number": 77,
-      "source_key": "EXT-077"
+      "source_key": "EXT-077",
+      "serial": "077"
     },
     {
       "id": "MED-063",
@@ -2411,7 +2473,8 @@
       },
       "status": "ok",
       "number": 78,
-      "source_key": "EXT-078"
+      "source_key": "EXT-078",
+      "serial": "078"
     },
     {
       "id": "MED-064",
@@ -2450,7 +2513,8 @@
       },
       "status": "ok",
       "number": 79,
-      "source_key": "EXT-079"
+      "source_key": "EXT-079",
+      "serial": "079"
     },
     {
       "id": "MED-065",
@@ -2491,7 +2555,8 @@
       },
       "status": "ok",
       "number": 80,
-      "source_key": "EXT-080"
+      "source_key": "EXT-080",
+      "serial": "080"
     },
     {
       "id": "MED-066",
@@ -2530,7 +2595,8 @@
       },
       "status": "ok",
       "number": 81,
-      "source_key": "EXT-081"
+      "source_key": "EXT-081",
+      "serial": "081"
     },
     {
       "id": "MED-067",
@@ -2568,7 +2634,8 @@
       },
       "status": "ok",
       "number": 82,
-      "source_key": "EXT-082"
+      "source_key": "EXT-082",
+      "serial": "082"
     },
     {
       "id": "MED-068",
@@ -2609,7 +2676,8 @@
       },
       "status": "ok",
       "number": 83,
-      "source_key": "EXT-083"
+      "source_key": "EXT-083",
+      "serial": "083"
     },
     {
       "id": "MED-069",
@@ -2647,7 +2715,8 @@
       },
       "status": "ok",
       "number": 84,
-      "source_key": "EXT-084"
+      "source_key": "EXT-084",
+      "serial": "084"
     },
     {
       "id": "MED-070",
@@ -2688,7 +2757,8 @@
       },
       "status": "ok",
       "number": 85,
-      "source_key": "EXT-085"
+      "source_key": "EXT-085",
+      "serial": "085"
     },
     {
       "id": "MED-071",
@@ -2724,7 +2794,8 @@
       },
       "status": "ok",
       "number": 86,
-      "source_key": "EXT-086"
+      "source_key": "EXT-086",
+      "serial": "086"
     },
     {
       "id": "MED-072",
@@ -2762,7 +2833,8 @@
       },
       "status": "ok",
       "number": 87,
-      "source_key": "EXT-087"
+      "source_key": "EXT-087",
+      "serial": "087"
     },
     {
       "id": "MED-073",
@@ -2800,7 +2872,8 @@
       },
       "status": "ok",
       "number": 88,
-      "source_key": "EXT-088"
+      "source_key": "EXT-088",
+      "serial": "088"
     },
     {
       "id": "MED-074",
@@ -2839,7 +2912,8 @@
       },
       "status": "ok",
       "number": 89,
-      "source_key": "EXT-089"
+      "source_key": "EXT-089",
+      "serial": "089"
     },
     {
       "id": "MED-075",
@@ -2881,7 +2955,8 @@
       },
       "status": "ok",
       "number": 90,
-      "source_key": "EXT-090"
+      "source_key": "EXT-090",
+      "serial": "090"
     },
     {
       "id": "MED-076",
@@ -2917,7 +2992,8 @@
       },
       "status": "ok",
       "number": 91,
-      "source_key": "EXT-091"
+      "source_key": "EXT-091",
+      "serial": "091"
     },
     {
       "id": "MED-077",
@@ -2953,7 +3029,8 @@
       },
       "status": "ok",
       "number": 92,
-      "source_key": "EXT-092"
+      "source_key": "EXT-092",
+      "serial": "092"
     },
     {
       "id": "MED-078",
@@ -2992,7 +3069,8 @@
       },
       "status": "ok",
       "number": 93,
-      "source_key": "EXT-093"
+      "source_key": "EXT-093",
+      "serial": "093"
     },
     {
       "id": "MED-079",
@@ -3030,7 +3108,8 @@
       },
       "status": "ok",
       "number": 94,
-      "source_key": "EXT-094"
+      "source_key": "EXT-094",
+      "serial": "094"
     },
     {
       "id": "MED-080",
@@ -3066,7 +3145,8 @@
       },
       "status": "ok",
       "number": 95,
-      "source_key": "EXT-095"
+      "source_key": "EXT-095",
+      "serial": "095"
     },
     {
       "id": "MED-081",
@@ -3104,7 +3184,8 @@
       },
       "status": "ok",
       "number": 96,
-      "source_key": "EXT-096"
+      "source_key": "EXT-096",
+      "serial": "096"
     },
     {
       "id": "MED-082",
@@ -3142,7 +3223,8 @@
       },
       "status": "ok",
       "number": 97,
-      "source_key": "EXT-097"
+      "source_key": "EXT-097",
+      "serial": "097"
     },
     {
       "id": "MED-083",
@@ -3178,7 +3260,8 @@
       },
       "status": "ok",
       "number": 98,
-      "source_key": "EXT-098"
+      "source_key": "EXT-098",
+      "serial": "098"
     },
     {
       "id": "MED-084",
@@ -3216,7 +3299,8 @@
       },
       "status": "ok",
       "number": 99,
-      "source_key": "EXT-099"
+      "source_key": "EXT-099",
+      "serial": "099"
     },
     {
       "id": "MED-085",
@@ -3255,7 +3339,8 @@
       },
       "status": "ok",
       "number": 100,
-      "source_key": "EXT-100"
+      "source_key": "EXT-100",
+      "serial": "100"
     },
     {
       "id": "MED-086",
@@ -3294,7 +3379,8 @@
       },
       "status": "ok",
       "number": 101,
-      "source_key": "EXT-101"
+      "source_key": "EXT-101",
+      "serial": "101"
     },
     {
       "id": "MED-087",
@@ -3333,7 +3419,8 @@
       },
       "status": "ok",
       "number": 102,
-      "source_key": "EXT-102"
+      "source_key": "EXT-102",
+      "serial": "102"
     },
     {
       "id": "MED-088",
@@ -3374,7 +3461,8 @@
       },
       "status": "ok",
       "number": 103,
-      "source_key": "EXT-103"
+      "source_key": "EXT-103",
+      "serial": "103"
     },
     {
       "id": "MED-089",
@@ -3410,7 +3498,8 @@
       },
       "status": "ok",
       "number": 104,
-      "source_key": "EXT-104"
+      "source_key": "EXT-104",
+      "serial": "104"
     },
     {
       "id": "MED-090",
@@ -3448,7 +3537,8 @@
       },
       "status": "ok",
       "number": 105,
-      "source_key": "EXT-105"
+      "source_key": "EXT-105",
+      "serial": "105"
     },
     {
       "id": "MED-091",
@@ -3487,7 +3577,8 @@
       },
       "status": "ok",
       "number": 106,
-      "source_key": "EXT-106"
+      "source_key": "EXT-106",
+      "serial": "106"
     },
     {
       "id": "MED-092",
@@ -3525,7 +3616,8 @@
       },
       "status": "ok",
       "number": 107,
-      "source_key": "EXT-107"
+      "source_key": "EXT-107",
+      "serial": "107"
     },
     {
       "id": "MED-093",
@@ -3561,7 +3653,8 @@
       },
       "status": "ok",
       "number": 108,
-      "source_key": "EXT-108"
+      "source_key": "EXT-108",
+      "serial": "108"
     },
     {
       "id": "MED-094",
@@ -3603,7 +3696,8 @@
       },
       "status": "ok",
       "number": 109,
-      "source_key": "EXT-109"
+      "source_key": "EXT-109",
+      "serial": "109"
     },
     {
       "id": "MED-095",
@@ -3639,7 +3733,8 @@
       },
       "status": "ok",
       "number": 110,
-      "source_key": "EXT-110"
+      "source_key": "EXT-110",
+      "serial": "110"
     },
     {
       "id": "MED-096",
@@ -3677,7 +3772,8 @@
       },
       "status": "ok",
       "number": 111,
-      "source_key": "EXT-111"
+      "source_key": "EXT-111",
+      "serial": "111"
     },
     {
       "id": "MED-097",
@@ -3713,7 +3809,8 @@
       },
       "status": "ok",
       "number": 112,
-      "source_key": "EXT-112"
+      "source_key": "EXT-112",
+      "serial": "112"
     },
     {
       "id": "MED-098",
@@ -3751,7 +3848,8 @@
       },
       "status": "ok",
       "number": 113,
-      "source_key": "EXT-113"
+      "source_key": "EXT-113",
+      "serial": "113"
     },
     {
       "id": "MED-099",
@@ -3791,7 +3889,8 @@
       },
       "status": "ok",
       "number": 114,
-      "source_key": "EXT-114"
+      "source_key": "EXT-114",
+      "serial": "114"
     },
     {
       "id": "MED-100",
@@ -3829,7 +3928,8 @@
       },
       "status": "ok",
       "number": 115,
-      "source_key": "EXT-115"
+      "source_key": "EXT-115",
+      "serial": "115"
     },
     {
       "id": "MED-101",
@@ -3865,7 +3965,8 @@
       },
       "status": "ok",
       "number": 116,
-      "source_key": "EXT-116"
+      "source_key": "EXT-116",
+      "serial": "116"
     },
     {
       "id": "MED-102",
@@ -3905,7 +4006,8 @@
       },
       "status": "ok",
       "number": 117,
-      "source_key": "EXT-117"
+      "source_key": "EXT-117",
+      "serial": "117"
     },
     {
       "id": "MED-103",
@@ -3943,7 +4045,8 @@
       },
       "status": "ok",
       "number": 118,
-      "source_key": "EXT-118"
+      "source_key": "EXT-118",
+      "serial": "118"
     },
     {
       "id": "MED-104",
@@ -3979,7 +4082,8 @@
       },
       "status": "ok",
       "number": 119,
-      "source_key": "EXT-119"
+      "source_key": "EXT-119",
+      "serial": "119"
     },
     {
       "id": "MED-105",
@@ -4017,7 +4121,8 @@
       },
       "status": "ok",
       "number": 120,
-      "source_key": "EXT-120"
+      "source_key": "EXT-120",
+      "serial": "120"
     },
     {
       "id": "MED-106",
@@ -4055,7 +4160,8 @@
       },
       "status": "ok",
       "number": 121,
-      "source_key": "EXT-121"
+      "source_key": "EXT-121",
+      "serial": "121"
     },
     {
       "id": "MED-107",
@@ -4093,7 +4199,8 @@
       },
       "status": "ok",
       "number": 122,
-      "source_key": "EXT-122"
+      "source_key": "EXT-122",
+      "serial": "122"
     },
     {
       "id": "MED-108",
@@ -4131,7 +4238,8 @@
       },
       "status": "ok",
       "number": 123,
-      "source_key": "EXT-123"
+      "source_key": "EXT-123",
+      "serial": "123"
     },
     {
       "id": "MED-109",
@@ -4167,7 +4275,8 @@
       },
       "status": "ok",
       "number": 124,
-      "source_key": "EXT-124"
+      "source_key": "EXT-124",
+      "serial": "124"
     },
     {
       "id": "MED-110",
@@ -4203,7 +4312,8 @@
       },
       "status": "ok",
       "number": 125,
-      "source_key": "EXT-125"
+      "source_key": "EXT-125",
+      "serial": "125"
     },
     {
       "id": "MED-111",
@@ -4243,7 +4353,8 @@
       },
       "status": "ok",
       "number": 126,
-      "source_key": "EXT-126"
+      "source_key": "EXT-126",
+      "serial": "126"
     },
     {
       "id": "MED-112",
@@ -4282,7 +4393,8 @@
       },
       "status": "ok",
       "number": 127,
-      "source_key": "EXT-127"
+      "source_key": "EXT-127",
+      "serial": "127"
     },
     {
       "id": "MED-113",
@@ -4322,7 +4434,8 @@
       },
       "status": "ok",
       "number": 128,
-      "source_key": "EXT-128"
+      "source_key": "EXT-128",
+      "serial": "128"
     },
     {
       "id": "MED-114",
@@ -4360,7 +4473,8 @@
       },
       "status": "ok",
       "number": 129,
-      "source_key": "EXT-129"
+      "source_key": "EXT-129",
+      "serial": "129"
     },
     {
       "id": "MED-115",
@@ -4398,7 +4512,8 @@
       },
       "status": "ok",
       "number": 130,
-      "source_key": "EXT-130"
+      "source_key": "EXT-130",
+      "serial": "130"
     },
     {
       "id": "MED-116",
@@ -4436,7 +4551,8 @@
       },
       "status": "ok",
       "number": 131,
-      "source_key": "EXT-131"
+      "source_key": "EXT-131",
+      "serial": "131"
     },
     {
       "id": "MED-117",
@@ -4475,7 +4591,8 @@
       },
       "status": "ok",
       "number": 132,
-      "source_key": "EXT-132"
+      "source_key": "EXT-132",
+      "serial": "132"
     },
     {
       "id": "MED-118",
@@ -4513,7 +4630,8 @@
       },
       "status": "ok",
       "number": 133,
-      "source_key": "EXT-133"
+      "source_key": "EXT-133",
+      "serial": "133"
     },
     {
       "id": "MED-119",
@@ -4549,7 +4667,8 @@
       },
       "status": "ok",
       "number": 134,
-      "source_key": "EXT-134"
+      "source_key": "EXT-134",
+      "serial": "134"
     },
     {
       "id": "MED-120",
@@ -4588,7 +4707,8 @@
       },
       "status": "ok",
       "number": 135,
-      "source_key": "EXT-135"
+      "source_key": "EXT-135",
+      "serial": "135"
     },
     {
       "id": "MED-121",
@@ -4624,7 +4744,8 @@
       },
       "status": "ok",
       "number": 136,
-      "source_key": "EXT-136"
+      "source_key": "EXT-136",
+      "serial": "136"
     },
     {
       "id": "MED-122",
@@ -4662,7 +4783,8 @@
       },
       "status": "ok",
       "number": 137,
-      "source_key": "EXT-137"
+      "source_key": "EXT-137",
+      "serial": "137"
     },
     {
       "id": "MED-123",
@@ -4698,7 +4820,8 @@
       },
       "status": "ok",
       "number": 138,
-      "source_key": "EXT-138"
+      "source_key": "EXT-138",
+      "serial": "138"
     },
     {
       "id": "MED-124",
@@ -4734,7 +4857,8 @@
       },
       "status": "ok",
       "number": 139,
-      "source_key": "EXT-139"
+      "source_key": "EXT-139",
+      "serial": "139"
     },
     {
       "id": "MED-125",
@@ -4770,7 +4894,8 @@
       },
       "status": "ok",
       "number": 140,
-      "source_key": "EXT-140"
+      "source_key": "EXT-140",
+      "serial": "140"
     },
     {
       "id": "MED-126",
@@ -4806,7 +4931,8 @@
       },
       "status": "ok",
       "number": 141,
-      "source_key": "EXT-141"
+      "source_key": "EXT-141",
+      "serial": "141"
     },
     {
       "id": "MED-127",
@@ -4844,7 +4970,8 @@
       },
       "status": "ok",
       "number": 142,
-      "source_key": "EXT-142"
+      "source_key": "EXT-142",
+      "serial": "142"
     },
     {
       "id": "MED-128",
@@ -4884,7 +5011,8 @@
       },
       "status": "ok",
       "number": 143,
-      "source_key": "EXT-143"
+      "source_key": "EXT-143",
+      "serial": "143"
     },
     {
       "id": "MED-129",
@@ -4922,7 +5050,8 @@
       },
       "status": "ok",
       "number": 144,
-      "source_key": "EXT-144"
+      "source_key": "EXT-144",
+      "serial": "144"
     },
     {
       "id": "MED-130",
@@ -4961,7 +5090,8 @@
       },
       "status": "ok",
       "number": 145,
-      "source_key": "EXT-145"
+      "source_key": "EXT-145",
+      "serial": "145"
     },
     {
       "id": "MED-131",
@@ -4999,7 +5129,8 @@
       },
       "status": "ok",
       "number": 146,
-      "source_key": "EXT-146"
+      "source_key": "EXT-146",
+      "serial": "146"
     },
     {
       "id": "MED-132",
@@ -5037,7 +5168,8 @@
       },
       "status": "ok",
       "number": 147,
-      "source_key": "EXT-147"
+      "source_key": "EXT-147",
+      "serial": "147"
     },
     {
       "id": "MED-133",
@@ -5076,7 +5208,8 @@
       },
       "status": "ok",
       "number": 148,
-      "source_key": "EXT-148"
+      "source_key": "EXT-148",
+      "serial": "148"
     },
     {
       "id": "MED-134",
@@ -5112,7 +5245,8 @@
       },
       "status": "ok",
       "number": 149,
-      "source_key": "EXT-149"
+      "source_key": "EXT-149",
+      "serial": "149"
     },
     {
       "id": "MED-135",
@@ -5150,7 +5284,8 @@
       },
       "status": "ok",
       "number": 150,
-      "source_key": "EXT-150"
+      "source_key": "EXT-150",
+      "serial": "150"
     },
     {
       "id": "MED-136",
@@ -5188,7 +5323,8 @@
       },
       "status": "ok",
       "number": 151,
-      "source_key": "EXT-151"
+      "source_key": "EXT-151",
+      "serial": "151"
     },
     {
       "id": "MED-137",
@@ -5226,7 +5362,8 @@
       },
       "status": "ok",
       "number": 152,
-      "source_key": "EXT-152"
+      "source_key": "EXT-152",
+      "serial": "152"
     },
     {
       "id": "MED-138",
@@ -5262,7 +5399,8 @@
       },
       "status": "ok",
       "number": 153,
-      "source_key": "EXT-153"
+      "source_key": "EXT-153",
+      "serial": "153"
     },
     {
       "id": "MED-139",
@@ -5304,7 +5442,8 @@
       },
       "status": "ok",
       "number": 154,
-      "source_key": "EXT-154"
+      "source_key": "EXT-154",
+      "serial": "154"
     },
     {
       "id": "MED-140",
@@ -5340,7 +5479,8 @@
       },
       "status": "ok",
       "number": 155,
-      "source_key": "EXT-155"
+      "source_key": "EXT-155",
+      "serial": "155"
     },
     {
       "id": "MED-141",
@@ -5376,7 +5516,8 @@
       },
       "status": "ok",
       "number": 156,
-      "source_key": "EXT-156"
+      "source_key": "EXT-156",
+      "serial": "156"
     },
     {
       "id": "MED-142",
@@ -5415,7 +5556,8 @@
       },
       "status": "ok",
       "number": 157,
-      "source_key": "EXT-157"
+      "source_key": "EXT-157",
+      "serial": "157"
     },
     {
       "id": "MED-143",
@@ -5453,7 +5595,8 @@
       },
       "status": "ok",
       "number": 158,
-      "source_key": "EXT-158"
+      "source_key": "EXT-158",
+      "serial": "158"
     },
     {
       "id": "MED-144",
@@ -5489,7 +5632,8 @@
       },
       "status": "ok",
       "number": 159,
-      "source_key": "EXT-159"
+      "source_key": "EXT-159",
+      "serial": "159"
     },
     {
       "id": "MED-145",
@@ -5525,7 +5669,8 @@
       },
       "status": "ok",
       "number": 160,
-      "source_key": "EXT-160"
+      "source_key": "EXT-160",
+      "serial": "160"
     },
     {
       "id": "MED-146",
@@ -5561,7 +5706,8 @@
       },
       "status": "ok",
       "number": 161,
-      "source_key": "EXT-161"
+      "source_key": "EXT-161",
+      "serial": "161"
     },
     {
       "id": "MED-147",
@@ -5597,7 +5743,8 @@
       },
       "status": "ok",
       "number": 162,
-      "source_key": "EXT-162"
+      "source_key": "EXT-162",
+      "serial": "162"
     },
     {
       "id": "MED-148",
@@ -5633,7 +5780,8 @@
       },
       "status": "ok",
       "number": 163,
-      "source_key": "EXT-163"
+      "source_key": "EXT-163",
+      "serial": "163"
     },
     {
       "id": "MED-149",
@@ -5669,7 +5817,8 @@
       },
       "status": "ok",
       "number": 164,
-      "source_key": "EXT-164"
+      "source_key": "EXT-164",
+      "serial": "164"
     },
     {
       "id": "MED-150",
@@ -5705,7 +5854,8 @@
       },
       "status": "ok",
       "number": 165,
-      "source_key": "EXT-165"
+      "source_key": "EXT-165",
+      "serial": "165"
     },
     {
       "id": "MED-151",
@@ -5741,7 +5891,8 @@
       },
       "status": "ok",
       "number": 166,
-      "source_key": "EXT-166"
+      "source_key": "EXT-166",
+      "serial": "166"
     },
     {
       "id": "MED-152",
@@ -5779,7 +5930,8 @@
       },
       "status": "ok",
       "number": 167,
-      "source_key": "EXT-167"
+      "source_key": "EXT-167",
+      "serial": "167"
     },
     {
       "id": "MED-153",
@@ -5817,7 +5969,8 @@
       },
       "status": "ok",
       "number": 168,
-      "source_key": "EXT-168"
+      "source_key": "EXT-168",
+      "serial": "168"
     },
     {
       "id": "MED-154",
@@ -5855,7 +6008,8 @@
       },
       "status": "ok",
       "number": 169,
-      "source_key": "EXT-169"
+      "source_key": "EXT-169",
+      "serial": "169"
     },
     {
       "id": "MED-155",
@@ -5893,7 +6047,8 @@
       },
       "status": "ok",
       "number": 170,
-      "source_key": "EXT-170"
+      "source_key": "EXT-170",
+      "serial": "170"
     },
     {
       "id": "MED-156",
@@ -5929,7 +6084,8 @@
       },
       "status": "ok",
       "number": 171,
-      "source_key": "EXT-171"
+      "source_key": "EXT-171",
+      "serial": "171"
     },
     {
       "id": "MED-157",
@@ -5970,7 +6126,8 @@
       },
       "status": "ok",
       "number": 172,
-      "source_key": "EXT-172"
+      "source_key": "EXT-172",
+      "serial": "172"
     },
     {
       "id": "MED-158",
@@ -6006,7 +6163,8 @@
       },
       "status": "ok",
       "number": 173,
-      "source_key": "EXT-173"
+      "source_key": "EXT-173",
+      "serial": "173"
     },
     {
       "id": "MED-159",
@@ -6042,7 +6200,8 @@
       },
       "status": "ok",
       "number": 174,
-      "source_key": "EXT-174"
+      "source_key": "EXT-174",
+      "serial": "174"
     },
     {
       "id": "MED-160",
@@ -6080,7 +6239,8 @@
       },
       "status": "ok",
       "number": 175,
-      "source_key": "EXT-175"
+      "source_key": "EXT-175",
+      "serial": "175"
     },
     {
       "id": "MED-161",
@@ -6118,7 +6278,8 @@
       },
       "status": "ok",
       "number": 176,
-      "source_key": "EXT-176"
+      "source_key": "EXT-176",
+      "serial": "176"
     },
     {
       "id": "MED-162",
@@ -6157,7 +6318,8 @@
       },
       "status": "ok",
       "number": 177,
-      "source_key": "EXT-177"
+      "source_key": "EXT-177",
+      "serial": "177"
     },
     {
       "id": "MED-163",
@@ -6195,7 +6357,8 @@
       },
       "status": "ok",
       "number": 178,
-      "source_key": "EXT-178"
+      "source_key": "EXT-178",
+      "serial": "178"
     },
     {
       "id": "MED-164",
@@ -6233,7 +6396,8 @@
       },
       "status": "ok",
       "number": 179,
-      "source_key": "EXT-179"
+      "source_key": "EXT-179",
+      "serial": "179"
     },
     {
       "id": "MED-165",
@@ -6271,7 +6435,8 @@
       },
       "status": "ok",
       "number": 180,
-      "source_key": "EXT-180"
+      "source_key": "EXT-180",
+      "serial": "180"
     },
     {
       "id": "MED-166",
@@ -6310,7 +6475,8 @@
       },
       "status": "ok",
       "number": 181,
-      "source_key": "EXT-181"
+      "source_key": "EXT-181",
+      "serial": "181"
     },
     {
       "id": "MED-167",
@@ -6346,7 +6512,8 @@
       },
       "status": "ok",
       "number": 182,
-      "source_key": "EXT-182"
+      "source_key": "EXT-182",
+      "serial": "182"
     },
     {
       "id": "MED-168",
@@ -6382,7 +6549,8 @@
       },
       "status": "ok",
       "number": 183,
-      "source_key": "EXT-183"
+      "source_key": "EXT-183",
+      "serial": "183"
     },
     {
       "id": "MED-169",
@@ -6422,7 +6590,8 @@
       },
       "status": "ok",
       "number": 184,
-      "source_key": "EXT-184"
+      "source_key": "EXT-184",
+      "serial": "184"
     },
     {
       "id": "MED-170",
@@ -6458,7 +6627,8 @@
       },
       "status": "ok",
       "number": 185,
-      "source_key": "EXT-185"
+      "source_key": "EXT-185",
+      "serial": "185"
     },
     {
       "id": "MED-171",
@@ -6496,7 +6666,8 @@
       },
       "status": "ok",
       "number": 186,
-      "source_key": "EXT-186"
+      "source_key": "EXT-186",
+      "serial": "186"
     },
     {
       "id": "MED-172",
@@ -6534,7 +6705,8 @@
       },
       "status": "ok",
       "number": 187,
-      "source_key": "EXT-187"
+      "source_key": "EXT-187",
+      "serial": "187"
     },
     {
       "id": "MED-173",
@@ -6570,7 +6742,8 @@
       },
       "status": "ok",
       "number": 188,
-      "source_key": "EXT-188"
+      "source_key": "EXT-188",
+      "serial": "188"
     },
     {
       "id": "MED-174",
@@ -6608,7 +6781,8 @@
       },
       "status": "ok",
       "number": 189,
-      "source_key": "EXT-189"
+      "source_key": "EXT-189",
+      "serial": "189"
     },
     {
       "id": "MED-175",
@@ -6646,7 +6820,8 @@
       },
       "status": "ok",
       "number": 190,
-      "source_key": "EXT-190"
+      "source_key": "EXT-190",
+      "serial": "190"
     },
     {
       "id": "MED-176",
@@ -6684,7 +6859,8 @@
       },
       "status": "ok",
       "number": 191,
-      "source_key": "EXT-191"
+      "source_key": "EXT-191",
+      "serial": "191"
     },
     {
       "id": "MED-177",
@@ -6720,7 +6896,8 @@
       },
       "status": "ok",
       "number": 192,
-      "source_key": "EXT-192"
+      "source_key": "EXT-192",
+      "serial": "192"
     },
     {
       "id": "MED-178",
@@ -6756,7 +6933,8 @@
       },
       "status": "ok",
       "number": 193,
-      "source_key": "EXT-193"
+      "source_key": "EXT-193",
+      "serial": "193"
     },
     {
       "id": "MED-179",
@@ -6797,7 +6975,8 @@
       },
       "status": "ok",
       "number": 194,
-      "source_key": "EXT-194"
+      "source_key": "EXT-194",
+      "serial": "194"
     },
     {
       "id": "MED-180",
@@ -6833,7 +7012,8 @@
       },
       "status": "ok",
       "number": 195,
-      "source_key": "EXT-195"
+      "source_key": "EXT-195",
+      "serial": "195"
     },
     {
       "id": "CAMPUS-0b54bb12",
@@ -6873,7 +7053,8 @@
       },
       "status": "ok",
       "number": 196,
-      "source_key": "EXT-196"
+      "source_key": "EXT-196",
+      "serial": "196"
     },
     {
       "id": "CAMPUS-12df624b",
@@ -6915,7 +7096,8 @@
       },
       "status": "ok",
       "number": 197,
-      "source_key": "EXT-197"
+      "source_key": "EXT-197",
+      "serial": "197"
     },
     {
       "id": "CAMPUS-262f8e3b",
@@ -6955,7 +7137,8 @@
       },
       "status": "ok",
       "number": 198,
-      "source_key": "EXT-198"
+      "source_key": "EXT-198",
+      "serial": "198"
     },
     {
       "id": "CAMPUS-47275fbb",
@@ -6993,7 +7176,8 @@
       },
       "status": "ok",
       "number": 199,
-      "source_key": "EXT-199"
+      "source_key": "EXT-199",
+      "serial": "199"
     },
     {
       "id": "CAMPUS-58a713ab",
@@ -7032,7 +7216,8 @@
       },
       "status": "ok",
       "number": 200,
-      "source_key": "EXT-200"
+      "source_key": "EXT-200",
+      "serial": "200"
     },
     {
       "id": "CAMPUS-5ac2613e",
@@ -7068,7 +7253,8 @@
       },
       "status": "ok",
       "number": 201,
-      "source_key": "EXT-201"
+      "source_key": "EXT-201",
+      "serial": "201"
     },
     {
       "id": "CAMPUS-60905f1b",
@@ -7106,7 +7292,8 @@
       },
       "status": "ok",
       "number": 202,
-      "source_key": "EXT-202"
+      "source_key": "EXT-202",
+      "serial": "202"
     },
     {
       "id": "CAMPUS-71d7494b",
@@ -7144,7 +7331,8 @@
       },
       "status": "ok",
       "number": 203,
-      "source_key": "EXT-203"
+      "source_key": "EXT-203",
+      "serial": "203"
     },
     {
       "id": "CAMPUS-7775d59e",
@@ -7180,7 +7368,8 @@
       },
       "status": "ok",
       "number": 204,
-      "source_key": "EXT-204"
+      "source_key": "EXT-204",
+      "serial": "204"
     },
     {
       "id": "CAMPUS-8291f99f",
@@ -7218,7 +7407,8 @@
       },
       "status": "ok",
       "number": 205,
-      "source_key": "EXT-205"
+      "source_key": "EXT-205",
+      "serial": "205"
     },
     {
       "id": "CAMPUS-8c6564ce",
@@ -7257,7 +7447,8 @@
       },
       "status": "ok",
       "number": 206,
-      "source_key": "EXT-206"
+      "source_key": "EXT-206",
+      "serial": "206"
     },
     {
       "id": "CAMPUS-a1d14b89",
@@ -7293,7 +7484,8 @@
       },
       "status": "ok",
       "number": 207,
-      "source_key": "EXT-207"
+      "source_key": "EXT-207",
+      "serial": "207"
     },
     {
       "id": "CAMPUS-a69d6d54",
@@ -7332,7 +7524,8 @@
       },
       "status": "ok",
       "number": 208,
-      "source_key": "EXT-208"
+      "source_key": "EXT-208",
+      "serial": "208"
     },
     {
       "id": "CAMPUS-a6fc4eb9",
@@ -7371,7 +7564,8 @@
       },
       "status": "ok",
       "number": 209,
-      "source_key": "EXT-209"
+      "source_key": "EXT-209",
+      "serial": "209"
     },
     {
       "id": "CAMPUS-a8bcb057",
@@ -7409,7 +7603,8 @@
       },
       "status": "ok",
       "number": 210,
-      "source_key": "EXT-210"
+      "source_key": "EXT-210",
+      "serial": "210"
     },
     {
       "id": "CAMPUS-ad48ae04",
@@ -7445,7 +7640,8 @@
       },
       "status": "ok",
       "number": 211,
-      "source_key": "EXT-211"
+      "source_key": "EXT-211",
+      "serial": "211"
     },
     {
       "id": "CAMPUS-b0655f73",
@@ -7483,7 +7679,8 @@
       },
       "status": "ok",
       "number": 212,
-      "source_key": "EXT-212"
+      "source_key": "EXT-212",
+      "serial": "212"
     },
     {
       "id": "CAMPUS-b998bf5d",
@@ -7519,7 +7716,8 @@
       },
       "status": "ok",
       "number": 213,
-      "source_key": "EXT-213"
+      "source_key": "EXT-213",
+      "serial": "213"
     },
     {
       "id": "CAMPUS-c8981441",
@@ -7561,7 +7759,8 @@
       },
       "status": "ok",
       "number": 214,
-      "source_key": "EXT-214"
+      "source_key": "EXT-214",
+      "serial": "214"
     },
     {
       "id": "CAMPUS-cff0b2f4",
@@ -7597,7 +7796,8 @@
       },
       "status": "ok",
       "number": 215,
-      "source_key": "EXT-215"
+      "source_key": "EXT-215",
+      "serial": "215"
     }
   ],
   "fingerprint_note": "模板已净化（无音乐/无自动翻页）；指纹于 2026-11-07 重算，ID/number/source_key 保持不变。"

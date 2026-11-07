@@ -193,17 +193,36 @@ def build_catalog(root: Path, categories: list[dict], scan_promo: bool = True) -
         if index % 25 == 0:
             print(f"  已扫描 {index}/{len(files)} ...", file=sys.stderr)
 
-    # 序号稳定：带序号者按 1..180，无序号者排在其后；number 只按本次顺序分配
-    records.sort(key=lambda r: (r["seq"] is None, r["seq"] or 0, r["id"]))
+    # 序号由固定注册表分配：已有身份沿用原序号，新模板只在末尾依次追加。
+    # 绝不按本次排序重排、绝不复用或回收（含已被去重隐藏的序号）。
+    import template_numbers as tn
+
+    registry = tn.ensure_registry()
+    candidates = [
+        {
+            "template_id": r["id"],
+            "name": r["name"],
+            "namespace": r["namespace"],
+            "source_ref_hash": tn.source_ref_hash(r["source_ref"]),
+        }
+        for r in records
+    ]
+    allocated, added = tn.allocate_numbers(registry, candidates)
+    number_by_id = {a["template_id"]: a for a in allocated}
     paths = {}
-    for offset, record in enumerate(records):
-        record["number"] = 16 + offset
+    for record in records:
+        assigned = number_by_id[record["id"]]
+        record["number"] = assigned["number"]
+        record["serial"] = assigned["serial"]
         key = f"EXT-{record['number']:03d}"
         paths[key] = record.pop("source_ref")
         record["source_key"] = key
         record["name"] = display_name(record["name"])
         record["style"] = clean_text(record.get("style", ""))
         record["tags"] = [clean_text(t) for t in record.get("tags", [])]
+    records.sort(key=lambda r: r["number"])
+    if added:
+        print(f"新增 {added} 套模板，已在末尾追加固定序号，未重排既有序号。", file=sys.stderr)
     write_json(SOURCE_MAP, {
         "schema": "external_source_map.v1",
         "note": "本机配置，不入库；含真实文件名，仅用于定位桌面原件，绝不展示。",
