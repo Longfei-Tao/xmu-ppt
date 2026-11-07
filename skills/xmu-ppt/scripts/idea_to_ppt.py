@@ -55,6 +55,18 @@ CATEGORY_HINTS = {
     "maternal-child": ["妇幼", "母婴", "儿童", "儿科", "卡通", "宣教", "手绘", "温馨", "患者"],
     "tcm-style": ["中医", "国风", "中国风", "中药", "传统", "养生"],
 }
+
+# 主题域判定：医学词用于「同域加分」，也用于「跨域降权」。
+MEDICAL_HINTS = (
+    "胃癌", "胃", "术后", "护理", "康复", "随访", "外科", "肿瘤", "癌",
+    "手术", "营养", "并发症", "宣教", "患教", "临床", "医护", "医生",
+    "护士", "健康", "医疗", "医院", "查房", "病例", "救治", "救护",
+)
+STUDENT_HINTS = (
+    "职业规划", "求职", "竞聘", "简历", "面试", "实习", "大学生", "校园",
+    "学生", "保研", "考研", "课程", "社团", "读书", "人文", "毕业", "答辩",
+    "开题", "组会", "奖学金", "成长", "规划",
+)
 PLACEHOLDER_WORDS = [
     "单击此处添加标题", "单击添加标题文字", "YOUR CONPANY NAME", "输入医院名称",
     "请替换文字内容", "从顾客的角度", "此处添加详细文本", "仁心仁术",
@@ -159,28 +171,39 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
         for cat, words in CATEGORY_HINTS.items()
     }
     top_cats = [c for c, s in sorted(scores.items(), key=lambda kv: -kv[1]) if s > 0][:3]
+    query_is_medical = any(w in text for w in MEDICAL_HINTS)
+    query_is_student = any(w in text for w in STUDENT_HINTS)
+    if query_is_student and not query_is_medical and "institution" not in top_cats:
+        top_cats = ["institution"] + top_cats[:2]
     if not top_cats:
-        top_cats = ["report", "clinical", "institution"]
+        top_cats = ["institution", "report"]
     ranked = {c: 3 - i for i, c in enumerate(top_cats)}
-    topic_words = (
-        "胃癌", "胃", "术后", "护理", "康复", "随访", "外科", "肿瘤", "癌",
-        "手术", "营养", "并发症", "宣教", "患教", "临床", "医护", "医生",
-        "护士", "健康", "医疗", "医院", "查房", "病例", "救治", "救护",
-    )
-    topic_in_query = [w for w in topic_words if w in text]
+    medical_in_query = [w for w in MEDICAL_HINTS if w in text]
 
     def score(item: dict) -> int:
         hay = " ".join([item["name"], item["style"], " ".join(item["tags"])])
         value = ranked.get(item["category"], 0) * 10
-        # 用户说到的主题词，出现在模板名称/风格里是最强信号
-        value += 6 * sum(1 for word in topic_in_query if word in hay)
-        # 模板本身属于医护领域也加分，保证同类里医护模板排在前面
-        value += sum(1 for word in topic_words if word in hay)
+        if query_is_medical:
+            # 医学主题：主题词命中模板名称/风格是最强信号
+            value += 6 * sum(1 for word in medical_in_query if word in hay)
+            value += sum(1 for word in MEDICAL_HINTS if word in hay)
+        else:
+            # 非医学主题：模板自带的医疗属性是减分项，不能反过来加分
+            if any(word in hay for word in MEDICAL_HINTS):
+                value -= 24
+            value += 8 * sum(1 for word in STUDENT_HINTS if word in text and word in hay)
+            if query_is_student and item["category"] == "institution":
+                value += 10
         if item["pages"] and 10 <= item["pages"] <= 40:
             value += 2
         return value
 
-    pool = sorted(_all_templates(), key=lambda x: (-score(x), x["id"]))
+    # 默认走原生填充，缺少 source.pptx 的内置模板（如南强蔚蓝）不进入候选
+    usable = [
+        x for x in _all_templates()
+        if not (x["namespace"] == "builtin" and not (DECKS / x["id"] / "source.pptx").is_file())
+    ]
+    pool = sorted(usable, key=lambda x: (-score(x), x["serial"]))
     # 命中分类内按相关度挑满；临床类有 55 套，不需要靠别的分类凑数
     chosen, per_cat = [], {}
     for item in pool:
@@ -192,10 +215,11 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
         if len(chosen) >= limit:
             break
     # 万一命中分类不够，只补名称里确实含主题词的模板，绝不硬塞无关模板
+    name_terms = [w for w in (*MEDICAL_HINTS, *STUDENT_HINTS) if w in text]
     if len(chosen) < limit:
         seen = {x["id"] for x in chosen}
         for item in pool:
-            if item["id"] in seen or not any(w in item["name"] for w in topic_in_query):
+            if item["id"] in seen or not any(w in item["name"] for w in name_terms):
                 continue
             chosen.append(item)
             seen.add(item["id"])

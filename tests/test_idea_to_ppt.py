@@ -185,6 +185,22 @@ class GateTests(unittest.TestCase):
         self.assertEqual(data["slide_count"], 2)
         self.assertEqual(data["pages"][0]["page_type"], "cover_candidate")
 
+    def test_09_non_medical_topic_avoids_medical_decks(self):
+        gate = flow.recommend(
+            "大学生职业规划，包含自我认知、行业与岗位分析、目标设定与行动计划",
+            "大学生职业规划课程", limit=8,
+        )
+        ids = gate["candidates"]
+        self.assertFalse([i for i in ids if i.startswith("MED-")], ids)
+        self.assertGreaterEqual(
+            sum(1 for i in ids if i.startswith("厦门大学_")), 6,
+            f"非医学主题应以厦大校园模板为主：{ids}",
+        )
+
+    def test_10_medical_topic_still_returns_clinical_decks(self):
+        gate = flow.recommend("胃癌术后护理与随访", "临床医护", limit=5)
+        self.assertTrue(any(i.startswith("MED-") for i in gate["candidates"]))
+
 
 if __name__ == "__main__":
     unittest.main()
