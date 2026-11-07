@@ -26,11 +26,14 @@ GALLERY = ROOT / "local-gallery"
 COVERS = GALLERY / "covers"
 PAGES = GALLERY / "pages"
 MANIFEST = GALLERY / "render_manifest.json"
+SOURCE_MAP_FILE = ROOT / "skills/xmu-ppt/templates/external/source_map.local.json"
 # 固定复用一个临时 PNG：不做逐文件删除，避免触发批量删除保护，也不会留下上千个中间文件
 RENDER_TMP = GALLERY / "_render_tmp" / "slide.png"
 
 
-def load_json(path: Path):
+def load_json(path: Path, default=None):
+    if not path.exists():
+        return default
     return json.loads(path.read_text(encoding="utf-8"))
 
 
@@ -47,6 +50,16 @@ def guard() -> None:
             "检测到 PowerPoint 正在运行。为避免干扰你的工作，已停止渲染；"
             "请保存并关闭 PowerPoint 后重试。"
         )
+
+
+def resolve_source(item: dict) -> Path:
+    """按 source_key 从本地映射定位原件；索引中不含原文件名。"""
+    root = Path(load_json(ROOT_LOCAL)["root"])
+    mapping = (load_json(SOURCE_MAP_FILE, {}) or {}).get("paths", {})
+    rel = mapping.get(item.get("source_key"))
+    if not rel:
+        raise FileNotFoundError(f"本地映射缺少 {item['id']} 的路径，请重跑 scan")
+    return root / rel
 
 
 def to_webp(png: Path, dest: Path) -> None:
@@ -117,7 +130,7 @@ def main() -> int:
     try:
         for index, item in enumerate(items, 1):
             template_id = item["id"]
-            source = root / item["source_path"]
+            source = resolve_source(item)
             folder = PAGES / template_id
             folder.mkdir(parents=True, exist_ok=True)
             deck = None

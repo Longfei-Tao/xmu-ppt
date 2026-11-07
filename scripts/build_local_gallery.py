@@ -20,6 +20,8 @@ EXTERNAL_CATALOG = ROOT / "skills/xmu-ppt/templates/external/external_catalog.js
 BUILTIN_CATALOG = ROOT / "docs/templates/catalog.json"
 ROOT_LOCAL = ROOT / "skills/xmu-ppt/templates/external/root.local.json"
 CATEGORIES_FILE = ROOT / "skills/xmu-ppt/templates/external/categories.json"
+DUP_FILE = ROOT / "skills/xmu-ppt/templates/external/duplicates.json"
+SOURCE_MAP_FILE = ROOT / "skills/xmu-ppt/templates/external/source_map.local.json"
 BUILTIN_PREVIEWS = ROOT / "docs/templates/previews"
 
 OUT = ROOT / "local-gallery"
@@ -32,7 +34,9 @@ COVER_W, COVER_H = 960, 540
 FONT_PATH = "C:/Windows/Fonts/msyh.ttc"
 
 
-def load_json(path: Path):
+def load_json(path: Path, default=None):
+    if not path.exists():
+        return default
     return json.loads(path.read_text(encoding="utf-8"))
 
 
@@ -76,15 +80,36 @@ def extract_embedded_cover(pptx: Path, dest: Path) -> bool:
         return False
 
 
-def collect_cards(root: Path) -> tuple[list[dict], dict]:
+def display_name(raw: str) -> str:
+    """展示名二次脱敏；索引已清洗，这里兜底去掉任何残留占位。"""
+    s = (raw or '').replace('_XXX', '').replace('XXX', '').strip('_ ·-')
+    return s or '未命名模板'
+
+
+def render_cover(template_id: str, dest: Path) -> bool:
+    """统一用本机渲染的第 1 页做封面：满幅 16:9、尺寸一致、清晰。"""
+    first = PAGES / template_id / '01.webp'
+    if not first.exists():
+        return False
+    with Image.open(first) as image:
+        image.convert('RGB').resize((COVER_W, COVER_H), Image.Resampling.LANCZOS).save(
+            dest, "WEBP", quality=85
+        )
+    return True
+
+
+def collect_cards() -> tuple[list[dict], dict]:
     external = load_json(EXTERNAL_CATALOG)
     builtin = load_json(BUILTIN_CATALOG)
     categories = load_json(CATEGORIES_FILE)["categories"]
+    removed = {g["remove"] for g in load_json(DUP_FILE)["groups"]}
+    source_map = (load_json(SOURCE_MAP_FILE, {}) or {}).get("paths", {})
+    root = Path(load_json(ROOT_LOCAL)["root"])
     name_by_id = {c["id"]: c["name"] for c in categories}
 
     cards: list[dict] = []
 
-    # 内置 15 套：归到「厦门大学等高校/机构风格」，封面复用仓库已有预览图
+    # 内置 15 套：封面复用仓库已有预览图，天然满幅清晰
     for deck in builtin:
         cover = COVERS / f"{deck['id']}.webp"
         source_png = BUILTIN_PREVIEWS / f"{int(deck['number']):02d}.png"
@@ -97,7 +122,7 @@ def collect_cards(root: Path) -> tuple[list[dict], dict]:
         cards.append({
             "number": int(deck["number"]),
             "id": deck["id"],
-            "name": deck["name"],
+            "name": display_name(deck["name"]),
             "style": deck.get("style", ""),
             "tags": deck.get("tags", []),
             "category": "institution",
@@ -112,17 +137,20 @@ def collect_cards(root: Path) -> tuple[list[dict], dict]:
             "routes": deck.get("routes", []),
         })
 
-    # 外部 200 套：只抽内嵌封面，抽不到的用占位图，之后由渲染脚本补齐
+    # 外部模板：跳过重复副本；封面统一改用渲染第 1 页
     for item in external["templates"]:
+        if item["id"] in removed:
+            continue
         cover = COVERS / f"{item['id']}.webp"
-        pptx = root / item["source_path"]
-        if cover.exists():
-            # 可能来自内嵌缩略图，也可能是渲染脚本为无缩略图的模板补拍的第 1 页
-            status = "embedded" if item.get("has_thumbnail") else "rendered"
-        elif pptx.exists() and extract_embedded_cover(pptx, cover):
-            status = "embedded"
+        if render_cover(item["id"], cover):
+            status = "rendered"
         else:
-            status = "placeholder"
+            rel = source_map.get(item.get("source_key"))
+            pptx = root / rel if rel else None
+            if pptx and pptx.exists() and extract_embedded_cover(pptx, cover):
+                status = "embedded"
+            else:
+                status = "placeholder"
         flags = []
         if item.get("promo_text"):
             flags.append("含推广文字")
@@ -131,7 +159,7 @@ def collect_cards(root: Path) -> tuple[list[dict], dict]:
         cards.append({
             "number": int(item["number"]),
             "id": item["id"],
-            "name": item["name"],
+            "name": display_name(item["name"]),
             "style": item.get("style", ""),
             "tags": item.get("tags", []),
             "category": item["primary_category"],
@@ -155,6 +183,7 @@ def collect_cards(root: Path) -> tuple[list[dict], dict]:
         "external": sum(1 for c in cards if c["namespace"] != "builtin"),
         "covers_ready": sum(1 for c in cards if c["cover_status"] != "placeholder"),
         "covers_missing": sum(1 for c in cards if c["cover_status"] == "placeholder"),
+        "duplicates_removed": len(removed),
         "by_category": {},
     }
     for card in cards:
@@ -166,7 +195,6 @@ def collect_cards(root: Path) -> tuple[list[dict], dict]:
         "counts": counts,
         "templates": cards,
     }
-
 
 def write_catalog_js(data: dict) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
@@ -390,7 +418,8 @@ function render() {
   $('status').textContent = '共 ' + matches.length + ' 套模板' +
     (cat !== 'all' ? '（分类已锁定）' : '') +
     (style ? ' · 风格：' + style : '');
-  $('note').textContent = '提示：第 2、3、4 页是版式页，选中后会重点保护。' +
+  $('note').textContent = '已按封面指纹合并 ' + (DATA.counts.duplicates_removed || 0) +
+    ' 套重复模板，仅保留完整可用的一个版本。提示：第 2、3、4 页是版式页，选中后会重点保护；' +
     '逐页预览由本机渲染脚本生成，尚未生成的页会显示占位图，不影响选用。';
 }
 
@@ -495,7 +524,7 @@ def main() -> int:
     COVERS.mkdir(parents=True, exist_ok=True)
     PAGES.mkdir(parents=True, exist_ok=True)
     make_placeholder()
-    cards, data = collect_cards(root)
+    cards, data = collect_cards()
     write_catalog_js(data)
     write_index_html()
     write_category_mirrors(load_json(CATEGORIES_FILE)["categories"])

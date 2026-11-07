@@ -24,12 +24,25 @@ LICENSES = EXTERNAL / "licenses.json"
 CATEGORIES = EXTERNAL / "categories.json"
 ROOT_LOCAL = EXTERNAL / "root.local.json"
 STATUS = EXTERNAL / "path_status.json"
+SOURCE_MAP = EXTERNAL / "source_map.local.json"
 
 PROMO_KEYWORDS = ("定制", "工作室", "购买", "会员", "微信", "二维码", "加群", "淘宝")
 ODD_MEDIA = {".wdp", ".emf", ".wmf", ".mp3", ".wav", ".wma", ".m4a", ".tiff"}
 SLIDE_RE = re.compile(r"ppt/slides/slide\d+\.xml$")
 SEQ_RE = re.compile(r"_(\d{3})$")
 CREATOR_RE = re.compile(r"<dc:creator>(.*?)</dc:creator>", re.S)
+
+
+def clean_text(value: str) -> str:
+    """扫描新模板时把姓名/昵称占位脱敏，避免重新引入个人名称。"""
+    for token in ("偷懒儿ppt", "俞兆达", "李维军", "许苗怡", "陶龙飞"):
+        value = value.replace(token, "XXX")
+    return value
+
+
+def display_name(raw: str) -> str:
+    s = clean_text(raw or "").replace("_XXX", "").replace("XXX", "").strip("_ ·-")
+    return s or "未命名模板"
 
 
 def load_json(path: Path, default=None):
@@ -87,7 +100,7 @@ def inspect_one(path: Path, root: Path, categories: list[dict], scan_promo: bool
     folder = path.parent.name
     size_bytes = path.stat().st_size
     digest = sha256_file(path)
-    rel_path = path.relative_to(root).as_posix()
+    source_ref = path.relative_to(root).as_posix()
 
     with zipfile.ZipFile(path) as zf:
         names = zf.namelist()
@@ -143,8 +156,7 @@ def inspect_one(path: Path, root: Path, categories: list[dict], scan_promo: bool
         "id": template_id,
         "namespace": "medical" if seq is not None else "institution",
         "seq": seq,
-        "raw_filename": path.name,
-        "source_path": rel_path,
+        "source_ref": source_ref,
         "size_bytes": size_bytes,
         "sha256": digest,
         "folder": folder,
@@ -183,8 +195,20 @@ def build_catalog(root: Path, categories: list[dict], scan_promo: bool = True) -
 
     # 序号稳定：带序号者按 1..180，无序号者排在其后；number 只按本次顺序分配
     records.sort(key=lambda r: (r["seq"] is None, r["seq"] or 0, r["id"]))
+    paths = {}
     for offset, record in enumerate(records):
         record["number"] = 16 + offset
+        key = f"EXT-{record['number']:03d}"
+        paths[key] = record.pop("source_ref")
+        record["source_key"] = key
+        record["name"] = display_name(record["name"])
+        record["style"] = clean_text(record.get("style", ""))
+        record["tags"] = [clean_text(t) for t in record.get("tags", [])]
+    write_json(SOURCE_MAP, {
+        "schema": "external_source_map.v1",
+        "note": "本机配置，不入库；含真实文件名，仅用于定位桌面原件，绝不展示。",
+        "paths": paths,
+    })
 
     by_category: dict[str, int] = {}
     for record in records:
@@ -222,7 +246,7 @@ def build_licenses(catalog: dict) -> dict:
     entries = [
         {
             "id": r["id"],
-            "source_path": r["source_path"],
+            "source_key": r["source_key"],
             "status": "unknown",
             "license": None,
             "redistributable": False,
@@ -275,9 +299,11 @@ def run_doctor(args) -> int:
     if not catalog:
         raise SystemExit("尚未生成索引，请先运行 scan")
     problems = []
+    mapping = (load_json(SOURCE_MAP, {}) or {}).get("paths", {})
     for record in catalog["templates"]:
-        path = root / record["source_path"]
-        if not path.exists():
+        rel = mapping.get(record.get("source_key"))
+        path = root / rel if rel else None
+        if path is None or not path.exists():
             status = "missing"
         elif path.stat().st_size != record["size_bytes"]:
             status = "changed"
@@ -286,7 +312,7 @@ def run_doctor(args) -> int:
         else:
             status = "ok"
         if status != "ok":
-            problems.append({"id": record["id"], "status": status, "path": record["source_path"]})
+            problems.append({"id": record["id"], "status": status, "path": record.get("source_key")})
     report = {
         "checked_on": date.today().isoformat(),
         "root": str(root),

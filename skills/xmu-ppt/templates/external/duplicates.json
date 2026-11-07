@@ -1,0 +1,68 @@
+{
+  "schema": "external_duplicates.v1",
+  "method": "对每套第 1 页封面做 16x16 感知哈希，汉明距离 <= 2/256 判定为同一版式",
+  "keep_policy": "保留内置 15 套（许可清晰、封面完整、展示正常），从展示中移除重复的答辩稿副本",
+  "note": "桌面原件未删除、未改名；仅在项目索引与本地画廊中不再重复展示。",
+  "groups": [
+    {
+      "remove": "CAMPUS-0b54bb12",
+      "keep": "厦门大学_主题_厦大蓝",
+      "hash_distance": 1
+    },
+    {
+      "remove": "CAMPUS-262f8e3b",
+      "keep": "厦门大学_主题_晚霞",
+      "hash_distance": 2
+    },
+    {
+      "remove": "CAMPUS-47275fbb",
+      "keep": "厦门大学_主题_经典蓝白",
+      "hash_distance": 0
+    },
+    {
+      "remove": "CAMPUS-58a713ab",
+      "keep": "厦门大学_主题_木棉花",
+      "hash_distance": 1
+    },
+    {
+      "remove": "CAMPUS-5ac2613e",
+      "keep": "厦门大学_主题_凤凰花开",
+      "hash_distance": 0
+    },
+    {
+      "remove": "CAMPUS-60905f1b",
+      "keep": "厦门大学_主题_晕染风",
+      "hash_distance": 0
+    },
+    {
+      "remove": "CAMPUS-71d7494b",
+      "keep": "厦门大学_主题_鹭江夜澜",
+      "hash_distance": 0
+    },
+    {
+      "remove": "CAMPUS-8291f99f",
+      "keep": "厦门大学_主题_四季风景",
+      "hash_distance": 0
+    },
+    {
+      "remove": "CAMPUS-8c6564ce",
+      "keep": "厦门大学_主题_米金书法",
+      "hash_distance": 1
+    },
+    {
+      "remove": "CAMPUS-a69d6d54",
+      "keep": "厦门大学_主题_蓝天校门",
+      "hash_distance": 0
+    },
+    {
+      "remove": "CAMPUS-a8bcb057",
+      "keep": "厦门大学_主题_清凉一厦",
+      "hash_distance": 0
+    },
+    {
+      "remove": "CAMPUS-cff0b2f4",
+      "keep": "厦门大学_主题_光影厦大",
+      "hash_distance": 0
+    }
+  ]
+}
