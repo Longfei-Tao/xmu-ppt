@@ -146,33 +146,43 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
     if not top_cats:
         top_cats = ["report", "clinical", "institution"]
     ranked = {c: 3 - i for i, c in enumerate(top_cats)}
+    topic_words = (
+        "胃癌", "胃", "术后", "护理", "康复", "随访", "外科", "肿瘤", "癌",
+        "手术", "营养", "并发症", "宣教", "患教", "临床", "医护", "医生",
+        "护士", "健康", "医疗", "医院", "查房", "病例", "救治", "救护",
+    )
+    topic_in_query = [w for w in topic_words if w in text]
 
     def score(item: dict) -> int:
-        value = ranked.get(item["category"], 0) * 10
         hay = " ".join([item["name"], item["style"], " ".join(item["tags"])])
-        for word in set(re.findall(r"[\u4e00-\u9fa5]{2,4}", text)):
-            if word in hay:
-                value += 2
+        value = ranked.get(item["category"], 0) * 10
+        # 用户说到的主题词，出现在模板名称/风格里是最强信号
+        value += 6 * sum(1 for word in topic_in_query if word in hay)
+        # 模板本身属于医护领域也加分，保证同类里医护模板排在前面
+        value += sum(1 for word in topic_words if word in hay)
         if item["pages"] and 10 <= item["pages"] <= 40:
             value += 2
         return value
 
     pool = sorted(_all_templates(), key=lambda x: (-score(x), x["id"]))
-    # 只从主题命中的分类里挑，每类最多 3 套，避免清单被不相关模板凑数占满
+    # 命中分类内按相关度挑满；临床类有 55 套，不需要靠别的分类凑数
     chosen, per_cat = [], {}
     for item in pool:
         cat = item["category"]
-        if cat not in top_cats or per_cat.get(cat, 0) >= 3:
+        if cat not in top_cats or per_cat.get(cat, 0) >= limit:
             continue
-        chosen.append(item); per_cat[cat] = per_cat.get(cat, 0) + 1
+        chosen.append(item)
+        per_cat[cat] = per_cat.get(cat, 0) + 1
         if len(chosen) >= limit:
             break
+    # 万一命中分类不够，只补名称里确实含主题词的模板，绝不硬塞无关模板
     if len(chosen) < limit:
         seen = {x["id"] for x in chosen}
         for item in pool:
-            if item["category"] != "report" or item["id"] in seen:
+            if item["id"] in seen or not any(w in item["name"] for w in topic_in_query):
                 continue
-            chosen.append(item); seen.add(item["id"])
+            chosen.append(item)
+            seen.add(item["id"])
             if len(chosen) >= limit:
                 break
 
