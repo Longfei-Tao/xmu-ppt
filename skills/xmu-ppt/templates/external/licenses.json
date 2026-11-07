@@ -1,0 +1,1810 @@
+{
+  "schema": "external_licenses.v1",
+  "generated_on": "2026-11-07",
+  "counts": {
+    "total": 200,
+    "unknown": 200
+  },
+  "entries": [
+    {
+      "id": "MED-001",
+      "source_path": "02_通用汇报与工作总结/沉稳蓝色_医学医疗_001.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-002",
+      "source_path": "02_通用汇报与工作总结/青蓝图表_医疗通用数据报告_002.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-003",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_医院医疗实用场景_003.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-004",
+      "source_path": "03_临床专科与医护护理/青蓝通透_医护报告汇报总结_004.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-005",
+      "source_path": "02_通用汇报与工作总结/绿色医疗_医院系统汇报_005.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-006",
+      "source_path": "02_通用汇报与工作总结/蓝色大气_医学全流程逻辑图_006.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-007",
+      "source_path": "02_通用汇报与工作总结/清晰浅蓝_分版块总结汇报_007.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-008",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_医护通用场景_008.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-009",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_工作汇报医学演示_009.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-010",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_强逻辑梳理年度报告_010.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-011",
+      "source_path": "04_妇幼健康与卡通宣教/手绘卡通_手绘卡通风格医护专用_011.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-012",
+      "source_path": "03_临床专科与医护护理/暖红大气_医疗救护系统报告_012.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-013",
+      "source_path": "04_妇幼健康与卡通宣教/手绘卡通_搭起健康的通道_013.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-014",
+      "source_path": "02_通用汇报与工作总结/简洁灰绿_移动互联网智能医疗_014.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-015",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_精美实用框架完整总结汇报_015.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-016",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_广泛应用于医院_016.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-017",
+      "source_path": "04_妇幼健康与卡通宣教/青蓝通透_寓意明确唯美简约成果汇报_017.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-018",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_医疗机构工作汇报_018.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-019",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_医生护士护理_019.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-020",
+      "source_path": "03_临床专科与医护护理/高端专业_医护通用汇报_020.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-021",
+      "source_path": "02_通用汇报与工作总结/沉稳蓝_逻辑清晰动态汇报_021.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-022",
+      "source_path": "02_通用汇报与工作总结/立体质感_医疗汇报_022.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-023",
+      "source_path": "03_临床专科与医护护理/动态演示_医护卫生报告_023.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-024",
+      "source_path": "03_临床专科与医护护理/暖红大气_护士护理汇报宣教_024.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-025",
+      "source_path": "03_临床专科与医护护理/暖红大气_实用医护数据展示_025.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-026",
+      "source_path": "03_临床专科与医护护理/绿意清新_护士专用健康医疗_026.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-027",
+      "source_path": "04_妇幼健康与卡通宣教/青蓝通透_温馨浅蓝医疗报告_027.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-028",
+      "source_path": "04_妇幼健康与卡通宣教/柔粉温馨_护士护理樱花粉_028.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-029",
+      "source_path": "04_妇幼健康与卡通宣教/蓝白简洁_活泼护士医护专用_029.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-030",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_医学通用总结汇报_030.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-031",
+      "source_path": "03_临床专科与医护护理/青蓝通透_药品医院分析行业用户商业_031.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-032",
+      "source_path": "05_中医国风与特色专题/米金国风_中医中药大医精诚厚德怀仁_032.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-033",
+      "source_path": "05_中医国风与特色专题/米金国风_传统中医养生文化_033.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-034",
+      "source_path": "05_中医国风与特色专题/米金国风_经典传统中医中药_034.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-035",
+      "source_path": "03_临床专科与医护护理/青蓝通透_医院简介科室宣传医疗座谈_035.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-036",
+      "source_path": "04_妇幼健康与卡通宣教/手绘卡通_简约手绘卡通医护系统_036.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-037",
+      "source_path": "04_妇幼健康与卡通宣教/手绘卡通_温馨卡通手绘_037.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-038",
+      "source_path": "04_妇幼健康与卡通宣教/暖红大气_医疗护士康复关爱总结_038.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-039",
+      "source_path": "03_临床专科与医护护理/动态演示_护理康复动态页面_039.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-040",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_简约简洁医学医疗_040.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-041",
+      "source_path": "03_临床专科与医护护理/暖红大气_急救120救护系统专用_041.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-042",
+      "source_path": "04_妇幼健康与卡通宣教/青蓝通透_医护总结关爱康复_042.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-043",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_医院医疗关键值总结_043.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-044",
+      "source_path": "03_临床专科与医护护理/柔粉温馨_精美实用框架完整护士科室_044.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-045",
+      "source_path": "03_临床专科与医护护理/青蓝通透_手术团队专用_045.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-046",
+      "source_path": "04_妇幼健康与卡通宣教/柔粉温馨_白衣天使512护士节_046.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-047",
+      "source_path": "04_妇幼健康与卡通宣教/柔粉温馨_国际护士节_047.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-048",
+      "source_path": "02_通用汇报与工作总结/暖红大气_简约创意医疗汇报_048.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-049",
+      "source_path": "05_中医国风与特色专题/青蓝通透_网上医疗救助家庭医疗_049.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-050",
+      "source_path": "02_通用汇报与工作总结/绿意清新_医院年度季度工作汇报_050.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-051",
+      "source_path": "02_通用汇报与工作总结/绿意清新_简约汇报总结通用_051.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-052",
+      "source_path": "02_通用汇报与工作总结/绿意清新_通用医疗简约素材_052.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-053",
+      "source_path": "03_临床专科与医护护理/柔粉温馨_简约设计卫生护理_053.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-054",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_医疗医学工作汇报_054.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-055",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_高端医学课题研究病理分析_055.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-056",
+      "source_path": "02_通用汇报与工作总结/动态演示_医疗动态总结_056.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-057",
+      "source_path": "03_临床专科与医护护理/青蓝通透_医学报告医生实习报告_057.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-058",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_绿报告色医疗行业工作_058.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-059",
+      "source_path": "02_通用汇报与工作总结/绿意清新_医学报告演示_059.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-060",
+      "source_path": "05_中医国风与特色专题/暖红大气_彩虹圈爱心呵护生命_060.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-061",
+      "source_path": "03_临床专科与医护护理/活力橙_护士总结汇报_061.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-062",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_创意红医疗医药汇报_062.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-063",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_医学总结汇报_063.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-064",
+      "source_path": "03_临床专科与医护护理/青蓝通透_医疗医药行业工作计划_064.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-065",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_完整框架工作汇报暨阶段_065.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-066",
+      "source_path": "02_通用汇报与工作总结/动态演示_全动画页面框架完整_066.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-067",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_大气蓝医药工作汇报_067.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-068",
+      "source_path": "04_妇幼健康与卡通宣教/蓝白简洁_互助携手呵护健康_068.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-069",
+      "source_path": "04_妇幼健康与卡通宣教/柔粉温馨_产科孕妇孕检示意_069.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-070",
+      "source_path": "04_妇幼健康与卡通宣教/青蓝通透_孕妇母婴童育儿二胎_070.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-071",
+      "source_path": "04_妇幼健康与卡通宣教/柔粉温馨_妇幼健康育儿启蒙_071.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-072",
+      "source_path": "04_妇幼健康与卡通宣教/柔粉温馨_母婴设计育儿护理_072.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-073",
+      "source_path": "04_妇幼健康与卡通宣教/青蓝通透_呵护全家医疗总结汇报_073.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-074",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_简洁实用医院医疗会议_074.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-075",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_简约全面医疗系统_075.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-076",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_简约全面医疗系统_076.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-077",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_简约时尚配色清爽_077.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-078",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_医疗医学工作报告_078.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-079",
+      "source_path": "02_通用汇报与工作总结/动态演示_医学研究_079.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-080",
+      "source_path": "05_中医国风与特色专题/青蓝通透_医疗系统网上医疗家庭医疗_080.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-081",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_医学总结计划项目汇报_081.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-082",
+      "source_path": "03_临床专科与医护护理/暖红大气_医护图表丰富图标多样_082.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-083",
+      "source_path": "04_妇幼健康与卡通宣教/暖红大气_牙齿牙科护理_083.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-084",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_医疗汇报总结_084.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-085",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_简约通用医疗_085.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-086",
+      "source_path": "05_中医国风与特色专题/暖红大气_品管圈医疗_086.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-087",
+      "source_path": "05_中医国风与特色专题/立体质感_微粒体获奖创意品管_087.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-088",
+      "source_path": "05_中医国风与特色专题/青蓝通透_简约清爽蓝色品管圈_088.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-089",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_大型医院工作汇报_089.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-090",
+      "source_path": "03_临床专科与医护护理/青蓝通透_医生护士通用_090.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-091",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_年终总结新年计划_091.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-092",
+      "source_path": "04_妇幼健康与卡通宣教/青蓝通透_健康口腔工作汇报_092.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-093",
+      "source_path": "04_妇幼健康与卡通宣教/柔粉温馨_母婴设计育儿护理_093.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-094",
+      "source_path": "02_通用汇报与工作总结/暖红大气_医院年度季度工作报告_094.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-095",
+      "source_path": "03_临床专科与医护护理/暖红大气_医院医疗救护系统_095.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-096",
+      "source_path": "02_通用汇报与工作总结/动态演示_动态框架完整精美_096.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-097",
+      "source_path": "03_临床专科与医护护理/绿意清新_医药医疗通用_097.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-098",
+      "source_path": "05_中医国风与特色专题/米金国风_中医养生冬季养生_098.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-099",
+      "source_path": "03_临床专科与医护护理/青蓝通透_医疗护理总结计划_099.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-100",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_医院医疗汇报总结_100.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-101",
+      "source_path": "03_临床专科与医护护理/青蓝通透_护士护理工作报告_101.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-102",
+      "source_path": "03_临床专科与医护护理/青蓝通透_医生护士总结_102.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-103",
+      "source_path": "04_妇幼健康与卡通宣教/柔粉温馨_精美粉色护士护理_103.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-104",
+      "source_path": "05_中医国风与特色专题/青蓝通透_网上医疗网络救助_104.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-105",
+      "source_path": "05_中医国风与特色专题/青蓝通透_健康医疗网络医疗_105.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-106",
+      "source_path": "02_通用汇报与工作总结/米金雅致_医疗系统专业设计_106.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-107",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_临床医学技术强院_107.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-108",
+      "source_path": "05_中医国风与特色专题/暖红大气_医疗社区医疗卫生系统_108.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-109",
+      "source_path": "05_中医国风与特色专题/青蓝通透_网上医疗网络救护_109.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-110",
+      "source_path": "02_通用汇报与工作总结/暖红大气_医疗系统工作概述_110.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-111",
+      "source_path": "03_临床专科与医护护理/绿意清新_绿色医药项目推广_111.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-112",
+      "source_path": "05_中医国风与特色专题/暖红大气_大数据医疗融资_112.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-113",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_内容完整成果汇报_113.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-114",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_医疗医学通用总结计划项目汇报_114.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-115",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_医学医疗工作计划总结_115.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-116",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_医疗医学总结汇报_116.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-117",
+      "source_path": "02_通用汇报与工作总结/动态演示_医院医疗_117.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-118",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_浅蓝总结全流程_118.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-119",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_高度清晰呈现_119.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-120",
+      "source_path": "03_临床专科与医护护理/动态演示_医学研究_120.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-121",
+      "source_path": "03_临床专科与医护护理/暖红大气_爱心医疗护士内容完整_121.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-122",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_医学医疗工作总结述职_122.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-123",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_框架完整汇报_123.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-124",
+      "source_path": "04_妇幼健康与卡通宣教/青蓝通透_儿童护理医院_124.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-125",
+      "source_path": "04_妇幼健康与卡通宣教/暖红大气_儿童医院_125.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-126",
+      "source_path": "03_临床专科与医护护理/米金雅致_脑科医疗通用_126.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-127",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_心脏内科医疗研究报告_127.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-128",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_医疗医药汇报_128.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-129",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_医学医药类通用_129.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-130",
+      "source_path": "03_临床专科与医护护理/青蓝通透_医护多用途汇报_130.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-131",
+      "source_path": "02_通用汇报与工作总结/暖红大气_医学工作总结汇报_131.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-132",
+      "source_path": "03_临床专科与医护护理/青蓝通透_医学手术室医疗团队_132.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-133",
+      "source_path": "05_中医国风与特色专题/青蓝通透_生物科研微生物_133.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-134",
+      "source_path": "03_临床专科与医护护理/米金雅致_医学医药产品推广介绍_134.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-135",
+      "source_path": "05_中医国风与特色专题/暖红大气_医学细胞学习报告_135.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-136",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_医学报告医疗器材_136.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-137",
+      "source_path": "04_妇幼健康与卡通宣教/暖红大气_美丽人生从齿开始_137.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-138",
+      "source_path": "04_妇幼健康与卡通宣教/青蓝通透_牙科医疗口腔健康研究_138.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-139",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_医院年度工作计划_139.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-140",
+      "source_path": "03_临床专科与医护护理/暖红大气_血液病学医疗研究_140.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-141",
+      "source_path": "03_临床专科与医护护理/青蓝通透_体检中心健康报告_141.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-142",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_医疗医院项目汇报_142.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-143",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_医护行业通用_143.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-144",
+      "source_path": "03_临床专科与医护护理/暖红大气_心脏病研究医疗报告_144.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-145",
+      "source_path": "03_临床专科与医护护理/暖红大气_肾脏医学研究报告_145.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-146",
+      "source_path": "02_通用汇报与工作总结/暖红大气_医疗爱心通用_146.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-147",
+      "source_path": "05_中医国风与特色专题/蓝白简洁_医学美容机构_147.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-148",
+      "source_path": "04_妇幼健康与卡通宣教/青蓝通透_关爱牙齿口腔健康讲座_148.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-149",
+      "source_path": "04_妇幼健康与卡通宣教/柔粉温馨_孕妇健康护理粉色唯美_149.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-150",
+      "source_path": "04_妇幼健康与卡通宣教/暖红大气_婴幼儿健康护理_150.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-151",
+      "source_path": "05_中医国风与特色专题/蓝白简洁_瑜伽教学宣传_151.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-152",
+      "source_path": "02_通用汇报与工作总结/米金雅致_医疗工作总结汇报_152.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-153",
+      "source_path": "03_临床专科与医护护理/青蓝通透_护理通用汇报_153.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-154",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_医疗结构工作总结_154.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-155",
+      "source_path": "03_临床专科与医护护理/米金雅致_医学内科护理学说课_155.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-156",
+      "source_path": "04_妇幼健康与卡通宣教/蓝白简洁_母乳宝宝要吃多少奶_156.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-157",
+      "source_path": "05_中医国风与特色专题/暖红大气_美容行业宣传_157.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-158",
+      "source_path": "05_中医国风与特色专题/米金国风_中国风中医通用_158.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-159",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_医生护士工作汇报_159.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-160",
+      "source_path": "03_临床专科与医护护理/蓝白简洁_护士汇报总结分享_160.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-161",
+      "source_path": "03_临床专科与医护护理/米金雅致_护士护理报告_161.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-162",
+      "source_path": "04_妇幼健康与卡通宣教/柔粉温馨_精美粉色护士护理_162.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-163",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_医学研究报告_163.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-164",
+      "source_path": "03_临床专科与医护护理/雅紫沉稳_医药通用汇报_164.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-165",
+      "source_path": "05_中医国风与特色专题/蓝白简洁_基因医学药品_165.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-166",
+      "source_path": "03_临床专科与医护护理/暖红大气_医药通用汇报_166.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-167",
+      "source_path": "03_临床专科与医护护理/青蓝通透_生物医药药品_167.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-168",
+      "source_path": "05_中医国风与特色专题/青蓝通透_美容医疗整形通用_168.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-169",
+      "source_path": "05_中医国风与特色专题/米金国风_中医文化理论总结_169.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-170",
+      "source_path": "05_中医国风与特色专题/米金国风_中医中药草药文化_170.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-171",
+      "source_path": "02_通用汇报与工作总结/蓝白简洁_蓝色医疗汇报_171.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-172",
+      "source_path": "04_妇幼健康与卡通宣教/暖红大气_儿童护理通用_172.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-173",
+      "source_path": "04_妇幼健康与卡通宣教/青蓝通透_儿童护理卫生健康_173.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-174",
+      "source_path": "02_通用汇报与工作总结/暖红大气_生育健康医疗机构_174.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-175",
+      "source_path": "04_妇幼健康与卡通宣教/蓝白简洁_关爱家庭关爱健康_175.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-176",
+      "source_path": "05_中医国风与特色专题/蓝白简洁_医疗品管全面总结_176.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-177",
+      "source_path": "02_通用汇报与工作总结/暖红大气_医学医疗产品推广介绍_177.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-178",
+      "source_path": "04_妇幼健康与卡通宣教/青蓝通透_关爱肺部总结汇报_178.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-179",
+      "source_path": "04_妇幼健康与卡通宣教/青蓝通透_儿童护理通用_179.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "MED-180",
+      "source_path": "02_通用汇报与工作总结/青蓝通透_医学研究精美排版_180.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-0b54bb12",
+      "source_path": "01_毕业答辩与校园主题/清爽蓝白建筑_答辩汇报_厦大蓝.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-12df624b",
+      "source_path": "02_通用汇报与工作总结/智慧楼宇节能_蓝紫技术方案_企业汇报.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-262f8e3b",
+      "source_path": "01_毕业答辩与校园主题/暖橙晚霞_答辩汇报_晚霞.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-47275fbb",
+      "source_path": "01_毕业答辩与校园主题/经典蓝白校门_毕业答辩_俞兆达.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-58a713ab",
+      "source_path": "01_毕业答辩与校园主题/木棉暖红_答辩汇报_木棉花.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-5ac2613e",
+      "source_path": "01_毕业答辩与校园主题/凤凰花照片_答辩汇报_凤凰花开.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-60905f1b",
+      "source_path": "01_毕业答辩与校园主题/紫蓝水彩晕染_答辩汇报_晕染风.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-71d7494b",
+      "source_path": "01_毕业答辩与校园主题/蓝白简洁_厦门大学毕业论文开题答辩通用_S01.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-7775d59e",
+      "source_path": "01_毕业答辩与校园主题/宣纸宋体人文_论文答辩_凤栖青橙.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-8291f99f",
+      "source_path": "01_毕业答辩与校园主题/四季实景照片_答辩汇报_四季风景.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-8c6564ce",
+      "source_path": "01_毕业答辩与校园主题/米金书法校训_毕业答辩_李维军.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-a1d14b89",
+      "source_path": "02_通用汇报与工作总结/组会分享_PPT制作软件推荐_粉紫云彩.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-a69d6d54",
+      "source_path": "01_毕业答辩与校园主题/蓝天校门实景_毕业答辩_许苗怡.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-a6fc4eb9",
+      "source_path": "01_毕业答辩与校园主题/蓝白简洁_毕业论文中期答辩_L01.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-a8bcb057",
+      "source_path": "01_毕业答辩与校园主题/清新绿色校园_答辩汇报_清凉一厦.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-ad48ae04",
+      "source_path": "01_毕业答辩与校园主题/蓝白校园实景_论文答辩_晴日.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-b0655f73",
+      "source_path": "01_毕业答辩与校园主题/蓝底侧栏_中期汇报答辩_Q015.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-b998bf5d",
+      "source_path": "03_临床专科与医护护理/安徽医科大学第二附属医院_护理重点专科建设_蓝色医疗风.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-c8981441",
+      "source_path": "01_毕业答辩与校园主题/蓝白简洁_毕业论文答辩_M04.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    },
+    {
+      "id": "CAMPUS-cff0b2f4",
+      "source_path": "01_毕业答辩与校园主题/深蓝几何光影_答辩汇报_光影厦大.pptx",
+      "status": "unknown",
+      "license": null,
+      "redistributable": false,
+      "evidence": "未见许可文件、授权书或购买凭证；docProps 含第三方模板站痕迹",
+      "note": "仅限本机离线索引与浏览；逐套登记另见 docs/assets.md"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "external_categories.v1",
+  "note": "一级类以使用者已整理好的 5 个文件夹为准，避免按不可靠关键词猜测；风格前缀降为 facet 标签。新增分类只需在 categories 中插入一条并重跑 register。",
+  "categories": [
+    {
+      "id": "institution",
+      "name": "厦门大学等高校/机构风格",
+      "priority": 0,
+      "match": "folder",
+      "folder": "01_毕业答辩与校园主题",
+      "examples": []
+    },
+    {
+      "id": "report",
+      "name": "通用汇报与工作总结",
+      "priority": 1,
+      "match": "folder",
+      "folder": "02_通用汇报与工作总结",
+      "examples": []
+    },
+    {
+      "id": "clinical",
+      "name": "临床专科与医护护理",
+      "priority": 2,
+      "match": "folder",
+      "folder": "03_临床专科与医护护理",
+      "examples": []
+    },
+    {
+      "id": "maternal-child",
+      "name": "妇幼健康与卡通宣教",
+      "priority": 3,
+      "match": "folder",
+      "folder": "04_妇幼健康与卡通宣教",
+      "examples": []
+    },
+    {
+      "id": "tcm-style",
+      "name": "中医国风与特色专题",
+      "priority": 4,
+      "match": "folder",
+      "folder": "05_中医国风与特色专题",
+      "examples": []
+    },
+    {
+      "id": "medical-other",
+      "name": "其他医护综合",
+      "priority": 99,
+      "match": "fallback",
+      "folder": "*",
+      "examples": []
+    }
+  ],
+  "facet_fields": ["style_prefix", "season_unknown", "page_count", "preview_status", "promo_text", "security_flags"],
+  "rights": {
+    "status": "unknown",
+    "redistributable": false,
+    "note": "外部模板未见授权文件与许可文本；仅限本机离线索引与浏览，不随仓库公开再分发。逐套登记见 licenses.json 与 docs/assets.md。"
+  }
+}
