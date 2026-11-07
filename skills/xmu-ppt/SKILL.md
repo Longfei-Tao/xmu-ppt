@@ -20,6 +20,18 @@ description: >
 **Core Pipeline**: `Source Document → Create Project → [Template] → Strategist → [Image_Generator] → Executor Live Preview → Quality Check → Post-processing → Export`
 
 > [!IMPORTANT]
+> ## ✅ 默认出稿流程（最高优先级，覆盖下方所有路线说明）
+>
+> 用户只要说明「**想法 + 主题定位**」时，一律按 [`workflows/idea-to-ppt.md`](workflows/idea-to-ppt.md) 执行，本区块优先于下方任何历史路线说明：
+>
+> 1. ⛔ **BLOCKING 第一步**：调用 `scripts/idea_to_ppt.py recommend`，只输出**可点击的模板链接清单**，然后停下等待用户明确选定模板 ID。在此之前禁止制作任何页面、禁止写 fill plan、禁止出稿，也不得以「先做一版看看」为由提前开工。
+> 2. 用户选定后执行 `confirm`，再用 `pages` 查看该模板**每一页的版式**，按内容需要挑最合适的页面组合；**页数不设固定限制**，由想法与主题定位决定。
+> 3. **只负责内容填充与检查**：克隆模板已有页面、只替换文字；禁止自行设计页面、禁止改动版式与视觉样式、禁止使用 SVG 逐页重画路线、禁止编造数据与引用。
+> 4. `build` 会强制门禁校验、剥离音乐与自动翻页，并做**内容完整性 / 文字适配布局 / 模板一致性**三项检查，未通过不交付。
+>
+> 下方 SVG 出稿、原生填充与 strict-native 仅在用户**显式指定**时作为底层能力被调用；`strict-native`（一页不少全保留）与「按内容挑页」冲突，只有用户明确要求「一页不少」时才启用。全部模板保持无音乐、无自动翻页。
+>
+> [!IMPORTANT]
 > ## 🎓 厦门大学模板优先（本仓库定制）
 >
 > 本插件默认产出厦门大学风格 PPT，适用于中文和英文请求。用户仅提供主题或想法时，先按 `workflows/select-template.md` 展示模板并等待选定，再走下面的厦大路线；用户明确要求其他机构风格时，说明本插件的适用范围，不擅自套用厦大标识。
