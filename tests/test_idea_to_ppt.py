@@ -116,7 +116,8 @@ class SanitizeTests(unittest.TestCase):
         )
         stats = {k: 0 for k in (
             "audio_relationships", "audio_defaults", "audio_nodes", "audio_refs",
-            "media_ext", "media_refs", "media_actions", "auto_advance",
+            "media_ext", "media_refs", "media_actions", "sound_actions",
+            "sound_nodes", "media_controls", "auto_advance",
             "forced_auto", "show_timings", "parts_changed",
         )}
         out = sp.clean_text("ppt/slides/slide1.xml", xml, stats)

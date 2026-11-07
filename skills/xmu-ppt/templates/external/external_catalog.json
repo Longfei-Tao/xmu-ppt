@@ -10,7 +10,7 @@
     "with_thumbnail": 169,
     "without_thumbnail": 31,
     "with_promo_text": 29,
-    "with_security_flags": 168,
+    "with_security_flags": 128,
     "by_category": {
       "report": 66,
       "clinical": 55,
@@ -26,8 +26,8 @@
       "id": "MED-001",
       "namespace": "medical",
       "seq": 1,
-      "size_bytes": 11111773,
-      "sha256": "898474b0fcdb1529bb4958a9f312f25f977344b06e1b39009d23563692b99a23",
+      "size_bytes": 5560132,
+      "sha256": "c1d7fa3a5cbe84971909744186fab0bc87ea02a0f36252d15e1afdb8b9da7d8b",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -42,15 +42,13 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 24,
+      "media_count": 23,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.wav"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -102,8 +100,8 @@
       "id": "MED-003",
       "namespace": "medical",
       "seq": 3,
-      "size_bytes": 17338700,
-      "sha256": "5a65656d71736579256388ddee5580bb7bcfb3d2e688c8712bf12081c5893f6b",
+      "size_bytes": 6192890,
+      "sha256": "3cb328918e8947a1effa02cb4e23a060ca00e561ce6210c3d68832887e673100",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -118,7 +116,7 @@
         "strict-native"
       ],
       "page_count": 38,
-      "media_count": 43,
+      "media_count": 42,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -126,7 +124,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:9",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -141,8 +139,8 @@
       "id": "MED-004",
       "namespace": "medical",
       "seq": 4,
-      "size_bytes": 15421840,
-      "sha256": "588b0c18feffb6cfddc6d7f0091e3b5046538e713e9b0fa555c1352983d1f2cc",
+      "size_bytes": 7278567,
+      "sha256": "7def97266dfa0068f39d3571bd5a92e2d7e8916fa5633cbc01becb7100ac5388",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -157,15 +155,13 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 19,
+      "media_count": 18,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -179,8 +175,8 @@
       "id": "MED-005",
       "namespace": "medical",
       "seq": 5,
-      "size_bytes": 24816837,
-      "sha256": "87d206d1d14081833c8341816d992a6eef072b8863f44f2c642b29d4049c0cda",
+      "size_bytes": 23931430,
+      "sha256": "86713a16d53a858804c754cfeeef16bc24beca5275095007f1721393f6bd0706",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -195,15 +191,13 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 35,
+      "media_count": 34,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -255,8 +249,8 @@
       "id": "MED-007",
       "namespace": "medical",
       "seq": 7,
-      "size_bytes": 53218150,
-      "sha256": "d6bfe8608aa3ea2fb07ae9c4525cf42493a553f92563f57a1f6ab884c5bacca1",
+      "size_bytes": 1035989,
+      "sha256": "f346aa27dbcbd64260f3c3313002cb758922a3ab7e6a9646f105dc2e489cf949",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -271,15 +265,13 @@
         "strict-native"
       ],
       "page_count": 40,
-      "media_count": 11,
+      "media_count": 10,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.wav"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -293,8 +285,8 @@
       "id": "MED-008",
       "namespace": "medical",
       "seq": 8,
-      "size_bytes": 8717096,
-      "sha256": "1b376ce85d9d01b72ef060bb4acdee8c05184e83f06bc9b4d41eac4fa5207751",
+      "size_bytes": 4027186,
+      "sha256": "17e8f19bf7577ee3adf9f1f33fdadfd3d032519c8801d39d7c41f1c7165b7577",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -309,7 +301,7 @@
         "strict-native"
       ],
       "page_count": 38,
-      "media_count": 14,
+      "media_count": 13,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -318,7 +310,7 @@
         "微信"
       ],
       "security_flags": [
-        "uncommon_media:.emf,.mp3"
+        "uncommon_media:.emf"
       ],
       "rights": {
         "status": "unknown",
@@ -333,8 +325,8 @@
       "id": "MED-009",
       "namespace": "medical",
       "seq": 9,
-      "size_bytes": 9290096,
-      "sha256": "ad8a98b5e982cdf02f9cb52a455fea7fb266ec332c76056ba018dab2c4f00003",
+      "size_bytes": 4484807,
+      "sha256": "b505ca0b91344c6c7480682dc61ce9c8b425d4e1a7e9fb00dbb5ee925745759c",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -349,14 +341,14 @@
         "strict-native"
       ],
       "page_count": 37,
-      "media_count": 20,
+      "media_count": 19,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -371,8 +363,8 @@
       "id": "MED-010",
       "namespace": "medical",
       "seq": 10,
-      "size_bytes": 1747645,
-      "sha256": "1d01b912ff2268b84e03edf696e5da989bd8f8326d874e58fdc4e0a6fe3e60cc",
+      "size_bytes": 1576261,
+      "sha256": "d71ed482183a5f56db18f7c648447bc5ac617cba2471f2da61473352b403e989",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -407,8 +399,8 @@
       "id": "MED-011",
       "namespace": "medical",
       "seq": 11,
-      "size_bytes": 15528594,
-      "sha256": "ef636598eea572e5c29c41a81ef5c108d3012a349a3f3d24e63ad1b08347a97d",
+      "size_bytes": 11002506,
+      "sha256": "0fcbc71f7a8d5dc848108f29d685802d88a62924d763e672e9997c5c14b9649c",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -423,7 +415,7 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 24,
+      "media_count": 23,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
@@ -434,7 +426,7 @@
         "购买"
       ],
       "security_flags": [
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -449,8 +441,8 @@
       "id": "MED-012",
       "namespace": "medical",
       "seq": 12,
-      "size_bytes": 25860043,
-      "sha256": "52c68f4fb5c6d780999732be60b99d0c81de9b691914f975b33f4b2e9fcf5cd9",
+      "size_bytes": 24730610,
+      "sha256": "fc3f173c422b552f1a86de46174b552581df82313e8354e1a4568961088fbe65",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -465,7 +457,7 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 32,
+      "media_count": 31,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -473,7 +465,7 @@
       "promo_text": [],
       "security_flags": [
         "external_relationships:1",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -488,8 +480,8 @@
       "id": "MED-013",
       "namespace": "medical",
       "seq": 13,
-      "size_bytes": 19387659,
-      "sha256": "da1f2e7a172985622d21ea56444308f60d3de106bcc960b9d0af8cf063a5fa30",
+      "size_bytes": 9540930,
+      "sha256": "03d43db3ceb8be2c8cf141ab7fce021853107780e315f5a4b4e804f0bf9401f0",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -504,14 +496,14 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 29,
+      "media_count": 28,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.emf,.mp3"
+        "uncommon_media:.emf"
       ],
       "rights": {
         "status": "unknown",
@@ -526,8 +518,8 @@
       "id": "MED-014",
       "namespace": "medical",
       "seq": 14,
-      "size_bytes": 31390413,
-      "sha256": "bea808c384df558a5d84e00f35a993727cabdf147b9d19a2a29e0ff90e1dbf41",
+      "size_bytes": 25475385,
+      "sha256": "0d7f5ca600ebb876f29ce3087707d2d9bd345bd7b59d20c17cee03d930ac08a7",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -542,7 +534,7 @@
         "strict-native"
       ],
       "page_count": 74,
-      "media_count": 79,
+      "media_count": 78,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -550,7 +542,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:5",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -565,8 +557,8 @@
       "id": "MED-015",
       "namespace": "medical",
       "seq": 15,
-      "size_bytes": 18256837,
-      "sha256": "9c03d33a9f785c63e5b97809d0d1d179e39c328caf5f642aabd36905e50da81d",
+      "size_bytes": 10648666,
+      "sha256": "97a1c46923cda35a2fc5e7e2d4071a781ac3810f2a0a769f0479aa9ff6c0382d",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -581,7 +573,7 @@
         "strict-native"
       ],
       "page_count": 39,
-      "media_count": 41,
+      "media_count": 39,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -589,7 +581,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:4",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -604,8 +596,8 @@
       "id": "MED-016",
       "namespace": "medical",
       "seq": 16,
-      "size_bytes": 22422360,
-      "sha256": "f182a2b662640f679d7739d1cbdc12443b1a79970d914e4843dffd72564e9a88",
+      "size_bytes": 18573773,
+      "sha256": "4cb6b521623c590b6c41cfa83debf5c7e22ebdba4b840abcf42dd49ee6415e8e",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -620,15 +612,14 @@
         "strict-native"
       ],
       "page_count": 38,
-      "media_count": 190,
+      "media_count": 189,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "external_relationships:1",
-        "uncommon_media:.mp3"
+        "external_relationships:1"
       ],
       "rights": {
         "status": "unknown",
@@ -643,8 +634,8 @@
       "id": "MED-017",
       "namespace": "medical",
       "seq": 17,
-      "size_bytes": 7911486,
-      "sha256": "4c0c40692ec530d2e6aba3b09bec397d0d745022e0ab640a39d57b05d462742e",
+      "size_bytes": 5661983,
+      "sha256": "a92d45646df58bea2dbfe5d4d3d5384d160aa8d0c5d340e892186dcb10c4fcb0",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -659,7 +650,7 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 40,
+      "media_count": 39,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -668,8 +659,7 @@
         "会员"
       ],
       "security_flags": [
-        "embedded_objects:2",
-        "uncommon_media:.mp3"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -684,8 +674,8 @@
       "id": "MED-018",
       "namespace": "medical",
       "seq": 18,
-      "size_bytes": 9371406,
-      "sha256": "a2a6ff5743245d398e4e7f75f959212cc6dcbe6654127a241dc2aa638892b03a",
+      "size_bytes": 5987902,
+      "sha256": "197ad45d29b2af5d086c68722207c9d544ffb76660247190575507f8a526ce73",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -700,14 +690,14 @@
         "strict-native"
       ],
       "page_count": 36,
-      "media_count": 27,
+      "media_count": 26,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.wdp,.wma"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -722,8 +712,8 @@
       "id": "MED-019",
       "namespace": "medical",
       "seq": 19,
-      "size_bytes": 9066442,
-      "sha256": "f783e59cc54604c6147676e9231fef048b2c56b8a376496e7c05f60c6072d916",
+      "size_bytes": 3709415,
+      "sha256": "36cf5bb7700ad418ec19bb6df1c500897193f0c7aaed44fd35f44bcdd84276fa",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -738,15 +728,14 @@
         "strict-native"
       ],
       "page_count": 36,
-      "media_count": 24,
+      "media_count": 23,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:6",
-        "uncommon_media:.wma"
+        "embedded_objects:6"
       ],
       "rights": {
         "status": "unknown",
@@ -761,8 +750,8 @@
       "id": "MED-020",
       "namespace": "medical",
       "seq": 20,
-      "size_bytes": 34611215,
-      "sha256": "dc691b937fa4b462a1373db3b6edb10c08cdf290002f7707a8b954eb4ab2797e",
+      "size_bytes": 4272919,
+      "sha256": "27964f02ee08bdf3c90d3f8fc6bdca22985081c38de0a77192b84195507e0afb",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -777,15 +766,13 @@
         "strict-native"
       ],
       "page_count": 42,
-      "media_count": 44,
+      "media_count": 43,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.wav"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -799,8 +786,8 @@
       "id": "MED-021",
       "namespace": "medical",
       "seq": 21,
-      "size_bytes": 7183646,
-      "sha256": "99920a485c62eff92ba38b476c027bc786c00eb20351838bff6f7ca84a56e32d",
+      "size_bytes": 2397146,
+      "sha256": "7b28cac2352a50ec25de8716a73c9234768e97c277a4acbb3bc8c3a9d5fb51b5",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -815,14 +802,14 @@
         "strict-native"
       ],
       "page_count": 42,
-      "media_count": 29,
+      "media_count": 28,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -837,8 +824,8 @@
       "id": "MED-022",
       "namespace": "medical",
       "seq": 22,
-      "size_bytes": 41185331,
-      "sha256": "09642c9ab5f1e8ab7c0cae629a748425654146fd5234214eeb63fb9ee118d8f2",
+      "size_bytes": 7806145,
+      "sha256": "7e9294a9e4620e7eb9f0929a3de54c96986dcf57666d55933eae53cd50660482",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -853,14 +840,14 @@
         "strict-native"
       ],
       "page_count": 42,
-      "media_count": 48,
+      "media_count": 47,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.wav,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -875,8 +862,8 @@
       "id": "MED-023",
       "namespace": "medical",
       "seq": 23,
-      "size_bytes": 5264928,
-      "sha256": "fa7fa6bebc6354b84137cd40191fa227bdac4cd0f288a90cc7cf6ccbbccea686",
+      "size_bytes": 3135573,
+      "sha256": "460fcbb245dfe60813a2f04e15a7a03552f0314e0888986a221c572cd339affe",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -891,15 +878,14 @@
         "strict-native"
       ],
       "page_count": 36,
-      "media_count": 32,
+      "media_count": 30,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:1",
-        "uncommon_media:.wav,.wma"
+        "embedded_objects:1"
       ],
       "rights": {
         "status": "unknown",
@@ -914,8 +900,8 @@
       "id": "MED-024",
       "namespace": "medical",
       "seq": 24,
-      "size_bytes": 9067154,
-      "sha256": "e9162b18aeac4127f59b3b70937403a01dbf8fb08cf17f85b5fc9824f26ced7c",
+      "size_bytes": 5535380,
+      "sha256": "5d19eb64f8a0d4df7552ea65b53dad6868b71a5430b9b93653519e595fa85741",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -930,7 +916,7 @@
         "strict-native"
       ],
       "page_count": 35,
-      "media_count": 32,
+      "media_count": 31,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -938,7 +924,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:1",
-        "uncommon_media:.emf,.mp3"
+        "uncommon_media:.emf"
       ],
       "rights": {
         "status": "unknown",
@@ -953,8 +939,8 @@
       "id": "MED-025",
       "namespace": "medical",
       "seq": 25,
-      "size_bytes": 9427086,
-      "sha256": "fa34a3d639bf4c7b1c3b290978357fc7b3c9ffb9d583dcd10d9df444b1139493",
+      "size_bytes": 7680504,
+      "sha256": "a73402e2dad81d91a17568bccff07daee4a306ca046a65b428973ebcb1993065",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -969,15 +955,13 @@
         "strict-native"
       ],
       "page_count": 45,
-      "media_count": 21,
+      "media_count": 20,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -991,8 +975,8 @@
       "id": "MED-026",
       "namespace": "medical",
       "seq": 26,
-      "size_bytes": 5832205,
-      "sha256": "a412f46ff3fa5ac4a6124385fd1935d3cb242ba774ebadcb31450a537f794499",
+      "size_bytes": 3783122,
+      "sha256": "4b09a7980e57ac32c4d58f9a83fb188ee807fa39353b701f7a2d4eb42a65ee3c",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -1007,15 +991,14 @@
         "strict-native"
       ],
       "page_count": 20,
-      "media_count": 18,
+      "media_count": 17,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:1",
-        "uncommon_media:.mp3"
+        "embedded_objects:1"
       ],
       "rights": {
         "status": "unknown",
@@ -1030,8 +1013,8 @@
       "id": "MED-027",
       "namespace": "medical",
       "seq": 27,
-      "size_bytes": 60039453,
-      "sha256": "018f0b5454887822530df6c10d07c189501a713f1e160728bb0d86f718bed108",
+      "size_bytes": 7788379,
+      "sha256": "33651cb73bd3493264a9a1d9cfbdc3cba1ca031419b47e28095e2405750ba35e",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -1046,15 +1029,14 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 29,
+      "media_count": 28,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:2",
-        "uncommon_media:.wav"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -1069,8 +1051,8 @@
       "id": "MED-028",
       "namespace": "medical",
       "seq": 28,
-      "size_bytes": 1624879,
-      "sha256": "e6d425705fabe816a3e60f214c22f01bf3bf241ffc885f1c2df84f19dc40387a",
+      "size_bytes": 1549569,
+      "sha256": "47d21b45d16fb6468bebbe8a869f414ca38867abcdcc1deafdb8ea2ce2dcd0cf",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -1105,8 +1087,8 @@
       "id": "MED-029",
       "namespace": "medical",
       "seq": 29,
-      "size_bytes": 5137250,
-      "sha256": "2010c2f97a3571d7d72d6479a0c483030c1ba16772c186ab69283dee8d524a52",
+      "size_bytes": 1637460,
+      "sha256": "a0f9271354d80723fda2c01ebaccb18e35e2d0aeebe3f9900ccfb54b6dc4fcf1",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -1121,14 +1103,14 @@
         "strict-native"
       ],
       "page_count": 36,
-      "media_count": 20,
+      "media_count": 19,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.emf,.mp3"
+        "uncommon_media:.emf"
       ],
       "rights": {
         "status": "unknown",
@@ -1143,8 +1125,8 @@
       "id": "MED-030",
       "namespace": "medical",
       "seq": 30,
-      "size_bytes": 11857735,
-      "sha256": "9f64959ff47a23047d89cf2a0f4a59926873e8de5ba151f9998109c5a67ca7f2",
+      "size_bytes": 3396259,
+      "sha256": "9df81bfdde84f21390320cb8d6f02034233998a023b5caf51b8dc3b250c2be9e",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -1159,7 +1141,7 @@
         "strict-native"
       ],
       "page_count": 39,
-      "media_count": 30,
+      "media_count": 29,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -1167,7 +1149,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:2",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -1182,8 +1164,8 @@
       "id": "MED-031",
       "namespace": "medical",
       "seq": 31,
-      "size_bytes": 5863816,
-      "sha256": "75389990973b763f921dd626da631c02b366b9975ad5f593a6c1d50b1eb4baa3",
+      "size_bytes": 5862587,
+      "sha256": "3e9b8d021565f80517025fe1c10349bfd3629fb9fdb8d39d0baecbce98e15c3f",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -1221,8 +1203,8 @@
       "id": "MED-032",
       "namespace": "medical",
       "seq": 32,
-      "size_bytes": 41378338,
-      "sha256": "09aa72f6b669224c406e8de53da91c1c478614e15244ec968c514cbf67903246",
+      "size_bytes": 41355321,
+      "sha256": "18357634c859189e48a0dd5e05419d3cfe5ad56a4851396da76a1ebdabda6fe9",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -1257,8 +1239,8 @@
       "id": "MED-033",
       "namespace": "medical",
       "seq": 33,
-      "size_bytes": 24255205,
-      "sha256": "439c0ec8550adebad858237d0957999ee93d0ef44ed66ca6727f9a7f9d82b516",
+      "size_bytes": 22162253,
+      "sha256": "95bdd8af58fd7b7e40c130e464b9f2e6243ffe565911342009e54c8cdab2acc1",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -1273,14 +1255,14 @@
         "strict-native"
       ],
       "page_count": 40,
-      "media_count": 122,
+      "media_count": 121,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -1295,8 +1277,8 @@
       "id": "MED-034",
       "namespace": "medical",
       "seq": 34,
-      "size_bytes": 18759490,
-      "sha256": "c9faa0a3c7604c09dcada1a2d5a59d02690c651c85932a03fcfe8fa636021928",
+      "size_bytes": 16604325,
+      "sha256": "281acc895a0136855d5527bcd7eb4559aa71fa5526635ef3d919c379f4a3691d",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -1311,7 +1293,7 @@
         "strict-native"
       ],
       "page_count": 40,
-      "media_count": 31,
+      "media_count": 30,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -1319,9 +1301,7 @@
       "promo_text": [
         "工作室"
       ],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -1335,8 +1315,8 @@
       "id": "MED-035",
       "namespace": "medical",
       "seq": 35,
-      "size_bytes": 7133442,
-      "sha256": "00c952b38e28914428ee03164b3955c33b093732eb039717e01d6311bace80fc",
+      "size_bytes": 2527021,
+      "sha256": "a8d22c714b1c4eb5964b6fd98f3596f7b4828b955d2f1504c19d573b185a7d06",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -1351,15 +1331,13 @@
         "strict-native"
       ],
       "page_count": 31,
-      "media_count": 22,
+      "media_count": 21,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -1373,8 +1351,8 @@
       "id": "MED-036",
       "namespace": "medical",
       "seq": 36,
-      "size_bytes": 20763681,
-      "sha256": "0e3b3945b76ecd6f3463062eeed15927df7afdbf4fc47edf72f6d16ea7247f8c",
+      "size_bytes": 15493107,
+      "sha256": "de6d5c820b0b6a1f60147fece97440623bca34fb58fb09f291a8a42638884247",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -1389,7 +1367,7 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 38,
+      "media_count": 37,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
@@ -1400,7 +1378,7 @@
         "购买"
       ],
       "security_flags": [
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -1415,8 +1393,8 @@
       "id": "MED-037",
       "namespace": "medical",
       "seq": 37,
-      "size_bytes": 21707793,
-      "sha256": "750dacc98045b5d5a7163764fb04c5d06a99348aca638da8eb79fb24eb00fe70",
+      "size_bytes": 11401760,
+      "sha256": "c69a2fa54bae7cfa0366ac81ee235ed3351d37fb87d1b622d73d04037fc30eff",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -1431,15 +1409,13 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 23,
+      "media_count": 22,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -1453,8 +1429,8 @@
       "id": "MED-038",
       "namespace": "medical",
       "seq": 38,
-      "size_bytes": 7859309,
-      "sha256": "7d2ef1afa465d92fd1c1f165c6fb9f963f2fb79439472c739271b4e612d1851a",
+      "size_bytes": 7126819,
+      "sha256": "618f9d7a2fb9a3fa6c7858a7e7d260dc07953be98c024bd900d3dfc5ebc114c0",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -1469,14 +1445,14 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 32,
+      "media_count": 31,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.emf,.mp3"
+        "uncommon_media:.emf"
       ],
       "rights": {
         "status": "unknown",
@@ -1491,8 +1467,8 @@
       "id": "MED-039",
       "namespace": "medical",
       "seq": 39,
-      "size_bytes": 4060925,
-      "sha256": "11e9afc373d39ff845f80d29d7a03a84db3246683b8a4c5933d8f73a9479b858",
+      "size_bytes": 4044586,
+      "sha256": "f24cc57784e35c21f1e7a8af006a91fa3936c403fd64f5c83ca447c3923ce279",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -1529,8 +1505,8 @@
       "id": "MED-040",
       "namespace": "medical",
       "seq": 40,
-      "size_bytes": 5307691,
-      "sha256": "a936b5de37ac4cde7694a4d25f3025644e2a8b8a1fa6d9b10a90959c143f274d",
+      "size_bytes": 2758991,
+      "sha256": "ae340d7c341ead6922cba65e7735f3a3439c27a6a816db148729a44e56568f48",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -1545,15 +1521,13 @@
         "strict-native"
       ],
       "page_count": 31,
-      "media_count": 30,
+      "media_count": 29,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -1567,8 +1541,8 @@
       "id": "MED-041",
       "namespace": "medical",
       "seq": 41,
-      "size_bytes": 10084403,
-      "sha256": "3dc7df63a5aca6b14fc692a878f770cdc39a7cb8a3ebcd4e6c4535ab4056764b",
+      "size_bytes": 7100134,
+      "sha256": "85666a37fcee92b627cc7ef086506ae82b1d83df87b39f375592946ad7cf2bab",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -1583,7 +1557,7 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 28,
+      "media_count": 27,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -1591,7 +1565,7 @@
       "promo_text": [],
       "security_flags": [
         "external_relationships:1",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -1606,8 +1580,8 @@
       "id": "MED-042",
       "namespace": "medical",
       "seq": 42,
-      "size_bytes": 29374276,
-      "sha256": "d7b762ba0811f74953d339358da46aba7d9e261e9b0d2b20250f02f00c6ea79f",
+      "size_bytes": 26075937,
+      "sha256": "a68f707d114127800cf18058c2b7e170c2838eab111101abc63c6bb0f086e070",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -1622,15 +1596,13 @@
         "strict-native"
       ],
       "page_count": 35,
-      "media_count": 24,
+      "media_count": 23,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -1644,8 +1616,8 @@
       "id": "MED-043",
       "namespace": "medical",
       "seq": 43,
-      "size_bytes": 6874679,
-      "sha256": "eda13f678eec298007adafebc2b89d4fa723f6d040900553f48baa1c2710807e",
+      "size_bytes": 6741114,
+      "sha256": "87921246da5cd4151f6b8c7e3038dd0f05772f72e1cc0ef5a3b44a78a80a9e0e",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -1683,8 +1655,8 @@
       "id": "MED-044",
       "namespace": "medical",
       "seq": 44,
-      "size_bytes": 30171353,
-      "sha256": "82ba3cfbef87f81e7f98fa24d9f51429acdc8b91d3cc9b560360a01fd3bb8dab",
+      "size_bytes": 24313626,
+      "sha256": "8b25cffeba066c854cccf506f5cc7e22258b7ef07fdc5549c364efe996d52e3d",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -1699,7 +1671,7 @@
         "strict-native"
       ],
       "page_count": 42,
-      "media_count": 70,
+      "media_count": 69,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -1709,7 +1681,7 @@
         "工作室"
       ],
       "security_flags": [
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -1724,8 +1696,8 @@
       "id": "MED-045",
       "namespace": "medical",
       "seq": 45,
-      "size_bytes": 9062819,
-      "sha256": "c259598bc18ed0efb8276eba7dfd7175e59957c8bba01fa0e1a24180fa7d7ac9",
+      "size_bytes": 2959316,
+      "sha256": "f23e3d5b43212de6a013582b00ed016968852dbb3c52bac2d0c386546dace191",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -1740,14 +1712,14 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 14,
+      "media_count": 13,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.emf,.mp3,.wdp"
+        "uncommon_media:.emf,.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -1762,8 +1734,8 @@
       "id": "MED-046",
       "namespace": "medical",
       "seq": 46,
-      "size_bytes": 21296524,
-      "sha256": "49cf07c98838d211c56fc120cd0034b3089b83b6745ac637b8d93a7d89d6f026",
+      "size_bytes": 20437190,
+      "sha256": "4debe400d071df8aafd4ac66f99dcb7fdbf096206c74957660098f3bde2ddf08",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -1778,15 +1750,13 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 31,
+      "media_count": 30,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -1800,8 +1770,8 @@
       "id": "MED-047",
       "namespace": "medical",
       "seq": 47,
-      "size_bytes": 6311489,
-      "sha256": "02192efde9535913c42350c99cc0b4d178abcb1fd7995455cb91cf467c2602d3",
+      "size_bytes": 4363882,
+      "sha256": "67445a608f41f971599abb98ab27d65446cb242589a1052e06e7877f6a9da536",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -1816,14 +1786,14 @@
         "strict-native"
       ],
       "page_count": 23,
-      "media_count": 17,
+      "media_count": 16,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.m4a,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -1838,8 +1808,8 @@
       "id": "MED-048",
       "namespace": "medical",
       "seq": 48,
-      "size_bytes": 13146761,
-      "sha256": "3758e305b397400479981ff30aa48d5969721491d0de0629a94180390bde96ba",
+      "size_bytes": 9987241,
+      "sha256": "05f9dca064d89763004d48cfcc14df06a626655dbb3a7b3d16d4b5056841b322",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -1854,14 +1824,14 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 22,
+      "media_count": 21,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.emf,.mp3"
+        "uncommon_media:.emf"
       ],
       "rights": {
         "status": "unknown",
@@ -1876,8 +1846,8 @@
       "id": "MED-049",
       "namespace": "medical",
       "seq": 49,
-      "size_bytes": 9107290,
-      "sha256": "48da63c284ad381b8b9231089f42adba126a0ec28fea69dce2aa61b3ef7f6b67",
+      "size_bytes": 4173932,
+      "sha256": "59643eb727fb629d24250b767f05f32c1e4d1aab9edab204386e55472b3da01d",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -1892,15 +1862,13 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 14,
+      "media_count": 13,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -1914,8 +1882,8 @@
       "id": "MED-050",
       "namespace": "medical",
       "seq": 50,
-      "size_bytes": 26843543,
-      "sha256": "d59f62b7a4e6499e00bd13d96757cbcc7b6b2254e81bcfeac84245598aaca371",
+      "size_bytes": 26106317,
+      "sha256": "5cc90022a80ebe2756c34b33e77bb56bf17ea96ad89364750bd6e648bc611499",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -1930,7 +1898,7 @@
         "strict-native"
       ],
       "page_count": 37,
-      "media_count": 29,
+      "media_count": 28,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -1938,8 +1906,7 @@
       "promo_text": [],
       "security_flags": [
         "external_relationships:1",
-        "embedded_objects:3",
-        "uncommon_media:.wma"
+        "embedded_objects:3"
       ],
       "rights": {
         "status": "unknown",
@@ -1954,8 +1921,8 @@
       "id": "MED-051",
       "namespace": "medical",
       "seq": 51,
-      "size_bytes": 14477930,
-      "sha256": "cb28129fea8d4ae9fa3d7cabecb2065f6baee97061749c84279ec379af27296b",
+      "size_bytes": 13047518,
+      "sha256": "53b88e0f386bdfa1de7735a2cdf81ff576a66f756379959629970cfba0e006c9",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -1970,7 +1937,7 @@
         "strict-native"
       ],
       "page_count": 39,
-      "media_count": 37,
+      "media_count": 36,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
@@ -1978,9 +1945,7 @@
       "promo_text": [
         "购买"
       ],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -1994,8 +1959,8 @@
       "id": "MED-052",
       "namespace": "medical",
       "seq": 52,
-      "size_bytes": 8844551,
-      "sha256": "3d85563e51dd2d1cec266748b69300730590afa4f0e56297d6fe43b2a370a8f3",
+      "size_bytes": 2060709,
+      "sha256": "76c5cc1ad10f3dd491b564b72c71d92631da787843ba881368672b942f7e38cb",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -2010,7 +1975,7 @@
         "strict-native"
       ],
       "page_count": 39,
-      "media_count": 20,
+      "media_count": 19,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -2018,7 +1983,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:1",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -2033,8 +1998,8 @@
       "id": "MED-053",
       "namespace": "medical",
       "seq": 53,
-      "size_bytes": 7776896,
-      "sha256": "e63fa1a1d694c97b69f3657b2064334144e085e9fc3315e7b304f16cb5db8c07",
+      "size_bytes": 4447685,
+      "sha256": "b6d17443f0271e48461f52fab9b4a1c50a931efc35fa579dbb8f8776df44b356",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -2049,15 +2014,13 @@
         "strict-native"
       ],
       "page_count": 35,
-      "media_count": 44,
+      "media_count": 43,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -2071,8 +2034,8 @@
       "id": "MED-054",
       "namespace": "medical",
       "seq": 54,
-      "size_bytes": 19572532,
-      "sha256": "dd962d932e90db774963ecb65bd20187a27cfe2299108e797c6b4ebd1a9dac6e",
+      "size_bytes": 9938066,
+      "sha256": "a370069afa01ee489e02e49300022dba46eb71bb84fc61645123878c77ffff22",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -2087,14 +2050,14 @@
         "strict-native"
       ],
       "page_count": 37,
-      "media_count": 25,
+      "media_count": 24,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -2109,8 +2072,8 @@
       "id": "MED-055",
       "namespace": "medical",
       "seq": 55,
-      "size_bytes": 31064608,
-      "sha256": "8843ac08004ee7e971de388331f294b9502cdb667c21fa1f4811d0e1f652f0c3",
+      "size_bytes": 20986613,
+      "sha256": "98ea45c6b2fec54b3bbeb2aaa70470b5480aceef28b0e8498c78610c492b60ae",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -2125,7 +2088,7 @@
         "strict-native"
       ],
       "page_count": 62,
-      "media_count": 86,
+      "media_count": 85,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -2133,7 +2096,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:7",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -2148,8 +2111,8 @@
       "id": "MED-056",
       "namespace": "medical",
       "seq": 56,
-      "size_bytes": 14137165,
-      "sha256": "a61172513344b4146f0b3cb8bf4d979ff3c78e3abe6939ac8cab60d34bb90976",
+      "size_bytes": 6244376,
+      "sha256": "4c82ae063c0d89cd8be34f6b82b1e5fd7616a65413181b822ff3d12c62dd5fb0",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -2164,14 +2127,14 @@
         "strict-native"
       ],
       "page_count": 40,
-      "media_count": 13,
+      "media_count": 12,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.emf,.mp3"
+        "uncommon_media:.emf"
       ],
       "rights": {
         "status": "unknown",
@@ -2186,8 +2149,8 @@
       "id": "MED-057",
       "namespace": "medical",
       "seq": 57,
-      "size_bytes": 5074168,
-      "sha256": "4b0f5c8d5bfa067216ff87c1809a035028bc6d8774ef534a0d15fdc27f3b78be",
+      "size_bytes": 2238058,
+      "sha256": "92bf51c02a28b6ab71e6becd1ecbfde3d00233741d5d75a25ddd821464e1a07d",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -2202,15 +2165,14 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 21,
+      "media_count": 20,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:1",
-        "uncommon_media:.mp3"
+        "embedded_objects:1"
       ],
       "rights": {
         "status": "unknown",
@@ -2225,8 +2187,8 @@
       "id": "MED-058",
       "namespace": "medical",
       "seq": 58,
-      "size_bytes": 23724333,
-      "sha256": "3fa5c603a0d6969fd41f3ee14d0d9a7e1bc123e6708d6ced608431d379402b13",
+      "size_bytes": 10716296,
+      "sha256": "1445d912f8a6503bd3268fdf686ca3faa71cecc56ff91c2098b3d46a27271ac3",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -2241,7 +2203,7 @@
         "strict-native"
       ],
       "page_count": 39,
-      "media_count": 34,
+      "media_count": 33,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -2250,7 +2212,7 @@
       "security_flags": [
         "external_relationships:1",
         "embedded_objects:5",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -2265,8 +2227,8 @@
       "id": "MED-059",
       "namespace": "medical",
       "seq": 59,
-      "size_bytes": 5533974,
-      "sha256": "a0c7141dfa5b0d23f336fef6838ef336ceb2c338a7e9183389e6ab5522650b7d",
+      "size_bytes": 5507482,
+      "sha256": "09e89bc2a37a047aad5a1c8a8cb5008652801abb7e966252c925916b948e6ed9",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -2301,8 +2263,8 @@
       "id": "MED-060",
       "namespace": "medical",
       "seq": 60,
-      "size_bytes": 29617592,
-      "sha256": "39d95d478047b7d66c1d7d0196dffd193bb21dc1222cd11f548bd95b41ba9f43",
+      "size_bytes": 18069317,
+      "sha256": "fbbb0fb62594ec6ccf96233c6818f6007b9e3d998fd5e9e05fe84e577c91f8d4",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -2317,7 +2279,7 @@
         "strict-native"
       ],
       "page_count": 55,
-      "media_count": 238,
+      "media_count": 237,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -2325,7 +2287,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:17",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -2340,8 +2302,8 @@
       "id": "MED-061",
       "namespace": "medical",
       "seq": 61,
-      "size_bytes": 20642059,
-      "sha256": "fb197c2f01258a3ecaaad648deee3a901418d1a41bee30b2f4edcfeaef3aa414",
+      "size_bytes": 20629568,
+      "sha256": "4c04945f7e636597fb83504833291cf4d84925c1b5fcf32ca58ccb348266bc9b",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -2378,8 +2340,8 @@
       "id": "MED-062",
       "namespace": "medical",
       "seq": 62,
-      "size_bytes": 13714872,
-      "sha256": "aaae984521a87c25eed934d78d76570291bbf83597a627888b2619017f2f1796",
+      "size_bytes": 3405741,
+      "sha256": "94bf6959e7293e7523ff3ab8ff20d7241255c387ab0cc40473301a6e7d7acb5e",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -2394,15 +2356,13 @@
         "strict-native"
       ],
       "page_count": 35,
-      "media_count": 33,
+      "media_count": 32,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -2416,8 +2376,8 @@
       "id": "MED-063",
       "namespace": "medical",
       "seq": 63,
-      "size_bytes": 6186103,
-      "sha256": "cf2dc9ca2a8a4f2ed183c666d8c12719df40febaddd01b4aa50339bbf2b35b45",
+      "size_bytes": 2551468,
+      "sha256": "65c9d5048a0fd02461943e7013e875c416c7f0870066618a61a380dd180c984c",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -2432,7 +2392,7 @@
         "strict-native"
       ],
       "page_count": 40,
-      "media_count": 23,
+      "media_count": 22,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -2442,7 +2402,7 @@
         "工作室"
       ],
       "security_flags": [
-        "uncommon_media:.wdp,.wma"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -2457,8 +2417,8 @@
       "id": "MED-064",
       "namespace": "medical",
       "seq": 64,
-      "size_bytes": 22364866,
-      "sha256": "044940df39aaa960ec3244c3b929cf5db6c8309bbcf39df14a8cc1ec201fb5e9",
+      "size_bytes": 16456714,
+      "sha256": "f8eb695f8d748c7cfb5048d8b201cb2696991404cbba5217004d19449caa531b",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -2473,7 +2433,7 @@
         "strict-native"
       ],
       "page_count": 41,
-      "media_count": 46,
+      "media_count": 45,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -2481,7 +2441,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:9",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -2496,8 +2456,8 @@
       "id": "MED-065",
       "namespace": "medical",
       "seq": 65,
-      "size_bytes": 15342219,
-      "sha256": "31728bcd0f26e75b784131332b7166470171b316a40b2369002f1e43045a9e97",
+      "size_bytes": 9808704,
+      "sha256": "61bd0a073015b18a51b6b1f3f2a69c85c29e476957b7c9623140a1aa478c074c",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -2512,7 +2472,7 @@
         "strict-native"
       ],
       "page_count": 42,
-      "media_count": 77,
+      "media_count": 76,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -2522,7 +2482,7 @@
       ],
       "security_flags": [
         "embedded_objects:2",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -2537,8 +2497,8 @@
       "id": "MED-066",
       "namespace": "medical",
       "seq": 66,
-      "size_bytes": 10119189,
-      "sha256": "c3601997fb03e97a4d6c21e168ca2f724cfa1bcd10bcdcf3bf184ba0f50735ca",
+      "size_bytes": 3506862,
+      "sha256": "fc16c0af893dc099339fd8d344a61cad2a4441f006757a9dcc9f7fe5db27f247",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -2553,7 +2513,7 @@
         "strict-native"
       ],
       "page_count": 35,
-      "media_count": 26,
+      "media_count": 25,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -2561,8 +2521,7 @@
       "promo_text": [],
       "security_flags": [
         "external_relationships:2",
-        "embedded_objects:2",
-        "uncommon_media:.mp3"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -2577,8 +2536,8 @@
       "id": "MED-067",
       "namespace": "medical",
       "seq": 67,
-      "size_bytes": 7045282,
-      "sha256": "755f9b5396273f32c6ebae9a83158fdd08516394b26f9004351bf63635e55aa7",
+      "size_bytes": 2233150,
+      "sha256": "317b9c50b1c303c10c908a7b059f901dbfa628c4594f822b67dbd2ec0054918d",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -2593,14 +2552,14 @@
         "strict-native"
       ],
       "page_count": 41,
-      "media_count": 21,
+      "media_count": 20,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -2615,8 +2574,8 @@
       "id": "MED-068",
       "namespace": "medical",
       "seq": 68,
-      "size_bytes": 16437750,
-      "sha256": "567462756799464203302c3cc863faef88128dda5254e5d9504150b0d0107efc",
+      "size_bytes": 13117551,
+      "sha256": "b86137feb2e923277083c6fe88c446aad372f67810c7df7a52a6ffd7514a15e5",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -2631,7 +2590,7 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 52,
+      "media_count": 51,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
@@ -2641,7 +2600,7 @@
       ],
       "security_flags": [
         "embedded_objects:2",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -2656,8 +2615,8 @@
       "id": "MED-069",
       "namespace": "medical",
       "seq": 69,
-      "size_bytes": 10491530,
-      "sha256": "e196b203043f50a7a7832117c975fb0eb3363d3c1b44327133c9a2efa9da2667",
+      "size_bytes": 7019451,
+      "sha256": "970af3d5c44daf0c71d73861b9a53997990597b4da84a4ccb55bd9e162afb65f",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -2672,15 +2631,14 @@
         "strict-native"
       ],
       "page_count": 41,
-      "media_count": 21,
+      "media_count": 20,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:2",
-        "uncommon_media:.mp3"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -2695,8 +2653,8 @@
       "id": "MED-070",
       "namespace": "medical",
       "seq": 70,
-      "size_bytes": 5714664,
-      "sha256": "15e631b62aea8e62d49b3df1cbbd40c6d4e9a8b52749e2562a1b114ed08f1863",
+      "size_bytes": 5570703,
+      "sha256": "b170a4016c6cc5bd0a207e6cda0a6f07974c5e4a66b297e372741389f796a3c3",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -2736,8 +2694,8 @@
       "id": "MED-071",
       "namespace": "medical",
       "seq": 71,
-      "size_bytes": 7536708,
-      "sha256": "e102a913ee0e0af90cc4bf8591d997bd9ee3ee623c26e75d23c206343169894b",
+      "size_bytes": 7423669,
+      "sha256": "b22b8281bbc5327c90491067349b6cb46415764f725f604f95de2405227ff04d",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -2772,8 +2730,8 @@
       "id": "MED-072",
       "namespace": "medical",
       "seq": 72,
-      "size_bytes": 9554069,
-      "sha256": "854c62a9aeeccea2c07c00eff7b3e9d49a0446bc72a5252fc17ee4ce0628ee99",
+      "size_bytes": 8698631,
+      "sha256": "65300e423ac42225281179fe902408c5cdbf08b9d41dc9e88380628419b6719d",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -2788,15 +2746,14 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 27,
+      "media_count": 26,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:1",
-        "uncommon_media:.mp3"
+        "embedded_objects:1"
       ],
       "rights": {
         "status": "unknown",
@@ -2811,8 +2768,8 @@
       "id": "MED-073",
       "namespace": "medical",
       "seq": 73,
-      "size_bytes": 10252383,
-      "sha256": "4fb17bdaed3538a83f6fa0b0454f3eabd0685dfde34bf7fb7e6a1ec9c5e73c2a",
+      "size_bytes": 1560544,
+      "sha256": "c65a5f0e46ae750227e5086cad90013dfb993b4275e8412fe392055af24c8697",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -2827,15 +2784,14 @@
         "strict-native"
       ],
       "page_count": 37,
-      "media_count": 29,
+      "media_count": 28,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:4",
-        "uncommon_media:.mp3"
+        "embedded_objects:4"
       ],
       "rights": {
         "status": "unknown",
@@ -2850,8 +2806,8 @@
       "id": "MED-074",
       "namespace": "medical",
       "seq": 74,
-      "size_bytes": 18398969,
-      "sha256": "5ab4053b81c9ed9493c5fb9a141494f5ec95127efb7a9e100177c307275281e9",
+      "size_bytes": 12540330,
+      "sha256": "49dd3052ea5774fdcd5dd6f233c0e26d7d01922443302999c906d7358ba5dc5e",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -2866,7 +2822,7 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 33,
+      "media_count": 32,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -2874,7 +2830,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:2",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -2889,8 +2845,8 @@
       "id": "MED-075",
       "namespace": "medical",
       "seq": 75,
-      "size_bytes": 11137606,
-      "sha256": "a8a86cae1503791ecf0b0d99367e0959f8c384195f7f17e8c850b2a651dcd1d3",
+      "size_bytes": 8567901,
+      "sha256": "0562eb6b1d2e6e300961c71ff78aee7608125dc8df56ce15a703177f07bfaed7",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -2905,7 +2861,7 @@
         "strict-native"
       ],
       "page_count": 36,
-      "media_count": 25,
+      "media_count": 24,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
@@ -2916,7 +2872,7 @@
         "购买"
       ],
       "security_flags": [
-        "uncommon_media:.emf,.mp3"
+        "uncommon_media:.emf"
       ],
       "rights": {
         "status": "unknown",
@@ -2931,8 +2887,8 @@
       "id": "MED-076",
       "namespace": "medical",
       "seq": 76,
-      "size_bytes": 9635395,
-      "sha256": "638bce72c297ba584c1b752905eee561d78acb87e32ba446bb865b563d0aa0c1",
+      "size_bytes": 7784862,
+      "sha256": "c0c8e34ffc95f0bd235466ce38fda01014623a9e565f8003efbb5ec616df4e5b",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -2947,15 +2903,13 @@
         "strict-native"
       ],
       "page_count": 27,
-      "media_count": 22,
+      "media_count": 21,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.wav"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -2969,8 +2923,8 @@
       "id": "MED-077",
       "namespace": "medical",
       "seq": 77,
-      "size_bytes": 14241772,
-      "sha256": "619f204cb2075bf286084d713ea5dd831bcb8d5564f5550a1e706fadf3f76d45",
+      "size_bytes": 4812607,
+      "sha256": "313803c9d9a63bf1b26b0ebf8de45bde9c7aa41ed10a61e5ffc833d3b8650774",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -2985,15 +2939,13 @@
         "strict-native"
       ],
       "page_count": 33,
-      "media_count": 18,
+      "media_count": 17,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -3007,8 +2959,8 @@
       "id": "MED-078",
       "namespace": "medical",
       "seq": 78,
-      "size_bytes": 7123037,
-      "sha256": "5dead4385fd5ca3f5ece6066f24906e8fcbb6d7f67e624083b15082a4c3b3943",
+      "size_bytes": 5276406,
+      "sha256": "4316eab477b35aef2d58960b41b4a6a44491d3d3e51b05aeef63e3d4e51da372",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -3023,7 +2975,7 @@
         "strict-native"
       ],
       "page_count": 38,
-      "media_count": 27,
+      "media_count": 26,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -3031,7 +2983,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:6",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -3046,8 +2998,8 @@
       "id": "MED-079",
       "namespace": "medical",
       "seq": 79,
-      "size_bytes": 13724978,
-      "sha256": "4857996c90c267317a10c121395b8e86bbacfe3285ac6a7ff63c801a470382de",
+      "size_bytes": 1235797,
+      "sha256": "b04060b558b378f02879c5841eab0657198e6bdc6343d3c54208ca2e6786fb2c",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -3062,15 +3014,14 @@
         "strict-native"
       ],
       "page_count": 35,
-      "media_count": 6,
+      "media_count": 5,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:3",
-        "uncommon_media:.mp3"
+        "embedded_objects:3"
       ],
       "rights": {
         "status": "unknown",
@@ -3085,8 +3036,8 @@
       "id": "MED-080",
       "namespace": "medical",
       "seq": 80,
-      "size_bytes": 7652787,
-      "sha256": "7e06a50ac3d3ecf62904dd019415f61f358b41765210ccd6d2d23427255e1691",
+      "size_bytes": 2708999,
+      "sha256": "9ce200e6d9b8a2e11830fedcf1da2ccf5c2d8fd4b0efc67687c6e5342cbbdd72",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -3101,15 +3052,13 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 14,
+      "media_count": 13,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -3123,8 +3072,8 @@
       "id": "MED-081",
       "namespace": "medical",
       "seq": 81,
-      "size_bytes": 9267111,
-      "sha256": "b14dd227f913f456b32bf8331f1c7bff013b071245deee5908ca0e35c6cd551e",
+      "size_bytes": 1373497,
+      "sha256": "bef91392a58da078ff07069c5db8288ca9e6e4de8b24f44c982993f1b2457294",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -3139,14 +3088,14 @@
         "strict-native"
       ],
       "page_count": 30,
-      "media_count": 22,
+      "media_count": 21,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.emf,.mp3,.wdp"
+        "uncommon_media:.emf,.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -3161,8 +3110,8 @@
       "id": "MED-082",
       "namespace": "medical",
       "seq": 82,
-      "size_bytes": 8211441,
-      "sha256": "de6d6bdf341aab519a9bf7012f094c9f919f1ba17ea225cf9f283c71ae332a6b",
+      "size_bytes": 4107323,
+      "sha256": "d74bd3550c610ab26445e63ade9aef3b56db34e006209e0f828d6d743d2addf6",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -3177,15 +3126,14 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 43,
+      "media_count": 42,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:4",
-        "uncommon_media:.mp3"
+        "embedded_objects:4"
       ],
       "rights": {
         "status": "unknown",
@@ -3200,8 +3148,8 @@
       "id": "MED-083",
       "namespace": "medical",
       "seq": 83,
-      "size_bytes": 5091815,
-      "sha256": "42763757b653af0bb92655993272eba85a9b60a741dcd8b4bac3decccd02211f",
+      "size_bytes": 1625689,
+      "sha256": "ad91770dd6136a2422de14f97d50001aed6f291230ced52860b6ba9f3bce6f37",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -3216,15 +3164,13 @@
         "strict-native"
       ],
       "page_count": 37,
-      "media_count": 10,
+      "media_count": 9,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -3238,8 +3184,8 @@
       "id": "MED-084",
       "namespace": "medical",
       "seq": 84,
-      "size_bytes": 7772525,
-      "sha256": "f0fabd1b53b28b77791f6a712c03e0c767b1238461b52293b2b6ea6e0b117323",
+      "size_bytes": 3853232,
+      "sha256": "8deaaa9a4f98132a941ce2fbbb69a75c055686de6c59d685b29e56a064235b12",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -3254,15 +3200,14 @@
         "strict-native"
       ],
       "page_count": 24,
-      "media_count": 11,
+      "media_count": 10,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:2",
-        "uncommon_media:.mp3"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -3277,8 +3222,8 @@
       "id": "MED-085",
       "namespace": "medical",
       "seq": 85,
-      "size_bytes": 10577596,
-      "sha256": "b5d2ec3e9fbe0e1bbbc5f1de61f127e9235abd77644a3291953e2a16dd70b01e",
+      "size_bytes": 1615412,
+      "sha256": "96ac756d6e7e4b2d6d3b6d6c82f35c6aa8c4a10ccfca292e08ea334abadbd5a8",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -3293,7 +3238,7 @@
         "strict-native"
       ],
       "page_count": 35,
-      "media_count": 34,
+      "media_count": 33,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -3301,8 +3246,7 @@
       "promo_text": [],
       "security_flags": [
         "external_relationships:1",
-        "embedded_objects:10",
-        "uncommon_media:.mp3"
+        "embedded_objects:10"
       ],
       "rights": {
         "status": "unknown",
@@ -3317,8 +3261,8 @@
       "id": "MED-086",
       "namespace": "medical",
       "seq": 86,
-      "size_bytes": 5134732,
-      "sha256": "9dab64118539080d59c792886a7433491bd70141337c014a37af1eb52ee06e6e",
+      "size_bytes": 1830205,
+      "sha256": "fbe4abd2c2ba0ce1bd6b320ccff9a90d2f8ebd48dd09d54bb7dd735218e77db0",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -3333,7 +3277,7 @@
         "strict-native"
       ],
       "page_count": 36,
-      "media_count": 17,
+      "media_count": 16,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -3341,8 +3285,7 @@
       "promo_text": [],
       "security_flags": [
         "external_relationships:1",
-        "embedded_objects:10",
-        "uncommon_media:.mp3"
+        "embedded_objects:10"
       ],
       "rights": {
         "status": "unknown",
@@ -3437,8 +3380,8 @@
       "id": "MED-089",
       "namespace": "medical",
       "seq": 89,
-      "size_bytes": 2433283,
-      "sha256": "440478686955f8ff55a7b043a793375582dec3d433b28be4405d65734fae61e1",
+      "size_bytes": 2286425,
+      "sha256": "3b6c569064cea37f628fb22c98b07a5cf92ea4670a5f084c4d2cbfbaf2c547fe",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -3473,8 +3416,8 @@
       "id": "MED-090",
       "namespace": "medical",
       "seq": 90,
-      "size_bytes": 6342610,
-      "sha256": "92e748a42ee5d936bdb7afe44b0ac8deaee352550bb045aefe3cc049dca7af32",
+      "size_bytes": 2923941,
+      "sha256": "683a488859000988d89ca7f287b4ba75c392b894e17ca0fa451731430945ef00",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -3489,15 +3432,14 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 23,
+      "media_count": 22,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:2",
-        "uncommon_media:.mp3"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -3512,8 +3454,8 @@
       "id": "MED-091",
       "namespace": "medical",
       "seq": 91,
-      "size_bytes": 4607200,
-      "sha256": "ed03aff662032e05d3ad68688574a1a9788c6a940b23bee0c1d34bd583aa6cd9",
+      "size_bytes": 1529016,
+      "sha256": "92028257d5e3eab2a4645ebcff776deba494ed42be897ee8a72dc6da1e169c1c",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -3528,7 +3470,7 @@
         "strict-native"
       ],
       "page_count": 39,
-      "media_count": 15,
+      "media_count": 14,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -3536,7 +3478,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:5",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -3551,8 +3493,8 @@
       "id": "MED-092",
       "namespace": "medical",
       "seq": 92,
-      "size_bytes": 8802184,
-      "sha256": "be19538f46434fa202d74a618328eaedfbb38699ee383d287dad23e60a369dd9",
+      "size_bytes": 8703377,
+      "sha256": "4fc348e9446690101815f125a8400f38ad1e88168596dc0acc795e9e3e1b4fc0",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -3589,8 +3531,8 @@
       "id": "MED-093",
       "namespace": "medical",
       "seq": 93,
-      "size_bytes": 5999775,
-      "sha256": "691ff84c9148f2807cb2507a7a88d650b9687dc899ed1425e2e0851cf8cc7011",
+      "size_bytes": 4997109,
+      "sha256": "af4baff89a3d2dfc7c2b53397fb807f2e40b6735c033eb518b12e6fedbf4fd1d",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -3605,15 +3547,13 @@
         "strict-native"
       ],
       "page_count": 24,
-      "media_count": 20,
+      "media_count": 19,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -3627,8 +3567,8 @@
       "id": "MED-094",
       "namespace": "medical",
       "seq": 94,
-      "size_bytes": 20524362,
-      "sha256": "198a3850161475c5561b8b2e1f823943308181852d72359a10e7c710c68aece2",
+      "size_bytes": 9988673,
+      "sha256": "6e82fb9e4314d6edaa41d665fa00ea450676d9c85d5b18ff668d0b3201b87ced",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -3643,7 +3583,7 @@
         "strict-native"
       ],
       "page_count": 37,
-      "media_count": 27,
+      "media_count": 26,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -3654,7 +3594,7 @@
       "security_flags": [
         "external_relationships:1",
         "embedded_objects:3",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -3669,8 +3609,8 @@
       "id": "MED-095",
       "namespace": "medical",
       "seq": 95,
-      "size_bytes": 15159983,
-      "sha256": "84f933b2633c7d08911863e9ae09ba85251cc44901eeed28bc2702a9b7e87d14",
+      "size_bytes": 12862744,
+      "sha256": "617b0c2d35ca64fd9620a53f5528cc5ddb8d5a29a98c85054b793022c2115b00",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -3685,15 +3625,13 @@
         "strict-native"
       ],
       "page_count": 33,
-      "media_count": 26,
+      "media_count": 25,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -3707,8 +3645,8 @@
       "id": "MED-096",
       "namespace": "medical",
       "seq": 96,
-      "size_bytes": 16206612,
-      "sha256": "b8d077f730b55daca76459ec0dfa21bff58fbac27bb157b1fc1ce1fc51e97224",
+      "size_bytes": 599364,
+      "sha256": "87b79160616fa76f830875f48a8c0ba630ea632402deb8ebd6ac844cadbbfdd0",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -3723,15 +3661,14 @@
         "strict-native"
       ],
       "page_count": 31,
-      "media_count": 6,
+      "media_count": 5,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:2",
-        "uncommon_media:.mp3"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -3746,8 +3683,8 @@
       "id": "MED-097",
       "namespace": "medical",
       "seq": 97,
-      "size_bytes": 4748043,
-      "sha256": "85237fa5b37fa3f7b74d495a650cb1525190a2005ac5030733a5c865c4ed8fd8",
+      "size_bytes": 2222385,
+      "sha256": "c46ff24f475ca7d68f4085d035d9058c359be93bb63715e019bad33280a270e2",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -3762,15 +3699,13 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 16,
+      "media_count": 15,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -3784,8 +3719,8 @@
       "id": "MED-098",
       "namespace": "medical",
       "seq": 98,
-      "size_bytes": 11422742,
-      "sha256": "c2ca1f10cfd48d743574869b99f47567c19507cda9f7ddf726b2dd283bcb3f9c",
+      "size_bytes": 9562355,
+      "sha256": "509a969ad6d28666d333badb347af269d3c3b203cf979f5d127c5ea6c028d5a1",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -3800,14 +3735,14 @@
         "strict-native"
       ],
       "page_count": 25,
-      "media_count": 54,
+      "media_count": 53,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.wav,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -3822,8 +3757,8 @@
       "id": "MED-099",
       "namespace": "medical",
       "seq": 99,
-      "size_bytes": 4539968,
-      "sha256": "aafac7766f163996cb7ce4ddfb705c1cb48f9a720747b41d8adc59611a049823",
+      "size_bytes": 1371304,
+      "sha256": "a68c0c8894c5b1340d65acaeebfd1372cafec88b17dcf47dd260a855741206b5",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -3838,7 +3773,7 @@
         "strict-native"
       ],
       "page_count": 24,
-      "media_count": 16,
+      "media_count": 15,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -3847,8 +3782,7 @@
         "淘宝"
       ],
       "security_flags": [
-        "embedded_objects:6",
-        "uncommon_media:.mp3"
+        "embedded_objects:6"
       ],
       "rights": {
         "status": "unknown",
@@ -3863,8 +3797,8 @@
       "id": "MED-100",
       "namespace": "medical",
       "seq": 100,
-      "size_bytes": 9927108,
-      "sha256": "95e7db2ea2aa8abe1842e339090b49e1a8271e868fb617f175efc59a12ca1fec",
+      "size_bytes": 830383,
+      "sha256": "265cdc0b75a89563e9763d95ce8dde93904adbc8c144a7bb9d03516ba1d15add",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -3879,15 +3813,14 @@
         "strict-native"
       ],
       "page_count": 31,
-      "media_count": 6,
+      "media_count": 5,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:7",
-        "uncommon_media:.mp3"
+        "embedded_objects:7"
       ],
       "rights": {
         "status": "unknown",
@@ -3902,8 +3835,8 @@
       "id": "MED-101",
       "namespace": "medical",
       "seq": 101,
-      "size_bytes": 21956631,
-      "sha256": "a545e8d47099b0a4e6b8a20419a017f56c81dd82aceee7aa01a18f7eacb0c7c6",
+      "size_bytes": 21863260,
+      "sha256": "6cd782008d82ec75cfe92a86b45cf24697e8b4e87baf394cabc937629f3973db",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -3938,8 +3871,8 @@
       "id": "MED-102",
       "namespace": "medical",
       "seq": 102,
-      "size_bytes": 5245589,
-      "sha256": "70bd72141557a7c0f8344c3ff848ee8af765d4c26906dd4b825fb9ca20e57f42",
+      "size_bytes": 5151546,
+      "sha256": "6c0dc9e10134f5a646fe421f79052bde8bebcab2e11d3dd8c8e227a4dd933305",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -3978,8 +3911,8 @@
       "id": "MED-103",
       "namespace": "medical",
       "seq": 103,
-      "size_bytes": 7068135,
-      "sha256": "34e89b653145e8f1cdef8fc3af6f51dba91a682ef176eb546ae855d514ebf311",
+      "size_bytes": 3885232,
+      "sha256": "c0ac3fd15211a049b061020b2fb432f5c205801fa2e83c30a5b37546b13b5735",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -3994,15 +3927,14 @@
         "strict-native"
       ],
       "page_count": 30,
-      "media_count": 20,
+      "media_count": 19,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:2",
-        "uncommon_media:.mp3"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -4017,8 +3949,8 @@
       "id": "MED-104",
       "namespace": "medical",
       "seq": 104,
-      "size_bytes": 14245290,
-      "sha256": "af2ef322aa7ced8c2d2b012986cbf1bce6bd07209d8b3bd827ec3adf950075f4",
+      "size_bytes": 9301002,
+      "sha256": "6eb5b997c508f906f37b140b03c55e293e3f493d21c932728fd7d5a3f44e8861",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -4033,15 +3965,13 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 15,
+      "media_count": 14,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -4055,8 +3985,8 @@
       "id": "MED-105",
       "namespace": "medical",
       "seq": 105,
-      "size_bytes": 18293414,
-      "sha256": "5586e119009e34e8f634b22f0c349a0868eb11d86e2f258f5dec2f9bd76c9485",
+      "size_bytes": 15920306,
+      "sha256": "bb2cfbffbdb1352c5fbd4c3be4afa9d50f9748cd17381becf4acae61ece3c2e6",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -4071,15 +4001,14 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 26,
+      "media_count": 25,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:2",
-        "uncommon_media:.mp3"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -4094,8 +4023,8 @@
       "id": "MED-106",
       "namespace": "medical",
       "seq": 106,
-      "size_bytes": 8183600,
-      "sha256": "e5c50bc20f9aae429e443940c7da205b5ab2379d1de14296f1f4c2f0ccc8b002",
+      "size_bytes": 7841453,
+      "sha256": "94036dafa6b5bc96bf075b5d92a1190341229afa7e1d54d01198c97e7febbef5",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -4132,8 +4061,8 @@
       "id": "MED-107",
       "namespace": "medical",
       "seq": 107,
-      "size_bytes": 12146002,
-      "sha256": "206d2c8acaf830150971b0bba5df55b14e6eda144a28be5a5592c5c8f4d3a51d",
+      "size_bytes": 8013216,
+      "sha256": "a4f8dd7336e94ec888dfb980cc87a35b8d7d343b1b8bd43c4c6f202c2f34e693",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -4148,15 +4077,14 @@
         "strict-native"
       ],
       "page_count": 25,
-      "media_count": 14,
+      "media_count": 13,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:2",
-        "uncommon_media:.mp3"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -4171,8 +4099,8 @@
       "id": "MED-108",
       "namespace": "medical",
       "seq": 108,
-      "size_bytes": 7184549,
-      "sha256": "44e1503af30ef91697198460b38f3d6b980e06e73e0fc0244fca63c09cf1d5aa",
+      "size_bytes": 6387777,
+      "sha256": "33b2d76748024c1021e14ead8e325af1b836f3978d6aaaf8a139a504c7c7b2ac",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -4187,15 +4115,14 @@
         "strict-native"
       ],
       "page_count": 28,
-      "media_count": 21,
+      "media_count": 20,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "external_relationships:1",
-        "uncommon_media:.mp3"
+        "external_relationships:1"
       ],
       "rights": {
         "status": "unknown",
@@ -4210,8 +4137,8 @@
       "id": "MED-109",
       "namespace": "medical",
       "seq": 109,
-      "size_bytes": 11599813,
-      "sha256": "3323cbaa89a08360347f78ca18443ff41d8a7d03cde3531e696e7ea0d05772c3",
+      "size_bytes": 10678890,
+      "sha256": "e28881ffefb5388bc67a9b91cde789a746ef8e8ab86bb45bd62db73776bbc601",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -4226,15 +4153,13 @@
         "strict-native"
       ],
       "page_count": 32,
-      "media_count": 29,
+      "media_count": 28,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -4248,8 +4173,8 @@
       "id": "MED-110",
       "namespace": "medical",
       "seq": 110,
-      "size_bytes": 9665668,
-      "sha256": "b7098b98fbf7476300ffe0f1128dc4acd7989ee1b346a2f40f982f3359784bfd",
+      "size_bytes": 9595103,
+      "sha256": "7f866f9269e29a53a79e08df87250a43e89d05aa464d699d40a38da1c162b37d",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -4284,8 +4209,8 @@
       "id": "MED-111",
       "namespace": "medical",
       "seq": 111,
-      "size_bytes": 4234093,
-      "sha256": "833898b0f560df1eb37b1aa870de094fd68299510e5e5a198ea93bf5d74c3485",
+      "size_bytes": 3993335,
+      "sha256": "b95398277399f851053ba32d03d92f37c14c678c13c53429eb153bc619c94ffc",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -4363,8 +4288,8 @@
       "id": "MED-113",
       "namespace": "medical",
       "seq": 113,
-      "size_bytes": 12198222,
-      "sha256": "c6fc6ffe91d2cf43432ebc4d0387733d3814960e687d3d175dc1bf5b7b6e720f",
+      "size_bytes": 8954088,
+      "sha256": "f78f162f807ffa19424ae602610f612bf213e5cbe1fbb707f60dfbd6b6598c23",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -4379,7 +4304,7 @@
         "strict-native"
       ],
       "page_count": 23,
-      "media_count": 44,
+      "media_count": 43,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -4388,7 +4313,7 @@
       "security_flags": [
         "external_relationships:1",
         "embedded_objects:9",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -4403,8 +4328,8 @@
       "id": "MED-114",
       "namespace": "medical",
       "seq": 114,
-      "size_bytes": 13037447,
-      "sha256": "f9882b566f1bdcd521a3d0860f80e5fba48ea0683ae49b9c27e3a0288c41cb62",
+      "size_bytes": 4652660,
+      "sha256": "96a60d2ffb92c690abaa2e86f6d386122470b3149d3cafc5b4ea7727257a411a",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -4419,7 +4344,7 @@
         "strict-native"
       ],
       "page_count": 31,
-      "media_count": 30,
+      "media_count": 29,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -4427,9 +4352,7 @@
       "promo_text": [
         "定制"
       ],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -4443,8 +4366,8 @@
       "id": "MED-115",
       "namespace": "medical",
       "seq": 115,
-      "size_bytes": 5452379,
-      "sha256": "bcbd78137966361e662fbe2a6067df8e98930ba23377654c0b3a4ac90f6e7956",
+      "size_bytes": 964975,
+      "sha256": "951692b09424f90a38bcc12aa07d172f77e68aaf8d9b41849e52f4e5ec73a875",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -4459,14 +4382,14 @@
         "strict-native"
       ],
       "page_count": 36,
-      "media_count": 19,
+      "media_count": 17,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.mp3,.wav,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -4481,8 +4404,8 @@
       "id": "MED-116",
       "namespace": "medical",
       "seq": 116,
-      "size_bytes": 5398817,
-      "sha256": "9a070c2e7d90591e28dab1c108e688d551d90778061f4a3f693cf5f9766a6419",
+      "size_bytes": 1497414,
+      "sha256": "2703da3e1bf9bfb36d7d68bb67a9e2ebe75256807d3e23daf6a55f2297944128",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -4497,15 +4420,14 @@
         "strict-native"
       ],
       "page_count": 31,
-      "media_count": 17,
+      "media_count": 16,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:2",
-        "uncommon_media:.mp3"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -4520,8 +4442,8 @@
       "id": "MED-117",
       "namespace": "medical",
       "seq": 117,
-      "size_bytes": 10959364,
-      "sha256": "aeb2aea6d6d237764c7f5931f63d0688a076e95bdffe4a265c0e2d645c1a682a",
+      "size_bytes": 2003661,
+      "sha256": "12b8271cae57c46c0a21c4d12bf88c7ad387b6753edb09055fded9074c75a395",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -4536,7 +4458,7 @@
         "strict-native"
       ],
       "page_count": 35,
-      "media_count": 37,
+      "media_count": 36,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -4544,8 +4466,7 @@
       "promo_text": [],
       "security_flags": [
         "external_relationships:1",
-        "embedded_objects:10",
-        "uncommon_media:.mp3"
+        "embedded_objects:10"
       ],
       "rights": {
         "status": "unknown",
@@ -4560,8 +4481,8 @@
       "id": "MED-118",
       "namespace": "medical",
       "seq": 118,
-      "size_bytes": 11714389,
-      "sha256": "4ca772a25b58027d993473122f0bf6a5bd9096abdd26344db377e54fe79594cd",
+      "size_bytes": 2132318,
+      "sha256": "7e6d3d24d8fdf14b01226c997e3cf025fcc6c62ce2488ffc2f3ae5cd5f6fb2cc",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -4576,15 +4497,14 @@
         "strict-native"
       ],
       "page_count": 29,
-      "media_count": 6,
+      "media_count": 5,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:3",
-        "uncommon_media:.mp3"
+        "embedded_objects:3"
       ],
       "rights": {
         "status": "unknown",
@@ -4599,8 +4519,8 @@
       "id": "MED-119",
       "namespace": "medical",
       "seq": 119,
-      "size_bytes": 21482069,
-      "sha256": "e0c941ccf4651e0c58c4a8d850dd33ad20b86bc09ac126b5c51b532bc2180346",
+      "size_bytes": 5849778,
+      "sha256": "b0db325c140c2603c7bc6a50c6f0fa2ba53b94fcf67a40829b644820b0257b51",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -4615,15 +4535,13 @@
         "strict-native"
       ],
       "page_count": 34,
-      "media_count": 19,
+      "media_count": 18,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -4637,8 +4555,8 @@
       "id": "MED-120",
       "namespace": "medical",
       "seq": 120,
-      "size_bytes": 15727394,
-      "sha256": "480c5be8845b3b22ec8377bad89a101a13b6484ce4e4b13de640fe5759ad4149",
+      "size_bytes": 3257213,
+      "sha256": "68316cdd4e17ddfc0fb228a2bf217773bc21fc867d6f2c7e72a31419e4bda504",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -4653,7 +4571,7 @@
         "strict-native"
       ],
       "page_count": 30,
-      "media_count": 6,
+      "media_count": 5,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -4661,7 +4579,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:3",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -4676,8 +4594,8 @@
       "id": "MED-121",
       "namespace": "medical",
       "seq": 121,
-      "size_bytes": 1405925,
-      "sha256": "f01c4f9742aa17e61d9ceca2de8f28bf0a0643dabe4009bb43a5df00d9d3780e",
+      "size_bytes": 1339139,
+      "sha256": "d9a0cb419284e2cd5a7f40b8f0bcfadc85b3970b51c749666e239d4a90adf2eb",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -4712,8 +4630,8 @@
       "id": "MED-122",
       "namespace": "medical",
       "seq": 122,
-      "size_bytes": 4309181,
-      "sha256": "85d23837ee8f41f03fdf9c7642ab9613d24e6f68ff1f3458c77d8ccba9055e2f",
+      "size_bytes": 2253332,
+      "sha256": "9bdb1295f5bcad2f96619d1adedfc29cf71991b55723fbf501a798c072d50621",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -4728,15 +4646,14 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 18,
+      "media_count": 17,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:5",
-        "uncommon_media:.mp3"
+        "embedded_objects:5"
       ],
       "rights": {
         "status": "unknown",
@@ -4751,8 +4668,8 @@
       "id": "MED-123",
       "namespace": "medical",
       "seq": 123,
-      "size_bytes": 7112566,
-      "sha256": "91bd72f4ea318cf99ede8df7c8c24e8875417de35ee92ef2929460d3b01c954e",
+      "size_bytes": 1657749,
+      "sha256": "67cf45ba0c0ae134261587b7a69a9e2e519907732cfc4b39f7c484dbdfd63b54",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -4767,15 +4684,13 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 13,
+      "media_count": 12,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -4789,8 +4704,8 @@
       "id": "MED-124",
       "namespace": "medical",
       "seq": 124,
-      "size_bytes": 7240358,
-      "sha256": "6873d2a3542b348659a4c823f0db3ea30ad6f42ece4702a9214efc6a133b553e",
+      "size_bytes": 1762553,
+      "sha256": "c708b869e35f759b3c1b1a6b488d7f2cc27ec35922fc1bcebbf09bc2e91b10bf",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -4805,15 +4720,13 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 18,
+      "media_count": 17,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -4827,8 +4740,8 @@
       "id": "MED-125",
       "namespace": "medical",
       "seq": 125,
-      "size_bytes": 5307606,
-      "sha256": "a5a9e2cb983f0996960eccbedff3b968d2d90615500d5a04773b2d61d8dab243",
+      "size_bytes": 1347788,
+      "sha256": "e8ec010fae309afd5ee7d37fb92f2c7ebc362b4b2f4d2cc2751a61fbca0d9595",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -4843,15 +4756,13 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 18,
+      "media_count": 17,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -5017,8 +4928,8 @@
       "id": "MED-130",
       "namespace": "medical",
       "seq": 130,
-      "size_bytes": 25933357,
-      "sha256": "f15ac9cac1761f6a35df6dfa180df44955d7a00a7b39a2e3a21015d4a13f9f0c",
+      "size_bytes": 25706887,
+      "sha256": "de64b659ee7fd31541a35a12616b63f43e24ff5235df63b3080aac16815c2972",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -5056,8 +4967,8 @@
       "id": "MED-131",
       "namespace": "medical",
       "seq": 131,
-      "size_bytes": 9481567,
-      "sha256": "11d82d3f2a668842945bf7e1d49805a20b14d8957e54aa750fb4069b695ebbe3",
+      "size_bytes": 5525398,
+      "sha256": "e60d73ed128c0691383625d53e70b8837761123b0d8d20139ae8d267c43822bf",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -5072,14 +4983,14 @@
         "strict-native"
       ],
       "page_count": 24,
-      "media_count": 44,
+      "media_count": 43,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "90e9a3fd",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.emf,.mp3"
+        "uncommon_media:.emf"
       ],
       "rights": {
         "status": "unknown",
@@ -5094,8 +5005,8 @@
       "id": "MED-132",
       "namespace": "medical",
       "seq": 132,
-      "size_bytes": 6154083,
-      "sha256": "31f52bbf057d96e9f10f08a9c99d6b008779f5d9cf38e708343ec6b7f3dce884",
+      "size_bytes": 3284342,
+      "sha256": "a7391b904da9b032f75e3666c2312616452ba7ecc5c53501910c4243a941c377",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -5110,15 +5021,14 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 25,
+      "media_count": 24,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:10",
-        "uncommon_media:.mp3"
+        "embedded_objects:10"
       ],
       "rights": {
         "status": "unknown",
@@ -5133,8 +5043,8 @@
       "id": "MED-133",
       "namespace": "medical",
       "seq": 133,
-      "size_bytes": 11851737,
-      "sha256": "27995df2d2b832d477b9a17ce522732497dfc9ec99eaf59324cb3f469f87e950",
+      "size_bytes": 8981506,
+      "sha256": "239faa1b1bf3c95ae4e97a17fd51efbec5f8b51d3d7113d13c142c4901a0b3ed",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -5149,7 +5059,7 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 26,
+      "media_count": 25,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -5157,7 +5067,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:10",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -5172,8 +5082,8 @@
       "id": "MED-134",
       "namespace": "medical",
       "seq": 134,
-      "size_bytes": 4396417,
-      "sha256": "703f4d976f895380d893304573ca1fc1b206c5403f9f7d633de6802316debc2a",
+      "size_bytes": 1544962,
+      "sha256": "530ad8f47cd42c82d121ca89f99dbeac00c7481f6dabd99ae1e53905667b91b9",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -5188,15 +5098,13 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 12,
+      "media_count": 11,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -5210,8 +5118,8 @@
       "id": "MED-135",
       "namespace": "medical",
       "seq": 135,
-      "size_bytes": 6137649,
-      "sha256": "c14591ab8fda4e3303083b9ba8ae6036a7e369f01379cf47a77f4bc0954e99cc",
+      "size_bytes": 4092161,
+      "sha256": "7a535dea1647a7553beb18c2eb1ea3687b75cbb4a42eac588fe18f38ad7308fb",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -5226,15 +5134,14 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 17,
+      "media_count": 16,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:2",
-        "uncommon_media:.mp3"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -5249,8 +5156,8 @@
       "id": "MED-136",
       "namespace": "medical",
       "seq": 136,
-      "size_bytes": 4103486,
-      "sha256": "e8eb6eedccf13cf0c7352f3172b912dcf80ba38f30336a9753e6977e6c46ffc3",
+      "size_bytes": 1238936,
+      "sha256": "6263f203a3b7ad86c57ad776099340b03bbe32ca8bec6bee94bf9a374fd04e54",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -5265,15 +5172,14 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 12,
+      "media_count": 11,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:2",
-        "uncommon_media:.mp3"
+        "embedded_objects:2"
       ],
       "rights": {
         "status": "unknown",
@@ -5288,8 +5194,8 @@
       "id": "MED-137",
       "namespace": "medical",
       "seq": 137,
-      "size_bytes": 1438061,
-      "sha256": "1c50fc9324a6528910980e17e5515fccd9e0030d43b6e5e958496140b0c7ff3f",
+      "size_bytes": 1380119,
+      "sha256": "a0bfebeddc2e3b5be2243ea9f72f28b5b54521c729d80844b3b8e4316fb6be6d",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -5362,8 +5268,8 @@
       "id": "MED-139",
       "namespace": "medical",
       "seq": 139,
-      "size_bytes": 16828100,
-      "sha256": "d22ae19754c6157873c4eb74038d29be0459bedac8c57d2896e542443a08c90c",
+      "size_bytes": 16805814,
+      "sha256": "8810a5eecc0ade7461324de7a9c69005361ebf7ac921e5f635baae926985b87d",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -5805,8 +5711,8 @@
       "id": "MED-151",
       "namespace": "medical",
       "seq": 151,
-      "size_bytes": 7741023,
-      "sha256": "85bf81bfd6f819a80643a9c3d836231525642fc94893d41bf08658343ddc1a4c",
+      "size_bytes": 4655383,
+      "sha256": "89f62113d47f4e5630f6552f294b37cacfc4bed697ef6703085f94630c916c57",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -5821,15 +5727,13 @@
         "strict-native"
       ],
       "page_count": 20,
-      "media_count": 28,
+      "media_count": 27,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -5957,8 +5861,8 @@
       "id": "MED-155",
       "namespace": "medical",
       "seq": 155,
-      "size_bytes": 12295227,
-      "sha256": "d1f8f72ddf0ae26903a5352d9c6d1750f2a1766e987ce3fd52091ccf78bb019e",
+      "size_bytes": 12286516,
+      "sha256": "2789fce6e546b8238ce478b1a0be41fea3e916275591a1ddafd8299eb0f148c3",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -5995,8 +5899,8 @@
       "id": "MED-156",
       "namespace": "medical",
       "seq": 156,
-      "size_bytes": 4725334,
-      "sha256": "860715518d494f395976228dc845f40c85104021b87d5054f4a31188ebc9d7e9",
+      "size_bytes": 4718594,
+      "sha256": "08cf17175106ccaa96a6ceda767d5304e717aa84205f27ad4787c46bd5cffe7a",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -6108,8 +6012,8 @@
       "id": "MED-159",
       "namespace": "medical",
       "seq": 159,
-      "size_bytes": 4449947,
-      "sha256": "f2dbbb9b526f72c600fbee4e8844edafbf2f0add0407ed1c22403459b0258308",
+      "size_bytes": 1157817,
+      "sha256": "c4944fbba514ea3593dfdd0b1b7891d5f5afb20b6c76593e6acdf3143155d2ab",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -6124,15 +6028,13 @@
         "strict-native"
       ],
       "page_count": 27,
-      "media_count": 8,
+      "media_count": 7,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "832f0bb2",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -6146,8 +6048,8 @@
       "id": "MED-160",
       "namespace": "medical",
       "seq": 160,
-      "size_bytes": 10892514,
-      "sha256": "ba6d11b975e1b52853d41442f246e6e21ea2f7b963e5d96fb45587585f994713",
+      "size_bytes": 2998210,
+      "sha256": "803d14107cb0a2549c23a6815f70903ec0db9f40660935b4c2a482ff5215fd3e",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -6162,14 +6064,14 @@
         "strict-native"
       ],
       "page_count": 27,
-      "media_count": 31,
+      "media_count": 30,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "3050c7e6",
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.emf,.mp3"
+        "uncommon_media:.emf"
       ],
       "rights": {
         "status": "unknown",
@@ -6184,8 +6086,8 @@
       "id": "MED-161",
       "namespace": "medical",
       "seq": 161,
-      "size_bytes": 7101435,
-      "sha256": "1dbd24633b5aa1630958cd02f67f970bfe6004fe00e0052bc9c784cc72fc0693",
+      "size_bytes": 4424857,
+      "sha256": "8a23c322e46642add177798bdba398902e89a007299eb771900a1ce100ab684e",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -6200,14 +6102,14 @@
         "strict-native"
       ],
       "page_count": 26,
-      "media_count": 20,
+      "media_count": 19,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -6222,8 +6124,8 @@
       "id": "MED-162",
       "namespace": "medical",
       "seq": 162,
-      "size_bytes": 5538581,
-      "sha256": "47ef413f8d145030b68c9b5baccc22665e8c5e67671eea0cb0380e461e5057df",
+      "size_bytes": 1582664,
+      "sha256": "f986e531ff6d15b9eb7a761f23ef4bb7c2b88237b679c618e1eace871df96450",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -6238,7 +6140,7 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 12,
+      "media_count": 11,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -6246,7 +6148,7 @@
       "promo_text": [],
       "security_flags": [
         "embedded_objects:1",
-        "uncommon_media:.mp3,.tiff"
+        "uncommon_media:.tiff"
       ],
       "rights": {
         "status": "unknown",
@@ -6261,8 +6163,8 @@
       "id": "MED-163",
       "namespace": "medical",
       "seq": 163,
-      "size_bytes": 5558950,
-      "sha256": "93f7c19a4a41feb12d3cca7d57772ace27a6e5b0b9a30ca3306859eaf609a2e5",
+      "size_bytes": 3486856,
+      "sha256": "34fc3e4e621dc7a2174c8ec0cff830451ede6d6a4b5b0ee062eabb7366196feb",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -6277,15 +6179,14 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 15,
+      "media_count": 14,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:5",
-        "uncommon_media:.mp3"
+        "embedded_objects:5"
       ],
       "rights": {
         "status": "unknown",
@@ -6300,8 +6201,8 @@
       "id": "MED-164",
       "namespace": "medical",
       "seq": 164,
-      "size_bytes": 5379640,
-      "sha256": "0740505cbf6d43bb2ffc9596fdcfdcc1c35160c180f96b4af247790ecf0e8565",
+      "size_bytes": 2815656,
+      "sha256": "e70e3dfa03ac7d4d15d56dee100e90a4d05261a60ab49282bc5d09a6c7bdda16",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -6316,14 +6217,14 @@
         "strict-native"
       ],
       "page_count": 26,
-      "media_count": 19,
+      "media_count": 18,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.emf,.mp3"
+        "uncommon_media:.emf"
       ],
       "rights": {
         "status": "unknown",
@@ -6338,8 +6239,8 @@
       "id": "MED-165",
       "namespace": "medical",
       "seq": 165,
-      "size_bytes": 3992426,
-      "sha256": "b3627df8e286bb48e3b1e8e528fb7afc8db6b3b72c9bbff5f53ae4c089c10134",
+      "size_bytes": 1923375,
+      "sha256": "a19396f276f401864827afc519bd2ae24c94658c07784b6436eb05716bf2d243",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -6354,15 +6255,14 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 18,
+      "media_count": 17,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:4",
-        "uncommon_media:.mp3"
+        "embedded_objects:4"
       ],
       "rights": {
         "status": "unknown",
@@ -6377,8 +6277,8 @@
       "id": "MED-166",
       "namespace": "medical",
       "seq": 166,
-      "size_bytes": 1288172,
-      "sha256": "8ac7f6a19370ea2443bbb6c8d078acb82b179efdd7a843463548dac0629c7a08",
+      "size_bytes": 1207943,
+      "sha256": "65a973db10a88431fd41f4847ace448c53abe29d9d797c50408e8fd720fb75dc",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -6416,8 +6316,8 @@
       "id": "MED-167",
       "namespace": "medical",
       "seq": 167,
-      "size_bytes": 14545943,
-      "sha256": "0ab0e269855f66f758a07c726faffc237444bfdc5aa955f0241a890d19bd0500",
+      "size_bytes": 2899228,
+      "sha256": "994d8eb9619be4f1fb8bf032d015d2fb9f8ac1d0d44fe8c8534ea9ea05880aec",
       "folder": "03_临床专科与医护护理",
       "primary_category": "clinical",
       "category_name": "临床专科与医护护理",
@@ -6432,15 +6332,13 @@
         "strict-native"
       ],
       "page_count": 25,
-      "media_count": 21,
+      "media_count": 20,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -6454,8 +6352,8 @@
       "id": "MED-168",
       "namespace": "medical",
       "seq": 168,
-      "size_bytes": 10383580,
-      "sha256": "238915c457b41fad259d3408fc235e9026108e56492961134ec9863959e6a104",
+      "size_bytes": 1481195,
+      "sha256": "e8985fa01e3e1b943f683f2c6d454b789e33485ce12f9600b187b8517c2e55b0",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -6470,15 +6368,13 @@
         "strict-native"
       ],
       "page_count": 27,
-      "media_count": 6,
+      "media_count": 5,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": "e7d3e769",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -6492,8 +6388,8 @@
       "id": "MED-169",
       "namespace": "medical",
       "seq": 169,
-      "size_bytes": 12113057,
-      "sha256": "49301d64c679a7154321c83f36356e0ce16056e3db097365c8531b4064bec1a3",
+      "size_bytes": 2914055,
+      "sha256": "8e617baca95bea2cb91ab32911a28348e164d89fc3da09ccbadc391b3553320f",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -6508,7 +6404,7 @@
         "strict-native"
       ],
       "page_count": 25,
-      "media_count": 28,
+      "media_count": 27,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -6517,7 +6413,7 @@
       "security_flags": [
         "external_relationships:1",
         "embedded_objects:4",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -6532,8 +6428,8 @@
       "id": "MED-170",
       "namespace": "medical",
       "seq": 170,
-      "size_bytes": 4599621,
-      "sha256": "38f8e8366027331eafa955d9ab9ed6196568ff2411b3e6f7b7276cddc6ce722c",
+      "size_bytes": 1279346,
+      "sha256": "c28c5bae670997593a3c946248702267004e081acec3028f63d5f06c7663e213",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -6548,15 +6444,13 @@
         "strict-native"
       ],
       "page_count": 25,
-      "media_count": 16,
+      "media_count": 15,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -6570,8 +6464,8 @@
       "id": "MED-171",
       "namespace": "medical",
       "seq": 171,
-      "size_bytes": 4440406,
-      "sha256": "4787a20f46c96c311c4b814b54481c8aaef2b251151f7c10c77b31bdb8243b08",
+      "size_bytes": 847194,
+      "sha256": "050d9ef6cea776f633bc26967a1bc93bc4192fbe0215a7ce9b5732a77c8c5736",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -6586,7 +6480,7 @@
         "strict-native"
       ],
       "page_count": 24,
-      "media_count": 7,
+      "media_count": 6,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -6594,9 +6488,7 @@
       "promo_text": [
         "淘宝"
       ],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -6610,8 +6502,8 @@
       "id": "MED-172",
       "namespace": "medical",
       "seq": 172,
-      "size_bytes": 6648148,
-      "sha256": "d017fc6be9f0d4ad957bd72db40120c89c58d66ee65e10b17ffb1771c6f98cce",
+      "size_bytes": 3028033,
+      "sha256": "939a9d48168688288ada65be7456f282d9fc939eb4ce2195e304d61143c2f584",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -6626,15 +6518,14 @@
         "strict-native"
       ],
       "page_count": 25,
-      "media_count": 17,
+      "media_count": 16,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "92b7b421",
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:4",
-        "uncommon_media:.mp3"
+        "embedded_objects:4"
       ],
       "rights": {
         "status": "unknown",
@@ -6649,8 +6540,8 @@
       "id": "MED-173",
       "namespace": "medical",
       "seq": 173,
-      "size_bytes": 11611940,
-      "sha256": "59a16e752e69863b373de01c111cf4f969255621c1b0e7adaaec37722d01ac0f",
+      "size_bytes": 2195600,
+      "sha256": "120c0c31b7c2d6d12b5994de9fdb485ceee4271a8f6b863912ef49e8b6dbd4cc",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -6665,15 +6556,13 @@
         "strict-native"
       ],
       "page_count": 25,
-      "media_count": 10,
+      "media_count": 9,
       "has_thumbnail": false,
       "preview_status": "missing",
       "preview": null,
       "author_hash": "92b7b421",
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -6687,8 +6576,8 @@
       "id": "MED-174",
       "namespace": "medical",
       "seq": 174,
-      "size_bytes": 7859554,
-      "sha256": "de8fec7ee06a0bd814df1dcad51594e2577399bea800cb55a59786ce6f60e3db",
+      "size_bytes": 2407265,
+      "sha256": "98aad5dc0f567843eea528e969715fb0b6f728cf05840b09179ee7172ddff902",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -6703,15 +6592,14 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 22,
+      "media_count": 21,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:4",
-        "uncommon_media:.mp3"
+        "embedded_objects:4"
       ],
       "rights": {
         "status": "unknown",
@@ -6726,8 +6614,8 @@
       "id": "MED-175",
       "namespace": "medical",
       "seq": 175,
-      "size_bytes": 8698463,
-      "sha256": "3d66e305ccc0f15142d87093447751824334022d9f43b0f0ac2b4711fdf11f91",
+      "size_bytes": 6132742,
+      "sha256": "52aab964db88be34351abb9b8633dd2a2f48e0f86176f6416672c410de5c4ead",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -6742,14 +6630,14 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 12,
+      "media_count": 11,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -6764,8 +6652,8 @@
       "id": "MED-176",
       "namespace": "medical",
       "seq": 176,
-      "size_bytes": 8388860,
-      "sha256": "f87d5e89c8431b925d85e6761a3e105a71f1ad2c8714c275203a4106ad06ef45",
+      "size_bytes": 1028001,
+      "sha256": "2bd5005df6a1a7bbb0b203a2621b52e584562935f6e3b566adf2fa123a6df371",
       "folder": "05_中医国风与特色专题",
       "primary_category": "tcm-style",
       "category_name": "中医国风与特色专题",
@@ -6780,15 +6668,14 @@
         "strict-native"
       ],
       "page_count": 25,
-      "media_count": 10,
+      "media_count": 9,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
       "security_flags": [
-        "embedded_objects:4",
-        "uncommon_media:.mp3"
+        "embedded_objects:4"
       ],
       "rights": {
         "status": "unknown",
@@ -6803,8 +6690,8 @@
       "id": "MED-177",
       "namespace": "medical",
       "seq": 177,
-      "size_bytes": 4189290,
-      "sha256": "9ea1941925537087f04541eb89e0c5f9a7fcad695c8a3ed380311f0c6addd4d9",
+      "size_bytes": 1337797,
+      "sha256": "8b2f540511caeb9e2006e9909de6e8e028b7fd95e812a7469fb551cd074fc0dc",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -6819,15 +6706,13 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 12,
+      "media_count": 11,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -6841,8 +6726,8 @@
       "id": "MED-178",
       "namespace": "medical",
       "seq": 178,
-      "size_bytes": 3799297,
-      "sha256": "d4fa036adf136b85198037737affc8c353200d83e7c80b3503a98a930e7224c5",
+      "size_bytes": 1732116,
+      "sha256": "a3ad20eb2964a3c9a3538692d41ba7455dd04f0529d23e599517ea3cbfaf338f",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -6857,15 +6742,13 @@
         "strict-native"
       ],
       "page_count": 22,
-      "media_count": 16,
+      "media_count": 15,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
       "author_hash": null,
       "promo_text": [],
-      "security_flags": [
-        "uncommon_media:.mp3"
-      ],
+      "security_flags": [],
       "rights": {
         "status": "unknown",
         "license": null,
@@ -6879,8 +6762,8 @@
       "id": "MED-179",
       "namespace": "medical",
       "seq": 179,
-      "size_bytes": 12802806,
-      "sha256": "fb88bbfa7058a67236bb30ab79e381adf4f7e943361104e522b2695d568f99c8",
+      "size_bytes": 1846925,
+      "sha256": "98af54262499166dc3fb91843f59f2e73a2f1cda8c7c9a2e78b5d853a0405351",
       "folder": "04_妇幼健康与卡通宣教",
       "primary_category": "maternal-child",
       "category_name": "妇幼健康与卡通宣教",
@@ -6895,7 +6778,7 @@
         "strict-native"
       ],
       "page_count": 25,
-      "media_count": 8,
+      "media_count": 7,
       "has_thumbnail": true,
       "preview_status": "thumbnail",
       "preview": null,
@@ -6905,7 +6788,7 @@
       ],
       "security_flags": [
         "embedded_objects:4",
-        "uncommon_media:.mp3,.wdp"
+        "uncommon_media:.wdp"
       ],
       "rights": {
         "status": "unknown",
@@ -6920,8 +6803,8 @@
       "id": "MED-180",
       "namespace": "medical",
       "seq": 180,
-      "size_bytes": 3237147,
-      "sha256": "43035827e0694e44fc18d94804a65474f8d72d0c22f8a824e69ec98e6d52d772",
+      "size_bytes": 3225366,
+      "sha256": "e3c73802c7ce147534dc67d2384869e749365e695805970676cb331ba12ecaef",
       "folder": "02_通用汇报与工作总结",
       "primary_category": "report",
       "category_name": "通用汇报与工作总结",
@@ -7078,8 +6961,8 @@
       "id": "CAMPUS-47275fbb",
       "namespace": "institution",
       "seq": null,
-      "size_bytes": 30320747,
-      "sha256": "47275fbb21cc859fef37de66c38250fcf5587774de70a7d5b133530f7e062330",
+      "size_bytes": 30317158,
+      "sha256": "0d99068c1a82c0b7e93ec69e61c6fab9656b0eeeacc85de19065d97c998a02d8",
       "folder": "01_毕业答辩与校园主题",
       "primary_category": "institution",
       "category_name": "厦门大学等高校/机构风格",
@@ -7229,8 +7112,8 @@
       "id": "CAMPUS-71d7494b",
       "namespace": "institution",
       "seq": null,
-      "size_bytes": 14385473,
-      "sha256": "71d7494b26760fa8156424bd60ca5af2f74d492f0274ad52c39876d7f7226e90",
+      "size_bytes": 14352149,
+      "sha256": "8bb536b93e86562d566e53414c5759bbf791638b7b38681dcd44ac9c74bd437e",
       "folder": "01_毕业答辩与校园主题",
       "primary_category": "institution",
       "category_name": "厦门大学等高校/机构风格",
@@ -7341,8 +7224,8 @@
       "id": "CAMPUS-8c6564ce",
       "namespace": "institution",
       "seq": null,
-      "size_bytes": 13297423,
-      "sha256": "8c6564cea855973d7bad72d225dc482f120615d898df910f6a13b104c787428e",
+      "size_bytes": 13292796,
+      "sha256": "ffb1f98faa9204c2d82878106804ad0f30c8139017892266d249c6cb534f81f4",
       "folder": "01_毕业答辩与校园主题",
       "primary_category": "institution",
       "category_name": "厦门大学等高校/机构风格",
@@ -7494,8 +7377,8 @@
       "id": "CAMPUS-a8bcb057",
       "namespace": "institution",
       "seq": null,
-      "size_bytes": 7790719,
-      "sha256": "a8bcb0571a6ab3bd0d72108dceca6d8ec708839e57db2d9c6ff6f174522c27ab",
+      "size_bytes": 7782577,
+      "sha256": "cd51b77bbf431709422184138dab7d76093d7433c657b8febeaaecd734c439c6",
       "folder": "01_毕业答辩与校园主题",
       "primary_category": "institution",
       "category_name": "厦门大学等高校/机构风格",
@@ -7716,5 +7599,6 @@
       "number": 215,
       "source_key": "EXT-215"
     }
-  ]
+  ],
+  "fingerprint_note": "模板已净化（无音乐/无自动翻页）；指纹于 2026-11-07 重算，ID/number/source_key 保持不变。"
 }

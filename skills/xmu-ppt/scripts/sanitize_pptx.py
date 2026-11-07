@@ -35,12 +35,26 @@ P_AUDIO_BLOCK_RE = re.compile(r"<p:audio\b[^>]*>.*?</p:audio>", re.S)
 P_AUDIO_SELF_RE = re.compile(r"<p:audio\b[^>]*/>")
 A_AUDIO_FILE_RE = re.compile(r"<a:audioFile\b[^>]*/>")
 P14_MEDIA_EXT_RE = re.compile(
-    r"<p:ext\b[^>]*>\s*<p14:media\b[^>]*/>\s*</p:ext>", re.S
+    r"<p:ext\b[^>]*>\s*<p14:media\b.*?</p:ext>", re.S
 )
-P14_MEDIA_RE = re.compile(r"<p14:media\b[^>]*/>")
-MEDIA_HLINK_RE = re.compile(r"<a:hlinkClick\b[^>]*ppaction://media[^>]*/>", re.I)
+# p14:media 既可能是自闭合，也可能带 <p14:fade/> 等子元素
+P14_MEDIA_RE = re.compile(
+    r"<p14:media\b[^>]*/>|<p14:media\b[^>]*>.*?</p14:media>", re.S
+)
+# 媒体播放链接：自闭合与带子元素两种写法都覆盖
+MEDIA_HLINK_RE = re.compile(
+    r"<a:hlinkClick\b[^>]*ppaction://media[^>]*/>|"
+    r"<a:hlinkClick\b[^>]*ppaction://media[^>]*>.*?</a:hlinkClick>", re.I | re.S
+)
 MEDIA_CMD_RE = re.compile(r"<p:cmd\b[^>]*cmd=\"(?:play|stop)Media\"[^>]*>.*?</p:cmd>", re.S)
 MEDIA_CMD_SELF_RE = re.compile(r"<p:cmd\b[^>]*cmd=\"(?:play|stop)Media\"[^>]*/>", re.S)
+# 页面切换时播放的声音（<p:sndAc><p:stSnd><p:snd .../></p:stSnd></p:sndAc>）
+P_SND_AC_RE = re.compile(
+    r"<p:sndAc\b[^>]*>.*?</p:sndAc>|<p:sndAc\b[^>]*/>", re.S
+)
+P_SND_EL_RE = re.compile(r"<p:(?:snd|stSnd|sndTgt)\b[^>]*/>|<p:(?:snd|stSnd)\b[^>]*>.*?</p:(?:snd|stSnd)>", re.S)
+# 媒体播放控制按钮设置
+P14_SHOW_MEDIA_CTRLS_RE = re.compile(r"<p14:showMediaCtrls\b[^>]*/>", re.S)
 
 ADV_TM_RE = re.compile(r'\s*advTm="\d+"')
 ADV_CLICK0_RE = re.compile(r'\s*advClick="0"')
@@ -57,7 +71,8 @@ def scan(path: Path) -> dict:
     """只读体检：列出音乐与自动翻页的数量。"""
     result = {
         "audio_parts": 0, "audio_relationships": 0, "audio_refs": 0,
-        "media_actions": 0, "auto_advance": 0, "forced_auto": 0,
+        "media_actions": 0, "sound_actions": 0, "sound_nodes": 0,
+        "media_controls": 0, "auto_advance": 0, "forced_auto": 0,
         "show_timings": 0,
     }
     with zipfile.ZipFile(path) as zf:
@@ -83,6 +98,9 @@ def scan(path: Path) -> dict:
                 len(MEDIA_HLINK_RE.findall(text)) + len(MEDIA_CMD_RE.findall(text))
                 + len(MEDIA_CMD_SELF_RE.findall(text))
             )
+            result["sound_actions"] += len(P_SND_AC_RE.findall(text))
+            result["sound_nodes"] += len(P_SND_EL_RE.findall(text))
+            result["media_controls"] += len(P14_SHOW_MEDIA_CTRLS_RE.findall(text))
             result["auto_advance"] += len(ADV_TM_RE.findall(text))
             result["forced_auto"] += len(ADV_CLICK0_RE.findall(text))
             if name == "ppt/presentation.xml":
@@ -96,6 +114,14 @@ def scan(path: Path) -> dict:
 def clean_text(name: str, text: str, stats: dict) -> str:
     """对单个 XML/rels 部件做字符串级清理，不重序列化 XML 树。"""
     original = text
+    # 调用方可能传入不完整的计数字典；统一补齐，避免新增规则时 KeyError
+    for key in (
+        "audio_relationships", "audio_defaults", "audio_nodes", "audio_refs",
+        "media_ext", "media_refs", "media_actions", "sound_actions",
+        "sound_nodes", "media_controls", "auto_advance", "forced_auto",
+        "show_timings", "parts_changed",
+    ):
+        stats.setdefault(key, 0)
 
     if name.endswith(".rels"):
         text, n = AUDIO_TYPE_RE.subn("", text)
@@ -116,6 +142,9 @@ def clean_text(name: str, text: str, stats: dict) -> str:
     text, n = MEDIA_HLINK_RE.subn("", text); stats["media_actions"] += n
     text, n = MEDIA_CMD_RE.subn("", text); stats["media_actions"] += n
     text, n = MEDIA_CMD_SELF_RE.subn("", text); stats["media_actions"] += n
+    text, n = P_SND_AC_RE.subn("", text); stats["sound_actions"] += n
+    text, n = P_SND_EL_RE.subn("", text); stats["sound_nodes"] += n
+    text, n = P14_SHOW_MEDIA_CTRLS_RE.subn("", text); stats["media_controls"] += n
 
     # 自动翻页：去掉按时间换片，保留点击换片与切换动画
     text, n = ADV_TM_RE.subn("", text); stats["auto_advance"] += n
@@ -142,7 +171,8 @@ def sanitize(source: Path, output: Path, *, in_place: bool = False) -> dict:
         "source": str(source), "output": str(output),
         "audio_parts": 0, "audio_relationships": 0, "audio_defaults": 0,
         "audio_nodes": 0, "audio_refs": 0, "media_ext": 0, "media_refs": 0,
-        "media_actions": 0, "auto_advance": 0, "forced_auto": 0,
+        "media_actions": 0, "sound_actions": 0, "sound_nodes": 0,
+        "media_controls": 0, "auto_advance": 0, "forced_auto": 0,
         "show_timings": 0, "parts_changed": 0,
     }
     target = output
