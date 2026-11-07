@@ -21,6 +21,9 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 EXTERNAL_CATALOG = ROOT / "skills/xmu-ppt/templates/external/external_catalog.json"
+DUPLICATES = ROOT / "skills/xmu-ppt/templates/external/duplicates.json"
+DECKS_DIR = ROOT / "skills/xmu-ppt/templates/decks"
+BUILTIN_CATALOG = ROOT / "docs/templates/catalog.json"
 ROOT_LOCAL = ROOT / "skills/xmu-ppt/templates/external/root.local.json"
 GALLERY = ROOT / "local-gallery"
 COVERS = GALLERY / "covers"
@@ -70,11 +73,32 @@ def to_webp(png: Path, dest: Path) -> None:
 
 def already_done(template_id: str, count: int) -> bool:
     folder = PAGES / template_id
+    if count <= 0:
+        return False
     return all((folder / f"{i:02d}.webp").exists() for i in range(1, count + 1))
+
+
+def builtin_items() -> list[dict]:
+    """内置 15 套也纳入逐页渲染，让使用者能看每一页版式。"""
+    items = []
+    for deck in load_json(BUILTIN_CATALOG):
+        src = DECKS_DIR / deck["id"] / "source.pptx"
+        if not src.exists():
+            continue
+        count = 0
+        index_file = DECKS_DIR / deck["id"] / "layout_index.json"
+        if index_file.exists():
+            count = int(load_json(index_file).get("slide_count") or 0)
+        items.append({"id": deck["id"], "page_count": count, "_abs": src})
+    return items
 
 
 def select_items(args) -> list[dict]:
     items = load_json(EXTERNAL_CATALOG)["templates"]
+    removed = {g["remove"] for g in load_json(DUPLICATES)["groups"]}
+    items = [x for x in items if x["id"] not in removed]
+    if args.include_builtin:
+        items = items + builtin_items()
     if args.deck:
         items = [x for x in items if x["id"] == args.deck]
         if not items:
@@ -84,7 +108,7 @@ def select_items(args) -> list[dict]:
     elif args.only_missing_covers:
         items = [x for x in items if not (COVERS / f"{x['id']}.webp").exists()]
     if not args.force:
-        items = [x for x in items if not already_done(x["id"], args.pages)]
+        items = [x for x in items if not already_done(x["id"], x.get("page_count", 0))]
     if args.limit:
         items = items[: args.limit]
     return items
@@ -96,10 +120,13 @@ def main() -> int:
                         help="渲染全部外部模板（不传任何过滤参数时也是这个行为）")
     parser.add_argument("--deck", help="只渲染指定模板 ID")
     parser.add_argument("--category", help="只渲染指定一级分类")
+    parser.add_argument("--include-builtin", action="store_true",
+                        help="同时渲染内置 15 套的每一页")
     parser.add_argument("--only-missing-covers", action="store_true",
                         help="只处理没有内嵌封面的模板")
     parser.add_argument("--limit", type=int, help="本轮最多处理几套")
-    parser.add_argument("--pages", type=int, default=6, help="每套渲染前几页（默认 6）")
+    parser.add_argument("--pages", type=int, default=0,
+                        help="每套渲染前几页；0 表示全部页（默认），便于逐页查看版式")
     parser.add_argument("--force", action="store_true", help="忽略断点续传，重新渲染")
     args = parser.parse_args()
 
@@ -130,7 +157,7 @@ def main() -> int:
     try:
         for index, item in enumerate(items, 1):
             template_id = item["id"]
-            source = resolve_source(item)
+            source = item.get("_abs") or resolve_source(item)
             folder = PAGES / template_id
             folder.mkdir(parents=True, exist_ok=True)
             deck = None
@@ -140,7 +167,7 @@ def main() -> int:
                 deck = app.Presentations.Open(
                     str(source), ReadOnly=True, Untitled=False, WithWindow=False
                 )
-                total = min(args.pages, deck.Slides.Count)
+                total = deck.Slides.Count if args.pages <= 0 else min(args.pages, deck.Slides.Count)
                 for page in range(1, total + 1):
                     dest = folder / f"{page:02d}.webp"
                     if dest.exists() and not args.force:

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>本地模板库 · 离线浏览</title>
+<style>
+  :root {
+    --ink: #17324D; --muted: #63758A; --line: #E3E8EF; --bg: #F7F9FB;
+    --card: #FFFFFF; --accent: #2F5D8C; --accent-soft: #EEF4FA;
+    --warn: #B4690E; --warn-soft: #FFF6E8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+                 "Microsoft YaHei", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header { padding: 28px 32px 20px; background: var(--card); border-bottom: 1px solid var(--line); }
+  h1 { margin: 0 0 6px; font-size: 22px; font-weight: 600; letter-spacing: .2px; }
+  .sub { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+         padding: 16px 32px; background: var(--card); border-bottom: 1px solid var(--line); }
+  .nav { display: flex; flex-wrap: wrap; gap: 8px; }
+  .nav a, .chip {
+    display: inline-block; padding: 7px 14px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--card); color: var(--ink);
+    font-size: 13px; text-decoration: none; cursor: pointer;
+    transition: background .18s ease, border-color .18s ease, transform .18s ease;
+  }
+  .nav a:hover, .chip:hover { background: var(--accent-soft); border-color: #C9DCEC; }
+  .nav a:active, .chip:active { transform: scale(.97); }
+  .nav a.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .nav a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+    outline: 3px solid rgba(47,93,140,.32); outline-offset: 2px;
+  }
+  input[type=search], select { padding: 8px 12px; border: 1px solid var(--line); border-radius: 9px;
+    background: var(--card); color: var(--ink); font-size: 13px; min-width: 180px; }
+  .status { padding: 14px 32px 0; color: var(--muted); font-size: 13px; }
+  .grid { display: grid; gap: 18px; padding: 18px 32px 48px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
+    transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease; }
+  .card:hover { box-shadow: 0 8px 24px rgba(23,50,77,.10); transform: translateY(-2px); border-color: #CFDCE8; }
+  .card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #EEF2F6; }
+  .body { padding: 12px 14px 14px; }
+  .title { margin: 0 0 4px; font-size: 14px; font-weight: 600; }
+  .meta { margin: 0 0 8px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+  .badges { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
+  .badge { font-size: 11px; padding: 3px 8px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); }
+  .badge.warn { background: var(--warn-soft); color: var(--warn); }
+  button.choose { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 9px;
+    background: var(--card); color: var(--accent); font-size: 13px; cursor: pointer;
+    transition: background .18s ease, transform .18s ease; }
+  button.choose:hover { background: var(--accent-soft); }
+  button.choose:active { transform: scale(.98); }
+  dialog { width: min(1020px, 95vw); max-height: 94vh; padding: 0; border: 1px solid var(--line);
+    border-radius: 16px; box-shadow: 0 24px 64px rgba(23,50,77,.22); }
+  dialog::backdrop { background: rgba(23,50,77,.36); }
+  .dlg-head { display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 22px; border-bottom: 1px solid var(--line); gap: 12px; }
+  .dlg-head h2 { margin: 0; font-size: 17px; font-weight: 600; }
+  .dlg-body { padding: 16px 22px 8px; overflow: auto; max-height: 78vh; }
+  .hero-wrap { position: relative; background: var(--bg); border: 1px solid var(--line);
+    border-radius: 10px; overflow: hidden; }
+  .hero-wrap img { width: 100%; max-height: 400px; object-fit: contain; display: block; }
+  .hero-tag { position: absolute; left: 12px; bottom: 12px; background: rgba(23,50,77,.86);
+    color: #fff; font-size: 12px; padding: 5px 10px; border-radius: 7px; letter-spacing: .2px; }
+  .pager { display: flex; align-items: center; gap: 12px; padding: 12px 2px 4px; }
+  .pager input[type=range] { flex: 1; accent-color: var(--accent); height: 22px; cursor: pointer; }
+  .pager .num { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; min-width: 74px; }
+  .pager .hint { font-size: 12px; color: var(--muted); }
+  .film { display: flex; gap: 10px; overflow-x: auto; padding: 8px 0 10px; scroll-behavior: smooth; }
+  .film figure { flex: 0 0 172px; margin: 0; cursor: pointer; }
+  .film img { width: 172px; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px;
+    border: 1px solid var(--line); background: #EEF2F6; transition: border-color .18s ease, box-shadow .18s ease; }
+  .film figure:hover img { border-color: #C9DCEC; }
+  .film figcaption { font-size: 11px; color: var(--muted); padding-top: 4px; text-align: center; }
+  .film figure.key figcaption { color: var(--accent); font-weight: 600; }
+  .film figure.active img { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(47,93,140,.22); }
+  .film figure.active figcaption { color: var(--accent); font-weight: 600; }
+  .facts { font-size: 12px; color: var(--muted); line-height: 1.8; margin: 8px 0 10px; white-space: pre-line; }
+  textarea { width: 100%; min-height: 92px; padding: 12px; border: 1px solid var(--line);
+    border-radius: 9px; font-size: 12px; line-height: 1.7; color: var(--ink); background: var(--bg); resize: vertical; }
+  .dlg-actions { display: flex; gap: 10px; justify-content: flex-end; padding: 12px 22px;
+    border-top: 1px solid var(--line); align-items: center; }
+  .dlg-actions button { padding: 8px 16px; border-radius: 9px; border: 1px solid var(--line);
+    background: var(--card); color: var(--ink); cursor: pointer; font-size: 13px; }
+  .dlg-actions button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .note { font-size: 12px; color: var(--muted); padding: 0 32px 32px; line-height: 1.7; }
+  code { background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>本地模板库 · 离线浏览</h1>
+  <p class="sub">仅在你这台电脑上显示，不上传 GitHub、不改动在线画廊。数据来自 <code>catalog.js</code>，双击本文件即可打开。模板原件与预览图均不入库。</p>
+</header>
+<div class="bar">
+  <nav class="nav" id="nav"></nav>
+  <input type="search" id="search" placeholder="搜索名称 / 风格 / 标签" />
+  <select id="style"><option value="">全部视觉风格</option></select>
+</div>
+<div class="status" id="status"></div>
+<main class="grid" id="grid"></main>
+<p class="note" id="note"></p>
+
+<dialog id="detail">
+  <div class="dlg-head">
+    <h2 id="dlg-title"></h2>
+    <button id="dlg-close" aria-label="关闭">关闭</button>
+  </div>
+  <div class="dlg-body">
+    <div class="hero-wrap">
+      <img id="dlg-cover" alt="当前页预览" />
+      <span class="hero-tag" id="dlg-page-tag">第 1 页</span>
+    </div>
+    <div class="pager">
+      <span class="hint">拖动选择页码</span>
+      <input type="range" id="dlg-slider" min="1" max="1" value="1" />
+      <span class="num" id="dlg-page-num">1 / 1</span>
+    </div>
+    <div class="film" id="dlg-film"></div>
+    <p class="facts" id="dlg-facts"></p>
+    <textarea id="dlg-prompt" readonly></textarea>
+  </div>
+  <div class="dlg-actions">
+    <span id="dlg-hint" style="flex:1; align-self:center; font-size:12px; color:var(--muted)"></span>
+    <button class="primary" id="dlg-copy">复制给 AI 的选用指令</button>
+  </div>
+</dialog>
+
+<script src="catalog.js"></script>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+const DATA = window.LOCAL_CATALOG || {categories: [], templates: [], counts: {}};
+const KEY_PAGES = [2, 3, 4];   // 版式页：默认重点保护
+let current = null;
+let currentPage = 1;
+
+function currentCategory() {
+  const m = location.hash.match(/cat=([^&]+)/);
+  return m ? decodeURIComponent(m[1]) : 'all';
+}
+
+function buildNav() {
+  const cats = [{id: 'all', name: '全部'}].concat(DATA.categories.filter(c => c.id !== 'medical-other'));
+  $('nav').replaceChildren();
+  for (const c of cats) {
+    const a = document.createElement('a');
+    a.textContent = c.name;
+    a.href = '#cat=' + encodeURIComponent(c.id);
+    a.dataset.cat = c.id;
+    a.addEventListener('click', () => { $('style').value = ''; render(); });
+    $('nav').append(a);
+  }
+  const styles = [...new Set(DATA.templates.map(t => t.style_prefix).filter(Boolean))].sort();
+  for (const s of styles) {
+    const o = document.createElement('option');
+    o.value = s; o.textContent = s;
+    $('style').append(o);
+  }
+}
+
+function render() {
+  const cat = currentCategory();
+  const style = $('style').value;
+  const q = $('search').value.trim().toLowerCase();
+  document.querySelectorAll('#nav a').forEach(a => a.classList.toggle('on', a.dataset.cat === cat));
+  const matches = DATA.templates.filter(t =>
+    (cat === 'all' || t.category === cat) &&
+    (!style || t.style_prefix === style) &&
+    (!q || (t.name + ' ' + t.style + ' ' + t.tags.join(' ') + ' ' + t.id).toLowerCase().includes(q))
+  );
+  const grid = $('grid');
+  grid.replaceChildren();
+  for (const t of matches) {
+    const card = document.createElement('article');
+    card.className = 'card';
+    const img = document.createElement('img');
+    img.src = t.cover;
+    img.alt = t.name + ' 封面';
+    img.loading = 'lazy';
+    img.addEventListener('error', () => { img.onerror = null; img.src = '__PLACEHOLDER__'; });
+    const body = document.createElement('div');
+    body.className = 'body';
+    const title = document.createElement('p');
+    title.className = 'title';
+    title.textContent = String(t.number).padStart(3, '0') + ' · ' + t.name;
+    const meta = document.createElement('p');
+    meta.className = 'meta';
+    meta.textContent = t.category_name + ' · ' + (t.style || '未标注风格') +
+      (t.pages ? ' · ' + t.pages + ' 页' : '');
+    const badges = document.createElement('div');
+    badges.className = 'badges';
+    const mk = (text, warn) => {
+      const b = document.createElement('span');
+      b.className = 'badge' + (warn ? ' warn' : '');
+      b.textContent = text;
+      return b;
+    };
+    badges.append(mk(t.namespace === 'builtin' ? '内置模板' : '严格保真'));
+    if (t.cover_status === 'placeholder') badges.append(mk('暂无封面', true));
+    if (t.namespace !== 'builtin') badges.append(mk('来源待核验', true));
+    for (const f of (t.flags || [])) badges.append(mk(f, true));
+    const btn = document.createElement('button');
+    btn.className = 'choose';
+    btn.textContent = '查看每一页并选用';
+    btn.addEventListener('click', () => showDetail(t));
+    body.append(title, meta, badges, btn);
+    card.append(img, body);
+    grid.append(card);
+  }
+  $('status').textContent = '共 ' + matches.length + ' 套模板' +
+    (cat !== 'all' ? '（分类已锁定）' : '') + (style ? ' · 风格：' + style : '');
+  $('note').textContent = '已按封面指纹合并 ' + (DATA.counts.duplicates_removed || 0) +
+    ' 套重复模板，仅保留完整可用的一个版本。点开任意模板后，可拖动页码滑杆或点缩略图查看每一页；' +
+    '第 2、3、4 页为版式页，生成时会重点保护。';
+}
+
+function pageSrc(t, n) {
+  return t.pages_dir + '/' + String(n).padStart(2, '0') + '.webp';
+}
+
+function setPage(n) {
+  if (!current || !current.pages_dir) return;
+  const total = current.pages || 1;
+  currentPage = Math.min(Math.max(1, n), total);
+  const img = $('dlg-cover');
+  img.onerror = () => {
+    img.onerror = null;
+    img.src = '__PLACEHOLDER__';
+    $('dlg-page-tag').textContent = '第 ' + currentPage + ' 页 · 预览待生成';
+  };
+  img.src = pageSrc(current, currentPage);
+  const isKey = KEY_PAGES.includes(currentPage);
+  $('dlg-page-tag').textContent = '第 ' + currentPage + ' / ' + total + ' 页' + (isKey ? ' · 版式页保护' : '');
+  $('dlg-slider').value = String(currentPage);
+  $('dlg-page-num').textContent = currentPage + ' / ' + total;
+  const figures = $('dlg-film').querySelectorAll('figure');
+  figures.forEach((fig, i) => {
+    const active = i + 1 === currentPage;
+    fig.classList.toggle('active', active);
+    if (active) fig.scrollIntoView({block: 'nearest', inline: 'center', behavior: 'smooth'});
+  });
+}
+
+function showDetail(t) {
+  current = t;
+  currentPage = 1;
+  $('dlg-title').textContent = String(t.number).padStart(3, '0') + ' · ' + t.name;
+  const total = t.pages || 0;
+  const film = $('dlg-film');
+  film.replaceChildren();
+  if (t.pages_dir && total > 0) {
+    for (let i = 1; i <= total; i++) {
+      const fig = document.createElement('figure');
+      if (KEY_PAGES.includes(i)) fig.className = 'key';
+      fig.title = '第 ' + i + ' 页';
+      const img = document.createElement('img');
+      img.src = pageSrc(t, i);
+      img.alt = '第 ' + i + ' 页';
+      img.loading = 'lazy';
+      img.addEventListener('error', () => { img.onerror = null; img.src = '__PLACEHOLDER__'; });
+      const cap = document.createElement('figcaption');
+      cap.textContent = '第 ' + i + ' 页' + (KEY_PAGES.includes(i) ? ' · 版式页保护' : '');
+      fig.append(img, cap);
+      fig.addEventListener('click', () => setPage(i));
+      film.append(fig);
+    }
+    $('dlg-slider').min = '1';
+    $('dlg-slider').max = String(total);
+    $('dlg-slider').disabled = false;
+    $('dlg-slider').value = '1';
+  } else {
+    $('dlg-slider').min = '1';
+    $('dlg-slider').max = '1';
+    $('dlg-slider').disabled = true;
+  }
+  $('dlg-facts').textContent =
+    'ID ' + t.id + ' · ' + t.category_name + ' · ' + (t.pages ? t.pages + ' 页' : '内置模板') +
+    (t.sha8 ? ' · 指纹 ' + t.sha8 : '') + '\n' +
+    '版权：' + t.rights + '。仅本机浏览与选用，不得公开再分发。' +
+    (t.flags && t.flags.length ? '\n注意：' + t.flags.join('、') : '');
+  $('dlg-prompt').value = t.namespace === 'builtin'
+    ? '使用 xmu-ppt 的「' + t.name + '」模板（ID ' + t.id + '）制作关于【填写主题】的 PPT。模板已由我选定。'
+    : '使用 xmu-ppt 的严格保真路线 strict-native，模板 ID ' + t.id + '（' + t.name +
+      '，共 ' + t.pages + ' 页）。制作关于【填写主题】的 PPT。请 1:1 完整保留所选模板全部页面，' +
+      '尤其第 2、3、4 页版式页的图片、图形、装饰、占位区与版式，只把新文案套入对应文本区域，' +
+      '不删页、不重排、不替换任何素材。模板已由我选定。';
+  $('dlg-hint').textContent = '';
+  $('detail').showModal();
+  setPage(1);
+}
+
+$('dlg-slider').addEventListener('input', e => setPage(parseInt(e.target.value, 10) || 1));
+$('dlg-copy').addEventListener('click', async () => {
+  const text = $('dlg-prompt');
+  try {
+    await navigator.clipboard.writeText(text.value);
+    $('dlg-hint').textContent = '已复制，粘贴到 AI 聊天并填写主题即可。';
+  } catch (e) {
+    text.focus(); text.select();
+    $('dlg-hint').textContent = '浏览器限制了剪贴板，请按 Ctrl+C 手动复制（已选中）。';
+  }
+});
+$('dlg-close').addEventListener('click', () => $('detail').close());
+$('search').addEventListener('input', render);
+$('style').addEventListener('change', render);
+window.addEventListener('hashchange', render);
+document.addEventListener('keydown', e => {
+  if (!$('detail').open) return;
+  if (e.key === 'ArrowLeft') { e.preventDefault(); setPage(currentPage - 1); }
+  if (e.key === 'ArrowRight') { e.preventDefault(); setPage(currentPage + 1); }
+});
+
+buildNav();
+render();
+const deckMatch = location.hash.match(/deck=([^&]+)/);
+if (deckMatch) {
+  const target = DATA.templates.find(x => x.id === decodeURIComponent(deckMatch[1]));
+  if (target) {
+    showDetail(target);
+    const pageMatch = location.hash.match(/page=(\d+)/);
+    if (pageMatch) setPage(parseInt(pageMatch[1], 10));
+  }
+}
+</script>
+</body>
+</html>
