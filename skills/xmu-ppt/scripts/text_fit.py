@@ -99,7 +99,9 @@ def build_capacity_map(source: Path, library: dict) -> dict[str, dict]:
             # 中文按一个字号宽估算，保守留 5% 余量
             per_line = max(int(usable / max(font_px * 1.05, 1)), 2)
             wrap_none = meta.get("wrap") == "none"
-            max_lines = 1 if wrap_none else max(int(height / max(font_px * 1.3, 1)), 1)
+            paragraphs = max(int((slot.get("text_metrics") or {}).get("paragraph_count") or 1), 1)
+            # 多段落文本框本来就按 N 行设计，行数下限取其段落数
+            max_lines = 1 if wrap_none else max(int(height / max(font_px * 1.3, 1)), paragraphs)
             result[slot_id] = {
                 "slide": index,
                 "shape_id": shape_id,
@@ -109,7 +111,7 @@ def build_capacity_map(source: Path, library: dict) -> dict[str, dict]:
                 "font_px": round(font_px, 2),
                 "per_line": per_line,
                 "max_lines": max_lines,
-                "paragraphs": max(int((slot.get("text_metrics") or {}).get("paragraph_count") or 1), 1),
+                "paragraphs": paragraphs,
                 # 单个 run 的安全上限：填充器会把整句塞进第一个 run
                 "safe_chars": per_line,
             }

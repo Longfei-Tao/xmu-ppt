@@ -134,6 +134,7 @@ def _fit_status(
     geometry: dict[str, Any],
     text_metrics: dict[str, Any],
 ) -> tuple[str, str]:
+    empty_source = old_width <= 0
     old_width = max(old_width, 1.0)
     ratio = new_width / old_width
     width = geometry.get("width")
@@ -145,6 +146,12 @@ def _fit_status(
         geometry=geometry,
         text_metrics=text_metrics,
     )
+
+    # 原槽位本来就是空占位：没有可比基线，只能按文本框容量判断
+    if empty_source:
+        if capacity_width is not None and new_width > capacity_width:
+            return "WARN", "text exceeds estimated text-box capacity; rewrite or split"
+        return "OK", "empty placeholder fits estimated text-box capacity"
 
     if role == "label_candidate" or (old_width <= 8 and old_paragraphs <= 1):
         if capacity_width is not None and new_width <= capacity_width and not (old_width <= 8):

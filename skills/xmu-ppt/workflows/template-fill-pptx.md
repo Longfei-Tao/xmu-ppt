@@ -161,7 +161,7 @@ The plan structure:
 | `source_slide` | Repeat the same value across multiple entries to reuse one source layout for several output slides; order is free and must follow the target story rather than source deck order |
 | `notes` | Optional spoken speaker notes for the filled slide — see **Speaker notes** below; write prose, not a copy of the on-slide text |
 | `transition` | Optional per-slide page transition; overrides the `apply --transition` default. Accepts an effect name (`fade` / `push` / `wipe` / `split` / `strips` / `cover` / `random`), `none` to strip it, or `{ "effect": "push", "duration": 0.6 }` |
-| `replacements` | Target by `slot_id` whenever possible; `shape_id` and `shape_name` are fallback selectors |
+| `replacements` | Target by `slot_id` whenever possible; `shape_id` and `shape_name` are fallback selectors. Optional `color` (`"RRGGBB"`) overrides text colour only; `\n` in `text` becomes a real line break (`<a:br/>`), inheriting the paragraph's run formatting |
 | `table_edits` | Optional native table cell edits; target by `table_id` whenever possible and use zero-based `row` / `col` |
 | `chart_edits` | Optional native chart data edits; target by `chart_id`, set `categories`, and provide one or more `series` |
 | Short text | For labels / chapter names / directory items, fit the slot's visual capacity from geometry and font size; do not rely on old placeholder length alone |
