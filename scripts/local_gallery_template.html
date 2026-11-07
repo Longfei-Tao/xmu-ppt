@@ -61,7 +61,7 @@
   .dlg-head { display: flex; justify-content: space-between; align-items: center;
     padding: 16px 22px; border-bottom: 1px solid var(--line); gap: 12px; }
   .dlg-head h2 { margin: 0; font-size: 17px; font-weight: 600; }
-  .dlg-body { padding: 16px 22px 8px; overflow: auto; max-height: 78vh; }
+  .dlg-body { padding: 16px 22px 8px; overflow-y: auto; overflow-x: hidden; max-height: 78vh; }
   .hero-wrap { position: relative; background: var(--bg); border: 1px solid var(--line);
     border-radius: 10px; overflow: hidden; }
   .hero-wrap img { width: 100%; max-height: 400px; object-fit: contain; display: block; }
@@ -71,7 +71,8 @@
   .pager input[type=range] { flex: 1; accent-color: var(--accent); height: 22px; cursor: pointer; }
   .pager .num { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; min-width: 74px; }
   .pager .hint { font-size: 12px; color: var(--muted); }
-  .film { display: flex; gap: 10px; overflow-x: auto; padding: 8px 0 10px; scroll-behavior: smooth; }
+  .film { display: flex; gap: 10px; width: 100%; min-width: 0; overflow-x: auto; overflow-y: hidden;
+    padding: 8px 0 10px; }
   .film figure { flex: 0 0 172px; margin: 0; cursor: pointer; }
   .film img { width: 172px; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px;
     border: 1px solid var(--line); background: #EEF2F6; transition: border-color .18s ease, box-shadow .18s ease; }
@@ -239,11 +240,13 @@ function setPage(n) {
   $('dlg-page-tag').textContent = '第 ' + currentPage + ' / ' + total + ' 页' + (isKey ? ' · 版式页保护' : '');
   $('dlg-slider').value = String(currentPage);
   $('dlg-page-num').textContent = currentPage + ' / ' + total;
-  const figures = $('dlg-film').querySelectorAll('figure');
-  figures.forEach((fig, i) => {
-    const active = i + 1 === currentPage;
-    fig.classList.toggle('active', active);
-    if (active) fig.scrollIntoView({block: 'nearest', inline: 'center', behavior: 'smooth'});
+  const film = $('dlg-film');
+  const figures = film.querySelectorAll('figure');
+  figures.forEach((fig, i) => fig.classList.toggle('active', i + 1 === currentPage));
+  // 容器已由 CSS 约束为可视宽度；按缩略图固定步距把当前页带到视野中央
+  requestAnimationFrame(() => {
+    const viewport = Math.min(film.clientWidth || 940, 940);
+    film.scrollLeft = Math.max(0, (currentPage - 1) * 182 - (viewport - 172) / 2);
   });
 }
 
