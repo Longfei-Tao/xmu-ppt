@@ -65,6 +65,9 @@
   .thumbs button[aria-current="true"]{border-color:var(--accent); opacity:1}
   .thumbs img{width:104px; aspect-ratio:16/9; object-fit:cover; border-radius:4px; background:#eef0f4}
   .hint{color:var(--muted); font-size:12px; text-align:center; padding-bottom:14px}
+  .licence-note{color:var(--muted); font-size:12px; line-height:1.7; text-align:center; padding:0 24px 18px; margin:0}
+  .licence-note a{color:var(--accent); text-decoration:none}
+  .licence-note a:hover{text-decoration:underline}
   kbd{
     font:11px/1 ui-monospace,monospace; border:1px solid var(--line); border-bottom-width:2px;
     border-radius:4px; padding:2px 5px; background:var(--panel); color:var(--muted);
@@ -98,6 +101,7 @@
 
 <div class="thumbs" id="thumbs"></div>
 <div class="hint">← → 翻页 · Home / End 跳首尾 · 点击缩略图跳转</div>
+<p class="licence-note">非官方个人项目。代码与模板结构为 MIT；校徽、校园照片、字体与第三方素材不在 MIT 范围内。<a href="licensing.html">素材边界与授权 →</a></p>
 
 <script>
 const DECKS = {

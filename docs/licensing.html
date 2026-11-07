@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>素材边界与授权 · xmu-ppt</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --panel:#fff; --ink:#1b1f2a; --muted:#6b7280;
+    --line:#e3e6ec; --accent:#4661cc; --warn:#8a5a00; --warn-bg:#fff8e6;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{max-width:820px; margin:0 auto; padding:40px 24px 64px}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  h1{font-size:26px; line-height:1.35; margin:0 0 6px}
+  h2{font-size:17px; margin:34px 0 10px}
+  p{margin:10px 0}
+  .sub{color:var(--muted); font-size:13px}
+  .back{display:inline-block; margin-bottom:18px; font-size:13px}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:20px 22px}
+  .warn{background:var(--warn-bg); border:1px solid #f0d9a8; color:var(--warn); border-radius:8px; padding:12px 14px; margin:18px 0}
+  table{width:100%; border-collapse:collapse; margin:12px 0; font-size:14px}
+  th,td{border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top}
+  th{background:#fafbfc; font-weight:600}
+  code{background:#eef1f5; border-radius:4px; padding:1px 5px; font-size:13px}
+  ul{padding-left:22px; margin:8px 0}
+  .links{display:flex; flex-wrap:wrap; gap:10px 18px; margin-top:10px; font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← 返回在线预览</a>
+  <div class="card">
+    <h1>素材边界与授权</h1>
+    <p class="sub">最后更新：2026-11-07 · 本项目为非官方个人作品</p>
+
+    <div class="warn">
+      本站展示的模板包含厦门大学校徽、校名标准字、校园照片与第三方素材。
+      这些素材<strong>不在 MIT 许可范围内</strong>，也未取得公开再分发或商业使用的授权证明。
+    </div>
+
+    <h2>1. MIT 覆盖什么</h2>
+    <p>仓库根目录的 <code>LICENSE</code>（MIT）覆盖：源代码、脚本、工作流，以及为本项目编写的
+      JSON / SVG 版式定义与模板结构。</p>
+
+    <h2>2. MIT 不覆盖什么</h2>
+    <ul>
+      <li>厦门大学校徽、校名标准字、视觉识别系统素材；</li>
+      <li>校园照片、人物肖像、第三方插画、纹理与图标；</li>
+      <li><code>source.pptx</code> 及其内嵌的图片、图形与字体子集；</li>
+      <li><code>examples/*.pptx</code> 中的学校或第三方素材；</li>
+      <li>本机外部模板库的原件、预览图与衍生截图；</li>
+      <li>字体文件（仓库不内嵌字体，字体名称不代表授权）。</li>
+    </ul>
+
+    <h2>3. 允许用途</h2>
+    <table>
+      <thead><tr><th>取值</th><th>含义</th></tr></thead>
+      <tbody>
+        <tr><td><code>local</code></td><td>仅本机个人学习、教学与科研演示；不得公开仓库、网盘或对外分发</td></tr>
+        <tr><td><code>public</code></td><td>可随公开仓库或公开网页发布</td></tr>
+        <tr><td><code>commercial</code></td><td>可用于商业交付或收费产品</td></tr>
+      </tbody>
+    </table>
+    <p>当前 15 套内置模板全部登记为 <code>unknown</code> / <code>local</code>。只有当
+      <code>license_status</code> 不是 <code>unknown</code> 且附有证据时，才允许声明
+      <code>public</code> 或 <code>commercial</code>；仓库的 <code>scripts/check_assets.py</code>
+      会拒绝违规声明。</p>
+
+    <h2>4. 权威文件</h2>
+    <div class="links">
+      <a href="https://github.com/Longfei-Tao/xmu-ppt/blob/main/LICENSE">LICENSE（MIT）</a>
+      <a href="https://github.com/Longfei-Tao/xmu-ppt/blob/main/LICENSE-ASSETS">LICENSE-ASSETS（素材边界）</a>
+      <a href="https://github.com/Longfei-Tao/xmu-ppt/blob/main/docs/licensing.md">授权与边界设计</a>
+      <a href="https://github.com/Longfei-Tao/xmu-ppt/blob/main/skills/xmu-ppt/templates/decks/assets_manifest.json">素材台账</a>
+      <a href="https://github.com/Longfei-Tao/xmu-ppt/blob/main/skills/xmu-ppt/templates/decks/THIRD_PARTY_NOTICES.md">逐套声明</a>
+      <a href="https://github.com/Longfei-Tao/xmu-ppt/blob/main/docs/assets.md">素材核验记录</a>
+    </div>
+
+    <h2>5. 需要授权时</h2>
+    <p>公开再分发、商业使用或对外交付前，请先取得权利人的书面许可，并在
+      <code>assets_manifest.json</code> 中登记许可名称、证据与核验日期。若无法取得授权，
+      请保持 <code>local</code> 用途，或替换为可公开的素材。</p>
+  </div>
+</main>
+</body>
+</html>
