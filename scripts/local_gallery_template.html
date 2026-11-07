@@ -291,8 +291,10 @@ function showDetail(t) {
     ? '使用 xmu-ppt 的「' + t.name + '」模板（ID ' + t.id + '）制作关于【填写主题】的 PPT。模板已由我选定。'
     : '使用 xmu-ppt 的严格保真路线 strict-native，模板 ID ' + t.id + '（' + t.name +
       '，共 ' + t.pages + ' 页）。制作关于【填写主题】的 PPT。请 1:1 完整保留所选模板全部页面，' +
-      '尤其第 2、3、4 页版式页的图片、图形、装饰、占位区与版式，只把新文案套入对应文本区域，' +
-      '不删页、不重排、不替换任何素材。模板已由我选定。';
+      '请 1:1 完整保留所选模板全部页面，尤其第 2、3、4 页版式页的图片、图形、装饰、占位区与版式，' +
+      '只把新文案套入对应文本区域，不删页、不重排、不替换任何素材。' +
+      '请按 workflows/strict-native.md 执行 doctor → inspect → scaffold → apply，出稿必须通过 verify。' +
+      '模板已由我选定。';
   $('dlg-hint').textContent = '';
   $('detail').showModal();
   setPage(1);

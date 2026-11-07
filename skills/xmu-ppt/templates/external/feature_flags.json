@@ -3,6 +3,6 @@
   "note": "总开关。全部置 false 或删除 templates/external 目录即可回到仅内置 15 套的原有行为。",
   "external_index": true,
   "unified_gallery": false,
-  "strict_native": false,
+  "strict_native": true,
   "image_replace": false
 }
