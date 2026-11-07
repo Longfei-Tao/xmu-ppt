@@ -1,6 +1,6 @@
 # 素材来源与许可核验
 
-[返回首页](../README.md) · [现有声明](../THIRD_PARTY_NOTICES.md) · [致谢](../CREDITS.md)
+[返回首页](../README.zh-CN.md) · [现有声明](../THIRD_PARTY_NOTICES.md) · [致谢](../CREDITS.md)
 
 核验日期：2026-10-31。本页记录找到的证据和缺口，不构成学校授权证明。未删除既有素材，也未为待核验素材补写不存在的许可。
 

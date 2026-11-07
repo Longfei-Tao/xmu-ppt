@@ -1,6 +1,6 @@
 # 进阶使用与维护
 
-[返回首页](../README.md) · [快速开始](quickstart.md)
+[返回首页](../README.zh-CN.md) · [快速开始](quickstart.md)
 
 以下命令从仓库根目录执行，使用已安装核心依赖的 Python。示例中的反斜杠续行适用于 Bash；PowerShell 请合并为一行。占位路径需替换成实际路径。
 

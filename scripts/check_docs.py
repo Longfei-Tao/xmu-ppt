@@ -24,7 +24,7 @@ def heading_ids(text):
 
 
 def check():
-    paths = [ROOT / n for n in ("README.md", "README.en.md", "CONTRIBUTING.md",
+    paths = [ROOT / n for n in ("README.md", "README.zh-CN.md", "CONTRIBUTING.md",
                                 "CREDITS.md", "THIRD_PARTY_NOTICES.md")]
     paths += sorted((ROOT / "docs").rglob("*.md"))
     paths.append(ROOT / "examples/quickstart/README.md")

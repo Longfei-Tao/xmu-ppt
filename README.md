@@ -1,95 +1,93 @@
-# xmu-ppt · 厦门大学 PPT 模板
+<div align="center">
 
-[![Version](https://img.shields.io/github/v/release/Longfei-Tao/xmu-ppt?label=version&color=blue)](https://github.com/Longfei-Tao/xmu-ppt/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![模板](https://img.shields.io/badge/%E6%A8%A1%E6%9D%BF-15%20%E5%A5%97-4661CC)](docs/templates.md)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)](docs/quickstart.md)
-[![GitHub stars](https://img.shields.io/github/stars/Longfei-Tao/xmu-ppt.svg)](https://github.com/Longfei-Tao/xmu-ppt/stargazers)
+# xmu-ppt
 
-把主题、提纲或现有材料，整理成厦大风格的演示文稿。由 AI Agent 逐页排版，导出**文字可编辑**的 `.pptx`。基于 [PPT Master](https://github.com/hugohe3/ppt-master) 的 SVG → PPTX 引擎，增补 15 套厦大模板与两条出稿路线。
+**A Xiamen University template library and slide engine for AI agents.**
+Describe a topic. It picks a real template, fills the existing layouts, and exports an editable `.pptx` — no redrawing, no design detours.
 
-**[选择视觉模板](https://longfei-tao.github.io/xmu-ppt/templates/)** · **[在线逐页预览](https://longfei-tao.github.io/xmu-ppt/)** · [快速开始](docs/quickstart.md) · [模板风格](docs/templates.md) · [常见问题](docs/faq.md) · [选择你的 AI 工具](docs/tools/README.md) · [English](README.en.md)
+[![Release](https://img.shields.io/github/v/release/Longfei-Tao/xmu-ppt?label=release&color=4661CC)](https://github.com/Longfei-Tao/xmu-ppt/releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](docs/quickstart.md)
+[![Templates](https://img.shields.io/badge/templates-15-4661CC)](docs/templates.md)
+[![GitHub stars](https://img.shields.io/github/stars/Longfei-Tao/xmu-ppt?style=social)](https://github.com/Longfei-Tao/xmu-ppt/stargazers)
+
+[简体中文](README.zh-CN.md) · [Template gallery](https://longfei-tao.github.io/xmu-ppt/templates/) · [Slide-by-slide preview](https://longfei-tao.github.io/xmu-ppt/) · [Quick start](#quick-start) · [FAQ](docs/faq.md)
+
+</div>
 
 <table>
   <tr>
     <td align="center" width="33%">
-      <a href="https://longfei-tao.github.io/xmu-ppt/#defense/1"><img src="docs/assets/screenshots/defense-cover.webp" alt="厦园晴日硕士答辩稿封面" /></a><br/>
-      <sub><b>厦园晴日</b> — 硕士答辩 14 页：校徽、校园照片与标题层级按模板还原</sub>
+      <a href="https://longfei-tao.github.io/xmu-ppt/#defense/1"><img src="docs/assets/screenshots/defense-cover.webp" alt="Thesis defense cover, Xiayuan Qingri template" /></a><br/>
+      <sub><b>Xiayuan Qingri</b> — 14-slide defense deck: emblem, campus photography and type scale kept</sub>
     </td>
     <td align="center" width="33%">
-      <a href="https://longfei-tao.github.io/xmu-ppt/#group/8"><img src="docs/assets/screenshots/report-content.webp" alt="南强蔚蓝组会汇报内容页" /></a><br/>
-      <sub><b>南强蔚蓝</b> — 组会汇报 11 页：正文版式按内容重排，不是每页套卡片</sub>
+      <a href="https://longfei-tao.github.io/xmu-ppt/#group/8"><img src="docs/assets/screenshots/report-content.webp" alt="Group meeting content slide, Nanqiang Weilan template" /></a><br/>
+      <sub><b>Nanqiang Weilan</b> — 11-slide group report: body layouts recomposed per page, not card grids</sub>
     </td>
     <td align="center" width="33%">
-      <a href="https://longfei-tao.github.io/xmu-ppt/#native/3"><img src="docs/assets/screenshots/native-chapter.webp" alt="凤凰花开原生填充章节页" /></a><br/>
-      <sub><b>凤凰花开</b> — 原生填充 9 页：在原 PPTX 里换字，照片与色条不动</sub>
+      <a href="https://longfei-tao.github.io/xmu-ppt/#native/3"><img src="docs/assets/screenshots/native-chapter.webp" alt="Native-filled chapter slide, Phoenix Flower template" /></a><br/>
+      <sub><b>Phoenix Flower</b> — 9 slides filled inside the original PPTX; photos and bars untouched</sub>
     </td>
   </tr>
 </table>
 
-<sub>三张图都是 PowerPoint 打开真实导出产物的截图，不是设计稿。[在线翻完这三套 →](https://longfei-tao.github.io/xmu-ppt/)</sub>
+<sub>All three are PowerPoint screenshots of real exported files, not design mockups. [Flip through them online →](https://longfei-tao.github.io/xmu-ppt/)</sub>
 
-> 非官方个人项目，与厦门大学不存在已确认的授权或合作关系。代码与模板结构适用 [MIT](LICENSE)；校徽、照片、字体等不因此获得授权。部分既有素材的公开再分发条件仍[待核验](docs/assets.md)。
+> **Unofficial personal project.** Not affiliated with, endorsed by, or licensed by Xiamen University. Code and template structure are [MIT](LICENSE); the university emblem, campus photographs and fonts are **not** covered by that license. Redistribution status for some existing assets is still [under review](docs/assets.md).
 
-## 这是什么
+## Why this exists
 
-| | |
-| --- | --- |
-| **是** | 一个 AI Agent 技能：给它主题或材料，它逐页手写 SVG，再导出可编辑 PPTX |
-| **是** | 15 套厦大模板（3 套精修 + 12 套主题），其中 14 套支持直接在原始 PPTX 里填内容 |
-| **不是** | 不是在线生成服务，也不是插件商店里的安装包；需要本地 Python 和能执行命令的 Agent |
-| **不保证** | 复杂图表与原版式完全还原；照片仍是图片。上台前请用演示软件逐页检查 |
+Many "AI slide" tools redraw every page from scratch. You get a deck, but the institutional identity is gone: the logo is approximated, the photos are swapped, the grid quietly drifts.
 
-默认按 **提出需求 → 选择视觉模板 → 生成 PPT** 使用。AI 展示推荐与全部模板预览，等待你选定后连续制作。你已指定模板时直接采用；说“你帮我选”可授权 AI 代选。
+This project takes the opposite route. It treats a template as a **fixed set of layouts** and only replaces the words inside them — so the emblem, the photography, the decoration and the alignment stay exactly where the designer put them. When the text does not fit the box, the build fails instead of silently overflowing.
 
-## 两条路线
+## What it is, and what it is not
 
-模板保真和排版自由是矛盾的，所以分成两条路；只给主题时，先选模板，再默认采用第二条。
+- **It is** an Agent Skill: give it a topic or material, it selects templates, maps content to slides and exports an editable `.pptx`.
+- **It ships** 15 XMU template decks (3 refined + 12 themed); 14 of them include a source `.pptx` that can be filled in place.
+- **It is not** an online service, a marketplace plugin, or a remote MCP server — it needs local Python and an agent that can run commands.
+- **Not guaranteed:** complex charts are not reproduced exactly, and photographs stay as images. Review every slide before presenting.
 
-| 你的说法 | 路线 | 做法 | 代价 |
-| --- | --- | --- | --- |
-| 「保留原版式」「别改我的样式」「表格图表要原样」 | 原生填充 | 克隆源页 + 改 `fill_plan`，不生成 SVG | 版式受槽位约束，文字长度有硬上限 |
-| 只给主题或材料，排版可以自由 | SVG 出稿 | 逐页手写 SVG 再导出 | 每页重画，模板保真度中等 |
+## How it works
 
-原生填充可用 14 套；`南强蔚蓝` 原始文件是 `.ppt`，仅支持 SVG 路线。
-
-## 输入与输出
-
-你可以直接这样说：
-
-```text
-用 xmu-ppt 做一份厦大风格的校园科研协作汇报，约 10 页。
-内容包括：材料管理、责任分工、进度安排与提交复核。
-先展示视觉模板供我选择，确认后再制作。
-没有实测数据，请写成方案建议，不编造结果。输出 PPTX。
+```mermaid
+flowchart TD
+    A["Topic + positioning"] --> B["Shortlist: you pick a serial"]
+    B --> C["Fill the chosen layouts — text only"]
+    C --> D{"3 checks pass?"}
+    D -->|"fix"| C
+    D -->|"pass"| E["Editable .pptx — no music, no auto-advance"]
 ```
 
-| 你提供什么 | Agent 如何处理 | 最终得到什么 |
-| --- | --- | --- |
-| 一个主题或想法 | 补全叙事结构，默认制作方案或知识介绍稿 | `.pptx`；不会据此编造研究结果 |
-| 提纲、文档或旧汇报材料 | 提炼内容，展示厦大模板，用户选定后逐页排版 | `.pptx` 和可继续修改的项目源稿 |
-| 指定模板和新内容 | 克隆适用源页，填充文字与支持的表格、图表 | 受原版式容量约束的 `.pptx` |
+The agent stops after the shortlist and waits. It does not design pages, does not restyle the deck, and does not decide on your behalf. Page count is not fixed: it follows from the content and the layouts available in the template you chose.
 
-默认只需接收演示文稿与必要说明。文字和简单图形可导出为原生对象，照片等仍是图片；复杂图表与排版需逐页检查，不能保证所有元素均可编辑或格式完全一致。
+Before export it checks **content completeness**, **text fit** against the real geometry of each text box, and **template consistency**. A failure sends the copy back for a fix instead of shipping a page that overflows.
 
-## 快速开始
+## Three routes
 
-需要 **Python 3.10+**、Git（或改用下面的 ZIP 方式），以及能读取文件和运行 Python 的 AI Agent。
+| You say | Route | What happens | Trade-off |
+| --- | --- | --- | --- |
+| "Use this template, keep the layout" | **Native fill** (default) | Clone the source pages, replace text runs, keep transitions | Wording is bounded by each text box |
+| "Just a topic — the layout can be free" | **SVG authoring** | Hand-author each page as SVG, then export to PPTX | Layout fidelity is approximate |
+| "Keep every page, byte for byte" | **Strict native** | Copy the whole PPTX, overwrite only the named text nodes | Output has the template's original page count |
 
-### 准备源码
+`Nanqiang Weilan` ships no source `.pptx`, so it supports the SVG route only.
 
-**方式 A · Git（推荐，后续可一行命令更新）**
+## Quick start
+
+**Requirements:** Python 3.10+, Git (or the ZIP below), and an AI agent that can read files and run Python.
+
+### 1. Clone
 
 ```bash
 git clone https://github.com/Longfei-Tao/xmu-ppt.git xmu-ppt
 cd xmu-ppt
 ```
 
-**方式 B · 下载 ZIP（没装 Git 时用）**
+Without Git, download [main.zip](https://github.com/Longfei-Tao/xmu-ppt/archive/refs/heads/main.zip) and work inside the extracted `xmu-ppt-main` folder.
 
-下载 [main.zip](https://github.com/Longfei-Tao/xmu-ppt/archive/refs/heads/main.zip) 并解压，进入解压出来的 `xmu-ppt-main` 目录。ZIP 版没有 git 历史，升级时重新下载覆盖，先备份自己改过的模板。
-
-### 安装依赖
+### 2. Install dependencies
 
 ```powershell
 # Windows PowerShell
@@ -103,86 +101,132 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r skills/xmu-ppt/requirements-core.txt
 ```
 
-### 把需求交给 Agent
+### 3. Ask your agent
 
-在 AI 工具中打开这个仓库，把下面一段发给它，即可先从源码使用，无需修改全局配置：
+Open the repository in a file-capable agent and send:
 
 ```text
-请读取 skills/xmu-ppt/SKILL.md，按其中的厦大工作流制作上一条需求的 PPT。
-以该文件所在目录为技能根目录，使用本仓库 .venv 内的 Python。
-把生成文件放在独立项目目录中，完成后给我 PPTX 的实际路径。
+Read skills/xmu-ppt/SKILL.md and follow its workflow.
+
+Topic: a campus research collaboration report, about 10 slides.
+Include material management, ownership, schedule and submission review.
+There is no measured data — write it as a proposal, do not invent results.
+
+Show me the template shortlist and wait for my choice before authoring.
+Use this repository's virtual environment and return the actual PPTX path.
 ```
 
-第一次使用时把“上一条需求”替换成自己的主题，或先发送上面的示例需求。完整步骤、环境说明及常见问题见[快速开始](docs/quickstart.md)。
+That is the whole setup — no API key, no global configuration, no model is called by this repository.
 
-### 更新到最新版
+### Update
 
 ```bash
 python skills/xmu-ppt/scripts/update_repo.py
 ```
 
-它会先检查本地改动，有未提交的修改就停下让你处理；然后拉取最新代码，**只在 `requirements.txt` 变化时**才重装依赖，加 `--skip-pip` 可跳过依赖同步。ZIP 用户重新下载覆盖即可。
+It stops if you have uncommitted changes, then pulls and reinstalls dependencies **only when `requirements.txt` changed** (`--skip-pip` skips that step). A plain `git pull` also works, but may overwrite templates you edited.
 
-已有仓库也可以直接用 git：
+## Use it in your agent
 
-```bash
-git pull
+| Tool | Entry point | Verification status |
+| --- | --- | --- |
+| Codex | [Project skill and source invocation](docs/tools/codex.md) | Local scripts run in the author's Windows session; no clean-install acceptance test |
+| Claude Code | [Project skill and `/xmu-ppt`](docs/tools/claude-code.md) | Documented per official mechanism; not tested on a clean machine |
+| GitHub Copilot | [Agent mode and project skill](docs/tools/copilot.md) | Documented per official mechanism; not tested on a clean machine |
+| Gemini CLI | [Workspace skill](docs/tools/gemini-cli.md) | Documented per official mechanism; not tested on a clean machine |
+| Web chat / other tools | [Requirements and manual flow](docs/tools/README.md) | Only works with a file-execution environment |
+
+**Which model?** This repository never calls a model — layout and copy come from the agent you already use, so any command-capable Claude / GPT / Gemini / local model works. The practical limit is context length: the longer the deck, the more likely a model loses track of the palette and type scale in `spec_lock.md`. Above ~10 slides, prefer a large-context model.
+
+## Template library
+
+Every deck has a **permanent three-digit serial**. Serials are append-only: adding a deck never renumbers an existing one, and a retired number is never reused. The serial is the deck's own identifier — `004` is not shorthand for a template ID such as `MED-004`; the registry is the single source of truth.
+
+| Serial | Template | Style | Best for |
+| --- | --- | --- | --- |
+| `001` | 厦园晴日 · Xiayuan Qingri | Blue and white, campus photography, generous whitespace | Thesis defense, proposal, graduation talk |
+| `002` | 凤栖青橙 · Fengqi Qingcheng | Rice-paper texture, Song type, green roof tiles | Humanities, course papers, reading reports |
+| `003` | 南强蔚蓝 · Nanqiang Weilan | Blue-violet gradient, flat architectural illustration | Group meetings, project updates, competitions |
+
+<details>
+<summary><b>The other 12 themed decks (004–015)</b></summary>
+
+| Serial | Template | Style |
+| --- | --- | --- |
+| `004` | 光影厦大 · Guangying Xiamen | Deep blue geometric light |
+| `005` | 凤凰花开 · Phoenix Flower | Dark photography, flame-red accents |
+| `006` | 厦大蓝 · XMU Blue | Clean blue and white, diagonal bars |
+| `007` | 四季风景 · Four Seasons | Campus seasons, blue-white cards |
+| `008` | 晕染风 · Watercolour Wash | Violet-blue wash, large margins |
+| `009` | 晚霞 · Sunset | Warm orange geometry, dusk photography |
+| `010` | 木棉花 · Kapok | Kapok photography, navy title bars |
+| `011` | 清凉一厦 · Cool Campus | Pale green, campus illustration |
+| `012` | 蓝天校门 · Blue Gate | Clear sky, minimal white |
+| `013` | 米金书法 · Rice-Gold Calligraphy | Rice-gold ground, calligraphic motto |
+| `014` | 经典蓝白 · Classic Blue | Classic blue and white, campus gate |
+| `015` | 鹭江夜澜 · Egret River Night | Navy arcs, night campus, oversized chapter numerals |
+
+</details>
+
+Browse them all with per-slide previews: **[template gallery](https://longfei-tao.github.io/xmu-ppt/templates/)** · [full index](docs/templates.md) (Chinese). All decks are 16:9 at 1280×720.
+
+> **Optional local library.** The same registry can index a private collection of third-party decks (serials `016`+, 200 entries in the author's setup). Those files are **not distributed** with this repository — only the index, licensing flags and sanitising rules are public. Without the files, the built-in 15 decks are what you get.
+
+## What you give, what you get
+
+| Input | What the agent does | Output |
+| --- | --- | --- |
+| A topic or a rough idea | Builds the narrative, proposes a deck, waits for your template choice | `.pptx`; never invents research results |
+| An outline, document or old deck | Extracts content, shows templates, maps it onto the chosen layouts | `.pptx` plus the project source you can keep editing |
+| A template plus new copy | Clones the matching source pages and fills text, tables and charts where supported | `.pptx` bounded by the original layout capacity |
+
+Text and simple shapes export as native objects. Photographs remain images, and complex charts or dense layouts need a manual pass — "editable text" does not mean every object is editable.
+
+## Repository layout
+
+```text
+skills/xmu-ppt/          # the skill: SKILL.md, workflows, scripts and templates
+  templates/decks/       # 15 built-in decks (SVG prototypes, 14 with source PPTX)
+  templates/external/    # registry, categories and flags for an optional local library
+  workflows/             # idea-to-ppt, native fill, strict-native, SVG authoring
+docs/                    # guides, template index, asset licensing (Chinese)
+examples/                # exported sample decks and a four-page demo
+local-gallery/           # offline HTML gallery, generated from the catalogue
+tests/                   # regression tests for the engine and the workflow gates
+scripts/                 # repository maintenance and documentation checks
 ```
 
-注意 `git pull` 会覆盖同名文件，自己改过的模板请先另存或提交到独立分支。
+## Documentation
 
-## 在你的 AI 工具中使用
+The detailed guides are currently written in Chinese. The English sections above are enough to install and run the project; these are the deeper references:
 
-| 工具 | 使用入口 | 本仓库验证范围 |
-| --- | --- | --- |
-| Codex | [项目 Skill 与源码调用](docs/tools/codex.md) | 当前 Windows 会话已运行本地脚本；未做全新安装验收 |
-| Claude Code | [项目 Skill 与 `/xmu-ppt`](docs/tools/claude-code.md) | 已按官方机制编写文档，未实机验证 |
-| GitHub Copilot | [Agent 模式与项目 Skill](docs/tools/copilot.md) | 已按官方机制编写文档，未实机验证 |
-| Gemini CLI | [工作区 Skill](docs/tools/gemini-cli.md) | 已按官方机制编写文档，未实机验证 |
-| 网页聊天或其他工具 | [环境要求与手动流程](docs/tools/README.md) | 有文件执行环境才可能运行；不承诺原生安装 |
-
-使用 CC Switch 管理共享 Skills 时，请在 CC Switch 中维护和分发；不要直接覆盖它生成的客户端副本。本仓库尚未提供插件商店安装包或远程 MCP 服务。
-
-**用哪个模型？** 本仓库不调用模型，排版与文案由你选的 Agent 完成，所以任何能执行命令的 Claude / GPT / Gemini / 本地模型都能跑。差异主要来自上下文窗口：稿子越长，模型越容易忘记 `spec_lock.md` 里的配色与字号，10 页以上建议用上下文大的模型。
-
-## 选择风格
-
-| 风格 | 适合的内容 |
+| Document | What is inside |
 | --- | --- |
-| 厦园晴日：蓝白、校园照片、明亮留白 | 答辩、开题、毕业汇报 |
-| 凤栖青橙：纸感、青绿、橙色点缀 | 人文社科、读书报告、课程展示 |
-| 南强蔚蓝：蓝紫、建筑插画、分栏结构 | 组会、项目与工作汇报；目前仅 SVG 路线 |
+| [Quick start](docs/quickstart.md) | Environment setup, first deck, installing without Git |
+| [FAQ](docs/faq.md) | Dependencies, line breaks, text capacity, updating, asset boundaries |
+| [Templates](docs/templates.md) | All 15 decks, styles and selection guide |
+| [Advanced commands](docs/advanced.md) | Full dependency set, optional tools, batch commands |
+| [Agent setup](docs/tools/README.md) | Skill directories and invocation per host |
+| [Assets and licensing](docs/assets.md) | Emblem, photography and font boundaries |
 
-还有凤凰花开、经典蓝白、米金书法等 12 套主题。[查看完整清单与既有原型](docs/templates.md)。
+Sample decks live in [`examples/`](examples): a [four-page workflow demo](examples/quickstart/), a [14-slide defense deck](examples/房颤NLRP3答辩_厦园晴日.pptx), an [11-slide group report](examples/组会汇报_南强蔚蓝.pptx) and a [9-slide native fill](examples/原生填充_凤凰花开.pptx).
 
-## 示例与文档
+## Limits
 
-| 示例 | 内容 |
-| --- | --- |
-| [四页工作流演示](examples/quickstart/) | 不含校徽与照片，用于验证导出链路是否可用 |
-| [硕士答辩 14 页](examples/房颤NLRP3答辩_厦园晴日.pptx) | 厦园晴日，含校园照片与原生文字 |
-| [组会汇报 11 页](examples/组会汇报_南强蔚蓝.pptx) | 南强蔚蓝，逐页按内容重排 |
-| [原生填充 9 页](examples/原生填充_凤凰花开.pptx) | 在原始模板里填字，版式未改动 |
+- **It needs an agent.** The Python scripts analyse, convert and check; they do not call a model to write your deck. Your agent's account and costs are separate.
+- **Real talks need real material.** Unverified results, references and personal data should be supplied or omitted — not guessed.
+- **Environment changes layout.** Missing fonts change line breaks; SVG conversion and native fill each have their own boundaries. Check every page in the presentation app you will actually use.
+- **"Local" is not automatic.** The conversion scripts run in your environment, but material you send to a cloud agent is still governed by that tool's data policy.
+- **School assets are separate.** Public download availability is not a redistribution license. This project is not an official Xiamen University product.
 
-| 文档 | 内容 |
-| --- | --- |
-| [快速开始](docs/quickstart.md) | 环境准备、首次出稿、没有 Git 怎么装 |
-| [常见问题](docs/faq.md) | 安装、依赖、换行、容量、更新、素材边界 |
-| [模板总览](docs/templates.md) | 15 套模板清单与既有原型 |
-| [进阶命令](docs/advanced.md) | 完整依赖、可选工具、批量命令 |
-| [选择你的 AI 工具](docs/tools/README.md) | 各宿主的技能目录与调用方式 |
-| [素材与许可](docs/assets.md) | 校徽、照片、字体的边界与核验状态 |
+## License
 
-## 使用前了解
+Code and template structure: [MIT](LICENSE). University marks, campus photographs, embedded fonts and other third-party assets are excluded — see [Assets and licensing](docs/assets.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-- **生成需要 Agent。** Python 脚本负责分析、转换与检查，不会独立调用大模型完成主题创作；AI 工具本身的账号或费用另计。
-- **真实汇报需要真实材料。** 未提供的实验结果、参考文献、个人信息应省略或补充来源，不能让模型猜测。
-- **效果受环境影响。** 缺少字体会改变换行；SVG 转换与原生填充也各有边界。上台前请用目标演示软件检查全部页面。
-- **数据不自动“全程本地”。** 转换脚本在执行环境运行，交给 AI 的材料仍受所选工具的数据政策影响；云端也无法直接访问本机路径。
-- **学校素材单独核验。** 公开下载入口不等于公开再分发许可；本项目不代表厦门大学官方出品。
+## Credits
 
----
+Built on the SVG → PPTX engine of [PPT Master](https://github.com/hugohe3/ppt-master) (MIT). Upstream attribution and license texts are kept in [CREDITS.md](CREDITS.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-<sub>项目名 `xmu-ppt`；技能名沿用上游的 `xmu-ppt`。旧称 `xmu-xmu-ppt`、XMU PPT Master 均指本仓库。</sub>
-
-[进阶命令与依赖](docs/advanced.md) · [贡献指南](CONTRIBUTING.md) · [素材与许可](docs/assets.md) · [上游致谢](CREDITS.md)
+<div align="center">
+<sub><code>xmu-ppt</code> — formerly published as <code>xmu-xmu-ppt</code> / “XMU PPT Master”.</sub>
+</div>

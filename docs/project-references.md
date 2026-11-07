@@ -1,6 +1,6 @@
 # GitHub 展示调研与取舍
 
-[返回首页](../README.md) · [贡献指南](../CONTRIBUTING.md)
+[返回首页](../README.zh-CN.md) · [贡献指南](../CONTRIBUTING.md)
 
 2026-10-31 阅读以下 4 个项目的 README 和对应许可文件。这里只借鉴信息组织方式，不搬运截图、文案、模板或 Skill 实现；新增演示内容和图形均在本仓库自主编写。
 

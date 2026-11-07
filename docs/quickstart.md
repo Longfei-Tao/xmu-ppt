@@ -1,10 +1,10 @@
 # 第一次制作 PPT
 
-[返回首页](../README.md) · [按工具安装](tools/README.md) · [进阶命令](advanced.md)
+[返回首页](../README.zh-CN.md) · [按工具安装](tools/README.md) · [进阶命令](advanced.md)
 
 ## 1. 准备执行环境
 
-本项目需要能读写文件、运行 Python 的 AI Agent。终端准备步骤见[首页](../README.md#快速开始)。核心依赖为 `python-pptx`、Pillow、PyYAML、requests、Flask；默认出稿不需要配置图片生成或 TTS API。AI 工具自己的登录与模型访问不由本项目提供。
+本项目需要能读写文件、运行 Python 的 AI Agent。终端准备步骤见[首页](../README.zh-CN.md#快速开始)。核心依赖为 `python-pptx`、Pillow、PyYAML、requests、Flask；默认出稿不需要配置图片生成或 TTS API。AI 工具自己的登录与模型访问不由本项目提供。
 
 建议使用仓库内的 `.venv`。以下“Python”均指它的解释器：
 

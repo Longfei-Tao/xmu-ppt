@@ -1,6 +1,6 @@
 # 常见问题
 
-[返回首页](../README.md) · [快速开始](quickstart.md) · [选择你的 AI 工具](tools/README.md)
+[返回首页](../README.zh-CN.md) · [快速开始](quickstart.md) · [选择你的 AI 工具](tools/README.md)
 
 ## 安装与运行
 
