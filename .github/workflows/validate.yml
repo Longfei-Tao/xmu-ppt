@@ -19,5 +19,6 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python skills/xmu-ppt/scripts/audit_xmu.py --check-svg
       - run: python scripts/check_docs.py
+      - run: python scripts/check_assets.py
       - run: python skills/xmu-ppt/scripts/svg_quality_checker.py examples/quickstart/svg_output --canonical-authoring
       - run: python skills/xmu-ppt/scripts/review_pptx.py examples/quickstart/demo.pptx --min-level warn

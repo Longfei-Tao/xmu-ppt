@@ -221,7 +221,7 @@ Sample decks live in [`examples/`](examples): a [four-page workflow demo](exampl
 
 ## License
 
-Code and template structure: [MIT](LICENSE). University marks, campus photographs, embedded fonts and other third-party assets are excluded — see [Assets and licensing](docs/assets.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Code and template structure: [MIT](LICENSE). Assets are **not** covered by that grant — see [LICENSE-ASSETS](LICENSE-ASSETS) for the boundary and [Licensing and boundaries](docs/licensing.md) for the workflow. University marks, campus photographs, embedded fonts and other third-party assets remain with their owners; [Assets and licensing](docs/assets.md) records the evidence gaps.
 
 ## Credits
 

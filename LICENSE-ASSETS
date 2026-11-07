@@ -1,0 +1,61 @@
+# Asset Licensing Boundary / 素材授权边界
+
+This file clarifies the scope of the repository's MIT license. It does not
+replace or modify `LICENSE`; it records which materials the MIT grant does
+**not** reach.
+
+本文件用于说明仓库 MIT 许可的覆盖范围，不修改 `LICENSE` 本身。
+
+## 1. Covered by MIT
+
+The MIT license in [`LICENSE`](LICENSE) covers:
+
+- source code, scripts and command-line tools;
+- workflows and documentation authored for this repository;
+- JSON / SVG layout definitions and template structure authored for this
+  repository.
+
+## 2. Not covered by MIT
+
+The following materials are **not** licensed under MIT, and no right is granted
+by their inclusion in this repository:
+
+- 厦门大学校徽、校名标准字、视觉识别系统素材（`xmu_logo*.png` 等）；
+- 校园照片、人物肖像、第三方插画、纹理与图标；
+- `skills/xmu-ppt/templates/decks/<deck_id>/source.pptx` 及其内嵌的图片、
+  图形与字体子集；
+- `examples/*.pptx` 中包含的学校或第三方素材；
+- 本机外部模板库（`skills/xmu-ppt/templates/external/` 索引所指向的原件）、
+  其预览图与任何衍生截图；
+- 字体文件。仓库不内嵌字体；出现字体名称不代表获得该字体的使用许可。
+
+这些材料的版权归厦门大学和/或各自作者所有。公开再分发、商业使用或对外
+交付前，使用者须自行取得书面授权，并遵守学校现行视觉识别规范。
+
+## 3. Allowed-use vocabulary
+
+Every entry in [`assets_manifest.json`](skills/xmu-ppt/templates/decks/assets_manifest.json)
+declares one or more of:
+
+| Value | Meaning |
+| --- | --- |
+| `local` | 仅本机个人学习、教学与科研演示；不得公开仓库、网盘或对外分发 |
+| `public` | 可随公开仓库或公开网页发布 |
+| `commercial` | 可用于商业交付或收费产品 |
+
+`public` / `commercial` **must not** be declared while the license status is
+`unknown`. `scripts/check_assets.py` enforces this.
+
+## 4. How to clear an asset
+
+1. 取得权利人的书面许可、购买凭证或适用的开放许可原文；
+2. 在 `assets_manifest.json` 中把 `license_status` 改为 `licensed` 或
+   `project`，补 `license`、`evidence`、`verified_on`；
+3. 只有在证据支持时，才把 `public` / `commercial` 加入 `allowed_uses`；
+4. 运行 `python scripts/check_assets.py`，0 error 后才可公开发布。
+
+## 5. What this does not do
+
+This boundary is a **record and a check**, not a technical protection measure.
+It does not make an unauthorized asset legal, does not prevent copying, and does
+not replace legal advice.

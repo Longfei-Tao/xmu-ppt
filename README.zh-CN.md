@@ -186,6 +186,8 @@ git pull
 - **数据不自动“全程本地”。** 转换脚本在执行环境运行，交给 AI 的材料仍受所选工具的数据政策影响；云端也无法直接访问本机路径。
 - **学校素材单独核验。** 公开下载入口不等于公开再分发许可；本项目不代表厦门大学官方出品。
 
+**素材不在 MIT 范围内。** 代码与模板结构的许可见 [LICENSE](LICENSE)；素材边界、允许用途与逐套台账见 [LICENSE-ASSETS](LICENSE-ASSETS) 与 [授权与边界设计](docs/licensing.md)。
+
 ---
 
 <sub>项目名 `xmu-ppt`；技能名沿用上游的 `xmu-ppt`。旧称 `xmu-xmu-ppt`、XMU PPT Master 均指本仓库。</sub>
