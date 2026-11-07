@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import sys
 import zipfile
@@ -33,9 +34,18 @@ SEQ_RE = re.compile(r"_(\d{3})$")
 CREATOR_RE = re.compile(r"<dc:creator>(.*?)</dc:creator>", re.S)
 
 
+# 第三方模板站的公开昵称；个人姓名不写入仓库，改用环境变量补充。
+AUTHOR_TOKENS = ("偷懒儿ppt", "俞兆达", "李维军", "许苗怡")
+
+
+def privacy_tokens() -> tuple[str, ...]:
+    extra = os.environ.get("XMU_PPT_PRIVACY_TERMS", "")
+    return tuple(t.strip() for t in extra.split(",") if t.strip())
+
+
 def clean_text(value: str) -> str:
     """扫描新模板时把姓名/昵称占位脱敏，避免重新引入个人名称。"""
-    for token in ("偷懒儿ppt", "俞兆达", "李维军", "许苗怡", "陶龙飞"):
+    for token in (*AUTHOR_TOKENS, *privacy_tokens()):
         value = value.replace(token, "XXX")
     return value
 

@@ -17,6 +17,7 @@ output/
 # 本地配置
 .env
 .env.local
+.privacy_terms
 
 # 系统文件
 .DS_Store

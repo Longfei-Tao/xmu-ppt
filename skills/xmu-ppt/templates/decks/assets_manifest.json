@@ -18,7 +18,7 @@
       "serial": "001",
       "name": "厦园晴日",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_官方_厦园晴日/source.pptx",
-      "source_sha256": "e2aa521407b41294fe3581fa618c576e78da8bdf5e0ed1bcb3033e1762e52787",
+      "source_sha256": "9027e761d87d6a212facf941d530d8a9e99ec6542801a30698eb0aea4e697eb8",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -33,7 +33,7 @@
       "serial": "002",
       "name": "凤栖青橙",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_官方_凤栖青橙/source.pptx",
-      "source_sha256": "8aeaa23741ce59d5c4d68d3230dc487b65a6b6c17b128d530755eb3ea653f063",
+      "source_sha256": "aa268c8f4b23fee8bf2db23eeb8b73db24fbf97442d619b79d0a6fcdedbfea98",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -63,7 +63,7 @@
       "serial": "004",
       "name": "光影厦大",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_光影厦大/source.pptx",
-      "source_sha256": "d2541ace5aec4d253afe555e9ce752de9d30f97076a89a270e6b05d57061bef9",
+      "source_sha256": "38edcd4abb97f9595629fac83e24b839f506b3e88b0976f045d2785476360d54",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -78,7 +78,7 @@
       "serial": "005",
       "name": "凤凰花开",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_凤凰花开/source.pptx",
-      "source_sha256": "45e357a21ed4858eecd6b4bac94a1a35776d8d7dd872745817e48799f46febe3",
+      "source_sha256": "36d5c0f94399f537255ba3a1b743a628e5eb6dc18e01109e2522efb17b5992a5",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -93,7 +93,7 @@
       "serial": "006",
       "name": "厦大蓝",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_厦大蓝/source.pptx",
-      "source_sha256": "a49d87f7210286336520dde79be067f65dc073ebaa96f2b90bb0167e7e5b619c",
+      "source_sha256": "af5acc2e126de5e7ae9f40fa2856c9e982bf96e716b7e3a2efe9535d722fd2a7",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -108,7 +108,7 @@
       "serial": "007",
       "name": "四季风景",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_四季风景/source.pptx",
-      "source_sha256": "b333631b63982abe3bf8f820dfcc82a331d1eb2248d28f01c467814bb31318e3",
+      "source_sha256": "f562990425bcaea7a6ca863edd9fb376acdd494b9c23f9517aea245544a2dbe3",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -123,7 +123,7 @@
       "serial": "008",
       "name": "晕染风",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_晕染风/source.pptx",
-      "source_sha256": "f92b50feb92d3dd67297dcf4bcc1e0602d6d55bdad7813bbdeaf94cf55113478",
+      "source_sha256": "3b9553fa45ffe4390d09857e131dc9fb030d0487a5eafc006569241f8e1f7324",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -138,7 +138,7 @@
       "serial": "009",
       "name": "晚霞",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_晚霞/source.pptx",
-      "source_sha256": "97b2049657aaa499d424728d6ce85916f763d82a1d6b71e511d50ac09b7b4ea1",
+      "source_sha256": "5534dc5c0e67fa2974df76d69f662be53062e0ec9d60d2e2c41b7c806adcf6eb",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -153,7 +153,7 @@
       "serial": "010",
       "name": "木棉花",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_木棉花/source.pptx",
-      "source_sha256": "a4536c6c5d0da80de5779f8a6eb4fad4ee784a181bf649ac28e9d46081a9c576",
+      "source_sha256": "139d94ae60a781c0f6dcca5aa7bb8369f1439ce2bdb94ccd4b24dd439dffd046",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -168,7 +168,7 @@
       "serial": "011",
       "name": "清凉一厦",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_清凉一厦/source.pptx",
-      "source_sha256": "afa84909ce8cde7785f7f9321bc248b56670f756fbc445ec0c5dc227ef86ef43",
+      "source_sha256": "93052081a1980e72f81cabe5fb02fef8c7b84d130c7d1ddcaa45cae95a7f4440",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -183,7 +183,7 @@
       "serial": "012",
       "name": "蓝天校门",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_蓝天校门/source.pptx",
-      "source_sha256": "2849cc217327390c0c7842a72e8f904fb0df78f5005b103d8a977ffb608b6c4b",
+      "source_sha256": "f52a6a2668f91b9450729fb57de03eec9226df83f4d56ca8bef9badbf9c21ba5",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -198,7 +198,7 @@
       "serial": "013",
       "name": "米金书法",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_米金书法/source.pptx",
-      "source_sha256": "0873375ad4f0ab7aee6febd743fe93c8c86055a34b54b3d386cdcbc83c8e9cea",
+      "source_sha256": "4d9545c890410210e06513c737a6203afa2e50c2316f0313dd57b5a90782c5db",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -213,7 +213,7 @@
       "serial": "014",
       "name": "经典蓝白",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_经典蓝白/source.pptx",
-      "source_sha256": "a25b9a3a44fc59bcb98f5db478e816672ab6f92aedefa074d584133a78cfb372",
+      "source_sha256": "159e1b049e7813d063e20b4916cfe49f37c727fb456e7dc74d488a00912836cd",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
@@ -228,7 +228,7 @@
       "serial": "015",
       "name": "鹭江夜澜",
       "source_pptx": "skills/xmu-ppt/templates/decks/厦门大学_主题_鹭江夜澜/source.pptx",
-      "source_sha256": "83394c2f3e9e65a008752bceb9a6721755db1b3d83ed34e9e38b00a096c8dcec",
+      "source_sha256": "93c685a58d4b191e5a149c68670418f0ba3e558291740bafbe5da9e145269a75",
       "license_status": "unknown",
       "allowed_uses": [
         "local"
