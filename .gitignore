@@ -31,3 +31,6 @@ skills/xmu-ppt/templates/external/root.local.json
 skills/xmu-ppt/templates/external/path_status.json
 docs/templates/previews/ext/
 *.render-manifest.json
+
+# 本地画廊：只在本机显示，预览图与页面均不外传
+local-gallery/
