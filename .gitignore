@@ -27,6 +27,9 @@ desktop.ini
 # WorkBuddy 项目数据
 .workbuddy/
 
+# 发布产物：技能包由脚本生成，不入库
+dist/
+
 # 外部模板：本机配置、第三方预览图与渲染中间产物不入库
 skills/xmu-ppt/templates/external/root.local.json
 skills/xmu-ppt/templates/external/path_status.json

@@ -20,6 +20,7 @@ CATALOG = DECKS / "catalog.json"
 MANIFEST = DECKS / "assets_manifest.json"
 EXTERNAL = ROOT / "skills" / "xmu-ppt" / "templates" / "external"
 LICENSES = EXTERNAL / "licenses.json"
+NOTICES = EXTERNAL / "TEMPLATE_NOTICES.md"
 LICENSE = ROOT / "LICENSE"
 ASSET_BOUNDARY = ROOT / "LICENSE-ASSETS"
 
@@ -57,11 +58,15 @@ def check(verify_hashes: bool = True) -> dict:
     errors: list[str] = []
     warnings: list[str] = []
 
-    for path in (CATALOG, MANIFEST, LICENSES, LICENSE, ASSET_BOUNDARY):
+    for path in (CATALOG, MANIFEST, LICENSES, LICENSE, ASSET_BOUNDARY, NOTICES):
         if not path.exists():
             errors.append(f"missing file: {path.relative_to(ROOT).as_posix()}")
     if errors:
         return {"ok": False, "errors": errors, "warnings": warnings, "stats": {}}
+
+    notices = NOTICES.read_text(encoding="utf-8")
+    if "MIT" not in notices or "root.local.json" not in notices:
+        errors.append("TEMPLATE_NOTICES.md is missing the rights boundary or self-supply instructions")
 
     manifest = load(MANIFEST)
     catalogue = {item["id"]: item for item in load(CATALOG)}

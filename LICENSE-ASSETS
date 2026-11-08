@@ -59,3 +59,34 @@ declares one or more of:
 This boundary is a **record and a check**, not a technical protection measure.
 It does not make an unauthorized asset legal, does not prevent copying, and does
 not replace legal advice.
+
+## 6. User-supplied templates and the owner's declaration
+
+The repository owner declares that the external templates indexed under
+`skills/xmu-ppt/templates/external/` were purchased or self-collected, and that
+they hold the corresponding use rights. This declaration is recorded in
+[`TEMPLATE_NOTICES.md`](skills/xmu-ppt/templates/external/TEMPLATE_NOTICES.md).
+Supporting receipts or licence texts are kept by the owner and are **not**
+bundled with this repository.
+
+`licenses.json` therefore keeps `status: unknown` for these entries. That field
+records the absence of a bundled third-party licence text or receipt; it is not
+a denial of the owner's rights. The machine-generated ledger and the
+human-maintained declaration are deliberately separate:
+`external_templates.py scan` rebuilds the former and must never overwrite the
+latter.
+
+The redistribution boundary follows upstream
+[PPT Master](https://github.com/hugohe3/ppt-master), which ships its own assets
+under MIT, publishes a skill-only release ZIP, and lets users register their own
+`.pptx` templates in a local workspace:
+
+- no external `.pptx` original, preview image or derivative screenshot is
+  committed, and none is shipped in a release package;
+- `scripts/pack_release.py` builds a skill-only ZIP from git-visible files and
+  refuses to write a package containing any of the above;
+- downstream users supply their own templates through `root.local.json`
+  (template in `root.example.json`) and verify the rights of whatever they use
+  themselves, consistent with the upstream `rights are yours to verify` rule.
+
+Clearing any asset for `public` / `commercial` still follows section 4 above.

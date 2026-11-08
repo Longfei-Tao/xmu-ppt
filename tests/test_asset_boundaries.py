@@ -60,6 +60,19 @@ class AssetBoundaryTests(unittest.TestCase):
         result = assets.check(verify_hashes=True)
         self.assertEqual(result["errors"], [], result["errors"])
 
+    def test_08_external_notices_record_rights_and_boundary(self):
+        notices = (ROOT / "skills/xmu-ppt/templates/external/TEMPLATE_NOTICES.md").read_text(
+            encoding="utf-8")
+        for token in ("MIT", "root.local.json", "rights are yours to verify", "更新政策"):
+            self.assertIn(token, notices)
+
+    def test_09_skill_package_excludes_external_assets(self):
+        import pack_release
+        kept, _ = pack_release.select()
+        self.assertEqual(pack_release.audit(kept), [])
+        self.assertFalse([p for p in kept if p.lower().endswith((".pptx", ".ppt"))])
+        self.assertFalse([p for p in kept if "local-gallery/" in p or p.endswith(".local.json")])
+
 
 if __name__ == "__main__":
     unittest.main()

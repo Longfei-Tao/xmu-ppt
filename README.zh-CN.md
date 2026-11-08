@@ -178,6 +178,23 @@ git pull
 | [选择你的 AI 工具](docs/tools/README.md) | 各宿主的技能目录与调用方式 |
 | [素材与许可](docs/assets.md) | 校徽、照片、字体的边界与核验状态 |
 
+## 开源与自备模板
+
+本仓库基于 [PPT Master](https://github.com/hugohe3/ppt-master) 的 SVG → PPTX 引擎，
+授权治理也沿用上游做法：**代码按 MIT 开源，第三方模板不随仓库分发**。用户自己的模板
+留在本机，由技能只读扫描，既不上传也不打包。
+
+| 你想做的事 | 怎么做 |
+| --- | --- |
+| 只用内置 15 套 | 直接 clone，或下载 Releases 的纯技能包 |
+| 用自己购买 / 收集的模板 | 复制 `root.example.json` 为 `root.local.json`，填入模板目录；再运行扫描与预览渲染 |
+| 生成一份可公开分发的技能包 | `python scripts/pack_release.py`，脚本会拒绝装入任何原件、截图或本机配置 |
+| 核验素材边界 | `python scripts/check_assets.py`，0 error 才能发布 |
+
+权利声明、逐套台账与更新政策见[外部模板声明](skills/xmu-ppt/templates/external/TEMPLATE_NOTICES.md)、
+[素材授权边界](LICENSE-ASSETS)与[素材与许可](docs/assets.md)。别人下载后可以在自己电脑上
+获得与本机等价的模板浏览与原生填充能力，模板由各自提供、权利由各自核验。
+
 ## 使用前了解
 
 - **生成需要 Agent。** Python 脚本负责分析、转换与检查，不会独立调用大模型完成主题创作；AI 工具本身的账号或费用另计。
