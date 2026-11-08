@@ -344,7 +344,16 @@ def create_app(
     @app.route('/api/templates')
     def templates():
         from template_selection import catalog
-        response = jsonify(catalog())
+        data = catalog()
+        for deck in data:
+            deck['namespace'] = 'builtin'
+        try:
+            from external_selection import decks as external_decks
+            data = data + external_decks()
+        except (ImportError, OSError, ValueError, json.JSONDecodeError):
+            # Fresh clone without a local gallery: stay at the public 15 decks.
+            pass
+        response = jsonify(data)
         response.headers['Cache-Control'] = 'no-store'
         return response
 
@@ -385,6 +394,12 @@ def create_app(
         three SVG prototypes. ``complete`` stays False until all source pages
         have rendered previews, so the UI can never overstate coverage.
         """
+        try:
+            from external_selection import find as external_find, pages as external_pages
+            if external_find(number) is not None:
+                return jsonify(external_pages(number))
+        except (ImportError, OSError, ValueError):
+            pass
         from template_selection import catalog, DECKS
         deck = next((d for d in catalog() if d['number'] == number), None)
         if deck is None:
@@ -437,6 +452,30 @@ def create_app(
             return jsonify({'error': 'Unknown template'}), 404
         folder = DECKS / deck['id']
         return send_from_directory(folder / 'previews', f'slide_{page:02d}.jpg')
+
+    @app.route('/previews/external/<int:number>.webp')
+    def external_cover(number):
+        """Local-only cover; never shipped in the repository or skill package."""
+        try:
+            from external_selection import cover
+            path = cover(number)
+        except (ImportError, OSError, ValueError):
+            path = None
+        if path is None:
+            return jsonify({'error': 'Unknown template or missing cover'}), 404
+        return send_from_directory(path.parent, path.name, mimetype='image/webp')
+
+    @app.route('/previews/external/<int:number>/<int:page>.webp')
+    def external_page(number, page):
+        """Local-only per-slide preview for an external deck."""
+        try:
+            from external_selection import page_image
+            path = page_image(number, page)
+        except (ImportError, OSError, ValueError):
+            path = None
+        if path is None:
+            return jsonify({'error': 'Page preview unavailable'}), 404
+        return send_from_directory(path.parent, path.name, mimetype='image/webp')
 
     @app.route('/api/catalogs')
     def get_catalogs():

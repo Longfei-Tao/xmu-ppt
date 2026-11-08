@@ -81,7 +81,11 @@ class SelectionTests(unittest.TestCase):
             client = create_app(str(project), idle_timeout=0).test_client()
             with client.get('/') as response:
                 self.assertIn('gallery.js', response.get_data(as_text=True))
-            self.assertEqual(len(client.get('/api/templates').json), 15)
+            catalog = client.get('/api/templates').json
+            # Public built-in decks stay at 15; local-only decks may be added
+            # on this machine by the external gallery bridge.
+            self.assertEqual(len([d for d in catalog
+                                  if d.get('namespace') == 'builtin']), 15)
             self.assertEqual(client.post('/api/confirm', json={'status': 'confirmed'}).status_code, 400)
             payload = dict(request_id=request['request_id'], template_id='厦门大学_主题_晚霞', route='svg')
             self.assertEqual(client.post('/api/template-confirm', json=payload).status_code, 200)

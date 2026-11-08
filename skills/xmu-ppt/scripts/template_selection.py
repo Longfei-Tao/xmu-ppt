@@ -104,6 +104,13 @@ def prepare(project):
 
 def _validate(template_id, route):
     deck = next((d for d in catalog() if d['id'] == template_id), None)
+    if deck is None:
+        # Local-only external decks are not in the public catalogue.
+        try:
+            from external_selection import find_by_id
+            deck = find_by_id(template_id)
+        except (ImportError, OSError, ValueError):
+            deck = None
     if deck is None or route not in deck['routes']:
         raise ValueError('Unknown template or unsupported authoring route')
     return deck
@@ -114,7 +121,7 @@ def confirm(project, request_id, template_id, route, source):
     request = json.loads((folder / 'recommendations.json').read_text(encoding='utf-8'))
     if request.get('kind') != 'template' or not secrets.compare_digest(str(request.get('request_id', '')), str(request_id)):
         raise ValueError('Expired selection request. Reopen the project gallery')
-    _validate(template_id, route)
+    deck = _validate(template_id, route)
     if source not in ('browser', 'chat', 'delegated'):
         raise ValueError('Unknown selection source')
     with _locked(folder):
@@ -128,6 +135,14 @@ def confirm(project, request_id, template_id, route, source):
                   'request_id': request_id, 'template_id': template_id,
                   'route': route, 'source': source,
                   'confirmed_at': datetime.now(timezone.utc).isoformat()}
+        if deck.get('namespace') == 'external':
+            from external_selection import source_path
+            origin = source_path(template_id)
+            if origin is None:
+                raise ValueError('本机模板原件不存在，请重新扫描模板目录')
+            result['namespace'] = 'external'
+            result['serial'] = deck.get('serial')
+            result['source_path'] = str(origin)
         _write(path, result)
         return result
 
@@ -159,7 +174,9 @@ def require_selection(project, route, source=None):
     if result['route'] != route:
         raise ValueError('Export route differs from the confirmed selection')
     if source is not None:
-        expected = DECKS / result['template_id'] / 'source.pptx'
+        expected = (Path(result['source_path'])
+                    if result.get('namespace') == 'external' and result.get('source_path')
+                    else DECKS / result['template_id'] / 'source.pptx')
         if hashlib.sha256(Path(source).read_bytes()).digest() != hashlib.sha256(expected.read_bytes()).digest():
             raise ValueError('Source PPTX differs from the confirmed template')
 

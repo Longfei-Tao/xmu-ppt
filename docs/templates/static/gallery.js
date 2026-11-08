@@ -19,9 +19,23 @@ function render() {
   const matches = templates.filter(deck => (!scene || deck.tags.includes(scene)) &&
     `${deck.name} ${deck.style} ${deck.tags.join(' ')}`.toLowerCase().includes(query));
   const recommended = recommendation?.recommended || [];
-  matches.sort((a, b) => Number(recommended.includes(b.id)) - Number(recommended.includes(a.id)));
+  const groupOf = d => d.namespace === 'external' ? 1 : 0;
+  matches.sort((a, b) => (groupOf(a) - groupOf(b)) ||
+    (Number(recommended.includes(b.id)) - Number(recommended.includes(a.id))));
+  const grouped = matches.some(d => d.namespace === 'external');
   $('cards').replaceChildren();
+  let shownGroup = null;
   for (const deck of matches) {
+    const group = groupOf(deck);
+    if (grouped && group !== shownGroup) {
+      const heading = document.createElement('h2');
+      heading.className = 'group-title';
+      heading.textContent = group
+        ? '本机模板（仅此电脑可用 · 不随仓库分发）'
+        : '内置模板（15 套 · 可公开分发）';
+      $('cards').append(heading);
+      shownGroup = group;
+    }
     const card = document.createElement('article');
     card.className = 'card';
     const image = document.createElement('img');
@@ -38,7 +52,8 @@ function render() {
     tags.textContent = deck.tags.join(' · ');
     const badge = document.createElement('p');
     badge.className = 'badge';
-    badge.textContent = (recommended.includes(deck.id) ? '场景推荐 · ' : '') +
+    badge.textContent = (deck.namespace === 'external' ? '本机 · ' : '') +
+      (recommended.includes(deck.id) ? '场景推荐 · ' : '') +
       (deck.routes.includes('native') ? '支持灵活排版 / 保持原版式' : '仅支持灵活排版');
     const reason = recommendation?.recommendation_reasons?.[deck.id];
     if (recommended.includes(deck.id) && reason) badge.textContent += ` · ${reason}`;
@@ -54,7 +69,10 @@ function render() {
 
 function updatePrompt() {
   const mode = $('route').value === 'native' ? '保持原模板每一页的版式，用原生填充只替换文字' : '沿用模板风格，使用 SVG 灵活排版';
-  $('prompt').value = `使用 xmu-ppt 的「${current.name}」模板（ID ${current.id}），${mode}。制作关于【填写汇报主题】的 PPT，约【填写页数】页。模板已由我选定，请开始整理内容。`;
+  const ref = current.namespace === 'external'
+    ? `序号 ${current.serial}（模板 ID ${current.id}）`
+    : `ID ${current.id}`;
+  $('prompt').value = `使用 xmu-ppt 的「${current.name}」模板（${ref}），${mode}。制作关于【填写汇报主题】的 PPT，约【填写页数】页。模板已由我选定，请开始整理内容。`;
 }
 
 const ROLE_LABELS = {
