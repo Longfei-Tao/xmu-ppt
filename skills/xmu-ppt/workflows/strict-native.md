@@ -18,7 +18,8 @@
 
 0. **准备模板**：本机还没有原件时，先下载 Release 里的 `xmu-ppt-templates.zip`，运行
    `python skills/xmu-ppt/scripts/external_templates.py import`；它会逐文件校验 SHA-256、
-   解压到 `~/xmu-ppt-templates` 并自动登记。已有自己的模板目录则改用 `scan` 登记。
+   解压到 `~/xmu-ppt-templates`、自动登记，并生成离线画廊 `local-gallery/index.html`。
+   已有自己的模板目录则改用 `scan` 登记（之后可自行运行 `scripts/build_local_gallery.py` 生成画廊）。
 1. **用户给主题与想法** → AI 推荐 1–2 个分类与候选模板，**不代选**。
 2. 用户在本机打开 `local-gallery/index.html`，按分类浏览、用页码滑杆看**每一页**的布局，点「复制给 AI 的选用指令」。
 3. 指令里含模板 ID（如 `MED-001`）与「1:1 保留全部页面、尤其第 2/3/4 页、不删页不重排不替换素材」。

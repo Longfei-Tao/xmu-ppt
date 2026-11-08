@@ -42,7 +42,7 @@ description: >
 > | --- | --- | --- |
 > | 提到「保留原样式 / 别改我的模板」、上传 `.pptx` 并要求保留其原生版式、要表格或图表原样保留 | **原生填充** → [`workflows/xmu-native.md`](workflows/xmu-native.md) | 克隆原页 + 改 OOXML，不生成 SVG |
 > | 只给主题或文字材料，选定视觉模板后采用灵活排版 | **SVG 出稿** → [`workflows/xmu-quick.md`](workflows/xmu-quick.md) | 逐页手写 SVG 再导出 |
-> | 从「本机外部模板库」选定外部模板（先运行 `external_templates.py import` 导入 Release 模板包，或用 `scan` 登记本机目录；作者本机 200 套，ID 如 `MED-001`）并要求「完整保留每一页原版式、只换文字」 | **严格保真** → [`workflows/strict-native.md`](workflows/strict-native.md) | 整份复制原 PPTX，只覆盖被点名页的文字 XML |
+> | 从「本机外部模板库」选定外部模板（先运行 `external_templates.py import` 导入 Release 模板包并生成离线画廊，或用 `scan` 登记本机目录；作者本机 200 套，ID 如 `MED-001`）并要求「完整保留每一页原版式、只换文字」 | **严格保真** → [`workflows/strict-native.md`](workflows/strict-native.md) | 整份复制原 PPTX，只覆盖被点名页的文字 XML |
 >
 > **严格保真是独立新增的第三条路线**，仅作用于 `templates/external/` 登记的外部模板，不改变上述两条路线与内置 15 套的任何行为。用户在本机 `local-gallery/index.html` 浏览并复制含模板 ID 的选用指令后，按 `workflows/strict-native.md` 执行 `doctor → inspect → scaffold → apply`；全页同序 1:1、图片/图形/装饰/占位区/备注/切换效果/未引用素材字节级保留，禁止删页重排。仅当用户明确指定图片或素材、且三道授权闸门全部打开时才允许替换图片。总开关 `templates/external/feature_flags.json` 的 `strict_native` 置 `false` 即完整回退。外部模板授权状态为 unknown、不可再分发，成品只留本机，不得上传或公开分发。
 >

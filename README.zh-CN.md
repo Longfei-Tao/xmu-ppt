@@ -190,7 +190,7 @@ git pull
 | --- | --- |
 | 用内置 15 套 | clone 完整仓库（含内置模板原件与封面） |
 | 只带技能、模板自备 | 解压上面的纯技能包，填入自己的模板目录即可 |
-| 一次性导入 200 套模板包 | 下载 Release 里的 `xmu-ppt-templates.zip`，运行 `python skills/xmu-ppt/scripts/external_templates.py import`；先逐文件校验 SHA-256，再自动登记 |
+| 一次性导入 200 套模板包 | 下载 Release 里的 `xmu-ppt-templates.zip`，运行 `python skills/xmu-ppt/scripts/external_templates.py import`；先逐文件校验 SHA-256，再自动登记并生成离线画廊，之后可打开 `local-gallery/index.html` 按封面挑、报序号选定 |
 | 用自己购买 / 收集的模板 | 复制 `root.example.json` 为 `root.local.json`，填入模板目录；再运行扫描与预览渲染 |
 | 把自己的模板打包给他人 | `python skills/xmu-ppt/scripts/external_templates.py pack -o dist/xmu-ppt-templates.zip`；**仅在你确实有权分发这些模板时使用** |
 | 生成一份可公开分发的技能包 | `python scripts/pack_release.py`，脚本会拒绝装入任何原件、截图或本机配置 |

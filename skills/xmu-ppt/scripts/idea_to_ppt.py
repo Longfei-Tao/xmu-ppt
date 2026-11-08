@@ -290,9 +290,12 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
         for c in _load(EXTERNAL / "categories.json", {"categories": []})["categories"]
     }
     lines += [
-        "", "按分类浏览：",
+        "", f"本机可用模板共 {len(pool)} 套。不喜欢上面的候选，可以打开完整画廊按封面挑，"
+        "把序号发给我即可。",
+        "",
+        "按分类浏览：",
         *[f"- [{cat_names.get(c, c)}]({_gallery_url(category=c)})" for c in top_cats],
-        "", f"画廊入口：{GALLERY if GALLERY.is_file() else PUBLIC_GALLERY}",
+        "", f"- [打开完整模板画廊（{len(pool)} 套）]({_gallery_url()})",
     ]
     gate["markdown"] = "\n".join(lines)
     _write(GATE_FILE, gate)

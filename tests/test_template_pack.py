@@ -134,5 +134,69 @@ class TemplatePackTests(unittest.TestCase):
         self.assertEqual(sha256(target), self.catalog["templates"][0]["sha256"])
 
 
+class GalleryStepTests(unittest.TestCase):
+    """导入后自动生成离线画廊；失败不能影响导入本身。"""
+
+    def test_01_missing_builder_is_skipped(self):
+        with mock.patch.object(ext, "GALLERY_BUILDER", Path("does-not-exist.py")):
+            self.assertFalse(ext.build_local_gallery())
+
+    def test_02_builder_failure_is_not_fatal(self):
+        with mock.patch.object(ext.subprocess, "run",
+                               return_value=mock.Mock(returncode=1)):
+            self.assertFalse(ext.build_local_gallery())
+
+    def test_03_builder_runs_in_repo_root(self):
+        with mock.patch.object(ext.subprocess, "run",
+                               return_value=mock.Mock(returncode=0)) as run:
+            self.assertTrue(ext.build_local_gallery())
+        self.assertEqual(run.call_args.kwargs["cwd"], str(ext.REPO_ROOT))
+
+    def _args(self, tmp: Path, **overrides):
+        values = {
+            "pack": str(tmp / "pack.zip"),
+            "dest": str(tmp / "imported"),
+            "url": None,
+            "force": False,
+            "skip_scan": False,
+            "skip_gallery": False,
+        }
+        values.update(overrides)
+        return mock.Mock(**values)
+
+    def test_04_run_import_builds_gallery_after_scan(self):
+        with tempfile.TemporaryDirectory(dir=CACHE) as tmp:
+            base = Path(tmp)
+            (base / "pack.zip").write_bytes(b"x")
+            with mock.patch.object(ext, "import_template_pack",
+                                   return_value={"count": 2, "root": "d"}), \
+                    mock.patch.object(ext, "build_local_gallery",
+                                      return_value=True) as gallery:
+                self.assertEqual(ext.run_import(self._args(base)), 0)
+                gallery.assert_called_once()
+
+    def test_05_run_import_can_skip_gallery(self):
+        with tempfile.TemporaryDirectory(dir=CACHE) as tmp:
+            base = Path(tmp)
+            (base / "pack.zip").write_bytes(b"x")
+            with mock.patch.object(ext, "import_template_pack",
+                                   return_value={"count": 2, "root": "d"}), \
+                    mock.patch.object(ext, "build_local_gallery") as gallery:
+                self.assertEqual(
+                    ext.run_import(self._args(base, skip_gallery=True)), 0)
+                gallery.assert_not_called()
+
+    def test_06_run_import_skips_gallery_when_scan_skipped(self):
+        with tempfile.TemporaryDirectory(dir=CACHE) as tmp:
+            base = Path(tmp)
+            (base / "pack.zip").write_bytes(b"x")
+            with mock.patch.object(ext, "import_template_pack",
+                                   return_value={"count": 2, "root": "d"}), \
+                    mock.patch.object(ext, "build_local_gallery") as gallery:
+                self.assertEqual(
+                    ext.run_import(self._args(base, skip_scan=True)), 0)
+                gallery.assert_not_called()
+
+
 if __name__ == "__main__":
     unittest.main()

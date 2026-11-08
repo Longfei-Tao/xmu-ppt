@@ -13,6 +13,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
 import tempfile
 import urllib.request
@@ -36,6 +37,8 @@ DEFAULT_PACK_URL = (
     "https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/" + PACK_NAME
 )
 DEFAULT_IMPORT_ROOT = Path.home() / "xmu-ppt-templates"
+REPO_ROOT = HERE.parents[3]
+GALLERY_BUILDER = REPO_ROOT / "scripts" / "build_local_gallery.py"
 
 PROMO_KEYWORDS = ("定制", "工作室", "购买", "会员", "微信", "二维码", "加群", "淘宝")
 ODD_MEDIA = {".wdp", ".emf", ".wmf", ".mp3", ".wav", ".wma", ".m4a", ".tiff"}
@@ -453,6 +456,29 @@ def download_template_pack(url: str, output: Path) -> Path:
     return output
 
 
+def build_local_gallery() -> bool:
+    """导入后生成本机画廊，让使用者能按封面浏览全部模板。
+
+    画廊只读本机原件与索引，不联网；封面优先取 PPTX 内嵌缩略图。
+    失败不影响导入结果（模板仍可按序号选定），但会给出明确警告。
+    """
+    if not GALLERY_BUILDER.is_file():
+        print("提示：未找到本地画廊脚本，跳过画廊生成。", file=sys.stderr)
+        return False
+    print("正在生成离线模板画廊（封面取自 PPTX 内嵌缩略图）...", file=sys.stderr)
+    try:
+        proc = subprocess.run([sys.executable, str(GALLERY_BUILDER)],
+                              cwd=str(REPO_ROOT))
+    except OSError as exc:
+        print(f"警告：本地画廊生成失败（{exc}）；模板已导入，仍可按序号选定。",
+              file=sys.stderr)
+        return False
+    if proc.returncode != 0:
+        print("警告：本地画廊生成失败；模板已导入，仍可按序号选定。", file=sys.stderr)
+        return False
+    return True
+
+
 def run_pack(args) -> int:
     root = get_root(args.root)
     output = Path(args.output).expanduser()
@@ -476,6 +502,12 @@ def run_import(args) -> int:
     result = import_template_pack(pack, dest, force=args.force,
                                   scan=not args.skip_scan)
     print(f"已导入 {result['count']} 套模板到 {result['root']}")
+    if args.skip_gallery:
+        print("已跳过画廊生成（--skip-gallery）；仍可按序号选定模板。")
+    elif args.skip_scan:
+        print("提示：本次跳过了自动登记，未生成画廊；如需浏览封面请去掉 --skip-scan。")
+    elif build_local_gallery():
+        print("画廊已生成：local-gallery/index.html（可直接用浏览器打开）。")
     return 0
 
 
@@ -593,6 +625,7 @@ def main(argv=None) -> int:
     p_import.add_argument("--dest", help="导入目录（默认 ~/xmu-ppt-templates）")
     p_import.add_argument("--force", action="store_true", help="覆盖已存在且不同的文件")
     p_import.add_argument("--skip-scan", action="store_true", help="只解压，不自动登记")
+    p_import.add_argument("--skip-gallery", action="store_true", help="导入后不生成离线画廊")
     p_import.set_defaults(func=run_import)
 
     args = parser.parse_args(argv)

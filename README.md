@@ -172,7 +172,7 @@ Every deck has a **permanent three-digit serial**. Serials are append-only: addi
 
 Browse them all with cover and sample-page previews: **[template gallery](https://longfei-tao.github.io/xmu-ppt/templates/)** · [full index](docs/templates.md) (Chinese). All decks are 16:9 at 1280×720.
 
-> **Optional local library.** The same registry can index a private collection of third-party decks (serials `016`+, 200 decks in the author's setup). The originals are **not committed** to this repository. If you own that collection, download `xmu-ppt-templates.zip` from the [latest Release](https://github.com/Longfei-Tao/xmu-ppt/releases/latest) and run `python skills/xmu-ppt/scripts/external_templates.py import`. Every file is verified against the pack manifest (SHA-256) before it is written, then the catalogue is rebuilt automatically. Without the pack, the built-in 15 decks are what you get.
+> **Optional local library.** The same registry can index a private collection of third-party decks (serials `016`+, 200 decks in the author's setup). The originals are **not committed** to this repository. If you own that collection, download `xmu-ppt-templates.zip` from the [latest Release](https://github.com/Longfei-Tao/xmu-ppt/releases/latest) and run `python skills/xmu-ppt/scripts/external_templates.py import`. Every file is verified against the pack manifest (SHA-256) before it is written, then the catalogue is rebuilt and an offline gallery (`local-gallery/index.html`) is generated, so the whole set is browsable by cover — report the three-digit serial to pick one. Without the pack, the built-in 15 decks are what you get.
 
 ## What you give, what you get
 
