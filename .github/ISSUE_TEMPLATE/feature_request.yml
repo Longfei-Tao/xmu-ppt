@@ -1,0 +1,45 @@
+name: 功能建议
+description: 提出新能力、模板或流程改进
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先说明使用场景，再描述期望的解决方案；这样更容易判断是否值得做。
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 使用场景
+      description: 你在做什么、卡在哪、现在是怎么绕过的。
+      placeholder: 我在做...时，需要...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 期望的方案
+      description: 你希望命令、界面或文档变成什么样。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 考虑过的替代方案
+      description: 可选。比如改文档、用外部工具、手动处理。
+    validations:
+      required: false
+  - type: dropdown
+    id: area
+    attributes:
+      label: 涉及范围
+      options:
+        - 模板选择与画廊
+        - 原生填充（pptx / WPS）
+        - SVG 出稿
+        - 文字适配与检查
+        - 模板包与导入
+        - 文档与发布
+        - 其他
+    validations:
+      required: true

@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
 import subprocess
 import sys
 import zipfile
@@ -226,6 +227,12 @@ def main(argv: list[str] | None = None) -> int:
             else:
                 zf.write(ROOT / rel, PREFIX + rel)
     print(f"wrote: {out} ({out.stat().st_size / 1024 / 1024:.1f} MiB)")
+    # 稳定别名：README 固定指向 releases/latest/download/xmu-ppt-skill.zip，
+    # 避免每次重建日期变化导致下载链接失效。发布时两个文件一并上传。
+    alias = DIST / "xmu-ppt-skill.zip"
+    if out.resolve() != alias.resolve():
+        shutil.copyfile(out, alias)
+        print(f"wrote: {alias} ({alias.stat().st_size / 1024 / 1024:.1f} MiB)")
     return 0
 
 

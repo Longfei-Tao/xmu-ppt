@@ -87,7 +87,7 @@ cd xmu-ppt
 
 Without Git, download [main.zip](https://github.com/Longfei-Tao/xmu-ppt/archive/refs/heads/main.zip) and work inside the extracted `xmu-ppt-main` folder.
 
-> **Just want the skill?** Download the [skill-only ZIP](https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/xmu-ppt-skill-20261108.zip) (13.6 MiB) from [Releases](https://github.com/Longfei-Tao/xmu-ppt/releases). It contains code, docs and SVG layout definitions only — no third-party template originals, preview screenshots or machine-local paths. Point `root.local.json` at your own template folder to get the same picker, per-page previews and Native fill on your machine.
+> **Just want the skill?** Download the [skill-only ZIP](https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/xmu-ppt-skill.zip) (13.7 MiB) from [Releases](https://github.com/Longfei-Tao/xmu-ppt/releases). It contains code, docs and SVG layout definitions only — no third-party template originals, preview screenshots or machine-local paths. Point `root.local.json` at your own template folder to get the same picker, per-page previews and Native fill on your machine.
 
 ### 2. Install dependencies
 

@@ -1,0 +1,51 @@
+name: Bug 报告
+description: 报告可复现的错误、崩溃或出稿异常
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请尽量提供可复现的最小信息，不要贴出个人路径、姓名或未公开的 PPT 内容。
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 发生了什么
+      description: 实际结果与报错信息（完整命令和输出更有帮助）。
+      placeholder: 运行 XXX 命令后报错：...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从哪一步开始、用了哪套模板、路线是 native 还是 svg。
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+      placeholder: 我希望它...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 运行环境
+      description: 操作系统、Python 版本、Office/WPS 版本、安装方式（技能包或仓库）。
+      placeholder: Windows 11 / Python 3.11 / PowerPoint 2021 / 技能包
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 相关日志或文件
+      description: 可贴关键日志片段；请先脱敏，不要上传含个人信息的 PPTX。
+      render: text
+    validations:
+      required: false

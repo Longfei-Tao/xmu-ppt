@@ -184,7 +184,7 @@ git pull
 授权治理也沿用上游做法：**代码按 MIT 开源，第三方模板不随仓库分发**。模板原件留在本机，
 或通过官方模板包按需导入；仓库只保留文字索引与指纹，导入时逐文件校验，不上传任何原件。
 
-> **直接下载技能包**：[`xmu-ppt-skill-20261108.zip`](https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/xmu-ppt-skill-20261108.zip)（13.6 MiB）· [查看全部 Release](https://github.com/Longfei-Tao/xmu-ppt/releases)
+> **直接下载技能包**：[`xmu-ppt-skill.zip`](https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/xmu-ppt-skill.zip)（13.7 MiB）· [查看全部 Release](https://github.com/Longfei-Tao/xmu-ppt/releases)
 
 | 你想做的事 | 怎么做 |
 | --- | --- |
