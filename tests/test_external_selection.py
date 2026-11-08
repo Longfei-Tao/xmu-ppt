@@ -119,5 +119,16 @@ class ExternalGalleryAPITests(unittest.TestCase):
         self.assertTrue(Path(result["source_path"]).is_file())
 
 
+class SkillOnlyPackageTests(unittest.TestCase):
+    """A release ZIP has no built-in originals/covers; the picker must survive."""
+
+    def test_catalog_skips_decks_without_covers(self):
+        import template_selection
+        from unittest import mock
+        with tempfile.TemporaryDirectory(dir=CACHE) as tmp:
+            with mock.patch.object(template_selection, "DECKS", Path(tmp)):
+                self.assertEqual(template_selection.catalog(), [])
+
+
 if __name__ == "__main__":
     unittest.main()

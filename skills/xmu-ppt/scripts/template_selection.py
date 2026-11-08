@@ -17,16 +17,25 @@ INDEX = DECKS / 'catalog.json'
 
 
 def catalog():
+    """Built-in decks actually present in this installation.
+
+    The skill-only release ZIP ships no built-in originals or cover images
+    (they are outside the MIT grant, see LICENSE-ASSETS). Skip those entries
+    instead of breaking the whole picker: such users supply their own
+    templates through the local gallery.
+    """
     decks = json.loads(INDEX.read_text(encoding='utf-8'))
+    available = []
     for deck in decks:
         folder = DECKS / deck['id']
         if not (folder / 'preview.png').is_file():
-            raise ValueError(f"Missing preview for {deck['id']}")
+            continue
         native = all((folder / name).is_file() for name in
                      ('source.pptx', 'source.slide_library.json', 'layout_index.json'))
         deck['routes'] = ['svg', 'native'] if native else ['svg']
         deck['preview'] = f"previews/{deck['number']:02d}.png"
-    return decks
+        available.append(deck)
+    return available
 
 
 def preview_svg(number, page):
