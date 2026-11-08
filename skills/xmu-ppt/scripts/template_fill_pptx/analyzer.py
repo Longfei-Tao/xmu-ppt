@@ -24,6 +24,7 @@ from .ooxml import (
     _slide_relationships,
     _table_containers,
     _text_containers,
+    resolve_slot_geometries,
 )
 
 THANKS_KEYWORDS = ("thank", "thanks", "q&a", "qa", "contact", "致谢", "谢谢", "感谢", "答疑", "联系方式")
@@ -174,12 +175,15 @@ def analyze_pptx(pptx_path: Path) -> dict[str, Any]:
         slides: list[dict[str, Any]] = []
         for slide_ref in slide_refs:
             slide_root = _read_xml(zf, slide_ref.part_name)
+            geometries = resolve_slot_geometries(zf, slide_ref, slide_root)
             slots: list[dict[str, Any]] = []
             for order, container in enumerate(_text_containers(slide_root), start=1):
                 shape_id, shape_name = _shape_identity(container, order)
                 paragraphs = _paragraph_texts(container)
                 text = "\n".join(paragraphs)
-                geometry = _container_geometry(container)
+                # Absolute slide coordinates: group transforms applied and
+                # placeholder rectangles inherited from layout/master.
+                geometry = geometries.get(id(container)) or _container_geometry(container)
                 role = _slot_role(
                     {
                         "text": text,

@@ -377,6 +377,67 @@ def create_app(
         except (ValueError, OSError):
             return jsonify({'error': 'Preview unavailable'}), 404
 
+    @app.route('/api/deck-pages/<int:number>')
+    def deck_pages(number):
+        """Full source-page inventory for one template.
+
+        The gallery must show every real page of the selected template, not the
+        three SVG prototypes. ``complete`` stays False until all source pages
+        have rendered previews, so the UI can never overstate coverage.
+        """
+        from template_selection import catalog, DECKS
+        deck = next((d for d in catalog() if d['number'] == number), None)
+        if deck is None:
+            return jsonify({'error': 'Unknown template'}), 404
+        folder = DECKS / deck['id']
+        index_file = folder / 'layout_index.json'
+        if not index_file.is_file():
+            return jsonify({
+                'available': False,
+                'reason': 'no_native_page_index',
+                'source_page_count': 0,
+                'preview_count': 0,
+                'complete': False,
+                'pages': [],
+            })
+        index = json.loads(index_file.read_text(encoding='utf-8'))
+        previews_dir = folder / 'previews'
+        pages = []
+        for item in index.get('pages', []):
+            slide = item.get('slide')
+            preview_file = previews_dir / f'slide_{slide:02d}.jpg'
+            has_preview = preview_file.is_file()
+            pages.append({
+                'slide': slide,
+                'role': item.get('role'),
+                'layout': item.get('layout'),
+                'slot_count': item.get('slot_count', 0),
+                'filled_slot_count': item.get('filled_slot_count', 0),
+                'tables': item.get('tables', 0),
+                'charts': item.get('charts', 0),
+                'type_scale_px': item.get('type_scale_px', []),
+                'summary': item.get('summary', ''),
+                'preview': f'previews/full/{number:02d}/{slide:02d}.jpg' if has_preview else None,
+            })
+        preview_count = sum(1 for page in pages if page['preview'])
+        source_page_count = index.get('slide_count', len(pages))
+        return jsonify({
+            'available': True,
+            'source_page_count': source_page_count,
+            'preview_count': preview_count,
+            'complete': source_page_count > 0 and preview_count == source_page_count,
+            'pages': pages,
+        })
+
+    @app.route('/previews/full/<int:number>/<int:page>.jpg')
+    def full_page_preview(number, page):
+        from template_selection import catalog, DECKS
+        deck = next((d for d in catalog() if d['number'] == number), None)
+        if deck is None:
+            return jsonify({'error': 'Unknown template'}), 404
+        folder = DECKS / deck['id']
+        return send_from_directory(folder / 'previews', f'slide_{page:02d}.jpg')
+
     @app.route('/api/catalogs')
     def get_catalogs():
         """Serve the option universe; canvas is synced live from config.py so
