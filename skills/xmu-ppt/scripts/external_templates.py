@@ -376,6 +376,52 @@ def build_template_pack(root: Path, output: Path, catalog: dict | None = None) -
             "bytes": output.stat().st_size}
 
 
+def _seed_numbers(entries: list[dict]) -> int:
+    """把模板包自带的固定序号写进本地注册表，保证不同机器编号一致。
+
+    只在本地还没有任何外部模板序号时执行；已有编号一律不改，
+    遵守「一经分配永不变更、不重排」的规则。
+    """
+    import template_numbers as tn
+
+    registry = tn.ensure_registry()
+    if any(e.get("namespace") == "external" for e in registry["entries"]):
+        return 0
+    used = {e["number"]: e["template_id"] for e in registry["entries"]}
+    added = 0
+    for entry in entries:
+        template_id = entry.get("id")
+        raw = str(entry.get("serial") or "")
+        member = entry.get("file", "")
+        if not template_id or not raw.isdigit() or not member.startswith("templates/"):
+            continue
+        number = int(raw)
+        if number in used:
+            if used[number] != template_id:
+                print(f"警告：序号 {tn.serial(number)} 已被 {used[number]} 占用，"
+                      f"跳过 {template_id}", file=sys.stderr)
+            continue
+        relative = member[len("templates/"):]
+        registry["entries"].append({
+            "number": number,
+            "serial": tn.serial(number),
+            "template_id": template_id,
+            "name": entry.get("name", ""),
+            "namespace": "external",
+            "source_key": None,
+            "source_ref_hash": tn.source_ref_hash(relative),
+            "status": "active",
+        })
+        used[number] = template_id
+        added += 1
+    if added:
+        registry["entries"].sort(key=lambda e: e["number"])
+        registry["next_number"] = max(e["number"] for e in registry["entries"]) + 1
+        registry["external_range"] = [16, max(e["number"] for e in registry["entries"])]
+        write_json(tn.REGISTRY_FILE, registry)
+    return added
+
+
 def _read_pack_manifest(pack: Path) -> dict:
     with zipfile.ZipFile(pack) as zf:
         try:
@@ -444,6 +490,10 @@ def import_template_pack(pack: Path, dest: Path, *, force: bool = False,
         "note": "由模板包一键导入写入；换目录时重跑 import 或 doctor --set-root。",
     })
     if scan:
+        seeded = _seed_numbers(entries)
+        if seeded:
+            print(f"已沿用模板包的固定序号 {seeded} 条，跨机器编号一致。",
+                  file=sys.stderr)
         run_scan(argparse.Namespace(root=str(dest), skip_promo=False))
     return {"root": str(dest), "count": len(entries)}
 

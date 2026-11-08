@@ -198,5 +198,56 @@ class GalleryStepTests(unittest.TestCase):
                 gallery.assert_not_called()
 
 
+class NumberSeedingTests(unittest.TestCase):
+    """模板包自带的序号必须在全新机器上原样沿用。"""
+
+    def _write(self, path: Path, entries, next_number=16):
+        path.write_text(json.dumps({
+            "schema": "template_number_registry.v1",
+            "entries": entries,
+            "next_number": next_number,
+        }, ensure_ascii=False), encoding="utf-8")
+
+    def _builtin(self, number=15):
+        return {"number": number, "serial": f"{number:03d}",
+                "template_id": "builtin-x", "name": "x", "namespace": "builtin",
+                "source_key": None, "source_ref_hash": None, "status": "active"}
+
+    def test_01_pack_serials_are_preserved(self):
+        import template_numbers as tn
+        with tempfile.TemporaryDirectory(dir=CACHE) as tmp:
+            path = Path(tmp) / "number_registry.json"
+            self._write(path, [self._builtin()])
+            with mock.patch.object(tn, "REGISTRY_FILE", path):
+                added = ext._seed_numbers([
+                    {"id": "MED-001", "serial": "016", "name": "a",
+                     "file": "templates/甲/MED-001.pptx"},
+                    {"id": "MED-003", "serial": "018", "name": "b",
+                     "file": "templates/乙/MED-003.pptx"},
+                ])
+            self.assertEqual(added, 2)
+            data = json.loads(path.read_text(encoding="utf-8"))
+            numbers = {e["template_id"]: e["number"] for e in data["entries"]}
+            self.assertEqual(numbers["MED-003"], 18)
+            self.assertEqual(data["next_number"], 19)
+
+    def test_02_existing_external_numbers_are_never_renumbered(self):
+        import template_numbers as tn
+        with tempfile.TemporaryDirectory(dir=CACHE) as tmp:
+            path = Path(tmp) / "number_registry.json"
+            existing = {**self._builtin(), "number": 17, "serial": "017",
+                        "template_id": "MED-003", "namespace": "external"}
+            self._write(path, [self._builtin(), existing], next_number=18)
+            with mock.patch.object(tn, "REGISTRY_FILE", path):
+                added = ext._seed_numbers([
+                    {"id": "MED-003", "serial": "018", "name": "b",
+                     "file": "templates/乙/MED-003.pptx"},
+                ])
+            self.assertEqual(added, 0)
+            data = json.loads(path.read_text(encoding="utf-8"))
+            numbers = {e["template_id"]: e["number"] for e in data["entries"]}
+            self.assertEqual(numbers["MED-003"], 17)
+
+
 if __name__ == "__main__":
     unittest.main()
