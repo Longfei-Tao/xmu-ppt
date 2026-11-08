@@ -5,6 +5,7 @@ let recommendation = null;
 let current = null;
 let saved = false;
 let nativeReady = false;
+let canChoose = false;
 const published = document.documentElement.dataset.mode === 'published';
 
 async function readJSON(url) {
@@ -191,18 +192,26 @@ async function showDetail(deck) {
   $('choose').textContent = published ? '复制使用指令' : '确认使用此模板';
   $('prompt-label').hidden = !published;
   const pages = await loadFullPages(deck);
-  nativeReady = published || (deck.routes?.includes('native') && pages.complete);
+  // 公开页只有 3 页原型，无法判断全页是否入库，按 routes 声明即可；
+  // 本机页必须以真实全页预览完整为条件，避免误报「可原生填充」。
+  nativeReady = deck.routes.includes('native') && (published || pages.complete);
+  canChoose = published || nativeReady || deck.routes.includes('svg');
   $('route').value = nativeReady ? 'native' : 'svg';
-  $('route').querySelector('[value="svg"]').disabled = nativeReady && !published;
-  $('route').querySelector('[value="native"]').disabled = !nativeReady;
+  $('route').querySelector('[value="svg"]').disabled = saved || (nativeReady && !published);
+  $('route').querySelector('[value="native"]').disabled = saved || !nativeReady;
   $('route-hint').textContent = nativeReady
     ? '已锁定原生填充：只替换原模板的文字、表格与图表数据，不改任何版式。'
-    : '此模板尚未完成全页入库，暂不能用于原生填充。';
-  if (!nativeReady) {
-    $('coverage-warning').textContent = '该模板不能用于原生制作：缺少完整的源 PPTX 页库或全页预览。请改选已完整入库的模板，或先完成入库。';
+    : deck.routes.includes('svg')
+      ? '此模板缺少完整的原生页库，只能选择 SVG 灵活排版（会重新设计布局）。'
+      : '此模板既不能原生填充，也没有 SVG 版式，请改选其它模板。';
+  if (!nativeReady && deck.routes.includes('svg')) {
+    $('coverage-warning').textContent = '该模板没有 source.pptx 全页页库，无法保持原版式；选择 SVG 排版会重新设计布局，视觉风格仍沿用模板。';
+    $('coverage-warning').hidden = false;
+  } else if (!canChoose) {
+    $('coverage-warning').textContent = '该模板不能用于制作：既缺少原生源 PPTX，也缺少 SVG 版式。请改选其它模板。';
     $('coverage-warning').hidden = false;
   }
-  $('choose').disabled = saved || !nativeReady;
+  $('choose').disabled = saved || !canChoose;
   updatePrompt();
   $('detail').showModal();
 }
@@ -231,7 +240,7 @@ $('choose').addEventListener('click', async () => {
   } catch (error) {
     $('selection-status').textContent = error.message;
   } finally {
-    $('choose').disabled = saved || !nativeReady;
+    $('choose').disabled = saved || !canChoose;
   }
 });
 $('close').addEventListener('click', () => $('detail').close());

@@ -95,26 +95,27 @@ class TextFitTests(unittest.TestCase):
 
     def test_05_validate_detects_absolute_overflow(self):
         capacity = {
-            "s01_sh1": {"safe_chars": 8, "wrap": "none", "max_lines": 1, "paragraphs": 1},
-            "s01_sh2": {"safe_chars": 10, "wrap": "none", "max_lines": 1, "paragraphs": 1},
+            "s01_sh1": {"safe_em": 8, "wrap": "none", "max_lines": 1, "paragraphs": 1},
+            "s01_sh2": {"safe_em": 10, "wrap": "none", "max_lines": 1, "paragraphs": 1},
         }
         problems = text_fit.validate_plan(self._plan(), capacity)
         self.assertEqual(len(problems), 1)
         self.assertEqual(problems[0]["slot_id"], "s01_sh2")
+        self.assertGreater(problems[0]["line_em"][0], 10)
 
-    def test_06_enforce_shortens_without_truncating_mid_word(self):
+    def test_06_single_line_overflow_fails_instead_of_truncating(self):
         capacity = {
-            "s01_sh1": {"safe_chars": 8, "wrap": "none", "max_lines": 1, "paragraphs": 1},
-            "s01_sh2": {"safe_chars": 10, "wrap": "none", "max_lines": 1, "paragraphs": 1},
+            "s01_sh1": {"safe_em": 8, "wrap": "none", "max_lines": 1, "paragraphs": 1},
+            "s01_sh2": {"safe_em": 10, "wrap": "none", "max_lines": 1, "paragraphs": 1},
         }
-        fitted, changes = text_fit.enforce_plan(self._plan(), capacity)
-        self.assertEqual(len(changes), 1)
-        self.assertLessEqual(len(fitted["slides"][0]["replacements"][1]["text"]), 10)
-        self.assertEqual(text_fit.validate_plan(fitted, capacity), [])
+        with self.assertRaises(text_fit.TextOverflowError) as ctx:
+            text_fit.enforce_plan(self._plan(), capacity)
+        self.assertEqual(ctx.exception.problems[0]["slot_id"], "s01_sh2")
+        self.assertIn("长句子会横向溢出", ctx.exception.problems[0]["text"])
 
     def test_07_multiline_box_splits_instead_of_truncating(self):
         capacity = {
-            "s01_sh2": {"safe_chars": 8, "wrap": "square", "max_lines": 4,
+            "s01_sh2": {"safe_em": 8, "wrap": "square", "max_lines": 4,
                         "paragraphs": 4},
         }
         plan = {"slides": [{"source_slide": 1, "replacements": [
@@ -124,14 +125,16 @@ class TextFitTests(unittest.TestCase):
         self.assertEqual(len(changes), 1)
         lines = fitted["slides"][0]["replacements"][0]["text"].split("\n")
         self.assertGreater(len(lines), 1, "可换行多段框应分行而非截断")
-        self.assertTrue(all(len(line) <= 8 for line in lines))
+        self.assertTrue(all(text_fit._line_em(line) <= 8 for line in lines))
+        self.assertEqual("".join(lines), "遵医嘱由禁食逐步过渡，少量多餐，观察耐受情况。")
         self.assertEqual(text_fit.validate_plan(fitted, capacity), [])
 
     def test_08_split_lines_preserves_full_sentence(self):
         text = "遵医嘱由禁食逐步过渡，少量多餐，观察耐受情况。"
         lines = text_fit._split_lines(text, 8, 5)
         self.assertGreater(len(lines), 1)
-        self.assertTrue(all(len(line) <= 8 for line in lines))
+        self.assertTrue(all(text_fit._line_em(line) <= 8 for line in lines))
+        self.assertEqual("".join(lines), text)
 
 
 if __name__ == "__main__":

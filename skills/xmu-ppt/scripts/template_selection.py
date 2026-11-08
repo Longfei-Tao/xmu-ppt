@@ -14,26 +14,34 @@ import xml.etree.ElementTree as ET
 
 DECKS = Path(__file__).resolve().parents[1] / 'templates/decks'
 INDEX = DECKS / 'catalog.json'
+GATE_FILE = Path(__file__).resolve().parents[3] / 'output' / '.selection.json'
 
 
 def catalog():
-    """Built-in decks actually present in this installation.
+    """Built-in decks actually usable in this installation.
 
-    The skill-only release ZIP ships no built-in originals or cover images
-    (they are outside the MIT grant, see LICENSE-ASSETS). Skip those entries
-    instead of breaking the whole picker: such users supply their own
-    templates through the local gallery.
+    The skill-only release ZIP ships no ``preview.png`` and no ``source.pptx``
+    (they are outside the MIT grant, see LICENSE-ASSETS), but it does ship the
+    SVG layouts. Such decks stay selectable through the SVG route instead of
+    disappearing from the picker.
     """
     decks = json.loads(INDEX.read_text(encoding='utf-8'))
     available = []
     for deck in decks:
         folder = DECKS / deck['id']
-        if not (folder / 'preview.png').is_file():
+        has_cover = (folder / 'preview.png').is_file()
+        has_svg = any((folder / name).is_file()
+                      for name in ('01_cover.svg', '03_content.svg'))
+        if not (has_cover or has_svg):
             continue
         native = all((folder / name).is_file() for name in
                      ('source.pptx', 'source.slide_library.json', 'layout_index.json'))
-        deck['routes'] = ['svg', 'native'] if native else ['svg']
-        deck['preview'] = f"previews/{deck['number']:02d}.png"
+        routes = (['svg'] if has_svg else []) + (['native'] if native else [])
+        if not routes:
+            continue
+        deck['routes'] = routes
+        deck['preview'] = (f"previews/{deck['number']:02d}.png" if has_cover
+                           else f"previews/{deck['number']:02d}-cover.svg")
         available.append(deck)
     return available
 
@@ -41,11 +49,15 @@ def catalog():
 def preview_svg(number, page):
     """Embed local images so previews work identically on Pages and localhost."""
     deck = next((d for d in catalog() if d['number'] == number), None)
-    files = {'content': '03_content.svg', 'chapter': '02_chapter.svg'}
+    files = {'cover': '01_cover.svg', 'content': '03_content.svg',
+             'chapter': '02_chapter.svg'}
     if deck is None or page not in files:
         raise ValueError('Unknown template preview')
     folder = DECKS / deck['id']
-    root = ET.fromstring((folder / files[page]).read_bytes())
+    path = folder / files[page]
+    if not path.is_file():
+        raise ValueError('Preview unavailable')
+    root = ET.fromstring(path.read_bytes())
     for element in root.iter():
         for attr in ('href', '{http://www.w3.org/1999/xlink}href'):
             href = element.get(attr)
@@ -125,6 +137,23 @@ def _validate(template_id, route):
     return deck
 
 
+def _bridge_gate(deck, template_id, route, source):
+    """把项目级选择同步到 idea_to_ppt 的全局门禁，避免两套流程各说各话。"""
+    gate = {
+        'status': 'confirmed',
+        'template_id': template_id,
+        'serial': deck.get('serial') or f"{int(deck.get('number', 0)):03d}",
+        'selection': str(deck.get('number') or template_id),
+        'template_name': deck.get('name'),
+        'page_count': deck.get('page_count'),
+        'route': route,
+        'source': source,
+        'confirmed_at': datetime.now(timezone.utc).isoformat(),
+        'note': '由模板选择页 confirm 写入，供 idea_to_ppt 的 build 门禁校验。',
+    }
+    _write(GATE_FILE, gate)
+
+
 def confirm(project, request_id, template_id, route, source):
     folder = Path(project) / 'confirm_ui'
     request = json.loads((folder / 'recommendations.json').read_text(encoding='utf-8'))
@@ -153,6 +182,7 @@ def confirm(project, request_id, template_id, route, source):
             result['serial'] = deck.get('serial')
             result['source_path'] = str(origin)
         _write(path, result)
+        _bridge_gate(deck, template_id, route, source)
         return result
 
 

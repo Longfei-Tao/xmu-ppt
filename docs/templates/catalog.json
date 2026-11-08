@@ -9,12 +9,12 @@
       "开题",
       "毕业汇报"
     ],
+    "serial": "001",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/01.png",
-    "serial": "001"
+    "preview": "previews/01.png"
   },
   {
     "number": 2,
@@ -26,12 +26,12 @@
       "课程",
       "读书报告"
     ],
+    "serial": "002",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/02.png",
-    "serial": "002"
+    "preview": "previews/02.png"
   },
   {
     "number": 3,
@@ -43,11 +43,11 @@
       "工作汇报",
       "项目进展"
     ],
+    "serial": "003",
     "routes": [
       "svg"
     ],
-    "preview": "previews/03.png",
-    "serial": "003"
+    "preview": "previews/03.png"
   },
   {
     "number": 4,
@@ -58,12 +58,12 @@
       "项目进展",
       "组会"
     ],
+    "serial": "004",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/04.png",
-    "serial": "004"
+    "preview": "previews/04.png"
   },
   {
     "number": 5,
@@ -74,12 +74,12 @@
       "毕业汇报",
       "课程"
     ],
+    "serial": "005",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/05.png",
-    "serial": "005"
+    "preview": "previews/05.png"
   },
   {
     "number": 6,
@@ -90,12 +90,12 @@
       "答辩",
       "工作汇报"
     ],
+    "serial": "006",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/06.png",
-    "serial": "006"
+    "preview": "previews/06.png"
   },
   {
     "number": 7,
@@ -106,12 +106,12 @@
       "课程",
       "工作汇报"
     ],
+    "serial": "007",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/07.png",
-    "serial": "007"
+    "preview": "previews/07.png"
   },
   {
     "number": 8,
@@ -122,12 +122,12 @@
       "人文社科",
       "课程"
     ],
+    "serial": "008",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/08.png",
-    "serial": "008"
+    "preview": "previews/08.png"
   },
   {
     "number": 9,
@@ -138,12 +138,12 @@
       "人文社科",
       "课程"
     ],
+    "serial": "009",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/09.png",
-    "serial": "009"
+    "preview": "previews/09.png"
   },
   {
     "number": 10,
@@ -154,12 +154,12 @@
       "毕业汇报",
       "课程"
     ],
+    "serial": "010",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/10.png",
-    "serial": "010"
+    "preview": "previews/10.png"
   },
   {
     "number": 11,
@@ -170,12 +170,12 @@
       "课程",
       "组会"
     ],
+    "serial": "011",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/11.png",
-    "serial": "011"
+    "preview": "previews/11.png"
   },
   {
     "number": 12,
@@ -186,12 +186,12 @@
       "答辩",
       "开题"
     ],
+    "serial": "012",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/12.png",
-    "serial": "012"
+    "preview": "previews/12.png"
   },
   {
     "number": 13,
@@ -202,12 +202,12 @@
       "人文社科",
       "读书报告"
     ],
+    "serial": "013",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/13.png",
-    "serial": "013"
+    "preview": "previews/13.png"
   },
   {
     "number": 14,
@@ -218,12 +218,12 @@
       "答辩",
       "开题"
     ],
+    "serial": "014",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/14.png",
-    "serial": "014"
+    "preview": "previews/14.png"
   },
   {
     "number": 15,
@@ -235,11 +235,11 @@
       "开题",
       "毕业汇报"
     ],
+    "serial": "015",
     "routes": [
       "svg",
       "native"
     ],
-    "preview": "previews/15.png",
-    "serial": "015"
+    "preview": "previews/15.png"
   }
 ]

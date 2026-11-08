@@ -1,6 +1,6 @@
 {
   "schema": "template_fill_pptx_library.v1",
-  "source_pptx": "D:\\Coding\\xmu-ppt-master\\skills\\xmu-ppt\\templates\\decks\\厦门大学_主题_鹭江夜澜\\source.pptx",
+  "source_pptx": "source.pptx",
   "slide_count": 70,
   "canvas_px": {
     "width": 1280,

@@ -22,9 +22,39 @@ import zipfile
 from pathlib import Path
 
 AUDIO_EXT = {"mp3", "wav", "wma", "m4a", "mid", "midi", "aac", "aiff", "au", "wav"}
-AUDIO_TYPE_RE = re.compile(
-    r'<Relationship\b[^>]*\bType="[^"]*/(?:audio|media)"[^>]*/>', re.I
-)
+REL_TAG_RE = re.compile(r'<Relationship\b[^>]*/>', re.I)
+REL_TYPE_RE = re.compile(r'\bType="([^"]*)"', re.I)
+REL_TARGET_RE = re.compile(r'\bTarget="([^"]*)"', re.I)
+
+
+def _is_audio_relationship(tag: str) -> bool:
+    """只认音频关系：/audio，或 /media 且目标扩展名是音频。
+
+    不能把 /media 一律删掉——视频也走 media 关系，误删会让视频丢失。
+    """
+    match = REL_TYPE_RE.search(tag)
+    rel_type = (match.group(1) if match else "").lower().rstrip("/")
+    if rel_type.endswith("/audio"):
+        return True
+    if not rel_type.endswith("/media"):
+        return False
+    target = REL_TARGET_RE.search(tag)
+    return bool(target and AUDIO_PART_RE.search(target.group(1)))
+
+
+def _strip_audio_relationships(text: str) -> tuple[str, int]:
+    count = 0
+
+    def replace(match: re.Match) -> str:
+        nonlocal count
+        if not _is_audio_relationship(match.group(0)):
+            return match.group(0)
+        count += 1
+        return ""
+
+    return REL_TAG_RE.sub(replace, text), count
+
+
 AUDIO_DEFAULT_RE = re.compile(
     r'<Default\b[^>]*\bExtension="(?:' + "|".join(sorted(AUDIO_EXT)) + r')"[^>]*/>', re.I
 )
@@ -87,7 +117,9 @@ def scan(path: Path) -> dict:
                 continue
             text = zf.read(name).decode("utf-8", "replace")
             if name.endswith(".rels"):
-                result["audio_relationships"] += len(AUDIO_TYPE_RE.findall(text))
+                result["audio_relationships"] += sum(
+                    1 for tag in REL_TAG_RE.findall(text) if _is_audio_relationship(tag)
+                )
             if name == "[Content_Types].xml":
                 continue
             result["audio_refs"] += (
@@ -124,7 +156,7 @@ def clean_text(name: str, text: str, stats: dict) -> str:
         stats.setdefault(key, 0)
 
     if name.endswith(".rels"):
-        text, n = AUDIO_TYPE_RE.subn("", text)
+        text, n = _strip_audio_relationships(text)
         stats["audio_relationships"] += n
         return text
 

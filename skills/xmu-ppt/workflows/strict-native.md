@@ -26,7 +26,7 @@
 8. **出稿 + 自动校验**：`apply` 生成 PPTX 并立即跑白名单比对；不通过直接报错，不交付。
 9. **交付**：只给本机 PPTX，附版权与推广文字提示。
 
-### 具体命令（在 `D:\Coding\xmu-ppt-master` 下执行）
+### 具体命令（在仓库根目录执行）
 
 ```bash
 PY=.venv/Scripts/python.exe
@@ -98,7 +98,7 @@ $PY $S verify MED-001 output/strict-native/MED-001.pptx \
 
 ## 六、边界与红线
 
-- **版权**：外部模板授权状态一律 `unknown`、不可再分发。原件留在本机 `D:\桌面\PPT模板`，索引只入库文字元数据；`local-gallery/` 预览图与全部成品均被 `.gitignore` 忽略。**不得上传 GitHub、公开网盘、对外分发或商用**。
+- **版权**：外部模板授权状态一律 `unknown`、不可再分发。原件留在你自己的本机模板目录（用 `root.local.json` 指向），索引只入库文字元数据；`local-gallery/` 预览图与全部成品均被 `.gitignore` 忽略。**不得上传 GitHub、公开网盘、对外分发或商用**。
 - **推广文字**：29 套模板含模板站推广文字。严格保真会原样保留未点名文本框，交付时必须主动说明，不要假装已清理。
 - **医疗数据**：模板属医护主题，若填入真实患者信息，另涉敏感个人信息保护，`output/` 目录不得随意外发。
 - **原件漂移**：`apply` 会校验原件 sha256 与索引一致；文件被移动/替换时报错，重跑 `external_templates.py scan` 与 `doctor`，不要加 `--skip-hash` 绕过。

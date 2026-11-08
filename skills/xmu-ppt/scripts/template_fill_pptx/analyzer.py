@@ -35,7 +35,7 @@ CHAPTER_KEYWORDS = ("chapter", "part", "section", "章节", "部分")
 def _analyze_tables(slide_root: ET.Element, source_slide: int) -> list[dict[str, Any]]:
     tables: list[dict[str, Any]] = []
     for order, container in enumerate(_table_containers(slide_root), start=1):
-        shape_id, _shape_name = _shape_identity(container, order)
+        shape_id, shape_name = _shape_identity(container, order)
         rows: list[dict[str, Any]] = []
         max_columns = 0
         for row_index, row in enumerate(container.findall(".//a:tbl/a:tr", NS)):
@@ -53,6 +53,8 @@ def _analyze_tables(slide_root: ET.Element, source_slide: int) -> list[dict[str,
         tables.append(
             {
                 "table_id": f"s{source_slide:02d}_tbl{shape_id}",
+                "shape_id": shape_id,
+                "shape_name": shape_name,
                 "row_count": len(rows),
                 "column_count": max_columns,
                 "rows": rows,
@@ -65,10 +67,14 @@ def _analyze_charts(zf: zipfile.ZipFile, slide_root: ET.Element, slide_ref: Slid
     charts: list[dict[str, Any]] = []
     relationships = _slide_relationships(zf, slide_ref.rels_name)
     for order, container in enumerate(_chart_containers(slide_root), start=1):
-        shape_id, _shape_name = _shape_identity(container, order)
+        shape_id, shape_name = _shape_identity(container, order)
         chart = container.find(".//c:chart", NS)
         rel_id = chart.attrib.get(_qn(NS["r"], "id")) if chart is not None else ""
-        payload: dict[str, Any] = {"chart_id": f"s{slide_ref.index:02d}_ch{shape_id}"}
+        payload: dict[str, Any] = {
+            "chart_id": f"s{slide_ref.index:02d}_ch{shape_id}",
+            "shape_id": shape_id,
+            "shape_name": shape_name,
+        }
         payload.update(empty_chart_data())
         rel = relationships.get(rel_id)
         if rel and rel.get("type") == CHART_REL_TYPE:
@@ -196,6 +202,8 @@ def analyze_pptx(pptx_path: Path) -> dict[str, Any]:
                 slots.append(
                     {
                         "slot_id": f"s{slide_ref.index:02d}_sh{shape_id}",
+                        "shape_id": shape_id,
+                        "shape_name": shape_name,
                         "role": role,
                         "text": text,
                         "paragraph_count": len(paragraphs),

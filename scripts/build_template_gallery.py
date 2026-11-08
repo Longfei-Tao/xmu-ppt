@@ -23,8 +23,9 @@ def build():
     (destination / 'catalog.json').write_text(json.dumps(decks, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     for deck in decks:
         number = deck['number']
-        shutil.copyfile(DECKS / deck['id'] / 'preview.png', destination / deck['preview'])
-        for page in ('content', 'chapter'):
+        if deck['preview'].endswith('.png'):
+            shutil.copyfile(DECKS / deck['id'] / 'preview.png', destination / deck['preview'])
+        for page in ('cover', 'content', 'chapter'):
             (destination / f'previews/{number:02d}-{page}.svg').write_bytes(preview_svg(number, page))
     print(f'Built gallery with {len(decks)} templates')
 

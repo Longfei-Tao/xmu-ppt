@@ -34,21 +34,21 @@ description: >
 > [!IMPORTANT]
 > ## 🎓 厦门大学模板优先（本仓库定制）
 >
-> 本插件默认产出厦门大学风格 PPT，适用于中文和英文请求。用户仅提供主题或想法时，先按 `workflows/select-template.md` 展示模板并等待选定，再走下面的厦大路线；用户明确要求其他机构风格时，说明本插件的适用范围，不擅自套用厦大标识。
+> 本插件默认产出厦门大学风格 PPT，适用于中文和英文请求。用户仅提供主题或想法时，先按 `workflows/idea-to-ppt.md` 的 `recommend` 展示模板并等待选定，再走下面的厦大路线；`workflows/select-template.md` 只解释画廊分类与路线差异，不再作为独立入口。用户明确要求其他机构风格时，说明本插件的适用范围，不擅自套用厦大标识。
 >
-> **第一步：选模板并确定路线。** 先执行 [`workflows/select-template.md`](workflows/select-template.md)。用户指定模板或明确授权 AI 代选时，记录选择后继续；其余情况等待明确选择。 SVG 路线可用 15 套，原生填充可用 14 套（南强蔚蓝缺少原生源文件），区别只在「要不要动原模板」：
+> **第一步：选模板并确定路线。** 先执行 [`workflows/idea-to-ppt.md`](workflows/idea-to-ppt.md) 的 `recommend`（唯一入口）。用户指定模板或明确授权 AI 代选时，记录选择后继续；其余情况等待明确选择。 SVG 路线可用 15 套，原生填充可用 14 套（南强蔚蓝缺少原生源文件），区别只在「要不要动原模板」：
 >
 > | 用户信号 | 路线 | 底层 |
 > | --- | --- | --- |
 > | 提到「保留原样式 / 别改我的模板」、上传 `.pptx` 并要求保留其原生版式、要表格或图表原样保留 | **原生填充** → [`workflows/xmu-native.md`](workflows/xmu-native.md) | 克隆原页 + 改 OOXML，不生成 SVG |
 > | 只给主题或文字材料，选定视觉模板后采用灵活排版 | **SVG 出稿** → [`workflows/xmu-quick.md`](workflows/xmu-quick.md) | 逐页手写 SVG 再导出 |
-> | 从「本地模板库」选定**外部模板**（200 套，ID 如 `MED-001`）并要求「完整保留每一页原版式、只换文字」 | **严格保真** → [`workflows/strict-native.md`](workflows/strict-native.md) | 整份复制原 PPTX，只覆盖被点名页的文字 XML |
+> | 从「本机外部模板库」选定外部模板（需先用 `external_templates.py scan` 登记，作者本机 200 套，ID 如 `MED-001`）并要求「完整保留每一页原版式、只换文字」 | **严格保真** → [`workflows/strict-native.md`](workflows/strict-native.md) | 整份复制原 PPTX，只覆盖被点名页的文字 XML |
 >
 > **严格保真是独立新增的第三条路线**，仅作用于 `templates/external/` 登记的外部模板，不改变上述两条路线与内置 15 套的任何行为。用户在本机 `local-gallery/index.html` 浏览并复制含模板 ID 的选用指令后，按 `workflows/strict-native.md` 执行 `doctor → inspect → scaffold → apply`；全页同序 1:1、图片/图形/装饰/占位区/备注/切换效果/未引用素材字节级保留，禁止删页重排。仅当用户明确指定图片或素材、且三道授权闸门全部打开时才允许替换图片。总开关 `templates/external/feature_flags.json` 的 `strict_native` 置 `false` 即完整回退。外部模板授权状态为 unknown、不可再分发，成品只留本机，不得上传或公开分发。
 >
-> 上传的 PPTX 如果只是事实材料，走 SVG 路线重新组织；不能仅凭文件格式判定原生填充。用户要求保留上传模板时，按 [`workflows/template-fill-pptx.md`](workflows/template-fill-pptx.md) 分析并填充用户的源文件，不能替换为内置模板。仍需遵守厦大标识、内容真实性和视觉复核要求。
+> 上传的 PPTX 如果只是事实材料，按默认流程选视觉模板后做原生文字填充；不能仅凭文件格式判定原生填充。用户要求保留上传模板时，按 [`workflows/template-fill-pptx.md`](workflows/template-fill-pptx.md) 分析并填充用户的源文件，不能替换为内置模板。仍需遵守厦大标识、内容真实性和视觉复核要求。
 >
-> 只给主题时推荐 SVG 出稿，仍须先等待用户选定视觉模板。点击选用模板本身不构成保留原版式的要求。原生填充前先检查三个必需文件是否存在；南强蔚蓝仅支持 SVG。用户要求保留南强蔚蓝原模板时，说明缺少源 PPTX，等待用户提供源文件或同意 SVG 重绘。
+> 只给主题时仍走默认的原生文字填充路线（`idea-to-ppt.md`），仍须先等待用户选定视觉模板；只有用户明确要求「灵活排版 / 重新设计版式」时才走 SVG 出稿。点击选用模板本身不构成保留原版式的要求。原生填充前先检查三个必需文件是否存在；南强蔚蓝仅支持 SVG。用户要求保留南强蔚蓝原模板时，说明缺少源 PPTX，等待用户提供源文件或同意 SVG 重绘。
 >
 > **优先级：** 厦大路线明确覆盖下文通用流程的 Eight Confirmations、模板确认、策略师报告和阶段硬停。模板选择是厦大路线的必经环节；确认后按对应工作流连续执行。保留逐页创作和质量门禁。
 >

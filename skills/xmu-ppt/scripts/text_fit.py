@@ -11,8 +11,8 @@
 ------------------------------------
 1. 从模板源 XML 读取每个文本框的 wrap、内边距、字号；从 slide_library
    读取几何（px），算出「单行可容纳字数」；
-2. 出稿前对 plan 做容量校验：超容量的文案必须缩短或分行；
-3. 提供自动兜底：按容量安全截断（优先在标点处断句），并写入检查报告；
+2. 出稿前对 plan 做容量校验：超容量的文案优先按视觉宽度分行；
+3. 无法分行时直接报错，绝不静默截断（标题、正文、标签一视同仁）；
 4. 三项检查中的「文字适配布局」纳入绝对容量结果。
 """
 from __future__ import annotations
@@ -28,10 +28,55 @@ A = "{http://schemas.openxmlformats.org/drawingml/2006/main}"
 P = "{http://schemas.openxmlformats.org/presentationml/2006/main}"
 EMU_PER_PX = 914400 / 96
 SLIDE_RE = re.compile(r"ppt/slides/slide(\d+)\.xml$")
+# 容量估算的安全余量：在理论宽度上再留 2%，抵消字体差异与字距
+SAFETY = 0.98
+LINE_HEIGHT = 1.2
+
+
+class TextOverflowError(ValueError):
+    """文案在文本框内既放不下、也无法通过分行解决。"""
+
+    def __init__(self, problems: list[dict]):
+        self.problems = problems
+        super().__init__(self._message())
+
+    def _message(self) -> str:
+        parts = []
+        for item in self.problems:
+            parts.append(
+                f"第 {item.get('slide')} 页 {item.get('slot_id')}："
+                f"{item.get('lines')} 行 / 单行约 {item.get('safe_em')} 字，"
+                f"原文「{item.get('text')}」"
+            )
+        return "文字放不进模板文本框，请改写文案后重试：" + "；".join(parts)
+
+
+def _char_em(ch: str) -> float:
+    """按视觉宽度估算字符占几个中文字宽（em）。"""
+    code = ord(ch)
+    if (
+        0x2E80 <= code <= 0x9FFF
+        or 0xAC00 <= code <= 0xD7AF
+        or 0xF900 <= code <= 0xFAFF
+        or 0xFF00 <= code <= 0xFF60
+        or 0xFFE0 <= code <= 0xFFE6
+    ):
+        return 1.0
+    if ch == " ":
+        return 0.3
+    if ch.isdigit():
+        return 0.55
+    if ch.isupper():
+        return 0.64
+    return 0.52
+
+
+def _line_em(text: str) -> float:
+    return sum(_char_em(ch) for ch in text)
 
 
 def _shape_meta(root: ET.Element) -> dict[str, dict]:
-    """按 cNvPr id 收集 wrap / 内边距 / 最大字号（百分之一磅）。"""
+    """按 cNvPr id 收集 wrap / 内边距 / 字号 / 自动调整方式。"""
     out: dict[str, dict] = {}
     for sp in root.iter(P + "sp"):
         nv = sp.find(".//" + P + "cNvPr")
@@ -44,11 +89,17 @@ def _shape_meta(root: ET.Element) -> dict[str, dict]:
         sizes = [
             int(m) for m in re.findall(r'\bsz="(\d+)"', ET.tostring(sp, encoding="unicode"))
         ]
+        autofit = "none"
+        if body is not None and body.find(A + "spAutoFit") is not None:
+            autofit = "spAutoFit"
+        elif body is not None and body.find(A + "normAutofit") is not None:
+            autofit = "normAutofit"
         meta = {
             "wrap": (body.get("wrap") if body is not None else None) or "square",
             "l_ins": int(body.get("lIns", 91440)) if body is not None else 91440,
             "r_ins": int(body.get("rIns", 91440)) if body is not None else 91440,
             "font_pt": max(sizes) / 100 if sizes else None,
+            "autofit": autofit,
         }
         out[sid] = meta
     return out
@@ -96,12 +147,17 @@ def build_capacity_map(source: Path, library: dict) -> dict[str, dict]:
                 font_px = (font_pt * 96 / 72) if font_pt else _fallback_font_px(geometry, slot.get("role", ""))
             padding = (meta.get("l_ins", 91440) + meta.get("r_ins", 91440)) / EMU_PER_PX
             usable = max(width - padding - 4, 12)
-            # 中文按一个字号宽估算，保守留 5% 余量
-            per_line = max(int(usable / max(font_px * 1.05, 1)), 2)
+            # 以「em」为单位估算单行容量：中文 1em，英文/数字约 0.55em
+            per_line_em = usable / max(font_px, 1)
+            # 预留 2% 字宽误差的安全余量：宁可高估文案宽度，也不让它溢出
+            safe_em = max(round(per_line_em * SAFETY, 2), 2.0)
             wrap_none = meta.get("wrap") == "none"
             paragraphs = max(int((slot.get("text_metrics") or {}).get("paragraph_count") or 1), 1)
             # 多段落文本框本来就按 N 行设计，行数下限取其段落数
-            max_lines = 1 if wrap_none else max(int(height / max(font_px * 1.3, 1)), paragraphs)
+            max_lines = 1 if wrap_none else max(int(height / max(font_px * LINE_HEIGHT, 1)), paragraphs)
+            # spAutoFit 的框会随文字增高，不能把它当成固定行数；放宽到 12 行只防明显失控
+            if not wrap_none and meta.get("autofit") == "spAutoFit":
+                max_lines = max(max_lines, 12)
             result[slot_id] = {
                 "slide": index,
                 "shape_id": shape_id,
@@ -109,57 +165,87 @@ def build_capacity_map(source: Path, library: dict) -> dict[str, dict]:
                 "width": round(width, 1),
                 "height": round(height, 1),
                 "font_px": round(font_px, 2),
-                "per_line": per_line,
+                "per_line": max(int(safe_em), 2),
                 "max_lines": max_lines,
                 "paragraphs": paragraphs,
-                # 单个 run 的安全上限：填充器会把整句塞进第一个 run
-                "safe_chars": per_line,
+                "autofit": meta.get("autofit", "none"),
+                # 单个 run 的安全上限（em）；不再用于截断，只用于校验/提示
+                "safe_chars": max(int(safe_em), 2),
+                "safe_em": safe_em,
             }
     return result
 
 
-def _shorten(text: str, limit: int) -> str:
-    """按容量安全缩短，优先在标点处断句，避免半截词。"""
-    text = " ".join(text.split())
-    if len(text) <= limit:
-        return text
-    window = text[:limit]
-    for mark in ("。", "、", "，", "；", "：", " ", "|", "/", "·"):
-        pos = window.rfind(mark)
-        if pos >= max(4, limit // 2):
-            return window[:pos].rstrip("、，；：·|/ ")
-    return window.rstrip("、，；：·|/ ")
+PUNCT = "、，；：。！？,;:!?）)》」』"
+TOKEN_RE = re.compile(rf"[^{PUNCT}]+[{PUNCT}]?")
 
 
-def _split_lines(text: str, limit: int, max_lines: int) -> list[str]:
-    """按中文标点把长句切成不超过 limit 的短行，保持语义完整。"""
+def _split_lines(text: str, limit_em: float, max_lines: int | None = None) -> list[str]:
+    """按视觉宽度把文字切成完整短行，不丢字。
+
+    ``limit_em`` 是单行可容纳的中文字宽数；``max_lines`` 仅作兼容参数，
+    不在函数内截断——行数过多应由调用方判定为溢出并报错。
+    """
     text = " ".join(text.replace("\n", " ").split())
-    if len(text) <= limit:
+    if not text:
+        return [""]
+    if _line_em(text) <= limit_em:
         return [text]
-    chunks = re.split(r"(?<=[、，；：。！？])", text)
     lines: list[str] = []
     current = ""
-    for chunk in chunks:
-        if not chunk:
+    for token in TOKEN_RE.findall(text):
+        if _line_em(current + token) <= limit_em:
+            current += token
             continue
-        while len(chunk) > limit:
-            if current:
-                lines.append(current)
-                current = ""
-            lines.append(chunk[:limit])
-            chunk = chunk[limit:]
-        if len(current) + len(chunk) <= limit:
-            current += chunk
-        else:
+        if current:
             lines.append(current)
-            current = chunk
+            current = ""
+        if _line_em(token) <= limit_em:
+            current = token
+            continue
+        # 单个语义块本身超宽时逐字切，仍不丢字
+        piece = ""
+        for ch in token:
+            if piece and _line_em(piece + ch) > limit_em:
+                lines.append(piece)
+                piece = ""
+            piece += ch
+        if piece:
+            current = piece
     if current:
         lines.append(current)
-    return [line for line in lines if line][:max_lines]
+    return [line for line in lines if line]
+
+
+def _limit_em(info: dict) -> float:
+    """兼容旧容量表：优先视觉宽度，其次回退到字符数。"""
+    value = info.get("safe_em")
+    if not isinstance(value, (int, float)) or value <= 0:
+        value = info.get("safe_chars", 2)
+    return max(float(value), 2.0)
+
+
+def _max_lines(info: dict) -> int:
+    if info.get("wrap") != "square":
+        return 1
+    return max(int(info.get("max_lines") or 1), 1)
+
+
+def _overflow_entry(item: dict, rep: dict, info: dict, lines: list[str]) -> dict:
+    return {
+        "slide": item.get("source_slide"),
+        "slot_id": rep.get("slot_id"),
+        "lines": len(lines),
+        "max_lines": _max_lines(info),
+        "line_em": [round(_line_em(line), 2) for line in lines],
+        "safe_em": _limit_em(info),
+        "wrap": info["wrap"],
+        "text": str(rep.get("text", ""))[:60],
+    }
 
 
 def validate_plan(plan: dict, capacity: dict) -> list[dict]:
-    """返回所有超出文本框容量的文案。"""
+    """返回所有超出文本框容量的文案（按视觉宽度，不按字符数）。"""
     problems = []
     for item in plan.get("slides", []):
         for rep in item.get("replacements", []) or []:
@@ -169,26 +255,16 @@ def validate_plan(plan: dict, capacity: dict) -> list[dict]:
             if not info or not text:
                 continue
             lines = text.split("\n")
-            limit = info["safe_chars"]
-            max_lines = max(info["max_lines"], 1) if info["wrap"] == "square" else 1
-            too_long = max((len(line) for line in lines), default=0) > limit
-            too_many = len(lines) > max_lines
-            if too_long or too_many:
-                problems.append({
-                    "slide": item.get("source_slide"),
-                    "slot_id": slot_id,
-                    "length": max((len(line) for line in lines), default=0),
-                    "lines": len(lines),
-                    "safe_chars": limit,
-                    "max_lines": max_lines,
-                    "wrap": info["wrap"],
-                    "text": text[:60],
-                })
+            limit = _limit_em(info)
+            too_wide = any(_line_em(line) > limit for line in lines)
+            too_many = len(lines) > _max_lines(info)
+            if too_wide or too_many:
+                problems.append(_overflow_entry(item, rep, info, lines))
     return problems
 
 
 def enforce_plan(plan: dict, capacity: dict) -> tuple[dict, list[dict]]:
-    """出稿前兜底：单行框缩短；可换行多段框按容量分行，保持原有分段结构。
+    """出稿前适配：可换行的框按视觉宽度完整分行；分不下则报错，绝不截断。
 
     返回 (新 plan, 修改记录)。绝不改动模板版式，只调整填入的文字。
     """
@@ -196,33 +272,40 @@ def enforce_plan(plan: dict, capacity: dict) -> tuple[dict, list[dict]]:
 
     out = copy.deepcopy(plan)
     changes = []
+    problems = []
     for item in out.get("slides", []):
         for rep in item.get("replacements", []) or []:
             info = capacity.get(rep.get("slot_id"))
             text = str(rep.get("text", ""))
             if not info or not text:
                 continue
-            limit = info["safe_chars"]
+            limit = _limit_em(info)
             lines = text.split("\n")
-            fits = (all(len(line) <= limit for line in lines)
-                    and (len(lines) <= max(info["max_lines"], 1) or info["wrap"] == "square"))
-            if fits:
+            if (all(_line_em(line) <= limit for line in lines)
+                    and len(lines) <= _max_lines(info)):
                 continue
-            if info["wrap"] == "none" or info["max_lines"] <= 1 or info["paragraphs"] <= 1:
-                new_text = _shorten(text, limit)
-            else:
-                # 多行框：按原段落数分行，填充器会把每行写进对应段落
-                allowed = min(info["max_lines"], max(info["paragraphs"], 1))
-                new_text = "\n".join(_split_lines(text, limit, max(allowed, 1)))
+            # wrap="none" 的单行框没有换行能力，只能由使用者改写文案
+            if info["wrap"] != "square":
+                problems.append(_overflow_entry(item, rep, info, lines))
+                continue
+            new_lines: list[str] = []
+            for line in lines:
+                new_lines.extend(_split_lines(line, limit))
+            if len(new_lines) > _max_lines(info):
+                problems.append(_overflow_entry(item, rep, info, new_lines))
+                continue
+            new_text = "\n".join(new_lines)
             changes.append({
                 "slide": item.get("source_slide"),
                 "slot_id": rep.get("slot_id"),
                 "before": text[:60],
                 "after": new_text[:60].replace("\n", " / "),
-                "safe_chars": limit,
+                "safe_em": limit,
                 "wrap": info["wrap"],
             })
             rep["text"] = new_text
+    if problems:
+        raise TextOverflowError(problems)
     return out, changes
 
 

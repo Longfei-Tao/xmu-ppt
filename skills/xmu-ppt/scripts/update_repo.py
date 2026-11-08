@@ -19,7 +19,7 @@ from pathlib import Path
 TOOLS_DIR = Path(__file__).resolve().parent
 SKILL_DIR = TOOLS_DIR.parent
 REPO_ROOT = SKILL_DIR.parent.parent
-REQUIREMENTS_FILE = REPO_ROOT / "requirements.txt"
+REQUIREMENTS_FILE = SKILL_DIR / "requirements.txt"
 
 
 def parse_args() -> argparse.Namespace:

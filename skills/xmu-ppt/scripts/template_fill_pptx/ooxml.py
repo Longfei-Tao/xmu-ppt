@@ -187,10 +187,16 @@ def _container_geometry(container: ET.Element) -> dict[str, int | None]:
 
 def _text_containers(slide_root: ET.Element) -> list[ET.Element]:
     containers: list[ET.Element] = []
-    for tag in ("p:sp", "p:graphicFrame"):
-        for element in slide_root.findall(f".//{tag}", NS):
-            if element.find(".//p:txBody", NS) is not None or element.findall(".//a:t", NS):
-                containers.append(element)
+    for element in slide_root.findall(".//p:sp", NS):
+        if element.find(".//p:txBody", NS) is not None or element.findall(".//a:t", NS):
+            containers.append(element)
+    for element in slide_root.findall(".//p:graphicFrame", NS):
+        # 表格/图表有自己的编辑通道；当成文本槽填充会把整张表写坏
+        if (element.find(".//a:tbl", NS) is not None
+                or element.find(".//c:chart", NS) is not None):
+            continue
+        if element.find(".//p:txBody", NS) is not None or element.findall(".//a:t", NS):
+            containers.append(element)
     return containers
 
 

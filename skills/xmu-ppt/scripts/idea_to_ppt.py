@@ -39,11 +39,10 @@ import text_fit  # noqa: E402
 EXTERNAL = SKILL_ROOT / "templates" / "external"
 CATALOG_FILE = EXTERNAL / "external_catalog.json"
 DUP_FILE = EXTERNAL / "duplicates.json"
-ROOT_LOCAL_FILE = EXTERNAL / "root.local.json"
-SOURCE_MAP_FILE = EXTERNAL / "source_map.local.json"
 DECKS = SKILL_ROOT / "templates" / "decks"
 BUILTIN_CATALOG = DECKS / "catalog.json"
 GALLERY = REPO / "local-gallery" / "index.html"
+PUBLIC_GALLERY = "https://longfei-tao.github.io/xmu-ppt/templates/"
 GATE_FILE = REPO / "output" / ".selection.json"
 SANITIZED_DIR = REPO / "output" / "_sanitized"
 REPORT_DIR = REPO / "output" / "_checks"
@@ -87,13 +86,21 @@ def _write(path: Path, data) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def _gallery_url(template_id: str | None = None, category: str | None = None) -> str:
-    base = GALLERY.resolve().as_uri()
-    if template_id:
-        return base + "#deck=" + quote(template_id, safe="")
+def _gallery_url(template_id: str | None = None, category: str | None = None,
+                 number: str | int | None = None) -> str:
+    """本机有画廊就用 file:// 深链；全新克隆直接指向公开 Pages 画廊。"""
+    if GALLERY.is_file():
+        base = GALLERY.resolve().as_uri()
+        if template_id:
+            return base + "#deck=" + quote(template_id, safe="")
+        if category:
+            return base + "#cat=" + quote(category, safe="")
+        return base
+    if number is not None:
+        return f"{PUBLIC_GALLERY}?deck={int(number):03d}"
     if category:
-        return base + "#cat=" + quote(category, safe="")
-    return base
+        return PUBLIC_GALLERY + "?cat=" + quote(category, safe="")
+    return PUBLIC_GALLERY
 
 
 def _registry() -> dict:
@@ -106,8 +113,17 @@ def resolve_selection(value: str) -> tuple[str, dict]:
     return entry["template_id"], entry
 
 
+def _external_source(template_id: str) -> Path | None:
+    """本机外部模板原件；缺本机配置时安全返回 None，绝不抛错。"""
+    try:
+        from external_selection import source_path
+        return source_path(template_id)
+    except (ImportError, OSError, ValueError):
+        return None
+
+
 def _all_templates() -> list[dict]:
-    """合并内置 15 套与外部 200 套，排除画廊已合并的重复副本。"""
+    """合并内置 15 套与外部 200 套，并标记本机是否真的能出稿。"""
     items: list[dict] = []
     registry = _registry()
     entry_by_id = {e["template_id"]: e for e in registry["entries"]}
@@ -115,15 +131,23 @@ def _all_templates() -> list[dict]:
     for r in _load(CATALOG_FILE)["templates"]:
         if r["id"] in removed:
             continue
+        entry = entry_by_id.get(r["id"], {})
+        if entry.get("status") not in (None, "active"):
+            continue
         items.append({
-            "id": r["id"], "serial": entry_by_id.get(r["id"], {}).get("serial", f"{int(r['number']):03d}"),
+            "id": r["id"], "serial": entry.get("serial", f"{int(r['number']):03d}"),
             "name": r["name"], "style": r.get("style", ""),
             "category": r["primary_category"], "category_name": r["category_name"],
             "pages": r["page_count"], "namespace": "external",
             "tags": r.get("tags", []), "source_key": r.get("source_key"),
+            "route": "native", "usable": _external_source(r["id"]) is not None,
         })
     for r in _load(BUILTIN_CATALOG):
         source = DECKS / r["id"] / "source.pptx"
+        folder = DECKS / r["id"]
+        has_svg = any((folder / name).is_file()
+                      for name in ("01_cover.svg", "03_content.svg"))
+        route = "native" if source.is_file() else ("svg" if has_svg else None)
         pages = None
         if source.exists():
             try:
@@ -131,12 +155,16 @@ def _all_templates() -> list[dict]:
                 pages = len(Presentation(str(source)).slides)
             except Exception:
                 pages = None
+        entry = entry_by_id.get(r["id"], {})
+        if entry.get("status") not in (None, "active"):
+            continue
         items.append({
-            "id": r["id"], "serial": entry_by_id.get(r["id"], {}).get("serial", f"{int(r['number']):03d}"),
+            "id": r["id"], "serial": entry.get("serial", f"{int(r['number']):03d}"),
             "name": r["name"], "style": r.get("style", ""),
             "category": "institution", "category_name": "厦门大学等高校/机构风格",
             "pages": pages, "namespace": "builtin",
             "tags": r.get("tags", []), "source_key": None,
+            "route": route, "usable": route is not None,
         })
     return items
 
@@ -148,12 +176,12 @@ def resolve_source(template_id: str) -> tuple[dict, Path]:
         if item["namespace"] == "builtin":
             path = DECKS / template_id / "source.pptx"
         else:
-            root = Path(_load(ROOT_LOCAL_FILE)["root"])
-            paths = (_load(SOURCE_MAP_FILE, {}) or {}).get("paths", {})
-            rel = paths.get(item["source_key"])
-            if not rel:
-                raise RuntimeError(f"本机映射缺少 {item['source_key']}，请重跑 external_templates.py scan")
-            path = root / rel
+            path = _external_source(template_id)
+            if path is None:
+                raise RuntimeError(
+                    f"模板原件不在本机：{template_id}。请先运行 external_templates.py scan "
+                    "指向你的模板目录，或改选内置厦大模板。"
+                )
         if not path.is_file():
             raise RuntimeError(f"模板原件不存在：{path}")
         return item, path
@@ -198,11 +226,8 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
             value += 2
         return value
 
-    # 默认走原生填充，缺少 source.pptx 的内置模板（如南强蔚蓝）不进入候选
-    usable = [
-        x for x in _all_templates()
-        if not (x["namespace"] == "builtin" and not (DECKS / x["id"] / "source.pptx").is_file())
-    ]
+    # 只推荐本机真的能出稿的模板：缺 source.pptx 的内置模板、缺原件的本机外部模板都不进候选
+    usable = [x for x in _all_templates() if x.get("usable")]
     pool = sorted(usable, key=lambda x: (-score(x), x["serial"]))
     # 命中分类内按相关度挑满；临床类有 55 套，不需要靠别的分类凑数
     chosen, per_cat = [], {}
@@ -225,6 +250,10 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
             seen.add(item["id"])
             if len(chosen) >= limit:
                 break
+    # 纯技能包/全新克隆只有内置厦大模板：主题词完全对不上时不能返回空清单
+    fallback = not chosen
+    if fallback:
+        chosen = pool[:limit]
 
     gate = {
         "status": "waiting", "request_id": secrets.token_urlsafe(16),
@@ -241,13 +270,20 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
         "请先点链接浏览、比较每一页的版式，然后**只报三位序号**（如 `004`）即可选定。",
         "序号是模板的唯一固定编号；纯数字一律按序号解析，不会被当成模板 ID。",
         "在你明确选定之前，我不会开始制作任何页面。", "",
-        "| 序号 | 模板 | 分类 | 风格 | 页数 | 预览链接 |", "|---|---|---|---|---|---|",
+    ]
+    if fallback:
+        lines += ["> 本机没有与该主题完全匹配的专用模板，以下为全部可用模板（均为厦大风格）。", ""]
+    lines += [
+        "| 序号 | 模板 | 分类 | 风格 | 页数 | 出稿路线 | 预览链接 |",
+        "|---|---|---|---|---|---|---|",
     ]
     for item in chosen:
         pages = f"{item['pages']} 页" if item["pages"] else "—"
+        route = "原生填充" if item.get("route") == "native" else "SVG 灵活排版"
         lines.append(
             f"| `{item['serial']}` | {item['name']}（`{item['id']}`） | {item['category_name']} | "
-            f"{item['style']} | {pages} | [看每一页]({_gallery_url(template_id=item['id'])}) |"
+            f"{item['style']} | {pages} | {route} | "
+            f"[看每一页]({_gallery_url(template_id=item['id'], number=item['serial'])}) |"
         )
     cat_names = {
         c["id"]: c["name"]
@@ -256,7 +292,7 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
     lines += [
         "", "按分类浏览：",
         *[f"- [{cat_names.get(c, c)}]({_gallery_url(category=c)})" for c in top_cats],
-        "", f"本地画廊入口：{GALLERY}",
+        "", f"画廊入口：{GALLERY if GALLERY.is_file() else PUBLIC_GALLERY}",
     ]
     gate["markdown"] = "\n".join(lines)
     _write(GATE_FILE, gate)
@@ -276,14 +312,27 @@ def confirm(selection: str, request_id: str | None = None) -> dict:
     # 纯数字按固定序号解析；模板 ID 仍可用，但绝不与序号混淆
     template_id, entry = resolve_selection(selection)
     outside = template_id not in gate.get("candidates", [])
-    item, source = resolve_source(template_id)
+    item = next((x for x in _all_templates() if x["id"] == template_id), None)
+    if item is None:
+        raise RuntimeError(f"找不到模板：{template_id}")
+    if item.get("route") == "svg":
+        source = None
+    else:
+        item, source = resolve_source(template_id)
     gate.update({
         "status": "confirmed", "template_id": template_id,
         "serial": entry["serial"], "selection": str(selection),
         "template_name": item["name"], "page_count": item["pages"],
+        "route": item.get("route", "native"),
+        "source": str(source) if source else None,
         "outside_candidates": outside,
         "confirmed_at": datetime.now(timezone.utc).isoformat(),
     })
+    if gate["route"] == "svg":
+        gate["warning"] = (
+            "该模板缺少原生源 PPTX，只能走 SVG 灵活排版（会重新设计版式）；"
+            "原生 build 会拒绝出稿，请按 workflows/xmu-quick.md 执行。"
+        )
     _write(GATE_FILE, gate)
     return gate
 
@@ -294,6 +343,11 @@ def require_confirmed(plan: dict) -> dict:
         raise RuntimeError(
             "门禁：尚未选定模板。第一步必须先给出候选链接清单并等待用户明确选定，"
             "在此之前禁止制作 PPT。"
+        )
+    if gate.get("route") == "svg":
+        raise RuntimeError(
+            "门禁：已选定的模板走「SVG 灵活排版」路线（缺少原生 PPTX 页库），"
+            "不能调用原生 build。请按 SVG 排版流程制作，或改选支持原生填充的模板。"
         )
     requested = plan.get("template_id")
     if requested:
@@ -333,6 +387,23 @@ def page_layouts(template_id: str) -> dict:
 # 4. 三项检查
 # ---------------------------------------------------------------------------
 
+def _shape_texts(shapes) -> list[str]:
+    """递归收集组合、表格里的文字，避免把「有内容」误判成空白页。"""
+    from pptx.enum.shapes import MSO_SHAPE_TYPE
+
+    texts: list[str] = []
+    for shape in shapes:
+        if getattr(shape, "has_text_frame", False):
+            texts.append(shape.text_frame.text.strip())
+        if getattr(shape, "has_table", False):
+            for row in shape.table.rows:
+                for cell in row.cells:
+                    texts.append(cell.text.strip())
+        if shape.shape_type == MSO_SHAPE_TYPE.GROUP:
+            texts.extend(_shape_texts(shape.shapes))
+    return texts
+
+
 def final_check(sanitized_source: Path, output: Path, plan: dict, library: dict,
                 *, capacity: dict | None = None) -> dict:
     errors: list[str] = []
@@ -353,7 +424,7 @@ def final_check(sanitized_source: Path, output: Path, plan: dict, library: dict,
     if len(prs_out.slides) != len(plan["slides"]):
         errors.append(f"内容完整性：成品 {len(prs_out.slides)} 页，plan 要求 {len(plan['slides'])} 页")
     for index, slide in enumerate(prs_out.slides, 1):
-        texts = [sh.text_frame.text.strip() for sh in slide.shapes if sh.has_text_frame]
+        texts = _shape_texts(slide.shapes)
         if not any(texts):
             errors.append(f"内容完整性：第 {index} 页没有任何文字")
 
@@ -369,7 +440,10 @@ def final_check(sanitized_source: Path, output: Path, plan: dict, library: dict,
         capacity = text_fit.build_capacity_map(sanitized_source, library)
     overflow = text_fit.validate_plan(plan, capacity)
     if overflow:
-        sample = "、".join(f"{p['slot_id']}({p['length']}>{p['safe_chars']})" for p in overflow[:4])
+        sample = "、".join(
+            f"{p['slot_id']}（{max(p['line_em'], default=0):.1f}>{p['safe_em']:.1f} em）"
+            for p in overflow[:4]
+        )
         errors.append(f"文字适配：{len(overflow)} 处文案超出文本框容量：{sample}")
 
     # (3) 模板一致性
@@ -405,9 +479,9 @@ def final_check(sanitized_source: Path, output: Path, plan: dict, library: dict,
 # 5. 出稿编排
 # ---------------------------------------------------------------------------
 
-def build(plan_path: Path, output: Path, *, skip_gate: bool = False) -> dict:
+def build(plan_path: Path, output: Path) -> dict:
     plan = _load(plan_path)
-    gate = {} if skip_gate else require_confirmed(plan)
+    gate = require_confirmed(plan)
     template_id = plan.get("template_id") or gate.get("template_id")
     if not template_id:
         raise RuntimeError("plan 缺少 template_id，且没有已选定的模板")
@@ -421,21 +495,32 @@ def build(plan_path: Path, output: Path, *, skip_gate: bool = False) -> dict:
 
     library = analyze_pptx(clean_source)
     capacity = text_fit.build_capacity_map(clean_source, library)
-    plan, fit_changes = text_fit.enforce_plan(plan, capacity)
+    meta = {
+        "template_id": template_id, "serial": entry["serial"],
+        "template_name": item["name"],
+        "output": str(output), "plan": str(plan_path),
+        "gate_status": gate.get("status", "confirmed"),
+        "source_sanitized": sanitize_pptx.scan(clean_source)["clean"],
+        "capacity_slots": len(capacity),
+        "wrap_none_slots": sum(1 for v in capacity.values() if v["wrap"] == "none"),
+    }
+    try:
+        plan, fit_changes = text_fit.enforce_plan(plan, capacity)
+    except text_fit.TextOverflowError as exc:
+        # 放不下就明确失败，让使用者改写文案；绝不截断后假装成功
+        result = {"ok": False, "errors": [f"文字适配：{exc}"], "warnings": [],
+                  "checks": {"content_integrity": False, "text_fit": False,
+                             "template_consistency": False},
+                  "text_fit_adjustments": [], **meta}
+        REPORT_DIR.mkdir(parents=True, exist_ok=True)
+        _write(REPORT_DIR / f"{output.stem}.check.json", result)
+        return result
+
     output.parent.mkdir(parents=True, exist_ok=True)
     apply_plan(clean_source, plan, output, transition="keep")
 
     result = final_check(clean_source, output, plan, library, capacity=capacity)
-    result.update({
-        "template_id": template_id, "serial": entry["serial"],
-        "template_name": item["name"],
-        "output": str(output), "plan": str(plan_path),
-        "gate_status": gate.get("status", "bypassed"),
-        "source_sanitized": sanitize_pptx.scan(clean_source)["clean"],
-        "text_fit_adjustments": fit_changes,
-        "capacity_slots": len(capacity),
-        "wrap_none_slots": sum(1 for v in capacity.values() if v["wrap"] == "none"),
-    })
+    result.update({"text_fit_adjustments": fit_changes, **meta})
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     _write(REPORT_DIR / f"{output.stem}.check.json", result)
     return result
@@ -461,7 +546,6 @@ def main(argv: list[str] | None = None) -> int:
     bld = sub.add_parser("build", help="门禁校验 + 净化 + 挑页填充 + 三项检查")
     bld.add_argument("plan_json")
     bld.add_argument("-o", "--output", required=True)
-    bld.add_argument("--skip-gate", action="store_true", help="仅供自动化测试使用")
 
     st = sub.add_parser("status", help="查看当前门禁状态")
 
@@ -487,7 +571,7 @@ def main(argv: list[str] | None = None) -> int:
                 print(json.dumps(data, ensure_ascii=False, indent=2))
             return 0
         if args.command == "build":
-            result = build(Path(args.plan_json), Path(args.output), skip_gate=args.skip_gate)
+            result = build(Path(args.plan_json), Path(args.output))
             print(json.dumps(result, ensure_ascii=False, indent=2))
             return 0 if result["ok"] else 1
         if args.command == "status":

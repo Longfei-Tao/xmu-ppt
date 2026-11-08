@@ -7,6 +7,7 @@ import unittest
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from unittest import mock
 
 SCRIPTS = Path(__file__).resolve().parents[1] / 'skills/xmu-ppt/scripts'
 sys.path.insert(0, str(SCRIPTS))
@@ -15,6 +16,16 @@ CACHE.mkdir(exist_ok=True)
 
 
 class SelectionTests(unittest.TestCase):
+    def setUp(self):
+        import template_selection
+        self.gate_dir = tempfile.TemporaryDirectory(dir=CACHE)
+        self.addCleanup(self.gate_dir.cleanup)
+        patcher = mock.patch.object(
+            template_selection, 'GATE_FILE',
+            Path(self.gate_dir.name) / '.selection.json')
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
     def test_concurrent_identical_confirmation_is_idempotent(self):
         from template_selection import prepare, confirm
         with tempfile.TemporaryDirectory(dir=CACHE) as tmp:
@@ -121,6 +132,9 @@ class SelectionTests(unittest.TestCase):
         from template_selection import catalog, preview_svg
         public = SCRIPTS.parents[2] / 'docs/templates'
         self.assertEqual(json.loads((public / 'catalog.json').read_text(encoding='utf-8')), catalog())
+        html = (public / 'index.html').read_text(encoding='utf-8')
+        for node_id in ('page-status', 'pages', 'coverage-warning'):
+            self.assertIn(f'id="{node_id}"', html)
         for name in ('gallery.css', 'gallery.js'):
             self.assertEqual((public / 'static' / name).read_bytes(),
                              (SCRIPTS / 'confirm_ui/static' / name).read_bytes())

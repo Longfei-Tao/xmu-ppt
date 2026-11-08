@@ -19,6 +19,7 @@ SCRIPTS = Path(__file__).resolve().parents[1] / "skills" / "xmu-ppt" / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 import idea_to_ppt as flow  # noqa: E402
 import sanitize_pptx as sp  # noqa: E402
+import template_selection as ts  # noqa: E402
 
 
 def _png() -> bytes:
@@ -149,7 +150,7 @@ class GateTests(unittest.TestCase):
         gate = flow.recommend("癌症科普", "医护健康科普", limit=6)
         self.assertEqual(gate["status"], "waiting")
         self.assertGreater(len(gate["candidates"]), 0)
-        self.assertIn("file://", gate["markdown"])
+        self.assertTrue("file://" in gate["markdown"] or "https://" in gate["markdown"])
         self.assertIn("看每一页", gate["markdown"])
         self.assertEqual(json.loads(self.gate.read_text(encoding="utf-8"))["status"], "waiting")
 
@@ -197,9 +198,51 @@ class GateTests(unittest.TestCase):
             f"非医学主题应以厦大校园模板为主：{ids}",
         )
 
-    def test_10_medical_topic_still_returns_clinical_decks(self):
+    def test_10_medical_topic_returns_only_usable_decks(self):
         gate = flow.recommend("胃癌术后护理与随访", "临床医护", limit=5)
-        self.assertTrue(any(i.startswith("MED-") for i in gate["candidates"]))
+        usable = {t["id"]: t for t in flow._all_templates() if t.get("usable")}
+        self.assertTrue(gate["candidates"])
+        self.assertTrue(all(i in usable for i in gate["candidates"]), gate["candidates"])
+        if any(t["namespace"] == "external" for t in usable.values()):
+            self.assertTrue(any(i.startswith("MED-") for i in gate["candidates"]))
+
+    def test_11_fresh_clone_uses_public_gallery_and_builtin_decks(self):
+        with mock.patch.object(flow, "GALLERY", Path("missing-local-gallery")), \
+             mock.patch.object(flow, "_external_source", return_value=None):
+            gate = flow.recommend("癌症科普", "医护健康科普", limit=6)
+        self.assertTrue(gate["candidates"])
+        self.assertIn("https://longfei-tao.github.io/xmu-ppt/templates/", gate["markdown"])
+        self.assertFalse(any(i.startswith("MED-") for i in gate["candidates"]))
+        for item in flow._all_templates():
+            if item["id"] in gate["candidates"]:
+                self.assertTrue(item["usable"])
+
+    def test_12_svg_route_selection_cannot_bypass_native_gate(self):
+        self.gate.write_text(json.dumps({
+            "status": "confirmed", "template_id": "厦门大学_主题_光影厦大",
+            "route": "svg",
+        }), encoding="utf-8")
+        with self.assertRaisesRegex(RuntimeError, "SVG"):
+            flow.require_confirmed({})
+
+
+class SkillPackagePickerTests(unittest.TestCase):
+    def test_13_svg_only_deck_stays_selectable_in_skill_package(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            deck = root / "DECK"
+            deck.mkdir()
+            (deck / "01_cover.svg").write_text(
+                '<svg xmlns="http://www.w3.org/2000/svg"/>', encoding="utf-8")
+            index = root / "catalog.json"
+            index.write_text(json.dumps([
+                {"number": 1, "id": "DECK", "name": "示例", "style": "", "tags": []},
+            ], ensure_ascii=False), encoding="utf-8")
+            with mock.patch.object(ts, "DECKS", root), mock.patch.object(ts, "INDEX", index):
+                decks = ts.catalog()
+        self.assertEqual(len(decks), 1)
+        self.assertEqual(decks[0]["routes"], ["svg"])
+        self.assertTrue(decks[0]["preview"].endswith("-cover.svg"))
 
 
 if __name__ == "__main__":

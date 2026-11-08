@@ -170,7 +170,7 @@ Every deck has a **permanent three-digit serial**. Serials are append-only: addi
 
 </details>
 
-Browse them all with per-slide previews: **[template gallery](https://longfei-tao.github.io/xmu-ppt/templates/)** · [full index](docs/templates.md) (Chinese). All decks are 16:9 at 1280×720.
+Browse them all with cover and sample-page previews: **[template gallery](https://longfei-tao.github.io/xmu-ppt/templates/)** · [full index](docs/templates.md) (Chinese). All decks are 16:9 at 1280×720.
 
 > **Optional local library.** The same registry can index a private collection of third-party decks (serials `016`+, 200 entries in the author's setup). Those files are **not distributed** with this repository — only the index, licensing flags and sanitising rules are public. Without the files, the built-in 15 decks are what you get.
 
