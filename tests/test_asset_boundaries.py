@@ -74,5 +74,36 @@ class AssetBoundaryTests(unittest.TestCase):
         self.assertFalse([p for p in kept if "local-gallery/" in p or p.endswith(".local.json")])
 
 
+    def test_10_skill_package_resets_machine_local_indexes(self):
+        import pack_release
+        cleaned = {
+            rel: json.loads(pack_release.clean_index(rel))
+            for rel in pack_release.RESET_INDEXES
+        }
+        self.assertEqual(len(cleaned), 4)
+        by_name = {Path(k).name: v for k, v in cleaned.items()}
+        registry = by_name["number_registry.json"]
+        self.assertEqual(len(registry["entries"]), 15)
+        self.assertEqual(registry["next_number"], 16)
+        self.assertEqual([e for e in registry["entries"]
+                          if e["namespace"] == "external"], [])
+        self.assertEqual(by_name["duplicates.json"]["groups"], [])
+        self.assertEqual(by_name["external_catalog.json"]["templates"], [])
+        self.assertEqual(by_name["licenses.json"]["entries"], [])
+        for payload in cleaned.values():
+            self.assertIn("reset_note", payload)
+        # 重置只发生在 ZIP 内容里，仓库工作区的本机索引一个字节都不变。
+        self.assertEqual(len(json.loads(assets.LICENSES.read_text(
+            encoding="utf-8"))["entries"]), 200)
+
+    def test_11_skill_package_skips_repository_maintenance_tests(self):
+        import pack_release
+        kept, _ = pack_release.select()
+        self.assertEqual([p for p in kept if p.startswith("tests/")], [])
+        manifest = pack_release.manifest_text(kept, {})
+        self.assertIn("Reset to fresh-install state", manifest)
+        self.assertIn("NO machine-local template list", manifest)
+
+
 if __name__ == "__main__":
     unittest.main()

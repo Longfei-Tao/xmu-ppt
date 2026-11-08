@@ -184,7 +184,7 @@ git pull
 授权治理也沿用上游做法：**代码按 MIT 开源，第三方模板不随仓库分发**。用户自己的模板
 留在本机，由技能只读扫描，既不上传也不打包。
 
-> **直接下载技能包**：[`xmu-ppt-skill-20261108.zip`](https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/xmu-ppt-skill-20261108.zip)（13.7 MiB）· [查看全部 Release](https://github.com/Longfei-Tao/xmu-ppt/releases)
+> **直接下载技能包**：[`xmu-ppt-skill-20261108.zip`](https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/xmu-ppt-skill-20261108.zip)（13.6 MiB）· [查看全部 Release](https://github.com/Longfei-Tao/xmu-ppt/releases)
 
 | 你想做的事 | 怎么做 |
 | --- | --- |
@@ -192,7 +192,7 @@ git pull
 | 只带技能、模板自备 | 解压上面的纯技能包，填入自己的模板目录即可 |
 | 用自己购买 / 收集的模板 | 复制 `root.example.json` 为 `root.local.json`，填入模板目录；再运行扫描与预览渲染 |
 | 生成一份可公开分发的技能包 | `python scripts/pack_release.py`，脚本会拒绝装入任何原件、截图或本机配置 |
-| 核验素材边界 | `python scripts/check_assets.py`，0 error 才能发布 |
+| 核验素材边界（仅仓库维护者） | 在**完整仓库**运行 `python scripts/check_assets.py`，发布前要求 0 error；纯技能包不含内置原件与本机配置，**无需运行**此脚本 |
 
 权利声明、逐套台账与更新政策见[外部模板声明](skills/xmu-ppt/templates/external/TEMPLATE_NOTICES.md)、
 [素材授权边界](LICENSE-ASSETS)与[素材与许可](docs/assets.md)。别人下载后可以在自己电脑上

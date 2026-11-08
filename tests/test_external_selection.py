@@ -11,6 +11,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "skills/xmu-ppt/scripts"
@@ -70,6 +71,30 @@ class ExternalSelectionTests(unittest.TestCase):
         public = json.loads((ROOT / "docs/templates/catalog.json").read_text(
             encoding="utf-8"))
         self.assertEqual(len(public), 15)
+
+    def test_10_source_key_comes_from_scanned_catalog_even_with_empty_registry(self):
+        """纯技能包会重置注册表；定位原件不能依赖旧条目碰巧命中。"""
+        self.assertTrue(ext._catalog_source_keys())
+        with tempfile.TemporaryDirectory(dir=CACHE) as tmp:
+            empty = Path(tmp) / "number_registry.json"
+            empty.write_text(json.dumps({"schema": "template_number_registry.v1",
+                                         "entries": []}), encoding="utf-8")
+            with mock.patch.object(ext, "REGISTRY", empty):
+                decks = ext.decks()
+                self.assertTrue(decks)
+                self.assertTrue(all(d["source_key"] for d in decks))
+
+    def test_11_source_path_survives_empty_registry(self):
+        with tempfile.TemporaryDirectory(dir=CACHE) as tmp:
+            empty = Path(tmp) / "number_registry.json"
+            empty.write_text(json.dumps({"schema": "template_number_registry.v1",
+                                         "entries": []}), encoding="utf-8")
+            deck = ext.decks()[0]
+            with mock.patch.object(ext, "REGISTRY", empty), \
+                    mock.patch.object(ext, "IMPORTED", Path(tmp) / "no-import-cache"):
+                path = ext.source_path(deck["id"])
+                self.assertIsNotNone(path)
+                self.assertTrue(path.is_file(), path)
 
 
 @unittest.skipUnless(HAS_GALLERY, "本机画廊未生成（全新 clone 的正常状态）")

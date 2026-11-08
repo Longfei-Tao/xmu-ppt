@@ -6,6 +6,10 @@
 被 .gitignore 挡住，永远不进公开仓库。
 
 公开页（docs/templates）不读这里的数据，仍然只显示 15 套内置模板。
+
+纯技能包里的四份索引会被重置为「全新用户初始态」，所以 source_key 必须以
+``external_catalog.json``（每次 scan 都会重写）为准；固定序号注册表只是
+补充展示名与序号，不能作为定位原件的唯一来源。
 """
 from __future__ import annotations
 
@@ -18,6 +22,7 @@ EXTERNAL = ROOT / "skills" / "xmu-ppt" / "templates" / "external"
 IMPORTED = ROOT / "output" / "template_import" / "decks"
 CATALOG_JS = GALLERY / "catalog.js"
 REGISTRY = EXTERNAL / "number_registry.json"
+EXTERNAL_CATALOG = EXTERNAL / "external_catalog.json"
 ROOT_LOCAL = EXTERNAL / "root.local.json"
 SOURCE_MAP = EXTERNAL / "source_map.local.json"
 
@@ -46,6 +51,16 @@ def _gallery_catalog() -> dict | None:
         return None
 
 
+def _catalog_source_keys() -> dict[str, str]:
+    """Authoritative template_id -> source_key map, rebuilt by every scan."""
+    data = _read_json(EXTERNAL_CATALOG, {}) or {}
+    return {
+        item["id"]: item["source_key"]
+        for item in data.get("templates", [])
+        if item.get("id") and item.get("source_key")
+    }
+
+
 def available() -> bool:
     """No local gallery (fresh clone) -> graceful degradation to 15 built-ins."""
     return _gallery_catalog() is not None
@@ -58,6 +73,7 @@ def decks() -> list[dict]:
         return []
     registry = _read_json(REGISTRY, {}) or {}
     by_id = {e["template_id"]: e for e in registry.get("entries", [])}
+    catalog_keys = _catalog_source_keys()
     result = []
     for item in data.get("templates", []):
         if item.get("namespace") == "builtin":
@@ -77,7 +93,7 @@ def decks() -> list[dict]:
             "namespace": "external",
             "rights": item.get("rights", ""),
             "page_count": int(item.get("pages") or 0),
-            "source_key": reg.get("source_key"),
+            "source_key": reg.get("source_key") or catalog_keys.get(item["id"]),
         })
     return result
 
@@ -159,7 +175,7 @@ def source_path(template_id: str) -> Path | None:
     root_cfg = _read_json(ROOT_LOCAL, {}) or {}
     mapping = _read_json(SOURCE_MAP, {}) or {}
     deck = find_by_id(template_id)
-    key = deck.get("source_key") if deck else None
+    key = (deck.get("source_key") if deck else None) or _catalog_source_keys().get(template_id)
     rel = (mapping.get("paths") or {}).get(key) if key else None
     root = root_cfg.get("root")
     if root and rel:
