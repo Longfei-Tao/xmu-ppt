@@ -12,10 +12,13 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import sys
+import tempfile
+import urllib.request
 import zipfile
-from datetime import date
-from pathlib import Path
+from datetime import date, datetime, timezone
+from pathlib import Path, PurePosixPath
 
 HERE = Path(__file__).resolve()
 XMU_PPT = HERE.parents[1]                       # .../skills/xmu-ppt
@@ -26,6 +29,13 @@ CATEGORIES = EXTERNAL / "categories.json"
 ROOT_LOCAL = EXTERNAL / "root.local.json"
 STATUS = EXTERNAL / "path_status.json"
 SOURCE_MAP = EXTERNAL / "source_map.local.json"
+
+PACK_SCHEMA = "xmu_ppt_template_pack.v1"
+PACK_NAME = "xmu-ppt-templates.zip"
+DEFAULT_PACK_URL = (
+    "https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/" + PACK_NAME
+)
+DEFAULT_IMPORT_ROOT = Path.home() / "xmu-ppt-templates"
 
 PROMO_KEYWORDS = ("定制", "工作室", "购买", "会员", "微信", "二维码", "加群", "淘宝")
 ODD_MEDIA = {".wdp", ".emf", ".wmf", ".mp3", ".wav", ".wma", ".m4a", ".tiff"}
@@ -292,6 +302,183 @@ def build_licenses(catalog: dict) -> dict:
     }
 
 
+def _pack_entries(catalog: dict, root: Path) -> list[dict]:
+    """按索引 + 本机路径映射收集可打包的原件，指纹不一致直接拒绝。"""
+    mapping = (load_json(SOURCE_MAP, {}) or {}).get("paths", {})
+    entries = []
+    missing = []
+    for record in catalog.get("templates", []):
+        key = record.get("source_key")
+        rel = mapping.get(key)
+        if not rel:
+            missing.append(key or record.get("id"))
+            continue
+        source = root / rel
+        if not source.is_file():
+            missing.append(rel)
+            continue
+        actual = sha256_file(source)
+        if actual != record["sha256"]:
+            raise SystemExit(
+                f"原件指纹与索引不一致：{rel}；请先重新运行 scan"
+            )
+        entries.append({
+            "id": record["id"],
+            "serial": record.get("serial"),
+            "name": record.get("name"),
+            "category": record.get("primary_category"),
+            "file": f"templates/{rel}",
+            "sha256": actual,
+            "size_bytes": source.stat().st_size,
+        })
+    if missing:
+        preview = "、".join(missing[:5])
+        raise SystemExit(
+            f"有 {len(missing)} 份原件不在 {root}（如 {preview}）；"
+            "请先运行 scan 或修正 root.local.json"
+        )
+    return entries
+
+
+def build_template_pack(root: Path, output: Path, catalog: dict | None = None) -> dict:
+    """把本机模板目录打成可分发的模板包（manifest + 原件）。"""
+    catalog = catalog or load_json(CATALOG)
+    if not catalog:
+        raise SystemExit("尚未生成模板索引，请先运行: external_templates.py scan")
+    entries = _pack_entries(catalog, root)
+    if not entries:
+        raise SystemExit("模板索引为空，未生成模板包")
+    manifest = {
+        "schema": PACK_SCHEMA,
+        "created_at": datetime.now(timezone.utc).isoformat(),
+        "count": len(entries),
+        "total_bytes": sum(e["size_bytes"] for e in entries),
+        "note": (
+            "模板包只分发给已合法拥有这些模板的用户；"
+            "请先确认你有权再分发其中的第三方模板。"
+        ),
+        "templates": entries,
+    }
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(output, "w", zipfile.ZIP_STORED) as zf:
+        for entry in entries:
+            zf.write(root / entry["file"][len("templates/"):], entry["file"])
+        zf.writestr("manifest.json", json.dumps(manifest, ensure_ascii=False, indent=2))
+        zf.writestr("RIGHTS.txt", (
+            "本模板包用于分发你已合法拥有的 PPT 模板。\n"
+            "其中的第三方模板授权状态未知，请勿在未获授权时公开传播。\n"
+            "导入后仅在导入者本机使用；仓库只保留文字索引与指纹。\n"
+        ))
+    return {"output": str(output), "count": len(entries),
+            "bytes": output.stat().st_size}
+
+
+def _read_pack_manifest(pack: Path) -> dict:
+    with zipfile.ZipFile(pack) as zf:
+        try:
+            manifest = json.loads(zf.read("manifest.json").decode("utf-8"))
+        except KeyError as exc:
+            raise SystemExit(f"模板包缺少 manifest.json：{pack}") from exc
+        if manifest.get("schema") != PACK_SCHEMA:
+            raise SystemExit(f"模板包格式不支持：{manifest.get('schema')}")
+        entries = manifest.get("templates") or []
+        if len(entries) != manifest.get("count"):
+            raise SystemExit("manifest 数量与模板条目数不一致")
+        names = set(zf.namelist())
+        for entry in entries:
+            member = PurePosixPath(entry.get("file", ""))
+            if (not member.parts or member.parts[0] != "templates"
+                    or member.is_absolute() or ".." in member.parts
+                    or member.suffix.lower() != ".pptx"):
+                raise SystemExit(f"模板包包含非法路径：{entry.get('file')}")
+            if str(member) not in names:
+                raise SystemExit(f"模板包缺少文件：{member}")
+    return manifest
+
+
+def import_template_pack(pack: Path, dest: Path, *, force: bool = False,
+                         scan: bool = True) -> dict:
+    """解压模板包到本机目录，校验指纹后自动登记。"""
+    manifest = _read_pack_manifest(pack)
+    entries = manifest["templates"]
+    dest = Path(dest).expanduser().resolve()
+    dest.mkdir(parents=True, exist_ok=True)
+
+    # 先检查冲突，再写文件，避免导入一半才失败
+    for entry in entries:
+        member = PurePosixPath(entry["file"])
+        target = dest.joinpath(*member.parts[1:])
+        if target.is_file():
+            if force or sha256_file(target) == entry["sha256"]:
+                continue
+            raise SystemExit(
+                f"目标已存在且内容不同：{target}；确认覆盖请加 --force"
+            )
+
+    staging = Path(tempfile.mkdtemp(prefix=".xmu-pack-", dir=str(dest.parent)))
+    try:
+        with zipfile.ZipFile(pack) as zf:
+            for entry in entries:
+                member = PurePosixPath(entry["file"])
+                staged = staging.joinpath(*member.parts[1:])
+                staged.parent.mkdir(parents=True, exist_ok=True)
+                with zf.open(str(member)) as src, staged.open("wb") as out:
+                    shutil.copyfileobj(src, out, 1024 * 1024)
+                if sha256_file(staged) != entry["sha256"]:
+                    raise SystemExit(f"模板包内容校验失败：{member}")
+        for entry in entries:
+            member = PurePosixPath(entry["file"])
+            target = dest.joinpath(*member.parts[1:])
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.move(str(staging.joinpath(*member.parts[1:])), str(target))
+    finally:
+        shutil.rmtree(staging, ignore_errors=True)
+
+    write_json(ROOT_LOCAL, {
+        "schema": "external_root.v1",
+        "root": dest.as_posix(),
+        "updated_at": date.today().isoformat(),
+        "note": "由模板包一键导入写入；换目录时重跑 import 或 doctor --set-root。",
+    })
+    if scan:
+        run_scan(argparse.Namespace(root=str(dest), skip_promo=False))
+    return {"root": str(dest), "count": len(entries)}
+
+
+def download_template_pack(url: str, output: Path) -> Path:
+    output.parent.mkdir(parents=True, exist_ok=True)
+    print(f"正在下载模板包：{url}", file=sys.stderr)
+    with urllib.request.urlopen(url, timeout=60) as response, output.open("wb") as out:
+        shutil.copyfileobj(response, out, 1024 * 1024)
+    return output
+
+
+def run_pack(args) -> int:
+    root = get_root(args.root)
+    output = Path(args.output).expanduser()
+    result = build_template_pack(root, output)
+    print(f"已生成模板包：{result['output']}")
+    print(f"模板数：{result['count']}，压缩包大小：{result['bytes'] / 1024 / 1024:.1f} MiB")
+    print("下一步：把该 ZIP 上传到 GitHub Release，文件名保持 "
+          f"{PACK_NAME}；使用者即可一键导入。")
+    return 0
+
+
+def run_import(args) -> int:
+    if args.pack:
+        pack = Path(args.pack).expanduser()
+    else:
+        url = args.url or DEFAULT_PACK_URL
+        pack = download_template_pack(url, Path(tempfile.gettempdir()) / PACK_NAME)
+    if not pack.is_file():
+        raise SystemExit(f"模板包不存在：{pack}")
+    dest = Path(args.dest).expanduser() if args.dest else DEFAULT_IMPORT_ROOT
+    result = import_template_pack(pack, dest, force=args.force,
+                                  scan=not args.skip_scan)
+    print(f"已导入 {result['count']} 套模板到 {result['root']}")
+    return 0
+
+
 def run_scan(args) -> int:
     root = get_root(args.root)
     if not root.is_dir():
@@ -393,6 +580,20 @@ def main(argv=None) -> int:
     p_list.add_argument("--category", help="按一级类 ID 过滤")
     p_list.add_argument("--limit", type=int, default=20)
     p_list.set_defaults(func=run_list)
+
+    p_pack = sub.add_parser("pack", help="把本机模板目录打成可分发的模板包")
+    p_pack.add_argument("--root", help="覆盖 root.local.json 中的根目录")
+    p_pack.add_argument("-o", "--output", default=str(Path("dist") / PACK_NAME),
+                        help="输出 ZIP 路径")
+    p_pack.set_defaults(func=run_pack)
+
+    p_import = sub.add_parser("import", help="下载/导入模板包并自动登记")
+    p_import.add_argument("--pack", help="本地模板包路径（省略则从 --url 下载）")
+    p_import.add_argument("--url", help=f"模板包下载地址（默认 {DEFAULT_PACK_URL}）")
+    p_import.add_argument("--dest", help="导入目录（默认 ~/xmu-ppt-templates）")
+    p_import.add_argument("--force", action="store_true", help="覆盖已存在且不同的文件")
+    p_import.add_argument("--skip-scan", action="store_true", help="只解压，不自动登记")
+    p_import.set_defaults(func=run_import)
 
     args = parser.parse_args(argv)
     return args.func(args)

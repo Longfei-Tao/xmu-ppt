@@ -181,8 +181,8 @@ git pull
 ## 开源与自备模板
 
 本仓库基于 [PPT Master](https://github.com/hugohe3/ppt-master) 的 SVG → PPTX 引擎，
-授权治理也沿用上游做法：**代码按 MIT 开源，第三方模板不随仓库分发**。用户自己的模板
-留在本机，由技能只读扫描，既不上传也不打包。
+授权治理也沿用上游做法：**代码按 MIT 开源，第三方模板不随仓库分发**。模板原件留在本机，
+或通过官方模板包按需导入；仓库只保留文字索引与指纹，导入时逐文件校验，不上传任何原件。
 
 > **直接下载技能包**：[`xmu-ppt-skill-20261108.zip`](https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/xmu-ppt-skill-20261108.zip)（13.6 MiB）· [查看全部 Release](https://github.com/Longfei-Tao/xmu-ppt/releases)
 
@@ -190,7 +190,9 @@ git pull
 | --- | --- |
 | 用内置 15 套 | clone 完整仓库（含内置模板原件与封面） |
 | 只带技能、模板自备 | 解压上面的纯技能包，填入自己的模板目录即可 |
+| 一次性导入 200 套模板包 | 下载 Release 里的 `xmu-ppt-templates.zip`，运行 `python skills/xmu-ppt/scripts/external_templates.py import`；先逐文件校验 SHA-256，再自动登记 |
 | 用自己购买 / 收集的模板 | 复制 `root.example.json` 为 `root.local.json`，填入模板目录；再运行扫描与预览渲染 |
+| 把自己的模板打包给他人 | `python skills/xmu-ppt/scripts/external_templates.py pack -o dist/xmu-ppt-templates.zip`；**仅在你确实有权分发这些模板时使用** |
 | 生成一份可公开分发的技能包 | `python scripts/pack_release.py`，脚本会拒绝装入任何原件、截图或本机配置 |
 | 核验素材边界（仅仓库维护者） | 在**完整仓库**运行 `python scripts/check_assets.py`，发布前要求 0 error；纯技能包不含内置原件与本机配置，**无需运行**此脚本 |
 

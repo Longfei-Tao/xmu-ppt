@@ -20,6 +20,10 @@
 `scripts/check_assets.py` 会断言仓库中不存在任何外部模板原件；
 `tests/test_asset_boundaries.py` 会断言 200 套外部模板均未被标记为可再分发。
 
+模板包（`xmu-ppt-templates.zip`）同样**不随仓库提交**，只通过 Release 等外部渠道按需分发。
+是否分发、分发给谁，由持有者自行判断并承担全部权利责任；`external_templates.py import`
+只做 SHA-256 校验、解压与登记，不构成对包内模板授权的任何认可。
+
 ## 2. 权利声明
 
 仓库所有者声明：编入外部索引的模板为**其此前购买或自行收集**所得，并声明自己持有
