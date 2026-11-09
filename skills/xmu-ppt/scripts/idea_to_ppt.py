@@ -33,6 +33,7 @@ from template_fill_pptx.analyzer import analyze_pptx  # noqa: E402
 from template_fill_pptx.applier import apply_plan  # noqa: E402
 from template_fill_pptx.checker import check_plan  # noqa: E402
 import content_brief  # noqa: E402
+import page_catalog  # noqa: E402
 import sanitize_pptx  # noqa: E402
 import template_numbers as numbers  # noqa: E402
 import text_fit  # noqa: E402
@@ -262,6 +263,8 @@ def recommend(idea: str, positioning: str, limit: int = 8,
         if item["category"] == "user":
             # 用户刚导入的模板应优先出现，不能被人群更大的内置分类挤出候选。
             value += 12
+        if brief:
+            value += min(20, page_catalog.coverage(page_catalog.for_item(item), brief))
         if query_is_medical:
             # 医学主题：主题词命中模板名称/风格是最强信号
             value += 6 * sum(1 for word in medical_in_query if word in hay)
@@ -445,9 +448,24 @@ def require_confirmed(plan: dict) -> dict:
 # 3. 模板页版式清单（供挑页）
 # ---------------------------------------------------------------------------
 
-def page_layouts(template_id: str) -> dict:
+def page_layouts(template_id: str, brief_path: Path | None = None) -> dict:
     template_id, _ = resolve_selection(template_id)
     item, source = resolve_source(template_id)
+    brief = None
+    if brief_path:
+        brief = content_brief.load(Path(brief_path))
+        errors = content_brief.validate(brief, require_confirmed=True)
+        if errors:
+            raise RuntimeError("内容策划案不能用于挑页：" + "；".join(errors))
+    catalog = page_catalog.for_item(item)
+    if catalog:
+        if brief:
+            data = page_catalog.with_brief(catalog, brief)
+        else:
+            data = {"schema": page_catalog.SCHEMA, "template_id": template_id,
+                    "pages": catalog.get("pages", [])}
+        data["slide_count"] = len(catalog.get("pages", []))
+        return data
     library = analyze_pptx(source)
     pages = []
     for slide in library["slides"]:
@@ -457,7 +475,10 @@ def page_layouts(template_id: str) -> dict:
             "text_slots": len(slide.get("slots", [])),
             "summary": str(slide.get("text_summary") or "").replace("\n", " ")[:60],
         })
-    return {"template_id": template_id, "slide_count": len(pages), "pages": pages}
+    data = {"template_id": template_id, "slide_count": len(pages), "pages": pages}
+    if brief:
+        data["brief_suggestions"] = []
+    return data
 
 
 # ---------------------------------------------------------------------------
@@ -630,6 +651,7 @@ def main(argv: list[str] | None = None) -> int:
 
     pag = sub.add_parser("pages", help="列出模板每一页的版式角色，供挑页")
     pag.add_argument("selection", help="三位序号如 004、本机模板如 U001，或模板 ID")
+    pag.add_argument("--brief", help="已确认的内容策划案 JSON；输出每页的匹配建议")
     pag.add_argument("-o", "--output")
 
     bld = sub.add_parser("build", help="门禁校验 + 净化 + 挑页填充 + 三项检查")
@@ -684,7 +706,7 @@ def main(argv: list[str] | None = None) -> int:
                 ensure_ascii=False, indent=2))
             return 0
         if args.command == "pages":
-            data = page_layouts(args.selection)
+            data = page_layouts(args.selection, Path(args.brief) if args.brief else None)
             if args.output:
                 _write(Path(args.output), data)
                 print(f"版式清单 -> {args.output}", file=sys.stderr)

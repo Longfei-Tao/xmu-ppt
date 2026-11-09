@@ -56,11 +56,11 @@ $PY $S recommend --brief output/brief.json
 
 ```bash
 $PY $S confirm <用户选定的序号，如 004 或 U001>
-$PY $S pages <同一序号> -o output/pages.json
+$PY $S pages <同一序号> --brief output/brief.json -o output/pages.json
 ```
 
 - `confirm` 允许用户在画廊里自行挑选推荐清单之外的模板（关键是**明确选定**，不是必须选中推荐项）。
-- `pages` 列出模板每一页的版式角色（`cover` / `toc` / `chapter` / `content` / `ending`）、文字槽位数与内容摘要，这是挑页的依据。
+- `pages` 列出模板每一页的角色、内容形态、密度和容量；带 `--brief` 时还会给每条内容策划案页面返回 `suggested_pages` 和匹配原因。没有精确匹配时会给容量较大的备选，并明确提示“可能需要调整版式或另选模板”。
 
 ### 第 4 步：按内容挑页并写 fill plan
 
@@ -113,7 +113,7 @@ $PY $S brief --idea "..." --positioning "..." -o output/brief.json   # 第1步�
 $PY $S brief --file output/brief.json --confirm                      # 用户确认
 $PY $S recommend --brief output/brief.json                            # 第2步，等用户选定
 $PY $S confirm U001                                                   # 内置/外部用 004，自备模板用 U001
-$PY $S pages U001 -o output/pages.json                                # 看每页版式
+$PY $S pages U001 --brief output/brief.json -o output/pages.json      # 看版式 + 每页匹配建议
 # 编辑 plan.json（挑页 + 只写文案 + brief_sha256）
 $PY $S build output/plan.json -o output/成品.pptx                     # 出稿 + 三项检查
 $PY $C check output/成品.pptx                                         # 复核无音乐/自动翻页
