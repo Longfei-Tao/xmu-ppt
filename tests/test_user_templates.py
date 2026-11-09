@@ -1,11 +1,15 @@
 """本机用户模板入库与出稿链路。"""
 from __future__ import annotations
 
+import io
 import json
 import sys
 import tempfile
 import unittest
+import zipfile
 from pathlib import Path
+
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "skills/xmu-ppt/scripts"
@@ -90,6 +94,24 @@ class UserTemplateTests(unittest.TestCase):
         self.assertTrue(second["already_exists"])
         self.assertEqual(second["serial"], first["serial"])
         self.assertEqual(len(user_templates.list_templates()), 1)
+
+    def test_onboard_preserves_embedded_thumbnail(self):
+        thumbnail = io.BytesIO()
+        Image.new("RGB", (960, 540), "red").save(thumbnail, "JPEG")
+        with zipfile.ZipFile(self.pptx) as archive:
+            entries = {name: archive.read(name) for name in archive.namelist()}
+        entries["docProps/thumbnail.jpeg"] = thumbnail.getvalue()
+        with zipfile.ZipFile(self.pptx, "w", zipfile.ZIP_DEFLATED) as archive:
+            for name, data in entries.items():
+                archive.writestr(name, data)
+
+        result = user_templates.onboard(self.pptx, rights_confirmed=True)
+
+        with Image.open(self.home / result["serial"] / "previews" / "cover.webp") as cover:
+            red, green, blue = cover.convert("RGB").getpixel((0, 0))
+        self.assertGreater(red, 240)
+        self.assertLess(green, 20)
+        self.assertLess(blue, 20)
 
     def test_link_mode_keeps_original_path(self):
         result = user_templates.onboard(

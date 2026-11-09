@@ -17,21 +17,34 @@ INDEX = DECKS / 'catalog.json'
 GATE_FILE = Path(__file__).resolve().parents[3] / 'output' / '.selection.json'
 
 
-def catalog():
-    """Built-in decks actually usable in this installation.
+def svg_available(folder):
+    """Require page layouts and their local image assets before offering SVG."""
+    if not any((folder / name).is_file() for name in ('01_cover.svg', '03_content.svg')):
+        return False
+    try:
+        for path in folder.glob('*.svg'):
+            root = ET.fromstring(path.read_bytes())
+            for element in root.iter():
+                for attr in ('href', '{http://www.w3.org/1999/xlink}href'):
+                    href = element.get(attr)
+                    if not href or href.startswith(('data:', '#')):
+                        continue
+                    asset = (folder / href).resolve()
+                    if not asset.is_relative_to(folder.resolve()) or not asset.is_file():
+                        return False
+    except (OSError, ET.ParseError):
+        return False
+    return True
 
-    The skill-only release ZIP ships no ``preview.png`` and no ``source.pptx``
-    (they are outside the MIT grant, see LICENSE-ASSETS), but it does ship the
-    SVG layouts. Such decks stay selectable through the SVG route instead of
-    disappearing from the picker.
-    """
+
+def catalog():
+    """Built-in decks whose source or SVG resources exist in this installation."""
     decks = json.loads(INDEX.read_text(encoding='utf-8'))
     available = []
     for deck in decks:
         folder = DECKS / deck['id']
         has_cover = (folder / 'preview.png').is_file()
-        has_svg = any((folder / name).is_file()
-                      for name in ('01_cover.svg', '03_content.svg'))
+        has_svg = svg_available(folder)
         if not (has_cover or has_svg):
             continue
         native = all((folder / name).is_file() for name in

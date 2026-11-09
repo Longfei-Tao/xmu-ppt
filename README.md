@@ -2,13 +2,14 @@
 
 # xmu-ppt
 
-**A Xiamen University template library and slide engine for AI agents.**
-Describe a topic. It picks a real template, fills the existing layouts, and exports an editable `.pptx` — no redrawing, no design detours.
+**A Xiamen University template library and PPTX workflow for AI agents.**
+Start with a topic or source material, confirm a content brief and a template, then export a `.pptx` with editable text. Native filling reuses existing layouts. SVG authoring supports custom page composition.
 
 [![Release](https://img.shields.io/github/v/release/Longfei-Tao/xmu-ppt?label=release&color=4661CC)](https://github.com/Longfei-Tao/xmu-ppt/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](docs/quickstart.md)
 [![Templates](https://img.shields.io/badge/templates-15-4661CC)](docs/templates.md)
+[![CI](https://github.com/Longfei-Tao/xmu-ppt/actions/workflows/validate.yml/badge.svg)](https://github.com/Longfei-Tao/xmu-ppt/actions/workflows/validate.yml)
 [![GitHub stars](https://img.shields.io/github/stars/Longfei-Tao/xmu-ppt?style=social)](https://github.com/Longfei-Tao/xmu-ppt/stargazers)
 
 [简体中文](README.zh-CN.md) · [Template gallery](https://longfei-tao.github.io/xmu-ppt/templates/) · [Slide-by-slide preview](https://longfei-tao.github.io/xmu-ppt/) · [Quick start](#quick-start) · [FAQ](docs/faq.md)
@@ -36,44 +37,55 @@ Describe a topic. It picks a real template, fills the existing layouts, and expo
 
 > **Unofficial personal project.** Not affiliated with, endorsed by, or licensed by Xiamen University. Code and template structure are [MIT](LICENSE); the university emblem, campus photographs and fonts are **not** covered by that license. Redistribution status for some existing assets is still [under review](docs/assets.md).
 
-## Why this exists
+## Capabilities
 
-Many "AI slide" tools redraw every page from scratch. You get a deck, but the institutional identity is gone: the logo is approximated, the photos are swapped, the grid quietly drifts.
+- 15 built-in XMU template decks in the full repository, including 14 with source `.pptx` files for native filling.
+- A content-first workflow with explicit template selection, layout inspection, text fitting and structural checks.
+- Local onboarding of your own `.pptx` templates, with `U001`-style identifiers and a private gallery.
+- Native text, table and supported chart edits, plus SVG authoring for layouts that need to be composed freely.
 
-This project takes the opposite route. It treats a template as a **fixed set of layouts** and only replaces the words inside them — so the emblem, the photography, the decoration and the alignment stay exactly where the designer put them. When the text does not fit the box, the build fails instead of silently overflowing.
-
-## What it is, and what it is not
-
-- **It is** an Agent Skill: give it a topic or material, it selects templates, maps content to slides and exports an editable `.pptx`.
-- **It ships** 15 XMU template decks (3 refined + 12 themed); 14 of them include a source `.pptx` that can be filled in place.
-- **It is not** an online service, a marketplace plugin, or a remote MCP server — it needs local Python and an agent that can run commands.
-- **Not guaranteed:** complex charts are not reproduced exactly, and photographs stay as images. Review every slide before presenting.
+Python scripts handle conversion and validation. The agent supplies the writing and page composition. Model access and billing belong to your chosen agent.
 
 ## How it works
 
 ```mermaid
 flowchart TD
-    A["Topic + positioning"] --> A2["Content brief: pages, evidence, gaps"]
-    A2 --> B["Shortlist: you pick a serial"]
-    B --> C["Fill the chosen layouts — text only"]
-    C --> D{"3 checks pass?"}
-    D -->|"fix"| C
-    D -->|"pass"| E["Editable .pptx — no music, no auto-advance"]
+    A["Topic or source material"] --> B["Confirm content brief"]
+    B --> C["Choose a visual template"]
+    C --> D["Native fill or SVG authoring"]
+    D --> E["Run route-specific checks"]
+    E --> F["Review PPTX in your presentation app"]
 ```
 
-The brief comes first: page purpose, key message, evidence and gaps are confirmed before template selection. Say "skip the brief" for a fast draft; the delivery note will mark it unconfirmed. The agent stops after the shortlist and waits. It does not design pages, does not restyle the deck, and does not decide on your behalf. Page count is not fixed: it follows from the content and the layouts available in the template you chose.
-
-Before export it checks **content completeness**, **text fit** against the real geometry of each text box, and **template consistency**. A failure sends the copy back for a fix instead of shipping a page that overflows.
+The brief records page purpose, key messages, evidence and gaps. Say "skip the brief" for a fast draft, or explicitly authorize the agent to choose a template. The default native build checks content completeness, estimated text fit and template consistency. Page count follows the content and available layouts. Automated checks need a final visual review in PowerPoint, WPS or your target app.
 
 ## Three routes
 
 | You say | Route | What happens | Trade-off |
 | --- | --- | --- | --- |
 | "Use this template, keep the layout" | **Native fill** (default) | Clone the source pages, replace text runs, keep transitions | Wording is bounded by each text box |
-| "Just a topic — the layout can be free" | **SVG authoring** | Hand-author each page as SVG, then export to PPTX | Layout fidelity is approximate |
-| "Keep every page, byte for byte" | **Strict native** | Copy the whole PPTX, overwrite only the named text nodes | Output has the template's original page count |
+| "Compose the layout freely" | **SVG authoring** | Hand-author each page as SVG, then export to PPTX | Layout fidelity is approximate |
+| "Keep every source page in order" for a registered local external template | **Strict native** | Copy the whole PPTX, replace specified text XML | Original page count and order are required |
 
 `Nanqiang Weilan` ships no source `.pptx`, so it supports the SVG route only.
+
+## Ask an agent to install
+
+Paste this into Codex, Claude Code, Cursor, Copilot Agent mode or Gemini CLI with terminal access.
+
+```text
+Set up https://github.com/Longfei-Tao/xmu-ppt as a project-scoped skill
+for the agent I am using. Inspect the repository README and
+skills/xmu-ppt/SKILL.md first. Use the entire skills/xmu-ppt directory.
+If CC Switch manages my shared skills, use that source of truth.
+If a skill with the same name exists, compare sources and ask before replacing it.
+Keep a full checkout for the built-in templates. Create a Python 3.10+
+virtual environment and install requirements-core.txt with its interpreter.
+Run the four-slide quickstart export and report the skill path, interpreter,
+PPTX path, and whether the host actually discovers the skill.
+```
+
+Installation directories and invocation differ by host. [Agent setup and copyable commands](docs/tools/README.md) includes the current official references, an optional `npx skills add` path, and conflict handling.
 
 ## Quick start
 
@@ -88,7 +100,12 @@ cd xmu-ppt
 
 Without Git, download [main.zip](https://github.com/Longfei-Tao/xmu-ppt/archive/refs/heads/main.zip) and work inside the extracted `xmu-ppt-main` folder.
 
-> **Just want the skill?** Download the [skill-only ZIP](https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/xmu-ppt-skill.zip) (13.7 MiB) from [Releases](https://github.com/Longfei-Tao/xmu-ppt/releases). It contains code, docs and SVG layout definitions only — no third-party template originals, preview screenshots or machine-local paths. Point `root.local.json` at your own template folder to get the same picker, per-page previews and Native fill on your machine.
+| Download | Contents | Intended use |
+| --- | --- | --- |
+| Git clone or GitHub source ZIP | Full repository, 15 built-in decks, 14 source PPTX files, examples and tests | Try the included XMU templates |
+| [Release skill-only ZIP](https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/xmu-ppt-skill.zip) | Scripts, workflows, layout definitions and documentation, with originals and display images excluded by the packager | Supply your own template files |
+
+The skill-only ZIP extracts to `xmu-ppt/skills/xmu-ppt/SKILL.md`. Use the **inner** `skills/xmu-ppt/` as the skill folder. Its built-in native sources and template images are absent, so add your own PPTX with `user_templates.py onboard` before using that workflow. Download availability and contents depend on the published release. The commands below use the full repository.
 
 ### 2. Install dependencies
 
@@ -115,11 +132,21 @@ Topic: a campus research collaboration report, about 10 slides.
 Include material management, ownership, schedule and submission review.
 There is no measured data — write it as a proposal, do not invent results.
 
-Show me the template shortlist and wait for my choice before authoring.
+Confirm a one-page content brief, then show the template shortlist and wait for my choice.
 Use this repository's virtual environment and return the actual PPTX path.
 ```
 
-That is the whole setup — no API key, no global configuration, no model is called by this repository.
+Core conversion needs the five dependencies in `requirements-core.txt`. PDF, Word, web import, image generation, narration and browser review have additional dependencies described in [Advanced commands](docs/advanced.md).
+
+### 4. Verify conversion
+
+Using the virtual environment's Python, run this from the repository root.
+
+```bash
+python skills/xmu-ppt/scripts/svg_to_pptx.py examples/quickstart -s svg_output -o .cache/first-demo.pptx -t none -a none
+```
+
+Replace `python` with `.venv/Scripts/python.exe` on Windows or `.venv/bin/python` on macOS/Linux. A successful run reports four converted slides and writes `.cache/first-demo.pptx`. This checks conversion of the bundled example.
 
 ### Update
 
@@ -127,19 +154,20 @@ That is the whole setup — no API key, no global configuration, no model is cal
 python skills/xmu-ppt/scripts/update_repo.py
 ```
 
-It stops if you have uncommitted changes, then pulls and reinstalls dependencies **only when `requirements.txt` changed** (`--skip-pip` skips that step). A plain `git pull` also works, but may overwrite templates you edited.
+Run the updater with the same virtual environment's Python in the original Git checkout. It refuses tracked local changes and uses `git pull --ff-only`. It synchronizes core dependencies on first use, when requirements change, or after an unsuccessful dependency installation. Use `--full` to track and install the full dependency set, or `--skip-pip` to skip dependency installation. ZIP and installed-copy users should update through the original download or installer, preserving local changes first.
 
 ## Use it in your agent
 
 | Tool | Entry point | Verification status |
 | --- | --- | --- |
-| Codex | [Project skill and source invocation](docs/tools/codex.md) | Local scripts run in the author's Windows session; no clean-install acceptance test |
-| Claude Code | [Project skill and `/xmu-ppt`](docs/tools/claude-code.md) | Documented per official mechanism; not tested on a clean machine |
-| GitHub Copilot | [Agent mode and project skill](docs/tools/copilot.md) | Documented per official mechanism; not tested on a clean machine |
-| Gemini CLI | [Workspace skill](docs/tools/gemini-cli.md) | Documented per official mechanism; not tested on a clean machine |
+| Codex | [Project skill and source invocation](docs/tools/codex.md) | Project skill discovery verified through app-server |
+| Claude Code | [Project skill and `/xmu-ppt`](docs/tools/claude-code.md) | Project skill registration verified with an isolated control directory |
+| Cursor | [Project skill and `/xmu-ppt`](docs/tools/cursor.md) | Official mechanism checked; host integration pending |
+| GitHub Copilot | [Agent mode and project skill](docs/tools/copilot.md) | Copilot CLI project skill discovery verified; IDE acceptance pending |
+| Gemini CLI | [Workspace skill](docs/tools/gemini-cli.md) | Native installation and trusted-workspace discovery verified |
 | Web chat / other tools | [Requirements and manual flow](docs/tools/README.md) | Only works with a file-execution environment |
 
-**Which model?** This repository never calls a model — layout and copy come from the agent you already use, so any command-capable Claude / GPT / Gemini / local model works. The practical limit is context length: the longer the deck, the more likely a model loses track of the palette and type scale in `spec_lock.md`. Above ~10 slides, prefer a large-context model.
+**Verification scope, 2026-11-09.** Core dependencies installed in a fresh Windows Python 3.13 environment, and the four-slide SVG example exported successfully. Four CLI hosts discovered the skill in temporary projects, and Skills CLI copied the complete skill successfully. Full model-driven creation needs separate acceptance in each host. The CI workflow defines Ubuntu/Windows and Python 3.10/3.13 jobs. See the [review record](docs/audits/2026-11-09-installation-review.md).
 
 ## Template library
 

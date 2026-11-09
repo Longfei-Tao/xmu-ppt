@@ -24,10 +24,11 @@ import zipfile
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
+from template_fill_pptx.ooxml import _parse_slide_refs
+
 A = "{http://schemas.openxmlformats.org/drawingml/2006/main}"
 P = "{http://schemas.openxmlformats.org/presentationml/2006/main}"
 EMU_PER_PX = 914400 / 96
-SLIDE_RE = re.compile(r"ppt/slides/slide(\d+)\.xml$")
 # 容量估算的安全余量：在理论宽度上再留 2%，抵消字体差异与字距
 SAFETY = 0.98
 LINE_HEIGHT = 1.2
@@ -116,12 +117,10 @@ def build_capacity_map(source: Path, library: dict) -> dict[str, dict]:
     """返回 slot_id -> 容量信息。slot_id 形如 s11_sh21。"""
     shape_meta_by_slide: dict[int, dict[str, dict]] = {}
     with zipfile.ZipFile(source) as zf:
-        for name in zf.namelist():
-            match = SLIDE_RE.fullmatch(name)
-            if not match:
-                continue
+        for slide_ref in _parse_slide_refs(zf):
             try:
-                shape_meta_by_slide[int(match.group(1))] = _shape_meta(ET.fromstring(zf.read(name)))
+                shape_meta_by_slide[slide_ref.index] = _shape_meta(
+                    ET.fromstring(zf.read(slide_ref.part_name)))
             except ET.ParseError:
                 continue
 

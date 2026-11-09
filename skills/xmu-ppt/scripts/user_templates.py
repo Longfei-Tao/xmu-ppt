@@ -151,6 +151,7 @@ def _cover_from_pptx(pptx: Path, dest: Path) -> bool:
                 return False
             raw = archive.read("docProps/thumbnail.jpeg")
         with Image.open(io.BytesIO(raw)) as image:
+            dest.parent.mkdir(parents=True, exist_ok=True)
             _fit_cover(image).save(dest, "WEBP", quality=84)
         return True
     except (OSError, zipfile.BadZipFile, ValueError):

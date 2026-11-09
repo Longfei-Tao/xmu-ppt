@@ -30,7 +30,7 @@ description: >
 > 4. **只负责内容填充与检查**：克隆模板已有页面、只替换文字；禁止自行设计页面、禁止改动版式与视觉样式、禁止使用 SVG 逐页重画路线、禁止编造数据与引用。plan 必须带 `brief_sha256`，内容改了要重新确认模板。
 > 5. `build` 会强制门禁校验、剥离音乐与自动翻页，并做**内容完整性 / 文字适配布局 / 模板一致性**三项检查，未通过不交付。
 >
-> 下方 SVG 出稿、原生填充与 strict-native 仅在用户**显式指定**时作为底层能力被调用；`strict-native`（一页不少全保留）与「按内容挑页」冲突，只有用户明确要求「一页不少」时才启用。全部模板保持无音乐、无自动翻页。
+> 默认采用原生文字填充。用户明确要求灵活排版或重新设计时采用 SVG 出稿。对已登记的本机外部模板，用户明确要求保留全部页面和原页序时采用 `strict-native`。默认 `build` 会移除音乐与自动翻页，严格保真路线按其独立工作流保留源文稿结构。
 >
 > [!IMPORTANT]
 > ## 📁 我的模板（用户自备 PPTX，仅本机）
@@ -55,7 +55,7 @@ description: >
 > | 用户信号 | 路线 | 底层 |
 > | --- | --- | --- |
 > | 提到「保留原样式 / 别改我的模板」、上传 `.pptx` 并要求保留其原生版式、要表格或图表原样保留 | **原生填充** → [`workflows/xmu-native.md`](workflows/xmu-native.md) | 克隆原页 + 改 OOXML，不生成 SVG |
-> | 只给主题或文字材料，选定视觉模板后采用灵活排版 | **SVG 出稿** → [`workflows/xmu-quick.md`](workflows/xmu-quick.md) | 逐页手写 SVG 再导出 |
+> | 明确要求「灵活排版 / 重新设计版式」 | **SVG 出稿** → [`workflows/xmu-quick.md`](workflows/xmu-quick.md) | 逐页手写 SVG 再导出 |
 > | 从「本机外部模板库」选定用户自备的外部模板（用 `scan` 登记本机目录并生成离线画廊；公开仓库不附带外部模板或下载包，ID 如 `MED-001`）并要求「完整保留每一页原版式、只换文字」 | **严格保真** → [`workflows/strict-native.md`](workflows/strict-native.md) | 整份复制原 PPTX，只覆盖被点名页的文字 XML |
 >
 > **严格保真是独立新增的第三条路线**，仅作用于 `templates/external/` 登记的外部模板，不改变上述两条路线与内置 15 套的任何行为。用户在本机 `local-gallery/index.html` 浏览并复制含模板 ID 的选用指令后，按 `workflows/strict-native.md` 执行 `doctor → inspect → scaffold → apply`；全页同序 1:1、图片/图形/装饰/占位区/备注/切换效果/未引用素材字节级保留，禁止删页重排。仅当用户明确指定图片或素材、且三道授权闸门全部打开时才允许替换图片。总开关 `templates/external/feature_flags.json` 的 `strict_native` 置 `false` 即完整回退。外部模板授权状态为 unknown、不可再分发，成品只留本机，不得上传或公开分发。
@@ -74,7 +74,7 @@ description: >
 > 5. 只给主题时可以补充叙事和建议，不得编造实验结果、统计数据、引用或个人信息；未知姓名、导师、单位、联系方式直接省略字段。
 > 6. SVG 路线仍遵守「逐页手写、禁止脚本批量生成、导出前跑质量检查」；原生填充路线遵守「禁止跑 SVG 转换、只改 fill_plan」。
 >
-> 除南强蔚蓝外，`templates/decks/<id>/` 每套同时带三样东西：`source.pptx`（原始模板，原生填充的克隆源）、`source.slide_library.json`（槽位明细）、`layout_index.json`（版式画像，选页依据），以及原有的 5 页 SVG 原型。
+> 完整源码仓库中，除南强蔚蓝外，`templates/decks/<id>/` 每套包含 `source.pptx`（原始模板）、`source.slide_library.json`（槽位明细）、`layout_index.json`（版式画像）及 5 页 SVG 原型。Release 纯技能包剔除源 PPTX 和模板位图，使用时先核对实际文件，缺少素材的内置路线会隐藏。用户可通过 `user_templates.py onboard` 入库自己的模板。
 >
 > 本仓库的 `templates/decks/` 只保留厦门大学 deck（15 套），不含任何其他机构 deck；`templates/layouts/` 仍保留 7 套通用版式（`academic_defense`、`medical_university`、`government_blue` 等）作为「结构叠加层」，仅在用户显式给出路径时参与融合，不参与场景路由。库外风格不再作为兜底选项。
 

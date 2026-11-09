@@ -32,6 +32,11 @@ python skills/xmu-ppt/scripts/svg_to_pptx.py examples/quickstart -s svg_output -
 - 解压后的目录名是 `xmu-ppt-main`，本文其他命令里的路径请按实际目录名替换；
 - ZIP 版没有 git 历史，不能用 `git pull` 或 `update_repo.py` 更新，升级时重新下载覆盖即可（先备份自己改过的模板）。
 
+### Release 技能包
+
+源码 ZIP 与 Release 的 `xmu-ppt-skill.zip` 内容不同。后者剔除源 PPTX、模板位图和展示截图，解压后的技能入口为 `xmu-ppt/skills/xmu-ppt/SKILL.md`。安装时只复制内层 `skills/xmu-ppt/`，并在该实际目录安装核心依赖。
+使用自己的 PPTX 时，按下文入库流程操作。缺少所需素材的内置模板会从可用列表隐藏。若要使用随仓库提供的厦大模板与四页示例，请下载完整源码。[各 Agent 安装方式](tools/README.md)。
+
 ## 2. 把主题告诉 Agent
 
 在 AI 工具中打开仓库，发送下面的完整需求：

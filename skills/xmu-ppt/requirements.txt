@@ -7,6 +7,9 @@
 # Install / 安装方式：
 #   pip install -r requirements.txt
 
+# Full installs include the core dependency contract as well.
+-r requirements-core.txt
+
 # ─────────────────────────────────────────────────────────────
 # SVG to PPTX tool / SVG 转 PPTX 工具 (skills/xmu-ppt/scripts/svg_to_pptx.py)
 # ─────────────────────────────────────────────────────────────
@@ -14,7 +17,7 @@
 # 用于将 SVG 文件批量转换为 PowerPoint 演示文稿
 # Uses Office-compatible mode (PNG + SVG dual format) by default, supports all Office versions.
 # 默认使用 Office 兼容模式（PNG + SVG 双格式），支持所有 Office 版本
-python-pptx>=0.6.21
+python-pptx>=1.0.2
 
 # YAML parsing for design_spec.md / spec_lock.md
 # 用于解析 design_spec.md 与 spec_lock.md 的 YAML

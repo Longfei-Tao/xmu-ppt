@@ -4,6 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![模板](https://img.shields.io/badge/%E6%A8%A1%E6%9D%BF-15%20%E5%A5%97-4661CC)](docs/templates.md)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)](docs/quickstart.md)
+[![CI](https://github.com/Longfei-Tao/xmu-ppt/actions/workflows/validate.yml/badge.svg)](https://github.com/Longfei-Tao/xmu-ppt/actions/workflows/validate.yml)
 [![GitHub stars](https://img.shields.io/github/stars/Longfei-Tao/xmu-ppt.svg)](https://github.com/Longfei-Tao/xmu-ppt/stargazers)
 
 **简体中文** · [English](README.md)
@@ -37,10 +38,11 @@
 
 | | |
 | --- | --- |
-| **是** | 一个 AI Agent 技能：给它主题或材料，它挑页、填字、检查，再导出可编辑 PPTX |
-| **是** | 15 套厦大模板（3 套精修 + 12 套主题），其中 14 套支持直接在原始 PPTX 里填内容 |
-| **不是** | 不是在线生成服务，也不是插件商店里的安装包；需要本地 Python 和能执行命令的 Agent |
-| **不保证** | 复杂图表与原版式完全还原；照片仍是图片。上台前请用演示软件逐页检查 |
+| 运行方式 | AI Agent 负责内容与排版，Python 脚本负责分析、转换与检查 |
+| 内置资源 | 完整仓库含 15 套厦大模板（3 套精修 + 12 套主题），其中 14 套含原始 PPTX |
+| 自备模板 | 支持本机入库，分配 `U001` 序号，建立私有模板画廊 |
+| 环境要求 | Python 3.10+，以及能读取文件、执行命令的 Agent |
+| 编辑与质量 | 文字和简单图形可编辑，照片保持图片形式，复杂版式需要在演示软件中逐页复核 |
 
 默认按 **提出需求 → 内容策划案 → 选择视觉模板 → 生成 PPT** 使用。内容策划案先写清每页目的、核心结论、证据来源和数据缺口；确认后再选模板。用户明确赶时间时可跳过策划案，直接进入模板选择。
 
@@ -50,13 +52,13 @@
 
 ## 三条路线
 
-模板保真和排版自由是矛盾的，所以分成三条路；只给主题时，先选模板，再默认采用第一条。
+只给主题时，先确认内容和模板，再默认采用原生填充。用户明确要求重新设计版式时使用 SVG 路线。
 
 | 你的说法 | 路线 | 做法 | 代价 |
 | --- | --- | --- | --- |
 | 「保留原版式」「别改我的样式」「表格图表要原样」 | 原生填充（默认） | 克隆源页 + 改 `fill_plan`，不生成 SVG | 版式受槽位约束，文字长度有硬上限 |
-| 只给主题或材料，排版可以自由 | SVG 出稿 | 逐页手写 SVG 再导出 | 每页重画，模板保真度中等 |
-| 「一页不少、全部原样保留」 | 严格保真 | 整份复制原 PPTX，只覆盖被点名页的文字 | 页数必须等于模板原有页数 |
+| 「灵活排版」「重新设计版式」 | SVG 出稿 | 逐页手写 SVG 再导出 | 每页重画，模板保真度中等 |
+| 对已登记的本机外部模板要求「一页不少、保留原页序」 | 严格保真 | 整份复制原 PPTX，只覆盖被点名页的文字 XML | 页数必须等于模板原有页数 |
 
 原生填充可用 14 套；`南强蔚蓝` 原始文件是 `.ppt`，仅支持 SVG 路线。
 
@@ -79,6 +81,24 @@
 
 默认只需接收演示文稿与必要说明。文字和简单图形可导出为原生对象，照片等仍是图片；复杂图表与排版需逐页检查，不能保证所有元素均可编辑或格式完全一致。
 
+## 让 Agent 帮你安装
+
+在 Codex、Claude Code、Cursor、Copilot 的 Agent 模式或 Gemini CLI 中复制以下提示词。工具需要能访问网络、文件和终端。
+
+```text
+请帮我安装 https://github.com/Longfei-Tao/xmu-ppt 的 xmu-ppt 技能。
+先读取仓库 README 和 skills/xmu-ppt/SKILL.md，判断当前 Agent 的技能目录。
+默认安装到当前项目，安装完整 skills/xmu-ppt 目录。
+如果共享技能由 CC Switch 管理，通过 CC Switch 维护和分发。
+发现同名技能时先比较来源，保留备份，并在替换前让我确认。
+保留完整源码仓库以使用内置模板，创建 Python 3.10+ 虚拟环境，
+使用该环境的解释器安装 requirements-core.txt。
+运行仓库四页示例导出，报告技能实际路径、Python 路径和 PPTX 路径，
+分别说明文件已放置、宿主已发现技能、示例已导出三个状态。
+```
+
+各工具的目录、调用语法及可选的 `npx skills add` 命令见[安装与调用指南](docs/tools/README.md)。
+
 ## 快速开始
 
 需要 **Python 3.10+**、Git（或改用下面的 ZIP 方式），以及能读取文件和运行 Python 的 AI Agent。
@@ -95,6 +115,17 @@ cd xmu-ppt
 **方式 B · 下载 ZIP（没装 Git 时用）**
 
 下载 [main.zip](https://github.com/Longfei-Tao/xmu-ppt/archive/refs/heads/main.zip) 并解压，进入解压出来的 `xmu-ppt-main` 目录。ZIP 版没有 git 历史，升级时重新下载覆盖，先备份自己改过的模板。
+
+### 选对下载包
+
+| 获取方式 | 包含内容 | 适合用途 |
+| --- | --- | --- |
+| Git clone / GitHub 源码 ZIP | 完整仓库、15 套内置模板、14 份源 PPTX、示例和测试 | 直接使用厦大内置模板 |
+| Release 的 `xmu-ppt-skill.zip` | 脚本、工作流、布局定义、文档，打包时剔除原件与展示图片 | 自备 PPTX 模板后使用 |
+
+技能包解压后入口为 `xmu-ppt/skills/xmu-ppt/SKILL.md`，安装时使用**内层**的 `skills/xmu-ppt/`。
+包内缺少内置 PPTX 原件和模板图片，先用 `user_templates.py onboard` 入库自己的模板。
+下载是否可用、实际内容以已发布的 Release 为准。下文命令按完整仓库编写。
 
 ### 安装依赖
 
@@ -122,13 +153,30 @@ python3 -m venv .venv
 
 第一次使用时把“上一条需求”替换成自己的主题，或先发送上面的示例需求。完整步骤、环境说明及常见问题见[快速开始](docs/quickstart.md)。
 
+### 验证本地导出
+
+在仓库根目录，用虚拟环境的解释器导出已有四页 SVG 示例。
+
+```powershell
+# Windows PowerShell
+.\.venv\Scripts\python.exe skills/xmu-ppt/scripts/svg_to_pptx.py examples/quickstart -s svg_output -o .cache/first-demo.pptx -t none -a none
+```
+
+```bash
+# macOS / Linux
+.venv/bin/python skills/xmu-ppt/scripts/svg_to_pptx.py examples/quickstart -s svg_output -o .cache/first-demo.pptx -t none -a none
+```
+
+成功时报告 4 页转换成功，并生成 `.cache/first-demo.pptx`。此步骤验收已有示例的转换链路。
+PDF、Word、网页导入、生图、配音和浏览器复核按需安装额外依赖，见[进阶命令](docs/advanced.md)。
+
 ### 更新到最新版
 
 ```bash
 python skills/xmu-ppt/scripts/update_repo.py
 ```
 
-它会先检查本地改动，有未提交的修改就停下让你处理；然后拉取最新代码，**只在 `requirements.txt` 变化时**才重装依赖，加 `--skip-pip` 可跳过依赖同步。ZIP 用户重新下载覆盖即可。
+请使用同一个虚拟环境的 Python，在原始 Git 源码仓库中运行。脚本遇到已跟踪文件的未提交修改会停止，然后通过 `git pull --ff-only` 更新。首次运行、核心依赖变化或上次安装失败时会同步依赖，成功后记录摘要。`--full` 同时跟踪并安装完整依赖，`--skip-pip` 跳过依赖安装。ZIP 与技能安装副本应通过原下载方式或安装器更新，先保存本地修改。
 
 已有仓库也可以直接用 git：
 
@@ -136,21 +184,22 @@ python skills/xmu-ppt/scripts/update_repo.py
 git pull
 ```
 
-注意 `git pull` 会覆盖同名文件，自己改过的模板请先另存或提交到独立分支。
+`git pull` 会合并上游提交，本地修改冲突时通常会中止。自定义模板和未提交修改应先备份或保存到自己的分支。
 
 ## 在你的 AI 工具中使用
 
 | 工具 | 使用入口 | 本仓库验证范围 |
 | --- | --- | --- |
-| Codex | [项目 Skill 与源码调用](docs/tools/codex.md) | 当前 Windows 会话已运行本地脚本；未做全新安装验收 |
-| Claude Code | [项目 Skill 与 `/xmu-ppt`](docs/tools/claude-code.md) | 已按官方机制编写文档，未实机验证 |
-| GitHub Copilot | [Agent 模式与项目 Skill](docs/tools/copilot.md) | 已按官方机制编写文档，未实机验证 |
-| Gemini CLI | [工作区 Skill](docs/tools/gemini-cli.md) | 已按官方机制编写文档，未实机验证 |
+| Codex | [项目 Skill 与源码调用](docs/tools/codex.md) | 已通过 app-server 验证临时项目技能发现 |
+| Claude Code | [项目 Skill 与 `/xmu-ppt`](docs/tools/claude-code.md) | 已通过初始化事件及空目录对照验证技能注册 |
+| Cursor | [项目 Skill 与 `/xmu-ppt`](docs/tools/cursor.md) | 已核对官方机制，宿主验收待完成 |
+| GitHub Copilot | [Agent 模式与项目 Skill](docs/tools/copilot.md) | CLI 项目技能发现已验证，IDE 待验收 |
+| Gemini CLI | [工作区 Skill](docs/tools/gemini-cli.md) | 原生安装与受信任工作区内技能发现已验证 |
 | 网页聊天或其他工具 | [环境要求与手动流程](docs/tools/README.md) | 有文件执行环境才可能运行；不承诺原生安装 |
 
 使用 CC Switch 管理共享 Skills 时，请在 CC Switch 中维护和分发；不要直接覆盖它生成的客户端副本。本仓库尚未提供插件商店安装包或远程 MCP 服务。
 
-**用哪个模型？** 本仓库不调用模型，排版与文案由你选的 Agent 完成，所以任何能执行命令的 Claude / GPT / Gemini / 本地模型都能跑。差异主要来自上下文窗口：稿子越长，模型越容易忘记 `spec_lock.md` 里的配色与字号，10 页以上建议用上下文大的模型。
+**2026-11-09 验证范围。** 已在全新 Windows Python 3.13 虚拟环境安装核心依赖，成功导出四页 SVG 示例，并完成四个 CLI 的临时项目技能发现及 Skills 安装器文件分发验收。各宿主的模型驱动完整创作仍需分别验收。CI 配置包含 Ubuntu/Windows 与 Python 3.10/3.13 组合，详见[本次审查记录](docs/audits/2026-11-09-installation-review.md)。
 
 ## 选择风格
 
@@ -187,7 +236,7 @@ git pull
 15 套内置模板；使用者可把自己合法持有的模板放在本机，通过 `root.local.json` 登记，
 原件与预览都不会上传。
 
-> **直接下载技能包**：[`xmu-ppt-skill.zip`](https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/xmu-ppt-skill.zip)（13.7 MiB）· [查看全部 Release](https://github.com/Longfei-Tao/xmu-ppt/releases)
+> 技能包下载入口为 [`xmu-ppt-skill.zip`](https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/xmu-ppt-skill.zip)，大小与内容随版本变化。[查看全部 Release](https://github.com/Longfei-Tao/xmu-ppt/releases)。
 
 | 你想做的事 | 怎么做 |
 | --- | --- |

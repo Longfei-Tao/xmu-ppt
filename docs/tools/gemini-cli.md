@@ -2,7 +2,7 @@
 
 [工具目录](README.md) · [准备 Python 和源码](../quickstart.md)
 
-官方机制：工作区技能可通过 CLI 管理；支持从本地目录安装。命令与 scope 依据 [Gemini CLI 官方 Skills 文档](https://geminicli.com/docs/cli/skills/)核验（2026-10-31）。本项目仅完成文档适配，未实机验证 Gemini CLI。
+工作区技能可通过 CLI 管理，支持从本地目录安装。2026-11-09 使用 Gemini CLI 0.67.0 验证了本地安装与受信任工作区内的技能发现。[Gemini CLI 官方 Skills 文档](https://geminicli.com/docs/cli/using-agent-skills/)。
 
 ## 安装到工作区
 
@@ -16,6 +16,8 @@ gemini skills install ./skills/xmu-ppt --scope workspace
 先检查列表是否存在同名技能，冲突时先备份并核对来源，不继续安装覆盖。使用 CC Switch 时由它分发，不重复安装。保留宿主的安装及启用确认，不加入跳过确认的选项。
 
 开始新会话或在会话里运行 `/skills reload`，再用 `/skills list` 确认名称和位置，发送：
+
+工作区技能只在受信任的目录中加载。首次打开项目时完成宿主的信任确认，再重载技能。若安装成功但列表仅显示内置技能，先检查工作区信任状态。本次在未受信任的临时目录复现了这一情况，给予该测试目录单次会话信任后，`xmu-ppt` 显示为 Enabled。[Gemini CLI 信任机制](https://geminicli.com/docs/cli/trusted-folders/)。
 
 ```text
 请启用 xmu-ppt 技能，制作约 10 页厦大风格的校园科研协作方案汇报。

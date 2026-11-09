@@ -2,7 +2,7 @@
 
 [工具目录](README.md) · [准备 Python 和源码](../quickstart.md)
 
-官方机制：项目技能位于 `.claude/skills/<name>/SKILL.md`，可用 `/name` 调用。依据 [Claude Code 官方 Skills 文档](https://code.claude.com/docs/en/skills)核验（2026-10-31）。以下是文档适配步骤，本项目尚未在 Claude Code 实机验收。
+项目技能位于 `.claude/skills/<name>/SKILL.md`，可用 `/name` 调用。2026-11-09 使用 Claude Code 2.1.286 验证初始化事件中的技能注册，有技能副本的项目列出 `xmu-ppt`，空目录对照未列出。完整模型驱动创作仍待验收。[Claude Code 官方 Skills 文档](https://code.claude.com/docs/en/skills)。
 
 ## 项目级安装
 

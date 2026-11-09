@@ -2,7 +2,7 @@
 
 [工具目录](README.md) · [准备 Python 和源码](../quickstart.md)
 
-官方机制：支持 Agent Skills 的 Copilot 环境可读取项目 `.github/skills/`；具体支持范围随宿主版本变化。依据 [GitHub 官方 Agent Skills 文档](https://docs.github.com/en/copilot/concepts/customizations/agent-skills)核验（2026-10-31）。以下步骤尚未在 Copilot 实机验证。
+支持 Agent Skills 的 Copilot 环境可读取项目 `.github/skills/`、`.claude/skills/` 和 `.agents/skills/`，具体支持范围随宿主版本变化。2026-11-09 使用 Copilot CLI 1.0.107 的 `skill list --json`，验证临时项目中 `xmu-ppt` 的 source 为 project 且已启用。IDE 集成与完整模型驱动创作仍待验收。[GitHub 官方 Agent Skills 文档](https://docs.github.com/en/copilot/concepts/customizations/agent-skills)。
 
 ## 本地 Agent 模式
 
@@ -24,4 +24,4 @@ python -c "from pathlib import Path; import shutil; d=Path('.github/skills/xmu-p
 
 ## Copilot CLI 和云端 Agent
 
-官方提供多个支持 Skill 的入口，但本项目未逐一验证。云端需要仓库内完整资源与独立依赖安装，本机虚拟环境不可复用；生成的二进制文件应按宿主提供的产物下载流程取回，不要求将演示稿直接提交到业务仓库。
+Copilot CLI 可运行 `copilot skill list --json` 检查实际名称、路径、source 和 enabled。云端需要仓库内完整资源与独立依赖安装，本机虚拟环境不可复用，生成的二进制文件按宿主提供的产物下载流程取回。不同 IDE 与云端入口仍需分别验收。[Copilot CLI 命令参考](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference)。

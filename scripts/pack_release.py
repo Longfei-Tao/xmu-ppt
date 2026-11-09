@@ -33,6 +33,7 @@ DIST = ROOT / "dist"
 PREFIX = "xmu-ppt/"
 NOTICES = "skills/xmu-ppt/templates/external/TEMPLATE_NOTICES.md"
 BUILTIN_CATALOG = "skills/xmu-ppt/templates/decks/catalog.json"
+RASTER_SUFFIXES = (".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp", ".tif", ".tiff", ".avif")
 
 # 只在 ZIP 内重置，绝不改工作区：这些索引是「本机模板清单」，不是技能代码。
 RESET_INDEXES = {
@@ -66,8 +67,10 @@ def exclusion(rel: str) -> str | None:
         return "machine-local artifact / repository maintenance test"
     if low.startswith("docs/templates/previews/"):
         return "site preview image"
+    if low.startswith(("docs/", "examples/")) and low.endswith(RASTER_SUFFIXES):
+        return "documentation screenshot / example preview"
     if low.startswith("skills/xmu-ppt/templates/decks/") and (
-        "/assets/" in low or "/previews/" in low or low.endswith("/preview.png")
+        "/assets/" in low or "/previews/" in low or low.endswith(RASTER_SUFFIXES)
     ):
         return "bundled photo / thumbnail"
     if "xmu_logo" in low and low.endswith((".png", ".jpg", ".jpeg", ".webp", ".svg")):
@@ -135,13 +138,11 @@ def clean_index(rel: str) -> str:
 def audit(kept: list[str]) -> list[str]:
     problems: list[str] = []
     for rel in kept:
-        low = rel.lower()
-        if low.endswith((".pptx", ".ppt")):
-            problems.append(f"original deck leaked: {rel}")
-        if low.endswith(".local.json") or "local-gallery/" in low or "source_map" in low:
+        reason = exclusion(rel)
+        if reason:
+            problems.append(f"excluded file leaked ({reason}): {rel}")
+        elif "local-gallery/" in rel.lower() or "source_map" in rel.lower():
             problems.append(f"local config/asset leaked: {rel}")
-        if low.startswith("tests/"):
-            problems.append(f"maintenance test leaked: {rel}")
     if NOTICES not in kept:
         problems.append(f"missing rights declaration: {NOTICES}")
     if BUILTIN_CATALOG not in kept:
@@ -181,9 +182,10 @@ def manifest_text(kept: list[str], skipped: dict[str, int]) -> str:
     lines += [f"  - {rel}" for rel in RESET_INDEXES]
     lines += [
         "",
-        "This package contains code, docs, SVG layout definitions and index",
-        "SCHEMAS only. It contains NO external .pptx originals, NO preview",
-        "screenshots, NO machine-local paths and NO machine-local template list.",
+        "This package contains code, docs, SVG layout definitions, runtime",
+        "image assets and index schemas. It contains NO external .pptx",
+        "originals, NO display screenshots, NO template bitmaps,",
+        "NO machine-local paths and NO machine-local template list.",
         "",
         "Rights boundary: LICENSE-ASSETS",
         "External template notices: " + NOTICES,
@@ -231,6 +233,7 @@ def main(argv: list[str] | None = None) -> int:
     # 避免每次重建日期变化导致下载链接失效。发布时两个文件一并上传。
     alias = DIST / "xmu-ppt-skill.zip"
     if out.resolve() != alias.resolve():
+        alias.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(out, alias)
         print(f"wrote: {alias} ({alias.stat().st_size / 1024 / 1024:.1f} MiB)")
     return 0

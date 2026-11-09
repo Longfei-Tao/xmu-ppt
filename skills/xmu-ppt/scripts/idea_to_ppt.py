@@ -39,6 +39,7 @@ import sanitize_pptx  # noqa: E402
 import template_numbers as numbers  # noqa: E402
 import text_fit  # noqa: E402
 import user_templates  # noqa: E402
+import template_selection  # noqa: E402
 
 EXTERNAL = SKILL_ROOT / "templates" / "external"
 CATALOG_FILE = EXTERNAL / "external_catalog.json"
@@ -158,8 +159,7 @@ def _all_templates() -> list[dict]:
     for r in _load(BUILTIN_CATALOG):
         source = DECKS / r["id"] / "source.pptx"
         folder = DECKS / r["id"]
-        has_svg = any((folder / name).is_file()
-                      for name in ("01_cover.svg", "03_content.svg"))
+        has_svg = template_selection.svg_available(folder)
         route = "native" if source.is_file() else ("svg" if has_svg else None)
         pages = None
         if source.exists():
@@ -419,8 +419,18 @@ def confirm(selection: str, request_id: str | None = None) -> dict:
     return gate
 
 
-def require_confirmed(plan: dict) -> dict:
-    gate = _load(GATE_FILE, {})
+def require_confirmed(plan: dict, project: Path | None = None) -> dict:
+    gate = None
+    if project is not None:
+        project = Path(project).resolve()
+        for folder in [project, *project.parents]:
+            marker = folder / 'confirm_ui/recommendations.json'
+            if marker.is_file():
+                if _load(marker).get('kind') == 'template':
+                    gate = template_selection.selected(folder)
+                break
+    if gate is None:
+        gate = _load(GATE_FILE, {})
     if gate.get("status") != "confirmed":
         raise RuntimeError(
             "门禁：尚未选定模板。第一步必须先给出候选链接清单并等待用户明确选定，"
@@ -638,7 +648,7 @@ def final_check(sanitized_source: Path, output: Path, plan: dict, library: dict,
 
 def build(plan_path: Path, output: Path) -> dict:
     plan = _load(plan_path)
-    gate = require_confirmed(plan)
+    gate = require_confirmed(plan, project=plan_path.parent)
     template_id = plan.get("template_id") or gate.get("template_id")
     if not template_id:
         raise RuntimeError("plan 缺少 template_id，且没有已选定的模板")

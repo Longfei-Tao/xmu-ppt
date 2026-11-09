@@ -2,7 +2,7 @@
 
 [工具目录](README.md) · [准备 Python 和源码](../quickstart.md)
 
-官方机制：Codex 会扫描项目中的 `.agents/skills/`，支持显式选择技能。路径与调用机制依据 [OpenAI 官方说明](https://learn.chatgpt.com/docs/build-skills)核验（2026-10-31）。本项目当前只验证了 Windows Codex 会话中的仓库脚本执行，未做全新安装验收。
+Codex 会扫描项目中的 `.agents/skills/`，用户级共享目录为 `~/.agents/skills/`，支持显式选择技能。2026-11-09 使用 Codex CLI 0.167.0-alpha.3.2 的 app-server `skills/list`，确认临时项目中的技能已发现且启用。完整模型驱动创作仍待单独验收。[OpenAI 官方说明](https://learn.chatgpt.com/docs/build-skills)。
 
 ## 在本项目使用
 
