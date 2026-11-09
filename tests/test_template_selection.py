@@ -131,7 +131,12 @@ class SelectionTests(unittest.TestCase):
     def test_public_gallery_uses_shared_assets(self):
         from template_selection import catalog, preview_svg
         public = SCRIPTS.parents[2] / 'docs/templates'
-        self.assertEqual(json.loads((public / 'catalog.json').read_text(encoding='utf-8')), catalog())
+        published = json.loads((public / 'catalog.json').read_text(encoding='utf-8'))
+        # 公开画廊只允许 15 套内置模板；外部模板仅限本机私有使用。
+        self.assertEqual(published, catalog())
+        self.assertEqual(len(published), 15)
+        self.assertFalse((public / 'previews/external').exists())
+        self.assertEqual(len({deck['number'] for deck in published}), len(published))
         html = (public / 'index.html').read_text(encoding='utf-8')
         for node_id in ('page-status', 'pages', 'coverage-warning'):
             self.assertIn(f'id="{node_id}"', html)

@@ -44,7 +44,9 @@
 
 默认按 **提出需求 → 选择视觉模板 → 生成 PPT** 使用。AI 展示推荐与全部模板预览，等待你选定后连续制作。你已指定模板时直接采用；说“你帮我选”可授权 AI 代选。
 
-每套模板有一个**固定的三位序号**（现有内置模板为 `001`–`015`）。序号只在末尾追加，不重排、不复用；说序号即可选模板，例如 `004` 指「光影厦大」，与模板 ID `MED-004` 不是一回事。
+每套内置模板有一个**固定的三位序号**（`001`–`015`）。序号只在末尾追加，不重排、不复用；说序号即可选模板，例如 `004` 指「光影厦大」。公开仓库不提供外部模板，使用者自备的模板只在各自本机登记与使用。
+
+[公开模板画廊](https://longfei-tao.github.io/xmu-ppt/templates/)只展示 **15 套内置模板**。第三方模板原件、封面与预览图均不进入公开仓库，也不通过本项目对外分发。
 
 ## 三条路线
 
@@ -181,8 +183,9 @@ git pull
 ## 开源与自备模板
 
 本仓库基于 [PPT Master](https://github.com/hugohe3/ppt-master) 的 SVG → PPTX 引擎，
-授权治理也沿用上游做法：**代码按 MIT 开源，第三方模板不随仓库分发**。模板原件留在本机，
-或通过官方模板包按需导入；仓库只保留文字索引与指纹，导入时逐文件校验，不上传任何原件。
+授权治理也沿用上游做法：**代码按 MIT 开源，第三方模板不随仓库分发**。公开仓库只提供
+15 套内置模板；使用者可把自己合法持有的模板放在本机，通过 `root.local.json` 登记，
+原件与预览都不会上传。
 
 > **直接下载技能包**：[`xmu-ppt-skill.zip`](https://github.com/Longfei-Tao/xmu-ppt/releases/latest/download/xmu-ppt-skill.zip)（13.7 MiB）· [查看全部 Release](https://github.com/Longfei-Tao/xmu-ppt/releases)
 
@@ -190,15 +193,13 @@ git pull
 | --- | --- |
 | 用内置 15 套 | clone 完整仓库（含内置模板原件与封面） |
 | 只带技能、模板自备 | 解压上面的纯技能包，填入自己的模板目录即可 |
-| 一次性导入 200 套模板包 | 下载 Release 里的 `xmu-ppt-templates.zip`，运行 `python skills/xmu-ppt/scripts/external_templates.py import`；先逐文件校验 SHA-256，再自动登记并生成离线画廊，之后可打开 `local-gallery/index.html` 按封面挑、报序号选定 |
-| 用自己购买 / 收集的模板 | 复制 `root.example.json` 为 `root.local.json`，填入模板目录；再运行扫描与预览渲染 |
-| 把自己的模板打包给他人 | `python skills/xmu-ppt/scripts/external_templates.py pack -o dist/xmu-ppt-templates.zip`；**仅在你确实有权分发这些模板时使用** |
+| 用自己合法持有的模板 | 复制 `root.example.json` 为 `root.local.json`，填入本机模板目录；运行 `scan` 登记，或运行 `scripts/build_local_gallery.py` 生成本地画廊。原件和预览只留在本机，不进入公开仓库 |
 | 生成一份可公开分发的技能包 | `python scripts/pack_release.py`，脚本会拒绝装入任何原件、截图或本机配置 |
 | 核验素材边界（仅仓库维护者） | 在**完整仓库**运行 `python scripts/check_assets.py`，发布前要求 0 error；纯技能包不含内置原件与本机配置，**无需运行**此脚本 |
 
 权利声明、逐套台账与更新政策见[外部模板声明](skills/xmu-ppt/templates/external/TEMPLATE_NOTICES.md)、
-[素材授权边界](LICENSE-ASSETS)与[素材与许可](docs/assets.md)。别人下载后可以在自己电脑上
-获得与本机等价的模板浏览与原生填充能力，模板由各自提供、权利由各自核验。
+[素材授权边界](LICENSE-ASSETS)与[素材与许可](docs/assets.md)。公开仓库不提供任何外部模板
+原件、封面或下载包；使用者自备模板的权利状态由使用者自行核验。
 
 ## 使用前了解
 

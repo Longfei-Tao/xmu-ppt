@@ -1,6 +1,6 @@
 # strict-native 严格保真路线
 
-> 适用场景：用户从「本地模板库」选定了**外部模板**（200 套，ID 形如 `MED-001` / `CAMPUS-...`），并要求「保留原模板每一页的版式，只换文字」。
+> 适用场景：用户从「本地模板库」选定了**自己合法持有的外部模板**（ID 形如 `MED-001` / `CAMPUS-...`），并要求「保留原模板每一页的版式，只换文字」。公开仓库不附带任何外部模板原件、封面或下载包。
 >
 > 本路线是**独立新增**的第三条出稿路线。内置 15 套厦大模板、默认 SVG 出稿、原生填充 `apply` 全部保持原样；把 `templates/external/feature_flags.json` 的 `strict_native` 设为 `false` 即可完整回退。
 
@@ -16,10 +16,9 @@
 
 ## 二、完整流程
 
-0. **准备模板**：本机还没有原件时，先下载 Release 里的 `xmu-ppt-templates.zip`，运行
-   `python skills/xmu-ppt/scripts/external_templates.py import`；它会逐文件校验 SHA-256、
-   解压到 `~/xmu-ppt-templates`、自动登记，并生成离线画廊 `local-gallery/index.html`。
-   已有自己的模板目录则改用 `scan` 登记（之后可自行运行 `scripts/build_local_gallery.py` 生成画廊）。
+0. **准备模板**：把你自己合法持有的模板目录登记到本机。复制 `root.example.json` 为
+   `root.local.json` 并填入目录，然后运行 `scan`；生成离线画廊可再运行
+   `python scripts/build_local_gallery.py`。公开仓库不提供模板包下载。
 1. **用户给主题与想法** → AI 推荐 1–2 个分类与候选模板，**不代选**。
 2. 用户在本机打开 `local-gallery/index.html`，按分类浏览、用页码滑杆看**每一页**的布局，点「复制给 AI 的选用指令」。
 3. 指令里含模板 ID（如 `MED-001`）与「1:1 保留全部页面、尤其第 2/3/4 页、不删页不重排不替换素材」。

@@ -67,10 +67,18 @@ class ExternalSelectionTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             _validate(deck["id"], "svg")
 
-    def test_06_public_catalog_still_has_only_15_decks(self):
+    def test_06_public_catalog_is_builtin_only(self):
+        """公开画廊只发布 15 套内置模板；本机外部模板不进入公开目录。"""
+        from template_selection import catalog
         public = json.loads((ROOT / "docs/templates/catalog.json").read_text(
             encoding="utf-8"))
+        self.assertEqual(public, catalog())
         self.assertEqual(len(public), 15)
+        self.assertFalse(any(d.get("namespace") == "external" for d in public))
+        self.assertFalse((ROOT / "docs/templates/previews/external").exists())
+        for deck in public:
+            self.assertTrue((ROOT / "docs/templates" / deck["preview"]).is_file(),
+                            deck["preview"])
 
     def test_10_source_key_comes_from_scanned_catalog_even_with_empty_registry(self):
         """纯技能包会重置注册表；定位原件不能依赖旧条目碰巧命中。"""

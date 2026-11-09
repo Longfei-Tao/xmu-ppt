@@ -53,8 +53,8 @@
 在 manifest 的 `surfaces` 中按目录登记，规则与 deck 相同。
 
 外部模板库不进入本仓库：`skills/xmu-ppt/templates/external/licenses.json` 中
-200 套全部为 `unknown` / `redistributable: false`，由 `check_assets.py` 守住
-「不得出现原件」的底线。
+所有外部模板条目均为 `unknown` / `redistributable: false`，由 `check_assets.py` 守住
+「不得出现原件、封面或预览图」的底线。公开仓库只发布 15 套内置模板。
 
 ## 3. 能力边界（已有，不改）
 
@@ -71,7 +71,7 @@
 
 | 隔离 | 做法 |
 | --- | --- |
-| 物理隔离 | 外部模板原件在桌面目录，仓库只存索引；预览图与 `local-gallery/` 被 `.gitignore` 排除 |
+| 物理隔离 | 外部模板原件在桌面目录，仓库只存索引；逐页预览图与 `local-gallery/` 被 `.gitignore` 排除，公开画廊只展示 15 套内置模板，不发布任何外部模板封面、预览或下载包 |
 | 命名隔离 | `builtin` / `external` 命名空间 + 固定三位序号；序号只追加不重排 |
 | 运行时隔离 | 外部模板先净化再出稿；成品只写 `output/` |
 | 发布隔离 | `check_assets.py` 检查「公开仓库不得含外部原件」「声明 public 必须有许可」 |

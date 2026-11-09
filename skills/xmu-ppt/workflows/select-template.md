@@ -42,6 +42,6 @@ python ${SKILL_DIR}/scripts/confirm_ui/server.py <project_path> --shutdown
 
 ## 4. 维护公开画廊
 
-在仓库根目录运行 `python scripts/build_template_gallery.py`，更新 `docs/templates/`。本地页面与公开页面共用索引、脚本和样式。公开页只复制指令，用户将其发给 AI 后才建立项目选择记录。
+在仓库根目录运行 `python scripts/build_template_gallery.py`，更新 `docs/templates/`。公开画廊**只生成 15 套内置模板**；`local-gallery/catalog.js` 中的外部模板仅供本机私有预览，默认不合并、不发布。若确需本机预览外部封面，可显式运行 `--include-external`，产物不得提交到公开仓库。本地页面与公开页面共用索引、脚本和样式。公开页只复制指令，用户将其发给 AI 后才建立项目选择记录。
 
 新增或下架模板时，除更新 `templates/decks/catalog.json` 与 `decks_index.json` 外，还要重跑此命令、同步文档里的模板计数与测试断言，并运行 `audit_xmu.py --check-svg`；公开画廊不会随仓库文件自动刷新。

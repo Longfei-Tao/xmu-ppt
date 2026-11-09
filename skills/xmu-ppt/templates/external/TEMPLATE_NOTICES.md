@@ -14,15 +14,16 @@
 | 15 套内置模板及其逐套授权状态 | 是 | 见 `skills/xmu-ppt/templates/decks/assets_manifest.json` 与 `docs/assets.md` |
 | 外部模板的**索引元数据**（名称、分类、页数、指纹、风格标签） | 是 | `external_catalog.json`、`number_registry.json`、`categories.json`、`licenses.json` |
 | 外部模板的**原件** `.pptx` / `.ppt` | **否** | 只读扫描本机目录，不复制、不改名、不入库 |
-| 外部模板的**预览图与任何衍生截图** | **否** | 只写入本机 `local-gallery/`，已被 `.gitignore` 忽略 |
+| 外部模板的**封面缩略图** | **否** | 只写入本机 `local-gallery/`；公开仓库与公开画廊均不发布外部封面 |
+| 外部模板的**逐页预览图与任何衍生截图** | **否** | 只写入本机 `local-gallery/`，已被 `.gitignore` 忽略 |
 | 本机模板目录路径、原文件名映射 | **否** | `root.local.json`、`source_map.local.json`、`path_status.json`，均被忽略 |
 
 `scripts/check_assets.py` 会断言仓库中不存在任何外部模板原件；
-`tests/test_asset_boundaries.py` 会断言 200 套外部模板均未被标记为可再分发。
+`tests/test_asset_boundaries.py` 会断言所有外部模板条目均未被标记为可再分发。
 
-模板包（`xmu-ppt-templates.zip`）同样**不随仓库提交**，只通过 Release 等外部渠道按需分发。
-是否分发、分发给谁，由持有者自行判断并承担全部权利责任；`external_templates.py import`
-只做 SHA-256 校验、解压与登记，不构成对包内模板授权的任何认可。
+模板包（`xmu-ppt-templates.zip`）**不随仓库提交，也不通过本项目公开分发**。仓库只保留
+本地导入工具；是否使用、在何种范围内使用，由模板持有者自行判断并承担全部权利责任。
+`external_templates.py import` 只做 SHA-256 校验、解压与登记，不构成对包内模板授权的任何认可。
 
 ## 2. 权利声明
 

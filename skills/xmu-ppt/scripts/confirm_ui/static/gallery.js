@@ -24,6 +24,10 @@ function render() {
   matches.sort((a, b) => (groupOf(a) - groupOf(b)) ||
     (Number(recommended.includes(b.id)) - Number(recommended.includes(a.id))));
   const grouped = matches.some(d => d.namespace === 'external');
+  const counts = {
+    builtin: templates.filter(d => d.namespace !== 'external').length,
+    external: templates.filter(d => d.namespace === 'external').length,
+  };
   $('cards').replaceChildren();
   let shownGroup = null;
   for (const deck of matches) {
@@ -32,8 +36,8 @@ function render() {
       const heading = document.createElement('h2');
       heading.className = 'group-title';
       heading.textContent = group
-        ? '本机模板（仅此电脑可用 · 不随仓库分发）'
-        : '内置模板（15 套 · 可公开分发）';
+        ? `外部模板（${counts.external} 套 · 本机自备 · 不公开分发）`
+        : `内置模板（${counts.builtin} 套 · 随仓库分发）`;
       $('cards').append(heading);
       shownGroup = group;
     }
@@ -46,14 +50,15 @@ function render() {
     const body = document.createElement('div');
     body.className = 'card-body';
     const title = document.createElement('h2');
-    title.textContent = `${String(deck.number).padStart(2, '0')} ${deck.name}`;
+    title.textContent = `${deck.serial || String(deck.number).padStart(3, '0')} ${deck.name}`;
     const style = document.createElement('p');
     style.textContent = deck.style;
     const tags = document.createElement('p');
     tags.textContent = deck.tags.join(' · ');
     const badge = document.createElement('p');
     badge.className = 'badge';
-    badge.textContent = (deck.namespace === 'external' ? '本机 · ' : '') +
+    badge.textContent = (deck.namespace === 'external'
+      ? (published ? '外部 · ' : '本机 · ') : '') +
       (recommended.includes(deck.id) ? '场景推荐 · ' : '') +
       (deck.routes.includes('native') ? '支持灵活排版 / 保持原版式' : '仅支持灵活排版');
     const reason = recommendation?.recommendation_reasons?.[deck.id];
@@ -96,14 +101,18 @@ const LAYOUT_LABELS = {
 
 function renderLegacyPreviews(deck) {
   const grid = $('previews');
-  grid.hidden = false;
-  grid.replaceChildren();
   const number = String(deck.number).padStart(2, '0');
-  for (const [name, file] of [
-    ['封面', deck.preview],
-    ['正文（SVG 原型）', `previews/${number}-content.svg`],
-    ['章节页（SVG 原型）', `previews/${number}-chapter.svg`],
-  ]) {
+  const items = deck.namespace === 'external'
+    ? [['封面', deck.preview]]
+    : [
+        ['封面', deck.preview],
+        ['正文（SVG 原型）', `previews/${number}-content.svg`],
+        ['章节页（SVG 原型）', `previews/${number}-chapter.svg`],
+      ];
+  grid.hidden = false;
+  grid.classList.toggle('single', items.length === 1);
+  grid.replaceChildren();
+  for (const [name, file] of items) {
     const figure = document.createElement('figure');
     const image = document.createElement('img');
     image.src = file;
@@ -123,7 +132,9 @@ async function loadFullPages(deck) {
   grid.hidden = true;
   warning.hidden = true;
   if (published) {
-    status.textContent = '静态预览：此处仅显示 3 页原型；逐页预览请在本机模板选择页中查看。';
+    status.textContent = deck.namespace === 'external'
+      ? `外部模板：公开页不提供外部模板预览；请在本机自备原件后查看。`
+      : '静态预览：此处仅显示 3 页原型；逐页预览请在本机模板选择页中查看。';
     renderLegacyPreviews(deck);
     return {complete: false, static: true};
   }
@@ -143,10 +154,12 @@ async function loadFullPages(deck) {
     } else {
       grid.hidden = false;
       $('previews').hidden = true;
-      for (const page of data.pages) {
+      for (const [index, page] of data.pages.entries()) {
         const figure = document.createElement('figure');
         const image = document.createElement('img');
-        image.src = page.preview || deck.preview;
+        // 第一页就是封面。统一使用画廊卡片同一张封面图，避免详情页与卡片
+        // 因为取图路径不同（老封面 vs 逐页渲染）而出现两个版本。
+        image.src = index === 0 ? deck.preview : (page.preview || deck.preview);
         image.alt = `${deck.name} 第 ${page.slide} 页`;
         image.loading = 'lazy';
         image.title = page.summary || '';
@@ -185,7 +198,7 @@ async function loadFullPages(deck) {
 
 async function showDetail(deck) {
   current = deck;
-  $('detail-title').textContent = deck.name;
+  $('detail-title').textContent = `${deck.serial || String(deck.number).padStart(3, '0')} ${deck.name}`;
   $('description').textContent = deck.style;
   $('previews').replaceChildren();
   $('selection-status').textContent = saved ? '此项目已确认模板。更换模板请回到聊天中新建项目。' : '';
@@ -195,15 +208,18 @@ async function showDetail(deck) {
   // 公开页只有 3 页原型，无法判断全页是否入库，按 routes 声明即可；
   // 本机页必须以真实全页预览完整为条件，避免误报「可原生填充」。
   nativeReady = deck.routes.includes('native') && (published || pages.complete);
-  canChoose = published || nativeReady || deck.routes.includes('svg');
+  const svgReady = deck.routes.includes('svg');
+  canChoose = published || nativeReady || svgReady;
   $('route').value = nativeReady ? 'native' : 'svg';
-  $('route').querySelector('[value="svg"]').disabled = saved || (nativeReady && !published);
+  $('route').querySelector('[value="svg"]').disabled = saved || !svgReady || (nativeReady && !published);
   $('route').querySelector('[value="native"]').disabled = saved || !nativeReady;
-  $('route-hint').textContent = nativeReady
-    ? '已锁定原生填充：只替换原模板的文字、表格与图表数据，不改任何版式。'
-    : deck.routes.includes('svg')
-      ? '此模板缺少完整的原生页库，只能选择 SVG 灵活排版（会重新设计布局）。'
-      : '此模板既不能原生填充，也没有 SVG 版式，请改选其它模板。';
+  $('route-hint').textContent = deck.namespace === 'external'
+    ? '外部模板只支持保持原版式：使用本机自备原件，原生填充只替换文字，不改版式。'
+    : nativeReady
+      ? '已锁定原生填充：只替换原模板的文字、表格与图表数据，不改任何版式。'
+      : svgReady
+        ? '此模板缺少完整的原生页库，只能选择 SVG 灵活排版（会重新设计布局）。'
+        : '此模板既不能原生填充，也没有 SVG 版式，请改选其它模板。';
   if (!nativeReady && deck.routes.includes('svg')) {
     $('coverage-warning').textContent = '该模板没有 source.pptx 全页页库，无法保持原版式；选择 SVG 排版会重新设计布局，视觉风格仍沿用模板。';
     $('coverage-warning').hidden = false;
@@ -252,7 +268,7 @@ async function start() {
   try {
     if (published) {
       templates = await readJSON('catalog.json');
-      $('intro').textContent = '浏览 15 套模板，选定后复制指令发给 AI。';
+      $('intro').textContent = `浏览 ${templates.length} 套模板，选定后复制指令发给 AI。`;
     } else {
       [templates, recommendation] = await Promise.all([readJSON('/api/templates'), readJSON('/api/recommendations')]);
       saved = recommendation._already_confirmed;
