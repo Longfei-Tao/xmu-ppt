@@ -1,0 +1,98 @@
+{
+  "schema": "xmu_ppt_brand.v1",
+  "brand_id": "厦门大学",
+  "name": "厦门大学",
+  "name_en": "Xiamen University",
+  "summary": "厦门大学学术答辩、课程汇报、科研组会、招生宣讲与校园活动演示",
+  "primary_color": "#204080",
+  "colors": {
+    "primary": {
+      "value": "#204080",
+      "provenance": "fact",
+      "use": "校徽与校名标准色"
+    },
+    "layout_blue": {
+      "value": "#005FA5",
+      "provenance": "fact",
+      "use": "官方模板「厦园晴日」版面主色，标题、目录序号、装饰块"
+    },
+    "sky": {
+      "value": "#BAE2FF",
+      "provenance": "fact",
+      "use": "浅蓝装饰块、色块层次"
+    },
+    "accent_orange": {
+      "value": "#D37820",
+      "provenance": "fact",
+      "use": "「凤栖青橙」强调色，序号与少量高亮"
+    },
+    "accent_sage": {
+      "value": "#647F5E",
+      "provenance": "fact",
+      "use": "「凤栖青橙」辅助色，来自绿瓦屋顶插画"
+    },
+    "accent_indigo": {
+      "value": "#4661CC",
+      "provenance": "fact",
+      "use": "「南强蔚蓝」主色，大字标题与数字"
+    },
+    "paper": {
+      "value": "#F2EDE2",
+      "provenance": "approx",
+      "use": "「凤栖青橙」宣纸底纹近似底色"
+    },
+    "text": {
+      "value": "#1A1A1A",
+      "provenance": "fact",
+      "use": "正文黑"
+    },
+    "white": {
+      "value": "#FFFFFF",
+      "provenance": "fact",
+      "use": "卡片与反白文字"
+    }
+  },
+  "typography": {
+    "title": {
+      "stack": ["华文中宋", "Source Han Serif SC", "思源宋体", "SimSun", "serif"],
+      "weight": "600-700",
+      "note": "正式答辩与学术汇报优先宋体标题"
+    },
+    "body": {
+      "stack": ["微软雅黑", "Microsoft YaHei", "Source Han Sans SC", "思源黑体", "PingFang SC", "sans-serif"],
+      "weight": "400"
+    },
+    "numeric": {
+      "stack": ["Manrope", "Inter", "Arial", "sans-serif"],
+      "weight": "600-700"
+    },
+    "mixing_rule": "同一份演示中不要混用两种标题气质"
+  },
+  "logo": {
+    "file": "xmu_logo.png",
+    "sha256": "435c9693db42813b242e2df491e7f33b5ad51a1edddb9633e828ba6d9fecdb2e",
+    "form": "校徽 + 中英文校名横向组合，289×83，透明底",
+    "placement": {
+      "cover": "top-left",
+      "content": "top-right",
+      "ending": "center"
+    },
+    "width_px": {
+      "cover": [240, 270],
+      "content": [140, 170],
+      "ending": [260, 320],
+      "min": 120
+    },
+    "forbidden": ["stretch", "recolor", "stroke", "shadow", "place_on_busy_photo"]
+  },
+  "voice": {
+    "formality": "formal",
+    "person": "我们 / 各位老师",
+    "emoji": false,
+    "abbreviation_rule": "首次出现写全称，后续可用简称（厦门大学 → 厦大）"
+  },
+  "icon": {
+    "preference": "linear",
+    "note": "装饰性图形优先使用厦大自有元素（凤凰花、黑天鹅、嘉庚建筑、绿瓦屋顶），不用通用商业插画"
+  }
+}

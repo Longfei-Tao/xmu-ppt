@@ -32,6 +32,7 @@ sys.path.insert(0, str(SCRIPTS))
 from template_fill_pptx.analyzer import analyze_pptx  # noqa: E402
 from template_fill_pptx.applier import apply_plan  # noqa: E402
 from template_fill_pptx.checker import check_plan  # noqa: E402
+import brand  # noqa: E402
 import content_brief  # noqa: E402
 import page_catalog  # noqa: E402
 import sanitize_pptx  # noqa: E402
@@ -479,7 +480,7 @@ def page_layouts(template_id: str, brief_path: Path | None = None) -> dict:
             data = {"schema": page_catalog.SCHEMA, "template_id": template_id,
                     "pages": catalog.get("pages", [])}
         data["slide_count"] = len(catalog.get("pages", []))
-        return data
+        return _with_brand(data, template_id, item)
     library = analyze_pptx(source)
     pages = []
     for slide in library["slides"]:
@@ -492,6 +493,20 @@ def page_layouts(template_id: str, brief_path: Path | None = None) -> dict:
     data = {"template_id": template_id, "slide_count": len(pages), "pages": pages}
     if brief:
         data["brief_suggestions"] = []
+    return _with_brand(data, template_id, item)
+
+
+def _with_brand(data: dict, template_id: str, item: dict) -> dict:
+    """Attach the brand identity block so the agent knows the legal colours.
+
+    Only built-in decks carry a brand layer; user templates legitimately have
+    none, and are left without the block rather than labelled with our brand.
+    """
+    if item.get("namespace") not in (None, "builtin"):
+        return data
+    block = brand.describe(template_id)
+    if block.get("brand_id"):
+        data["brand"] = block
     return data
 
 
@@ -516,8 +531,23 @@ def _shape_texts(shapes) -> list[str]:
     return texts
 
 
+def _plan_colors(node) -> list[str]:
+    """Collect every explicit `color` value anywhere in the fill plan."""
+    found: list[str] = []
+    if isinstance(node, dict):
+        for key, value in node.items():
+            if key == "color" and isinstance(value, str):
+                found.append(value)
+            else:
+                found.extend(_plan_colors(value))
+    elif isinstance(node, list):
+        for entry in node:
+            found.extend(_plan_colors(entry))
+    return found
+
+
 def final_check(sanitized_source: Path, output: Path, plan: dict, library: dict,
-                *, capacity: dict | None = None) -> dict:
+                *, capacity: dict | None = None, deck_id: str | None = None) -> dict:
     errors: list[str] = []
     warnings: list[str] = []
 
@@ -575,6 +605,21 @@ def final_check(sanitized_source: Path, output: Path, plan: dict, library: dict,
     if not media["clean"]:
         errors.append("模板一致性：成品仍含音乐或自动翻页：" + json.dumps(media, ensure_ascii=False))
 
+    # 品牌色约束：显式指定的文字颜色必须来自该模板的品牌色板
+    palette_key = deck_id or plan.get("template_id")
+    allowed = set(brand.palette(palette_key)) if palette_key else set()
+    if allowed:
+        stray = sorted({
+            value.strip().upper()
+            for value in _plan_colors(plan)
+            if brand.is_hex(value) and value.strip().upper() not in allowed
+        })
+        if stray:
+            warnings.append(
+                "模板一致性：文字颜色不在品牌色板内：" + "、".join(stray)
+                + "（可用：" + "、".join(sorted(allowed)) + "）"
+            )
+
     return {
         "ok": not errors, "errors": errors, "warnings": warnings,
         "checks": {
@@ -631,7 +676,8 @@ def build(plan_path: Path, output: Path) -> dict:
     output.parent.mkdir(parents=True, exist_ok=True)
     apply_plan(clean_source, plan, output, transition="keep")
 
-    result = final_check(clean_source, output, plan, library, capacity=capacity)
+    result = final_check(clean_source, output, plan, library, capacity=capacity,
+                         deck_id=template_id)
     result.update({"text_fit_adjustments": fit_changes, **meta})
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     _write(REPORT_DIR / f"{output.stem}.check.json", result)

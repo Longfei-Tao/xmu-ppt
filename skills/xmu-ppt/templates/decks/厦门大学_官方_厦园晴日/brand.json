@@ -1,0 +1,13 @@
+{
+  "schema": "xmu_ppt_deck_brand.v1",
+  "deck_id": "厦门大学_官方_厦园晴日",
+  "serial": "001",
+  "brand_id": "厦门大学",
+  "brand_ref": "../../brands/厦门大学/brand.json",
+  "primary_color": "#005FA5",
+  "color_source": "decks_index.json",
+  "logo": {
+    "file": "xmu_logo.png",
+    "sha256": "435c9693db42813b242e2df491e7f33b5ad51a1edddb9633e828ba6d9fecdb2e"
+  }
+}

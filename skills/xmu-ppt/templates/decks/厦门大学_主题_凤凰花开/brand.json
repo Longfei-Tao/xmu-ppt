@@ -1,0 +1,13 @@
+{
+  "schema": "xmu_ppt_deck_brand.v1",
+  "deck_id": "厦门大学_主题_凤凰花开",
+  "serial": "005",
+  "brand_id": "厦门大学",
+  "brand_ref": "../../brands/厦门大学/brand.json",
+  "primary_color": "#9A3227",
+  "color_source": "decks_index.json",
+  "logo": {
+    "file": null,
+    "note": "本套模板不含校徽文件，按品牌层规则另行合成"
+  }
+}

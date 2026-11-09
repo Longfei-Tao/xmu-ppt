@@ -61,6 +61,7 @@ $PY $S pages <同一序号> --brief output/brief.json -o output/pages.json
 
 - `confirm` 允许用户在画廊里自行挑选推荐清单之外的模板（关键是**明确选定**，不是必须选中推荐项）。
 - `pages` 列出模板每一页的角色、内容形态、密度和容量；带 `--brief` 时还会给每条内容策划案页面返回 `suggested_pages` 和匹配原因。没有精确匹配时会给容量较大的备选，并明确提示“可能需要调整版式或另选模板”。
+- 内置模板的输出还带 `brand` 块：`palette`（本套合法文字色）、`typography`（标题/正文字体栈）、`logo`（校徽文件与摆放规则）。显式写 `color` 时只能取 `palette` 里的值。
 
 ### 第 4 步：按内容挑页并写 fill plan
 

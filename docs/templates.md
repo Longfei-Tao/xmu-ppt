@@ -28,6 +28,23 @@
 
 另有 `厦门大学` 品牌预设（`skills/xmu-ppt/templates/brands/厦门大学/`），只锁校徽、配色、字体与语气，页面可自由排版。
 
+### 品牌层与版式层
+
+每套模板目录现在多一个 `brand.json`，声明自己属于哪个品牌、实际用哪个主色、校徽是哪个文件；品牌身份（色板、标题/正文字体、校徽摆放规则、语气）统一放在 `brands/厦门大学/brand.json`，不再随 15 套模板各抄一份。
+
+- `pages` 输出会带 `brand` 块，AI 填字时知道该用哪几个颜色、什么字体；
+- 显式写了品牌色板之外的颜色，`build` 会在「模板一致性」里报警告（不阻断，深底反白等场景仍需人工判断）；
+- 用户自备模板 `U001` 不套用厦大品牌，也不会输出 `brand` 块。
+
+自检：
+
+```bash
+python scripts/check_brand_layout.py
+python skills/xmu-ppt/scripts/brand.py 厦门大学_主题_经典蓝白
+```
+
+详见 [`references/brand-layout.md`](../skills/xmu-ppt/references/brand-layout.md)。
+
 ### 主题风格（12 套，含转换后的 SVG 原型）
 
 按 PPT Master 官方 create-template 的 mirror 模式转换；页面保留原示例文字，使用时只替换文字、不动版式。
