@@ -54,6 +54,10 @@ def _apply_table_edits_to_slide(
             if col_index < 0 or col_index >= len(row_cells):
                 errors.append(f"{selectors[0] if selectors else '<table>'} row={row_index} col={col_index}")
                 continue
-            _set_container_text(row_cells[col_index], _table_cell_text(cell_edit))
+            _set_container_text(
+                row_cells[col_index],
+                _table_cell_text(cell_edit),
+                (cell_edit.get("color") or None),
+            )
     if errors:
         raise RuntimeError(f"Invalid table edit target(s) on slide {source_slide}: {'; '.join(errors)}")
