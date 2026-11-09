@@ -19,14 +19,30 @@
 - 常用命令：`template_numbers.py check` 校验唯一性、`list` 列出全部对应、`resolve 004` 按序号查模板。
 - **用户自备模板使用独立的 `U` 前缀**（如 `U001`），由 `user_templates.py onboard` 分配；不写入公开序号注册表，也不与 `001–015`、`016+` 冲突。
 
-## 二、四步流程
+## 二、五步流程
 
-### 第 1 步 ⛔ BLOCKING：只给候选链接清单，等待选定
+### 第 1 步：内容策划案（推荐默认）
 
 ```bash
-PY=.venv/Scripts/python.exe
-S=skills/xmu-ppt/scripts/idea_to_ppt.py
-$PY $S recommend --idea "用户原话里的想法" --positioning "主题定位"
+$PY $S brief --idea "用户原话里的想法" --positioning "主题定位" \
+  --audience "听众" --duration 15 -o output/brief.json
+```
+
+- 先生成一页纸草稿，列出每页目的、核心结论、内容形态、证据来源和数据缺口；
+- AI 根据用户材料补全 `sections` 与 `pages`，用户确认后执行：
+
+```bash
+$PY $S brief --file output/brief.json --confirm
+```
+
+- 用户明确说“赶时间/直接做”时，可以跳过本步，改用旧的
+  `recommend --idea ... --positioning ...`；交付说明中必须标注“内容未确认”。
+- 确认后，后续推荐与出稿会绑定这份策划案的 `brief_sha256`；内容改了要重新确认模板。
+
+### 第 2 步 ⛔ BLOCKING：只给候选链接清单，等待选定
+
+```bash
+$PY $S recommend --brief output/brief.json
 ```
 
 - 按主题定位推荐 8 套候选，输出 **可点击的本地画廊链接清单**（每套可直接打开逐页看版式，另有分类浏览链接）。
@@ -36,7 +52,7 @@ $PY $S recommend --idea "用户原话里的想法" --positioning "主题定位"
   - 禁止以「我先帮你做一版看看」为由提前开工；
   - 用户没给主题定位时，可以追问一句定位，但不代选模板。
 
-### 第 2 步：确认选择并查看该模板的每一页版式
+### 第 3 步：确认选择并查看该模板的每一页版式
 
 ```bash
 $PY $S confirm <用户选定的序号，如 004 或 U001>
@@ -46,16 +62,17 @@ $PY $S pages <同一序号> -o output/pages.json
 - `confirm` 允许用户在画廊里自行挑选推荐清单之外的模板（关键是**明确选定**，不是必须选中推荐项）。
 - `pages` 列出模板每一页的版式角色（`cover` / `toc` / `chapter` / `content` / `ending`）、文字槽位数与内容摘要，这是挑页的依据。
 
-### 第 3 步：按内容挑页并写 fill plan
+### 第 4 步：按内容挑页并写 fill plan
 
 - **页数不设固定限制**：由用户的想法与主题定位决定需要几页，再从**已选模板**里挑最合适的页面组合。
 - 典型结构：封面 → 目录 → 章节页 → 若干内容页 → 结束页；内容多就多挑几页内容版式，内容少就少挑，不要为凑数硬加页。
 - plan 里每页写 `source_slide`（模板原有页号）与 `replacements`（只写要替换的文字）。
+- 使用内容策划案时，plan 必须带 `brief_sha256`；内容改了要重新确认策划案并重新选模板。
 - **只做内容填充**：文案写进模板已有的文本区；不自行设计页面、不新增图形、不改配色/字体/位置、不重排模板元素、不使用 SVG 逐页重画。
 - 不得编造实验结果、统计数字、引用、姓名或单位；医学健康类内容只用公认常识，未知字段直接省略。
 - 模板里的占位文字（「单击此处添加标题」「输入医院名称」「YOUR CONPANY NAME」等）必须替换或清空，不能留在成品里。
 
-### 第 4 步：出稿 + 三项检查
+### 第 5 步：出稿 + 三项检查
 
 ```bash
 $PY $S build output/plan.json -o output/成品.pptx
@@ -63,7 +80,7 @@ $PY $S build output/plan.json -o output/成品.pptx
 
 `build` 依次强制完成：
 
-1. **门禁校验**：状态必须为 `confirmed`，且 plan 的 `template_id` 与选定一致，否则拒绝出稿。
+1. **门禁校验**：状态必须为 `confirmed`，且 plan 的 `template_id` 与选定一致；如果本次使用了内容策划案，plan 的 `brief_sha256` 也必须与确认时一致，否则拒绝出稿。
 2. **净化兜底**：无论原件是否已清理，出稿源一律先剥离音乐/音频与自动翻页（见 `sanitize_pptx.py`），切换动画与全部版式元素保留。
 3. **挑页填充**：克隆模板已有页面，只覆盖文字，切换效果保持 `keep`。
 4. **三项检查**（任一不通过即报错，不交付）：
@@ -92,10 +109,12 @@ PY=.venv/Scripts/python.exe
 S=skills/xmu-ppt/scripts/idea_to_ppt.py
 C=skills/xmu-ppt/scripts/sanitize_pptx.py
 
-$PY $S recommend --idea "..." --positioning "..."     # 第一步，等用户选定
-$PY $S confirm U001                                    # 内置/外部用 004，自备模板用 U001
-$PY $S pages U001 -o output/pages.json                 # 看每页版式
-# 编辑 plan.json（挑页 + 只写文案）
-$PY $S build output/plan.json -o output/成品.pptx      # 出稿 + 三项检查
-$PY $C check output/成品.pptx                          # 复核无音乐/自动翻页
+$PY $S brief --idea "..." --positioning "..." -o output/brief.json   # 第1步：内容草稿
+$PY $S brief --file output/brief.json --confirm                      # 用户确认
+$PY $S recommend --brief output/brief.json                            # 第2步，等用户选定
+$PY $S confirm U001                                                   # 内置/外部用 004，自备模板用 U001
+$PY $S pages U001 -o output/pages.json                                # 看每页版式
+# 编辑 plan.json（挑页 + 只写文案 + brief_sha256）
+$PY $S build output/plan.json -o output/成品.pptx                     # 出稿 + 三项检查
+$PY $C check output/成品.pptx                                         # 复核无音乐/自动翻页
 ```

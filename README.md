@@ -53,14 +53,15 @@ This project takes the opposite route. It treats a template as a **fixed set of 
 
 ```mermaid
 flowchart TD
-    A["Topic + positioning"] --> B["Shortlist: you pick a serial"]
+    A["Topic + positioning"] --> A2["Content brief: pages, evidence, gaps"]
+    A2 --> B["Shortlist: you pick a serial"]
     B --> C["Fill the chosen layouts — text only"]
     C --> D{"3 checks pass?"}
     D -->|"fix"| C
     D -->|"pass"| E["Editable .pptx — no music, no auto-advance"]
 ```
 
-The agent stops after the shortlist and waits. It does not design pages, does not restyle the deck, and does not decide on your behalf. Page count is not fixed: it follows from the content and the layouts available in the template you chose.
+The brief comes first: page purpose, key message, evidence and gaps are confirmed before template selection. Say "skip the brief" for a fast draft; the delivery note will mark it unconfirmed. The agent stops after the shortlist and waits. It does not design pages, does not restyle the deck, and does not decide on your behalf. Page count is not fixed: it follows from the content and the layouts available in the template you chose.
 
 Before export it checks **content completeness**, **text fit** against the real geometry of each text box, and **template consistency**. A failure sends the copy back for a fix instead of shipping a page that overflows.
 

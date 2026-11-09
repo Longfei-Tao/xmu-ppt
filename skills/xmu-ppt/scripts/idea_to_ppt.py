@@ -32,6 +32,7 @@ sys.path.insert(0, str(SCRIPTS))
 from template_fill_pptx.analyzer import analyze_pptx  # noqa: E402
 from template_fill_pptx.applier import apply_plan  # noqa: E402
 from template_fill_pptx.checker import check_plan  # noqa: E402
+import content_brief  # noqa: E402
 import sanitize_pptx  # noqa: E402
 import template_numbers as numbers  # noqa: E402
 import text_fit  # noqa: E402
@@ -219,8 +220,25 @@ def resolve_source(template_id: str) -> tuple[dict, Path]:
 # 1. 第一步：候选链接清单（waiting，绝不制作）
 # ---------------------------------------------------------------------------
 
-def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
-    text = f"{idea} {positioning}"
+def recommend(idea: str, positioning: str, limit: int = 8,
+              brief_path: Path | None = None) -> dict:
+    brief = None
+    brief_hash = None
+    if brief_path:
+        brief = content_brief.load(Path(brief_path))
+        errors = content_brief.validate(brief, require_confirmed=True)
+        if errors:
+            raise RuntimeError("内容策划案不能用于推荐：" + "；".join(errors))
+        brief_hash = content_brief.content_hash(brief)
+        idea = str(brief.get("title") or idea or "")
+        positioning = str(brief.get("occasion") or positioning or "")
+        shape_text = " ".join(
+            " ".join(page.get("content_shape") or [])
+            for page in brief.get("pages", [])
+        )
+        text = f"{idea} {positioning} {shape_text}"
+    else:
+        text = f"{idea} {positioning}"
     scores = {
         cat: sum(1 for word in words if word in text)
         for cat, words in CATEGORY_HINTS.items()
@@ -296,6 +314,12 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
         "created_at": datetime.now(timezone.utc).isoformat(),
         "note": "第一步只提供候选链接清单，等待用户明确选定模板后才能开始制作。",
     }
+    if brief:
+        gate.update({
+            "brief_path": str(brief_path),
+            "brief_sha256": brief_hash,
+            "brief_title": brief.get("title"),
+        })
     _write(GATE_FILE, gate)
 
     lines = [
@@ -303,6 +327,8 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
         "请先点链接浏览、比较每一页的版式，然后**报序号**：内置/外部三位数字（如 `004`），",
         "我的模板用 `U` 前缀（如 `U001`）。在你明确选定之前，我不会开始制作任何页面。", "",
     ]
+    if brief:
+        lines += [content_brief.render_markdown(brief), "", "---", ""]
     if fallback:
         lines += ["> 本机没有与该主题完全匹配的专用模板，以下为全部可用模板。", ""]
     lines += [
@@ -387,6 +413,19 @@ def require_confirmed(plan: dict) -> dict:
             "门禁：已选定的模板走「SVG 灵活排版」路线（缺少原生 PPTX 页库），"
             "不能调用原生 build。请按 SVG 排版流程制作，或改选支持原生填充的模板。"
         )
+    gate_brief = gate.get("brief_sha256")
+    plan_brief = plan.get("brief_sha256")
+    if gate_brief:
+        if not plan_brief:
+            raise RuntimeError(
+                "门禁：这次选择绑定了一份内容策划案；plan 必须包含 brief_sha256，"
+                "避免内容改了但模板没变。"
+            )
+        if plan_brief != gate_brief:
+            raise RuntimeError(
+                "门禁：plan 的 brief_sha256 与当前内容策划案不一致；"
+                "请重新确认内容并重新选择模板。"
+            )
     requested = plan.get("template_id")
     if requested:
         # plan 里写序号（如 "004"）或模板 ID 都允许，统一按注册表归一
@@ -568,9 +607,21 @@ def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__)
     sub = p.add_subparsers(dest="command", required=True)
 
+    br = sub.add_parser("brief", help="内容策划案：创建草稿或确认已有策划案")
+    br.add_argument("--idea", default="")
+    br.add_argument("--positioning", default="")
+    br.add_argument("--audience", default="")
+    br.add_argument("--duration", type=int)
+    br.add_argument("--pages", type=int)
+    br.add_argument("--title")
+    br.add_argument("--file", help="已有策划案路径；配合 --confirm 使用")
+    br.add_argument("--confirm", action="store_true", help="校验并标记为 confirmed")
+    br.add_argument("-o", "--output", help="输出路径；创建时默认 output/brief.json")
+
     rec = sub.add_parser("recommend", help="第一步：只输出候选模板链接清单，等待用户选定")
-    rec.add_argument("--idea", required=True)
+    rec.add_argument("--idea")
     rec.add_argument("--positioning", default="")
+    rec.add_argument("--brief", help="已确认的内容策划案 JSON；与 --idea 二选一")
     rec.add_argument("--limit", type=int, default=8)
 
     con = sub.add_parser("confirm", help="用户明确选定模板（三位序号、U001 或模板 ID）")
@@ -589,8 +640,40 @@ def main(argv: list[str] | None = None) -> int:
 
     args = p.parse_args(argv)
     try:
+        if args.command == "brief":
+            if args.file:
+                brief = content_brief.load(Path(args.file))
+                if args.confirm:
+                    brief = content_brief.confirm(brief)
+                errors = content_brief.validate(brief, require_confirmed=args.confirm)
+                if errors:
+                    raise RuntimeError("内容策划案不合法：" + "；".join(errors))
+                output = Path(args.output or args.file)
+                content_brief.write(output, brief)
+                print(content_brief.render_markdown(brief))
+                print(f"\n内容策划案 -> {output}", file=sys.stderr)
+                return 0
+            brief = content_brief.new_brief(
+                args.idea or "未命名汇报", args.positioning, args.audience,
+                args.duration, args.pages, args.title)
+            if args.confirm:
+                brief = content_brief.confirm(brief)
+            errors = content_brief.validate(brief, require_confirmed=args.confirm)
+            if errors:
+                raise RuntimeError("内容策划案不合法：" + "；".join(errors))
+            output = Path(args.output or "output/brief.json")
+            content_brief.write(output, brief)
+            print(content_brief.render_markdown(brief))
+            print(f"\n内容策划案草稿 -> {output}", file=sys.stderr)
+            return 0
         if args.command == "recommend":
-            gate = recommend(args.idea, args.positioning, args.limit)
+            if args.brief:
+                brief_path = Path(args.brief)
+            elif args.idea:
+                brief_path = None
+            else:
+                raise RuntimeError("recommend 需要 --idea 或 --brief")
+            gate = recommend(args.idea or "", args.positioning, args.limit, brief_path)
             print(gate["markdown"])
             print(f"\n[门禁] status=waiting，request_id={gate['request_id']}；等待用户选定。", file=sys.stderr)
             return 0
