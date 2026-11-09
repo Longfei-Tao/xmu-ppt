@@ -240,6 +240,12 @@ def recommend(idea: str, positioning: str, limit: int = 8,
         text = f"{idea} {positioning} {shape_text}"
     else:
         text = f"{idea} {positioning}"
+    required_shapes = {
+        shape
+        for page in (brief or {}).get("pages", [])
+        for shape in (page.get("content_shape") or [])
+    }
+    critical_shapes = required_shapes & {"table", "chart", "comparison", "kpi"}
     scores = {
         cat: sum(1 for word in words if word in text)
         for cat, words in CATEGORY_HINTS.items()
@@ -264,7 +270,15 @@ def recommend(idea: str, positioning: str, limit: int = 8,
             # 用户刚导入的模板应优先出现，不能被人群更大的内置分类挤出候选。
             value += 12
         if brief:
-            value += min(20, page_catalog.coverage(page_catalog.for_item(item), brief))
+            catalog = page_catalog.for_item(item)
+            value += min(60, page_catalog.coverage(catalog, brief))
+            available = {
+                shape
+                for page in (catalog or {}).get("pages", [])
+                for shape in (page.get("content_shapes") or [])
+            }
+            # 表格/图表/对比等关键形态是硬需求，不能被候选数量截断。
+            value += 8 * len(critical_shapes & available)
         if query_is_medical:
             # 医学主题：主题词命中模板名称/风格是最强信号
             value += 6 * sum(1 for word in medical_in_query if word in hay)

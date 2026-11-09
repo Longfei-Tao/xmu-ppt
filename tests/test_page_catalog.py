@@ -87,6 +87,18 @@ class PageCatalogTests(unittest.TestCase):
         self.assertIn("brief_suggestions", data)
         self.assertEqual(data["pages"][0]["page_type"], "cover_candidate")
 
+    def test_recommend_surfaces_table_capable_template(self):
+        with tempfile.TemporaryDirectory(dir=CACHE) as tmp:
+            path = Path(tmp) / "brief.json"
+            content_brief.write(path, brief())
+            old_gate = idea_to_ppt.GATE_FILE
+            idea_to_ppt.GATE_FILE = Path(tmp) / ".selection.json"
+            try:
+                gate = idea_to_ppt.recommend("", "", limit=8, brief_path=path)
+            finally:
+                idea_to_ppt.GATE_FILE = old_gate
+        self.assertIn("厦门大学_主题_经典蓝白", gate["candidates"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -39,7 +39,12 @@ def _ensure_text_nodes(container: ET.Element) -> list[ET.Element]:
         paragraph = ET.SubElement(tx_body, _qn(NS["a"], "p"))
     run = paragraph.find("a:r", NS)
     if run is None:
-        run = ET.SubElement(paragraph, _qn(NS["a"], "r"))
+        run = ET.Element(_qn(NS["a"], "r"))
+        end_marker = paragraph.find("a:endParaRPr", NS)
+        if end_marker is not None:
+            paragraph.insert(list(paragraph).index(end_marker), run)
+        else:
+            paragraph.append(run)
     text_node = run.find("a:t", NS)
     if text_node is None:
         text_node = ET.SubElement(run, _qn(NS["a"], "t"))
@@ -52,7 +57,12 @@ def _ensure_paragraph_text_node(paragraph: ET.Element) -> list[ET.Element]:
         return text_nodes
     run = paragraph.find("a:r", NS)
     if run is None:
-        run = ET.SubElement(paragraph, _qn(NS["a"], "r"))
+        run = ET.Element(_qn(NS["a"], "r"))
+        end_marker = paragraph.find("a:endParaRPr", NS)
+        if end_marker is not None:
+            paragraph.insert(list(paragraph).index(end_marker), run)
+        else:
+            paragraph.append(run)
     text_node = run.find("a:t", NS)
     if text_node is None:
         text_node = ET.SubElement(run, _qn(NS["a"], "t"))
