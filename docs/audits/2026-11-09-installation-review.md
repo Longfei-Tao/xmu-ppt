@@ -56,7 +56,15 @@ python skills/xmu-ppt/scripts/review_pptx.py .cache/first-demo.pptx --min-level 
 
 Gemini 在未受信任的工作区会跳过项目技能，即使安装命令已经成功。安装指南已补充此排查步骤。模型驱动主题创作与技能文件发现分别验收。
 
-GitHub CLI 已恢复访问，确认远端仓库、Pages 配置与最新发布 `v0.2.3`。实际下载的技能包 ZIP CRC 通过，包含 54 张应从纯技能包排除的展示或模板位图，入口位于 `xmu-ppt/skills/xmu-ppt/SKILL.md`。后续版本应使用修复后的打包器构建并检查摘要。
+GitHub CLI 已恢复访问，确认远端仓库、Pages 配置，并下载当时的最新发布 `v0.2.3`。实际下载的技能包 ZIP CRC 通过，包含 54 张应从纯技能包排除的展示或模板位图，入口位于 `xmu-ppt/skills/xmu-ppt/SKILL.md`。
+
+## 正式发布与线上验收
+
+修复已通过提交 `1c7208bc419ed8f52a0c3221f42c345522e2c797` 推送到 `main`，Ubuntu/Windows 与 Python 3.10/3.13 四组 CI 全部通过，Pages 已部署该提交。[CI 执行记录](https://github.com/Longfei-Tao/xmu-ppt/actions/runs/42576964250)。
+
+已发布 [v0.2.4](https://github.com/Longfei-Tao/xmu-ppt/releases/tag/v0.2.4)，包含两个等内容 ZIP 与 `SHA256SUMS.txt`。包大小为 9,713,939 字节，约 9.3 MiB，仅保留两张脚本运行图片。匿名请求 `releases/latest/download/xmu-ppt-skill.zip` 返回 HTTP 200，重新下载的 SHA256 与本地构建一致，ZIP CRC 检查通过。旧版本作为历史发布保留。
+
+从 GitHub 仓库地址执行 Skills CLI 安装已成功。安装后关键脚本内容与修复提交一致，用该安装副本及隔离 Python 环境导出示例，4 页成功、0 页失败。公开模板画廊返回 HTTP 200，目录中为 15 套内置模板。
 
 ## 仍需单独验收的范围
 
