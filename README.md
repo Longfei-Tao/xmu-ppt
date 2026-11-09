@@ -174,6 +174,21 @@ Browse all 15 built-in covers in the **[template gallery](https://longfei-tao.gi
 
 > **Optional private library.** The public repository distributes only the 15 built-in decks; third-party template originals and their covers are deliberately not published. If you have your own legally obtained collection, point `root.local.json` at that local folder and run `external_templates.py scan`. Files stay on your machine and are never uploaded by this project.
 
+### Add your own PPTX as a template
+
+```bash
+.venv/bin/python skills/xmu-ppt/scripts/user_templates.py onboard \
+  "/Users/me/my-templates/group-meeting.pptx" \
+  --name "My group meeting" --rights-confirmed
+```
+
+On Windows use `.\.venv\Scripts\python.exe`. The command copies the deck to
+`~/.xmu-ppt/user-templates/U001/` (`--link` keeps the original path instead),
+generates a page catalogue and cover, assigns the local serial `U001`, and
+writes a local-only gallery at `~/.xmu-ppt/user-templates/index.html`.
+Use `list` to inspect entries and `doctor` to verify sources. These templates
+never enter the public repository, a Release, or the public gallery.
+
 ## What you give, what you get
 
 | Input | What the agent does | Output |

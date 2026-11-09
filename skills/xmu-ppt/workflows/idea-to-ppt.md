@@ -6,7 +6,9 @@
 ## 一、用户需要给什么
 
 只要两样：**想法**（想讲什么、给谁看、要达成什么）和**主题定位**（如「医护健康科普」「课题组组会汇报」「毕业答辩」）。
-用户不需要知道模板 ID、页数、路线名，也不需要自己准备素材；**只需报三位序号**（如 `004`）。
+用户不需要知道模板 ID、页数、路线名，也不需要自己准备素材；内置/外部模板报三位序号（如 `004`），用户自备模板报 `U001`。
+
+如果用户想用自己的 PPTX，先按 [`user-template-onboarding.md`](user-template-onboarding.md) 入库；入库后再进入本流程。
 
 ## 序号规则（权威定义）
 
@@ -15,6 +17,7 @@
 - 新增模板只在末尾依次追加（`next_number` 当前为 `216`），绝不插入中间或填补跳号。
 - **纯数字输入一律按序号解析**。`004` = 光影厦大（内置）；`MED-004` 是模板 ID，其序号是 `019`。二者不可混淆。
 - 常用命令：`template_numbers.py check` 校验唯一性、`list` 列出全部对应、`resolve 004` 按序号查模板。
+- **用户自备模板使用独立的 `U` 前缀**（如 `U001`），由 `user_templates.py onboard` 分配；不写入公开序号注册表，也不与 `001–015`、`016+` 冲突。
 
 ## 二、四步流程
 
@@ -28,7 +31,7 @@ $PY $S recommend --idea "用户原话里的想法" --positioning "主题定位"
 
 - 按主题定位推荐 8 套候选，输出 **可点击的本地画廊链接清单**（每套可直接打开逐页看版式，另有分类浏览链接）。
 - 脚本把门禁状态写成 `waiting`。
-- **必须停在这里等用户明确报出选定的三位序号**（或模板 ID）。在此之前：
+- **必须停在这里等用户明确报出选定的序号**（内置/外部三位数字，或本机模板 `U001`）。在此之前：
   - 禁止制作任何页面、禁止写 fill plan、禁止调用出稿脚本；
   - 禁止以「我先帮你做一版看看」为由提前开工；
   - 用户没给主题定位时，可以追问一句定位，但不代选模板。
@@ -36,8 +39,8 @@ $PY $S recommend --idea "用户原话里的想法" --positioning "主题定位"
 ### 第 2 步：确认选择并查看该模板的每一页版式
 
 ```bash
-$PY $S confirm <用户选定的模板ID>
-$PY $S pages <模板ID> -o output/pages.json
+$PY $S confirm <用户选定的序号，如 004 或 U001>
+$PY $S pages <同一序号> -o output/pages.json
 ```
 
 - `confirm` 允许用户在画廊里自行挑选推荐清单之外的模板（关键是**明确选定**，不是必须选中推荐项）。
@@ -90,8 +93,8 @@ S=skills/xmu-ppt/scripts/idea_to_ppt.py
 C=skills/xmu-ppt/scripts/sanitize_pptx.py
 
 $PY $S recommend --idea "..." --positioning "..."     # 第一步，等用户选定
-$PY $S confirm MED-001                                 # 用户选定后
-$PY $S pages MED-001 -o output/pages.json              # 看每页版式
+$PY $S confirm U001                                    # 内置/外部用 004，自备模板用 U001
+$PY $S pages U001 -o output/pages.json                 # 看每页版式
 # 编辑 plan.json（挑页 + 只写文案）
 $PY $S build output/plan.json -o output/成品.pptx      # 出稿 + 三项检查
 $PY $C check output/成品.pptx                          # 复核无音乐/自动翻页

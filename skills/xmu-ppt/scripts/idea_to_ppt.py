@@ -3,7 +3,7 @@
 流程（与 workflows/idea-to-ppt.md 一致）
 ----------------------------------------
 1. recommend  —— 第一步：只输出「可点模板链接清单」，写入 waiting 状态，**不制作**
-2. confirm    —— 用户明确选定模板 ID 后，状态改为 confirmed
+2. confirm    —— 用户明确选定模板（三位序号、U001 或模板 ID）后，状态改为 confirmed
 3. pages      —— 列出该模板每一页的版式角色，供挑选最合适的页面组合
 4. build      —— 门禁校验 → 净化音乐/自动翻页 → 按 plan 克隆模板已有页、只填文字
                  → 内容完整性 / 文字适配 / 模板一致性三项检查 → 交付
@@ -35,6 +35,7 @@ from template_fill_pptx.checker import check_plan  # noqa: E402
 import sanitize_pptx  # noqa: E402
 import template_numbers as numbers  # noqa: E402
 import text_fit  # noqa: E402
+import user_templates  # noqa: E402
 
 EXTERNAL = SKILL_ROOT / "templates" / "external"
 CATALOG_FILE = EXTERNAL / "external_catalog.json"
@@ -53,6 +54,7 @@ CATEGORY_HINTS = {
     "clinical": ["医护", "临床", "医学", "医疗", "医院", "医生", "护士", "疾病", "肿瘤", "癌", "护理", "手术", "健康"],
     "maternal-child": ["妇幼", "母婴", "儿童", "儿科", "卡通", "宣教", "手绘", "温馨", "患者"],
     "tcm-style": ["中医", "国风", "中国风", "中药", "传统", "养生"],
+    "user": ["我的模板", "自备模板", "本机模板", "自己的模板"],
 }
 
 # 主题域判定：医学词用于「同域加分」，也用于「跨域降权」。
@@ -88,7 +90,10 @@ def _write(path: Path, data) -> None:
 
 def _gallery_url(template_id: str | None = None, category: str | None = None,
                  number: str | int | None = None) -> str:
-    """本机有画廊就用 file:// 深链；全新克隆直接指向公开 Pages 画廊。"""
+    """本机有画廊就用 file:// 深链；用户模板指向独立的本机画廊。"""
+    if template_id and user_templates.lookup(template_id):
+        uri = user_templates.gallery_uri()
+        return uri or "（本机模板画廊尚未生成）"
     if GALLERY.is_file():
         base = GALLERY.resolve().as_uri()
         if template_id:
@@ -97,7 +102,9 @@ def _gallery_url(template_id: str | None = None, category: str | None = None,
             return base + "#cat=" + quote(category, safe="")
         return base
     if number is not None:
-        return f"{PUBLIC_GALLERY}?deck={int(number):03d}"
+        text = str(number)
+        if text.isdigit():
+            return f"{PUBLIC_GALLERY}?deck={int(text):03d}"
     if category:
         return PUBLIC_GALLERY + "?cat=" + quote(category, safe="")
     return PUBLIC_GALLERY
@@ -108,7 +115,10 @@ def _registry() -> dict:
 
 
 def resolve_selection(value: str) -> tuple[str, dict]:
-    """权威解析：纯数字按三位序号，其余按模板 ID。返回 (template_id, 注册条目)。"""
+    """权威解析：内置/外部按序号，U 前缀按本机模板，其余按模板 ID。"""
+    user_entry = user_templates.lookup(value)
+    if user_entry:
+        return user_entry["template_id"], user_entry
     entry = numbers.lookup(_registry(), value)
     return entry["template_id"], entry
 
@@ -166,6 +176,17 @@ def _all_templates() -> list[dict]:
             "tags": r.get("tags", []), "source_key": None,
             "route": route, "usable": route is not None,
         })
+    for r in user_templates.list_templates():
+        if not r.get("source_ok") or r.get("status") != "active":
+            continue
+        items.append({
+            "id": r["template_id"], "serial": r["serial"],
+            "name": r["name"], "style": "我的模板",
+            "category": "user", "category_name": "我的模板",
+            "pages": r.get("slides"), "namespace": "user",
+            "tags": ["我的模板", "本机自备"], "source_key": None,
+            "route": "native", "usable": True,
+        })
     return items
 
 
@@ -175,6 +196,12 @@ def resolve_source(template_id: str) -> tuple[dict, Path]:
             continue
         if item["namespace"] == "builtin":
             path = DECKS / template_id / "source.pptx"
+        elif item["namespace"] == "user":
+            path = user_templates.source_path(template_id)
+            if path is None:
+                raise RuntimeError(
+                    f"我的模板原件不在本机：{template_id}。请重新运行 user_templates.py onboard。"
+                )
         else:
             path = _external_source(template_id)
             if path is None:
@@ -205,12 +232,18 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
         top_cats = ["institution"] + top_cats[:2]
     if not top_cats:
         top_cats = ["institution", "report"]
+    # 本机“我的模板”始终进入候选池，避免用户导入后还要靠关键词碰运气。
+    if any(x["namespace"] == "user" for x in _all_templates()):
+        top_cats = ["user"] + [c for c in top_cats if c != "user"]
     ranked = {c: 3 - i for i, c in enumerate(top_cats)}
     medical_in_query = [w for w in MEDICAL_HINTS if w in text]
 
     def score(item: dict) -> int:
         hay = " ".join([item["name"], item["style"], " ".join(item["tags"])])
         value = ranked.get(item["category"], 0) * 10
+        if item["category"] == "user":
+            # 用户刚导入的模板应优先出现，不能被人群更大的内置分类挤出候选。
+            value += 12
         if query_is_medical:
             # 医学主题：主题词命中模板名称/风格是最强信号
             value += 6 * sum(1 for word in medical_in_query if word in hay)
@@ -267,12 +300,11 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
 
     lines = [
         f"## 可选模板清单（主题定位：{positioning or '未指定'}）", "",
-        "请先点链接浏览、比较每一页的版式，然后**只报三位序号**（如 `004`）即可选定。",
-        "序号是模板的唯一固定编号；纯数字一律按序号解析，不会被当成模板 ID。",
-        "在你明确选定之前，我不会开始制作任何页面。", "",
+        "请先点链接浏览、比较每一页的版式，然后**报序号**：内置/外部三位数字（如 `004`），",
+        "我的模板用 `U` 前缀（如 `U001`）。在你明确选定之前，我不会开始制作任何页面。", "",
     ]
     if fallback:
-        lines += ["> 本机没有与该主题完全匹配的专用模板，以下为全部可用模板（均为厦大风格）。", ""]
+        lines += ["> 本机没有与该主题完全匹配的专用模板，以下为全部可用模板。", ""]
     lines += [
         "| 序号 | 模板 | 分类 | 风格 | 页数 | 出稿路线 | 预览链接 |",
         "|---|---|---|---|---|---|---|",
@@ -294,9 +326,12 @@ def recommend(idea: str, positioning: str, limit: int = 8) -> dict:
         "把序号发给我即可。",
         "",
         "按分类浏览：",
-        *[f"- [{cat_names.get(c, c)}]({_gallery_url(category=c)})" for c in top_cats],
+        *[f"- [{cat_names.get(c, c)}]({_gallery_url(category=c)})"
+          for c in top_cats if c != "user"],
         "", f"- [打开完整模板画廊（{len(pool)} 套）]({_gallery_url()})",
     ]
+    if user_templates.gallery_uri():
+        lines.append(f"- [打开我的模板画廊]({user_templates.gallery_uri()})")
     gate["markdown"] = "\n".join(lines)
     _write(GATE_FILE, gate)
     return gate
@@ -538,12 +573,12 @@ def main(argv: list[str] | None = None) -> int:
     rec.add_argument("--positioning", default="")
     rec.add_argument("--limit", type=int, default=8)
 
-    con = sub.add_parser("confirm", help="用户明确选定模板（三位序号或模板 ID）")
-    con.add_argument("selection", help="三位序号如 004，或模板 ID")
+    con = sub.add_parser("confirm", help="用户明确选定模板（三位序号、U001 或模板 ID）")
+    con.add_argument("selection", help="三位序号如 004、本机模板如 U001，或模板 ID")
     con.add_argument("--request-id")
 
     pag = sub.add_parser("pages", help="列出模板每一页的版式角色，供挑页")
-    pag.add_argument("selection", help="三位序号如 004，或模板 ID")
+    pag.add_argument("selection", help="三位序号如 004、本机模板如 U001，或模板 ID")
     pag.add_argument("-o", "--output")
 
     bld = sub.add_parser("build", help="门禁校验 + 净化 + 挑页填充 + 三项检查")

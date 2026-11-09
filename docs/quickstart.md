@@ -65,6 +65,26 @@ python skills/xmu-ppt/scripts/svg_to_pptx.py examples/quickstart -s svg_output -
 
 15 套模板均有 SVG 原型；原生填充有 14 套，南强蔚蓝缺少原生源文件。上传旧 PPT 作内容参考不意味着要保留其版式，明确用途能避免选错路线。
 
+### 使用自己的 PPTX 模板
+
+如果你有合法持有的 `.pptx` 模板，可以加入本机“我的模板”：
+
+```powershell
+# Windows
+.\.venv\Scripts\python.exe skills\xmu-ppt\scripts\user_templates.py onboard `
+  "D:\我的模板\组会模板.pptx" --name "我的组会模板" --rights-confirmed
+```
+
+```bash
+# macOS / Linux
+.venv/bin/python skills/xmu-ppt/scripts/user_templates.py onboard \
+  "/Users/me/我的模板/组会模板.pptx" --name "我的组会模板" --rights-confirmed
+```
+
+入库后会分配 `U001` 序号，并生成 `~/.xmu-ppt/user-templates/index.html` 本地画廊。
+之后在对话里说“用 U001 做组会汇报”即可。模板只在本机使用，不进入公开仓库、Release
+或公开画廊；`--link` 可只登记原路径，不复制文件。用 `list` 查看、`doctor` 检查。
+
 ## 4. 收到文件后
 
 默认交付 `.pptx` 的路径及内容、验证状态的简短说明，不要求你接收审计报告、JSON、源稿压缩包等额外附件。源稿保留在项目目录，需要时再取。

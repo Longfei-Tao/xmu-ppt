@@ -193,13 +193,38 @@ git pull
 | --- | --- |
 | 用内置 15 套 | clone 完整仓库（含内置模板原件与封面） |
 | 只带技能、模板自备 | 解压上面的纯技能包，填入自己的模板目录即可 |
-| 用自己合法持有的模板 | 复制 `root.example.json` 为 `root.local.json`，填入本机模板目录；运行 `scan` 登记，或运行 `scripts/build_local_gallery.py` 生成本地画廊。原件和预览只留在本机，不进入公开仓库 |
+| 用自己合法持有的模板 | 运行 `user_templates.py onboard "你的模板.pptx" --rights-confirmed`，自动加入“我的模板”，分配 `U001` 序号；原件和预览只留在本机 |
 | 生成一份可公开分发的技能包 | `python scripts/pack_release.py`，脚本会拒绝装入任何原件、截图或本机配置 |
 | 核验素材边界（仅仓库维护者） | 在**完整仓库**运行 `python scripts/check_assets.py`，发布前要求 0 error；纯技能包不含内置原件与本机配置，**无需运行**此脚本 |
 
 权利声明、逐套台账与更新政策见[外部模板声明](skills/xmu-ppt/templates/external/TEMPLATE_NOTICES.md)、
 [素材授权边界](LICENSE-ASSETS)与[素材与许可](docs/assets.md)。公开仓库不提供任何外部模板
 原件、封面或下载包；使用者自备模板的权利状态由使用者自行核验。
+
+### 把我的 PPTX 加入模板库
+
+```powershell
+# Windows
+.\.venv\Scripts\python.exe skills\xmu-ppt\scripts\user_templates.py onboard `
+  "D:\我的模板\组会模板.pptx" --name "我的组会模板" --rights-confirmed
+```
+
+```bash
+# macOS / Linux
+.venv/bin/python skills/xmu-ppt/scripts/user_templates.py onboard \
+  "/Users/me/我的模板/组会模板.pptx" --name "我的组会模板" --rights-confirmed
+```
+
+它会：
+
+1. 检查是否是可解析的 `.pptx`，拒绝 `.pptm` 宏模板；
+2. 复制到 `~/.xmu-ppt/user-templates/U001/`（加 `--link` 则只登记原路径）；
+3. 生成页面目录和封面；
+4. 分配本机序号 `U001`；
+5. 生成 `~/.xmu-ppt/user-templates/index.html` 本地画廊。
+
+之后在对话里说“用 U001 做组会汇报”即可。`list` 查看已入库模板，`doctor` 检查原件和目录。
+这些模板只在你的电脑上使用，不进入公开仓库、Release 或公开画廊。
 
 ## 使用前了解
 
