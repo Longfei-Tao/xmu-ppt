@@ -12,7 +12,7 @@ Start with a topic or source material, confirm a content brief and a template, t
 [![CI](https://github.com/Longfei-Tao/xmu-ppt/actions/workflows/validate.yml/badge.svg)](https://github.com/Longfei-Tao/xmu-ppt/actions/workflows/validate.yml)
 [![GitHub stars](https://img.shields.io/github/stars/Longfei-Tao/xmu-ppt?style=social)](https://github.com/Longfei-Tao/xmu-ppt/stargazers)
 
-[简体中文](README.zh-CN.md) · [Template gallery](https://longfei-tao.github.io/xmu-ppt/templates/) · [Slide-by-slide preview](https://longfei-tao.github.io/xmu-ppt/) · [Quick start](#quick-start) · [FAQ](docs/faq.md)
+[简体中文](README.zh-CN.md) · [Template gallery](https://longfei-tao.github.io/xmu-ppt/templates/) · [Slide-by-slide preview](https://longfei-tao.github.io/xmu-ppt/) · [Usage tutorial](#usage-tutorial) · [Quick start](#quick-start) · [FAQ](docs/faq.md)
 
 </div>
 
@@ -69,6 +69,27 @@ The brief records page purpose, key messages, evidence and gaps. Say "skip the b
 
 `Nanqiang Weilan` ships no source `.pptx`, so it supports the SVG route only.
 
+## Usage tutorial
+
+1. Tell your agent the topic, audience and approximate slide count, and attach source material.
+2. Confirm the content brief, then choose a template from the available previews.
+3. Receive the checked PPTX and open it in your presentation app for a final visual review.
+
+### Bring a collection of your own templates
+
+Attach the `.pptx` files or provide a folder your agent can read, and send this message.
+
+```text
+I have permission to use these PPTX templates.
+Add all of them to My Templates for future slide creation.
+Inspect and import each file, then list its U identifier, name, slide count,
+and any duplicate or failed import.
+```
+
+When files arrive without a stated purpose, the skill instructs the agent to ask whether they are templates, content sources, or existing decks to edit. After purpose and rights are confirmed, the agent imports each template and reports the results. You can then say “Use U003 for this report.” All valid imported templates remain selectable, including those absent from the default eight-item shortlist.
+
+The private library belongs to the agent's execution environment. Convert legacy `.ppt` files to `.pptx` first. A short guide is included in every skill installation as [GETTING_STARTED.md](skills/xmu-ppt/GETTING_STARTED.md).
+
 ## Ask an agent to install
 
 Paste this into Codex, Claude Code, Cursor, Copilot Agent mode or Gemini CLI with terminal access.
@@ -83,6 +104,8 @@ Keep a full checkout for the built-in templates. Create a Python 3.10+
 virtual environment and install requirements-core.txt with its interpreter.
 Run the four-slide quickstart export and report the skill path, interpreter,
 PPTX path, and whether the host actually discovers the skill.
+At the end, run scripts/install_skill.py --guide --lang en from the installed
+skill directory and display the short usage instructions in this chat.
 ```
 
 Installation directories and invocation differ by host. [Agent setup and copyable commands](docs/tools/README.md) includes the current official references, an optional `npx skills add` path, and conflict handling.
@@ -120,6 +143,18 @@ python -m venv .venv
 python3 -m venv .venv
 .venv/bin/python -m pip install -r skills/xmu-ppt/requirements-core.txt
 ```
+
+### Project installation with a welcome message
+
+Run the repository's installer from the checkout root. Choose your host with `--agent`.
+
+```bash
+python skills/xmu-ppt/scripts/install_skill.py --agent codex --lang en
+```
+
+Other agent values are `claude-code`, `cursor`, `github-copilot`, and `gemini-cli`. On macOS/Linux, use `python3` if needed. The installer copies the complete skill into the current project's discovery directory and prints usage instructions after success. Use `--project` for another existing project. An existing skill directory stops installation. Shared skills managed by CC Switch should be distributed through CC Switch.
+
+For other installation methods, the skill instructs the agent to show a brief guide on first activation. You can also run `scripts/install_skill.py --guide --lang en` from the actual installed skill directory. Third-party installer completion screens depend on their implementation.
 
 ### 3. Ask your agent
 

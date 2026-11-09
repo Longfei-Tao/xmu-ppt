@@ -39,6 +39,8 @@ python skills/xmu-ppt/scripts/svg_to_pptx.py examples/quickstart -s svg_output -
 
 ## 2. 把主题告诉 Agent
 
+安装完成后可先查看[简单使用说明](../skills/xmu-ppt/GETTING_STARTED.md)。仓库安装入口会在成功后打印该说明中的简短用法，Agent 安装提示词要求它在对话中回显，Skill 首次启用也会按指令主动介绍用法。[带提示的安装入口](tools/README.md#安装后直接显示使用说明)。
+
 在 AI 工具中打开仓库，发送下面的完整需求：
 
 ```text
@@ -74,6 +76,15 @@ python skills/xmu-ppt/scripts/svg_to_pptx.py examples/quickstart -s svg_output -
 15 套模板均有 SVG 原型；原生填充有 14 套，南强蔚蓝缺少原生源文件。上传旧 PPT 作内容参考不意味着要保留其版式，明确用途能避免选错路线。
 
 ### 使用自己的 PPTX 模板
+
+可以上传一份或多份 `.pptx`，或给 Agent 可读取的文件夹路径。只上传文件且没有说明用途时，Agent 会按技能指令先询问这些文件是否作为模板入库。你也可以直接发送以下要求。
+
+```text
+这些模板我有权使用，请全部加入“我的模板库”。
+逐份处理，列出实际 U 编号、名称、页数和失败项。
+```
+
+Agent 逐份调用入库脚本，重复文件复用已有编号，一份失败后继续处理其他文件。默认最多 8 套的推荐清单之外，仍可在“我的模板”画廊查看并选择所有成功入库的模板。
 
 如果你有合法持有的 `.pptx` 模板，可以加入本机“我的模板”：
 

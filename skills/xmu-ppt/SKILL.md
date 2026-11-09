@@ -7,6 +7,7 @@ description: >
   editable PPTX. Use when the user asks to "create PPT", "make presentation",
   "生成PPT", "做PPT", "制作演示文稿", "答辩PPT", "开题报告", "组会汇报", "课程汇报",
   or mentions "厦门大学模板", "厦大模板", "XMU template", or "xmu-ppt".
+  Also use for xmu-ppt getting-started help, 上传 PPTX 模板、批量模板入库 and 我的模板.
 ---
 
 # xmu-ppt Skill
@@ -18,6 +19,18 @@ description: >
 > AI-driven multi-format SVG content generation system. Converts source documents into high-quality SVG pages through multi-role collaboration and exports to PPTX.
 
 **Core Pipeline**: `Source Document → Create Project → [Template] → Strategist → [Image_Generator] → Executor Live Preview → Quality Check → Post-processing → Export`
+
+## 首次启用与安装完成提示
+
+先阅读同目录 [GETTING_STARTED.md](GETTING_STARTED.md)。安装任务完成后，用已安装技能的实际路径执行 `scripts/install_skill.py --guide`，并把简短说明回显到对话中，同时分别报告文件安装、宿主发现、Python 依赖与示例导出的实际状态。
+
+每个新对话首次启用本技能，或用户说“安装好了”“怎么用”时，主动展示以下短说明，按用户语言表达。同一对话已展示时，按当前任务继续。
+
+> 你可以直接告诉我 PPT 的主题、听众和大致页数，或上传自己的模板。我会先整理内容供你确认，再展示模板让你选择，最后生成并检查 PPTX。自备模板可以批量加入“我的模板”，入库后用 U001 等编号选择。你可以直接上传，我会先确认文件用途和使用权。
+
+用户已给出明确制作需求时，用一句话简述上述流程后继续。用户只询问用法时，展示说明和一个示例，等待需求。
+
+收到一份或多份可读取的 PPTX 附件且用途不明确时，先清点附件，一次询问它们是用于模板入库、内容参考还是修改现有文稿。模板用途已明确时，只确认尚未说明的使用权。确认后逐份调用 `user_templates.py onboard`，处理全部文件，单份失败后继续处理其余文件，最后列出实际编号、名称、页数、重复项、失败原因和私有画廊入口。成功入库的全部模板均可按 U 编号选择，推荐清单受数量限制。详细规则见 [批量模板入库](workflows/user-template-onboarding.md)。
 
 > [!IMPORTANT]
 > ## ✅ 默认出稿流程（最高优先级，覆盖下方所有路线说明）

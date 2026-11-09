@@ -28,6 +28,7 @@ def check():
                                 "CREDITS.md", "THIRD_PARTY_NOTICES.md")]
     paths += sorted((ROOT / "docs").rglob("*.md"))
     paths.append(ROOT / "examples/quickstart/README.md")
+    paths.append(ROOT / "skills/xmu-ppt/GETTING_STARTED.md")
     errors = []
     links = 0
     images = set()

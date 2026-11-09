@@ -11,7 +11,7 @@
 
 把主题、提纲或现有材料，整理成厦大风格的演示文稿。由 AI Agent 逐页排版，导出**文字可编辑**的 `.pptx`。基于 [PPT Master](https://github.com/hugohe3/ppt-master) 的 SVG → PPTX 引擎，增补 15 套厦大模板与三条出稿路线。
 
-**[选择视觉模板](https://longfei-tao.github.io/xmu-ppt/templates/)** · **[在线逐页预览](https://longfei-tao.github.io/xmu-ppt/)** · [快速开始](docs/quickstart.md) · [模板风格](docs/templates.md) · [常见问题](docs/faq.md) · [选择你的 AI 工具](docs/tools/README.md)
+**[选择视觉模板](https://longfei-tao.github.io/xmu-ppt/templates/)** · **[在线逐页预览](https://longfei-tao.github.io/xmu-ppt/)** · [使用教程](#使用教程) · [快速开始](docs/quickstart.md) · [模板风格](docs/templates.md) · [常见问题](docs/faq.md) · [选择你的 AI 工具](docs/tools/README.md)
 
 <table>
   <tr>
@@ -81,6 +81,31 @@
 
 默认只需接收演示文稿与必要说明。文字和简单图形可导出为原生对象，照片等仍是图片；复杂图表与排版需逐页检查，不能保证所有元素均可编辑或格式完全一致。
 
+## 使用教程
+
+### 安装后先看这几步
+
+1. **说需求**，例如“请用 xmu-ppt 做约 10 页组会汇报，材料见附件”。
+2. **确认内容**，Agent 先整理内容策划案，列出每页要点和资料缺口。
+3. **选择模板**，查看预览，回复模板编号，也可明确让 Agent 代选。
+4. **接收 PPTX**，Agent 完成制作与检查，返回实际文件路径，再用演示软件打开复核。
+
+### 我有一批自己的 PPT 模板
+
+把 `.pptx` 文件上传到对话，或提供 Agent 可读取的文件夹路径。可以直接附上这句话。
+
+```text
+这些 PPTX 都是我有权使用的模板。
+请把它们全部加入“我的模板库”，供接下来做 PPT 时选择。
+逐份检查并入库，列出编号、名称、页数和失败的文件。
+```
+
+如果只上传文件，首次引导会要求 Agent 主动询问它们用于模板入库、内容参考还是修改现有文稿。确认用途与使用权后，Agent 逐份入库，生成 `U001`、`U002` 等实际编号和私有画廊。重复文件复用已有记录，单份失败后继续处理其余文件。
+
+之后可以说“用 U003 做这份汇报”。成功入库的全部模板都可选择，默认最多 8 套的推荐清单只展示一部分。模板库属于 Agent 的执行环境，本地、远程和云端分别存储。旧 `.ppt` 需先另存为 `.pptx`。
+
+简短教程也随技能分发，见 [GETTING_STARTED.md](skills/xmu-ppt/GETTING_STARTED.md)。
+
 ## 让 Agent 帮你安装
 
 在 Codex、Claude Code、Cursor、Copilot 的 Agent 模式或 Gemini CLI 中复制以下提示词。工具需要能访问网络、文件和终端。
@@ -95,6 +120,8 @@
 使用该环境的解释器安装 requirements-core.txt。
 运行仓库四页示例导出，报告技能实际路径、Python 路径和 PPTX 路径，
 分别说明文件已放置、宿主已发现技能、示例已导出三个状态。
+安装完成后，运行已安装技能中的 scripts/install_skill.py --guide，
+把简单使用说明直接显示在对话里，告诉我可以描述主题或上传自己的模板。
 ```
 
 各工具的目录、调用语法及可选的 `npx skills add` 命令见[安装与调用指南](docs/tools/README.md)。
@@ -140,6 +167,22 @@ python -m venv .venv
 python3 -m venv .venv
 .venv/bin/python -m pip install -r skills/xmu-ppt/requirements-core.txt
 ```
+
+### 项目安装并显示使用提示
+
+从仓库根目录运行下面的安装入口，成功后会在终端直接显示简短用法和批量模板入库提示。按当前 Agent 选择一条。
+
+```bash
+python skills/xmu-ppt/scripts/install_skill.py --agent codex
+python skills/xmu-ppt/scripts/install_skill.py --agent claude-code
+python skills/xmu-ppt/scripts/install_skill.py --agent cursor
+python skills/xmu-ppt/scripts/install_skill.py --agent github-copilot
+python skills/xmu-ppt/scripts/install_skill.py --agent gemini-cli
+```
+
+macOS/Linux 可使用 `python3`。安装目标默认为当前项目，`--project` 可指定其他已存在的项目目录，同名技能会停止安装。CC Switch 管理的共享技能仍通过 CC Switch 分发。
+
+已通过其他方式安装时，首次启用技能会按说明展示引导。随时也可让 Agent 执行已安装目录中的 `scripts/install_skill.py --guide`。第三方安装器的结束界面取决于其实现，仓库安装入口的使用提示由本项目输出。
 
 ### 把需求交给 Agent
 

@@ -29,7 +29,23 @@
 保留完整源码仓库，创建 Python 3.10+ 虚拟环境并安装 requirements-core.txt。
 运行 examples/quickstart 的四页导出，返回技能路径、解释器与 PPTX 路径，
 分别报告文件已安装、宿主已发现技能、示例已导出三个状态。
+完成后运行已安装技能的 scripts/install_skill.py --guide，
+在对话里显示简短使用说明，让我知道可以直接描述主题或上传一批模板。
 ```
+
+## 安装后直接显示使用说明
+
+仓库提供项目级安装入口。完成[源码和依赖准备](../quickstart.md)后，从仓库根目录执行。
+
+```bash
+python skills/xmu-ppt/scripts/install_skill.py --agent codex
+```
+
+把 `codex` 换成 `claude-code`、`cursor`、`github-copilot` 或 `gemini-cli` 即可选择宿主。目标为当前项目的技能目录，`--project` 指向其他已存在的项目，`--lang en` 显示英文。同名条目会使安装停止。
+
+此入口成功后会直接输出“说需求 → 确认内容 → 选模板 → 接收 PPTX”的说明，以及上传一批自备模板的示例。它只安装技能文件，Python 依赖、宿主发现与实际导出分别验收。
+
+Agent 代为安装时，安装提示词要求它在完成后运行已安装技能的 `scripts/install_skill.py --guide` 并回显。通过第三方安装器安装时，其结束界面由该安装器控制。首次启用本技能也有简短引导规则，完整教程随包位于 [GETTING_STARTED.md](../../skills/xmu-ppt/GETTING_STARTED.md)。
 
 ## 按 Agent 安装与调用
 
