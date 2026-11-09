@@ -32,7 +32,7 @@
 
 ## 外部 PPTX 模板（2026-11-07 新增，仅本地索引）
 
-核验日期：2026-11-07。本机 `D:/桌面/PPT模板` 下 5 个分类文件夹共 **200 个 .pptx / 6102 页**，由 `skills/xmu-ppt/templates/external/external_catalog.json` 建立只读文字索引。原件不复制、不改名、不入库。
+核验日期：2026-11-07。维护者本机模板根目录（真实路径不入库，配置方式见 `root.example.json`）下 5 个分类文件夹共 **200 个 .pptx / 6102 页**，由 `skills/xmu-ppt/templates/external/external_catalog.json` 建立只读文字索引。原件不复制、不改名、不入库。
 
 | 对象 | 当前证据 | 状态与需要补齐的记录 |
 | --- | --- | --- |

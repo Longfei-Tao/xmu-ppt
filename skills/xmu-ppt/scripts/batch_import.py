@@ -137,9 +137,11 @@ def stage_precheck(targets: list[dict]) -> list[dict]:
               f"zero={row.get('zero_geometry', '-')!s:>3} {row['name'][:34]}", flush=True)
     _write_json(OUT / "PRECHECK.json", rows)
     ok = [r for r in rows if r["status"] == "ok"]
+    # 报告写给本机维护者（output/ 不入库）；路径取当前配置，不写死任何机器的路径。
+    root_label = _read_json(EXTERNAL / "root.local.json").get("root", "<未配置>")
     lines = [
         "# 外部模板批量入库 · 全量预检", "",
-        f"- 扫描时间：本地模板库 `D:/桌面/PPT模板`（不含备份目录）",
+        f"- 扫描范围：本地模板库 `{root_label}`（不含备份目录）",
         f"- 目标模板：**{len(targets)}** 套；解析成功：**{len(ok)}** 套；失败：**{len(rows) - len(ok)}** 套",
         f"- 可入库页数：**{sum(r['pages'] for r in ok)}** 页；文本槽：**{sum(r['slots'] for r in ok)}** 个",
         f"- 组合内坐标已换算：**{sum(r['group_absolute'] for r in ok)}** 个；占位框继承：**{sum(r['placeholder_inherited'] for r in ok)}** 个",

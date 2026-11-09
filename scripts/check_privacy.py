@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Scan tracked assets for personal data (names, emails, phones, IDs).
+"""Scan tracked assets for personal data (names, emails, phones, IDs,
+machine-specific absolute paths).
 
 Read-only. Covers text files, SVG/HTML text, tracked PPTX slide/notes XML and
 ``docProps`` author fields. Images are not OCR-scanned; regenerate previews from
@@ -36,6 +37,11 @@ EN_LABEL_RE = re.compile(rf"({LABELS})\s*[:：]\s*([A-Za-z][A-Za-z .']{{0,20}})"
 EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 PHONE_RE = re.compile(r"(?<![0-9A-Fa-f])1[3-9]\d{9}(?![0-9A-Fa-f])")
 ID_RE = re.compile(r"(?<![0-9A-Za-z])\d{17}[0-9Xx](?![0-9A-Za-z])")
+# 维护者本机的盘符绝对路径（如 D 盘下的私人目录）不得进入公开仓库。
+# 前面是字母的不匹配，避免误伤 https:// 等 URL  scheme。
+WIN_ABS_RE = re.compile(r"(?<![A-Za-z])[A-Za-z]:[\\/][^\s`\"'<>]*")
+# 与机器无关的良性路径：Windows 系统字体、文档里约定的示例路径。
+ALLOWED_PATH_HINTS = ("c:/windows/fonts/", "我的模板", "/path/to/")
 
 ALLOWED_CN_NAMES = {
     "小夏", "甲乙丙", "示例", "示例同学", "姓名", "待定", "待填写", "待补充",
@@ -96,6 +102,14 @@ def scan_text(text: str, source: str, terms: tuple[str, ...]) -> list[dict]:
 
     for match in ID_RE.finditer(text):
         findings.append({"file": source, "kind": "id", "value": mask(match.group(0)), "context": "id"})
+
+    for match in WIN_ABS_RE.finditer(text):
+        value = match.group(0).rstrip(".,;:)。，；：、")
+        low = value.replace("\\", "/").lower()
+        if any(hint in low for hint in ALLOWED_PATH_HINTS):
+            continue
+        findings.append({"file": source, "kind": "path", "value": mask(value),
+                         "context": "local_path"})
 
     for term in terms:
         if term and term in text:

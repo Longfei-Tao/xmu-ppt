@@ -43,6 +43,17 @@ class PrivacyCheckTests(unittest.TestCase):
         findings = privacy.scan_text("汇报人：" + term, "sample", (term,))
         self.assertTrue([f for f in findings if f["kind"] == "term"], findings)
 
+    def test_local_absolute_path_is_detected(self):
+        findings = privacy.scan_text("原件在 " + "D" + ":/桌面/模板库 下", "sample", ())
+        self.assertTrue([f for f in findings if f["kind"] == "path"], findings)
+
+    def test_documented_example_path_is_allowed(self):
+        for sample in ("把 D:\\我的模板\\组会模板.pptx 加入我的模板",
+                       "font: C:/Windows/Fonts/msyh.ttc",
+                       "root 例如 D:/path/to/templates"):
+            findings = privacy.scan_text(sample, "sample", ())
+            self.assertEqual(findings, [], sample)
+
 
 if __name__ == "__main__":
     unittest.main()

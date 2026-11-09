@@ -16,6 +16,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import urllib.error
 import urllib.request
 import zipfile
 from datetime import date, datetime, timezone
@@ -545,7 +546,14 @@ def run_import(args) -> int:
         pack = Path(args.pack).expanduser()
     else:
         url = args.url or DEFAULT_PACK_URL
-        pack = download_template_pack(url, Path(tempfile.gettempdir()) / PACK_NAME)
+        try:
+            pack = download_template_pack(url, Path(tempfile.gettempdir()) / PACK_NAME)
+        except (urllib.error.URLError, OSError) as exc:
+            raise SystemExit(
+                f"模板包下载失败（{exc}）。\n"
+                "公开仓库不分发模板包；若你合法持有模板包，请用 --pack 指定本地文件，"
+                "或用 user_templates.py onboard 把自有 PPTX 入库。"
+            ) from exc
     if not pack.is_file():
         raise SystemExit(f"模板包不存在：{pack}")
     dest = Path(args.dest).expanduser() if args.dest else DEFAULT_IMPORT_ROOT

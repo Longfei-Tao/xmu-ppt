@@ -1,7 +1,7 @@
 {
   "schema": "external_root.v1",
   "note": "示例配置，可入库。本机真实路径写在 root.local.json，该文件已被 .gitignore 忽略。",
-  "root": "<本机绝对路径，例如 D:/桌面/PPT模板>",
+  "root": "<本机绝对路径，例如 D:/path/to/templates>",
   "layout": "5 个分类文件夹，每个文件夹内平铺 .pptx；原件只读，不复制、不改名、不入库",
   "folders": [
     "01_毕业答辩与校园主题",
